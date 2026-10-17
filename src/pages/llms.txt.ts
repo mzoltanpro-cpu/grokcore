@@ -2,6 +2,7 @@ import type { APIRoute } from "astro";
 import { days } from "../content/days";
 import { worksheetMdPath, worksheetPath } from "../content/worksheets";
 import { docs } from "../content/docs";
+import { marketplaceBots, marketplaceFetched, marketplacePath } from "../content/marketplace";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
 export const GET: APIRoute = ({ site }) => {
@@ -23,6 +24,13 @@ export const GET: APIRoute = ({ site }) => {
       (day) =>
         `- [${day.n}. nap gyakorlólap](${absUrl(origin, worksheetPath(day.slug))}) – Markdown: ${absUrl(origin, worksheetMdPath(day.slug))}`,
     ),
+    "",
+    "## Marketplace magyarul (nem hivatalos katalógus)",
+    "",
+    `A hivatalos Grok Bot Marketplace (https://x.ai/bot/marketplace) ${marketplaceBots.length} botja saját magyar összefoglalóval, lekérve: ${marketplaceFetched}. Nem állunk kapcsolatban a SpaceXSI-vel vagy a botok készítőivel.`,
+    "",
+    `- [Katalógus](${absUrl(origin, "/marketplace/")})`,
+    ...marketplaceBots.map((bot) => `- [${bot.name}](${absUrl(origin, marketplacePath(bot.slug))}): ${bot.summaryHu} Forrás: ${bot.sourceUrl}`),
     "",
     "## Az oldal",
     "",

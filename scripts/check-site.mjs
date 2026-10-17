@@ -24,6 +24,7 @@ const required = [
   "gyakorlolapok/3-nap-elso-feladat.md",
   "gyakorlolapok/4-nap-skill-routine.md",
   "gyakorlolapok/5-nap-masodik-bot-biztonsag.md",
+  "marketplace/index.html",
   "forrasok/index.html",
   "rolunk/index.html",
   "szponzoracio/index.html",
@@ -114,6 +115,39 @@ for (const rel of byRel.keys()) {
     }
   }
   if (!md.includes("Saját példánk")) fail(`${rel}: nincs jelölt saját példa`);
+}
+
+// Marketplace-katalógus: minden botnak saját oldal, minden kötelező blokkal és forráslinkkel.
+const marketplace = JSON.parse(await readFile(path.join(root, "src/content/marketplace-bots.json"), "utf8"));
+const mpBlocks = ["leiras", "memoria", "skillek", "rutinok", "integraciok", "keszito", "kategoria", "nap", "forras"];
+if (marketplace.length === 0) fail("A marketplace-bots.json üres.");
+const mpIndex = byRel.has("marketplace/index.html") ? await readFile(byRel.get("marketplace/index.html"), "utf8") : "";
+if (!mpIndex.includes("Nem hivatalos")) fail("marketplace/index.html: hiányzik a nem hivatalos jelölés");
+if (!mpIndex.includes('"@type":"ItemList"')) fail("marketplace/index.html: hiányzik az ItemList JSON-LD");
+for (const bot of marketplace) {
+  const rel = `marketplace/${bot.slug}/index.html`;
+  if (!byRel.has(rel)) {
+    fail(`Hiányzó bot-oldal: ${rel}`);
+    continue;
+  }
+  if (!mpIndex.includes(`href="/marketplace/${bot.slug}/"`)) fail(`marketplace/index.html: nem linkeli: ${bot.slug}`);
+  const html = await readFile(byRel.get(rel), "utf8");
+  for (const block of mpBlocks) {
+    const section = html.match(new RegExp(`<section[^>]*data-block="${block}"[^>]*>([\\s\\S]*?)</section>`));
+    if (!section) fail(`${rel}: hiányzó blokk: ${block}`);
+    else if (!/<h2[\s>]/.test(section[1])) fail(`${rel}: a(z) ${block} blokknak nincs címe`);
+  }
+  if (!bot.sourceUrl?.startsWith("https://x.ai/bot/marketplace/bots/")) fail(`${rel}: hibás forrás-URL a JSON-ban`);
+  if (!html.includes(`href="${bot.sourceUrl}" data-source-link`)) fail(`${rel}: nincs forráslink a Forrás blokkban`);
+  if (!html.includes(`lekérve: ${bot.fetched}`)) fail(`${rel}: nincs lekérési dátum`);
+  if (!html.includes("Nem hivatalos")) fail(`${rel}: hiányzik a nem hivatalos jelölés`);
+  if (/<img\b/.test(html)) fail(`${rel}: kép (logó/avatár) nem kerülhet a bot-oldalra`);
+  if (!bot.memory.count && !html.includes("A listing nem tartalmaz erről adatot.")) fail(`${rel}: a hiányzó memória nincs jelölve`);
+  if (!bot.summaryHu) fail(`${rel}: nincs magyar összefoglaló`);
+}
+for (const rel of byRel.keys()) {
+  const m = rel.match(/^marketplace\/([^/]+)\/index\.html$/);
+  if (m && !marketplace.some((bot) => bot.slug === m[1])) fail(`Árva bot-oldal: ${rel}`);
 }
 
 let canonicalOrigin = "";
