@@ -73,3 +73,11 @@ Az Astro `output: 'static'`. A Vercel a repóból, külön adapter nélkül feli
 ## Helyőrzők
 
 Az impresszum és az adatkezelési tájékoztató nem tartalmaz kitalált üzemeltetői adatot. Ahol egy Grok Bot-állítás nem ellenőrizhető a nyilvános dokumentációból, a szövegben `[ELLENŐRIZENDŐ]` áll. A források a leckék alján és a Források oldalon vannak.
+
+## Marketplace-katalógus (nem hivatalos)
+
+A `/marketplace/` oldal és a 90 bot-oldal adata egyetlen fájlból készül: `src/content/marketplace-bots.json`.
+Ezt ne szerkeszd kézzel. A forrás a COO munkaterület `bots.json` fájlja (lekérve a https://x.ai/bot/marketplace oldalról),
+frissítés: `node scripts/import-marketplace.mjs <útvonal>/bots.json`, utána `npm run build && npm run check`.
+A magyar összefoglaló a sajátunk; angol szöveg csak rövid, idézetként jelölt részlet. Logót, avatárt nem veszünk át
+(https://x.ai/legal/brand-guidelines). A check minden bot-oldalon ellenőrzi a kötelező blokkokat és a forráslinket.
