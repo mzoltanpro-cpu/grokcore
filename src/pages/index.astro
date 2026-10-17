@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Signup from "../components/Signup.astro";
 import { days } from "../content/days";
+import { beginnerBots, marketplaceBots, marketplacePath } from "../content/marketplace";
 import { dayPath, siteConfig } from "../lib/site";
 
 const title = `${siteConfig.name} – Grok Bot kezdőknek, 5 nap alatt`;
@@ -91,6 +92,28 @@ const description =
         ))
       }
     </div>
+  </section>
+
+  <section class="section" aria-labelledby="mp-cim">
+    <div class="section-head">
+      <h2 id="mp-cim">A Marketplace botjai magyarul</h2>
+      <p>
+        A hivatalos Grok Bot Marketplace {marketplaceBots.length} botja saját magyar összefoglalóval, memóriával,
+        skillekkel, routine-okkal és integrációkkal. Nem hivatalos katalógus, minden bot mellett forrás.
+      </p>
+    </div>
+    <ul class="mp-home-list plain-list">
+      {
+        beginnerBots.slice(0, 8).map((bot) => (
+          <li>
+            <a href={marketplacePath(bot.slug)}>{bot.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="cta-row">
+      <a class="button button-ghost" href="/marketplace/">A teljes katalógus</a>
+    </p>
   </section>
 
   <section class="section" aria-labelledby="vege-cim">

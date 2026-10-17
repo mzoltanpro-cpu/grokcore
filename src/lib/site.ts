@@ -1,5 +1,6 @@
 import { siteConfig } from "../../site.config.mjs";
 import { days } from "../content/days";
+import { marketplaceBots, marketplacePath } from "../content/marketplace";
 
 const providers = ["noop", "mailerlite", "brevo"] as const;
 export type NewsletterProviderId = (typeof providers)[number];
@@ -45,6 +46,8 @@ export function indexablePaths(): string[] {
     ...days.map((day) => dayPath(day.slug)),
     "/gyakorlolapok/",
     ...days.map((day) => `/gyakorlolapok/${day.slug}/`),
+    "/marketplace/",
+    ...marketplaceBots.map((bot) => marketplacePath(bot.slug)),
     "/forrasok/",
     "/rolunk/",
     "/szponzoracio/",
@@ -57,6 +60,7 @@ export function indexablePaths(): string[] {
 export const primaryNav = [
   { href: "/5-nap/", label: "Az 5 nap", id: "course" },
   { href: "/gyakorlolapok/", label: "Gyakorlólapok", id: "worksheets" },
+  { href: "/marketplace/", label: "Marketplace", id: "marketplace" },
   { href: "/forrasok/", label: "Források", id: "resources" },
   { href: "/rolunk/", label: "Rólunk", id: "about" },
   { href: "/szponzoracio/", label: "Szponzoráció", id: "sponsors" },
