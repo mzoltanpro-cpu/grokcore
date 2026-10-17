@@ -1,5 +1,6 @@
 import type { APIRoute } from "astro";
 import { days } from "../content/days";
+import { worksheetMdPath } from "../content/worksheets";
 import { faq } from "../content/faq";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
@@ -17,7 +18,19 @@ export const GET: APIRoute = ({ site }) => {
   ];
 
   for (const day of days) {
-    parts.push(`## ${day.title}`, "", day.lead, "", `Oldal: ${absUrl(origin, dayPath(day.slug))}`, "");
+    parts.push(
+      `## ${day.title}`,
+      "",
+      day.lead,
+      "",
+      `A mai feladat: ${day.task}`,
+      "",
+      `Tipikus buktató: ${day.pitfall.replace(/<[^>]+>/g, "")}`,
+      "",
+      `Oldal: ${absUrl(origin, dayPath(day.slug))}`,
+      `Gyakorlólap (Markdown): ${absUrl(origin, worksheetMdPath(day.slug))}`,
+      "",
+    );
     day.steps.forEach((step, index) => {
       parts.push(`${index + 1}. ${step.name}. ${step.text}`);
     });

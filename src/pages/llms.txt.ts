@@ -1,5 +1,6 @@
 import type { APIRoute } from "astro";
 import { days } from "../content/days";
+import { worksheetMdPath, worksheetPath } from "../content/worksheets";
 import { docs } from "../content/docs";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
@@ -8,18 +9,26 @@ export const GET: APIRoute = ({ site }) => {
   const lines = [
     `# ${siteConfig.name}`,
     "",
-    `> ${siteConfig.tagline}. Független, nem hivatalos magyar útmutató. Minden Grok Bot-állítás a hivatalos dokumentációra (docs.x.ai/grok-bot) hivatkozik. A nem ellenőrzött állítás a honlapon [ELLENŐRIZENDŐ] jelölést kap.`,
+    `> ${siteConfig.tagline}. Független, nem hivatalos magyar útmutató. A Grok Bot-funkciókra vonatkozó állítások a hivatalos dokumentációra (docs.x.ai/grok-bot, cursor.com) hivatkoznak; a felhasználói tapasztalatok szerzővel és linkkel szerepelnek. A nem ellenőrzött állítás a honlapon [ELLENŐRIZENDŐ] jelölést kap.`,
     "",
     "A részletes kivonat: " + absUrl(origin, "/llms-full.txt"),
     "",
-    "## A 7 nap",
+    "## Az 5 nap",
     "",
-    ...days.map((day) => `- [${day.title}](${absUrl(origin, dayPath(day.slug))}): ${day.description}`),
+    ...days.map((day) => `- [${day.title}](${absUrl(origin, dayPath(day.slug))}): ${day.description} Feladat: ${day.task}`),
+    "",
+    "## Gyakorlólapok",
+    "",
+    ...days.map(
+      (day) =>
+        `- [${day.n}. nap gyakorlólap](${absUrl(origin, worksheetPath(day.slug))}) – Markdown: ${absUrl(origin, worksheetMdPath(day.slug))}`,
+    ),
     "",
     "## Az oldal",
     "",
     `- [Kezdőlap](${absUrl(origin, "/")}): ${siteConfig.description}`,
-    `- [A 7 nap](${absUrl(origin, "/7-nap/")}): a kurzus áttekintése`,
+    `- [Az 5 nap](${absUrl(origin, "/5-nap/")}): a kurzus áttekintése`,
+    `- [Gyakorlólapok](${absUrl(origin, "/gyakorlolapok/")}): naponta egy nyomtatható lap kész promptokkal`,
     `- [Források és GYIK](${absUrl(origin, "/forrasok/")})`,
     `- [Rólunk](${absUrl(origin, "/rolunk/")})`,
     `- [Szponzoráció](${absUrl(origin, "/szponzoracio/")})`,
@@ -36,6 +45,8 @@ export const GET: APIRoute = ({ site }) => {
     `- [Approvals, security, and privacy](${docs.approve})`,
     `- [FAQ](${docs.faq})`,
     `- [Termékoldal](${docs.productCanonical})`,
+    `- [Grok Bot GYIK (cursor.com)](${docs.faqCursor})`,
+    `- [Changelog](${docs.changelog})`,
     "",
   ];
   return new Response(lines.join("\n"), { headers: { "Content-Type": "text/plain; charset=utf-8" } });

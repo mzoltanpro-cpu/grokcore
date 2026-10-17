@@ -1,12 +1,12 @@
 # Botkezdő
 
-Független, nem hivatalos magyar útmutató az első saját Grok Botig. A termék a **Kezdő 7 nap**: hét rövid lecke, egy nap egy oldal. A repó statikus oldalt ad, Vercelen nulla külön konfigurációval.
+Független, nem hivatalos magyar útmutató az első saját Grok Botig. A termék a **Kezdő 5 nap**: öt rövid lecke, naponta egy feladattal és egy letölthető gyakorlólappal (`/gyakorlolapok/`, nyomtatható HTML és Markdown). A repó statikus oldalt ad; a `vercel.json` csak a régi `/7-nap/` útvonalak átirányítását tartalmazza.
 
 Az oldal neve és a repó neve két dolog. A publikus név egy helyen cserélhető.
 
 ## Átnevezés
 
-Nyisd meg a `site.config.mjs` fájlt, és írd át a `name` mezőt. A `courseName` a tananyag neve (`Kezdő 7 nap`), azt csak akkor módosítsd, ha a kurzust is átnevezed. A címkék, a lábléc és a séma innen olvasnak.
+Nyisd meg a `site.config.mjs` fájlt, és írd át a `name` mezőt. A `courseName` a tananyag neve (`Kezdő 5 nap`), azt csak akkor módosítsd, ha a kurzust is átnevezed. A címkék, a lábléc és a séma innen olvasnak.
 
 ## Domain
 
@@ -68,7 +68,7 @@ A `check` a legenerált HTML-t nézi: kötelező oldalak, belső linkek, egy `h1
 
 ## Élesítés
 
-Az Astro `output: 'static'`. A Vercel a repóból, külön adapter nélkül felismeri. `vercel.json` nincs, és ez a repó szándékosan nincs kitelepítve. Az impresszumban a tárhelyszolgáltató addig helyőrző, amíg a választás meg nem születik.
+Az Astro `output: 'static'`. A Vercel a repóból, külön adapter nélkül felismeri. A `vercel.json` csak átirányításokat tartalmaz (régi 7 napos útvonalak → 5 nap). Az impresszumban a tárhelyszolgáltató addig helyőrző, amíg a választás meg nem születik.
 
 ## Helyőrzők
 

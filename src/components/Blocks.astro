@@ -33,7 +33,9 @@ const { blocks, steps } = Astro.props;
         <ol class="steps">
           {steps.map((step) => (
             <li>
-              <strong>{step.name}.</strong> {step.text}
+              <strong>{`${step.name}.`}</strong>
+              {" "}
+              {step.text}
             </li>
           ))}
         </ol>

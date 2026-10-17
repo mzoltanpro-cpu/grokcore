@@ -7,14 +7,23 @@ const dist = path.join(root, "dist");
 
 const required = [
   "index.html",
-  "7-nap/index.html",
-  "7-nap/1-nap-telepites/index.html",
-  "7-nap/2-nap-elso-bot/index.html",
-  "7-nap/3-nap-elso-feladat/index.html",
-  "7-nap/4-nap-appok/index.html",
-  "7-nap/5-nap-skill/index.html",
-  "7-nap/6-nap-routine/index.html",
-  "7-nap/7-nap-jovahagyasok/index.html",
+  "5-nap/index.html",
+  "5-nap/1-nap-letoltes-belepes/index.html",
+  "5-nap/2-nap-appok-bekotese/index.html",
+  "5-nap/3-nap-elso-feladat/index.html",
+  "5-nap/4-nap-skill-routine/index.html",
+  "5-nap/5-nap-masodik-bot-biztonsag/index.html",
+  "gyakorlolapok/index.html",
+  "gyakorlolapok/1-nap-letoltes-belepes/index.html",
+  "gyakorlolapok/2-nap-appok-bekotese/index.html",
+  "gyakorlolapok/3-nap-elso-feladat/index.html",
+  "gyakorlolapok/4-nap-skill-routine/index.html",
+  "gyakorlolapok/5-nap-masodik-bot-biztonsag/index.html",
+  "gyakorlolapok/1-nap-letoltes-belepes.md",
+  "gyakorlolapok/2-nap-appok-bekotese.md",
+  "gyakorlolapok/3-nap-elso-feladat.md",
+  "gyakorlolapok/4-nap-skill-routine.md",
+  "gyakorlolapok/5-nap-masodik-bot-biztonsag.md",
   "forrasok/index.html",
   "rolunk/index.html",
   "szponzoracio/index.html",
@@ -70,6 +79,41 @@ const byRel = new Map(files.map((file) => [path.relative(dist, file).split(path.
 
 for (const rel of required) {
   if (!byRel.has(rel)) fail(`Hiányzó kimenet: ${rel}`);
+}
+
+// A régi 7 napos útvonal megszűnt: nem lehet kimenete, és a vercel.json-ban át kell irányítani.
+for (const rel of byRel.keys()) {
+  if (rel.startsWith("7-nap/")) fail(`Régi 7 napos oldal maradt a kimenetben: ${rel}`);
+}
+const vercel = JSON.parse(await readFile(path.join(root, "vercel.json"), "utf8"));
+const redirected = new Set((vercel.redirects ?? []).map((item) => item.source));
+for (const old of [
+  "/7-nap/",
+  "/7-nap/1-nap-telepites/",
+  "/7-nap/2-nap-elso-bot/",
+  "/7-nap/3-nap-elso-feladat/",
+  "/7-nap/4-nap-appok/",
+  "/7-nap/5-nap-skill/",
+  "/7-nap/6-nap-routine/",
+  "/7-nap/7-nap-jovahagyasok/",
+]) {
+  if (!redirected.has(old)) fail(`Hiányzó átirányítás a vercel.json-ban: ${old}`);
+}
+for (const item of vercel.redirects ?? []) {
+  const target = item.destination.endsWith("/") ? `${item.destination.slice(1)}index.html` : item.destination.slice(1);
+  if (!byRel.has(target)) fail(`Az átirányítás célja nem létezik: ${item.source} → ${item.destination}`);
+}
+
+// Gyakorlólap-szabály: felhasználói idézet csak szerzővel és linkkel; saját példa jelölve.
+for (const rel of byRel.keys()) {
+  if (!rel.startsWith("gyakorlolapok/") || !rel.endsWith(".md")) continue;
+  const md = await readFile(byRel.get(rel), "utf8");
+  for (const line of md.split("\n")) {
+    if (line.startsWith("_Felhasználói idézet") && !/@\S+: https:\/\//.test(line)) {
+      fail(`${rel}: felhasználói idézet szerző vagy link nélkül: ${line}`);
+    }
+  }
+  if (!md.includes("Saját példánk")) fail(`${rel}: nincs jelölt saját példa`);
 }
 
 let canonicalOrigin = "";

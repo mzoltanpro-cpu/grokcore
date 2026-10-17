@@ -35,14 +35,16 @@ export function absUrl(origin: string, path: string): string {
 }
 
 export function dayPath(slug: string): string {
-  return `/7-nap/${slug}/`;
+  return `/5-nap/${slug}/`;
 }
 
 export function indexablePaths(): string[] {
   return [
     "/",
-    "/7-nap/",
+    "/5-nap/",
     ...days.map((day) => dayPath(day.slug)),
+    "/gyakorlolapok/",
+    ...days.map((day) => `/gyakorlolapok/${day.slug}/`),
     "/forrasok/",
     "/rolunk/",
     "/szponzoracio/",
@@ -53,7 +55,8 @@ export function indexablePaths(): string[] {
 }
 
 export const primaryNav = [
-  { href: "/7-nap/", label: "A 7 nap", id: "course" },
+  { href: "/5-nap/", label: "Az 5 nap", id: "course" },
+  { href: "/gyakorlolapok/", label: "Gyakorlólapok", id: "worksheets" },
   { href: "/forrasok/", label: "Források", id: "resources" },
   { href: "/rolunk/", label: "Rólunk", id: "about" },
   { href: "/szponzoracio/", label: "Szponzoráció", id: "sponsors" },

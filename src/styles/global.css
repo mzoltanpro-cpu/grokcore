@@ -836,3 +836,71 @@ caption {
     transition: none !important;
   }
 }
+
+/* Kezdő 5 nap: a nap feladata és a gyakorlólapok */
+.task-box {
+  margin: 1.2rem 0 1.6rem;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-left-width: 4px;
+}
+
+.task-box h2 {
+  margin-top: 0;
+}
+
+.task-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0;
+}
+
+.tick-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tick-list li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin-bottom: 0.45rem;
+}
+
+.tick {
+  flex: 0 0 auto;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-top: 0.3rem;
+  border: 1.5px solid currentColor;
+}
+
+@media print {
+  .site-header,
+  .site-footer,
+  .skip,
+  .no-print,
+  .progress,
+  .pager,
+  .signup,
+  .task-links {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .prompt pre {
+    white-space: pre-wrap;
+    border: 1px solid #999;
+  }
+
+  .prompt,
+  .tick-list li {
+    break-inside: avoid;
+  }
+}

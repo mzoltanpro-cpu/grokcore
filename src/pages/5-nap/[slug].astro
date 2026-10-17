@@ -5,7 +5,8 @@ import DayNav from "../../components/DayNav.astro";
 import Signup from "../../components/Signup.astro";
 import Sources from "../../components/Sources.astro";
 import { days, getDay } from "../../content/days";
-import { dayPath, siteConfig, siteOrigin } from "../../lib/site";
+import { worksheetMdPath, worksheetPath } from "../../content/worksheets";
+import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
 
 export function getStaticPaths() {
   return days.map((day) => ({ params: { slug: day.slug } }));
@@ -27,7 +28,9 @@ const howTo = {
   inLanguage: "hu",
   totalTime: "PT15M",
   dateModified: siteConfig.updated,
-  isPartOf: { "@id": `${origin}/7-nap/#course` },
+  isPartOf: { "@id": `${origin}/5-nap/#course` },
+  tool: [{ "@type": "HowToTool", name: "Grok Bot desktop vagy mobil app" }],
+  supply: [{ "@type": "HowToSupply", name: `Gyakorlólap: ${absUrl(origin, worksheetPath(day.slug))}` }],
   step: day.steps.map((step, position) => ({
     "@type": "HowToStep",
     position: position + 1,
@@ -45,11 +48,11 @@ const howTo = {
   current="course"
   ogType="article"
   jsonLd={[howTo]}
-  prev={previous ? dayPath(previous.slug) : "/7-nap/"}
-  next={next ? dayPath(next.slug) : "/forrasok/"}
+  prev={previous ? dayPath(previous.slug) : "/5-nap/"}
+  next={next ? dayPath(next.slug) : "/gyakorlolapok/"}
   crumbs={[
     { name: siteConfig.name, path: "/" },
-    { name: "A 7 nap", path: "/7-nap/" },
+    { name: "Az 5 nap", path: "/5-nap/" },
     { name: day.nav, path },
   ]}
 >
@@ -58,13 +61,21 @@ const howTo = {
     <p class="eyebrow">{siteConfig.courseName}</p>
     <h1>{day.title}</h1>
     <ul class="meta-row">
-      <li>{day.n} / 7</li>
+      <li>{day.n} / {days.length}</li>
       <li>Kb. 15 perc, a mi becslésünk</li>
       <li>
         Frissítve: <time datetime={siteConfig.updated}>{siteConfig.updated}</time>
       </li>
     </ul>
     <p class="lede">{day.lead}</p>
+    <section class="task-box" aria-labelledby="mai-feladat">
+      <h2 id="mai-feladat">A mai feladat</h2>
+      <p>{day.task}</p>
+      <p class="task-links">
+        <a class="button" href={worksheetPath(day.slug)}>Gyakorlólap (nyomtatható)</a>
+        <a class="button button-ghost" href={worksheetMdPath(day.slug)} download>Letöltés Markdownként</a>
+      </p>
+    </section>
     <Blocks blocks={day.blocks} steps={day.steps} />
     <Sources sources={day.sources} />
   </article>
@@ -78,9 +89,9 @@ const howTo = {
           </span>
         </a>
       ) : (
-        <a rel="prev" href="/7-nap/">
+        <a rel="prev" href="/5-nap/">
           <span class="fine">Vissza</span>
-          <span>A 7 nap</span>
+          <span>Az 5 nap</span>
         </a>
       )
     }
@@ -93,9 +104,9 @@ const howTo = {
           </span>
         </a>
       ) : (
-        <a class="next" rel="next" href="/forrasok/">
+        <a class="next" rel="next" href="/gyakorlolapok/">
           <span class="fine">Tovább</span>
-          <span>Források és GYIK</span>
+          <span>Az összes gyakorlólap</span>
         </a>
       )
     }

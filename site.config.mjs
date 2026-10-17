@@ -10,10 +10,10 @@
  */
 export const siteConfig = {
   name: "Botkezdő",
-  courseName: "Kezdő 7 nap",
+  courseName: "Kezdő 5 nap",
   tagline: "Az első saját Grok Botod, napi egy rövid lépésben",
   description:
-    "Magyar, lépésről lépésre útmutató az első saját Grok Botig, hét napra bontva. Ellenőrzött, forrásolt tartalom.",
+    "Magyar, lépésről lépésre útmutató a Grok Bothoz, öt napra bontva, letölthető gyakorlólapokkal. Forrásolt tartalom.",
   locale: "hu_HU",
   lang: "hu",
   updated: "2026-10-17",

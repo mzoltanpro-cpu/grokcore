@@ -1,0 +1,120 @@
+---
+import Base from "../../layouts/Base.astro";
+import { days } from "../../content/days";
+import { originLabel, worksheetMdPath, worksheetPath, worksheets } from "../../content/worksheets";
+import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
+
+export function getStaticPaths() {
+  return worksheets.map((sheet) => ({ params: { slug: sheet.slug } }));
+}
+
+const sheet = worksheets.find((item) => item.slug === Astro.params.slug)!;
+const day = days.find((item) => item.n === sheet.day)!;
+const origin = siteOrigin(Astro.site);
+const path = worksheetPath(sheet.slug);
+const description = `Nyomtatható gyakorlólap a Kezdő 5 nap ${day.n}. napjához: ellenőrzőlista, kész promptok, hibaelhárítás, források.`;
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  name: sheet.title,
+  description,
+  inLanguage: "hu",
+  learningResourceType: "Worksheet",
+  educationalLevel: "Beginner",
+  isAccessibleForFree: true,
+  dateModified: siteConfig.updated,
+  isPartOf: { "@id": `${origin}/5-nap/#course` },
+  url: absUrl(origin, path),
+  encoding: { "@type": "MediaObject", encodingFormat: "text/markdown", contentUrl: absUrl(origin, worksheetMdPath(sheet.slug)) },
+  citation: sheet.sources.map((source) => source.url),
+};
+---
+
+<Base
+  title={`${sheet.title} | ${siteConfig.name}`}
+  description={description}
+  path={path}
+  current="worksheets"
+  ogType="article"
+  jsonLd={[ld]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Gyakorlólapok", path: "/gyakorlolapok/" },
+    { name: `${day.n}. nap`, path },
+  ]}
+>
+  <article class="prose worksheet">
+    <p class="eyebrow">{siteConfig.courseName} · gyakorlólap</p>
+    <h1>{sheet.title}</h1>
+    <p class="no-print fine">
+      Nyomtatás: a böngésző Nyomtatás menüje (Ctrl+P vagy Cmd+P), a fejléc és a lábléc ilyenkor eltűnik.
+      <a href={worksheetMdPath(sheet.slug)} download>Letöltés Markdownként</a> ·
+      <a href={dayPath(day.slug)}>Vissza a {day.n}. naphoz</a>
+    </p>
+    <section class="task-box" aria-labelledby="lap-feladat">
+      <h2 id="lap-feladat">A mai feladat</h2>
+      <p>{day.task}</p>
+    </section>
+    <p class="lede">{sheet.intro}</p>
+    {
+      sheet.checklist.map((group) => (
+        <section>
+          <h2>{group.heading}</h2>
+          <ul class="tick-list">
+            {group.items.map((item) => (
+              <li>
+                <span class="tick" aria-hidden="true" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+    <h2>Kész promptok</h2>
+    {
+      sheet.prompts.map((prompt) => (
+        <figure class="prompt">
+          <figcaption>{prompt.label}</figcaption>
+          <pre><code>{prompt.code}</code></pre>
+          <p class="caption">
+            {originLabel[prompt.origin]}
+            {prompt.author && <> – {prompt.author}</>}
+            {prompt.url && (
+              <>
+                : <a href={prompt.url}>{prompt.url}</a>
+              </>
+            )}
+          </p>
+        </figure>
+      ))
+    }
+    <h2>Ha elakadsz</h2>
+    <ul>
+      {
+        sheet.troubleshooting.map((item) => (
+          <li>
+            <strong>{item.problem}</strong> {item.fix}
+          </li>
+        ))
+      }
+    </ul>
+    <section class="sources">
+      <h2>Források</h2>
+      <ul>
+        {
+          sheet.sources.map((source) => (
+            <li>
+              <a href={source.url}>{source.title}</a> <span class="fine">{source.url}</span>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="fine">
+        Lekérve: {siteConfig.updated}. A felhasználói idézetek eredeti nyelven, szerzővel és linkkel szerepelnek; a
+        saját példáinkat külön jelöljük. Az [ELLENŐRIZENDŐ] pontokat még nem tudtuk nyilvános forrásból megerősíteni.
+      </p>
+    </section>
+  </article>
+</Base>
