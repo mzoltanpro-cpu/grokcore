@@ -17,7 +17,7 @@ export const siteConfig = {
   locale: "hu_HU",
   lang: "hu",
   updated: "2026-10-17",
-  defaultUrl: "https://www.example.com",
+  defaultUrl: "https://grokcore.vercel.app",
   themeStorageKey: "botkezdo-theme",
   newsletter: {
     /** @type {"noop" | "mailerlite" | "brevo"} */
