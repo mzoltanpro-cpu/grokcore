@@ -1,0 +1,186 @@
+---
+import Base from "../../layouts/Base.astro";
+import BotCard from "../../components/BotCard.astro";
+import MarketplaceNote from "../../components/MarketplaceNote.astro";
+import { days } from "../../content/days";
+import {
+  allApps,
+  beginnerBots,
+  categoryCounts,
+  categoryKey,
+  categoryLabel,
+  dayLabel,
+  marketplaceBots,
+  marketplaceFetched,
+  marketplaceOfficialUrl,
+  marketplacePath,
+} from "../../content/marketplace";
+import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
+
+const origin = siteOrigin(Astro.site);
+const title = `Grok Bot Marketplace magyarul: nem hivatalos katalógus | ${siteConfig.name}`;
+const description = `A hivatalos Grok Bot Marketplace ${marketplaceBots.length} botja saját magyar összefoglalóval: mire jók, milyen skillt, routine-t és appot használnak, és melyik kezdő naphoz illenek. Forrással.`;
+const apps = allApps();
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Grok Bot Marketplace – nem hivatalos magyar katalógus",
+  description,
+  inLanguage: "hu",
+  numberOfItems: marketplaceBots.length,
+  itemListOrder: "https://schema.org/ItemListUnordered",
+  itemListElement: marketplaceBots.map((bot, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: absUrl(origin, marketplacePath(bot.slug)),
+    name: bot.name,
+  })),
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/marketplace/"
+  current="marketplace"
+  jsonLd={[ld]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Marketplace magyarul", path: "/marketplace/" },
+  ]}
+>
+  <p class="eyebrow">Nem hivatalos katalógus · lekérve: {marketplaceFetched}</p>
+  <h1>A Grok Bot Marketplace botjai magyarul</h1>
+  <p class="lede">
+    A <a href={marketplaceOfficialUrl}>hivatalos Marketplace</a> {marketplaceBots.length} botja, mindegyik egy saját, rövid
+    magyar összefoglalóval. Botonként megmutatjuk, mit tud a listing szerint: memória, skillek, routine-ok és integrációk.
+    A bot neve és a szakszavak eredetiben maradnak.
+  </p>
+  <MarketplaceNote />
+
+  <section class="section" aria-labelledby="kezdoknek">
+    <div class="section-head">
+      <h2 id="kezdoknek">Kezdőknek ajánlott</h2>
+      <p>
+        {beginnerBots.length} bot, amely jól illik a {siteConfig.courseName} valamelyik napjához. A besorolás a mi
+        javaslatunk, a listing leírása alapján.
+      </p>
+    </div>
+    {
+      days.map((day) => {
+        const list = beginnerBots.filter((bot) => bot.days.includes(day.n));
+        if (!list.length) return null;
+        return (
+          <div class="mp-day">
+            <h3>
+              <a href={dayPath(day.slug)}>{dayLabel(day.n)}</a>
+            </h3>
+            <ul class="mp-mini plain-list">
+              {list.map((bot) => (
+                <li>
+                  <a href={marketplacePath(bot.slug)}>{bot.name}</a>
+                  <span class="fine"> – {bot.summaryHu.split(". ")[0].replace(/\.$/, "")}.</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })
+    }
+  </section>
+
+  <section class="section" aria-labelledby="katalogus">
+    <div class="section-head">
+      <h2 id="katalogus">A teljes katalógus</h2>
+      <p>Szűrj kategóriára, napra vagy appra, vagy keress névre. JavaScript nélkül minden bot látszik.</p>
+    </div>
+    <div class="mp-filters" data-mp-filters>
+      <div class="field">
+        <label for="mp-q">Keresés</label>
+        <input id="mp-q" type="search" name="q" placeholder="pl. Gmail, hírlevél, Tradbot" autocomplete="off" data-mp-q />
+      </div>
+      <div class="field">
+        <label for="mp-cat">Kategória</label>
+        <select id="mp-cat" name="kategoria" data-mp-cat>
+          <option value="">Mind</option>
+          {categoryCounts().map((item) => <option value={categoryKey(item.category)}>{categoryLabel(item.category)} ({item.count})</option>)}
+        </select>
+      </div>
+      <div class="field">
+        <label for="mp-day">Az 5 napos út napja</label>
+        <select id="mp-day" name="nap" data-mp-day>
+          <option value="">Mind</option>
+          {days.map((day) => <option value={String(day.n)}>{dayLabel(day.n)}</option>)}
+        </select>
+      </div>
+      <div class="field">
+        <label for="mp-app">Integráció</label>
+        <select id="mp-app" name="app" data-mp-app>
+          <option value="">Mind</option>
+          {apps.map((app) => <option value={app.key}>{app.name} ({app.count})</option>)}
+        </select>
+      </div>
+      <p class="status" role="status" aria-live="polite" data-mp-count>{marketplaceBots.length} bot</p>
+    </div>
+    <ul class="bot-grid plain-list" data-mp-list>
+      {marketplaceBots.map((bot) => <BotCard bot={bot} headingLevel={3} />)}
+    </ul>
+    <p class="fine" data-mp-empty hidden>Nincs találat. Próbálj kevesebb szűrőt.</p>
+  </section>
+
+  <section class="section" aria-labelledby="hogyan">
+    <div class="section-head">
+      <h2 id="hogyan">Hogyan készült?</h2>
+    </div>
+    <ul class="checklist">
+      <li>A listát és a botok adatait a hivatalos, nyilvános Marketplace-oldalakról gyűjtöttük ({marketplaceFetched}).</li>
+      <li>A magyar összefoglaló a sajátunk, nem teljes fordítás. Angol szöveg csak rövid, idézetként jelölt részletként szerepel.</li>
+      <li>Nem írunk funkciót, amit a listing nem említ. A „Kinek ajánljuk” csak ott áll, ahol a listing maga megnevezi.</li>
+      <li>Botot hozzáadni a hivatalos oldalon lehet: minden bot lapján ott a Forrás link.</li>
+    </ul>
+  </section>
+</Base>
+
+<script>
+  const root = document.querySelector<HTMLElement>("[data-mp-filters]");
+  const cards = [...document.querySelectorAll<HTMLElement>("[data-bot]")];
+  const count = document.querySelector<HTMLElement>("[data-mp-count]");
+  const empty = document.querySelector<HTMLElement>("[data-mp-empty]");
+  if (root) {
+    const q = root.querySelector<HTMLInputElement>("[data-mp-q]")!;
+    const cat = root.querySelector<HTMLSelectElement>("[data-mp-cat]")!;
+    const day = root.querySelector<HTMLSelectElement>("[data-mp-day]")!;
+    const app = root.querySelector<HTMLSelectElement>("[data-mp-app]")!;
+    const has = (list: string | undefined, value: string) => !value || (list ?? "").split(" ").includes(value);
+    const apply = () => {
+      const text = q.value.trim().toLowerCase();
+      let shown = 0;
+      for (const card of cards) {
+        const ok =
+          has(card.dataset.cats, cat.value) &&
+          has(card.dataset.days, day.value) &&
+          has(card.dataset.apps, app.value) &&
+          (!text || (card.dataset.search ?? "").includes(text));
+        card.hidden = !ok;
+        if (ok) shown += 1;
+      }
+      if (count) count.textContent = `${shown} bot`;
+      if (empty) empty.hidden = shown !== 0;
+      const params = new URLSearchParams();
+      if (text) params.set("q", text);
+      if (cat.value) params.set("kategoria", cat.value);
+      if (day.value) params.set("nap", day.value);
+      if (app.value) params.set("app", app.value);
+      const query = params.toString();
+      history.replaceState(null, "", query ? `?${query}#katalogus` : location.pathname);
+    };
+    const params = new URLSearchParams(location.search);
+    q.value = params.get("q") ?? "";
+    cat.value = params.get("kategoria") ?? "";
+    day.value = params.get("nap") ?? "";
+    app.value = params.get("app") ?? "";
+    for (const el of [q, cat, day, app]) el.addEventListener("input", apply);
+    if (location.search) apply();
+  }
+</script>
