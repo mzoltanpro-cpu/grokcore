@@ -1,0 +1,31 @@
+---
+import { primaryNav, siteConfig } from "../lib/site";
+
+interface Props {
+  current?: string;
+}
+
+const { current } = Astro.props;
+---
+
+<a class="skip" href="#tartalom">Ugrás a tartalomra</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">7</span>
+      <span>{siteConfig.name}</span>
+    </a>
+    <nav class="nav" aria-label="Fő navigáció">
+      {
+        primaryNav.map((item) => (
+          <a href={item.href} aria-current={current === item.id ? "page" : undefined}>
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">
+      <span data-theme-label>Téma</span>
+    </button>
+  </div>
+</header>

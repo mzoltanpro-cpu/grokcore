@@ -1,0 +1,62 @@
+---
+import Base from "../layouts/Base.astro";
+import { siteConfig } from "../lib/site";
+
+const title = `Rólunk | ${siteConfig.name}`;
+const description =
+  "A Botkezdő független magyar útmutató a Grok Bothoz. Hogyan készül a tartalom, és mit nem ígér az oldal.";
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/rolunk/"
+  current="about"
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Rólunk", path: "/rolunk/" },
+  ]}
+>
+  <article class="prose">
+    <p class="eyebrow">Az oldal</p>
+    <h1>Rólunk</h1>
+    <p class="lede">
+      A {siteConfig.name} egy független magyar útmutató azoknak, akik a Grok Bot iránt érdeklődnek, és nem tudják, hol
+      kezdjék.
+    </p>
+    <h2>Mit csinál ez az oldal</h2>
+    <p>
+      A hivatalos dokumentáció angol, és több oldalra van szórva. A {siteConfig.courseName} ugyanezt a kezdő utat egy
+      vonalba fűzi: hét rövid lecke, naponta egy. A feliratok, az eredeti promptok és a linkek angolul maradnak. A
+      magyarázat magyar.
+    </p>
+    <h2>Hogyan készül a szöveg</h2>
+    <p>
+      Minden Grok Bot-funkcióra vonatkozó állítás mellett ott a forrás linkje. A lapokat {siteConfig.updated}-én
+      néztük át a nyilvános dokumentációban; a legtöbb hivatkozott docs-oldal láblécében 2026-10-12 szerepel utolsó
+      frissítésként, a GYIK-é 2026-09-29. A saját példákat, a fordításokat és a körülbelül 15 perces becslést külön
+      megjelöljük.
+    </p>
+    <p>
+      Amit nem tudtunk ellenőrizni, az <span class="marker">[ELLENŐRIZENDŐ]</span> marad. Nem írunk véleményt idézőjelbe,
+      nem adunk meg olvasottságot, és nem találunk ki árat forintban.
+    </p>
+    <h2>Mit nem vagyunk</h2>
+    <ul>
+      <li>Nem vagyunk a Grok Bot hivatalos oldala, támogatása vagy viszonteladója.</li>
+      <li>A Grok Bot név és védjegy a jogosultjáé.</li>
+      <li>Az oldal nem helyettesíti a dokumentációt. Mellé tesszük a linket.</li>
+      <li>Nincs chatbot a lapon, nincs cookie, és nincs külső követő.</li>
+    </ul>
+    <h2>Ki üzemelteti</h2>
+    <p>
+      Az üzemeltető nevét, címét és elérhetőségét akkor írjuk ki, amikor nyilvánosságra hozza. Addig az
+      <a href="/impresszum/">impresszum</a> és az <a href="/adatkezeles/">adatkezelési tájékoztató</a> helyőrzőket
+      tartalmaz. Üzenetet ezek a helyőrzők nem fogadnak.
+    </p>
+    <p>
+      Ha a hét nap e-mailben is érdekel, a <a href="/hirlevel/">hírlevél</a> oldalon látod, hol tart a bekötés. Szponzori
+      együttműködésről a <a href="/szponzoracio/">szponzoráció</a> oldalon van szó, logófal nélkül.
+    </p>
+  </article>
+</Base>

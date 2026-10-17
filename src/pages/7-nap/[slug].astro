@@ -1,0 +1,106 @@
+---
+import Base from "../../layouts/Base.astro";
+import Blocks from "../../components/Blocks.astro";
+import DayNav from "../../components/DayNav.astro";
+import Signup from "../../components/Signup.astro";
+import Sources from "../../components/Sources.astro";
+import { days, getDay } from "../../content/days";
+import { dayPath, siteConfig, siteOrigin } from "../../lib/site";
+
+export function getStaticPaths() {
+  return days.map((day) => ({ params: { slug: day.slug } }));
+}
+
+const day = getDay(Astro.params.slug ?? "");
+const index = days.findIndex((item) => item.n === day.n);
+const previous = index > 0 ? days[index - 1] : undefined;
+const next = index < days.length - 1 ? days[index + 1] : undefined;
+const origin = siteOrigin(Astro.site);
+const path = dayPath(day.slug);
+const title = `${day.title} | ${siteConfig.name}`;
+
+const howTo = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: day.title,
+  description: day.description,
+  inLanguage: "hu",
+  totalTime: "PT15M",
+  dateModified: siteConfig.updated,
+  isPartOf: { "@id": `${origin}/7-nap/#course` },
+  step: day.steps.map((step, position) => ({
+    "@type": "HowToStep",
+    position: position + 1,
+    name: step.name,
+    text: step.text,
+  })),
+  citation: day.sources.map((source) => source.url),
+};
+---
+
+<Base
+  title={title}
+  description={day.description}
+  path={path}
+  current="course"
+  ogType="article"
+  jsonLd={[howTo]}
+  prev={previous ? dayPath(previous.slug) : "/7-nap/"}
+  next={next ? dayPath(next.slug) : "/forrasok/"}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "A 7 nap", path: "/7-nap/" },
+    { name: day.nav, path },
+  ]}
+>
+  <DayNav current={day.n} />
+  <article class="prose">
+    <p class="eyebrow">{siteConfig.courseName}</p>
+    <h1>{day.title}</h1>
+    <ul class="meta-row">
+      <li>{day.n} / 7</li>
+      <li>Kb. 15 perc, a mi becslésünk</li>
+      <li>
+        Frissítve: <time datetime={siteConfig.updated}>{siteConfig.updated}</time>
+      </li>
+    </ul>
+    <p class="lede">{day.lead}</p>
+    <Blocks blocks={day.blocks} steps={day.steps} />
+    <Sources sources={day.sources} />
+  </article>
+  <nav class="pager" aria-label="Lapozás a napok között">
+    {
+      previous ? (
+        <a rel="prev" href={dayPath(previous.slug)}>
+          <span class="fine">Előző</span>
+          <span>
+            {previous.n}. nap: {previous.nav}
+          </span>
+        </a>
+      ) : (
+        <a rel="prev" href="/7-nap/">
+          <span class="fine">Vissza</span>
+          <span>A 7 nap</span>
+        </a>
+      )
+    }
+    {
+      next ? (
+        <a class="next" rel="next" href={dayPath(next.slug)}>
+          <span class="fine">Következő</span>
+          <span>
+            {next.n}. nap: {next.nav}
+          </span>
+        </a>
+      ) : (
+        <a class="next" rel="next" href="/forrasok/">
+          <span class="fine">Tovább</span>
+          <span>Források és GYIK</span>
+        </a>
+      )
+    }
+  </nav>
+  <div class="section">
+    <Signup variant="day" />
+  </div>
+</Base>

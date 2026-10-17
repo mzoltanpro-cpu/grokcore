@@ -1,0 +1,27 @@
+---
+import { days } from "../content/days";
+import { dayPath } from "../lib/site";
+
+interface Props {
+  current: number;
+}
+
+const { current } = Astro.props;
+---
+
+<nav class="progress" aria-label="A 7 nap állása">
+  <ol>
+    {
+      days.map((day) => (
+        <li>
+          <a href={dayPath(day.slug)} aria-current={day.n === current ? "step" : undefined}>
+            <small>
+              {day.n}. nap
+            </small>
+            <span>{day.nav}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</nav>

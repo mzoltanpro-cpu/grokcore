@@ -1,0 +1,80 @@
+---
+import Base from "../layouts/Base.astro";
+import Signup from "../components/Signup.astro";
+import { siteConfig } from "../lib/site";
+
+const title = `Hírlevél | ${siteConfig.name}`;
+const description =
+  "A Kezdő 7 nap e-mailben: dupla megerősítés, külön hozzájárulás, leiratkozás. A szolgáltató még nincs bekötve.";
+
+const letters = [
+  ["Megerősítéskor", "Üdv! Itt az 1. nap: telepítés"],
+  ["+1 nap", "2. nap: az első Botod"],
+  ["+2 nap", "3. nap: a jó kérés 5 eleme"],
+  ["+3 nap", "4. nap: appok és bejelentkezés"],
+  ["+4 nap", "5. nap: mentsd el skillként"],
+  ["+5 nap", "6. nap: első routine"],
+  ["+6 nap", "7. nap: jóváhagyások és biztonság"],
+];
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/hirlevel/"
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Hírlevél", path: "/hirlevel/" },
+  ]}
+>
+  <article class="prose">
+    <p class="eyebrow">Egy funkció, nem külön termék</p>
+    <h1>A 7 nap e-mailben</h1>
+    <p class="lede">
+      A lecke az oldalon él. A hírlevél ugyanennek a sornak a postai változata: megerősítés után napi egy levél, aztán
+      alkalmanként hír az új oldalakról.
+    </p>
+    <h2>Dupla megerősítés</h2>
+    <ol>
+      <li>Megadod az e-mail-címed, és külön bejelölöd a hozzájárulást. A négyzet üresen érkezik.</li>
+      <li>Kapsz egy megerősítő levelet, benne egy linkkel.</li>
+      <li>Amíg nem kattintasz, nem kerülsz a listára, és nem kapsz leckét.</li>
+      <li>A megerősítés után indul a sorozat. Minden levél alján egy kattintással leiratkozhatsz.</li>
+    </ol>
+    <p>
+      A nem megerősített címek törlési határideje még nincs eldöntve.
+      <span class="marker">[ELLENŐRIZENDŐ: hány nap után töröljük]</span>
+      Javaslat, nem beállítás: 7 nap.
+    </p>
+    <h2>Tervezett levél</h2>
+    <p class="fine">Tervezet. Amíg a szolgáltató nincs bekötve, egyetlen levél sem megy ki.</p>
+    <div class="table-wrap">
+      <table>
+        <caption>A hét levél tervezett tárgya</caption>
+        <thead>
+          <tr>
+            <th scope="col">Mikor</th>
+            <th scope="col">Tárgy</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            letters.map(([when, subject]) => (
+              <tr>
+                <td>{when}</td>
+                <td>{subject}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <p>
+      A levél rövid, a lecke az oldalon marad. Szponzori blokk az első sorozatban nincs. Részletek az
+      <a href="/adatkezeles/">adatkezelési tájékoztatóban</a>.
+    </p>
+  </article>
+  <div class="section">
+    <Signup variant="page" />
+  </div>
+</Base>

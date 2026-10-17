@@ -1,0 +1,42 @@
+---
+import { siteConfig } from "../lib/site";
+---
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="path-kicker">{siteConfig.name}</p>
+      <p>{siteConfig.tagline}. Független, nem hivatalos magyar útmutató.</p>
+    </div>
+    <div>
+      <h2>Tananyag</h2>
+      <ul>
+        <li><a href="/7-nap/">A 7 nap</a></li>
+        <li><a href="/7-nap/1-nap-telepites/">Kezdd az 1. nappal</a></li>
+        <li><a href="/forrasok/">Források és GYIK</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Az oldal</h2>
+      <ul>
+        <li><a href="/rolunk/">Rólunk</a></li>
+        <li><a href="/szponzoracio/">Szponzoráció</a></li>
+        <li><a href="/hirlevel/">Hírlevél</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Jogi</h2>
+      <ul>
+        <li><a href="/impresszum/">Impresszum</a></li>
+        <li><a href="/adatkezeles/">Adatkezelési tájékoztató</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap colophon">
+    <p>
+      Független, nem hivatalos magyar útmutató. A Grok Bot név és védjegy a jogosultjáé; az oldal nem áll
+      kapcsolatban vele. <span class="marker">[ELLENŐRIZENDŐ: védjegyhasználati megfogalmazás jogi átnézése]</span>
+    </p>
+    <p>Nincs cookie, nincs követőkód, nincs külső betű és nincs külső szkript. Utolsó frissítés: {siteConfig.updated}.</p>
+  </div>
+</footer>

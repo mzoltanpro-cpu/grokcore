@@ -1,0 +1,114 @@
+---
+import Base from "../layouts/Base.astro";
+import Signup from "../components/Signup.astro";
+import { days } from "../content/days";
+import { dayPath, siteConfig } from "../lib/site";
+
+const title = `${siteConfig.name} – Az első saját Grok Botod, 7 nap alatt`;
+const description =
+  "Magyar útmutató az első saját Grok Botig: hét rövid, forrásolt lecke. Telepítés, Bot, feladat, appok, skill, routine, jóváhagyás.";
+---
+
+<Base title={title} description={description} path="/" current="home">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Független útmutató · nem hivatalos</p>
+      <h1>Az első saját Grok Botod, hét nyugodt nap alatt.</h1>
+      <p class="lede">
+        Nem tudod, hol kezdd? A hivatalos dokumentáció angol, és több oldalra van szórva. A {siteConfig.courseName}
+        egy magyar útvonal: napi egy rövid lecke, körülbelül tizenöt perc, minden funkcióállítás forráslinkkel.
+      </p>
+      <div class="cta-row">
+        <a class="button" href="/7-nap/1-nap-telepites/">Kezdd az 1. nappal</a>
+        <a class="button button-ghost" href="/7-nap/">A 7 nap áttekintése</a>
+      </div>
+      <ul class="assurances">
+        <li>7 lecke, egy útvonal</li>
+        <li>Kb. 15 perc / nap, a mi becslésünk</li>
+        <li>Forrás: docs.x.ai</li>
+        <li>Nincs cookie, nincs követőkód</li>
+      </ul>
+    </div>
+    <aside class="path-card" aria-label="A hét nap">
+      <p class="path-kicker">{siteConfig.courseName}</p>
+      <ol>
+        {
+          days.map((day) => (
+            <li>
+              <a href={dayPath(day.slug)}>
+                <span class="path-num">0{day.n}</span>
+                <span>{day.nav}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ol>
+    </aside>
+  </section>
+
+  <section class="section" aria-labelledby="miert-cim">
+    <div class="section-head">
+      <h2 id="miert-cim">Miért egy útvonal, és nem hét külön fül?</h2>
+      <p>A doksi a forrás. Ez az oldal a sorrend, magyarul.</p>
+    </div>
+    <div class="grid-3">
+      <article class="principle">
+        <p class="principle-num">01</p>
+        <h3>Egy sorrend</h3>
+        <p>A Get started lépéseit egy vonalba fűzzük, a Botokról, az appokról, a skillekről és a jóváhagyásról szóló oldalakkal együtt.</p>
+      </article>
+      <article class="principle">
+        <p class="principle-num">02</p>
+        <h3>Magyarul, a szakszó marad</h3>
+        <p>A feliratok, a Take over, a skill és a routine eredeti nyelven szerepelnek. A magyarázat és a saját példák magyarok.</p>
+      </article>
+      <article class="principle">
+        <p class="principle-num">03</p>
+        <h3>Ami bizonytalan, jelölve van</h3>
+        <p>
+          Ha egy adatot nem tudtunk a nyilvános dokumentációból megerősíteni, <span class="marker">[ELLENŐRIZENDŐ]</span> marad.
+          Nem írunk árat forintban, és nem találunk ki statisztikát.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="leckek-cim">
+    <div class="section-head">
+      <h2 id="leckek-cim">A hét lecke</h2>
+      <p>Mindegyik önálló oldal, az előzőre épül, és a végén megmondja, mikor vagy kész.</p>
+    </div>
+    <div class="day-grid">
+      {
+        days.map((day) => (
+          <article class="day-card">
+            <p class="day-num">0{day.n}</p>
+            <h3>
+              <a href={dayPath(day.slug)}>{day.title.split(": ").slice(1).join(": ")}</a>
+            </h3>
+            <p>{day.card}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="vege-cim">
+    <div class="section-head">
+      <h2 id="vege-cim">A hetedik nap végére</h2>
+      <p>Ez a tananyag célja, nem egy mért eredmény. Sikerrátát nem ígérünk.</p>
+    </div>
+    <ul class="checklist">
+      <li>Fut az app, és be vagy jelentkezve.</li>
+      <li>Van egy Botod, egy feladattal és egy leírással.</li>
+      <li>Végigvittél egy kis, ellenőrizhető kérést.</li>
+      <li>Tudod, hogyan lépsz be egy appba, és hogy a munkamenet közös.</li>
+      <li>El tudsz menteni egy skillt, és érted, mire való a routine.</li>
+      <li>Van egy jóváhagyási határad: mit csinálhat a Bot, és hol áll meg.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <Signup variant="home" />
+  </section>
+</Base>

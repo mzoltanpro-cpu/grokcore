@@ -1,0 +1,81 @@
+---
+import Base from "../../layouts/Base.astro";
+import { days } from "../../content/days";
+import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
+
+const origin = siteOrigin(Astro.site);
+const title = `${siteConfig.courseName}: az első Grok Botod lépésről lépésre | ${siteConfig.name}`;
+const description =
+  "Hét rövid magyar lecke az első saját Grok Botig: telepítés, első Bot, első feladat, appok, skill, routine, jóváhagyások.";
+
+const courseLd = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "@id": `${origin}/7-nap/#course`,
+  name: `${siteConfig.courseName} – az első saját Grok Botod`,
+  description: `${siteConfig.tagline}. Naponta körülbelül 15 perc, a teljes út körülbelül 2 óra. Mindkettő a mi becslésünk.`,
+  inLanguage: "hu",
+  provider: { "@id": `${origin}/#organization` },
+  isAccessibleForFree: true,
+  educationalLevel: "Beginner",
+  availableLanguage: ["hu"],
+  hasCourseInstance: {
+    "@type": "CourseInstance",
+    courseMode: "online",
+    courseWorkload: "PT2H",
+  },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "HUF",
+    category: "Free",
+  },
+  hasPart: days.map((day) => ({
+    "@type": "CreativeWork",
+    name: day.title,
+    url: absUrl(origin, dayPath(day.slug)),
+  })),
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/7-nap/"
+  current="course"
+  jsonLd={[courseLd]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "A 7 nap", path: "/7-nap/" },
+  ]}
+>
+  <p class="eyebrow">{siteConfig.courseName}</p>
+  <h1>A Kezdő 7 nap</h1>
+  <p class="lede">
+    Napi egy rövid oldal. A végére van egy saját Botod, egy ellenőrizhető feladattal és egy kimondott jóváhagyási
+    határral. Az útmutató ingyenes. A Grok Bot használatához a dokumentáció szerint jogosult előfizetés kell.
+  </p>
+  <div class="cta-row">
+    <a class="button" href="/7-nap/1-nap-telepites/">Kezdd az 1. nappal</a>
+    <a class="button button-ghost" href="/forrasok/">Források és GYIK</a>
+  </div>
+  <ol class="day-grid plain-list">
+    {
+      days.map((day) => (
+        <li class="day-card">
+          <p class="day-num">0{day.n}</p>
+          <h2>
+            <a href={dayPath(day.slug)}>{day.title}</a>
+          </h2>
+          <p>{day.card}</p>
+          <p class="fine">Kb. 15 perc, a mi becslésünk.</p>
+        </li>
+      ))
+    }
+  </ol>
+  <p class="fine">
+    A <code>courseWorkload</code> a teljes útra körülbelül két óra, leckénként körülbelül 15 perc. Mindkettő a mi
+    becslésünk, nem hivatalos adat. A leckéket e-mailben is elkérheted, ha a szolgáltató be van kötve.
+    <a href="/hirlevel/">Hírlevél</a>.
+  </p>
+</Base>

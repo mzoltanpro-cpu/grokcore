@@ -1,0 +1,107 @@
+---
+import Base from "../layouts/Base.astro";
+import { docs } from "../content/docs";
+import { faq } from "../content/faq";
+import { siteConfig } from "../lib/site";
+
+const title = `Források és GYIK | ${siteConfig.name}`;
+const description =
+  "Hivatalos Grok Bot források és rövid magyar válaszok: előfizetés, közös gép, skill, routine, jóváhagyás, nyelv.";
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  inLanguage: "hu",
+  mainEntity: faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answerText,
+    },
+  })),
+};
+
+const official = [
+  { href: docs.start, title: "Get started", note: "Telepítés, első Bot, első feladat. A hét nap gerince." },
+  { href: docs.bots, title: "Create and manage Bots", note: "Szerep, leírás, memória, megosztás, törlés." },
+  { href: docs.apps, title: "Use the computer and apps", note: "Közös gép, Take over, Connect apps, fájlok." },
+  { href: docs.skills, title: "Skills and routines", note: "Skill, Teach a task, routine, Test run, korlátok." },
+  { href: docs.approve, title: "Approvals, security, and privacy", note: "Jóváhagyás, Auto Review, helyi gép." },
+  { href: docs.faq, title: "Frequently asked questions", note: "Platformok, árlogika, skill és routine." },
+  { href: docs.productCanonical, title: "Grok Bot termékoldal (x.ai/bot)", note: "A grokbot.com ide visz. Árak 2026-10-17-i lekérés szerint." },
+  { href: docs.plans, title: "Plans and billing", note: "A Get started erre hivatkozik. A lap tartalmát itt nem foglaljuk össze." },
+  { href: docs.pricing, title: "Cursor pricing", note: "A GYIK erre hivatkozik az aktuális feltételekért." },
+];
+
+const further = [
+  { href: docs.mobile, title: "Mobile" },
+  { href: docs.settings, title: "Settings and notifications" },
+  { href: docs.troubleshooting, title: "Troubleshooting" },
+  { href: docs.chat, title: "Chat and collaboration" },
+  { href: "https://docs.x.ai/grok-bot/files-and-results", title: "Files and results" },
+  { href: "https://docs.x.ai/grok-bot/team-bots", title: "Team Bots" },
+];
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/forrasok/"
+  current="resources"
+  jsonLd={[faqLd]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Források", path: "/forrasok/" },
+  ]}
+>
+  <p class="eyebrow">Források</p>
+  <h1>Források és GYIK</h1>
+  <p class="lede">
+    A Kezdő 7 nap a hivatalos, nyilvános dokumentációból épül. Itt vannak a belinkelt oldalak, és a kérdések, amelyeket
+    a leckék alatt a leggyakrabban feltesznek.
+  </p>
+
+  <section class="section" aria-labelledby="hivatalos-cim">
+    <h2 id="hivatalos-cim">Amit a leckék használnak</h2>
+    <ul class="resource-list">
+      {
+        official.map((item) => (
+          <li>
+            <a href={item.href}>{item.title}</a>
+            <span class="fine"> — {item.note}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="tovabbi-cim">
+    <h2 id="tovabbi-cim">További hivatalos oldalak</h2>
+    <p class="fine">
+      Ezek a dokumentáció navigációjában szerepelnek. A tartalmukat ehhez a GYIK-hez nem dolgoztuk fel, ezért itt csak
+      a címük és a linkjük van.
+    </p>
+    <ul class="resource-list">
+      {
+        further.map((item) => (
+          <li>
+            <a href={item.href}>{item.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="gyik-cim">
+    <h2 id="gyik-cim">Gyakori kérdések</h2>
+    {
+      faq.map((item) => (
+        <article class="faq-item">
+          <h3>{item.question}</h3>
+          <div set:html={item.answerHtml} />
+        </article>
+      ))
+    }
+  </section>
+</Base>
