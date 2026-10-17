@@ -169,6 +169,12 @@ if (!source.includes('provider: "noop"') || !source.includes('formAction: ""')) 
 }
 
 const queue = [...external];
+const blocked = [];
+// A GitHub-hosztolt futó IP-jét néhány hivatalos oldal (pl. a grokbot.com Vercel
+// botvédelme) 403-mal utasítja el, miközben a link böngészőből él. Ez nem törött
+// link: a 401/403/429 figyelmeztetés, a 404 és a többi 4xx/5xx hiba marad.
+const refusedStatuses = new Set(["401", "403", "429"]);
+
 async function probe(url) {
   let last = "nincs válasz";
   for (let attempt = 0; attempt < 2; attempt += 1) {
@@ -177,8 +183,9 @@ async function probe(url) {
         redirect: "follow",
         headers: {
           "user-agent":
-            "Mozilla/5.0 (compatible; BotkezdoLinkCheck/1.0; +https://www.example.com)",
-          accept: "text/html,application/xhtml+xml",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+          accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          "accept-language": "hu,en;q=0.8",
         },
         signal: AbortSignal.timeout(20000),
       });
@@ -187,6 +194,10 @@ async function probe(url) {
     } catch (error) {
       last = error instanceof Error ? error.message : "hiba";
     }
+  }
+  if (refusedStatuses.has(last)) {
+    blocked.push(`${last} ${url}`);
+    return;
   }
   fail(`Külső link nem érhető el (${last}): ${url}`);
 }
@@ -201,4 +212,10 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Rendben: ${htmlFiles.length} HTML, ${external.size} külső link, origin ${canonicalOrigin}.`);
+if (blocked.length) {
+  console.warn(`A futó környezetét a hoszt elutasította, a link ettől még a lapokon marad:\n${blocked.join("\n")}`);
+}
+
+console.log(
+  `Rendben: ${htmlFiles.length} HTML, ${external.size} külső link, ${blocked.length} elutasított ellenőrzés, origin ${canonicalOrigin}.`,
+);

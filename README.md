@@ -64,7 +64,7 @@ npm run build
 npm run check
 ```
 
-A `check` a legenerált HTML-t nézi: kötelező oldalak, belső linkek, egy `h1`, canonical, JSON-LD, a noop űrlap nem küld, HTML-lint, és hogy a forrásban nincs titok. A hivatalos külső linkek állapotát is lekéri.
+A `check` a legenerált HTML-t nézi: kötelező oldalak, belső linkek, egy `h1`, canonical, JSON-LD, a noop űrlap nem küld, HTML-lint, és hogy a forrásban nincs titok. A hivatalos külső linkek állapotát is lekéri. A 404 és a többi elérhetetlenség hibának számít. A 401, 403 és 429 nem: a GitHub-hosztolt futó IP-jét egyes oldalak (a grokbot.com botvédelme) elutasítják, miközben a link böngészőből él.
 
 ## Élesítés
 
