@@ -1,0 +1,61 @@
+---
+import Base from "../../layouts/Base.astro";
+import { days } from "../../content/days";
+import { worksheetMdPath, worksheetPath, worksheets } from "../../content/worksheets";
+import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
+
+const origin = siteOrigin(Astro.site);
+const title = `Gyakorlólapok a Kezdő 5 naphoz | ${siteConfig.name}`;
+const description =
+  "Öt letölthető, nyomtatható magyar gyakorlólap a Grok Bothoz: ellenőrzőlisták, kész promptok, hibaelhárítás, forrásokkal.";
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Gyakorlólapok a Kezdő 5 naphoz",
+  itemListElement: worksheets.map((sheet, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: absUrl(origin, worksheetPath(sheet.slug)),
+    name: sheet.title,
+  })),
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/gyakorlolapok/"
+  current="worksheets"
+  jsonLd={[ld]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Gyakorlólapok", path: "/gyakorlolapok/" },
+  ]}
+>
+  <p class="eyebrow">{siteConfig.courseName}</p>
+  <h1>Gyakorlólapok</h1>
+  <p class="lede">
+    Naponta egy lap: ellenőrzőlista, kész promptok és hibaelhárítás. Nyomtasd ki a böngészőből, vagy töltsd le
+    Markdownként. A saját példáinkat és a felhasználói idézeteket külön jelöljük.
+  </p>
+  <ol class="day-grid plain-list">
+    {
+      worksheets.map((sheet) => {
+        const day = days.find((item) => item.n === sheet.day)!;
+        return (
+          <li class="day-card">
+            <p class="day-num">0{day.n}</p>
+            <h2>
+              <a href={worksheetPath(sheet.slug)}>{day.title}</a>
+            </h2>
+            <p>{sheet.intro}</p>
+            <p class="fine">
+              <a href={worksheetMdPath(sheet.slug)} download>Markdown</a> · <a href={dayPath(day.slug)}>A lecke</a>
+            </p>
+          </li>
+        );
+      })
+    }
+  </ol>
+</Base>

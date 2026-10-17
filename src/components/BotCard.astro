@@ -1,0 +1,54 @@
+---
+import type { MarketplaceBot } from "../content/marketplace";
+import { appKey, appName, categoryKey, categoryLabel, dayLabel, marketplacePath } from "../content/marketplace";
+
+interface Props {
+  bot: MarketplaceBot;
+  headingLevel?: 2 | 3;
+}
+
+const { bot, headingLevel = 3 } = Astro.props;
+const Heading = headingLevel === 2 ? "h2" : "h3";
+const apps = [...new Set(bot.integrations.map((item) => appName(item.name)))];
+const searchText = [bot.name, bot.author, bot.summaryHu, ...bot.categoriesHu, ...apps].join(" ").toLowerCase();
+---
+
+<li
+  class="bot-card"
+  data-bot
+  data-cats={bot.categories.map(categoryKey).join(" ")}
+  data-days={bot.days.join(" ")}
+  data-apps={[...new Set(bot.integrations.map((item) => appKey(item.name)))].join(" ")}
+  data-search={searchText}
+>
+  <Heading class="bot-name">
+    <a href={marketplacePath(bot.slug)}>{bot.name}</a>
+  </Heading>
+  <p class="bot-by">
+    {bot.author}
+    {bot.categories.length ? ` · ${bot.categories.map(categoryLabel).join(", ")}` : ""}
+  </p>
+  <p>{bot.summaryHu}</p>
+  {
+    bot.days.length > 0 && (
+      <p class="tag-row">
+        {bot.days.map((n) => (
+          <span class="tag tag-day">{dayLabel(n)}</span>
+        ))}
+      </p>
+    )
+  }
+  {
+    apps.length > 0 && (
+      <p class="tag-row">
+        {apps.slice(0, 6).map((name) => (
+          <span class="tag">{name}</span>
+        ))}
+        {apps.length > 6 && <span class="tag">+{apps.length - 6}</span>}
+      </p>
+    )
+  }
+  <p class="fine">
+    <a href={marketplacePath(bot.slug)}>Részletek</a> · <a href={bot.sourceUrl}>Forrás (x.ai)</a>
+  </p>
+</li>

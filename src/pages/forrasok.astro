@@ -1,0 +1,136 @@
+---
+import Base from "../layouts/Base.astro";
+import { docs } from "../content/docs";
+import { faq } from "../content/faq";
+import { days } from "../content/days";
+import { siteConfig } from "../lib/site";
+
+const title = `Források és GYIK | ${siteConfig.name}`;
+const description =
+  "Hivatalos Grok Bot források és rövid magyar válaszok: előfizetés, közös gép, skill, routine, jóváhagyás, nyelv.";
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  inLanguage: "hu",
+  mainEntity: faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answerText,
+    },
+  })),
+};
+
+const official = [
+  { href: docs.start, title: "Get started", note: "Telepítés, első Bot, első feladat. Az öt nap gerince." },
+  { href: docs.bots, title: "Create and manage Bots", note: "Szerep, leírás, memória, megosztás, törlés." },
+  { href: docs.apps, title: "Use the computer and apps", note: "Közös gép, Take over, Connect apps, fájlok." },
+  { href: docs.skills, title: "Skills and routines", note: "Skill, Teach a task, routine, Test run, korlátok." },
+  { href: docs.approve, title: "Approvals, security, and privacy", note: "Jóváhagyás, Auto Review, helyi gép." },
+  { href: docs.faq, title: "Frequently asked questions", note: "Platformok, árlogika, skill és routine." },
+  { href: docs.productCanonical, title: "Grok Bot termékoldal (x.ai/bot)", note: "A grokbot.com ide visz. Árak 2026-10-17-i lekérés szerint." },
+  { href: docs.faqCursor, title: "Grok Bot GYIK (cursor.com)", note: "Előfizetés, letöltés helye, belépési hurok, próbakredit." },
+  { href: docs.startCursor, title: "Get started (cursor.com)", note: "Letöltés a Cursor dashboardról, belépés Cursor-fiókkal, első próba." },
+  { href: docs.changelog, title: "Grok Bot changelog", note: "Magyar nyelv a 0.58.0-s verziótól (2026-09-22)." },
+  { href: docs.plans, title: "Plans and billing", note: "A Get started erre hivatkozik. A lap tartalmát itt nem foglaljuk össze." },
+  { href: docs.pricing, title: "Cursor pricing", note: "A GYIK erre hivatkozik az aktuális feltételekért." },
+];
+
+const communitySeen = new Set<string>();
+const communityList = days.flatMap((day) =>
+  day.sources
+    .filter((source) => source.kind === "kozosseg" && !communitySeen.has(source.url) && communitySeen.add(source.url))
+    .map((source) => ({ ...source, day: day.n })),
+);
+
+const further = [
+  { href: docs.mobile, title: "Mobile" },
+  { href: docs.settings, title: "Settings and notifications" },
+  { href: docs.troubleshooting, title: "Troubleshooting" },
+  { href: docs.chat, title: "Chat and collaboration" },
+  { href: "https://docs.x.ai/grok-bot/files-and-results", title: "Files and results" },
+  { href: "https://docs.x.ai/grok-bot/team-bots", title: "Team Bots" },
+];
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/forrasok/"
+  current="resources"
+  jsonLd={[faqLd]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Források", path: "/forrasok/" },
+  ]}
+>
+  <p class="eyebrow">Források</p>
+  <h1>Források és GYIK</h1>
+  <p class="lede">
+    A Kezdő 5 nap tényei a hivatalos, nyilvános dokumentációból jönnek, a sorrend és a buktatók valódi felhasználók
+    nyilvános bejegyzéseiből. Itt vannak a belinkelt oldalak, és a leggyakoribb kérdések.
+  </p>
+
+  <section class="section" aria-labelledby="hivatalos-cim">
+    <h2 id="hivatalos-cim">Amit a leckék használnak</h2>
+    <ul class="resource-list">
+      {
+        official.map((item) => (
+          <li>
+            <a href={item.href}>{item.title}</a>
+            <span class="fine"> — {item.note}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="kozosseg-cim">
+    <h2 id="kozosseg-cim">Felhasználói tapasztalatok</h2>
+    <p class="fine">
+      Nyilvános X-, Reddit- és fórumbejegyzések, amelyekre a leckék hivatkoznak. Ezek egyéni tapasztalatok, nem hivatalos
+      állítások. Az idézetek a leckékben eredeti nyelven szerepelnek.
+    </p>
+    <ul class="resource-list">
+      {
+        communityList.map((item) => (
+          <li>
+            <a href={item.url}>{item.title}</a>
+            <span class="fine"> — {item.day}. nap</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="tovabbi-cim">
+    <h2 id="tovabbi-cim">További hivatalos oldalak</h2>
+    <p class="fine">
+      Ezek a dokumentáció navigációjában szerepelnek. A tartalmukat ehhez a GYIK-hez nem dolgoztuk fel, ezért itt csak
+      a címük és a linkjük van.
+    </p>
+    <ul class="resource-list">
+      {
+        further.map((item) => (
+          <li>
+            <a href={item.href}>{item.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="gyik-cim">
+    <h2 id="gyik-cim">Gyakori kérdések</h2>
+    {
+      faq.map((item) => (
+        <article class="faq-item">
+          <h3>{item.question}</h3>
+          <div set:html={item.answerHtml} />
+        </article>
+      ))
+    }
+  </section>
+</Base>

@@ -1,0 +1,144 @@
+---
+import Base from "../layouts/Base.astro";
+import { docs } from "../content/docs";
+import { siteConfig } from "../lib/site";
+
+const title = `Adatkezelési tájékoztató | ${siteConfig.name}`;
+const description = `Hogyan kezeli a(z) ${siteConfig.name} a hírlevél-feliratkozók adatait. GDPR és Infotv., a szolgáltató még nincs bekötve.`;
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/adatkezeles/"
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Adatkezelési tájékoztató", path: "/adatkezeles/" },
+  ]}
+>
+  <article class="prose legal">
+    <h1>Adatkezelési tájékoztató</h1>
+    <p class="note">
+      <strong>Vázlat.</strong> Élesítés előtt jogi átnézés szükséges.
+      <span class="marker">[ELLENŐRIZENDŐ]</span>
+      Hatály: <span class="marker">[DÁTUM]</span>. A szöveg alapja a 2026-10-17-i tervezet.
+    </p>
+    <p>
+      Ez a tájékoztató az Európai Parlament és a Tanács (EU) 2016/679 rendelete (GDPR) és az információs
+      önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvény (Infotv.) alapján készült.
+    </p>
+
+    <h2>1. Az adatkezelő</h2>
+    <p>
+      Név: <span class="marker">[ÜZEMELTETŐ NEVE]</span>, cím: <span class="marker">[CÍM]</span>, e-mail:
+      <span class="marker">[PROJEKT E-MAIL-CÍM]</span>. Adatvédelmi tisztviselő:
+      <span class="marker">[HA VAN]</span>.
+      <span class="marker">[ELLENŐRIZENDŐ: kötelező-e adatvédelmi tisztviselőt kijelölni]</span>
+    </p>
+
+    <h2>2. Milyen adatokat kezelünk a weboldalon?</h2>
+    <p>
+      Az oldal nem használ cookie-t, analitikát vagy külső követőkódot, és nem tölt be külső betűtípust vagy szkriptet.
+      A világos vagy sötét téma választása a böngésző helyi tárolójában maradhat (<code>localStorage</code>, kulcs:
+      <code>{siteConfig.themeStorageKey}</code>). Ezt az adatot nem küldjük sehova, és nem sütiként tároljuk.
+    </p>
+    <p>
+      A tárhelyszolgáltató a működéshez technikai naplót (például IP-cím, időpont, kért oldal) vezethet.
+      <span class="marker">[TÁRHELYSZOLGÁLTATÓ NAPLÓZÁSA ÉS MEGŐRZÉSI IDEJE]</span>
+    </p>
+
+    <h2>3. Hírlevél és az 5 napos e-mail-sorozat</h2>
+    <p>
+      A szolgáltató még nincs bekötve. Amíg nincs, az űrlap nem továbbít és nem tárol e-mail-címet. A lenti sor a
+      bekötés utáni rend.
+    </p>
+    <div class="table-wrap">
+      <table>
+        <caption>A hírlevél adatkezelése, ha a szolgáltató be van kötve</caption>
+        <tbody>
+          <tr>
+            <th scope="row">Cél</th>
+            <td>A {siteConfig.courseName} leckéinek és a hírlevélnek a megküldése.</td>
+          </tr>
+          <tr>
+            <th scope="row">Kezelt adatok</th>
+            <td>
+              E-mail-cím; a feliratkozás és a megerősítés időpontja; a szolgáltatótól függően IP-cím. Levélmegnyitási és
+              kattintási adatot nem kezelünk, amíg ezt külön el nem döntjük, és a tájékoztatót frissítjük.
+              <span class="marker">[DÖNTÉS: követés ki vagy be]</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Jogalap</th>
+            <td>
+              Az érintett hozzájárulása (GDPR 6. cikk (1) bekezdés a) pont). A hozzájárulást külön, előre be nem jelölt
+              jelölőnégyzettel kérjük, és dupla megerősítéssel (megerősítő link) igazoljuk.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Megőrzés</th>
+            <td>
+              A hozzájárulás visszavonásáig (leiratkozásig). A le nem erősített feliratkozást
+              14 nap után töröljük. A hozzájárulás
+              igazolására szolgáló adatokat (időpontok)
+              <span class="marker">[IDŐTARTAM]</span> ideig őrizzük.
+              <span class="marker">[ELLENŐRIZENDŐ]</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Adatfeldolgozó</th>
+            <td>
+              <span class="marker">[HÍRLEVÉL-SZOLGÁLTATÓ NEVE, CÍME, ADATKEZELÉS HELYE]</span>. Ha az adatkezelés az
+              EGT-n kívül történik, a továbbítás garanciáit itt ismertetjük.
+              <span class="marker">[ELLENŐRIZENDŐ]</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Hozzájárulás visszavonása</th>
+            <td>
+              Bármikor, minden levél alján lévő leiratkozó linkkel vagy a kapcsolat e-mail-címen. A visszavonás nem
+              érinti a korábbi adatkezelés jogszerűségét.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine">
+      Ha a hírlevél reklámot, például szponzori tartalmat is tartalmaz, a gazdasági reklámtevékenység alapvető
+      feltételeiről és egyes korlátairól szóló 2008. évi XLVIII. törvény 6. §-a szerinti hozzájárulás is szükséges
+      lehet. <span class="marker">[ELLENŐRIZENDŐ: jogász]</span>
+    </p>
+
+    <h2>4. Az érintett jogai</h2>
+    <ul>
+      <li>tájékoztatás és hozzáférés (GDPR 15. cikk),</li>
+      <li>helyesbítés (16. cikk),</li>
+      <li>törlés (17. cikk),</li>
+      <li>az adatkezelés korlátozása (18. cikk),</li>
+      <li>adathordozhatóság (20. cikk),</li>
+      <li>a hozzájárulás bármikori visszavonása (7. cikk (3) bekezdés).</li>
+    </ul>
+    <p>
+      Kérelemre legkésőbb egy hónapon belül válaszolunk (GDPR 12. cikk (3) bekezdés). Kérelem:
+      <span class="marker">[PROJEKT E-MAIL-CÍM]</span>.
+    </p>
+
+    <h2>5. Jogorvoslat</h2>
+    <p>Panasszal a felügyeleti hatósághoz fordulhatsz (GDPR 77. cikk):</p>
+    <p>
+      <strong>Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)</strong><br />
+      Székhely: 1055 Budapest, Falk Miksa utca 9-11.<br />
+      Postacím: 1363 Budapest, Pf.: 9.<br />
+      Telefon: +36 (1) 391-1400<br />
+      E-mail: ugyfelszolgalat@naih.hu (eljárás e-mailben nem kezdeményezhető)<br />
+      Honlap: <a href={docs.naih}>https://www.naih.hu</a><br />
+      Online ügyindítás: <a href={docs.naihOnline}>https://naih.hu/online-ugyinditas</a>
+    </p>
+    <p class="fine">Forrás: a NAIH honlapja, lekérve {siteConfig.updated}-én.</p>
+    <p>
+      Bírósághoz is fordulhatsz (GDPR 79. cikk). A pert a lakóhelyed vagy tartózkodási helyed szerinti törvényszék előtt
+      is megindíthatod.
+      <span class="marker">[ELLENŐRIZENDŐ: az Infotv. pontos paragrafusa]</span>
+    </p>
+  </article>
+</Base>

@@ -1,0 +1,56 @@
+---
+import Base from "../layouts/Base.astro";
+import { siteConfig } from "../lib/site";
+
+const title = `Szponzoráció | ${siteConfig.name}`;
+const description =
+  "Szponzori együttműködés a Botkezdőn: jelölt említés, logófal nélkül, közönségszám nélkül. Kapcsolat helyőrző.";
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/szponzoracio/"
+  current="sponsors"
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Szponzoráció", path: "/szponzoracio/" },
+  ]}
+>
+  <article class="prose">
+    <p class="eyebrow">Együttműködés</p>
+    <h1>Szponzoráció</h1>
+    <p class="lede">
+      A {siteConfig.name} magyarul vezet végig az első Grok Botig. Ha a témád ehhez a közönséghez szól, itt lehet róla
+      szó. Mért elérésünk nincs, ezért számot nem írunk ki.
+    </p>
+    <h2>Amit kínálunk</h2>
+    <ul>
+      <li>
+        Egyértelműen jelölt szponzori említés a {siteConfig.courseName} áttekintő oldalán: rövid szöveg és egy link,
+        „Szponzor” felirattal.
+      </li>
+      <li>
+        Később, ha a hírlevél elindul, alkalmi említés ugyanígy jelölve. Az első leckesorozatban szponzori blokk nincs.
+      </li>
+      <li>A szöveg egyeztetett, és elkülönül a forrásolt tananyagtól.</li>
+    </ul>
+    <h2>Amit nem kínálunk</h2>
+    <ul>
+      <li>Nincs logófal. Logót csak érvényes megállapodás után teszünk ki, és most egy sincs.</li>
+      <li>Nem írunk álvéleményt, és nem rejtjük el a fizetett említést.</li>
+      <li>A feliratkozói listát nem adjuk át.</li>
+      <li>Nem ígérünk megtekintést, kattintást vagy vásárlást. Ilyen adatunk nincs.</li>
+    </ul>
+    <h2>Kapcsolat</h2>
+    <p>
+      Írás a projekt e-mail-címére megy, ha az már szerepel az <a href="/impresszum/">impresszumban</a>. Addig a cím
+      helyőrző: <span class="marker">[PROJEKT E-MAIL-CÍM]</span>. Ez az oldal üzenetet nem fogad, és nem ajánlat.
+    </p>
+    <p>
+      Megállapodást csak az üzemeltető hagy jóvá. Ha a hírlevél reklámot tartalmazna, a gazdasági reklámtevékenységről
+      szóló törvény szerinti külön hozzájárulás is kellhet.
+      <span class="marker">[ELLENŐRIZENDŐ: jogász, Grt. 6. §]</span>
+    </p>
+  </article>
+</Base>

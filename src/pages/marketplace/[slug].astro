@@ -1,0 +1,296 @@
+---
+import Base from "../../layouts/Base.astro";
+import MarketplaceNote from "../../components/MarketplaceNote.astro";
+import { days } from "../../content/days";
+import {
+  appName,
+  categoryKey,
+  categoryLabel,
+  dayLabel,
+  marketplaceBots,
+  marketplacePath,
+  type MarketplaceBot,
+} from "../../content/marketplace";
+import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
+
+export function getStaticPaths() {
+  return marketplaceBots.map((bot) => ({ params: { slug: bot.slug }, props: { bot } }));
+}
+
+interface Props {
+  bot: MarketplaceBot;
+}
+
+const { bot } = Astro.props;
+const origin = siteOrigin(Astro.site);
+const path = marketplacePath(bot.slug);
+const firstSentence = bot.summaryHu.split(". ")[0].replace(/\.$/, "");
+const title = `${bot.name} – Grok Bot magyarul (nem hivatalos) | ${siteConfig.name}`;
+const description = `${bot.name} (${bot.author}): ${firstSentence}. Memória, skillek, routine-ok, integrációk és forrás egy helyen, magyarul.`.slice(
+  0,
+  300,
+);
+const missing = "A listing nem tartalmaz erről adatot.";
+const index = marketplaceBots.findIndex((item) => item.slug === bot.slug);
+const related = marketplaceBots
+  .filter((item) => item.slug !== bot.slug && item.categories.some((c) => c !== "From Grok Bot Team" && bot.categories.includes(c)))
+  .slice(0, 4);
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: bot.name,
+  url: absUrl(origin, path),
+  inLanguage: "hu",
+  description: bot.summaryHu,
+  applicationCategory: "BusinessApplication",
+  author: { "@type": "Person", name: bot.author },
+  sameAs: bot.sourceUrl,
+  isPartOf: { "@type": "WebPage", url: absUrl(origin, "/marketplace/") },
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  path={path}
+  current="marketplace"
+  ogType="article"
+  jsonLd={[ld]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Marketplace magyarul", path: "/marketplace/" },
+    { name: bot.name, path },
+  ]}
+>
+  <article class="prose bot-page" data-bot-page={bot.slug}>
+    <p class="eyebrow">
+      <a href="/marketplace/">Marketplace magyarul</a> · nem hivatalos összefoglaló
+    </p>
+    <h1>{bot.name}</h1>
+    <ul class="meta-row">
+      <li>Készítő: {bot.author}</li>
+      {bot.featured && <li>Kiemelt a hivatalos oldalon</li>}
+      <li>Lekérve: <time datetime={bot.fetched}>{bot.fetched}</time></li>
+    </ul>
+
+    <section class="bot-block" id="leiras" data-block="leiras">
+      <h2>Leírás</h2>
+      <p class="lede">{bot.summaryHu}</p>
+      {bot.forWhomHu && <p><strong>Kinek ajánljuk:</strong> {bot.forWhomHu}</p>}
+      <figure class="quote-box">
+        <blockquote cite={bot.sourceUrl}>
+          <p lang="en">{bot.descriptionQuote}</p>
+        </blockquote>
+        <figcaption class="fine">Eredeti idézet a listingből (angol): <a href={bot.sourceUrl}>{bot.name} · x.ai</a></figcaption>
+      </figure>
+    </section>
+
+    <section class="bot-block" id="memoria" data-block="memoria">
+      <h2>Memória</h2>
+      {
+        bot.memory.count > 0 ? (
+          <>
+            <p>
+              A listing <strong>{bot.memory.count}</strong> memóriabejegyzést sorol fel („Facts it already knows”). Ezek a
+              témák szerepelnek bennük (a mi kulcsszavas besorolásunk):
+            </p>
+            <ul class="tick-list">
+              {bot.memory.themes.map((theme) => (
+                <li>{theme.label}</li>
+              ))}
+            </ul>
+            {bot.memory.quote && (
+              <figure class="quote-box">
+                <blockquote cite={bot.sourceUrl}>
+                  <p lang="en">{bot.memory.quote}</p>
+                </blockquote>
+                <figcaption class="fine">Az első memóriabejegyzés eleje (angol idézet): <a href={bot.sourceUrl}>x.ai</a></figcaption>
+              </figure>
+            )}
+          </>
+        ) : (
+          <p>{missing}</p>
+        )
+      }
+    </section>
+
+    <section class="bot-block" id="skillek" data-block="skillek">
+      <h2>Skillek</h2>
+      {
+        bot.skills.length > 0 ? (
+          <>
+            <p>{bot.skills.length} skill („Playbooks it can run”). A név eredetiben, mellette a listing rövid angol leírása idézetként.</p>
+            <dl class="bot-list">
+              {bot.skills.map((skill) => (
+                <div>
+                  <dt>
+                    <code>{skill.name}</code>
+                  </dt>
+                  {skill.quote && (
+                    <dd lang="en">„{skill.quote}”</dd>
+                  )}
+                </div>
+              ))}
+            </dl>
+          </>
+        ) : (
+          <p>{missing}</p>
+        )
+      }
+    </section>
+
+    <section class="bot-block" id="rutinok" data-block="rutinok">
+      <h2>Rutinok</h2>
+      {
+        bot.routines.length > 0 ? (
+          <>
+            <p>{bot.routines.length} routine („Jobs that run on their own”). Az ütemezés-címke a listing szövegéből származik.</p>
+            <dl class="bot-list">
+              {bot.routines.map((routine) => (
+                <div>
+                  <dt>
+                    <code>{routine.name}</code>
+                  </dt>
+                  {routine.schedule.length > 0 && (
+                    <dd class="tag-row">
+                      {routine.schedule.map((tag) => (
+                        <span class="tag">{tag}</span>
+                      ))}
+                    </dd>
+                  )}
+                  {routine.quote && <dd lang="en">„{routine.quote}”</dd>}
+                </div>
+              ))}
+            </dl>
+          </>
+        ) : (
+          <p>{missing}</p>
+        )
+      }
+    </section>
+
+    <section class="bot-block" id="integraciok" data-block="integraciok">
+      <h2>Integrációk</h2>
+      {
+        bot.integrations.length > 0 ? (
+          <>
+            <p>{bot.integrations.length} app („Apps it can use”).</p>
+            <dl class="bot-list">
+              {bot.integrations.map((item) => (
+                <div>
+                  <dt>
+                    {appName(item.name)}
+                    {item.status && <span class="tag">{item.status}</span>}
+                  </dt>
+                  {item.quote && <dd lang="en">„{item.quote}”</dd>}
+                </div>
+              ))}
+            </dl>
+          </>
+        ) : (
+          <p>{missing}</p>
+        )
+      }
+    </section>
+
+    <section class="bot-block" id="keszito" data-block="keszito">
+      <h2>Készítő</h2>
+      <p>{bot.author} (a hivatalos listing szerint).</p>
+    </section>
+
+    <section class="bot-block" id="kategoria" data-block="kategoria">
+      <h2>Kategória</h2>
+      {
+        bot.categories.length > 0 ? (
+          <p class="tag-row">
+            {bot.categories.map((category) => (
+              <a class="tag" href={`/marketplace/?kategoria=${categoryKey(category)}#katalogus`}>
+                {categoryLabel(category)}
+              </a>
+            ))}
+          </p>
+        ) : (
+          <p>A listing nem sorolja kategóriába; a hivatalos oldalon a kiemelt botok között szerepel.</p>
+        )
+      }
+    </section>
+
+    <section class="bot-block" id="nap" data-block="nap">
+      <h2>Melyik naphoz illik?</h2>
+      {
+        bot.days.length > 0 ? (
+          <ul class="plain-list tag-row">
+            {bot.days.map((n) => {
+              const day = days.find((item) => item.n === n)!;
+              return (
+                <li>
+                  <a class="tag tag-day" href={dayPath(day.slug)}>
+                    {dayLabel(n)}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <p>Haladó vagy szakmai bot: a {siteConfig.courseName} egyik napjához sem ajánljuk külön.</p>
+        )
+      }
+      <p class="fine">A besorolás a mi javaslatunk a listing leírása alapján.</p>
+    </section>
+
+    <section class="bot-block sources" id="forras" data-block="forras">
+      <h2>Forrás</h2>
+      <p>
+        <a href={bot.sourceUrl} data-source-link>{bot.sourceUrl}</a> · lekérve: {bot.fetched}
+      </p>
+    </section>
+
+    <MarketplaceNote />
+  </article>
+
+  {
+    related.length > 0 && (
+      <section class="section" aria-labelledby="hasonlo">
+        <h2 id="hasonlo">Hasonló botok</h2>
+        <ul class="plain-list mp-mini">
+          {related.map((item) => (
+            <li>
+              <a href={marketplacePath(item.slug)}>{item.name}</a>
+              <span class="fine"> – {item.author}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <nav class="pager" aria-label="Lapozás a botok között">
+    {
+      index > 0 ? (
+        <a rel="prev" href={marketplacePath(marketplaceBots[index - 1].slug)}>
+          <span class="fine">Előző</span>
+          <span>{marketplaceBots[index - 1].name}</span>
+        </a>
+      ) : (
+        <a rel="prev" href="/marketplace/">
+          <span class="fine">Vissza</span>
+          <span>A katalógus</span>
+        </a>
+      )
+    }
+    {
+      index < marketplaceBots.length - 1 ? (
+        <a class="next" rel="next" href={marketplacePath(marketplaceBots[index + 1].slug)}>
+          <span class="fine">Következő</span>
+          <span>{marketplaceBots[index + 1].name}</span>
+        </a>
+      ) : (
+        <a class="next" rel="next" href="/marketplace/">
+          <span class="fine">Vissza</span>
+          <span>A katalógus</span>
+        </a>
+      )
+    }
+  </nav>
+</Base>

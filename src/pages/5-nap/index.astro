@@ -1,0 +1,86 @@
+---
+import Base from "../../layouts/Base.astro";
+import { days } from "../../content/days";
+import { worksheetPath } from "../../content/worksheets";
+import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
+
+const origin = siteOrigin(Astro.site);
+const title = `${siteConfig.courseName}: az első Grok Botod lépésről lépésre | ${siteConfig.name}`;
+const description =
+  "Öt rövid magyar lecke a Grok Bothoz: letöltés és belépés, appok, első feladat, skill és routine, második Bot és biztonság. Naponta egy feladat és egy gyakorlólap.";
+
+const courseLd = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "@id": `${origin}/5-nap/#course`,
+  name: `${siteConfig.courseName} – az első saját Grok Botod`,
+  description: `${siteConfig.tagline}. Naponta körülbelül 15 perc, a teljes út körülbelül 75 perc. Mindkettő a mi becslésünk.`,
+  inLanguage: "hu",
+  provider: { "@id": `${origin}/#organization` },
+  isAccessibleForFree: true,
+  educationalLevel: "Beginner",
+  availableLanguage: ["hu"],
+  hasCourseInstance: {
+    "@type": "CourseInstance",
+    courseMode: "online",
+    courseWorkload: "PT1H15M",
+  },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "HUF",
+    category: "Free",
+  },
+  hasPart: days.map((day) => ({
+    "@type": "LearningResource",
+    name: day.title,
+    description: day.task,
+    url: absUrl(origin, dayPath(day.slug)),
+    position: day.n,
+  })),
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/5-nap/"
+  current="course"
+  jsonLd={[courseLd]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Az 5 nap", path: "/5-nap/" },
+  ]}
+>
+  <p class="eyebrow">{siteConfig.courseName}</p>
+  <h1>A Kezdő 5 nap</h1>
+  <p class="lede">
+    Napi egy rövid oldal, egy egyértelmű feladattal és egy letölthető gyakorlólappal. A végére fut az app, be vannak
+    kötve az appjaid, van egy bevált feladatod és egy routine-od, és tudod, hol álljon meg a Bot. Az útmutató ingyenes. A Grok Bot használatához a dokumentáció szerint jogosult előfizetés kell.
+  </p>
+  <div class="cta-row">
+    <a class="button" href="/5-nap/1-nap-letoltes-belepes/">Kezdd az 1. nappal</a>
+    <a class="button button-ghost" href="/gyakorlolapok/">Gyakorlólapok</a>
+  </div>
+  <ol class="day-grid plain-list">
+    {
+      days.map((day) => (
+        <li class="day-card">
+          <p class="day-num">0{day.n}</p>
+          <h2>
+            <a href={dayPath(day.slug)}>{day.title}</a>
+          </h2>
+          <p>{day.card}</p>
+          <p class="fine">
+            Kb. 15 perc, a mi becslésünk. <a href={worksheetPath(day.slug)}>Gyakorlólap</a>
+          </p>
+        </li>
+      ))
+    }
+  </ol>
+  <p class="fine">
+    A <code>courseWorkload</code> a teljes útra körülbelül 75 perc, leckénként körülbelül 15 perc. Mindkettő a mi
+    becslésünk, nem hivatalos adat. A leckéket e-mailben is elkérheted, ha a szolgáltató be van kötve.
+    <a href="/hirlevel/">Hírlevél</a>.
+  </p>
+</Base>

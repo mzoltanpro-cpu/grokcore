@@ -1,0 +1,74 @@
+---
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Seo from "../components/Seo.astro";
+import { siteConfig } from "../lib/site";
+
+interface Crumb {
+  name: string;
+  path: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  current?: string;
+  ogType?: "website" | "article";
+  noindex?: boolean;
+  jsonLd?: unknown[];
+  crumbs?: Crumb[];
+  prev?: string;
+  next?: string;
+}
+
+const props = Astro.props;
+---
+
+<!doctype html>
+<html lang={siteConfig.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#131512" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <Seo {...props} />
+    <script is:inline define:vars={{ themeKey: siteConfig.themeStorageKey }}>
+      (function () {
+        try {
+          var stored = localStorage.getItem(themeKey);
+          if (stored === "light" || stored === "dark") {
+            document.documentElement.setAttribute("data-theme", stored);
+          }
+        } catch (error) {}
+        document.addEventListener(
+          "submit",
+          function (event) {
+            var form = event.target;
+            if (!form || !form.getAttribute) return;
+            if (form.getAttribute("data-newsletter-provider") === "noop") {
+              event.preventDefault();
+            }
+          },
+          true,
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <Header current={props.current} />
+    <main id="tartalom">
+      <div class="wrap">
+        <slot />
+      </div>
+    </main>
+    <Footer />
+    <script>
+      import { initPage } from "../scripts/ui";
+      initPage();
+    </script>
+  </body>
+</html>

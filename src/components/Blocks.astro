@@ -1,0 +1,85 @@
+---
+import type { Block, Step } from "../content/types";
+
+interface Props {
+  blocks: Block[];
+  steps: Step[];
+}
+
+const { blocks, steps } = Astro.props;
+---
+
+{
+  blocks.map((block) => (
+    <>
+      {block.type === "h2" && <h2>{block.text}</h2>}
+      {block.type === "p" && <p set:html={block.html} />}
+      {block.type === "note" && <p class="note" set:html={block.html} />}
+      {block.type === "ul" && (
+        <ul>
+          {block.items.map((item) => (
+            <li set:html={item} />
+          ))}
+        </ul>
+      )}
+      {block.type === "ol" && (
+        <ol>
+          {block.items.map((item) => (
+            <li set:html={item} />
+          ))}
+        </ol>
+      )}
+      {block.type === "steps" && (
+        <ol class="steps">
+          {steps.map((step) => (
+            <li>
+              <strong>{`${step.name}.`}</strong>
+              {" "}
+              {step.text}
+            </li>
+          ))}
+        </ol>
+      )}
+      {block.type === "prompt" && (
+        <figure class="prompt">
+          <figcaption>{block.label}</figcaption>
+          <pre><code>{block.code}</code></pre>
+          {block.caption && <p class="caption" set:html={block.caption} />}
+        </figure>
+      )}
+      {block.type === "table" && (
+        <div class="table-wrap">
+          <table>
+            <caption>{block.caption}</caption>
+            <thead>
+              <tr>
+                {block.headers.map((header) => (
+                  <th scope="col">{header}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row) => (
+                <tr>
+                  {row.map((cell) => (
+                    <td set:html={cell} />
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+      {block.type === "done" && (
+        <section class="done-box">
+          <h2>Kész vagy, ha…</h2>
+          <ul>
+            {block.items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </>
+  ))
+}

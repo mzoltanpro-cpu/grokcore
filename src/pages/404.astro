@@ -1,0 +1,20 @@
+---
+import Base from "../layouts/Base.astro";
+import { siteConfig } from "../lib/site";
+
+const title = `Nincs ilyen oldal | ${siteConfig.name}`;
+const description = "A kért oldal nem található. Vissza a Botkezdő kezdőlapjára vagy az 1. naphoz.";
+---
+
+<Base title={title} description={description} path="/404.html" noindex>
+  <section class="not-found-panel">
+    <p class="eyebrow">404</p>
+    <h1>Ez az oldal nincs meg.</h1>
+    <p class="lede">A cím elírás lehet, vagy a lap még nem készült el. Az öt nap, a gyakorlólapok és a források megvannak.</p>
+    <div class="cta-row">
+      <a class="button" href="/">Vissza a kezdőlapra</a>
+      <a class="button button-ghost" href="/5-nap/1-nap-letoltes-belepes/">1. nap</a>
+      <a class="button button-ghost" href="/forrasok/">Források</a>
+    </div>
+  </section>
+</Base>

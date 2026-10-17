@@ -1,0 +1,141 @@
+---
+import Base from "../../layouts/Base.astro";
+import Blocks from "../../components/Blocks.astro";
+import DayNav from "../../components/DayNav.astro";
+import Signup from "../../components/Signup.astro";
+import Sources from "../../components/Sources.astro";
+import { days, getDay } from "../../content/days";
+import { worksheetMdPath, worksheetPath } from "../../content/worksheets";
+import { botsForDay, marketplacePath } from "../../content/marketplace";
+import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
+
+export function getStaticPaths() {
+  return days.map((day) => ({ params: { slug: day.slug } }));
+}
+
+const day = getDay(Astro.params.slug ?? "");
+const index = days.findIndex((item) => item.n === day.n);
+const previous = index > 0 ? days[index - 1] : undefined;
+const next = index < days.length - 1 ? days[index + 1] : undefined;
+const origin = siteOrigin(Astro.site);
+const path = dayPath(day.slug);
+const recommended = botsForDay(day.n);
+const title = `${day.title} | ${siteConfig.name}`;
+
+const howTo = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: day.title,
+  description: day.description,
+  inLanguage: "hu",
+  totalTime: "PT15M",
+  dateModified: siteConfig.updated,
+  isPartOf: { "@id": `${origin}/5-nap/#course` },
+  tool: [{ "@type": "HowToTool", name: "Grok Bot desktop vagy mobil app" }],
+  supply: [{ "@type": "HowToSupply", name: `Gyakorlólap: ${absUrl(origin, worksheetPath(day.slug))}` }],
+  step: day.steps.map((step, position) => ({
+    "@type": "HowToStep",
+    position: position + 1,
+    name: step.name,
+    text: step.text,
+  })),
+  citation: day.sources.map((source) => source.url),
+};
+---
+
+<Base
+  title={title}
+  description={day.description}
+  path={path}
+  current="course"
+  ogType="article"
+  jsonLd={[howTo]}
+  prev={previous ? dayPath(previous.slug) : "/5-nap/"}
+  next={next ? dayPath(next.slug) : "/gyakorlolapok/"}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Az 5 nap", path: "/5-nap/" },
+    { name: day.nav, path },
+  ]}
+>
+  <DayNav current={day.n} />
+  <article class="prose">
+    <p class="eyebrow">{siteConfig.courseName}</p>
+    <h1>{day.title}</h1>
+    <ul class="meta-row">
+      <li>{day.n} / {days.length}</li>
+      <li>Kb. 15 perc, a mi becslésünk</li>
+      <li>
+        Frissítve: <time datetime={siteConfig.updated}>{siteConfig.updated}</time>
+      </li>
+    </ul>
+    <p class="lede">{day.lead}</p>
+    <section class="task-box" aria-labelledby="mai-feladat">
+      <h2 id="mai-feladat">A mai feladat</h2>
+      <p>{day.task}</p>
+      <p class="task-links">
+        <a class="button" href={worksheetPath(day.slug)}>Gyakorlólap (nyomtatható)</a>
+        <a class="button button-ghost" href={worksheetMdPath(day.slug)} download>Letöltés Markdownként</a>
+      </p>
+    </section>
+    <Blocks blocks={day.blocks} steps={day.steps} />
+    {
+      recommended.length > 0 && (
+        <section class="task-box mp-recommended" aria-labelledby="ajanlott-botok">
+          <h2 id="ajanlott-botok">Ajánlott botok ehhez a naphoz</h2>
+          <p>
+            A hivatalos Marketplace botjai közül ezek illenek a mai naphoz. Saját magyar összefoglaló, nem hivatalos
+            oldal; a részleteknél ott a forrás.
+          </p>
+          <ul class="mp-mini plain-list">
+            {recommended.map((bot) => (
+              <li>
+                <a href={marketplacePath(bot.slug)}>{bot.name}</a>
+                <span class="fine"> – {bot.summaryHu.split(". ")[0].replace(/\.$/, "")}.</span>
+              </li>
+            ))}
+          </ul>
+          <p class="fine">
+            <a href="/marketplace/">Az összes bot magyarul</a>
+          </p>
+        </section>
+      )
+    }
+    <Sources sources={day.sources} />
+  </article>
+  <nav class="pager" aria-label="Lapozás a napok között">
+    {
+      previous ? (
+        <a rel="prev" href={dayPath(previous.slug)}>
+          <span class="fine">Előző</span>
+          <span>
+            {previous.n}. nap: {previous.nav}
+          </span>
+        </a>
+      ) : (
+        <a rel="prev" href="/5-nap/">
+          <span class="fine">Vissza</span>
+          <span>Az 5 nap</span>
+        </a>
+      )
+    }
+    {
+      next ? (
+        <a class="next" rel="next" href={dayPath(next.slug)}>
+          <span class="fine">Következő</span>
+          <span>
+            {next.n}. nap: {next.nav}
+          </span>
+        </a>
+      ) : (
+        <a class="next" rel="next" href="/gyakorlolapok/">
+          <span class="fine">Tovább</span>
+          <span>Az összes gyakorlólap</span>
+        </a>
+      )
+    }
+  </nav>
+  <div class="section">
+    <Signup variant="day" />
+  </div>
+</Base>

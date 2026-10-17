@@ -1,0 +1,136 @@
+---
+import Base from "../layouts/Base.astro";
+import Signup from "../components/Signup.astro";
+import { days } from "../content/days";
+import { beginnerBots, marketplaceBots, marketplacePath } from "../content/marketplace";
+import { dayPath, siteConfig } from "../lib/site";
+
+const title = `${siteConfig.name} – Grok Bot kezdőknek, 5 nap alatt`;
+const description =
+  "Magyar útmutató a Grok Bothoz: öt rövid, forrásolt lecke letölthető gyakorlólapokkal. Letöltés, appok, első feladat, routine, biztonság.";
+---
+
+<Base title={title} description={description} path="/" current="home">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Független útmutató · nem hivatalos</p>
+      <h1>Grok Bot kezdőknek, öt rövid nap alatt.</h1>
+      <p class="lede">
+        Letöltötted, és nem tudod, mi micsoda? A {siteConfig.courseName} egy magyar útvonal: naponta egy egyértelmű
+        feladat, egy letölthető gyakorlólap kész promptokkal, és az, amit valódi felhasználók tapasztaltak, forráslinkkel.
+      </p>
+      <div class="cta-row">
+        <a class="button" href="/5-nap/1-nap-letoltes-belepes/">Kezdd az 1. nappal</a>
+        <a class="button button-ghost" href="/5-nap/">Az 5 nap áttekintése</a>
+      </div>
+      <ul class="assurances">
+        <li>5 lecke, 5 gyakorlólap</li>
+        <li>Kb. 15 perc / nap, a mi becslésünk</li>
+        <li>Forrás: dokumentáció és valós felhasználók</li>
+        <li>Nincs cookie, nincs követőkód</li>
+      </ul>
+    </div>
+    <aside class="path-card" aria-label="Az öt nap">
+      <p class="path-kicker">{siteConfig.courseName}</p>
+      <ol>
+        {
+          days.map((day) => (
+            <li>
+              <a href={dayPath(day.slug)}>
+                <span class="path-num">0{day.n}</span>
+                <span>{day.nav}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ol>
+    </aside>
+  </section>
+
+  <section class="section" aria-labelledby="miert-cim">
+    <div class="section-head">
+      <h2 id="miert-cim">Miért egy útvonal?</h2>
+      <p>A sorrendet a kezdők valós kérdései adják, a tényeket a dokumentáció.</p>
+    </div>
+    <div class="grid-3">
+      <article class="principle">
+        <p class="principle-num">01</p>
+        <h3>Egy sorrend</h3>
+        <p>Letöltés, appok, első feladat, automatizálás, végül második Bot és biztonság. Ebben a sorrendben akadnak el a kezdők az X-en, a Redditen és a fórumokon.</p>
+      </article>
+      <article class="principle">
+        <p class="principle-num">02</p>
+        <h3>Magyarul, a szakszó marad</h3>
+        <p>A feliratok, a Take over, a skill és a routine eredeti nyelven szerepelnek. A magyarázat és a saját példák magyarok.</p>
+      </article>
+      <article class="principle">
+        <p class="principle-num">03</p>
+        <h3>Ami bizonytalan, jelölve van</h3>
+        <p>
+          Ha egy adatot nem tudtunk a nyilvános dokumentációból megerősíteni, <span class="marker">[ELLENŐRIZENDŐ]</span> marad.
+          Nem írunk árat forintban, és nem találunk ki statisztikát.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="leckek-cim">
+    <div class="section-head">
+      <h2 id="leckek-cim">Az öt lecke</h2>
+      <p>Mindegyik egy feladat, egy tipikus buktató és egy gyakorlólap. <a href="/gyakorlolapok/">Az összes gyakorlólap</a>.</p>
+    </div>
+    <div class="day-grid">
+      {
+        days.map((day) => (
+          <article class="day-card">
+            <p class="day-num">0{day.n}</p>
+            <h3>
+              <a href={dayPath(day.slug)}>{day.title.split(": ").slice(1).join(": ")}</a>
+            </h3>
+            <p>{day.card}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="mp-cim">
+    <div class="section-head">
+      <h2 id="mp-cim">A Marketplace botjai magyarul</h2>
+      <p>
+        A hivatalos Grok Bot Marketplace {marketplaceBots.length} botja saját magyar összefoglalóval, memóriával,
+        skillekkel, routine-okkal és integrációkkal. Nem hivatalos katalógus, minden bot mellett forrás.
+      </p>
+    </div>
+    <ul class="mp-home-list plain-list">
+      {
+        beginnerBots.slice(0, 8).map((bot) => (
+          <li>
+            <a href={marketplacePath(bot.slug)}>{bot.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="cta-row">
+      <a class="button button-ghost" href="/marketplace/">A teljes katalógus</a>
+    </p>
+  </section>
+
+  <section class="section" aria-labelledby="vege-cim">
+    <div class="section-head">
+      <h2 id="vege-cim">Az ötödik nap végére</h2>
+      <p>Ez a tananyag célja, nem egy mért eredmény. Sikerrátát nem ígérünk.</p>
+    </div>
+    <ul class="checklist">
+      <li>Fut az app, be vagy jelentkezve, és tudod, hol állítod magyarra.</li>
+      <li>A Gmail és a naptár be van kötve, és tudod, hogy a belépések közösek.</li>
+      <li>Végigvittél egy valódi, kis feladatot vázlattal.</li>
+      <li>Van egy kézzel kipróbált routine-od, és figyeled a keretet.</li>
+      <li>Tudod, mikor kell második Bot, és van egy szűk jóváhagyási szabályod.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <Signup variant="home" />
+  </section>
+</Base>

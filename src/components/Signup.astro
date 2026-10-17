@@ -1,0 +1,96 @@
+---
+import { getNewsletterAdapter } from "../lib/newsletter";
+import { newsletter, newsletterTransmits, siteConfig } from "../lib/site";
+
+interface Props {
+  variant?: "home" | "day" | "page";
+}
+
+const { variant = "home" } = Astro.props;
+const adapter = getNewsletterAdapter();
+const transmits = newsletterTransmits() && adapter.transmits;
+const heading =
+  variant === "day" ? "A következő nap a postaládába" : variant === "page" ? "Feliratkozás" : "Kérd e-mailben is";
+---
+
+<section class="signup" id="feliratkozas" aria-labelledby="signup-heading">
+  <h2 id="signup-heading">{heading}</h2>
+  <p>
+    A {siteConfig.courseName} leckéi az oldalon élnek. Ha a hírlevél elindul, naponta egy leckét küldünk, utána
+    alkalmanként hírt az új oldalakról. Minden levél alján egy kattintással le lehet iratkozni.
+  </p>
+  {
+    transmits ? (
+      <p class="note">
+        A feliratkozás dupla megerősítésű: levelet csak az kap, aki a megerősítő e-mailben lévő linkre kattint. A
+        hozzájárulás külön jelölőnégyzet, üresen érkezik, és bármikor visszavonható. A cím a kiválasztott szolgáltató
+        nyilvános űrlapjára megy.
+      </p>
+    ) : (
+      <p class="note">
+        <strong>A hírlevél-szolgáltató még nincs bekötve.</strong> Ez az űrlap ezért nem továbbít és nem tárol
+        e-mail-címet. Ha később bekötjük, a feliratkozás dupla megerősítésű lesz: levelet csak az kap, aki a megerősítő
+        e-mailben lévő linkre kattint. A hozzájárulás külön jelölőnégyzet, üresen érkezik, és bármikor visszavonható.
+      </p>
+    )
+  }
+  {
+    transmits ? (
+      <form data-newsletter data-newsletter-provider={newsletter.provider} method="post" action={newsletter.formAction}>
+        <label class="field">
+          E-mail-cím
+          <input
+            id="newsletter-email"
+            name={newsletter.emailField}
+            type="email"
+            autocomplete="email"
+            inputmode="email"
+            spellcheck="false"
+            required
+          />
+        </label>
+        <label class="consent">
+          <input id="newsletter-consent" name="consent" type="checkbox" value="igen" />
+          <span>
+            Hozzájárulok, hogy a megadott e-mail-címre elküldjétek a {siteConfig.courseName} leckéit és az alkalmi
+            hírlevelet. Elolvastam az <a href="/adatkezeles/">adatkezelési tájékoztatót</a>. A hozzájárulást bármikor
+            visszavonhatom.
+          </span>
+        </label>
+        <button class="button" type="submit">Feliratkozom</button>
+        <p class="status" data-newsletter-status role="status" aria-live="polite"></p>
+      </form>
+    ) : (
+      <div data-newsletter data-newsletter-provider="noop" role="form" aria-labelledby="signup-heading">
+        <label class="field">
+          E-mail-cím
+          <input
+            id="newsletter-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            inputmode="email"
+            spellcheck="false"
+            required
+          />
+        </label>
+        <label class="consent">
+          <input id="newsletter-consent" name="consent" type="checkbox" value="igen" />
+          <span>
+            Hozzájárulok, hogy a megadott e-mail-címre elküldjétek a {siteConfig.courseName} leckéit és az alkalmi
+            hírlevelet. Elolvastam az <a href="/adatkezeles/">adatkezelési tájékoztatót</a>. A hozzájárulást bármikor
+            visszavonhatom.
+          </span>
+        </label>
+        <button class="button" type="button" data-newsletter-submit>Feliratkozom</button>
+        <p class="status" data-newsletter-status role="status" aria-live="polite"></p>
+      </div>
+    )
+  }
+  <noscript>
+    <p>
+      JavaScript nélkül a feliratkozás nem küld adatot. A szolgáltató alapból nincs bekötve, ezért e-mail-címet sehova
+      nem tudsz eljuttatni erről az oldalról.
+    </p>
+  </noscript>
+</section>
