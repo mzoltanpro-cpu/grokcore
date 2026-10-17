@@ -85,8 +85,14 @@ export function marketplacePath(slug?: string): string {
   return slug ? `/marketplace/${slug}/` : "/marketplace/";
 }
 
+/**
+ * Egy nap összes ajánlott botja a kézzel választott napcímkék (bot.days) alapján, név szerint.
+ * Nincs felső korlát: minden ehhez a naphoz címkézett bot megjelenik a napoldalon.
+ */
 export function botsForDay(n: number): MarketplaceBot[] {
-  return marketplaceBots.filter((bot) => bot.days.includes(n));
+  return marketplaceBots
+    .filter((bot) => bot.days.includes(n))
+    .sort((a, b) => a.name.localeCompare(b.name, "en"));
 }
 
 export const beginnerBots = marketplaceBots
