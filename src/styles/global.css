@@ -212,18 +212,61 @@ a:hover {
 }
 
 .theme-toggle {
-  min-height: 44px;
-  padding: 0.35rem 0.8rem;
-  border: 2px solid var(--line-strong);
-  background: var(--surface);
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--line);
+  background: transparent;
   color: var(--ink);
-  font: inherit;
-  border-radius: 999px;
+  border-radius: 0.6rem;
   cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .theme-toggle:hover {
-  border-color: var(--accent);
+  border-color: var(--line-strong);
+  background: var(--surface);
+  color: var(--accent);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.theme-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+/* Világos témában a hold (→ sötét), sötétben a nap (→ világos) látszik; JS nélkül a rendszertémát követi. */
+.theme-icon-sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-icon-sun {
+  display: block;
+}
+
+:root[data-theme="dark"] .theme-icon-moon {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-icon-sun {
+    display: block;
+  }
+
+  :root:not([data-theme="light"]) .theme-icon-moon {
+    display: none;
+  }
 }
 
 main {
