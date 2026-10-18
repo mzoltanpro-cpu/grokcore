@@ -26,6 +26,7 @@ const required = [
   "gyakorlolapok/5-nap-masodik-bot-biztonsag.md",
   "marketplace/index.html",
   "sablonok/index.html",
+  "utmutatok/index.html",
   "forrasok/index.html",
   "rolunk/index.html",
   "szponzoracio/index.html",
@@ -194,6 +195,18 @@ for (const rel of byRel.keys()) {
   const m = rel.match(/^sablonok\/([^/]+)\/index\.html$/);
   if (m && !templates.some((item) => item.slug === m[1])) fail(`Árva sablon-oldal: ${rel}`);
 }
+
+// Hivatalos útmutatók: minden kártya az eredeti x.ai útmutatóra linkel, és a Grok-blokk jelöli, hogy nem Grok Bot.
+const guidesHtml = byRel.has("utmutatok/index.html") ? await readFile(byRel.get("utmutatok/index.html"), "utf8") : "";
+const guideCards = [...guidesHtml.matchAll(/data-guide="([^"]+)"/g)].map((m) => m[1]);
+if (guideCards.length === 0) fail("utmutatok/index.html: nincs útmutató-kártya");
+if (new Set(guideCards).size !== guideCards.length) fail("utmutatok/index.html: ismétlődő útmutató");
+for (const slug of guideCards) {
+  if (!guidesHtml.includes(`href="https://x.ai/bot/guides/${slug}" data-guide-link`)) fail(`utmutatok/index.html: nincs eredeti link: ${slug}`);
+}
+if (!guidesHtml.includes("Nem hivatalos")) fail("utmutatok/index.html: hiányzik a nem hivatalos jelölés");
+if (!guidesHtml.includes("nem a Grok Botról")) fail("utmutatok/index.html: a Grok use-case blokk nincs elkülönítve a Grok Bottól");
+if (!guidesHtml.includes("lekérve")) fail("utmutatok/index.html: nincs lekérési dátum");
 
 let canonicalOrigin = "";
 const external = new Set();

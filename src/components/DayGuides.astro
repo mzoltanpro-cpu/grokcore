@@ -1,0 +1,30 @@
+---
+import { guidesForDay, guideUrl } from "../content/guides";
+
+interface Props {
+  day: number;
+}
+
+const items = guidesForDay(Astro.props.day);
+---
+
+{
+  items.length > 0 && (
+    <section class="task-box day-guides" aria-labelledby="hivatalos-utmutatok">
+      <h2 id="hivatalos-utmutatok">{items.length > 1 ? "Hivatalos útmutatók" : "Hivatalos útmutató"} ehhez a naphoz</h2>
+      <ul class="plain-list">
+        {items.map((item) => (
+          <li>
+            <a href={guideUrl(item.guide.slug)} lang="en">
+              {item.guide.title}
+            </a>
+            <span class="fine"> (x.ai, angol) – {item.noteHu}.</span>{" "}
+            <a class="fine" href={`/utmutatok/#${item.guide.slug}`}>
+              Magyar összefoglaló
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}

@@ -4,6 +4,7 @@ import { worksheetMdPath } from "../content/worksheets";
 import { faq } from "../content/faq";
 import { appName, categoryLabel, dayLabel, marketplaceBots, marketplaceFetched, marketplacePath, nonAffiliation } from "../content/marketplace";
 import { budapestTime, communityTemplates, templateMissing, templateNonAffiliation, templatePath } from "../content/templates";
+import { addIns, guides, guidesFetched, guidesIndexUrl, guideUrl, useCases, useCasesFetched, useCasesUrl } from "../content/guides";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
 export const GET: APIRoute = ({ site }) => {
@@ -85,6 +86,32 @@ export const GET: APIRoute = ({ site }) => {
       "",
     );
   }
+
+  parts.push(
+    "## Hivatalos Grok Bot útmutatók (nem hivatalos magyar összefoglalók)",
+    "",
+    `Forrás: ${guidesIndexUrl} (lekérve: ${guidesFetched}). Saját összefoglaló, nem fordítás; nem állunk kapcsolatban a SpaceXSI-vel. Oldal: ${absUrl(origin, "/utmutatok/")}`,
+    "",
+  );
+  for (const g of guides) {
+    parts.push(
+      `### ${g.title}`,
+      "",
+      `Kategória: ${g.category}. Dátum: ${g.published}.${g.featured ? " Kiemelt (Featured guides)." : ""}`,
+      `Összefoglaló: ${g.summaryHu}`,
+      `Eredeti: ${guideUrl(g.slug)}`,
+      "",
+    );
+  }
+  parts.push(
+    "### Mire jó még a Grok? (általános Grok, nem Grok Bot)",
+    "",
+    `Forrás: ${useCasesUrl} (lekérve: ${useCasesFetched}).`,
+    "",
+    ...useCases.flatMap((group) => group.items.map((item) => `- ${group.groupHu}: ${item.title} – ${item.hu} (${item.url})`)),
+    ...addIns.map((item) => `- ${item.title} (${item.kind}): ${item.hu} (${item.url})`),
+    "",
+  );
 
   parts.push("## Gyakori kérdések", "");
   for (const item of faq) {
