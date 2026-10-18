@@ -242,14 +242,6 @@ meeting history and any other relevant information you have access to. …
 Keep it concise. Only include information that will help me on the call.`,
         ...user("fenech"),
       },
-      {
-        origin: "felhasznalo",
-        label: "Haladó: napi téma-figyelő (részlet)",
-        code: `… Compare against what earlier runs already reported in this chat and skip
-anything old or repeated. Summarize only new or significant items, concisely,
-with source links … If nothing new turned up, send one short line saying so.`,
-        ...user("xdeep"),
-      },
     ],
     troubleshooting: [
       {
@@ -263,7 +255,6 @@ with source links … If nothing new turned up, send one short line saying so.`,
       { title: `${community.rachit.handle} – reggeli AI-hír prompt`, url: community.rachit.url },
       { title: `${community.cyb3r.handle} – előbb kézzel`, url: community.cyb3r.url },
       { title: `${community.fenech.handle} – pre-call brief`, url: community.fenech.url },
-      { title: `${community.xdeep.handle} – napi téma-figyelő`, url: community.xdeep.url },
       { title: `${community.gusmacca.handle} – keret és routine-ok`, url: community.gusmacca.url },
       { title: "r/GrokBot – My Grok Bot is unresponsive", url: community.redditUnresponsive.url },
     ],
