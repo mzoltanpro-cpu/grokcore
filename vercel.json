@@ -1,5 +1,11 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+    }
+  ],
   "redirects": [
     { "source": "/7-nap", "destination": "/5-nap/", "permanent": true },
     { "source": "/7-nap/", "destination": "/5-nap/", "permanent": true },
