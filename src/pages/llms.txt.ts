@@ -3,6 +3,7 @@ import { days } from "../content/days";
 import { worksheetMdPath, worksheetPath } from "../content/worksheets";
 import { docs } from "../content/docs";
 import { marketplaceBots, marketplaceFetched, marketplacePath } from "../content/marketplace";
+import { budapestTime, communityTemplates, templatePath } from "../content/templates";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
 export const GET: APIRoute = ({ site }) => {
@@ -31,6 +32,16 @@ export const GET: APIRoute = ({ site }) => {
     "",
     `- [Katalógus](${absUrl(origin, "/marketplace/")})`,
     ...marketplaceBots.map((bot) => `- [${bot.name}](${absUrl(origin, marketplacePath(bot.slug))}): ${bot.summaryHu} Forrás: ${bot.sourceUrl}`),
+    "",
+    "## Közösségi botsablonok (nem hivatalos gyűjtemény)",
+    "",
+    `Felhasználók által az X-en megosztott, x.ai/bot/… linkes sablonok saját magyar összefoglalóval. Nem állunk kapcsolatban a SpaceXSI-vel, az X-szel vagy a sablonok készítőivel.`,
+    "",
+    `- [Gyűjtemény](${absUrl(origin, "/sablonok/")})`,
+    ...communityTemplates.map(
+      (item) =>
+        `- [${item.name}](${absUrl(origin, templatePath(item.slug))}): ${item.summaryHu} Készítő: ${item.handle}, ${budapestTime(item.postedAt)} (budapesti idő). Sablon: ${item.templateUrl} X-poszt: ${item.postUrl}`,
+    ),
     "",
     "## Az oldal",
     "",
