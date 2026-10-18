@@ -38,5 +38,289 @@
         "from": "post"
       }
     ]
+  },
+  {
+    "slug": "devin-manager",
+    "name": "Devin Manager",
+    "author": "Anthony Kroeger",
+    "handle": "@kr0der",
+    "postUrl": "https://x.com/kr0der/status/2108240764488864114",
+    "postedAt": "2026-10-08T16:59:02Z",
+    "templateUrl": "https://x.ai/bot/p6mYbkrvmKcJ5THLVz-EH",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Devin kódoló ügynököket kezelő bot. A készítő szerint üzenetben szólsz neki, ő Devin-sessionöket indít és kezel, szól, ha elkészültek, és behozza Devin képernyőképeit és tesztfelvételeit, hogy megnézhesd. A sablon leírása szerint a sessionöket irányítja is, és rendben tartja a playbookokat.",
+    "postQuote": "i connected Devin to Grok @bot\n\nnow i text Grok Bot and it spins up Devin sessions, manages them, and pings me when they're done\n\nit also pulls in Devin's screenshots and testing recordings for me to watch\n\nhere's my bot template if you want to do this:",
+    "templateQuote": "Ops teammate for Devin coding agents: spawn and track sessions, steer them, pull recordings and screenshots into chat, and keep playbooks tidy.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Szól, ha a Devin-sessionök elkészültek",
+        "quote": "pings me when they're done",
+        "from": "post"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Devin",
+        "quote": "i connected Devin to Grok @bot",
+        "from": "post"
+      }
+    ]
+  },
+  {
+    "slug": "fight-desk",
+    "name": "Fight Desk",
+    "author": "DaveY",
+    "handle": "@the_davey",
+    "postUrl": "https://x.com/the_davey/status/2108647365108220121",
+    "postedAt": "2026-10-09T19:54:43Z",
+    "templateUrl": "https://x.ai/bot/BTFxr9l6QaZ2iS9lHVpDM",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Játékbot az AgentBorn platformhoz. Veled együtt megépít egy AI-bajnokot, naponta edzi élő játékokban (például KungFu Duels), naponta 20 ingyenes meccset játszik, minden harc után visszajátszást küld, és követi a ranglistát. Az eredményeket az Announcron mondja be.",
+    "postQuote": "v5 of my @bot Fight Desk Template is now at v5!\n\nImport it to Grok Bot and your AI champion gets to work:\n\n* Builds a champion with you\n* Trains it every day in any live game (KungFu Duels, etc)\n* Plays 20 free matchups a day\n* Sends a replay after every fight\n* Tracks the leaderboard\n* Calls results out loud on Announcr\n\nYou cheer. It fights. @AgentBornGG",
+    "templateQuote": "Raise AI champions on AgentBorn: kung-fu duels, super ninja gauntlets, NFL-style football, and dungeon delves, with a public replay for every match. Fight Desk gets you into battle fast, runs daily training and free matchups within the free limits, and follows the career on Announcr.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi edzés élő játékokban",
+        "quote": "Trains it every day in any live game (KungFu Duels, etc)",
+        "from": "post"
+      },
+      {
+        "labelHu": "Napi 20 ingyenes meccs",
+        "quote": "Plays 20 free matchups a day",
+        "from": "post"
+      },
+      {
+        "labelHu": "Visszajátszás minden harc után",
+        "quote": "Sends a replay after every fight",
+        "from": "post"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "AgentBorn",
+        "quote": "Raise AI champions on AgentBorn",
+        "from": "template"
+      },
+      {
+        "name": "Announcr",
+        "quote": "Calls results out loud on Announcr",
+        "from": "post"
+      }
+    ]
+  },
+  {
+    "slug": "viral-selling-video-bot",
+    "name": "Viral Selling Video Bot",
+    "author": "Liu Shiyu",
+    "handle": "@liushiyumath",
+    "postUrl": "https://x.com/liushiyumath/status/2111739826957652027",
+    "postedAt": "2026-10-18T08:43:03Z",
+    "templateUrl": "https://x.ai/bot/2PFbeYTG4otCuqEUoLuFT",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Termékvideó-készítő bot. Valódi, virálissá vált TikTok Shop eladási videók felépítését használja fel a te termékedre: promptot, snittlistát (shot list), angol nyelvű narrációs szöveget és kész, 9:16-os videót ad. A készítő szerint nem talál ki eladási adatokat vagy állításokat, és semmit nem posztol automatikusan.",
+    "postQuote": "New shareable Grok Bot template: Viral Selling Video Bot.\n\nIt reuses the structure of real viral TikTok Shop videos for your product and returns prompts, a shot list, an English VO script and a 9:16 video.\n\nNo made-up sales or claims. No auto-posting.",
+    "templateQuote": "Remakes proven viral TikTok Shop selling videos with your own product: you get the prompt, a shot list, an English voiceover script, and a finished 9:16 video. For anyone selling products with short-form video.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "local-business-website-hunter",
+    "name": "Local Business Website Hunter",
+    "author": "I AM",
+    "handle": "@NewLongMoney",
+    "postUrl": "https://x.com/NewLongMoney/status/2111720183341687277",
+    "postedAt": "2026-10-18T07:25:00Z",
+    "templateUrl": "https://x.ai/bot/U87LeqeLNEIKRe9ctpRxG",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Ügyfélszerző bot szabadúszó webfejlesztőknek. A sablon leírása szerint működő helyi vállalkozásokat keres, amelyeknek nincs weboldaluk, mindegyiknek demóoldalt épít a saját tartalmából, árajánlat-PDF-et és megkereső üzenetet készít, és mindezt a jóváhagyásodig visszatartja.",
+    "postQuote": "Templates are the best part of Grok Bot. You share a bot that already knows the job and anyone can start from it.\n\nMine finds businesses with no website and builds them a demo site:\n\nYour bot can now even suggest a template that fits.\n\n@elonmusk @grok",
+    "templateQuote": "Finds active local businesses with no website, builds each a demo site from its own content, and prepares a quote PDF and outreach message, all held for your approval. Built for freelance web developers who want a steady flow of clients.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "reply-desk",
+    "name": "Reply Desk",
+    "author": "Brian M.",
+    "handle": "@lonzom10",
+    "postUrl": "https://x.com/lonzom10/status/2103749418457681951",
+    "postedAt": "2026-09-26T07:32:01Z",
+    "templateUrl": "https://x.ai/bot/8lLjBC7bXUqbfh-vLG9jf",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Válaszvázlat-író bot helyi szolgáltató vállalkozásoknak. Bemásolsz egy ügyfél-e-mailt, üzenetet vagy értékelést, és elküldhető válaszvázlatot kapsz. A készítő szerint soha nem talál ki árat, dátumot vagy ígéretet; a sablon leírása szerint semmit nem küld el és nem posztol, azt te teszed meg.",
+    "postQuote": "Meet my Bot: Reply Desk\n\nPaste a customer email, message or review.\n\nGet a draft response you can actually send.\n\nReply Desk — never invents prices, dates, or promises.\n\nTemplate:",
+    "templateQuote": "Drafts replies to customer emails, messages, and public reviews for local service businesses. Never sends or posts — you review and send yourself.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "calpro",
+    "name": "CalPro — calorie and protein tracker",
+    "author": "prorookiegamer",
+    "handle": "@prorookiegamer",
+    "postUrl": "https://x.com/prorookiegamer/status/2106179552032755941",
+    "postedAt": "2026-10-03T00:28:30Z",
+    "templateUrl": "https://x.ai/bot/Iub_rfl8xMKC8RsMREi02",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Kalória- és fehérjekövető bot. Szövegben vagy fotóval elküldöd, mit ettél, és a bot követi a kalóriát és a fehérjét. A sablon leírása szerint nem kell hozzá beállítás.",
+    "postQuote": "I lost 5 lbs in 2 weeks with my Grok Bot.\n\nI told it what I ate, or sent a photo, and it tracked my calories and protein.\n\nAnd yes, I had Subway twice. Don't judge me @Subway\n\nDownload my bot template and start today:",
+    "templateQuote": "Send me what you ate, in words or a photo, and I'll track your calories and protein. No setup.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "bot-builder",
+    "name": "Bot Builder",
+    "author": "Brody",
+    "handle": "@brodyis4doge",
+    "postUrl": "https://x.com/brodyis4doge/status/2103659125582233767",
+    "postedAt": "2026-09-26T01:33:14Z",
+    "templateUrl": "https://x.ai/bot/PbZjCYArwV393be1eCQRW",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Botspecifikáció-író bot. Egy homályos „építs nekem egy botot” kérésből bemásolható specifikációt készít egyetlen botra vagy egy egész csapatra (crew). A készítő szerint csak vázlatot ad; a lényegi változtatásokat te hagyod jóvá.",
+    "postQuote": "Threw my Bot Builder out as a public Grok Bot template.\n\nYou dump a vibe \"build me a bot\" ask — it hands back a paste-ready one-bot or crew spec. Drafts only; you lock the real changes.",
+    "templateQuote": "Turns vague “build me a bot” asks into engineer-grade one-bot or crew operator specs a competent Grok instance can run on first paste. You draft; the owner locks material changes.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "route-planner",
+    "name": "Route Planner",
+    "author": "James Glick",
+    "handle": "@JamesBGlick",
+    "postUrl": "https://x.com/JamesBGlick/status/2104025212815917507",
+    "postedAt": "2026-09-27T01:47:56Z",
+    "templateUrl": "https://x.ai/bot/8xdKqYNx4oRGwahij7CDQ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Útvonaltervező bot egyszemélyes helyszíni szolgáltatóknak (a készítő egy kis kártevőirtó cégnek építette). Az Airtable-ben lévő munkákból megtervezi a napi útvonalat, a legjobb sorrendbe számozza a megállókat, és automatikusan újratervez, ha munka kerül be vagy marad el.",
+    "postQuote": "Excited to share my @bot template in hopes of winning a trip to Starbase!\nI set up a bot to plan my route each day for my small pest control company. It automatically updates the route anytime I add jobs for that date.",
+    "templateQuote": "Plans a solo field-service owner's daily driving route from the jobs in Airtable. It numbers the stops in the best order and re-plans automatically when jobs are added or cancelled.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi útvonaltervezés",
+        "quote": "I set up a bot to plan my route each day",
+        "from": "post"
+      },
+      {
+        "labelHu": "Automatikus újratervezés új munkánál",
+        "quote": "It automatically updates the route anytime I add jobs for that date.",
+        "from": "post"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Airtable",
+        "quote": "from the jobs in Airtable",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "video-studio",
+    "name": "Grok Bot Video Studio",
+    "author": "Mike Gannotti 🔳",
+    "handle": "@MichaelGannotti",
+    "postUrl": "https://x.com/MichaelGannotti/status/2111135660044427513",
+    "postedAt": "2026-10-16T16:42:19Z",
+    "templateUrl": "https://x.ai/bot/wVv54dUKjA2MYaq1XMCzN",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Videókészítő bot a Grok Imagine-re. A sablon leírása szerint forrásokkal ellátott magyarázó videókat, műsorvezetős rövid videókat, több jelenetes, állandó szereplős történeteket és saját dalokhoz zenei videókat készít: megtervezi, legenerálja, megvágja, feliratozza és ellenőrzi őket. Semmi nem lesz nyilvános, amíg te ki nem posztolod.",
+    "postQuote": "Creating a rich, explainer video for technical content can be this easy. Just grab my @bot Video Studio template here",
+    "templateQuote": "Your end-to-end AI video studio on Grok Imagine: cited explainers, presenter shorts, multi-shot stories with locked characters, and music videos for songs you own. It plans, generates, edits, captions and QA-checks every video, and nothing goes public unless you post it.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "running-coach",
+    "name": "Running Coach",
+    "author": "AIVN",
+    "handle": "@IHybben",
+    "postUrl": "https://x.com/IHybben/status/2103777752553812398",
+    "postedAt": "2026-09-26T09:24:37Z",
+    "templateUrl": "https://x.ai/bot/o4hvGfkH_LOiP0YbT22og",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Futóedző bot, amely a Garmin órád adatait olvassa. A sablon leírása szerint minden futás után megkapod, mi ment jól és min kell javítani, valamint a regenerációhoz igazított következő edzést, ahogy hosszabb versenyek, például félmaraton felé haladsz.",
+    "postQuote": "Check out my @bot garmin coach setup. Bot is able to read my Garmin connect data. @grok #grokbot",
+    "templateQuote": "An on-demand running coach that reads your Garmin watch data. After each run you get what went well, what to fix, and a recovery-gated next session as you build toward longer races like a half marathon.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Garmin Connect",
+        "quote": "Bot is able to read my Garmin connect data.",
+        "from": "post"
+      }
+    ]
+  },
+  {
+    "slug": "x-agent",
+    "name": "X Agent",
+    "author": "Mikko Uusitalo",
+    "handle": "@MikkoUusitalo1",
+    "postUrl": "https://x.com/MikkoUusitalo1/status/2104864235369214436",
+    "postedAt": "2026-09-29T09:21:54Z",
+    "templateUrl": "https://x.ai/bot/7V6XbVZRZ04eHej3tJIAQ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Közösségimédia-segéd bot. A készítő szerint AI- és programozási beszélgetéseket figyel, a te hangodon ír válaszvázlatokat, és semmit nem küld ki az engedélyed nélkül. A sablon leírása szerint ezt az X-en és a többi általad használt csatornán teszi.",
+    "postQuote": "Still learning what works in the Starbase challenge. My Bot scouts AI and coding threads, drafts in my voice, and waits for my OK before anything goes out. Template if useful:",
+    "templateQuote": "Helps you stay on top of social without handing over the mic: scouts AI and coding conversations, drafts replies in your voice, and waits for your OK, on X and other channels you use.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "X",
+        "quote": "on X and other channels you use",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "hatch",
+    "name": "Hatch",
+    "author": "littletechbird",
+    "handle": "@littletechbird",
+    "postUrl": "https://x.com/littletechbird/status/2100911955099947248",
+    "postedAt": "2026-09-18T11:36:57Z",
+    "templateUrl": "https://x.ai/bot/o8hID4-jKPlA8QQQH5K69",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Alkotótárs bot kreatív és technikai munkákhoz. A készítő szerint animált zenei videókat (AMV) készít; a sablon leírása szerint Grok Botokat tervez, eredeti zenei videókat és dalokat készít elejétől a végéig, valamint weboldalakat, connectorokat és asztali munkafolyamatokat állít fel, és akkor lép, ha világos a feladat.",
+    "postQuote": "My bot Hatch makes AMVs, or Animated Music Videos.  See full X Article here.\nTemplate:",
+    "templateQuote": "Equal maker for ambitious creative and technical work — designs Grok Bots, ships original music videos and songs end-to-end, and stands up sites, connectors, and desktop workflows. Casual mad-scientist energy; acts once the job is clear.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
   }
 ]
