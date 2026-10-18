@@ -9,6 +9,7 @@ import {
   templatePath,
   type CommunityTemplate,
 } from "../../content/templates";
+import { marketplacePath } from "../../content/marketplace";
 import { absUrl, siteConfig, siteOrigin } from "../../lib/site";
 
 export function getStaticPaths() {
@@ -91,6 +92,13 @@ const ld = {
           A készítő X-posztja (angol idézet): <a href={item.postUrl}>{item.handle} · x.com</a>
         </figcaption>
       </figure>
+      {
+        item.relatedMarketplace?.map((rel) => (
+          <p class="fine" data-related-marketplace={rel.slug}>
+            Megjegyzés: {rel.noteHu} <a href={marketplacePath(rel.slug)}>{rel.name} magyarul</a>
+          </p>
+        ))
+      }
     </section>
 
     <section class="bot-block" id="memoria" data-block="memoria">
@@ -184,6 +192,13 @@ const ld = {
         <li>Közzétéve: <time datetime={item.postedAt}>{posted}</time> (budapesti idő)</li>
         <li>Sablon: <a href={item.templateUrl} data-source-link>{item.templateUrl}</a></li>
         <li>lekérve: {item.fetched}</li>
+        {
+          item.discoveredVia?.map((via) => (
+            <li>
+              Felfedezve: <a href={via.url}>{via.labelHu}</a> (nem forrás, csak itt találtunk rá)
+            </li>
+          ))
+        }
       </ul>
     </section>
 
