@@ -83,10 +83,10 @@ const howTo = {
     {
       recommended.length > 0 && (
         <section class="task-box mp-recommended" aria-labelledby="ajanlott-botok">
-          <h2 id="ajanlott-botok">Ajánlott botok ehhez a naphoz</h2>
+          <h2 id="ajanlott-botok">Kezdőknek ajánlott botok ehhez a naphoz ({recommended.length})</h2>
           <p>
-            A hivatalos Marketplace botjai közül ezek illenek a mai naphoz. Saját magyar összefoglaló, nem hivatalos
-            oldal; a részleteknél ott a forrás.
+            A hivatalos Marketplace botjai közül az összes, amelyet ehhez a naphoz ajánlunk kezdőknek. Saját magyar
+            összefoglaló, nem hivatalos oldal; a részleteknél ott a forrás.
           </p>
           <ul class="mp-mini plain-list">
             {recommended.map((bot) => (

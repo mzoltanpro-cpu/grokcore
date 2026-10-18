@@ -147,6 +147,34 @@ for (const bot of marketplace) {
   if (!bot.memory.count && !html.includes("A listing nem tartalmaz erről adatot.")) fail(`${rel}: a hiányzó memória nincs jelölve`);
   if (!bot.summaryHu) fail(`${rel}: nincs magyar összefoglaló`);
 }
+// Napoldalak: a naphoz kézzel címkézett (bot.days) összes bot linkje kint van, felső korlát nélkül.
+// Nem minden botnak kell napoldalon szerepelnie: a címke nélküli botok csak a katalógusban vannak.
+const dayPages = [...byRel.keys()]
+  .map((rel) => rel.match(/^5-nap\/(\d)-nap-[^/]+\/index\.html$/))
+  .filter(Boolean);
+for (const m of dayPages) {
+  const n = Number(m[1]);
+  const html = await readFile(byRel.get(m[0]), "utf8");
+  const section = html.match(/<section[^>]*aria-labelledby="ajanlott-botok"[^>]*>([\s\S]*?)<\/section>/);
+  const expected = marketplace.filter((bot) => bot.days.includes(n));
+  if (!expected.length) continue;
+  if (!section) {
+    fail(`${m[0]}: hiányzik az ajánlott botok blokkja`);
+    continue;
+  }
+  const linked = new Set([...section[1].matchAll(/href="\/marketplace\/([^"/]+)\/"/g)].map((x) => x[1]));
+  for (const bot of expected) if (!linked.has(bot.slug)) fail(`${m[0]}: nem linkeli a naphoz ajánlott botot: ${bot.slug}`);
+  for (const slug of linked) {
+    const bot = marketplace.find((b) => b.slug === slug);
+    if (bot && !bot.days.includes(n)) fail(`${m[0]}: olyan botot linkel, amely nincs ehhez a naphoz címkézve: ${slug}`);
+  }
+}
+for (const bot of marketplace) {
+  for (const n of bot.days) {
+    if (!dayPages.some((m) => Number(m[1]) === n)) fail(`${bot.slug}: nem létező napra címkézve: ${n}`);
+  }
+}
+
 for (const rel of byRel.keys()) {
   const m = rel.match(/^marketplace\/([^/]+)\/index\.html$/);
   if (m && !marketplace.some((bot) => bot.slug === m[1])) fail(`Árva bot-oldal: ${rel}`);
