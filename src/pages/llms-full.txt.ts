@@ -3,6 +3,7 @@ import { days } from "../content/days";
 import { worksheetMdPath } from "../content/worksheets";
 import { faq } from "../content/faq";
 import { appName, categoryLabel, dayLabel, marketplaceBots, marketplaceFetched, marketplacePath, nonAffiliation } from "../content/marketplace";
+import { budapestTime, communityTemplates, templateMissing, templateNonAffiliation, templatePath } from "../content/templates";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
 export const GET: APIRoute = ({ site }) => {
@@ -59,6 +60,28 @@ export const GET: APIRoute = ({ site }) => {
       `Melyik naphoz illik: ${bot.days.map(dayLabel).join(", ") || "haladó, külön nem ajánljuk"}`,
       `Oldal: ${absUrl(origin, marketplacePath(bot.slug))}`,
       `Forrás: ${bot.sourceUrl} (lekérve: ${bot.fetched})`,
+      "",
+    );
+  }
+
+  parts.push(
+    "## Közösségi botsablonok (nem hivatalos gyűjtemény)",
+    "",
+    `${templateNonAffiliation} Oldal: ${absUrl(origin, "/sablonok/")}`,
+    "",
+  );
+  for (const item of communityTemplates) {
+    parts.push(
+      `### ${item.name}`,
+      "",
+      `Készítő: ${item.author} (${item.handle}).`,
+      `Leírás: ${item.summaryHu}`,
+      `Memória: ${item.memory.map((m) => m.labelHu).join("; ") || templateMissing}`,
+      `Skillek: ${item.skills.map((s) => s.name).join(", ") || templateMissing}`,
+      `Rutinok: ${item.routines.length ? `${item.routines.map((r) => r.labelHu).join("; ")} (a forrás nem nevez meg routine-t; név és ütemezés: ${templateMissing})` : templateMissing}`,
+      `Integrációk: ${item.integrations.map((i) => i.name).join(", ") || templateMissing}`,
+      `Oldal: ${absUrl(origin, templatePath(item.slug))}`,
+      `Forrás: X-poszt ${item.postUrl} (${item.handle}, közzétéve ${budapestTime(item.postedAt)} budapesti idő szerint); sablon ${item.templateUrl}; lekérve: ${item.fetched}`,
       "",
     );
   }

@@ -25,6 +25,7 @@ const required = [
   "gyakorlolapok/4-nap-skill-routine.md",
   "gyakorlolapok/5-nap-masodik-bot-biztonsag.md",
   "marketplace/index.html",
+  "sablonok/index.html",
   "forrasok/index.html",
   "rolunk/index.html",
   "szponzoracio/index.html",
@@ -148,6 +149,50 @@ for (const bot of marketplace) {
 for (const rel of byRel.keys()) {
   const m = rel.match(/^marketplace\/([^/]+)\/index\.html$/);
   if (m && !marketplace.some((bot) => bot.slug === m[1])) fail(`Árva bot-oldal: ${rel}`);
+}
+
+// Közösségi botsablonok: minden sablonnak saját oldal, a kötelező blokkokkal és mindkét forráslinkkel.
+const templates = JSON.parse(await readFile(path.join(root, "src/content/community-templates.json"), "utf8"));
+const tplBlocks = ["leiras", "memoria", "skillek", "rutinok", "integraciok", "forras"];
+const tplMissing = "A listing nem tartalmaz erről adatot.";
+const tplIndex = byRel.has("sablonok/index.html") ? await readFile(byRel.get("sablonok/index.html"), "utf8") : "";
+if (!tplIndex.includes("Nem hivatalos")) fail("sablonok/index.html: hiányzik a nem hivatalos jelölés");
+if (!tplIndex.includes('"@type":"ItemList"')) fail("sablonok/index.html: hiányzik az ItemList JSON-LD");
+const slugs = new Set();
+for (const item of templates) {
+  const rel = `sablonok/${item.slug}/index.html`;
+  if (slugs.has(item.slug)) fail(`Ismétlődő sablon-slug: ${item.slug}`);
+  slugs.add(item.slug);
+  if (/grok/i.test(item.slug)) fail(`${rel}: a slugban nem szerepelhet a Grok szó`);
+  if (!byRel.has(rel)) {
+    fail(`Hiányzó sablon-oldal: ${rel}`);
+    continue;
+  }
+  if (!tplIndex.includes(`href="/sablonok/${item.slug}/"`)) fail(`sablonok/index.html: nem linkeli: ${item.slug}`);
+  const html = await readFile(byRel.get(rel), "utf8");
+  for (const block of tplBlocks) {
+    const section = html.match(new RegExp(`<section[^>]*data-block="${block}"[^>]*>([\\s\\S]*?)</section>`));
+    if (!section) fail(`${rel}: hiányzó blokk: ${block}`);
+    else if (!/<h2[\s>]/.test(section[1])) fail(`${rel}: a(z) ${block} blokknak nincs címe`);
+  }
+  if (!/^https:\/\/x\.com\/[^/]+\/status\/\d+$/.test(item.postUrl ?? "")) fail(`${rel}: hibás X-poszt URL a JSON-ban`);
+  if (!item.templateUrl?.startsWith("https://x.ai/bot/")) fail(`${rel}: hibás sablon-URL a JSON-ban`);
+  if (!/^@\w+$/.test(item.handle ?? "")) fail(`${rel}: hibás handle a JSON-ban`);
+  if (Number.isNaN(Date.parse(item.postedAt))) fail(`${rel}: hibás közzétételi időpont a JSON-ban`);
+  if (!html.includes(`href="${item.templateUrl}" data-source-link`)) fail(`${rel}: nincs sablonlink a Forrás blokkban`);
+  if (!html.includes(`href="${item.postUrl}" data-post-link`)) fail(`${rel}: nincs X-poszt link a Forrás blokkban`);
+  if (!html.includes(`lekérve: ${item.fetched}`)) fail(`${rel}: nincs lekérési dátum`);
+  if (!html.includes("budapesti idő")) fail(`${rel}: a közzététel ideje nincs budapesti időben jelölve`);
+  if (!html.includes("Nem hivatalos")) fail(`${rel}: hiányzik a nem hivatalos jelölés`);
+  if (/<img\b/.test(html)) fail(`${rel}: kép (logó/avatár) nem kerülhet a sablon-oldalra`);
+  for (const field of ["memory", "skills", "routines", "integrations"]) {
+    if (!(item[field]?.length) && !html.includes(tplMissing)) fail(`${rel}: a hiányzó ${field} nincs jelölve`);
+  }
+  if (!item.summaryHu) fail(`${rel}: nincs magyar összefoglaló`);
+}
+for (const rel of byRel.keys()) {
+  const m = rel.match(/^sablonok\/([^/]+)\/index\.html$/);
+  if (m && !templates.some((item) => item.slug === m[1])) fail(`Árva sablon-oldal: ${rel}`);
 }
 
 let canonicalOrigin = "";
