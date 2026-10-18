@@ -14,6 +14,13 @@ export const siteConfig = {
   tagline: "Az első saját Grok Botod, napi egy rövid lépésben",
   description:
     "Magyar, lépésről lépésre útmutató a Grok Bothoz, öt napra bontva, letölthető gyakorlólapokkal. Forrásolt tartalom.",
+  /**
+   * Ideiglenes: az egész oldal noindex, nofollow (meta robots + X-Robots-Tag a
+   * vercel.json-ban, a robots.txt-ből kimarad a Sitemap sor).
+   * Töröld (vagy állítsd false-ra), amint az impresszumban a valós adatok vannak,
+   * és vedd ki a vercel.json "headers" blokkját is.
+   */
+  noindex: true,
   locale: "hu_HU",
   lang: "hu",
   updated: "2026-10-17",

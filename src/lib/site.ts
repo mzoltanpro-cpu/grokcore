@@ -1,6 +1,7 @@
 import { siteConfig } from "../../site.config.mjs";
 import { days } from "../content/days";
 import { marketplaceBots, marketplacePath } from "../content/marketplace";
+import { communityTemplates, templatePath } from "../content/templates";
 
 const providers = ["noop", "mailerlite", "brevo"] as const;
 export type NewsletterProviderId = (typeof providers)[number];
@@ -48,6 +49,9 @@ export function indexablePaths(): string[] {
     ...days.map((day) => `/gyakorlolapok/${day.slug}/`),
     "/marketplace/",
     ...marketplaceBots.map((bot) => marketplacePath(bot.slug)),
+    "/sablonok/",
+    ...communityTemplates.map((item) => templatePath(item.slug)),
+    "/utmutatok/",
     "/forrasok/",
     "/rolunk/",
     "/szponzoracio/",
@@ -61,6 +65,8 @@ export const primaryNav = [
   { href: "/5-nap/", label: "Az 5 nap", id: "course" },
   { href: "/gyakorlolapok/", label: "Gyakorlólapok", id: "worksheets" },
   { href: "/marketplace/", label: "Marketplace", id: "marketplace" },
+  { href: "/sablonok/", label: "Sablonok", id: "templates" },
+  { href: "/utmutatok/", label: "Útmutatók", id: "guides" },
   { href: "/forrasok/", label: "Források", id: "resources" },
   { href: "/rolunk/", label: "Rólunk", id: "about" },
   { href: "/szponzoracio/", label: "Szponzoráció", id: "sponsors" },

@@ -1,0 +1,110 @@
+---
+import Base from "../../layouts/Base.astro";
+import TemplateNote from "../../components/TemplateNote.astro";
+import { budapestTime, communityTemplates, templatePath } from "../../content/templates";
+import { absUrl, siteConfig, siteOrigin } from "../../lib/site";
+
+const origin = siteOrigin(Astro.site);
+const title = `Közösségi botsablonok magyarul: nem hivatalos gyűjtemény | ${siteConfig.name}`;
+const description = `Az X-en megosztott, x.ai/bot/… linkes Grok Bot-sablonok saját magyar összefoglalóval: mire jók, mit állít róluk a forrás, és honnan adhatod hozzá őket. ${communityTemplates.length} sablon, forrással.`;
+const first = communityTemplates[0];
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Közösségi botsablonok – nem hivatalos magyar gyűjtemény",
+  description,
+  inLanguage: "hu",
+  numberOfItems: communityTemplates.length,
+  itemListOrder: "https://schema.org/ItemListUnordered",
+  itemListElement: communityTemplates.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: absUrl(origin, templatePath(item.slug)),
+    name: item.name,
+  })),
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/sablonok/"
+  current="templates"
+  jsonLd={[ld]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Közösségi botsablonok", path: "/sablonok/" },
+  ]}
+>
+  <p class="eyebrow">Nem hivatalos gyűjtemény · {communityTemplates.length} sablon</p>
+  <h1>Közösségi botsablonok</h1>
+  <p class="lede">
+    Felhasználók által az X-en megosztott botsablonok, mindegyik egy saját, rövid magyar összefoglalóval. Ezek nem a
+    hivatalos <a href="/marketplace/">Marketplace</a> botjai, hanem bárki által készített és linkkel megosztott sablonok. A
+    sablon neve, a szakszavak és az idézetek eredetiben maradnak.
+  </p>
+  <TemplateNote />
+
+  <section class="section" aria-labelledby="sablonlista">
+    <div class="section-head">
+      <h2 id="sablonlista">A sablonok</h2>
+    </div>
+    <ul class="bot-grid plain-list">
+      {
+        communityTemplates.map((item) => (
+          <li class="bot-card" data-template={item.slug}>
+            <h3 class="bot-name">
+              <a href={templatePath(item.slug)}>{item.name}</a>
+            </h3>
+            <p class="bot-by">
+              {item.author} ({item.handle}) · {budapestTime(item.postedAt)}
+            </p>
+            <p>{item.summaryHu}</p>
+            <p class="fine">
+              <a href={templatePath(item.slug)}>Részletek</a> · <a href={item.postUrl}>X-poszt</a> ·{" "}
+              <a href={item.templateUrl}>Sablon (x.ai)</a>
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="hozzaadas">
+    <div class="section-head">
+      <h2 id="hozzaadas">Hogyan adhatsz hozzá egy sablont?</h2>
+    </div>
+    <ol class="checklist">
+      <li>Nyisd meg a sablon <code>x.ai/bot/…</code> linkjét. Minden adatlap Forrás blokkjában ott van.</li>
+      <li>
+        A lapon az <strong lang="en">Add to Grok Bot</strong> gomb adja hozzá a sablont. A lap szerint a gombra kattintva
+        elfogadod a feltételeket.
+      </li>
+      <li>Ha még nincs meg az app, ugyanezen a lapon a <span lang="en">„Don't have Grok Bot? Download”</span> linkkel töltheted le.</li>
+      <li>
+        A lap figyelmeztet is: a botot egy külső felhasználó készítette, nem a SpaceXSI, és a nevedben is cselekedhet (<span
+          lang="en">„It may act on your behalf.”</span>).
+      </li>
+    </ol>
+    {
+      first && (
+        <p class="fine">
+          Forrás: a <a href={first.templateUrl}>{first.name} sablonlapja (x.ai)</a>, lekérve: {first.fetched}.
+        </p>
+      )
+    }
+  </section>
+
+  <section class="section" aria-labelledby="hogyan">
+    <div class="section-head">
+      <h2 id="hogyan">Hogyan készült?</h2>
+    </div>
+    <ul class="checklist">
+      <li>Minden sablon a készítő nyilvános X-posztjából és a sablon nyilvános x.ai lapjából származik, mindkettő linkelve.</li>
+      <li>A magyar összefoglaló a sajátunk, nem fordítás. Angol szöveg csak idézetként jelölve szerepel.</li>
+      <li>Nem írunk funkciót, amit a forrás nem említ. Ami hiányzik, azt jelöljük: „A listing nem tartalmaz erről adatot.”</li>
+      <li>Új sablon csak ellenőrzés után kerül a gyűjteménybe.</li>
+    </ul>
+  </section>
+</Base>

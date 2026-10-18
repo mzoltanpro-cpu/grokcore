@@ -1,0 +1,213 @@
+---
+import Base from "../../layouts/Base.astro";
+import {
+  addIns,
+  dayGuides,
+  guideCategories,
+  guides,
+  guidesFetched,
+  guidesIndexUrl,
+  guideUrl,
+  useCases,
+  useCasesFetched,
+  useCasesUrl,
+  type Guide,
+} from "../../content/guides";
+import { days } from "../../content/days";
+import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
+
+const origin = siteOrigin(Astro.site);
+const path = "/utmutatok/";
+const title = `Hivatalos Grok Bot útmutatók magyarul: összefoglalók | ${siteConfig.name}`;
+const description = `Az x.ai/bot/guides mind a ${guides.length} hivatalos Grok Bot útmutatója saját, rövid magyar összefoglalóval és eredeti linkkel. Nem fordítás, nem hivatalos oldal.`;
+const featured = guides.filter((g) => g.featured);
+const rest = guides.filter((g) => !g.featured);
+const dayOf = (slug: string) =>
+  dayGuides
+    .filter((entry) => entry.slug === slug)
+    .map((entry) => days.find((d) => d.n === entry.day))
+    .filter((d): d is (typeof days)[number] => Boolean(d));
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Hivatalos Grok Bot útmutatók – nem hivatalos magyar összefoglalók",
+  description,
+  inLanguage: "hu",
+  url: absUrl(origin, path),
+  numberOfItems: guides.length,
+  itemListOrder: "https://schema.org/ItemListOrderAscending",
+  itemListElement: guides.map((guide, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: absUrl(origin, `${path}#${guide.slug}`),
+    name: guide.title,
+    item: {
+      "@type": "Article",
+      name: guide.title,
+      url: guideUrl(guide.slug),
+      inLanguage: "en",
+      datePublished: guide.published,
+      publisher: { "@type": "Organization", name: "SpaceXSI" },
+    },
+  })),
+};
+
+const groups: { id: string; heading: string; intro: string; items: Guide[] }[] = [
+  {
+    id: "kiemelt",
+    heading: "Featured guides (kiemelt útmutatók)",
+    intro: `Az x.ai útmutató-oldalán ez az öt útmutató áll a „Featured guides” blokkban.`,
+    items: featured,
+  },
+  {
+    id: "osszes",
+    heading: "All guides (a többi útmutató)",
+    intro: `Az x.ai oldal „All guides” listájának további ${rest.length} útmutatója, az ottani sorrendben.`,
+    items: rest,
+  },
+];
+---
+
+<Base
+  title={title}
+  description={description}
+  path={path}
+  current="guides"
+  jsonLd={[ld]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Útmutatók", path },
+  ]}
+>
+  <p class="eyebrow">Nem hivatalos összefoglaló · {guides.length} útmutató</p>
+  <h1>Hivatalos Grok Bot útmutatók magyarul</h1>
+  <p class="lede">
+    Az x.ai saját útmutatói (<a href={guidesIndexUrl} lang="en">Grok Bot Guides</a>, „Practical playbooks for AI
+    teammates”) valós munkafolyamatokat mutatnak be. Mindegyikhez írtunk egy rövid magyar összefoglalót, csak az adott
+    útmutató saját oldala alapján. Ez nem fordítás: a teljes szöveg az eredeti linken olvasható, angolul.
+  </p>
+  <aside class="note" aria-label="Nem hivatalos oldal">
+    <p>
+      <strong>Nem hivatalos.</strong> Ez a Botkezdő saját magyar összefoglalója. Nem állunk kapcsolatban az x.ai-t
+      üzemeltető SpaceXSI-vel, és ők nem támogatják ezt az oldalt. Az útmutatók szövege és címe a SpaceXSI-é. Lekérve:
+      {guidesFetched}.
+    </p>
+  </aside>
+
+  <section class="section" aria-labelledby="kezdoknek">
+    <div class="section-head">
+      <h2 id="kezdoknek">Kezdőként ezzel indulj</h2>
+    </div>
+    <p>
+      Az x.ai oldalán „Getting started” kategóriában három útmutató van:
+      <a href="#grok-bot-101">Grok Bot 101</a>, <a href="#templates-for-grok-bot">Templates for Grok Bot</a> és
+      <a href="#grok-bot-for-work">Grok Bot for Work</a>. A <a href="/5-nap/">Kezdő 5 nap</a> lapjairól is ezekre
+      (és két másikra) linkelünk, ahol a nap témájához illenek.
+    </p>
+    <p class="fine">
+      Kategóriák az x.ai oldalon (eredeti felirattal): <span lang="en">{guideCategories.join(", ")}</span>.
+    </p>
+  </section>
+
+  {
+    groups.map((group) => (
+      <section class="section" aria-labelledby={group.id}>
+        <div class="section-head">
+          <h2 id={group.id} lang="en">
+            {group.heading}
+          </h2>
+        </div>
+        <p>{group.intro}</p>
+        <ul class="bot-grid plain-list">
+          {group.items.map((guide) => (
+            <li class="bot-card" id={guide.slug} data-guide={guide.slug}>
+              <h3 class="bot-name" lang="en">
+                <a href={guideUrl(guide.slug)}>{guide.title}</a>
+              </h3>
+              <p class="bot-by">
+                <span lang="en">{guide.category}</span> · <time datetime={guide.published}>{guide.published}</time>
+              </p>
+              <p>{guide.summaryHu}</p>
+              <p class="fine">
+                <a href={guideUrl(guide.slug)} data-guide-link>
+                  Eredeti útmutató (x.ai, angol)
+                </a>
+                {dayOf(guide.slug).map((day) => (
+                  <>
+                    {" · "}
+                    <a href={dayPath(day.slug)}>{day.n}. nap</a>
+                  </>
+                ))}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  <section class="section" aria-labelledby="mire-jo-meg">
+    <div class="section-head">
+      <h2 id="mire-jo-meg">Mire jó még a Grok?</h2>
+    </div>
+    <aside class="note" aria-label="Általános Grok, nem Grok Bot">
+      <p>
+        <strong>Figyelem: ez az általános Grokról szól, nem a Grok Botról.</strong> Az x.ai
+        <a href={useCasesUrl} lang="en">Use cases</a> oldala a Grok (chat, API, Grok Build, Imagine) felhasználási
+        területeit sorolja fel. Röviden, saját szavainkkal; lekérve: {useCasesFetched}.
+      </p>
+    </aside>
+    {
+      useCases.map((group) => (
+        <>
+          <h3>
+            {group.groupHu} <span class="fine" lang="en">({group.group})</span>
+          </h3>
+          <ul class="checklist">
+            {group.items.map((item) => (
+              <li>
+                <a href={item.url} lang="en">
+                  {item.title}
+                </a>
+                : {item.hu}
+              </li>
+            ))}
+          </ul>
+        </>
+      ))
+    }
+    <h3>Add-inek és add-onok</h3>
+    <p>
+      Az oldal szerint a Grok Microsoft 365 add-inként a Wordben, az Excelben, a PowerPointban és az Outlookban, Google
+      Workspace add-onként a Sheetsben, a Slidesban és a Docsban fut, a megnyitott fájlban vagy postafiókban.
+    </p>
+    <ul class="checklist">
+      {
+        addIns.map((item) => (
+          <li>
+            <a href={item.url} lang="en">
+              {item.title}
+            </a>{" "}
+            <span class="fine" lang="en">({item.kind})</span>: {item.hu}
+          </li>
+        ))
+      }
+    </ul>
+    <p class="fine">Forrás: <a href={useCasesUrl}>{useCasesUrl}</a>, lekérve: {useCasesFetched}.</p>
+  </section>
+
+  <section class="section" aria-labelledby="hogyan-keszult">
+    <div class="section-head">
+      <h2 id="hogyan-keszult">Hogyan készült?</h2>
+    </div>
+    <ul class="checklist">
+      <li>
+        Az útmutatók listája, címe, kategóriája és dátuma az <a href={guidesIndexUrl}>x.ai/bot/guides</a> oldalról és az
+        egyes útmutatók oldaláról származik (lekérve: {guidesFetched}).
+      </li>
+      <li>Minden összefoglaló csak az adott útmutató saját oldalán olvasható tartalomból készült. Nem fordítás.</li>
+      <li>A címek, a kategóriák és a szakszavak eredetiben maradnak.</li>
+    </ul>
+  </section>
+</Base>

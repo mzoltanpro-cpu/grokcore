@@ -9,15 +9,18 @@ function currentTheme(): "light" | "dark" {
 
 function initTheme(): void {
   const button = document.querySelector<HTMLButtonElement>("[data-theme-toggle]");
-  const label = button?.querySelector<HTMLElement>("[data-theme-label]");
-  if (!button || !label) return;
+  if (!button) return;
+
+  // Ikon-gomb: sötét témában a nap (világosra vált), világosban a hold látszik (CSS a data-theme alapján).
+  const describe = (dark: boolean) => {
+    const text = dark ? "Váltás világos témára" : "Váltás sötét témára";
+    button.setAttribute("aria-label", text);
+    button.setAttribute("title", text);
+  };
 
   const paint = (theme: "light" | "dark", persist: boolean) => {
     document.documentElement.setAttribute("data-theme", theme);
-    const dark = theme === "dark";
-    button.setAttribute("aria-pressed", dark ? "true" : "false");
-    label.textContent = dark ? "Világos téma" : "Sötét téma";
-    button.setAttribute("aria-label", dark ? "Váltás világos témára" : "Váltás sötét témára");
+    describe(theme === "dark");
     if (!persist) return;
     try {
       localStorage.setItem(siteConfig.themeStorageKey, theme);
@@ -28,12 +31,7 @@ function initTheme(): void {
 
   const explicit = document.documentElement.getAttribute("data-theme");
   if (explicit === "light" || explicit === "dark") paint(explicit, false);
-  else {
-    const dark = currentTheme() === "dark";
-    button.setAttribute("aria-pressed", dark ? "true" : "false");
-    label.textContent = dark ? "Világos téma" : "Sötét téma";
-    button.setAttribute("aria-label", dark ? "Váltás világos témára" : "Váltás sötét témára");
-  }
+  else describe(currentTheme() === "dark");
   button.addEventListener("click", () => {
     paint(currentTheme() === "dark" ? "light" : "dark", true);
   });
