@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "notes-bot",
+    "name": "Notes Bot",
+    "author": "X Freeze",
+    "handle": "@XFreeze",
+    "postUrl": "https://x.com/XFreeze/status/2111547144822030394",
+    "postedAt": "2026-10-17T19:57:24Z",
+    "templateUrl": "https://x.ai/bot/go9M2-A3GQM5-tpstIPIQ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Egyszerű, személyes jegyzetelő bot. Megnyomod a mikrofont, és csak beszélsz: terveket, ötleteket, bármit. A bot rendezett, dátumozott jegyzetekké alakítja, kigyűjti belőlük a teendőket, szól, ha valami esedékes, napi összefoglalót küld a tennivalókról, és emlékeztetőt tesz a naptáradba. Mindent a Google Docsba ment.",
+    "postQuote": "I just built a \"Notes Bot\" template for Grok Bot for a simple personal note-taking bot, powered by superintelligence\n\nYou just tap the mic and keep talking.... Ramble about your plans, ideas, anything. It saves everything as clean, organized notes and pulls out your to-dos and tasks\n\nIt pings you when something's due, sends you a daily rundown of what to do, and adds reminders to your calendar\n\nEverything is saved to your Google Docs, so your notes go anywhere with you and you can use them your way",
+    "templateQuote": "A simple personal notepad. Toss it ideas, reminders or rambling dictated thoughts, and it saves clean, dated notes to your Google Doc and pings you when reminders are due.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Szól, ha egy teendő vagy emlékeztető esedékes",
+        "quote": "It pings you when something's due",
+        "from": "post"
+      },
+      {
+        "labelHu": "Napi összefoglaló arról, mi a teendő",
+        "quote": "sends you a daily rundown of what to do",
+        "from": "post"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Google Docs",
+        "quote": "Everything is saved to your Google Docs",
+        "from": "post"
+      },
+      {
+        "name": "Naptár (a forrás nem nevezi meg, melyik)",
+        "quote": "adds reminders to your calendar",
+        "from": "post"
+      }
+    ]
+  }
+]

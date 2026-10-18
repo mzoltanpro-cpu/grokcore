@@ -1,0 +1,221 @@
+---
+import Base from "../../layouts/Base.astro";
+import TemplateNote from "../../components/TemplateNote.astro";
+import {
+  budapestTime,
+  communityTemplates,
+  fromLabel,
+  templateMissing,
+  templatePath,
+  type CommunityTemplate,
+} from "../../content/templates";
+import { absUrl, siteConfig, siteOrigin } from "../../lib/site";
+
+export function getStaticPaths() {
+  return communityTemplates.map((item) => ({ params: { slug: item.slug }, props: { item } }));
+}
+
+interface Props {
+  item: CommunityTemplate;
+}
+
+const { item } = Astro.props;
+const origin = siteOrigin(Astro.site);
+const path = templatePath(item.slug);
+const firstSentence = item.summaryHu.split(". ")[0].replace(/\.$/, "");
+const title = `${item.name} – közösségi botsablon magyarul (nem hivatalos) | ${siteConfig.name}`;
+const description = `${item.name} (${item.handle}): ${firstSentence}. Memória, skillek, rutinok, integrációk és forrás egy helyen, magyarul.`.slice(
+  0,
+  300,
+);
+const posted = budapestTime(item.postedAt);
+const index = communityTemplates.findIndex((entry) => entry.slug === item.slug);
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  name: item.name,
+  url: absUrl(origin, path),
+  inLanguage: "hu",
+  description: item.summaryHu,
+  author: { "@type": "Person", name: item.author, url: `https://x.com/${item.handle.replace(/^@/, "")}` },
+  sameAs: [item.templateUrl, item.postUrl],
+  isPartOf: { "@type": "WebPage", url: absUrl(origin, "/sablonok/") },
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  path={path}
+  current="templates"
+  ogType="article"
+  jsonLd={[ld]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Közösségi botsablonok", path: "/sablonok/" },
+    { name: item.name, path },
+  ]}
+>
+  <article class="prose bot-page" data-template-page={item.slug}>
+    <p class="eyebrow">
+      <a href="/sablonok/">Közösségi botsablonok</a> · nem hivatalos összefoglaló
+    </p>
+    <h1>{item.name}</h1>
+    <ul class="meta-row">
+      <li>Készítő: {item.author} ({item.handle})</li>
+      <li>Megosztva: <time datetime={item.postedAt}>{posted}</time> (budapesti idő)</li>
+      <li>Lekérve: <time datetime={item.fetched}>{item.fetched}</time></li>
+    </ul>
+
+    <section class="bot-block" id="leiras" data-block="leiras">
+      <h2>Leírás</h2>
+      <p class="lede">{item.summaryHu}</p>
+      {
+        item.templateQuote && (
+          <figure class="quote-box">
+            <blockquote cite={item.templateUrl}>
+              <p lang="en">{item.templateQuote}</p>
+            </blockquote>
+            <figcaption class="fine">
+              A sablon leírása az x.ai lapján (angol idézet): <a href={item.templateUrl}>{item.name} · x.ai</a>
+            </figcaption>
+          </figure>
+        )
+      }
+      <figure class="quote-box">
+        <blockquote cite={item.postUrl}>
+          {item.postQuote.split("\n\n").map((para) => <p lang="en">{para}</p>)}
+        </blockquote>
+        <figcaption class="fine">
+          A készítő X-posztja (angol idézet): <a href={item.postUrl}>{item.handle} · x.com</a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="bot-block" id="memoria" data-block="memoria">
+      <h2>Memória</h2>
+      {
+        item.memory.length > 0 ? (
+          <dl class="bot-list">
+            {item.memory.map((entry) => (
+              <div>
+                <dt>{entry.labelHu}</dt>
+                <dd lang="en">„{entry.quote}” <span class="fine">({fromLabel(entry.from)})</span></dd>
+              </div>
+            ))}
+          </dl>
+        ) : (
+          <p>{templateMissing}</p>
+        )
+      }
+    </section>
+
+    <section class="bot-block" id="skillek" data-block="skillek">
+      <h2>Skillek</h2>
+      {
+        item.skills.length > 0 ? (
+          <dl class="bot-list">
+            {item.skills.map((skill) => (
+              <div>
+                <dt>
+                  <code>{skill.name}</code>
+                </dt>
+                <dd lang="en">„{skill.quote}” <span class="fine">({fromLabel(skill.from)})</span></dd>
+              </div>
+            ))}
+          </dl>
+        ) : (
+          <p>{templateMissing}</p>
+        )
+      }
+    </section>
+
+    <section class="bot-block" id="rutinok" data-block="rutinok">
+      <h2>Rutinok</h2>
+      {
+        item.routines.length > 0 ? (
+          <>
+            <p>
+              A forrás nem nevez meg routine-t; ezeket az ismétlődő működéseket írja le. A routine neve és pontos ütemezése:{" "}
+              {templateMissing}
+            </p>
+            <dl class="bot-list">
+              {item.routines.map((routine) => (
+                <div>
+                  <dt>{routine.labelHu}</dt>
+                  <dd lang="en">„{routine.quote}” <span class="fine">({fromLabel(routine.from)})</span></dd>
+                </div>
+              ))}
+            </dl>
+          </>
+        ) : (
+          <p>{templateMissing}</p>
+        )
+      }
+    </section>
+
+    <section class="bot-block" id="integraciok" data-block="integraciok">
+      <h2>Integrációk</h2>
+      {
+        item.integrations.length > 0 ? (
+          <>
+            <p>A forrásban említett appok. Hogy pontosan melyik csatlakozást kéri a sablon: {templateMissing}</p>
+            <dl class="bot-list">
+              {item.integrations.map((app) => (
+                <div>
+                  <dt>{app.name}</dt>
+                  <dd lang="en">„{app.quote}” <span class="fine">({fromLabel(app.from)})</span></dd>
+                </div>
+              ))}
+            </dl>
+          </>
+        ) : (
+          <p>{templateMissing}</p>
+        )
+      }
+    </section>
+
+    <section class="bot-block sources" id="forras" data-block="forras">
+      <h2>Forrás</h2>
+      <ul class="plain-list">
+        <li>X-poszt: <a href={item.postUrl} data-post-link>{item.postUrl}</a></li>
+        <li>Készítő: {item.author} (<a href={`https://x.com/${item.handle.replace(/^@/, "")}`}>{item.handle}</a>)</li>
+        <li>Közzétéve: <time datetime={item.postedAt}>{posted}</time> (budapesti idő)</li>
+        <li>Sablon: <a href={item.templateUrl} data-source-link>{item.templateUrl}</a></li>
+        <li>lekérve: {item.fetched}</li>
+      </ul>
+    </section>
+
+    <TemplateNote />
+  </article>
+
+  <nav class="pager" aria-label="Lapozás a sablonok között">
+    {
+      index > 0 ? (
+        <a rel="prev" href={templatePath(communityTemplates[index - 1].slug)}>
+          <span class="fine">Előző</span>
+          <span>{communityTemplates[index - 1].name}</span>
+        </a>
+      ) : (
+        <a rel="prev" href="/sablonok/">
+          <span class="fine">Vissza</span>
+          <span>A gyűjtemény</span>
+        </a>
+      )
+    }
+    {
+      index < communityTemplates.length - 1 ? (
+        <a class="next" rel="next" href={templatePath(communityTemplates[index + 1].slug)}>
+          <span class="fine">Következő</span>
+          <span>{communityTemplates[index + 1].name}</span>
+        </a>
+      ) : (
+        <a class="next" rel="next" href="/marketplace/">
+          <span class="fine">Tovább</span>
+          <span>Marketplace magyarul</span>
+        </a>
+      )
+    }
+  </nav>
+</Base>
