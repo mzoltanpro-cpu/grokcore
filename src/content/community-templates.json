@@ -322,5 +322,312 @@
     "skills": [],
     "routines": [],
     "integrations": []
+  },
+  {
+    "slug": "usage-watch",
+    "name": "Usage Watch",
+    "author": "Luis Barragan",
+    "handle": "@luisbarragan",
+    "postUrl": "https://x.com/luisbarragan/status/2111229701314535863",
+    "postedAt": "2026-10-16T22:56:00Z",
+    "templateUrl": "https://x.ai/bot/wQ2nRsIjO6ByfzZvGy5St",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Keretfigyelő bot Grok Bot-felhasználóknak. A sablon leírása szerint az összes botod routine-ját egy naptárra teszi fel a használati keret következő nullázásáig, megmutatja, melyik fogyaszt a legtöbbet, és segít szüneteltetni őket, hogy ne fogyj ki a keretből. A készítő szerint a szüneteltetés csak akkor történik, ha ő kéri.",
+    "postQuote": "Hit 56% of my weekly usage this morning with days still left.\n\nSo I built a Grok Bot template for it: Usage Watch.\n\nIt maps all my bots' routines onto a color-coded calendar up to the reset, flags the biggest drains, and pauses them when I say so.",
+    "templateQuote": "Maps all your bots' routines onto a calendar up to your usage reset, flags the biggest drains, and helps you pause them so you don't run out.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”)",
+        "url": "https://x.com/cu30rry_/status/2111654753251803320"
+      }
+    ]
+  },
+  {
+    "slug": "site-coach",
+    "name": "Site Coach",
+    "author": "Phil",
+    "handle": "@Phil_Holland",
+    "postUrl": "https://x.com/Phil_Holland/status/2111488822047584521",
+    "postedAt": "2026-10-17T16:05:39Z",
+    "templateUrl": "https://x.ai/bot/nk0jtBcOKfzIKbkfWjHzU",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Weboldal-edző bot a Google Search Console és a GA4 adataihoz, köznyelven magyarázva. A sablon leírása szerint heti összefoglalót küld, jelzi a valódi problémákat, követi az AI-keresőkben való láthatóságodat, gyors SEO-javításokat keres, és a javítások vázlatát jóváhagyásra adja. A készítő szerint megmutatja a kattintásokat, a fő keresőkifejezéseket, és hogy mi változott és miért.",
+    "postQuote": "🕸️How about a @bot that coaches your sites’ Google traffic in plain English.\n\nClicks, top queries, what moved and why. finds quick SEO wins and drafts the fixes.\n\nIntegrated with GSC/GA with @Google APIs. Fire it up and lemme know what you think!",
+    "templateQuote": "A plain-English coach for your website's Google Search Console and GA4. It sends a weekly brief, flags real problems, tracks your AI search visibility, finds quick SEO wins, and drafts fixes for your approval.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti összefoglaló",
+        "quote": "It sends a weekly brief",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Google Search Console",
+        "quote": "Integrated with GSC/GA with @Google APIs.",
+        "from": "post"
+      },
+      {
+        "name": "Google Analytics (GA4)",
+        "quote": "coach for your website's Google Search Console and GA4",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”)",
+        "url": "https://x.com/cu30rry_/status/2111654753251803320"
+      }
+    ]
+  },
+  {
+    "slug": "vibe-check",
+    "name": "Vibe Check",
+    "author": "Chris Priddy",
+    "handle": "@priddysharp",
+    "postUrl": "https://x.com/priddysharp/status/2111217009614794815",
+    "postedAt": "2026-10-16T22:05:34Z",
+    "templateUrl": "https://x.ai/bot/V2mEPjBfDmtFvqeYUuvnm",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Ellenőrző bot AI-val („vibe coding”) készült appokhoz. A sablon leírása szerint azokat a hiányokat keresi, amelyeket a vibe coding élesítéskor kihagy (biztonság, adatok, bejelentkezés, számlázás, üzemeltetés), és rangsorolt javítási listát ad. A készítő szerint egy másik felhasználó listájából készült, néhány extrával (például kitalált csomagnevek, kiszivárgott kliensoldali kulcsok), és van gyors, top-10-es módja hétvégi projektekhez.",
+    "postQuote": "Great list! I turned it into a Grok Bot template that audits your vibe-coded app against it, plus a few extras like hallucinated packages and exposed client keys. There's a quick top-10 mode for weekend projects.\n\nVibe coded app? Give it a Vibe Check!",
+    "templateQuote": "Audits your AI-built app for the production gaps vibe coding misses, like security, data, auth, billing, and ops, and hands back a ranked fix list. For anyone shipping a vibe-coded app to real users.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”)",
+        "url": "https://x.com/cu30rry_/status/2111654753251803320"
+      }
+    ]
+  },
+  {
+    "slug": "hagglebot",
+    "name": "Hagglebot",
+    "author": "Anon Haggle",
+    "handle": "@AnonHaggle",
+    "postUrl": "https://x.com/AnonHaggle/status/2111213528023715927",
+    "postedAt": "2026-10-16T21:51:44Z",
+    "templateUrl": "https://x.ai/bot/0xFG7K1XBbdOnKbp45zkz",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Alkudozó bot cégeknek és magánszemélyeknek. Megkeresi a fölösleges kiadásokat, utánanéz a reális áraknak, és ellenajánlatot fogalmaz a SaaS-szerződésektől és számláktól a fizetésen és lakbéren át az autóig. Minden üzenetet jóváhagyásra vázlatként ad, és vezeti, mennyit spóroltál.",
+    "postQuote": "V2 of the bot is now live\n\nIt finds wasted spend, researches fair prices, and drafts sharp counteroffers on everything from SaaS contracts and bills to salaries, rent, and cars. It tracks every rupee or dollar saved, and nothing goes out without your OK.",
+    "templateQuote": "Finds wasted spend and negotiates better prices and terms for businesses and individuals, from vendor and SaaS contracts to bills, salaries, rent, cars, refunds, and marketplace deals. It drafts every message for your approval and tracks what you've saved.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”)",
+        "url": "https://x.com/cu30rry_/status/2111654753251803320"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "haggle-bot",
+        "name": "Haggle Bot",
+        "noteHu": "A hivatalos Marketplace Haggle Botja (Daniel Gartshein) hasonló témájú, de más bot: az a Rampből és a számlákból a SaaS-költésekre fókuszál."
+      }
+    ]
+  },
+  {
+    "slug": "sell-anything",
+    "name": "Sell Anything",
+    "author": "CJD",
+    "handle": "@cjdinnison",
+    "postUrl": "https://x.com/cjdinnison/status/2111607251157078208",
+    "postedAt": "2026-10-17T23:56:15Z",
+    "templateUrl": "https://x.ai/bot/jSEK7tMiX9wUBMVB_mojh",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Használtcikk-eladó bot. Egy fotóból a ténylegesen eladott hasonló tételek alapján árat javasol, hirdetést ír, feladja azt, és intézi a vevőkkel a kommunikációt, amíg el nem kel. A készítő szerint semmi nem jelenik meg a jóváhagyása nélkül.",
+    "postQuote": "Sell anything with one photo.\n\nI built a free @bot template that prices your stuff based on what it actually sells for, lists it on FB Marketplace, OfferUp and eBay, and handles the buyers. Nothing posts without your OK.\n\n@grok @mattyp",
+    "templateQuote": "A resale pro that prices your stuff from real sold comps, writes listings that sell, posts them to OfferUp, Facebook Marketplace, eBay, and Craigslist, and handles buyers until it's sold.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "OfferUp",
+        "quote": "posts them to OfferUp, Facebook Marketplace, eBay, and Craigslist",
+        "from": "template"
+      },
+      {
+        "name": "Facebook Marketplace",
+        "quote": "posts them to OfferUp, Facebook Marketplace, eBay, and Craigslist",
+        "from": "template"
+      },
+      {
+        "name": "eBay",
+        "quote": "posts them to OfferUp, Facebook Marketplace, eBay, and Craigslist",
+        "from": "template"
+      },
+      {
+        "name": "Craigslist",
+        "quote": "posts them to OfferUp, Facebook Marketplace, eBay, and Craigslist",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "bottleneck-desk",
+    "name": "Bottleneck Desk",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2111504263432241437",
+    "postedAt": "2026-10-17T17:07:00Z",
+    "templateUrl": "https://x.ai/bot/pVCBAgjznNxzKauRtGLV7",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Csak olvasó és jelentő bot, amely megkeresi, hol akad el a munka: régóta álló PR-ok, gazdátlan, hibás checkek, botok közötti elakadt átadások és rád váró jóváhagyások. A sablon leírása szerint hetente rangsorolt jelentést küld, és a beleegyezésed nélkül semmit nem merge-el, nem kommentel és senkinek nem szól.",
+    "postQuote": "steal the department. every desk is a free grok bot template:\n\n[…]\n\neach one reads and reports only. nothing changes without your yes.",
+    "templateQuote": "A read-and-report bot that finds where work is stuck: stale PRs, failing checks nobody owns, stalled handoffs between bots, and approvals waiting on you. It sends you a weekly ranked report and never merges, comments, or pings anyone without your yes.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti rangsorolt jelentés",
+        "quote": "It sends you a weekly ranked report",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”)",
+        "url": "https://x.com/cu30rry_/status/2111654753251803320"
+      },
+      {
+        "labelHu": "@Av1dlive „Department of Grok Efficiency” szálából",
+        "url": "https://x.com/Av1dlive/status/2111500687410700353"
+      }
+    ]
+  },
+  {
+    "slug": "cloud-spend-desk",
+    "name": "Cloud Spend Desk",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2111504263432241437",
+    "postedAt": "2026-10-17T17:07:00Z",
+    "templateUrl": "https://x.ai/bot/TAzgDpkrgwiVaFjaSbCe6",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Csak olvasó és jelentő bot a hosting- és felhőszámlákhoz. A sablon leírása szerint megtalálja a pazarlást: tétlen projekteket, túlméretezett csomagokat, nem használt domaineket és hirtelen számlaugrásokat. A beleegyezésed nélkül semmit nem változtat.",
+    "postQuote": "steal the department. every desk is a free grok bot template:\n\n[…]\n\neach one reads and reports only. nothing changes without your yes.",
+    "templateQuote": "A read-and-report bot that finds waste in your hosting and cloud bills, like idle projects, oversized plans, unused domains and bill spikes. It never changes anything without your yes.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”)",
+        "url": "https://x.com/cu30rry_/status/2111654753251803320"
+      },
+      {
+        "labelHu": "@Av1dlive „Department of Grok Efficiency” szálából",
+        "url": "https://x.com/Av1dlive/status/2111500687410700353"
+      }
+    ]
+  },
+  {
+    "slug": "ad-spend-desk",
+    "name": "Ad Spend Desk",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2111504263432241437",
+    "postedAt": "2026-10-17T17:07:00Z",
+    "templateUrl": "https://x.ai/bot/MQLGGf9tlc1LITK3ixesd",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Csak olvasó hirdetésiköltség-auditor. A sablon leírása szerint megkeresi a konverzió nélkül költő kampányokat, hirdetéscsoportokat és hirdetéseket, valamint a forgalmat vesztő landing oldalakat, és mindegyikhez kiszámolja a megtakarítást. A beleegyezésed nélkül semmit nem szüneteltet és nem módosít.",
+    "postQuote": "steal the department. every desk is a free grok bot template:\n\n[…]\n\neach one reads and reports only. nothing changes without your yes.",
+    "templateQuote": "A read-only ad spend auditor that finds campaigns, ad groups and ads spending without conversions and landing pages that leak traffic, with dollar savings math for each. It never pauses or changes anything without your yes.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@Av1dlive „Department of Grok Efficiency” szálából",
+        "url": "https://x.com/Av1dlive/status/2111500687410700353"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "fuse",
+        "name": "Ad Spend Watch",
+        "noteHu": "A hivatalos Marketplace Ad Spend Watch botja (Miguel Cruz) hasonló témájú, de más bot: beillesztett exportból figyeli a hirdetési költést és teljesítményt."
+      }
+    ]
+  },
+  {
+    "slug": "doge-procurement-desk",
+    "name": "DOGE Procurement Desk",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2111504263432241437",
+    "postedAt": "2026-10-17T17:07:00Z",
+    "templateUrl": "https://x.ai/bot/Tp-pBgcS3F_8Oc1bEygxw",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Beszerzési bot, amely csak vázlatot ír. A sablon leírása szerint megkeresi a fölösleges szoftver- és beszállítói költést (nem használt licencek, duplikált eszközök, elfelejtett előfizetések, közelgő megújítások), és ellenajánlatot vagy lemondó üzenetet fogalmaz, amelyet te hagysz jóvá.",
+    "postQuote": "steal the department. every desk is a free grok bot template:\n\n[…]\n\neach one reads and reports only. nothing changes without your yes.",
+    "templateQuote": "A draft-only procurement desk that finds wasted software and vendor spend (unused seats, duplicate tools, forgotten subscriptions, upcoming renewals) and drafts counteroffers or cancel messages for you to approve.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@Av1dlive „Department of Grok Efficiency” szálából",
+        "url": "https://x.com/Av1dlive/status/2111500687410700353"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "haggle-bot",
+        "name": "Haggle Bot",
+        "noteHu": "A hivatalos Marketplace Haggle Botja (Daniel Gartshein) hasonló témájú, de más bot: az a Rampből és a számlákból a SaaS-költésekre fókuszál."
+      }
+    ]
+  },
+  {
+    "slug": "meetings-desk",
+    "name": "Meetings Desk",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2111504263432241437",
+    "postedAt": "2026-10-17T17:07:00Z",
+    "templateUrl": "https://x.ai/bot/qChkh12yBv9W_D2t9Zf54",
+    "templatePageReadable": true,
+    "fetched": "2026-10-18",
+    "summaryHu": "Csak olvasó és jelentő naptár-auditor. A sablon leírása szerint megkeresi az elvesztegetett meetingidőt: napirend nélküli ismétlődő meetingeket, dupla foglalásokat, e-maillel kiváltható alkalmakat, és hogy hetente hány óra vész el. A beleegyezésed nélkül senkinek nem mond le, nem tesz át és nem ír semmit.",
+    "postQuote": "steal the department. every desk is a free grok bot template:\n\n[…]\n\neach one reads and reports only. nothing changes without your yes.",
+    "templateQuote": "A read-and-report calendar auditor that finds wasted meeting time: agenda-less recurring meetings, double-bookings, could-be-an-email slots, and hours lost per week. It never declines, moves, or messages anyone without the operator's yes.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@Av1dlive „Department of Grok Efficiency” szálából",
+        "url": "https://x.com/Av1dlive/status/2111500687410700353"
+      }
+    ]
   }
 ]

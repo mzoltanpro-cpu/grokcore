@@ -29,6 +29,10 @@ export type CommunityTemplate = {
   skills: { name: string; quote: string; from: From }[];
   routines: { labelHu: string; quote: string; from: From }[];
   integrations: { name: string; quote: string; from: From }[];
+  /** Hol bukkantunk rá (pl. egy válogatás vagy szál); nem forrás, csak jelzés. */
+  discoveredVia?: { labelHu: string; url: string }[];
+  /** Hasonló témájú, de más hivatalos Marketplace-bot. */
+  relatedMarketplace?: { slug: string; name: string; noteHu: string }[];
 };
 
 export const communityTemplates = raw as CommunityTemplate[];
