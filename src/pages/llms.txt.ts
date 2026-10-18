@@ -4,6 +4,7 @@ import { worksheetMdPath, worksheetPath } from "../content/worksheets";
 import { docs } from "../content/docs";
 import { marketplaceBots, marketplaceFetched, marketplacePath } from "../content/marketplace";
 import { budapestTime, communityTemplates, templatePath } from "../content/templates";
+import { guides, guidesFetched, guidesIndexUrl, guideUrl, useCasesUrl } from "../content/guides";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
 export const GET: APIRoute = ({ site }) => {
@@ -42,6 +43,13 @@ export const GET: APIRoute = ({ site }) => {
       (item) =>
         `- [${item.name}](${absUrl(origin, templatePath(item.slug))}): ${item.summaryHu} Készítő: ${item.handle}, ${budapestTime(item.postedAt)} (budapesti idő). Sablon: ${item.templateUrl} X-poszt: ${item.postUrl}`,
     ),
+    "",
+    "## Hivatalos Grok Bot útmutatók (nem hivatalos magyar összefoglalók)",
+    "",
+    `Az ${guidesIndexUrl} oldal ${guides.length} útmutatója saját rövid magyar összefoglalóval (nem fordítás), lekérve: ${guidesFetched}. Az oldal alján általános Grok-felhasználások (nem Grok Bot): ${useCasesUrl}`,
+    "",
+    `- [Útmutatók](${absUrl(origin, "/utmutatok/")})`,
+    ...guides.map((g) => `- [${g.title}](${absUrl(origin, `/utmutatok/#${g.slug}`)}): ${g.summaryHu} Eredeti: ${guideUrl(g.slug)}`),
     "",
     "## Az oldal",
     "",

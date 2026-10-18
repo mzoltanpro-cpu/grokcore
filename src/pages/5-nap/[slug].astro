@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Blocks from "../../components/Blocks.astro";
+import DayGuides from "../../components/DayGuides.astro";
 import DayNav from "../../components/DayNav.astro";
 import Signup from "../../components/Signup.astro";
 import Sources from "../../components/Sources.astro";
@@ -101,6 +102,7 @@ const howTo = {
         </section>
       )
     }
+    <DayGuides day={day.n} />
     <Sources sources={day.sources} />
   </article>
   <nav class="pager" aria-label="Lapozás a napok között">
