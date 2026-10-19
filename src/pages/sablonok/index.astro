@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import TemplateNote from "../../components/TemplateNote.astro";
 import { budapestTime, communityTemplates, templatePath } from "../../content/templates";
+import { officialTemplates } from "../../content/official";
 import { absUrl, siteConfig, siteOrigin } from "../../lib/site";
 
 const origin = siteOrigin(Astro.site);
@@ -43,6 +44,10 @@ const ld = {
     Felhasználók által az X-en megosztott botsablonok, mindegyik egy saját, rövid magyar összefoglalóval. Ezek nem a
     hivatalos <a href="/marketplace/">Marketplace</a> botjai, hanem bárki által készített és linkkel megosztott sablonok. A
     sablon neve, a szakszavak és az idézetek eredetiben maradnak.
+  </p>
+  <p class="fine" data-cross-link>
+    Az x.ai saját, hivatalos sablonjait magyar összefoglalóval a <a href="/hivatalos-sablonok/">Hivatalos sablonok</a> oldalon
+    találod ({officialTemplates.length} sablon).
   </p>
   <TemplateNote />
 
