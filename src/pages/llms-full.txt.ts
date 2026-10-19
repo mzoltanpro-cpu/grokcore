@@ -115,9 +115,9 @@ export const GET: APIRoute = ({ site }) => {
   );
 
   parts.push(
-    "## Haladó útmutatók (saját, a Kezdő 5 nap után)",
+    "## Haladó útmutatók (a Botkezdő saját anyaga, nem hivatalos x.ai útmutató; a Kezdő 5 nap után)",
     "",
-    `Saját magyar szöveg, nem fordítás. Források lekérve: ${advancedFetched}. Oldal: ${absUrl(origin, "/halado/")}`,
+    `Saját magyar szöveg, nem fordítás, nem hivatalos x.ai anyag; a hivatalos útmutatók összefoglalója a fenti külön szakaszban van. Források lekérve: ${advancedFetched}. Oldal: ${absUrl(origin, "/halado/")}`,
     "",
   );
   for (const g of advancedGuides) {

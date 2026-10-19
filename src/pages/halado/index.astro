@@ -7,12 +7,12 @@ const origin = siteOrigin(Astro.site);
 const path = "/halado/";
 const title = `Haladó Grok Bot útmutatók magyarul | ${siteConfig.name}`;
 const description =
-  "Haladó Grok Bot útmutatók a Kezdő 5 nap után: botcsapat, rutinok ütemezése, második agy fájlokból. Saját magyar szöveg, forrásolva.";
+  "A Botkezdő saját haladó Grok Bot útmutatói a Kezdő 5 nap után: botcsapat, rutinok ütemezése, második agy fájlokból. Nem hivatalos x.ai anyag, forrásolva.";
 
 const ld = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Haladó Grok Bot útmutatók",
+  name: "Haladó Grok Bot útmutatók (Botkezdő, nem hivatalos)",
   description,
   inLanguage: "hu",
   url: absUrl(origin, path),
@@ -30,23 +30,30 @@ const ld = {
   title={title}
   description={description}
   path={path}
-  current="guides"
+  current="advanced"
   jsonLd={[ld]}
   crumbs={[
     { name: siteConfig.name, path: "/" },
     { name: "Haladó útmutatók", path },
   ]}
 >
-  <p class="eyebrow">A Kezdő 5 nap után · {advancedGuides.length} útmutató</p>
-  <h1>Haladó útmutatók</h1>
+  <p class="eyebrow">Saját útmutatók · a Kezdő 5 nap után · {advancedGuides.length} útmutató</p>
+  <h1>Haladó útmutatók (saját)</h1>
   <p class="lede">
     Ha megvan az első Botod, az első routine-od és a jóváhagyási szabályaid, innen léphetsz tovább: több Botból csapat,
     takarékos rutinok és egy Bot, amely fájlokban tartja, amit rólad tudnia kell.
   </p>
+  <aside class="note" aria-label="Nem hivatalos anyag" data-own-guides>
+    <p>
+      <strong>Ezek a Botkezdő saját útmutatói, nem hivatalos x.ai anyagok.</strong> A hivatalos guide-okat az
+      <a href="/utmutatok/">Útmutatók</a> oldalon találod.
+    </p>
+  </aside>
   <aside class="note" aria-label="Forrásokról">
     <p>
-      <strong>Saját magyar szöveg, forrással.</strong> Az útmutatók az xAI-munkatársak hivatalos útmutatóira (gyártói
-      forrás), közösségi X-cikkekre és a docs.x.ai dokumentációra épülnek. Minden oldalon ott a szerző, a link, a dátum
+      <strong>Saját magyar szöveg, forrással.</strong> Az útmutatókat mi írtuk, nem fordítások. Forrásként az x.ai
+      oldalán megjelent, xAI-munkatársak által írt útmutatókat (gyártói forrás), közösségi X-cikkeket és a docs.x.ai
+      dokumentációt használtuk. Minden oldalon ott a szerző, a link, a dátum
       és a forrás típusa. Ami nem ellenőrzött, [ELLENŐRIZENDŐ] jelölést kap. Források lekérve: {advancedFetched}.
     </p>
   </aside>
@@ -75,8 +82,8 @@ const ld = {
       <h2 id="meg-nem">Még az elején tartasz?</h2>
     </div>
     <p>
-      Ezek az oldalak a <a href="/5-nap/">Kezdő 5 nap</a> anyagára építenek. A hivatalos angol útmutatók rövid magyar
-      összefoglalóját az <a href="/utmutatok/">Útmutatók</a> oldalon találod.
+      Ezek az oldalak a <a href="/5-nap/">Kezdő 5 nap</a> anyagára építenek. Az x.ai hivatalos angol útmutatóinak rövid magyar
+      összefoglalóját külön, az <a href="/utmutatok/">Útmutatók</a> oldalon találod.
     </p>
   </section>
 </Base>

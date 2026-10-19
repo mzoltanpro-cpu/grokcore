@@ -38,7 +38,7 @@ const howTo = {
   title={title}
   description={guide.description}
   path={path}
-  current="guides"
+  current="advanced"
   ogType="article"
   jsonLd={[howTo]}
   prev={previous ? advancedPath(previous.slug) : "/halado/"}
@@ -50,8 +50,14 @@ const howTo = {
   ]}
 >
   <article class="prose">
-    <p class="eyebrow">Haladó útmutató · a Kezdő 5 nap után</p>
+    <p class="eyebrow">Saját haladó útmutató · a Kezdő 5 nap után</p>
     <h1>{guide.title}</h1>
+    <aside class="note" aria-label="Nem hivatalos anyag" data-own-guides>
+      <p>
+        <strong>Ezek a Botkezdő saját útmutatói, nem hivatalos x.ai anyagok.</strong> A hivatalos guide-okat az
+        <a href="/utmutatok/">Útmutatók</a> oldalon találod.
+      </p>
+    </aside>
     <ul class="meta-row">
       <li>{index + 1} / {advancedGuides.length}</li>
       <li>{guide.minutes}</li>
@@ -106,7 +112,7 @@ const howTo = {
       ) : (
         <a class="next" rel="next" href="/utmutatok/">
           <span class="fine">Tovább</span>
-          <span>Hivatalos útmutatók magyarul</span>
+          <span>Az x.ai hivatalos útmutatói (Útmutatók oldal)</span>
         </a>
       )
     }
