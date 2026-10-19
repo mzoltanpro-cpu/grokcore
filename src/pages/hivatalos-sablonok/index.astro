@@ -1,0 +1,156 @@
+---
+import Base from "../../layouts/Base.astro";
+import {
+  installMissing,
+  officialByCategory,
+  officialCategoryKey,
+  officialCategoryLabel,
+  officialFetched,
+  officialSourceUrl,
+  officialTemplates,
+} from "../../content/official";
+import { brandGuidelinesUrl, marketplacePath } from "../../content/marketplace";
+import { communityTemplates } from "../../content/templates";
+import { absUrl, siteConfig, siteOrigin } from "../../lib/site";
+
+const origin = siteOrigin(Astro.site);
+const groups = officialByCategory();
+const withInstall = officialTemplates.filter((item) => item.installUrl).length;
+const title = `Hivatalos x.ai botsablonok magyarul | ${siteConfig.name}`;
+const description = `Az x.ai ${officialTemplates.length} hivatalos Grok Bot-sablonja kategóriánként, saját rövid magyar összefoglalóval, az eredeti angol leírással és a hozzáadás linkjével.`;
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Hivatalos x.ai botsablonok – magyar összefoglaló",
+  description,
+  inLanguage: "hu",
+  numberOfItems: officialTemplates.length,
+  itemListOrder: "https://schema.org/ItemListUnordered",
+  itemListElement: officialTemplates.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: `${absUrl(origin, "/hivatalos-sablonok/")}#${item.slug}`,
+    name: item.name,
+  })),
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/hivatalos-sablonok/"
+  current="official-templates"
+  jsonLd={[ld]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Hivatalos sablonok", path: "/hivatalos-sablonok/" },
+  ]}
+>
+  <p class="eyebrow">Hivatalos x.ai sablonok · {officialTemplates.length} sablon · magyar összefoglaló</p>
+  <h1>Hivatalos sablonok</h1>
+  <p class="lede">
+    Ezek az x.ai hivatalos Grok Bot-sablonjai, mindegyik egy rövid magyar összefoglalóval a Botkezdőtől. Az összefoglaló csak
+    a hivatalos angol leírásból készült; az eredeti leírás idézetként mellette áll. Az eredetik az
+    <a href={officialSourceUrl} data-official-source>x.ai hivatalos sablonoldalán</a> vannak (lekérve: {officialFetched}).
+  </p>
+  <aside class="note mp-note" aria-label="Nem hivatalos oldal" data-official-note>
+    <p>
+      <strong>Nem hivatalos összefoglaló, hivatalos sablonok.</strong> A sablonokat az x.ai adja ki; ez az oldal a Botkezdő
+      saját magyar összefoglalója. Nem állunk kapcsolatban az x.ai-t üzemeltető SpaceXSI-vel, és ők nem támogatják ezt az
+      oldalt. A pontos, aktuális adat mindig az eredeti x.ai lapon van. Logót a
+      <a href={brandGuidelinesUrl}>márkahasználati irányelvek</a> miatt nem veszünk át.
+    </p>
+  </aside>
+  <p class="fine" data-cross-link>
+    Felhasználók által készített és az X-en megosztott sablonokat a
+    <a href="/sablonok/">Közösségi botsablonok</a> oldalon gyűjtünk ({communityTemplates.length} sablon).
+  </p>
+
+  <nav class="section" aria-label="Kategóriák">
+    <p class="tag-row">
+      {
+        groups.map((group) => (
+          <a class="tag" href={`#kat-${officialCategoryKey(group.category)}`}>
+            {group.hu} <span lang="en">({group.category})</span> · {group.items.length}
+          </a>
+        ))
+      }
+    </p>
+  </nav>
+
+  {
+    groups.map((group) => (
+      <section class="section" aria-labelledby={`kat-${officialCategoryKey(group.category)}`} data-official-category={group.category}>
+        <div class="section-head">
+          <h2 id={`kat-${officialCategoryKey(group.category)}`}>
+            {group.hu} <span class="fine" lang="en">({group.category})</span>
+          </h2>
+          <p>{group.items.length} sablon</p>
+        </div>
+        <ul class="bot-grid plain-list">
+          {group.items.map((item) => (
+            <li class="bot-card" id={item.slug} data-official={item.slug}>
+              <h3 class="bot-name" lang="en">{item.name}</h3>
+              <p class="bot-by">
+                <span lang="en">{item.category}</span> · {officialCategoryLabel(item.category)}
+              </p>
+              <p>{item.summaryHu}</p>
+              <figure class="quote-box">
+                <blockquote cite={item.sourceUrl}>
+                  <p lang="en">{item.descriptionQuote}</p>
+                </blockquote>
+                <figcaption class="fine">Az eredeti angol leírás az x.ai oldalán.</figcaption>
+              </figure>
+              {item.relatedMarketplace?.map((rel) => (
+                <p class="fine" data-related-marketplace={rel.slug}>
+                  Megjegyzés: {rel.noteHu} <a href={marketplacePath(rel.slug)}>{rel.name} magyarul</a>
+                </p>
+              ))}
+              <p class="fine">
+                {item.installUrl ? (
+                  <a href={item.installUrl} data-install-link>
+                    Hozzáadás: <span lang="en">Add to Grok Bot</span> (x.ai)
+                  </a>
+                ) : (
+                  <span data-install-missing>{installMissing}</span>
+                )}{" "}
+                · <a href={item.sourceUrl} data-source-link>Forrás: x.ai hivatalos sablonoldal</a> · lekérve: {item.fetched}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  <section class="section" aria-labelledby="hozzaadas">
+    <div class="section-head">
+      <h2 id="hozzaadas">Hogyan adhatsz hozzá egy hivatalos sablont?</h2>
+    </div>
+    <ol class="checklist">
+      <li>Kattints a sablon „Hozzáadás” linkjére. Ez a sablon saját <code>x.ai/bot/…</code> lapjára visz.</li>
+      <li>
+        A lapon az <strong lang="en">Add to Grok Bot</strong> gomb adja hozzá a sablont. A lap szerint a gombra kattintva
+        elfogadod a feltételeket.
+      </li>
+      <li>Ha még nincs meg az app, ugyanezen a lapon a <span lang="en">„Don't have Grok Bot? Download”</span> linkkel töltheted le.</li>
+    </ol>
+    <p class="fine">Forrás: a sablonok x.ai lapjai, lekérve: {officialFetched}.</p>
+  </section>
+
+  <section class="section" aria-labelledby="hogyan">
+    <div class="section-head">
+      <h2 id="hogyan">Hogyan készült?</h2>
+    </div>
+    <ul class="checklist">
+      <li>
+        A lista az <a href={officialSourceUrl}>x.ai hivatalos sablonoldalának</a> mind a(z) {officialTemplates.length} kártyáját
+        tartalmazza, az ottani kategóriákkal; {withInstall} sablonnál van közvetlen hozzáadási link.
+      </li>
+      <li>A név, a kategória és a leírás eredetiben marad. A magyar összefoglaló a sajátunk, csak a hivatalos leírásból.</li>
+      <li>Nem írunk funkciót, amit a leírás nem említ. A hozzáadási link a kártya gombjának valódi címe; ha nincs, jelöljük.</li>
+      <li>A „Megjegyzés” azonos nevű vagy hasonló témájú, de másik botra mutat a magyar Marketplace-katalógusunkban.</li>
+    </ul>
+  </section>
+</Base>
