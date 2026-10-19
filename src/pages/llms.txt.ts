@@ -5,6 +5,7 @@ import { docs } from "../content/docs";
 import { marketplaceBots, marketplaceFetched, marketplacePath } from "../content/marketplace";
 import { budapestTime, communityTemplates, templatePath } from "../content/templates";
 import { guides, guidesFetched, guidesIndexUrl, guideUrl, useCasesUrl } from "../content/guides";
+import { installMissing, officialCategoryLabel, officialFetched, officialSourceUrl, officialTemplates } from "../content/official";
 import { advancedFetched, advancedGuides, advancedPath } from "../content/advanced";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
@@ -34,6 +35,16 @@ export const GET: APIRoute = ({ site }) => {
     "",
     `- [Katalógus](${absUrl(origin, "/marketplace/")})`,
     ...marketplaceBots.map((bot) => `- [${bot.name}](${absUrl(origin, marketplacePath(bot.slug))}): ${bot.summaryHu} Forrás: ${bot.sourceUrl}`),
+    "",
+    "## Hivatalos x.ai sablonok (saját magyar összefoglaló)",
+    "",
+    `Az x.ai hivatalos sablonoldalának (${officialSourceUrl}) ${officialTemplates.length} sablonja kategóriánként, saját magyar összefoglalóval, lekérve: ${officialFetched}. Nem állunk kapcsolatban a SpaceXSI-vel.`,
+    "",
+    `- [Hivatalos sablonok](${absUrl(origin, "/hivatalos-sablonok/")})`,
+    ...officialTemplates.map(
+      (item) =>
+        `- [${item.name}](${`${absUrl(origin, "/hivatalos-sablonok/")}#${item.slug}`}) (${item.category} / ${officialCategoryLabel(item.category)}): ${item.summaryHu} ${item.installUrl ? `Hozzáadás: ${item.installUrl}` : installMissing}`,
+    ),
     "",
     "## Közösségi botsablonok (nem hivatalos gyűjtemény)",
     "",

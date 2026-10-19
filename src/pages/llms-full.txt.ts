@@ -5,6 +5,7 @@ import { faq } from "../content/faq";
 import { appName, categoryLabel, dayLabel, marketplaceBots, marketplaceFetched, marketplacePath, nonAffiliation } from "../content/marketplace";
 import { budapestTime, communityTemplates, templateMissing, templateNonAffiliation, templatePath } from "../content/templates";
 import { addIns, guides, guidesFetched, guidesIndexUrl, guideUrl, useCases, useCasesFetched, useCasesUrl } from "../content/guides";
+import { installMissing, officialByCategory, officialFetched, officialSourceUrl, officialTemplates } from "../content/official";
 import { advancedFetched, advancedGuides, advancedPath, sourceKindLabel } from "../content/advanced";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
@@ -64,6 +65,30 @@ export const GET: APIRoute = ({ site }) => {
       `Forrás: ${bot.sourceUrl} (lekérve: ${bot.fetched})`,
       "",
     );
+  }
+
+  parts.push(
+    "## Hivatalos x.ai sablonok (saját magyar összefoglaló)",
+    "",
+    `Az x.ai hivatalos sablonoldalának ${officialTemplates.length} sablonja (${officialSourceUrl}, lekérve: ${officialFetched}). A magyar összefoglaló a Botkezdő sajátja, csak a hivatalos leírásból; nem állunk kapcsolatban a SpaceXSI-vel. Oldal: ${absUrl(origin, "/hivatalos-sablonok/")}`,
+    "",
+  );
+  for (const group of officialByCategory()) {
+    parts.push(`### ${group.hu} (${group.category}) – ${group.items.length} sablon`, "");
+    for (const item of group.items) {
+      parts.push(
+        `#### ${item.name}`,
+        "",
+        `Kategória: ${item.category} (${group.hu}).`,
+        `Leírás: ${item.summaryHu}`,
+        `Eredeti leírás (angol idézet): "${item.descriptionQuote}"`,
+        item.installUrl ? `Hozzáadás: ${item.installUrl}` : installMissing,
+        ...(item.relatedMarketplace ?? []).map((rel) => `Megjegyzés: ${rel.noteHu} ${rel.name}: ${absUrl(origin, `/marketplace/${rel.slug}/`)}`),
+        `Oldal: ${`${absUrl(origin, "/hivatalos-sablonok/")}#${item.slug}`}`,
+        `Forrás: ${item.sourceUrl} (lekérve: ${item.fetched})`,
+        "",
+      );
+    }
   }
 
   parts.push(

@@ -25,6 +25,7 @@ const required = [
   "gyakorlolapok/4-nap-skill-routine.md",
   "gyakorlolapok/5-nap-masodik-bot-biztonsag.md",
   "marketplace/index.html",
+  "hivatalos-sablonok/index.html",
   "sablonok/index.html",
   "utmutatok/index.html",
   "halado/index.html",
@@ -226,6 +227,64 @@ for (const item of templates) {
 for (const rel of byRel.keys()) {
   const m = rel.match(/^sablonok\/([^/]+)\/index\.html$/);
   if (m && !templates.some((item) => item.slug === m[1])) fail(`Árva sablon-oldal: ${rel}`);
+}
+
+// Hivatalos x.ai sablonok: minden JSON-elem kártyaként kint van, valódi x.ai telepítő linkkel vagy „hiányzik” jelöléssel,
+// forráslinkkel, ismert kategóriában; a két sablonoldal egymásra mutat.
+const officialCats = [
+  "General",
+  "Sales",
+  "Marketing",
+  "Customer Success & Support",
+  "Recruiting & People",
+  "Operations & Finance",
+  "Product",
+  "Engineering",
+  "Life & Leverage",
+];
+const official = JSON.parse(await readFile(path.join(root, "src/content/official-templates.json"), "utf8"));
+const offHtml = byRel.has("hivatalos-sablonok/index.html") ? await readFile(byRel.get("hivatalos-sablonok/index.html"), "utf8") : "";
+if (official.length === 0) fail("Az official-templates.json üres.");
+if (!offHtml.includes("data-official-note") || !offHtml.includes("Nem hivatalos")) fail("hivatalos-sablonok/index.html: hiányzik a nem hivatalos összefoglaló jelölés");
+if (!offHtml.includes('"@type":"ItemList"')) fail("hivatalos-sablonok/index.html: hiányzik az ItemList JSON-LD");
+if (!offHtml.includes('href="/sablonok/"')) fail("hivatalos-sablonok/index.html: nem linkeli a közösségi sablonokat");
+if (!tplIndex.includes('href="/hivatalos-sablonok/"')) fail("sablonok/index.html: nem linkeli a hivatalos sablonokat");
+const offSlugs = new Set();
+for (const item of official) {
+  const where = `hivatalos-sablonok: ${item.slug}`;
+  if (offSlugs.has(item.slug)) fail(`${where}: ismétlődő slug`);
+  offSlugs.add(item.slug);
+  if (/grok/i.test(item.slug)) fail(`${where}: a slugban nem szerepelhet a Grok szó`);
+  if (!officialCats.includes(item.category)) fail(`${where}: ismeretlen kategória: ${item.category}`);
+  if (!item.summaryHu || !item.descriptionQuote) fail(`${where}: hiányzó összefoglaló vagy eredeti leírás`);
+  if (!item.sourceUrl?.startsWith("https://x.ai/bot/")) fail(`${where}: hibás forrás-URL`);
+  const card = offHtml.match(new RegExp(`<li[^>]*data-official="${item.slug}"[^>]*>([\\s\\S]*?)</li>`));
+  if (!card) {
+    fail(`${where}: nincs kártya az oldalon`);
+    continue;
+  }
+  if (item.installUrl) {
+    if (!/^https:\/\/x\.ai\/bot\/[A-Za-z0-9_-]+$/.test(item.installUrl)) fail(`${where}: hibás telepítő URL`);
+    if (!card[1].includes(`href="${item.installUrl}" data-install-link`)) fail(`${where}: nincs telepítő link a kártyán`);
+  } else if (!card[1].includes("Telepítő link: hiányzik")) fail(`${where}: a hiányzó telepítő link nincs jelölve`);
+  if (!card[1].includes("data-source-link")) fail(`${where}: nincs forráslink a kártyán`);
+  for (const rel of item.relatedMarketplace ?? []) {
+    if (!marketplace.some((bot) => bot.slug === rel.slug)) fail(`${where}: nem létező Marketplace-bot: ${rel.slug}`);
+  }
+}
+
+// Tiltott kifejezés: a „use case” / „use-case” / „felhasználási eset” nem szerepelhet a megjelenő szövegben.
+// Kivétel: URL-ek, HTML-attribútumok és a szó szerinti (blockquote) idézetek.
+const bannedTerm = /\buse[\s-]?cases?\b|felhasználási\s+eset/i;
+for (const [rel, file] of byRel) {
+  if (!/\.(html|txt|xml|md)$/.test(rel)) continue;
+  let text = await readFile(file, "utf8");
+  text = text
+    .replace(/<blockquote[\s\S]*?<\/blockquote>/g, " ")
+    .replace(/\s[a-z-]+="[^"]*"/gi, " ")
+    .replace(/https?:\/\/\S+/g, " ");
+  const hit = text.match(bannedTerm);
+  if (hit) fail(`${rel}: tiltott kifejezés a szövegben: „${hit[0]}”`);
 }
 
 // Hivatalos útmutatók: minden kártya az eredeti x.ai útmutatóra linkel, és a Grok-blokk jelöli, hogy nem Grok Bot.
