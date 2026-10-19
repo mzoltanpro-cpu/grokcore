@@ -89,7 +89,7 @@ const ld = {
           {item.postQuote.split("\n\n").map((para) => <p lang={item.postLang ?? "en"}>{para}</p>)}
         </blockquote>
         <figcaption class="fine">
-          A készítő X-posztja ({item.postLang === "ja" ? "japán" : "angol"} idézet): <a href={item.postUrl}>{item.handle} · x.com</a>
+          A készítő X-posztja ({item.postLang === "ja" ? "japán" : item.postLang === "zh" ? "kínai" : "angol"} idézet): <a href={item.postUrl}>{item.handle} · x.com</a>
         </figcaption>
       </figure>
       {

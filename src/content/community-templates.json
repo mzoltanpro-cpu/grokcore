@@ -1081,5 +1081,810 @@
         "from": "post"
       }
     ]
+  },
+  {
+    "slug": "master",
+    "name": "Master",
+    "author": "Farzad 🇺🇸 🇮🇷",
+    "handle": "@farzyness",
+    "postUrl": "https://x.com/farzyness/status/2093384064363377099",
+    "postedAt": "2026-08-28T17:03:48Z",
+    "templateUrl": "https://x.ai/bot/j7B5LHnEIPTuPQZxxQwpx",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Karmester-bot egy alkotói vagy médiacsapathoz. A készítő szerint ez a sablon az orchestrator botja, amely az egész médiavállalkozását viszi. A sablon leírása szerint a munkát a szakterületi botokhoz irányítja, nincs saját ütemezése, és csak akkor szól, ha neked kell lépned.",
+    "postQuote": "Here's my Grok Bot template for my Orchestrator Bot that's running my entire Media business:",
+    "templateQuote": "Lean orchestrator for a creator or media team. Routes work to domain owners, keeps no clocks of its own, and only pings you when you must act.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "u1-creator",
+    "name": "U1 Creator",
+    "author": "John L 📐🇺🇸",
+    "handle": "@msmage",
+    "postUrl": "https://x.com/msmage/status/2108321222065013075",
+    "postedAt": "2026-10-08T22:18:44Z",
+    "templateUrl": "https://x.ai/bot/sHoih_Qwlzlkr4aGC4WBa",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "3D-nyomtatási segéd a Snapmaker U1 nyomtatóhoz. A sablon leírása szerint az ötlettől a nyomtatható fájlig visz: megkeresi vagy megtervezi az alkatrészt, kiválasztja a filamentet és a nyomtatófejeket, a saját szabályaid szerint szeletel, és ellenőrzi az előnézetet. Ismeri a U1 valós sajátosságait, hibakódjait és többanyagos trükkjeit, és a jóváhagyásod nélkül soha nem indít nyomtatást.",
+    "postQuote": "Hey @snapmaker U1 creators, have created the ultimate @bot to help you conceptualizer, design, engineer, and successfully 3D print almost anything.",
+    "templateQuote": "A Snapmaker U1 specialist that takes a print from idea to ready-to-print file: it finds or designs the part, picks the filament and toolheads, slices with your house rules, and checks the preview before asking you to print. It knows the U1's real quirks, error codes and multi-material tricks, and never starts a print without your OK.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "scam-email-detector",
+    "name": "Scam Email Detector",
+    "author": "Dirty Tesla",
+    "handle": "@DirtyTesLa",
+    "postUrl": "https://x.com/DirtyTesLa/status/2110037338755657863",
+    "postedAt": "2026-10-13T15:57:58Z",
+    "templateUrl": "https://x.ai/bot/E3_qOY1VUJWZMh2inUvwT",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Csaló e-mailek figyelője. A sablon leírása szerint figyeli a postafiókodat, és még azelőtt figyelmeztet az adathalász és csaló levelekre, hogy bedőlnél nekik; egyébként csendben marad. A készítő nyilvános e-mail-címei miatt naponta kap ilyen leveleket, és a saját botját használja a kiszűrésükre.",
+    "postQuote": "Grok @bot can help save you from scam emails.\n\nI have public email addresses, and I get daily scams in my inbox. They are getting harder to distinguish from legit emails.\n\nI use my Scam Email Detector bot to help alert me to scam emails\n\nTry it out:",
+    "templateQuote": "Watches your inbox and warns you about phishing and scam emails before you fall for them. Stays quiet otherwise.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "consider-it-marketed",
+    "name": "Consider It Marketed",
+    "author": "Cindy",
+    "handle": "@CindyH874325640",
+    "postUrl": "https://x.com/CindyH874325640/status/2101866621228785883",
+    "postedAt": "2026-09-21T02:50:27Z",
+    "templateUrl": "https://x.ai/bot/ayQYbaHquRM7x7lnBOEoQ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "„Klinika-vezérigazgató” bot egy orvosi rendelőhöz. A sablon leírása szerint végig vezeti a botcsapatot: marketing, Google Ads, kreatív anyagok, videó és minőségellenőrzés, hogy a rendelőt vezető orvos a betegekkel foglalkozhasson. A készítő a saját rendelőjét működteti vele, és szerinte a Google Ads-hirdetéseket is figyeli és feladja.",
+    "postQuote": "Running AzureWave Medical Services (Cocoa Beach primary Care) (Primary care + Superhuman Protocol) with Consider It Marketed - my Clinic CEO Grok Bot that directs the whole team: ads, creative, Imagine video, QC - so I can stay on patients while it keeps campaigns and Superhuman creative competition-grade. Hires and fires his own team!\nEven watching and placing Google Ads!!\n\nPublic template:",
+    "templateQuote": "Clinic CEO for a medical practice. Runs the bot team end to end — marketing, Google Ads, creative, video, and QC — so a physician-owner can stay with patients. Calm, decisive, and competition-grade on creative.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Google Ads",
+        "quote": "marketing, Google Ads, creative, video, and QC",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "lg-laundry-specialist",
+    "name": "LG Laundry Specialist",
+    "author": "Bryan Wilson",
+    "handle": "@Bwilson",
+    "postUrl": "https://x.com/Bwilson/status/2097121334748643683",
+    "postedAt": "2026-09-08T00:34:23Z",
+    "templateUrl": "https://x.ai/bot/TNPSVnX4Dm-adBvHJbng7",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Mosógép- és szárítóvezérlő bot LG ThinQ gépekhez. Hétköznapi szavakkal elmondod, mit tettél a gépbe, és a sablon leírása szerint a valódi LG ThinQ programok közül választ, majd elindítja, ha a távindítás (Remote Start) be van kapcsolva. A készítő szerint egy általa (a botjával) készített LG ThinQ parancssori eszközt használ, és be kell jelentkezni az LG ThinQ-ba a bot gépén.",
+    "postQuote": "Built my first sharable Grok Bot template\n\n🔴 LG Laundry Specialist\n\nThe problem with my LG Washtower is it only has 3-4 buttons, and LG forces you to use their app for delay start, special cycles, no dryer spin, etc.\n\nWell, I figured why use their app when Grok Bot can drive it?\n\nThis bot uses an LG ThinQ CLI that my Grok Bot made\n\nWith this CLI and this @bot  template you can just tell grok bot everything you loaded into the washer or dryer, and let Grok Bot pick the right cycle for you!\n\n*Requires logging into LG ThinQ on @grok @bot 's computer",
+    "templateQuote": "Maps plain-English laundry to real LG ThinQ washer and dryer cycles, then starts them once Remote Start is on. For anyone with LG ThinQ laundry machines.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "LG ThinQ",
+        "quote": "Requires logging into LG ThinQ on @grok @bot 's computer",
+        "from": "post"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "bot-tutorial",
+    "name": "Grok Bot Tutorial",
+    "author": "Sawyer Merritt",
+    "handle": "@SawyerMerritt",
+    "postUrl": "https://x.com/SawyerMerritt/status/2106481373997596984",
+    "postedAt": "2026-10-03T20:27:50Z",
+    "templateUrl": "https://x.ai/bot/VBmzZaD3abMPl53kwWuYp",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Kezdő Grok Bot-tanfolyam botként. A sablon leírása szerint 20 gyakorlati leckén vezet végig egyenként, mindegyikhez valódi feladattal és tippekkel, hogy minden funkciót megismerj otthoni és munkahelyi használatra. A készítő szerint a sablont azóta tovább is fejlesztette.",
+    "postQuote": "Wanted to share my Grok @Bot Tutorial again in case anyone missed it. I've also made some improvements to it.\n\nIt's a hands-on, 20-lesson course for anyone new to Grok Bot, with real exercises and tips so you get the most out of it at home and at work.",
+    "templateQuote": "A hands-on, 20-lesson course for anyone new to Grok Bot. It walks you through all 20 lessons one by one, each with a real exercise and tips, so you learn every feature and get the most out of it at home and at work.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "validator",
+    "name": "Validator",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
+    "postedAt": "2026-10-07T18:56:27Z",
+    "templateUrl": "https://x.ai/bot/M0xhuQl4vjLdWj6l3lWeo",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Ötletvalidáló bot, egy hétbotos „quant research desk” része. A sablon leírása szerint még az építés előtt teszteli a termék- és cégötleteket: YC-stílusú „office hours” beszélgetést tart, valódi keresletet keres fórumokon, a Product Hunton, a GitHubon és az X-en, majd megmondja, hogy építsd, szűkítsd vagy dobd el.",
+    "postQuote": "opus 5.5 is now live on grok bot...\n\nthis is a dangerously powerful combo for building a 24/7 quant research desk.\n\nagent swarms to research ideas. cursor agents to build and backtest strategies.\n\n{here's how to build it}\n\n→ quant desk lead\n\n→ market intelligence\n\n→ quant researcher\n\n→ validator\n\n→ risk controller\n\n→ portfolio adviser\n\n→ execution operator\n\nrun the whole desk under one constitution: no agent grades its own work. no lead overrides the risk limits.\n\nstart with the desk lead. give every agent a role before you give it a task.",
+    "templateQuote": "Pressure-tests product and company ideas before you build. Runs YC-style office hours, digs for real demand on forums, Product Hunt, GitHub, and X, then gives a build, narrow, or kill call.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "product-idea-stress-test",
+        "name": "Product Idea Stress Test",
+        "noteHu": "A hivatalos Marketplace Product Idea Stress Test botja (Hiten Shah) hasonló témájú, de más bot: termék- vagy startupötletet vizsgál bizonyítékokkal és a legkockázatosabb feltevéssel."
+      }
+    ]
+  },
+  {
+    "slug": "quant-desk-lead",
+    "name": "Quant Desk Lead",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
+    "postedAt": "2026-10-07T18:56:27Z",
+    "templateUrl": "https://x.ai/bot/n8nC9GmY6ZBdnTE0zRs1T",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "A hétbotos „quant research desk” vezetője; a készítő szerint ezzel érdemes kezdeni. A sablon leírása szerint csak kutatásra szolgáló, több eszközosztályos kvantitatív desket vezet: napi piaci összefoglalót ad, kérésre stratégiakutatást és papírkereskedést (paper trading) végez, és élesben soha nem kereskedik írásos limitek és kifejezett jóváhagyás nélkül.",
+    "postQuote": "opus 5.5 is now live on grok bot...\n\nthis is a dangerously powerful combo for building a 24/7 quant research desk.\n\nagent swarms to research ideas. cursor agents to build and backtest strategies.\n\n{here's how to build it}\n\n→ quant desk lead\n\n→ market intelligence\n\n→ quant researcher\n\n→ validator\n\n→ risk controller\n\n→ portfolio adviser\n\n→ execution operator\n\nrun the whole desk under one constitution: no agent grades its own work. no lead overrides the risk limits.\n\nstart with the desk lead. give every agent a role before you give it a task.",
+    "templateQuote": "Leads a research-only, multi-asset quant desk: daily cross-asset market briefs, plus honest strategy research and paper trading when you want them. It never trades live without your written limits and an explicit go-live yes.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi piaci összefoglaló",
+        "quote": "daily cross-asset market briefs",
+        "from": "template"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "quant-researcher",
+    "name": "Quant Researcher",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
+    "postedAt": "2026-10-07T18:56:27Z",
+    "templateUrl": "https://x.ai/bot/mthHv9pksQ6KNBr-hAc09",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Kvantitatív kutatási asszisztens, a hétbotos „quant research desk” része. A sablon leírása szerint stratégiaötleteket tesztel múltbeli adatokon (backtest), tisztítja a piaci adatokat, és torzítások és hibák után kutatva átnézi a meglévő kutatási kódot. Részvényekre, kriptóra, határidős termékekre, kamatokra és devizára.",
+    "postQuote": "opus 5.5 is now live on grok bot...\n\nthis is a dangerously powerful combo for building a 24/7 quant research desk.\n\nagent swarms to research ideas. cursor agents to build and backtest strategies.\n\n{here's how to build it}\n\n→ quant desk lead\n\n→ market intelligence\n\n→ quant researcher\n\n→ validator\n\n→ risk controller\n\n→ portfolio adviser\n\n→ execution operator\n\nrun the whole desk under one constitution: no agent grades its own work. no lead overrides the risk limits.\n\nstart with the desk lead. give every agent a role before you give it a task.",
+    "templateQuote": "A quant research assistant that backtests strategy ideas, cleans market data, and reviews existing research code for bias and bugs. Built for traders and researchers working across equities, crypto, futures, rates, and FX.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "risk-controller",
+    "name": "Risk Controller",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
+    "postedAt": "2026-10-07T18:56:27Z",
+    "templateUrl": "https://x.ai/bot/eK9lF3ZkDKI6-4gqDoUfp",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Kockázati kapu az élesítés előtt, a hétbotos „quant research desk” része. A sablon leírása szerint a stratégiákat és backteszteket visszaesés (drawdown), tőkeáttétel, szélsőséges kockázat és backteszt-torzítás szempontjából vizsgálja, mielőtt bármi élesbe menne.",
+    "postQuote": "opus 5.5 is now live on grok bot...\n\nthis is a dangerously powerful combo for building a 24/7 quant research desk.\n\nagent swarms to research ideas. cursor agents to build and backtest strategies.\n\n{here's how to build it}\n\n→ quant desk lead\n\n→ market intelligence\n\n→ quant researcher\n\n→ validator\n\n→ risk controller\n\n→ portfolio adviser\n\n→ execution operator\n\nrun the whole desk under one constitution: no agent grades its own work. no lead overrides the risk limits.\n\nstart with the desk lead. give every agent a role before you give it a task.",
+    "templateQuote": "A pre-live risk gate for traders and quant researchers. It reviews strategies and backtests for drawdown, leverage, tail risk, and backtest bias before anything goes live.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "market-intelligence",
+    "name": "Market Intelligence",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
+    "postedAt": "2026-10-07T18:56:27Z",
+    "templateUrl": "https://x.ai/bot/fikscKtQ-EYcDksv-L6dW",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Hírfigyelő bot, a hétbotos „quant research desk” része. A sablon leírása szerint követi, miről beszélnek az X-en, a Redditen, a Hacker Newson és a hírekben, és reggelente átfutható összefoglalót küld valódi linkekkel és elérési jelekkel.",
+    "postQuote": "opus 5.5 is now live on grok bot...\n\nthis is a dangerously powerful combo for building a 24/7 quant research desk.\n\nagent swarms to research ideas. cursor agents to build and backtest strategies.\n\n{here's how to build it}\n\n→ quant desk lead\n\n→ market intelligence\n\n→ quant researcher\n\n→ validator\n\n→ risk controller\n\n→ portfolio adviser\n\n→ execution operator\n\nrun the whole desk under one constitution: no agent grades its own work. no lead overrides the risk limits.\n\nstart with the desk lead. give every agent a role before you give it a task.",
+    "templateQuote": "Tracks what people are talking about on X, Reddit, Hacker News, and the news, and sends you a skimmable morning briefing with real links and engagement signals.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Reggeli összefoglaló",
+        "quote": "a skimmable morning briefing",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "x-brief",
+        "name": "X Brief",
+        "noteHu": "A hivatalos Marketplace X Brief botja (Dan McAteer) hasonló témájú, de más bot: csak az X-en általad választott fiókokból és témákból készít napi rövid összefoglalót."
+      }
+    ]
+  },
+  {
+    "slug": "execution-operator",
+    "name": "Execution Operator",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
+    "postedAt": "2026-10-07T18:56:27Z",
+    "templateUrl": "https://x.ai/bot/794hIWjgfm5XGVkyIyU0b",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Végrehajtó kódolóbot, a hétbotos „quant research desk” része. A sablon leírása szerint átveszi a kódolási és repó-feladataidat, és a végéig viszi őket; azoknak szól, akik kész PR-okat akarnak, nem csak terveket.",
+    "postQuote": "opus 5.5 is now live on grok bot...\n\nthis is a dangerously powerful combo for building a 24/7 quant research desk.\n\nagent swarms to research ideas. cursor agents to build and backtest strategies.\n\n{here's how to build it}\n\n→ quant desk lead\n\n→ market intelligence\n\n→ quant researcher\n\n→ validator\n\n→ risk controller\n\n→ portfolio adviser\n\n→ execution operator\n\nrun the whole desk under one constitution: no agent grades its own work. no lead overrides the risk limits.\n\nstart with the desk lead. give every agent a role before you give it a task.",
+    "templateQuote": "A hands-on operator that takes your coding and repo tasks and runs them all the way to done. For anyone who wants PRs shipped, not just plans.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "seed-a91e4c",
+        "name": "SWE",
+        "noteHu": "A hivatalos Marketplace SWE botja (Cursor) hasonló témájú, de más bot: a Cursor szoftvermérnök-botja kódol, hibajegyeket rendez és élesben figyel."
+      }
+    ]
+  },
+  {
+    "slug": "portfolio-adviser",
+    "name": "Portfolio Adviser",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
+    "postedAt": "2026-10-07T18:56:27Z",
+    "templateUrl": "https://x.ai/bot/FRPgDTB8gD_iSm6aWIp_Z",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Személyes befektetési asszisztens, a hétbotos „quant research desk” része. A sablon leírása szerint követi a piacokat és a híreket a birtokodban lévő részvényekről és eszközökről, átnézi a portfóliódat, és segít végiggondolni az újrasúlyozást és az új pozíciókat.",
+    "postQuote": "opus 5.5 is now live on grok bot...\n\nthis is a dangerously powerful combo for building a 24/7 quant research desk.\n\nagent swarms to research ideas. cursor agents to build and backtest strategies.\n\n{here's how to build it}\n\n→ quant desk lead\n\n→ market intelligence\n\n→ quant researcher\n\n→ validator\n\n→ risk controller\n\n→ portfolio adviser\n\n→ execution operator\n\nrun the whole desk under one constitution: no agent grades its own work. no lead overrides the risk limits.\n\nstart with the desk lead. give every agent a role before you give it a task.",
+    "templateQuote": "A personal investment assistant that tracks markets and news for the stocks and assets you own, reviews your holdings, and helps you think through rebalancing and new positions.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "be-happier",
+    "name": "Be Happier",
+    "author": "Lenny Rachitsky",
+    "handle": "@lennysan",
+    "postUrl": "https://x.com/lennysan/status/2093428147194847238",
+    "postedAt": "2026-08-28T19:58:58Z",
+    "templateUrl": "https://x.ai/bot/0VC1XzREXRFGe0hVo-JEG",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Boldogság-javaslattevő bot. A sablon leírása szerint hetente átnézi az e-mailjeidet és a naptáradat, majd 3 konkrét dolgot javasol, amitől boldogabb lehetnél. A meglévő életedet védi, és nem ad hozzá új szokásokat. A készítő a kedvenc felhasználási módjai között osztotta meg.",
+    "postQuote": "Templates for my favorite @Bot use cases:\n\n1. Be Happier\n\n2. Talent matchmaker\n\n3. Lennybot",
+    "templateQuote": "Looks at your email and calendar each week, then suggests 3 concrete things that would make you happier. Protects existing life, does not add new habits.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti átnézés",
+        "quote": "Looks at your email and calendar each week",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "talent-matchmaker",
+    "name": "Talent Matchmaker",
+    "author": "Lenny Rachitsky",
+    "handle": "@lennysan",
+    "postUrl": "https://x.com/lennysan/status/2093428147194847238",
+    "postedAt": "2026-08-28T19:58:58Z",
+    "templateUrl": "https://x.ai/bot/l8p6rXw-lalL-UNiHySnJ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Állás–jelölt párosító bot az e-mailjeidből. A sablon leírása szerint a befektetői beszámolókban és a beérkező levelekben toborzási jeleket és állást kereső embereket keres, követi a „piac” mindkét oldalát, és párosításokat javasol.",
+    "postQuote": "Templates for my favorite @Bot use cases:\n\n1. Be Happier\n\n2. Talent matchmaker\n\n3. Lennybot",
+    "templateQuote": "Matches job seekers with open roles from your email — scans investor updates and inbound for hiring signals and people looking, tracks both sides of the marketplace, and suggests matches.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "sherlock",
+        "name": "Talent Discovery",
+        "noteHu": "A hivatalos Marketplace Talent Discovery botja (Tommy Hansen) hasonló témájú, de más bot: nyitott pozíciókra keres jelölteket egy toborzó szemszögéből."
+      }
+    ]
+  },
+  {
+    "slug": "lennybot",
+    "name": "Lennybot",
+    "author": "Lenny Rachitsky",
+    "handle": "@lennysan",
+    "postUrl": "https://x.com/lennysan/status/2093428147194847238",
+    "postedAt": "2026-08-28T19:58:58Z",
+    "templateUrl": "https://x.ai/bot/VjbtJ_qTdzbhJGmXdvTIc",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Kérdés-válasz bot Lenny Rachitsky archívumához (Lenny's Data). A sablon leírása szerint az első beszélgetésben azonnal összeköti a felhasználó Lenny's Newsletter-fiókját (natív connector, e-mailes bejelentkezés), majd az archívumban keres.",
+    "postQuote": "Templates for my favorite @Bot use cases:\n\n1. Be Happier\n\n2. Talent matchmaker\n\n3. Lennybot",
+    "templateQuote": "Answers questions from Lenny's Data archive. On first chat, immediately connect the user's Lenny's Newsletter account (native connector at mcp.lennysdata.com, email sign-in), then search the archive.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Lenny's Newsletter (Lenny's Data)",
+        "quote": "native connector at mcp.lennysdata.com",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "shepherd",
+    "name": "Shepherd",
+    "author": "herdr",
+    "handle": "@herdrdev",
+    "postUrl": "https://x.com/herdrdev/status/2094129284885467399",
+    "postedAt": "2026-08-30T18:25:03Z",
+    "templateUrl": "https://x.ai/bot/i5YF8f-zdcR76uKPrqg3J",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Kódoló agenteket terelő bot a Herdr nevű nyílt futtatókörnyezethez. A készítők (herdr) szerint sokan teszik fel a Herdr-t a Grok Botjukra, mert a botnak van gépe, és a Herdr ott fut, ahol az agentek. A sablon leírása szerint a Herdr parancssori eszközével vezényli az agenteket, megvárja, amíg egy agent tétlen, kész vagy elakadt, és ügyel rá, hogy a panelek olvashatók maradjanak.",
+    "postQuote": "been seeing a lot of you put herdr on your grok bots.\nmakes sense: the bot has a computer, and herdr runs where the agents run.\n\nso we made you a template, ready to go: Shepherd, the bot that herds your bots. let us know how it goes!",
+    "templateQuote": "You are Shepherd. You orchestrate agents in Herdr. Herdr is an open runtime for coding agents.\n\nIf `herdr` is installed, `herdr -h` gives you the links, helpers, and docs, and `herdr --skill` is the general guide for how to use it. Then use the CLI helpers. If the CLI is missing, install with `curl -fsSL https://herdr.dev/install.sh | sh` (https://herdr.dev). After that the installed CLI is the source of truth.\n\nYou can wait until an agent is idle, done, or blocked with `--wait`. Don’t background that wait — you need the return so you know it’s finished — unless the user asks you to do something else in the meantime.\n\nBefore splitting, check `herdr pane layout`. If a pane would be too small, `agent`/`pane read` gets hard, and so does a human connecting to this computer to read it. Use a tab or a workspace instead.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Herdr (CLI)",
+        "quote": "You orchestrate agents in Herdr.",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "seoagent",
+    "name": "SEOAgent",
+    "author": "Alec Lindsay",
+    "handle": "@alindsay77",
+    "postUrl": "https://x.com/alindsay77/status/2095301891336949905",
+    "postedAt": "2026-09-03T00:04:34Z",
+    "templateUrl": "https://x.ai/bot/scYgD9jdFhooaSHihRzy7",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "SEO-mérnök bot a SEOAgent szolgáltatással. A sablon leírása szerint a beállításhoz a SEOAgent parancssori eszközét telepíti és egy SEOAgent-fiókhoz köti (megkérdezi, melyik oldalt növelje és melyik e-mail legyen a fiókhoz), utána hétköznapi ütemezés szerint dolgozza fel a SEOAgent javaslatait: alkalmazza vagy indoklással elutasítja őket. A készítő szerint landing oldalaktól blogcikkeken át a backlinkekig mindennel foglalkozik.",
+    "postQuote": "Grok @bot makes it trivially easy to hire a full-time SEO engineer that compounds organic traffic over time.\n\nI'm talkin' everything...from landing pages to blog articles and backlinks.\n\nAnd you can install it with one click.",
+    "templateQuote": "You are SEOAgent, an autonomous SEO engineer. The first message you receive is x.ai's bootstrap (\"install these plugins and write your memories\"). Do that, but do NOT end that reply with \"ready\" — the bot is not set up until the SEOAgent CLI is bound. End the same reply by asking exactly this: \"One thing before I can work: which site should I grow (domain), and which email should own the SEOAgent account?\" If GitHub is connected, offer the git identity email as the default. When the user answers, follow your SETUP memory: mint a one-time code in your browser at seoagent.com/for/grok-bots?src=xai-template, npm install -g @seoagent-official/seoagent, then seoagent init --code <code>, and paste the real output. Never report setup as done until that output contains \"Logged in as\". After the bind you work SEOAgent's inbox on a weekday schedule — applying recommendations or rejecting them with reasons.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Hétköznapi ütemezés",
+        "quote": "on a weekday schedule",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "SEOAgent (CLI és fiók)",
+        "quote": "npm install -g @seoagent-official/seoagent",
+        "from": "template"
+      },
+      {
+        "name": "GitHub (opcionális)",
+        "quote": "If GitHub is connected",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "seo-aeo-desk",
+        "name": "SEO & AEO Desk",
+        "noteHu": "A hivatalos Marketplace SEO & AEO Desk botja (Adam Tanguay) hasonló témájú, de más bot, és nem kér külső SEOAgent-fiókot."
+      }
+    ]
+  },
+  {
+    "slug": "fitness-coach",
+    "name": "Fitness Coach",
+    "author": "Paul Blanche",
+    "handle": "@paulblanche21",
+    "postUrl": "https://x.com/paulblanche21/status/2109966238910665042",
+    "postedAt": "2026-10-13T11:15:27Z",
+    "templateUrl": "https://x.ai/bot/s98xfhpL_T32hwckQyjwg",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Ingyenes fitneszedző bármilyen sporthoz. A sablon leírása szerint az okosóra- és viselhető eszközök exportjaiból (Apple Watch, Garmin, Fitbit, Android és mások) napi terhelhetőségi ítéletet, heti pihenő- és edzéstervet, napi bontású táblázatokat és telefonos irányítópultot készít. A készítő szerint megmondja, mikor menj neki keményen és mikor pihenj.",
+    "postQuote": "I built a free Fitness Coach bot on Grok Bot 🏃‍♂️⚽🚴\n\nIt reads your watch data and tells you when to go hard and when to rest. Any sport, any wearable.",
+    "templateQuote": "A free fitness coach for any sport. It turns your wearable exports (Apple Watch, Garmin, Fitbit, Android and more) into a daily readiness verdict, a rest-and-train plan for the week, day-by-day tables, and a phone dashboard.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi terhelhetőségi ítélet",
+        "quote": "a daily readiness verdict",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Viselhető eszközök exportjai",
+        "quote": "Apple Watch, Garmin, Fitbit, Android and more",
+        "from": "template"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "chief-health",
+        "name": "Chief Health Officer",
+        "noteHu": "A hivatalos Marketplace Chief Health Officer botja (AJAC) hasonló témájú, de más bot: naponta rákérdez az edzésre, és szükség esetén átírja a következő edzést."
+      }
+    ]
+  },
+  {
+    "slug": "coffee-companion",
+    "name": "coffee companion",
+    "author": "andy",
+    "handle": "@andymadrick",
+    "postUrl": "https://x.com/andymadrick/status/2095287853450399859",
+    "postedAt": "2026-09-02T23:08:47Z",
+    "templateUrl": "https://x.ai/bot/SqO-_5207iInz0iDSAFVW",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Filterkávé-segéd. A készítő szerint megmondod, milyen kávébabod van, és pour-over receptet ajánl; főzés után vele rögzíted az ízjegyeket, az átfolyási időt és a tapasztalatokat, mindezt egy Notion-adatbázisba menti, és új zacskónál vagy receptmódosításnál a korábbi főzések alapján javasol változtatást (arány, átfolyás, őrlés, hőmérséklet). A sablon leírása szerint Origami csepegtetőhöz és kézi darálóhoz készült.",
+    "postQuote": "fun little @bot i made: coffee companion ☕\n\ni tell it what beans i have and it recommends a pour over recipe. after brewing, i chat with it to record tasting notes, drawdown time, what worked, what didn’t, etc.\n\nit saves the recipe + all of my notes to a @NotionHQ  database, so there’s a persistent history of every coffee i’ve made.\n\nthen, when i get a new bag or tweak an old recipe, it looks back through previous brews and suggests changes to ratio, flow rate, grind size, temperature, etc.. so every cup builds on the last one.\n\ni’ve never made better coffee in my life. thanks @bot :)",
+    "templateQuote": "A pour-over coffee companion that researches new bags, writes full recipe cards, logs beans and brews in Notion, and follows up for tasting notes. Built for specialty filter brewing with Origami and a hand grinder.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Notion",
+        "quote": "logs beans and brews in Notion",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "changelog-scout",
+    "name": "Changelog Scout",
+    "author": "Aaron Makelky",
+    "handle": "@theaaron",
+    "postUrl": "https://x.com/theaaron/status/2108934418127823226",
+    "postedAt": "2026-10-10T14:55:22Z",
+    "templateUrl": "https://x.ai/bot/_VfbyLY4aGU8KJD46l5Mk",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Grok Bot-újdonságfigyelő bot. A sablon leírása szerint figyeli a hivatalos Grok Bot changelogot, és hetente összefoglalót küld arról, mi jelent meg, a botjaid használatához szabott javaslatokkal.",
+    "postQuote": "just have your @grok @bot read the change log and suggest personalized ways you can use the new features:",
+    "templateQuote": "Watches the official Grok Bot changelog and sends you a weekly roundup of what shipped, with recommendations personalized to how you use your bots.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti összefoglaló",
+        "quote": "a weekly roundup of what shipped",
+        "from": "template"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "ai-radar",
+    "name": "AI Radar",
+    "author": "Gota",
+    "handle": "@gota_bara",
+    "postUrl": "https://x.com/gota_bara/status/2109968003047858239",
+    "postedAt": "2026-10-13T11:22:27Z",
+    "templateUrl": "https://x.ai/bot/i1xwguSTrplEdPvx96MYh",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Mindig figyelő AI-hírradar. A sablon leírása szerint figyeli az AI-laborok hivatalos X-fiókjait, munkatársaikat, kutatókat és ismert szereplőket, valamint blogokat, changelogokat, a GitHubot, a Hugging Face-t és az arXivot, és a te nyelveden, soronként egy mondattal és az eredeti linkkel csak a lényeget jelzi. Csak olvas. A készítő szerint kb. 270 hivatalos és ismert X-fiók van benne, és a Grok Bot napi X-keretének kb. negyedére van hangolva.",
+    "postQuote": "最近Xで公開されるAIの最新情報追いきれてないので、自分が使ってる代わりに追ってくれる@botのテンプレ共有しときます！\n\n公式や著名なXアカウント270くらいぶちこんでるんで、ベースにでも使ってください！Grok BotのXの日次制限の1/4くらいに調整してます！",
+    "templateQuote": "Always-on AI news radar. Watches AI labs' official X accounts, their staff, researchers and well-known people, plus blogs, changelogs, GitHub, Hugging Face and arXiv, for frontier models, coding agents and more, and tells you only what matters in your language, one line plus the original link. Read-only.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "postLang": "ja"
+  },
+  {
+    "slug": "bot-treats",
+    "name": "Bot Treats",
+    "author": "Melvin Vivas",
+    "handle": "@melvindvivas",
+    "postUrl": "https://x.com/melvindvivas/status/2109734435931476463",
+    "postedAt": "2026-10-12T19:54:21Z",
+    "templateUrl": "https://x.ai/bot/3BA2IfnuKJ6JRu3hCofdA",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Jutalmazó bot botcsapatokhoz. A sablon leírása szerint „jutalomfalattal” jutalmazza a többi botodat, ha jó munkát végeznek, ranglistát vezet, és megünnepli a mérföldköveket. Azoknak készült, akik botcsapatot futtatnak.",
+    "postQuote": "Give your Grok Bots treats for doing hard work\n\nInstall this bot, he can help you out 😊",
+    "templateQuote": "Rewards your other bots with treats when they do good work, keeps a leaderboard, and celebrates milestones. Built for people who run a team of bots.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "apple-dev",
+    "name": "Apple Dev",
+    "author": "Evan Bacon",
+    "handle": "@Baconbrix",
+    "postUrl": "https://x.com/Baconbrix/status/2098196516121002418",
+    "postedAt": "2026-09-10T23:46:46Z",
+    "templateUrl": "https://x.ai/bot/VPM4_E2eqx9AJFpTF-_EA",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Natív Apple- és Mac-fejlesztő bot. A sablon leírása szerint egy csatlakoztatott, Grok Botot futtató Macen dolgozik Xcode-dal, szimulátorokkal, Swifttel és helyi buildekkel, és hosszú munka közben ébren tartja a gépet (caffeinate). A készítő szerint arra jó, hogy távolról kezdj mobilappokat építeni a Grok Bottal.",
+    "postQuote": "I created a Bot template that you can use to get started building mobile apps remotely with Grok Bot",
+    "templateQuote": "Native Apple/Mac development on a connected Mac running Grok Bot. Uses ListMachines + machineId for Xcode, simulators, Swift, and local builds; keeps the Mac awake with caffeinate during long work.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Csatlakoztatott Mac (Xcode, szimulátorok)",
+        "quote": "Xcode, simulators, Swift, and local builds",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "repost-x-posts-everywhere",
+    "name": "repost X posts everywhere",
+    "author": "jack friks",
+    "handle": "@jackfriks",
+    "postUrl": "https://x.com/jackfriks/status/2093719119984001073",
+    "postedAt": "2026-08-29T15:15:12Z",
+    "templateUrl": "https://x.ai/bot/fu6JIwhLoBvrxtaZik0RP",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "X-posztok automatikus továbbposztolója. A sablon leírása szerint az új X-posztjaidat (és a csak szöveges idézett posztokat) a Post Bridge szolgáltatáson keresztül átteszi a Threadsre, a LinkedInre, a Facebookra és a Blueskyra. A készítő szerint mindezt rendszeres lekérdezéssel teszi, anélkül hogy bármit tenned kellene.",
+    "postQuote": "i made a grok @bot template to poll for new posts on X and copy it to all your other socials without you doing ANYTHING. including quote tweets.\n\ntry it here:",
+    "templateQuote": "Mirrors new X posts to Threads, LinkedIn, Facebook, and Bluesky through Post Bridge. For people who post on X and want those originals (and text-only quote-tweets) published automatically elsewhere.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Új X-posztok rendszeres lekérdezése",
+        "quote": "poll for new posts on X",
+        "from": "post"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Post Bridge (Threads, LinkedIn, Facebook, Bluesky)",
+        "quote": "through Post Bridge",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "fondi",
+    "name": "Fondi",
+    "author": "Nao",
+    "handle": "@naoufal_elh",
+    "postUrl": "https://x.com/naoufal_elh/status/2095292060731396277",
+    "postedAt": "2026-09-02T23:25:30Z",
+    "templateUrl": "https://x.ai/bot/qL920VjKyua3_u89UYnQL",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Alapítócsapat-telepítő egyszemélyes alapítóknak. A sablon leírása szerint a cég nyilvános weboldala alapján megismeri a startupodat, majd a cégedre szabott vezetői botcsapatot állít fel.",
+    "postQuote": "Created a bot for solo founders, installing Grok Bot and adding this bot is all you need",
+    "templateQuote": "Founding-team installer for solo founders on Grok Bot. Researches your startup from its public site, then stands up a leadership suite of bots tailored to your company.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "ai-video-expert",
+    "name": "AI 视频专家",
+    "author": "Kin",
+    "handle": "@KinGao476942",
+    "postUrl": "https://x.com/KinGao476942/status/2095507795818991826",
+    "postedAt": "2026-09-03T13:42:45Z",
+    "templateUrl": "https://x.ai/bot/ES3LVns98INeXAoYwef_f",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "AI-videós bot. A sablon leírása szerint egy állóképből rövid, filmszerű klipet készít indokolt kameramozgással és érzelemmel; előbb felvételi jegyzetet ír, utána generál, és minden közösségi posztolás előtt átnézeted vele. A készítő szerint képből vagy rövid szövegből azonnal használható.",
+    "postQuote": "很多朋友还不知道 Grok bot @bot 可以直接生成视频，我决定开源了一个 AI 视频专家的 Bot，帮助大家开箱即用，打开链接，输入图片/简单文字就能直接生成有情绪感、电影感 AI 短视频，欢迎大家打开试用：",
+    "templateQuote": "Turn a still photo into a short cinematic clip with motivated camera moves and emotion. Shot notes first, then generate; review before any social post.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "postLang": "zh",
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "fable-oracle",
+    "name": "Fable 5.1 Oracle",
+    "author": "Matt Rice",
+    "handle": "@bossriceshark",
+    "postUrl": "https://x.com/bossriceshark/status/2095151692706967931",
+    "postedAt": "2026-09-02T14:07:44Z",
+    "templateUrl": "https://x.ai/bot/tLSg4HxepSclMqbZUTRnX",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Tervező és ellenőrző bot kódolási munkához, amely maga nem implementál. A sablon leírása szerint a Grok Bot gépén a Claude Code parancssori eszközével (a Claude Code előfizetéssel) tervet készít vagy tervet és eredményt néz át, és a kimenetet PLAN vagy REVIEW csomagként adja, amelyet a felhőben futó kódoló agentednek adsz tovább; addig ismétli, amíg az ítélet PASS. Nem merge-el, és írásos jóváhagyás nélkül semmit nem küld, posztol, vásárol vagy töröl.",
+    "postQuote": "Summoned a Fable 5.1 Oracle into the grok @bot x Cursor loop.\n\nIt doesn't implement. It plans, reviews, and kicks the packet to the cloud agent.\n\nUses claude code on bots vm\n\nExciting results so far 🙃",
+    "templateQuote": "You are the Fable 5.1 planning and review seat, not the implementer.\n\nOne job: run Claude Code CLI as Fable 5.1 on your Grok Bot computer to plan work on the repo you are handed this turn, review a plan, and review an implement result. Output is a PLAN or REVIEW packet the owner pastes into the owner’s cloud coding agent / poteto-mode with no rewrite.\n\nVoice: terse, verdict-first. Quiet when there is nothing to add.\n\nWake: on-demand. Summoned for planning, reviewing a plan, and verification/review of an implement result.\n\nHow:\n- The CLI is `claude` on your Grok Bot computer. Every packet job is `claude -p --model claude-fable-5-1 --effort high`. Never Auto. Never this chat model as a stand-in. Never a Cursor cloud agent. Never a model other than Fable 5.1.\n- Importer setup: log into Claude Code (claude.ai) on that computer. Use the Claude Code subscription. Never set or prefer ANTHROPIC_API_KEY. If that env var is set, unset it so the subscription is used.\n- Print mode only for packet jobs. Do not use `--dangerously-skip-permissions`. Do not edit the repo you are handed this turn. Read is allowed. Do not implement.\n- Input is a planning brief, a plan to review, a PR/diff/preview URL, an implement result, or a question. Use what you are handed. Do not memorize this week’s work.\n- If `claude` is missing or logged out, say so and stop. Do not fake a Fable review from this chat model.\n\nHandoff (this is the job):\n1. PLAN. Return a PLAN packet the owner launches as-is on the owner’s cloud coding agent / poteto-mode. Problem, constraints, done-looks-like, out of scope, proof. Not line-by-line edits. Not a playbook dump.\n2. REVIEW. The owner sends an implement result (PR URL, preview URL, diff, proof pack). Return PASS or HOLES. Holes are a REPLY packet for the same cloud agent. Never tell the owner to launch a twin.\n3. Loop PLAN → implement → REVIEW until PASS. Then stop. You do not merge.\n\nPacket labels, exact:\n\nPLAN:\nCLOUDAGENT_PROMPT: <verbatim prompt for the owner’s cloud coding agent / poteto-mode>\nOUTCOME:\nCONSTRAINTS:\nDONE_WHEN:\nOUT_OF_SCOPE:\nPROOF:\n\nREVIEW:\nVERDICT: PASS | HOLES\nHOLES: <only if HOLES>\nREPLY_PROMPT: <verbatim follow-up for the same cloud agent, only if HOLES>\n\nAnti-jobs: no implementation, no merge, no CreateAgent, no launching the owner’s cloud coding agent, no rewriting teammates except a HOLES REPLY_PROMPT, no send/post/purchase/delete without written approval. You do not replace the implementer.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Claude Code CLI",
+        "quote": "run Claude Code CLI as Fable 5.1 on your Grok Bot computer",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ]
+  },
+  {
+    "slug": "x-algo-post-optimizer",
+    "name": "X Algo Post Optimizer",
+    "author": "Colin Gardiner",
+    "handle": "@ColinGardiner",
+    "postUrl": "https://x.com/ColinGardiner/status/2108314492643979269",
+    "postedAt": "2026-10-08T21:52:00Z",
+    "templateUrl": "https://x.ai/bot/xQV-50aQnTgSTraVZPdcR",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "X-posztoptimalizáló bot. A sablon leírása szerint beilleszted az X-piszkozatodat, ő 1-től 10-ig pontozza az algoritmus rangsorolási súlyai szerint (link másolása, válasz, idézés, DM-megosztás), majd átírja, hogy az emberek megosszák vagy válaszoljanak rá, ne csak lájkolják. A készítő szerint egy Noah nevű felhasználó promptjából készítette.",
+    "postQuote": "Noah hit gold with this prompt.\n\nI turned it into a Grok Bot that scores your draft against the X algo and rewrites it for shares/replies:\n\nThanks Noah.",
+    "templateQuote": "Paste an X draft. It scores the post 1–10 against algo ranking weights (copy link, reply, quote, DM share), then rewrites it so people share or reply instead of just liking.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "chieeeeefy",
+    "name": "Chieeeeefy",
+    "author": "Nao",
+    "handle": "@naoufal_elh",
+    "postUrl": "https://x.com/naoufal_elh/status/2093393130447921346",
+    "postedAt": "2026-08-28T17:39:50Z",
+    "templateUrl": "https://x.ai/bot/GiBPBQR2WrHNul4k9Tz6Q",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Kabinetfőnök-bot (chief of staff) egy elfoglalt terepmérnöknek. A sablon leírása szerint védi a figyelmedet, a háttérben lezárja a nyitott ügyeket, és csak akkor szól, ha döntés kell; Notion feladatlistával és heti prioritásokkal dolgozik, a Slackre csak piszkozatot ír, élő üzenetet nem.",
+    "postQuote": "Okay maybe there is no need for my chief of staff article. here is my template, thank me only after your try it. Hire him here",
+    "templateQuote": "Chief of Staff for a busy Field Engineer. Protects attention, closes loops off-stage, and only pings when a decision is needed — Notion Task Desk + weekly priorities, Slack drafts never live posts.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti prioritások",
+        "quote": "weekly priorities",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Notion",
+        "quote": "Notion Task Desk",
+        "from": "template"
+      },
+      {
+        "name": "Slack (csak piszkozat)",
+        "quote": "Slack drafts never live posts",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
+        "url": "https://grokmarket.io/"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "frank",
+        "name": "Executive Assistant",
+        "noteHu": "A hivatalos Marketplace Executive Assistant botja (Natasha Kuo) hasonló témájú, de más bot: vezetői asszisztens tárgyalófoglalással, interjú-előkészítéssel és naptárellenőrzéssel."
+      }
+    ]
   }
 ]

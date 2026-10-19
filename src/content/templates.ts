@@ -30,7 +30,7 @@ export type CommunityTemplate = {
   routines: { labelHu: string; quote: string; from: From }[];
   integrations: { name: string; quote: string; from: From }[];
   /** Hol bukkantunk rá (pl. egy válogatás vagy szál); nem forrás, csak jelzés. */
-  postLang?: "en" | "ja";
+  postLang?: "en" | "ja" | "zh";
   discoveredVia?: { labelHu: string; url: string }[];
   /** Hasonló témájú, de más hivatalos Marketplace-bot. */
   relatedMarketplace?: { slug: string; name: string; noteHu: string }[];
