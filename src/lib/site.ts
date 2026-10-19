@@ -2,6 +2,7 @@ import { siteConfig } from "../../site.config.mjs";
 import { days } from "../content/days";
 import { marketplaceBots, marketplacePath } from "../content/marketplace";
 import { communityTemplates, templatePath } from "../content/templates";
+import { advancedGuides, advancedPath } from "../content/advanced";
 
 const providers = ["noop", "mailerlite", "brevo"] as const;
 export type NewsletterProviderId = (typeof providers)[number];
@@ -52,6 +53,8 @@ export function indexablePaths(): string[] {
     "/sablonok/",
     ...communityTemplates.map((item) => templatePath(item.slug)),
     "/utmutatok/",
+    "/halado/",
+    ...advancedGuides.map((guide) => advancedPath(guide.slug)),
     "/forrasok/",
     "/rolunk/",
     "/szponzoracio/",

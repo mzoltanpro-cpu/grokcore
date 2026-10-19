@@ -1,0 +1,82 @@
+---
+import Base from "../../layouts/Base.astro";
+import { advancedFetched, advancedGuides, advancedPath } from "../../content/advanced";
+import { absUrl, siteConfig, siteOrigin } from "../../lib/site";
+
+const origin = siteOrigin(Astro.site);
+const path = "/halado/";
+const title = `Haladó Grok Bot útmutatók magyarul | ${siteConfig.name}`;
+const description =
+  "Haladó Grok Bot útmutatók a Kezdő 5 nap után: botcsapat, rutinok ütemezése, második agy fájlokból. Saját magyar szöveg, forrásolva.";
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Haladó Grok Bot útmutatók",
+  description,
+  inLanguage: "hu",
+  url: absUrl(origin, path),
+  numberOfItems: advancedGuides.length,
+  itemListElement: advancedGuides.map((guide, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: absUrl(origin, advancedPath(guide.slug)),
+    name: guide.title,
+  })),
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  path={path}
+  current="guides"
+  jsonLd={[ld]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Haladó útmutatók", path },
+  ]}
+>
+  <p class="eyebrow">A Kezdő 5 nap után · {advancedGuides.length} útmutató</p>
+  <h1>Haladó útmutatók</h1>
+  <p class="lede">
+    Ha megvan az első Botod, az első routine-od és a jóváhagyási szabályaid, innen léphetsz tovább: több Botból csapat,
+    takarékos rutinok és egy Bot, amely fájlokban tartja, amit rólad tudnia kell.
+  </p>
+  <aside class="note" aria-label="Forrásokról">
+    <p>
+      <strong>Saját magyar szöveg, forrással.</strong> Az útmutatók az xAI-munkatársak hivatalos útmutatóira (gyártói
+      forrás), közösségi X-cikkekre és a docs.x.ai dokumentációra épülnek. Minden oldalon ott a szerző, a link, a dátum
+      és a forrás típusa. Ami nem ellenőrzött, [ELLENŐRIZENDŐ] jelölést kap. Források lekérve: {advancedFetched}.
+    </p>
+  </aside>
+  <section class="section" aria-labelledby="utmutatok-lista">
+    <div class="section-head">
+      <h2 id="utmutatok-lista">Az útmutatók</h2>
+    </div>
+    <ul class="bot-grid plain-list">
+      {
+        advancedGuides.map((guide, index) => (
+          <li class="bot-card" data-advanced={guide.slug}>
+            <h3 class="bot-name">
+              <a href={advancedPath(guide.slug)}>
+                {index + 1}. {guide.title}
+              </a>
+            </h3>
+            <p class="bot-by">{guide.minutes}</p>
+            <p>{guide.card}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+  <section class="section" aria-labelledby="meg-nem">
+    <div class="section-head">
+      <h2 id="meg-nem">Még az elején tartasz?</h2>
+    </div>
+    <p>
+      Ezek az oldalak a <a href="/5-nap/">Kezdő 5 nap</a> anyagára építenek. A hivatalos angol útmutatók rövid magyar
+      összefoglalóját az <a href="/utmutatok/">Útmutatók</a> oldalon találod.
+    </p>
+  </section>
+</Base>

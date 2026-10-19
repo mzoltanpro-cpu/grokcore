@@ -14,6 +14,7 @@ import {
   type Guide,
 } from "../../content/guides";
 import { days } from "../../content/days";
+import { advancedGuides, advancedPath } from "../../content/advanced";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
 
 const origin = siteOrigin(Astro.site);
@@ -108,6 +109,26 @@ const groups: { id: string; heading: string; intro: string; items: Guide[] }[] =
     <p class="fine">
       Kategóriák az x.ai oldalon (eredeti felirattal): <span lang="en">{guideCategories.join(", ")}</span>.
     </p>
+  </section>
+
+  <section class="section" aria-labelledby="halado" data-advanced-block>
+    <div class="section-head">
+      <h2 id="halado">Haladó útmutatók magyarul (saját)</h2>
+    </div>
+    <p>
+      Ha végeztél a <a href="/5-nap/">Kezdő 5 nappal</a>: saját magyar haladó útmutatóink több hivatalos útmutatóra és
+      közösségi cikkre épülnek, forrással. Ezek nem az x.ai oldalai.
+    </p>
+    <ul class="checklist">
+      {
+        advancedGuides.map((guide) => (
+          <li>
+            <a href={advancedPath(guide.slug)}>{guide.title}</a>: {guide.card}
+          </li>
+        ))
+      }
+    </ul>
+    <p class="fine"><a href="/halado/">Az összes haladó útmutató</a></p>
   </section>
 
   {

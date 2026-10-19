@@ -1,0 +1,117 @@
+---
+import Base from "../../layouts/Base.astro";
+import Blocks from "../../components/Blocks.astro";
+import Signup from "../../components/Signup.astro";
+import { advancedFetched, advancedGuides, advancedPath, getAdvanced, sourceKindLabel } from "../../content/advanced";
+import { siteConfig, siteOrigin, absUrl } from "../../lib/site";
+
+export function getStaticPaths() {
+  return advancedGuides.map((guide) => ({ params: { slug: guide.slug } }));
+}
+
+const guide = getAdvanced(Astro.params.slug ?? "");
+const index = advancedGuides.findIndex((item) => item.slug === guide.slug);
+const previous = index > 0 ? advancedGuides[index - 1] : undefined;
+const next = index < advancedGuides.length - 1 ? advancedGuides[index + 1] : undefined;
+const origin = siteOrigin(Astro.site);
+const path = advancedPath(guide.slug);
+const title = `${guide.title} | ${siteConfig.name}`;
+
+const howTo = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: guide.title,
+  description: guide.description,
+  inLanguage: "hu",
+  isPartOf: { "@type": "CollectionPage", name: "Haladó útmutatók", url: absUrl(origin, "/halado/") },
+  step: guide.steps.map((step, position) => ({
+    "@type": "HowToStep",
+    position: position + 1,
+    name: step.name,
+    text: step.text,
+  })),
+  citation: guide.sources.map((source) => source.url),
+};
+---
+
+<Base
+  title={title}
+  description={guide.description}
+  path={path}
+  current="guides"
+  ogType="article"
+  jsonLd={[howTo]}
+  prev={previous ? advancedPath(previous.slug) : "/halado/"}
+  next={next ? advancedPath(next.slug) : "/halado/"}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Haladó útmutatók", path: "/halado/" },
+    { name: guide.nav, path },
+  ]}
+>
+  <article class="prose">
+    <p class="eyebrow">Haladó útmutató · a Kezdő 5 nap után</p>
+    <h1>{guide.title}</h1>
+    <ul class="meta-row">
+      <li>{index + 1} / {advancedGuides.length}</li>
+      <li>{guide.minutes}</li>
+      <li>Források lekérve: <time datetime={advancedFetched}>{advancedFetched}</time></li>
+    </ul>
+    <p class="lede">{guide.lead}</p>
+    <p class="fine">{guide.audience} Még nem kezdted el? <a href="/5-nap/">Kezdd az 5 nappal.</a></p>
+    <Blocks blocks={guide.blocks} steps={guide.steps} />
+    <section class="sources" aria-labelledby="forrasok" data-advanced-sources>
+      <h2 id="forrasok">Források</h2>
+      <ul>
+        {
+          guide.sources.map((source) => (
+            <li data-source-kind={source.kind}>
+              <a href={source.url}>{source.title}</a>
+              <span class="fine">
+                {" "}
+                – {source.author}, {source.date}. <strong>{sourceKindLabel[source.kind]}.</strong>
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="fine">
+        Saját magyar szöveg, nem fordítás. A forrásokat {advancedFetched}-én nyitottuk meg. A gyártói forrásokat a Grok
+        Bot fejlesztői írták, az eredményeik a saját beszámolóik. A nem ellenőrzött állítást [ELLENŐRIZENDŐ] jelöli, a
+        saját példáinkat külön megjelöljük. A felület feliratai változhatnak. Nem állunk kapcsolatban a SpaceXSI-vel és a
+        forrásként idézett szerzőkkel.
+      </p>
+    </section>
+  </article>
+  <nav class="pager" aria-label="Lapozás a haladó útmutatók között">
+    {
+      previous ? (
+        <a rel="prev" href={advancedPath(previous.slug)}>
+          <span class="fine">Előző</span>
+          <span>{previous.nav}</span>
+        </a>
+      ) : (
+        <a rel="prev" href="/halado/">
+          <span class="fine">Vissza</span>
+          <span>Haladó útmutatók</span>
+        </a>
+      )
+    }
+    {
+      next ? (
+        <a class="next" rel="next" href={advancedPath(next.slug)}>
+          <span class="fine">Következő</span>
+          <span>{next.nav}</span>
+        </a>
+      ) : (
+        <a class="next" rel="next" href="/utmutatok/">
+          <span class="fine">Tovább</span>
+          <span>Hivatalos útmutatók magyarul</span>
+        </a>
+      )
+    }
+  </nav>
+  <div class="section">
+    <Signup variant="page" />
+  </div>
+</Base>
