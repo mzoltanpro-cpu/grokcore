@@ -629,5 +629,457 @@
         "url": "https://x.com/Av1dlive/status/2111500687410700353"
       }
     ]
+  },
+  {
+    "slug": "privacy",
+    "name": "Privacy",
+    "author": "S.O. Washington",
+    "handle": "@SOwashington26",
+    "postUrl": "https://x.com/SOwashington26/status/2111689920914035133",
+    "postedAt": "2026-10-18T05:24:45Z",
+    "templateUrl": "https://x.ai/bot/m8LgFBTwlCWHQvVMy77z_",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Személyes adatvédelmi és biztonsági asszisztens. A sablon leírása szerint figyeli, hol jelennek meg a személyes adataid a neten, ellenőrzi az adatszivárgásokat, előkészíti az adatbrókereknél kért törléseket és a hitelinformáció-zárolást (credit freeze), és új védelmi lépéseket javasol. Mielőtt bármit tenne, mindig rákérdez.",
+    "postQuote": "I made a @bot privacy template. Feel free to use it to secure your privacy!",
+    "templateQuote": "A personal privacy and security assistant that watches the web for your personal info, checks for breaches, prepares data-broker removals and credit freezes, and suggests new protections, always asking before it acts. Made by S.O. Washington (@SOwashington26), author and game dev. More of my projects: linktr.ee/sowashington",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”, 2026-10-19)",
+        "url": "https://x.com/cu30rry_/status/2112017141272916032"
+      }
+    ]
+  },
+  {
+    "slug": "t3-code-bridge",
+    "name": "T3 Code Bridge",
+    "author": "Trevin Chow",
+    "handle": "@trevin",
+    "postUrl": "https://x.com/trevin/status/2111631433299374450",
+    "postedAt": "2026-10-18T01:32:20Z",
+    "templateUrl": "https://x.ai/bot/_5NG_WsrOdQs2jtUhZeQH",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Összekötő bot a Grok Bot és a T3 Code között. A készítő szerint a T3 Code MCP szerverén keresztül indít kódolási szálakat, figyeli az állapotukat, és szól, ha egy kérdésre válasz kell. A sablon leírása szerint a többi botod nevében is dolgozik, és jelez, ha egy szál elkészült vagy elakadt.",
+    "postQuote": "I made a Grok @bot that can drive @t3codes for me via the MCP server. It starts threads, monitors status and can ping you for answers to questions.\n\nBot template:\n\nGreat way to get access to more models using your other subscriptions. But help centralize work in T3Code which is great if you already use it.",
+    "templateQuote": "Bridges Grok Bot and T3 Code: starts, steers, and watches your T3 Code coding threads for you and your other bots, and keeps you posted when one finishes, fails, or needs an answer.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "T3 Code (MCP szerver)",
+        "quote": "I made a Grok @bot that can drive @t3codes for me via the MCP server.",
+        "from": "post"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”, 2026-10-19)",
+        "url": "https://x.com/cu30rry_/status/2112017141272916032"
+      }
+    ]
+  },
+  {
+    "slug": "site-qa-desk",
+    "name": "Site QA Desk",
+    "author": "T1000",
+    "handle": "@teeRex247",
+    "postUrl": "https://x.com/teeRex247/status/2111559967031337327",
+    "postedAt": "2026-10-17T20:48:21Z",
+    "templateUrl": "https://x.ai/bot/HHMrL3_xtMmkmZVSQ90BQ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Weboldal-ellenőrző bot egyetlen beillesztett linkből. A sablon leírása szerint bármely nyilvános oldalt megnéz asztali (1440 px) és telefonos (390 px) nézetben: képernyőképek, oldalirányú görgetés, törött linkek, konzolhibák és rangsorolt javítási lista, két percen belül.",
+    "postQuote": "Shipped it. But does it break on phones?\nPaste a URL into @bot Site QA Desk: 1440 vs 390 screenshots, sideways scroll, dead links, console errors, and a ranked fix list.\nThanks @elonmusk",
+    "templateQuote": "I check any public website on desktop (1440px) and phone (390px) from one pasted link: screenshots, sideways-scroll check, broken links, console errors and a ranked fix list, in under 2 minutes.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”, 2026-10-19)",
+        "url": "https://x.com/cu30rry_/status/2112017141272916032"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "site-audit",
+        "name": "Site Audit",
+        "noteHu": "A hivatalos Marketplace Site Audit botja (Shimecki) hasonló témájú, de más bot: SEO-, tartalom-, sebesség-, akadálymentességi és konverziós auditot végez havi összevetéssel."
+      }
+    ]
+  },
+  {
+    "slug": "dependency-secret-audit",
+    "name": "Dependency & Secret Audit",
+    "author": "T1000",
+    "handle": "@teeRex247",
+    "postUrl": "https://x.com/teeRex247/status/2111694959283769403",
+    "postedAt": "2026-10-18T05:44:46Z",
+    "templateUrl": "https://x.ai/bot/IqXV0I1hK8sXPfyrsOZDA",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Biztonsági ellenőrző bot GitHub-repókhoz. Beilleszted a repót, és rangsorolt javítási listát kapsz: minden sebezhető csomagot a pontos frissítési paranccsal, a kiszivárgott kulcsokat kitakarva, cserelépésekkel. Csak olvas, és éjszakánként csak akkor szól, ha új problémát talál.",
+    "postQuote": "Paste a GitHub repo, get a ranked fix list in seconds: every vulnerable package with the exact upgrade command, leaked keys masked with rotate steps. Read-only, and it alerts nightly only when something's new. Built on @bot, thanks @elonmusk",
+    "templateQuote": "Paste a GitHub repo, get a ranked fix list in 2 minutes: vulnerable packages with exact upgrade commands, leaked keys masked with rotate steps. Read-only; nightly alerts only on new issues.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Éjszakai riasztás, csak új problémánál",
+        "quote": "nightly alerts only on new issues",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "GitHub",
+        "quote": "Paste a GitHub repo, get a ranked fix list in 2 minutes",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”, 2026-10-19)",
+        "url": "https://x.com/cu30rry_/status/2112017141272916032"
+      }
+    ]
+  },
+  {
+    "slug": "farm-manager",
+    "name": "Farm Manager",
+    "author": "Luke",
+    "handle": "@PrairieWatcher",
+    "postUrl": "https://x.com/PrairieWatcher/status/2111646898209562781",
+    "postedAt": "2026-10-18T02:33:47Z",
+    "templateUrl": "https://x.ai/bot/bArDsRk2ADxWvI0ChJD1a",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Gazdasági segéd kis tanyához. A készítő a saját kis gazdaságához építette: nyilvántartja az állatok gyógyszeres igényeit és a tenyésztési adatokat, kezeli a kert naptárát és a méhek gondozását. A sablon leírása szerint a gyümölcsös naptárát és térképét is vezeti, esőhöz igazított öntözési és parazita-riasztásokat ad, a mezőgazdasági szaktanácsadó szolgálatok (extension service) ajánlásai alapján.",
+    "postQuote": "The more I use @bot the more I find ways to integrate it into my life. Latest bot is to help manage my small farm.\n This bot is to help keep track of our livestock med needs, keep breeding records, manage the garden calendar, and beehive care.",
+    "templateQuote": "A steady, plain-spoken farm hand for a small homestead. Keeps livestock lineages and health records, the garden and orchard calendars and maps, beehive care, and rain-based watering and parasite alerts, all using extension-service guidance.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”, 2026-10-19)",
+        "url": "https://x.com/cu30rry_/status/2112017141272916032"
+      }
+    ]
+  },
+  {
+    "slug": "premortem-desk",
+    "name": "Premortem Desk",
+    "author": "T1000",
+    "handle": "@teeRex247",
+    "postUrl": "https://x.com/teeRex247/status/2111654861796188336",
+    "postedAt": "2026-10-18T03:05:26Z",
+    "templateUrl": "https://x.ai/bot/RMTU2Vv4BHQtoJwGFhYCm",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Kockázatelemző bot már elfogadott tervekhez. Úgy tesz, mintha a terv már kudarcot vallott volna, és rangsorolja, hogyan bukhat el; mindegyikhez korai figyelmeztető jelet ad, és megmondja, mikor válts irányt vagy állj le. A sablon leírása szerint opcionálisan hetente rákérdez, és szól, ha egy ilyen jel bekövetkezett.",
+    "postQuote": "Imagine your plan already failed, then find out why. Premortem Desk on @bot ranks how it breaks and sets the early warning signs. Thanks @elonmusk",
+    "templateQuote": "Paste a plan you've already committed to and get the most likely ways it fails, the early warning sign for each, and when to pivot or stop. Optional weekly check-in tells you when a trigger fires.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Opcionális heti bejelentkezés",
+        "quote": "Optional weekly check-in tells you when a trigger fires.",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”, 2026-10-19)",
+        "url": "https://x.com/cu30rry_/status/2112017141272916032"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "product-idea-stress-test",
+        "name": "Product Idea Stress Test",
+        "noteHu": "A hivatalos Marketplace Product Idea Stress Test botja (Hiten Shah) hasonló témájú, de más bot: termék- vagy startupötletet vizsgál, mielőtt elköteleződnél, nem egy már elfogadott tervet."
+      }
+    ]
+  },
+  {
+    "slug": "snowflake-analyst",
+    "name": "Snowflake Analyst",
+    "author": "BigDataDude",
+    "handle": "@big_data_dude",
+    "postUrl": "https://x.com/big_data_dude/status/2111809841622565048",
+    "postedAt": "2026-10-18T13:21:16Z",
+    "templateUrl": "https://x.ai/bot/LI4x0WdC_saRljwVwno4X",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Csak olvasó Snowflake-elemző bot. A sablon leírása szerint köznyelvi kérdésekre megírja és megmutatja az SQL-t, minden számot a lekérdezésével jelöl, nagy lekérdezés előtt ellenőrzi a költséget, és soha nem módosítja az adatokat. A leírás szerint tesztelt skilleket is tartalmaz (például ad-hoc válaszok, metrika-elemzés, kohorszok, A/B-kiértékelés, lekérdezésköltség és adatminőség), de a skillek nevét nem adja meg.",
+    "postQuote": "I work with Snowflake daily and needed a bot to help me with analyzing what's what. I created a template for what I use to do deep dives, quality and cost reviews.",
+    "templateQuote": "A read-only Snowflake analyst. Ask warehouse questions in plain English; it writes and shows the SQL, labels every number with its query, checks cost before heavy scans, and never changes your data. Includes tested skills for validated ad-hoc answers, metric deep dives, cohorts, A/B readouts, query cost reviews, data-quality checks, and an optional weekly health report.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Opcionális heti állapotjelentés",
+        "quote": "an optional weekly health report",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Snowflake",
+        "quote": "A read-only Snowflake analyst.",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”, 2026-10-19)",
+        "url": "https://x.com/cu30rry_/status/2112017141272916032"
+      }
+    ]
+  },
+  {
+    "slug": "magnum-pi",
+    "name": "Magnum P.I.",
+    "author": "DJ",
+    "handle": "@congressdj",
+    "postUrl": "https://x.com/congressdj/status/2111782639103345038",
+    "postedAt": "2026-10-18T11:33:10Z",
+    "templateUrl": "https://x.ai/bot/hSJYHTSH02J0ZchLG-zu8",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Átvilágító bot. A sablon leírása szerint nyilvános adatok alapján ellenőriz weboldalakat, eladókat, végzettségeket és randipartnereket, majd egyértelmű ítéletet ad forrásokkal. A készítő példái: hiteles-e valakinek a bemutatkozása, nős-e vagy egyedülálló, átverés-e valami, igaz-e egy állítás.",
+    "postQuote": "Introducing Magnum P.I. Bot. The first personal and website vetting bot of its kind.\n\nIs his bio legit? Vet.\nIs he married or single? Vet.\nIs that a scam? Vet.\nIs that true? Vet.\n\nIt’s a dangerous world. Magnum PI has your back.",
+    "templateQuote": "Magnum P.I. helps you build trust by vetting websites, sellers, credentials, and dating matches using public records, then gives you a clear verdict with sources.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”, 2026-10-19)",
+        "url": "https://x.com/cu30rry_/status/2112017141272916032"
+      }
+    ]
+  },
+  {
+    "slug": "notion-bot",
+    "name": "Notion Bot",
+    "author": "Thomas Meijer",
+    "handle": "@ijsthee",
+    "postUrl": "https://x.com/ijsthee/status/2111109412052185594",
+    "postedAt": "2026-10-16T14:58:01Z",
+    "templateUrl": "https://x.ai/bot/yrN-hdSX5YoF0cQ5U0sbb",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Notion-rendrakó bot. A készítő Notionjában 805 rendezetlen tag gyűlt össze, mert túl sok AI-ügynök írt bele; a bot kb. egy óra alatt 12 egységes tagre rendezte, és több mint 1100 könyvjelzőt címkézett újra. A sablon leírása szerint egységes címeket, kitöltött metaadatokat és adatbázisok közötti kapcsolatokat tart fenn, minden változtatásról naplót vezet, hogy visszavonható legyen.",
+    "postQuote": "805 random tags in my @NotionHQ. Too many AI agents writing in it.\n\nSo I made a @bot to clean it up. About an hour later: 12 fixed tags, 1,100+ bookmarks retagged.\n\nNow its only job is keeping it that way.",
+    "templateQuote": "Keeps your Notion workspace clean, organized and linked: consistent titles, filled metadata, normalized options and relations between your databases, with a change log so every edit can be undone. Runs a weekly cleanup before your weekly review.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti rendrakás a heti áttekintés előtt",
+        "quote": "Runs a weekly cleanup before your weekly review.",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Notion",
+        "quote": "805 random tags in my @NotionHQ.",
+        "from": "post"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”, 2026-10-19)",
+        "url": "https://x.com/cu30rry_/status/2112017141272916032"
+      }
+    ]
+  },
+  {
+    "slug": "terminal-boss",
+    "name": "Terminal Boss 🖥️",
+    "author": "Phil",
+    "handle": "@Phil_Holland",
+    "postUrl": "https://x.com/Phil_Holland/status/2111658606726918454",
+    "postedAt": "2026-10-18T03:20:19Z",
+    "templateUrl": "https://x.ai/bot/aU_t4X-Yf6w9DHfhIGD9n",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Terminál- és kódolóagent-indító bot. A Grok Bot appból (telefonról vagy asztali gépről) futtat terminálos munkákat és terminálos kódoló agenteket a saját gépeden (Mac, Linux vagy Windows WSL-lel) vagy a Grok Bot mindig működő gépén. A sablon leírása szerint névvel ellátott háttérmunkamenetekben indítja őket, szól, amint elkészültek, továbbítja a kérdéseket és eredményeket, és kérésre leállítja őket. A készítő szerint a tmux, ripgrep, fd, gh és jq be van építve.",
+    "postQuote": "🖥️ Terminal Boss runs @grok Build, any CLI, or any terminal from @bot app.\n\n🛠️ tmux, ripgrep, fd, gh & jq built in.\n\nRuns on your Mac, Linux or Windows (WSL) machine, or Grok Bot's always-on computer.\n\nThis one is a super power💪🏼\n\n👇",
+    "templateQuote": "Terminal Boss runs terminal jobs and terminal coding agents (Grok Build, Claude Code, Codex, Cursor CLI, Gemini CLI, opencode, Aider, or a plain shell) from Grok Bot on your phone or desktop. It works on your own online computer, whether Mac, Linux, or Windows (via WSL), or on Grok Bot's own always-on computer, starting jobs in named background sessions, pinging you the moment they finish, relaying questions and results, and stopping them on request.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Terminálos kódoló agentek",
+        "quote": "(Grok Build, Claude Code, Codex, Cursor CLI, Gemini CLI, opencode, Aider, or a plain shell)",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („本日のGrok Bot 10選”, 2026-10-19)",
+        "url": "https://x.com/cu30rry_/status/2112017141272916032"
+      }
+    ]
+  },
+  {
+    "slug": "book-maker",
+    "name": "Book Maker",
+    "author": "yugo.spice 🇨🇦",
+    "handle": "@rabspice",
+    "postUrl": "https://x.com/rabspice/status/2112006032193159578",
+    "postedAt": "2026-10-19T02:20:51Z",
+    "templateUrl": "https://x.ai/bot/-PuwO8v1fhC4LujsgwLS-",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Könyvíró bot, amely a készítő szerint arra a gondra készült, hogy ha mindent az AI-ra bízol, a saját tudásod nem gyarapszik. Megadott témából vagy forrásból (például GitHub-repó vagy dokumentációs oldal) kutat, rendez és fejezetekre bont, és többfejezetes kézikönyvet ír a Notionbe. A sablon leírása szerint alapból PDF-et is készít, kérésre EPUB-ot, és ezt a saját postafiókjából el tudja küldeni a Kindle-edre.",
+    "postQuote": "「AIに任せきりで自分の知識が増えない問題」を解決する Grok Bot Template 公開した。トピック指定で「調査→整理→章分け」して本を書いてくれる。Kindle送信もしてくれて便利。PDF, Notionにも対応。",
+    "templateQuote": "Turns a topic or source, like a GitHub repo or docs site, into a multi-chapter handbook in Notion, plus a PDF by default and an EPUB on request that it can email to your Kindle from its own inbox. For anyone who wants a careful, sourced book instead of a chat answer.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Notion",
+        "quote": "a multi-chapter handbook in Notion",
+        "from": "template"
+      },
+      {
+        "name": "Kindle (e-mailben)",
+        "quote": "email to your Kindle from its own inbox",
+        "from": "template"
+      }
+    ],
+    "postLang": "ja"
+  },
+  {
+    "slug": "career-agent",
+    "name": "Career Agent",
+    "author": "Phillip Green",
+    "handle": "@phillipggreen",
+    "postUrl": "https://x.com/phillipggreen/status/2111997489322627582",
+    "postedAt": "2026-10-19T01:46:55Z",
+    "templateUrl": "https://x.ai/bot/TP4PIzpIIrb3qXuLjUVU2",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Álláskereső bot. A munkáltatók saját álláshirdetési oldalain élőben ellenőrzött állásokat keres és követ, igaz, testre szabott jelentkezéseket készít elő, és hetente összefoglalót küld. A készítő szerint semmit nem küld be a jóváhagyásod nélkül.",
+    "postQuote": "Made a Grok Bot template called Career Agent.\n\nIt finds job openings verified live on employer boards, tracks them, preps truthful, tailored applications, and sends a weekly roundup. Nothing gets submitted without your approval. The QA guy in me insisted.",
+    "templateQuote": "A career agent that finds job openings verified live on employer boards, tracks them, and preps truthful, tailored applications. It's for anyone job hunting who wants honest fit notes and a weekly roundup, with nothing submitted until they approve it.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti összefoglaló",
+        "quote": "sends a weekly roundup",
+        "from": "post"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "chef-ramsey",
+    "name": "Chef Ramsey",
+    "author": "Caveman Actual",
+    "handle": "@Caveman__Actual",
+    "postUrl": "https://x.com/Caveman__Actual/status/2112044475128107096",
+    "postedAt": "2026-10-19T04:53:37Z",
+    "templateUrl": "https://x.ai/bot/7D9za9dKYVTn2uFLjRNGV",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Menütervező és bevásárló bot. Megtervezi a heti étkezéseidet, a helyi bolt oldalán ellenőrzi minden hozzávaló meglétét és árát, hagyja módosítani a menüt, majd jóváhagyás után megtölti a kosarat és lefoglalja az autós átvételt (curbside pickup). A sablon leírása szerint pazarlásmentes menüt tervez az ízlésedhez, és nyomtatható receptkártyákat is készít.",
+    "postQuote": "I think everyone could use this. @grok @bot\n\nChef Ramsey Bot - plans your week of meals, checks your local grocery store for every ingredient and price, lets you tweak the menu, then fills your cart and books curbside pickup once you approve.",
+    "templateQuote": "A personal chef, meal planner and grocery shopper. Plans clean, no-waste weekly menus around your tastes, checks every ingredient and price on your grocery store's site, fills your cart, orders pickup only after you approve, and makes fun printable recipe cards.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "trip-pilot",
+    "name": "Trip Pilot",
+    "author": "J Allen",
+    "handle": "@BTC_Yogi",
+    "postUrl": "https://x.com/BTC_Yogi/status/2112042195377349067",
+    "postedAt": "2026-10-19T04:44:33Z",
+    "templateUrl": "https://x.ai/bot/lkfpeJX5Hg58yMFm0B0kb",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Utazástervező bot. A készítő szerint a beállítás öt válasz: indulási repülőtér, az utazás, utazási stílus, egy figyelt útvonal célárral, és mikor nézze a jegyárakat; utána első jegyár-pillanatképet küld. Soha nem foglal és nem vásárol. A sablon leírása szerint napi bontású útitervet és csomaglistát is készít, figyeli a pontokkal (award) foglalható helyeket, és végigviszi az utazás előtti ellenőrzőlistát.",
+    "postQuote": "Thanksgiving is under six weeks out. Trip Pilot setup is five answers: home airport, the trip, travel style, a route to watch with a target price, and when to check fares. Then it sends a first fare snapshot. It never books or buys.",
+    "templateQuote": "Builds day-by-day itineraries and packing lists, watches fares and award space on routes you care about, and runs your pre-trip checklist. For leisure travelers and points collectors.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Jegyárfigyelés a megadott időpontokban",
+        "quote": "and when to check fares",
+        "from": "post"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "kilo",
+    "name": "Kilo",
+    "author": "X4Tech",
+    "handle": "@4TechX",
+    "postUrl": "https://x.com/4TechX/status/2112054073964793945",
+    "postedAt": "2026-10-19T05:31:45Z",
+    "templateUrl": "https://x.ai/bot/A26SuAqgUsZhJ9CtFmCsA",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Fitneszedző bot. A sablon leírása szerint ismeri a kiindulási szintedet és a szokásaidat, napi döntéseket segít az edzésről, az étkezésről (valós mennyiségekkel), a regenerációról és a táplálékkiegészítőkről, és gyakorlatbemutatókat ad. A készítő szerint hamarosan érkezik: progresszív terhelés a valós edzésnaplóból, alvás és lépésszám Health-képernyőképből, és egy rövid reggeli bejelentkezés; az Apple Health connectorig képernyőképekkel működik.",
+    "postQuote": "Shipping soon to Kilo, my @Grok @bot  fitness coach:\n→ progressive overload from your real lift log\n→ sleep/steps from a Health screenshot\n→ a quick morning check-in\n\nUntil Apple Health gets a connector, screenshots do the job. Try it:",
+    "templateQuote": "A practical personal fitness coach that knows your baseline, your habits, and today. Day-to-day calls on training, meals with real amounts, recovery, and supplements, plus clear form demos (smooth short clips or stills).",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Reggeli bejelentkezés (a készítő szerint hamarosan)",
+        "quote": "a quick morning check-in",
+        "from": "post"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "claude-remote",
+    "name": "Claude Remote",
+    "author": "nick",
+    "handle": "@thecsguy",
+    "postUrl": "https://x.com/thecsguy/status/2111986186784743932",
+    "postedAt": "2026-10-19T01:02:00Z",
+    "templateUrl": "https://x.ai/bot/aB0M7wQOAcFgd_G0rTEWF",
+    "templatePageReadable": true,
+    "fetched": "2026-10-19",
+    "summaryHu": "Távvezérlő bot Claude Code-hoz Macen. A készítő szerint bárhonnan üzenetben adsz neki feladatot, ő lefuttatja egy Claude Code munkamenetben, és szól az eredménnyel; ha válaszolsz, az ugyanabba a munkamenetbe megy. A sablon leírása szerint a Maceden futó Claude Code munkamenetekre adja át a feladatokat.",
+    "postQuote": "if you have claude code on a mac, you need this grok bot.\n\ntext it a task from anywhere, it runs it in a claude code session and pings you with the results. reply and it goes to the same session.\n\ngrab the template 👇",
+    "templateQuote": "Hand tasks to Claude Code sessions on your Mac and get results back.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Claude Code (Macen)",
+        "quote": "it runs it in a claude code session",
+        "from": "post"
+      }
+    ]
   }
 ]

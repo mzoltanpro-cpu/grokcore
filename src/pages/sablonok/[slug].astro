@@ -86,10 +86,10 @@ const ld = {
       }
       <figure class="quote-box">
         <blockquote cite={item.postUrl}>
-          {item.postQuote.split("\n\n").map((para) => <p lang="en">{para}</p>)}
+          {item.postQuote.split("\n\n").map((para) => <p lang={item.postLang ?? "en"}>{para}</p>)}
         </blockquote>
         <figcaption class="fine">
-          A készítő X-posztja (angol idézet): <a href={item.postUrl}>{item.handle} · x.com</a>
+          A készítő X-posztja ({item.postLang === "ja" ? "japán" : "angol"} idézet): <a href={item.postUrl}>{item.handle} · x.com</a>
         </figcaption>
       </figure>
       {
