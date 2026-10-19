@@ -8,6 +8,7 @@ import Sources from "../../components/Sources.astro";
 import { days, getDay } from "../../content/days";
 import { worksheetMdPath, worksheetPath } from "../../content/worksheets";
 import { botsForDay, marketplacePath } from "../../content/marketplace";
+import { advancedGuides, advancedPath } from "../../content/advanced";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../../lib/site";
 
 export function getStaticPaths() {
@@ -103,6 +104,24 @@ const howTo = {
       )
     }
     <DayGuides day={day.n} />
+    {
+      !next && (
+        <section class="task-box" aria-labelledby="hogyan-tovabb" data-advanced-next>
+          <h2 id="hogyan-tovabb">Végeztél az 5 nappal? Haladó útmutatók</h2>
+          <ul class="plain-list">
+            {advancedGuides.map((guide) => (
+              <li>
+                <a href={advancedPath(guide.slug)}>{guide.title}</a>
+                <span class="fine"> – {guide.card}</span>
+              </li>
+            ))}
+          </ul>
+          <p class="fine">
+            <a href="/halado/">Az összes haladó útmutató</a>
+          </p>
+        </section>
+      )
+    }
     <Sources sources={day.sources} />
   </article>
   <nav class="pager" aria-label="Lapozás a napok között">

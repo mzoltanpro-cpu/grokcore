@@ -5,6 +5,7 @@ import { faq } from "../content/faq";
 import { appName, categoryLabel, dayLabel, marketplaceBots, marketplaceFetched, marketplacePath, nonAffiliation } from "../content/marketplace";
 import { budapestTime, communityTemplates, templateMissing, templateNonAffiliation, templatePath } from "../content/templates";
 import { addIns, guides, guidesFetched, guidesIndexUrl, guideUrl, useCases, useCasesFetched, useCasesUrl } from "../content/guides";
+import { advancedFetched, advancedGuides, advancedPath, sourceKindLabel } from "../content/advanced";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
 export const GET: APIRoute = ({ site }) => {
@@ -112,6 +113,20 @@ export const GET: APIRoute = ({ site }) => {
     ...addIns.map((item) => `- ${item.title} (${item.kind}): ${item.hu} (${item.url})`),
     "",
   );
+
+  parts.push(
+    "## Haladó útmutatók (saját, a Kezdő 5 nap után)",
+    "",
+    `Saját magyar szöveg, nem fordítás. Források lekérve: ${advancedFetched}. Oldal: ${absUrl(origin, "/halado/")}`,
+    "",
+  );
+  for (const g of advancedGuides) {
+    parts.push(`### ${g.title}`, "", g.lead, "", `Oldal: ${absUrl(origin, advancedPath(g.slug))}`, "");
+    g.steps.forEach((step, index) => parts.push(`${index + 1}. ${step.name}. ${step.text}`));
+    parts.push("", "Források:");
+    for (const s of g.sources) parts.push(`- ${s.title} – ${s.author}, ${s.date}. ${sourceKindLabel[s.kind]}: ${s.url}`);
+    parts.push("");
+  }
 
   parts.push("## Gyakori kérdések", "");
   for (const item of faq) {

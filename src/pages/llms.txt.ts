@@ -5,6 +5,7 @@ import { docs } from "../content/docs";
 import { marketplaceBots, marketplaceFetched, marketplacePath } from "../content/marketplace";
 import { budapestTime, communityTemplates, templatePath } from "../content/templates";
 import { guides, guidesFetched, guidesIndexUrl, guideUrl, useCasesUrl } from "../content/guides";
+import { advancedFetched, advancedGuides, advancedPath } from "../content/advanced";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
 export const GET: APIRoute = ({ site }) => {
@@ -50,6 +51,13 @@ export const GET: APIRoute = ({ site }) => {
     "",
     `- [Útmutatók](${absUrl(origin, "/utmutatok/")})`,
     ...guides.map((g) => `- [${g.title}](${absUrl(origin, `/utmutatok/#${g.slug}`)}): ${g.summaryHu} Eredeti: ${guideUrl(g.slug)}`),
+    "",
+    "## Haladó útmutatók (saját, a Kezdő 5 nap után)",
+    "",
+    `Saját magyar szöveg az xAI-munkatársak útmutatói (gyártói forrás), közösségi X-cikkek és a docs.x.ai alapján, minden oldalon szerzővel, linkkel, dátummal és forrástípussal. Források lekérve: ${advancedFetched}.`,
+    "",
+    `- [Haladó útmutatók](${absUrl(origin, "/halado/")})`,
+    ...advancedGuides.map((g) => `- [${g.title}](${absUrl(origin, advancedPath(g.slug))}): ${g.description} Források: ${g.sources.map((s) => s.url).join(", ")}`),
     "",
     "## Az oldal",
     "",
