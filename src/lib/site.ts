@@ -70,6 +70,7 @@ export const primaryNav = [
   { href: "/marketplace/", label: "Marketplace", id: "marketplace" },
   { href: "/sablonok/", label: "Sablonok", id: "templates" },
   { href: "/utmutatok/", label: "Útmutatók", id: "guides" },
+  { href: "/halado/", label: "Haladó", id: "advanced" },
   { href: "/forrasok/", label: "Források", id: "resources" },
   { href: "/rolunk/", label: "Rólunk", id: "about" },
   { href: "/szponzoracio/", label: "Szponzoráció", id: "sponsors" },

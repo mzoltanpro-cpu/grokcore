@@ -240,7 +240,7 @@ if (!guidesHtml.includes("Nem hivatalos")) fail("utmutatok/index.html: hiányzik
 if (!guidesHtml.includes("nem a Grok Botról")) fail("utmutatok/index.html: a Grok use-case blokk nincs elkülönítve a Grok Bottól");
 if (!guidesHtml.includes("lekérve")) fail("utmutatok/index.html: nincs lekérési dátum");
 
-// Haladó útmutatók: minden oldalon forráslista szerzővel, dátummal és forrástípussal; belinkelve az 5. napról és az /utmutatok/ oldalról.
+// Haladó útmutatók: minden oldalon forráslista szerzővel, dátummal és forrástípussal; belinkelve az 5. napról; külön menüpont, NEM a hivatalos /utmutatok/ oldalon.
 const advancedHtml = byRel.has("halado/index.html") ? await readFile(byRel.get("halado/index.html"), "utf8") : "";
 const advancedSlugs = [...advancedHtml.matchAll(/data-advanced="([^"]+)"/g)].map((m) => m[1]);
 if (advancedSlugs.length === 0) fail("halado/index.html: nincs haladó útmutató-kártya");
@@ -264,10 +264,14 @@ for (const slug of advancedSlugs) {
   }
   if (!items.some((item) => item[1] !== "hivatalos")) fail(`${rel}: nincs szerzői (gyártói vagy közösségi) forrás`);
   if (/agentcore/i.test(html)) fail(`${rel}: AgentCore-hivatkozás nem kerülhet az oldalra`);
+  if (!html.includes("data-own-guides") || !html.includes("nem hivatalos x.ai anyagok")) fail(`${rel}: hiányzik a „saját, nem hivatalos x.ai” jelölés`);
 }
 const day5 = byRel.get("5-nap/5-nap-masodik-bot-biztonsag/index.html");
 if (day5 && !(await readFile(day5, "utf8")).includes('href="/halado/"')) fail("Az 5. nap nem linkeli a haladó útmutatókat");
-if (!guidesHtml.includes('href="/halado/"')) fail("utmutatok/index.html: nem linkeli a haladó útmutatókat");
+if (!advancedHtml.includes("data-own-guides") || !advancedHtml.includes("nem hivatalos x.ai anyagok")) fail("halado/index.html: hiányzik a „saját, nem hivatalos x.ai” jelölés");
+const guidesMain = (guidesHtml.match(/<main[^>]*>([\s\S]*?)<\/main>/) || ["", guidesHtml])[1];
+if (/href="\/halado\/|data-advanced-block/.test(guidesMain)) fail("utmutatok/index.html: a hivatalos útmutatók oldalán nem lehet haladó (saját) útmutató-blokk vagy link");
+if (!/<nav class="nav"[^>]*>[\s\S]*?<a href="\/halado\/" aria-current="page">\s*Haladó\s*<\/a>[\s\S]*?<\/nav>/.test(advancedHtml)) fail("halado/index.html: nincs „Haladó” menüpont a fő navigációban");
 
 let canonicalOrigin = "";
 const external = new Set();
