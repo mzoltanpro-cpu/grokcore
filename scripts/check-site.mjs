@@ -27,6 +27,10 @@ const required = [
   "marketplace/index.html",
   "sablonok/index.html",
   "utmutatok/index.html",
+  "halado/index.html",
+  "halado/botcsapat/index.html",
+  "halado/rutinok-ritmusa/index.html",
+  "halado/masodik-agy/index.html",
   "forrasok/index.html",
   "rolunk/index.html",
   "szponzoracio/index.html",
@@ -235,6 +239,35 @@ for (const slug of guideCards) {
 if (!guidesHtml.includes("Nem hivatalos")) fail("utmutatok/index.html: hiányzik a nem hivatalos jelölés");
 if (!guidesHtml.includes("nem a Grok Botról")) fail("utmutatok/index.html: a Grok use-case blokk nincs elkülönítve a Grok Bottól");
 if (!guidesHtml.includes("lekérve")) fail("utmutatok/index.html: nincs lekérési dátum");
+
+// Haladó útmutatók: minden oldalon forráslista szerzővel, dátummal és forrástípussal; belinkelve az 5. napról és az /utmutatok/ oldalról.
+const advancedHtml = byRel.has("halado/index.html") ? await readFile(byRel.get("halado/index.html"), "utf8") : "";
+const advancedSlugs = [...advancedHtml.matchAll(/data-advanced="([^"]+)"/g)].map((m) => m[1]);
+if (advancedSlugs.length === 0) fail("halado/index.html: nincs haladó útmutató-kártya");
+for (const slug of advancedSlugs) {
+  const rel = `halado/${slug}/index.html`;
+  if (!byRel.has(rel)) {
+    fail(`Hiányzó haladó oldal: ${rel}`);
+    continue;
+  }
+  const html = await readFile(byRel.get(rel), "utf8");
+  const section = html.match(/<section[^>]*data-advanced-sources[^>]*>([\s\S]*?)<\/section>/);
+  if (!section) {
+    fail(`${rel}: nincs forráslista`);
+    continue;
+  }
+  const items = [...section[1].matchAll(/<li data-source-kind="(gyartoi|hivatalos|kozossegi)"[^>]*>([\s\S]*?)<\/li>/g)];
+  if (items.length === 0) fail(`${rel}: a forrásoknak nincs típusjelölése`);
+  for (const item of items) {
+    if (!/href="https:\/\//.test(item[2])) fail(`${rel}: forrás link nélkül`);
+    if (!/\d{4}-\d{2}-\d{2}/.test(item[2])) fail(`${rel}: forrás dátum nélkül`);
+  }
+  if (!items.some((item) => item[1] !== "hivatalos")) fail(`${rel}: nincs szerzői (gyártói vagy közösségi) forrás`);
+  if (/agentcore/i.test(html)) fail(`${rel}: AgentCore-hivatkozás nem kerülhet az oldalra`);
+}
+const day5 = byRel.get("5-nap/5-nap-masodik-bot-biztonsag/index.html");
+if (day5 && !(await readFile(day5, "utf8")).includes('href="/halado/"')) fail("Az 5. nap nem linkeli a haladó útmutatókat");
+if (!guidesHtml.includes('href="/halado/"')) fail("utmutatok/index.html: nem linkeli a haladó útmutatókat");
 
 let canonicalOrigin = "";
 const external = new Set();
