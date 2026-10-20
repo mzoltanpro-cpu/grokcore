@@ -1586,36 +1586,6 @@
     ]
   },
   {
-    "slug": "coffee-companion",
-    "name": "coffee companion",
-    "author": "andy",
-    "handle": "@andymadrick",
-    "postUrl": "https://x.com/andymadrick/status/2095287853450399859",
-    "postedAt": "2026-09-02T23:08:47Z",
-    "templateUrl": "https://x.ai/bot/SqO-_5207iInz0iDSAFVW",
-    "templatePageReadable": true,
-    "fetched": "2026-10-19",
-    "summaryHu": "Filterkávé-segéd. A készítő szerint megmondod, milyen kávébabod van, és pour-over receptet ajánl; főzés után vele rögzíted az ízjegyeket, az átfolyási időt és a tapasztalatokat, mindezt egy Notion-adatbázisba menti, és új zacskónál vagy receptmódosításnál a korábbi főzések alapján javasol változtatást (arány, átfolyás, őrlés, hőmérséklet). A sablon leírása szerint Origami csepegtetőhöz és kézi darálóhoz készült.",
-    "postQuote": "fun little @bot i made: coffee companion ☕\n\ni tell it what beans i have and it recommends a pour over recipe. after brewing, i chat with it to record tasting notes, drawdown time, what worked, what didn’t, etc.\n\nit saves the recipe + all of my notes to a @NotionHQ  database, so there’s a persistent history of every coffee i’ve made.\n\nthen, when i get a new bag or tweak an old recipe, it looks back through previous brews and suggests changes to ratio, flow rate, grind size, temperature, etc.. so every cup builds on the last one.\n\ni’ve never made better coffee in my life. thanks @bot :)",
-    "templateQuote": "A pour-over coffee companion that researches new bags, writes full recipe cards, logs beans and brews in Notion, and follows up for tasting notes. Built for specialty filter brewing with Origami and a hand grinder.",
-    "memory": [],
-    "skills": [],
-    "routines": [],
-    "integrations": [
-      {
-        "name": "Notion",
-        "quote": "logs beans and brews in Notion",
-        "from": "template"
-      }
-    ],
-    "discoveredVia": [
-      {
-        "labelHu": "GrokMarket.io sablonkönyvtár (független lista, 2026-10-19)",
-        "url": "https://grokmarket.io/"
-      }
-    ]
-  },
-  {
     "slug": "changelog-scout",
     "name": "Changelog Scout",
     "author": "Aaron Makelky",
@@ -1886,5 +1856,240 @@
         "noteHu": "A hivatalos Marketplace Executive Assistant botja (Natasha Kuo) hasonló témájú, de más bot: vezetői asszisztens tárgyalófoglalással, interjú-előkészítéssel és naptárellenőrzéssel."
       }
     ]
+  },
+  {
+    "slug": "imessage-relay",
+    "name": "iMessage Relay",
+    "author": "Phil",
+    "handle": "@Phil_Holland",
+    "postUrl": "https://x.com/Phil_Holland/status/2112196831916564713",
+    "postedAt": "2026-10-19T14:59:02Z",
+    "templateUrl": "https://x.ai/bot/BYaLwjYHrWUAcUlyZVbgP",
+    "templatePageReadable": true,
+    "fetched": "2026-10-20",
+    "summaryHu": "iMessage-továbbító bot Mac-felhasználóknak. A sablon leírása szerint az iMessage-üzeneteid megjelennek az X Chatben, és onnan válaszolhatsz rájuk. A beállítás a Macen vezetett, egyperces folyamat; választhatsz kijelölt névjegyeket vagy az összes üzenetet, van /test parancs, csendes órák és /block, az üzenetek szövegét pedig nem tárolja. A készítő szerint az értesítésekhez egy második X-fiók kell.",
+    "postQuote": "📲 Your iMessages in X Chat\n\nTexts in your X inbox, you reply from X as an iMessage\n\n✅ 1-minute setup on your Mac\n✅ only the contacts you pick\n✅ your texts are never stored\n✅ /block for spam\n\n(Needs a 2nd X acct to send notifications.)",
+    "templateQuote": "Get your iMessages in X Chat and reply from there. Guided one-minute setup on your Mac, picked contacts or all texts, /test, quiet hours and /block, and message text is never stored.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "iMessage (Mac)",
+        "quote": "Get your iMessages in X Chat and reply from there.",
+        "from": "template"
+      },
+      {
+        "name": "X Chat",
+        "quote": "Texts in your X inbox, you reply from X as an iMessage",
+        "from": "post"
+      }
+    ]
+  },
+  {
+    "slug": "car-deal-scout",
+    "name": "Car Deal Scout",
+    "author": "Kent Weber",
+    "handle": "@KentBWeber",
+    "postUrl": "https://x.com/KentBWeber/status/2111975498888986905",
+    "postedAt": "2026-10-19T00:19:32Z",
+    "templateUrl": "https://x.ai/bot/4-ai7JQWpKpOUiK1Ih0J3",
+    "templatePageReadable": true,
+    "fetched": "2026-10-20",
+    "summaryHu": "Autókereső bot. Megadod, milyen autót keresel (modell, évjárat, keret, kötelező felszereltség, és milyen messzire mennél el érte). A sablon leírása szerint figyeli a hirdetési oldalakat, kiszűri, ami sérti a kemény feltételeidet, és rangsorolt összefoglalót küld a valódi találatokról, linkekkel. Eladót csak akkor keres meg, és csak akkor vásárol, ha kéred.",
+    "postQuote": "I built Car Deal Scout — a pre-trained car search Grok @Bot\n\nDescribe the car you want, and it'll find it: model, years, budget, must-haves, distance. It sends you matches with links. And will contact sellers *IF* you want it to.",
+    "templateQuote": "Describe the car you want, and I'll find it. Enter model, years, budget, must-haves, and how far you'll go — Car Deal Scout watches listing sites, filters out anything that breaks your hard rules, and sends a ranked digest of real matches with links. It never contacts sellers or buys anything unless you ask.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "karen-subscription-canceller",
+    "name": "Karen the Canceller of Paid Subs",
+    "author": "Allan Branch",
+    "handle": "@allanbranch",
+    "postUrl": "https://x.com/allanbranch/status/2111821697771016240",
+    "postedAt": "2026-10-18T14:08:23Z",
+    "templateUrl": "https://x.ai/bot/J92ojdzPDp37P2Pu_Opbx",
+    "templatePageReadable": true,
+    "fetched": "2026-10-20",
+    "summaryHu": "Előfizetés-lemondó bot. A sablon leírása szerint megkeresi a postafiókjaidban rejtőző fizetős előfizetéseket, és követi, mennyibe kerülnek. Mindegyiknél megkérdezi, megtartod vagy lemondod, a kiválasztottakat lemondja, és visszautasítja a megtartási ajánlatokat. A készítő szerint nála 30 fizetős előfizetést talált, nagyjából évi 24 000 dollár értékben.",
+    "postQuote": "I made an AI bot named Karen whose whole job is canceling my subscriptions 💅\n\nShe scans my inboxes, found 30 paid subs (~$24K/yr 😳), asks me Keep or Cancel, then actually cancels them and says no to every \"wait, here's 50% off!\"\n\nGet your own Karen:",
+    "templateQuote": "Finds the paid subscriptions hiding in your inboxes and tracks what they cost. It asks you Keep or Cancel for each one, then cancels the ones you pick and turns down the retention offers.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "E-mail postafiókok",
+        "quote": "Finds the paid subscriptions hiding in your inboxes",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "orwell-grammar-fix",
+    "name": "Orwell (Grammar Fix)",
+    "author": "Tom⚡️",
+    "handle": "@TitaniumTomP",
+    "postUrl": "https://x.com/TitaniumTomP/status/2112181118438883606",
+    "postedAt": "2026-10-19T13:56:35Z",
+    "templateUrl": "https://x.ai/bot/YmQxkaiBgrFCUxR9J6krs",
+    "templatePageReadable": true,
+    "fetched": "2026-10-20",
+    "summaryHu": "Nyelvhelyesség-javító bot. A sablon leírása szerint bármilyen beillesztett szöveget azonnal visszaküld javított nyelvtannal, helyesírással és írásjelekkel, kérdések, megjegyzések és előtag nélkül, csak a kimásolható javított szöveget. A készítő a posztolás előtt a piszkozatait futtatja át rajta. Arról, hogy magyar szöveggel is működik-e, a forrás nem szól.",
+    "postQuote": "I paste my rough drafts into Orwell before I hit post. ✍️ It hands back the same words with the grammar, spelling, and punctuation fixed, and zero chatter.",
+    "templateQuote": "Paste any text and Orwell sends it right back with the grammar, spelling, and punctuation fixed. No chatter, no questions, no prefix needed, just the corrected text, ready to copy.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "writing-bot",
+        "name": "Writing Bot",
+        "noteHu": "A hivatalos Marketplace Writing Botja (Matt Palmer) hasonló témájú, de más bot: írótárs esszék, e-mailek és dokumentumok megírásához és átdolgozásához, nem csak helyesírás-javításra."
+      }
+    ]
+  },
+  {
+    "slug": "the-maitre-d",
+    "name": "The Maitre D",
+    "author": "TeslaAiGirl",
+    "handle": "@TeslaAiGirl",
+    "postUrl": "https://x.com/TeslaAiGirl/status/2112218970829025686",
+    "postedAt": "2026-10-19T16:27:00Z",
+    "templateUrl": "https://x.ai/bot/jZDmuZbKvUIELlYazIAuC",
+    "templatePageReadable": true,
+    "fetched": "2026-10-20",
+    "summaryHu": "Étteremkereső és asztalfoglaló bot. A sablon leírása szerint megadod, melyik estére, hány főre, milyen környékre és milyen hangulatú helyet keresel, ő pedig négy javaslatot hoz foglalási és térképlinkekkel, majd lefoglalja az asztalt.",
+    "postQuote": "Meet my maître D bot.\nHe snags the good tables for whatever night, group size, and vibe you’re feeling then books it. 🍽️✨",
+    "templateQuote": "Finds great restaurants and books your reservations. Tell it the night, party size, area, and vibe, and it brings back 4 picks with booking and map links, then locks in your table.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "research",
+    "name": "Research",
+    "author": "Trond Eirik Haavarstein",
+    "handle": "@xenappblog",
+    "postUrl": "https://x.com/xenappblog/status/2111797929518170506",
+    "postedAt": "2026-10-18T12:33:56Z",
+    "templateUrl": "https://x.ai/bot/v3WI0YuJAr1DLoYdYVXh8",
+    "templatePageReadable": true,
+    "fetched": "2026-10-20",
+    "summaryHu": "Csak olvasó kutatóbot. A sablon leírása szerint az X-en, a Redditen és a weben zajló nyilvános beszélgetésekből forrásmegjelölt összefoglalókat készít, forráscsomagot állít össze cikkekhez és videókhoz, és a kész videókat közzététel előtt tényellenőrzi. A készítő szerint kezdőknek ez a leghasznosabb első agent, és a ScrapeCreators API-val párosítva több platformot is bejár (a posztban: X, YT, TT, Reddit és mások).",
+    "postQuote": "If you're just starting out with @Grok @Bot the best useful Agent you can setup is Research. Pair it with @ScrapeCreators API and you have a killer that crawls X, YT, TT, YT, Reddit and more. Give my template a go.",
+    "templateQuote": "A read-only research analyst that turns public conversation on X, Reddit and the web into cited briefs, builds source packs for stories and videos, and fact-checks finished videos before they go live.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "ScrapeCreators API (a készítő ajánlása)",
+        "quote": "Pair it with @ScrapeCreators API",
+        "from": "post"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "last30days",
+        "name": "last30days",
+        "noteHu": "A hivatalos Marketplace last30days botja (Matt Van Horn) hasonló témájú, de más bot: egy témáról az elmúlt 30 nap Reddit-, X-, YouTube-, TikTok- és egyéb beszélgetéseiből ír összefoglalót, szintén ScrapeCreators-szel."
+      },
+      {
+        "slug": "researchy",
+        "name": "Researchy",
+        "noteHu": "A hivatalos Marketplace Researchy botja (Farzad) hasonló témájú, de más bot: kutató- és tényellenőrző asztal élő webes kereséssel, forrásolt, dátumozott állításokkal."
+      }
+    ]
+  },
+  {
+    "slug": "website-health-check",
+    "name": "Website Health Check",
+    "author": "Emmett Armstrong 💪",
+    "handle": "@EmmettArmstrong",
+    "postUrl": "https://x.com/EmmettArmstrong/status/2112256327309500480",
+    "postedAt": "2026-10-19T18:55:26Z",
+    "templateUrl": "https://x.ai/bot/ipTDB1LDHU0e1HPJeyAVU",
+    "templatePageReadable": true,
+    "fetched": "2026-10-20",
+    "summaryHu": "Weboldal-állapotfelmérő bot. A sablon leírása szerint megadod a weboldalad címét, és közérthető, A-tól F-ig terjedő értékelést kapsz a sebességről, az akadálymentességről, a törött linkekről, a schema-jelölésről és az AI-keresőkre való felkészültségről (llms.txt). Marketingcsapatoknak készült, technikai beállítás nélkül. A készítő az AI/Grok Bot GTM-kurzusa AEO- és SEO-videójához készítette.",
+    "postQuote": "This final video in the AI/Grok Bot GTM course covers AEO & SEO.\n\nHow to get found and how to keep your site healthy.\n\nI even made a Grok Bot template!\n\nWebsite Health Bot:",
+    "templateQuote": "Point it at your website and get a plain-English A to F scorecard for speed, accessibility, broken links, schema, and AI readiness (llms.txt). Built for marketing teams, no technical setup.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "site-audit",
+        "name": "Site Audit",
+        "noteHu": "A hivatalos Marketplace Site Audit botja (Shimecki) hasonló témájú, de más bot: SEO-, tartalom-, sebesség-, akadálymentességi, konverziós és schema-auditot végez pontozással, prioritásokkal és havi összevetéssel."
+      }
+    ]
+  },
+  {
+    "slug": "panda-weather",
+    "name": "Panda 🐼 Weather 🌤️",
+    "author": "Tom⚡️",
+    "handle": "@TitaniumTomP",
+    "postUrl": "https://x.com/TitaniumTomP/status/2112181024109084776",
+    "postedAt": "2026-10-19T13:56:13Z",
+    "templateUrl": "https://x.ai/bot/4jHyb0PgYowhVfxkpjv5e",
+    "templatePageReadable": true,
+    "fetched": "2026-10-20",
+    "summaryHu": "Időjárás-bot. A sablon leírása szerint amerikai irányítószámra, városnévre vagy a világ bármely postai irányítószámára részletes 48 órás előrejelzést ad négyórás blokkokban, animált radartérképpel, és ugyanezt minden reggel el is tudja küldeni. A készítő szerint a világ bármely városára működik.",
+    "postQuote": "Planning a Halloween trick-or-treat route? 🎃 Panda Weather gives me the next 48 hours in 4-hour blocks plus a live radar loop, for any city on the planet. 🐼🌧️",
+    "templateQuote": "Give it a US zip code, city, or postal code anywhere in the world and get a detailed 48-hour forecast in 4-hour blocks with an animated radar map. It can also send you that forecast every morning.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Reggeli előrejelzés",
+        "quote": "It can also send you that forecast every morning.",
+        "from": "template"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "one-thing",
+    "name": "One Thing",
+    "author": "Greg · Softkeep",
+    "handle": "@KomoriGenjiro",
+    "postUrl": "https://x.com/KomoriGenjiro/status/2112229702228123766",
+    "postedAt": "2026-10-19T17:09:38Z",
+    "templateUrl": "https://x.ai/bot/fUdSeYAu8zNxDFZfVmyxt",
+    "templatePageReadable": true,
+    "fetched": "2026-10-20",
+    "summaryHu": "Teendő-választó bot ADHD-val élőknek, akik lefagynak egy hosszú teendőlistától. A sablon leírása szerint beleírod az egész kusza listát, és visszakapsz egyetlen teendőt mára, plusz egy ötperces első lépést. A kihagyott napok miatt nem hibáztat: a készítő szerint ilyenkor egyszerűen egy új teendőt kapsz.",
+    "postQuote": "my Grok Bot picks the first thing so my ADHD brain doesn't have to.\n\ni dump my messy to-do list in. it hands back one thing for today plus a 5-minute first step. missed a day? no guilt, just a fresh one thing.\n\nit's called One Thing. grab it here:",
+    "templateQuote": "For ADHD brains that freeze at a long to-do list. Dump everything in and get back one thing for today plus a 5-minute first step, with no guilt about missed days.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "hack-your-house",
+    "name": "Hack Your House",
+    "author": "Bud Johnson",
+    "handle": "@BudJohnson",
+    "postUrl": "https://x.com/BudJohnson/status/2112238533553656073",
+    "postedAt": "2026-10-19T17:44:44Z",
+    "templateUrl": "https://x.ai/bot/LDV7Nk4q2mKsWHrkldNzJ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-20",
+    "summaryHu": "Otthoni eszközöket feljavító bot. A készítő szerint néhány kérdésre válaszolsz, lefotózod az otthoni kütyüidet (régi tableteket, okostévéket, digitális képkereteket), és barátságos, lépésről lépésre haladó ötleteket kapsz, hogyan gyorsítsd fel, éleszd újra vagy alakítsd át őket vezérlőközponttá. A sablon leírása szerint a wifis eszközöket össze is kapcsolhatja, vagy valami újjá alakíthatja, például falinaptárrá; alapból ingyenes megoldásokkal dolgozik, és minden változtatás visszavonható.",
+    "postQuote": "I built a bot called Hack Your House.\nYou answer a few questions, snap photos of the gadgets in your home (old tablets, smart TVs, photo frames), and it gives you friendly step-by-step ideas to speed 'em up, revive them or turn them into command centers.",
+    "templateQuote": "Snap photos of the wifi gadgets in your home and get friendly, step-by-step ideas to speed them up, revive them, connect them, or turn them into something new, like a wall calendar or command center. Free by default, with an undo for every change.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
   }
 ]
