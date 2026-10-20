@@ -560,7 +560,7 @@ export const advancedGuides: AdvancedGuide[] = [
         items: [
           `<strong>GBP category audit:</strong> három kulcsszóra megnézi a Google Mapsen, kik vannak a Map Packben, kigyűjti a fő és másodlagos kategóriáikat, és rangsorolja, melyiket érdemes felvenned.`,
           `<strong>GBP attributes audit:</strong> a profilokon látható attribútumok (például „free estimates”, „24/7 availability”) összevetése, a hiányzók három csoportban.`,
-          `<strong>Competitor review teardown:</strong> a versenytársak utolsó 50 értékelése: friss értékelések száma 30, 60 és 90 napra, gyakori szolgáltatások, helyek, panaszok, és kifejezések, amelyeket érdemes az ügyfeleidtől kérni.`,
+          `<strong>Competitor review teardown:</strong> a versenytársak utolsó 50 értékeléséből a friss értékelések száma 30, 60 és 90 napra, a gyakori szolgáltatások, helyek és panaszok, valamint olyan kifejezések, amelyeket érdemes az ügyfeleidtől kérni.`,
           `<strong>Review response strategy:</strong> a tulajdonosi válaszok elemzése, majd válaszsablonok csillagszám szerint, 40–80 szóban.`,
           `<strong>GBP posts strategy:</strong> a versenytársak posztolási szokásai, majd 8 hetes posztnaptár heti 2–3 poszttal.`,
           `<strong>Services section optimization:</strong> a szolgáltatások szakasz összevetése a versenytársakéval és a weboldaladdal, majd szolgáltatásleírások 40–60 szóban.`,
@@ -576,7 +576,7 @@ export const advancedGuides: AdvancedGuide[] = [
         type: "ul",
         items: [
           `<strong>Keyword gap audit:</strong> a Semrush Keyword Gap eszközével azok a kulcsszavak, amelyekre a versenytársak rangsorolnak, te nem, szűrve és rangsorolva, mindegyiknél azzal, hogy meglévő oldalt kell javítani vagy újat írni.`,
-          `<strong>Money page audit:</strong> a Google Search Console három havi adataiból oldalanként a kulcsszavak és helyezések, majd prioritási lista rövid, közepes és hosszú távra.`,
+          `<strong>Money page audit:</strong> a Google Search Console háromhavi adataiból oldalanként a kulcsszavak és helyezések, majd prioritási lista rövid, közepes és hosszú távra.`,
           `<strong>Service + city page builder:</strong> megnézi, mely szolgáltatás–város oldalak hiányoznak a weboldaladról, és mindegyikhez teljes oldalt ír (SEO-cím, meta description, H1, szakaszok, FAQ, CTA).`,
           `<strong>Google Search Console analysis:</strong> a 11–20. helyen álló kulcsszavak felderítése, és 30 napos javítási terv kész title tagekkel, H1-ekkel és meta descriptionökkel.`,
           `<strong>Review sentiment analysis:</strong> versenytársanként az utolsó 100 értékelés nyelvezete összevetve a tieiddel, majd ebből a GBP-leírás, a főoldali címsor és az értékeléskérő szöveg átírása.`,
@@ -601,7 +601,7 @@ export const advancedGuides: AdvancedGuide[] = [
       {
         type: "ul",
         items: [
-          `<strong>Content gap analysis:</strong> a Semrush Content Gap eszközével kérdő kulcsszavak, amelyekre a versenytársaknak van tartalma, neked nincs, a top 20-hoz cím, URL slug és content brief.`,
+          `<strong>Content gap analysis:</strong> a Semrush Content Gap eszközével kérdőszót tartalmazó kulcsszavak, amelyekre a versenytársaknak van tartalma, neked nincs, a top 20-hoz cím, URL slug és content brief.`,
           `<strong>Entity optimisation:</strong> Knowledge Panel, Wikidata és schema-ellenőrzés, majd terv kész LocalBusiness JSON-LD kóddal, profilokkal és márkaemlítésekkel.`,
           `<strong>Competitor GBP posting pattern analysis:</strong> a versenytársak látható posztolási előzményei soronként, a mintázatok (nap, időpont, típus, szezon), és ebből posztolási stratégia az első négy hét posztjaival.`,
           `<strong>Monthly SEO performance report:</strong> a Google Search Console, a Google Business Profile és a Google Analytics 4 adataiból egyoldalas havi riport az előző 30 nappal összevetve.`,
@@ -635,11 +635,11 @@ export const advancedGuides: AdvancedGuide[] = [
       { type: "h2", text: "Böngésző és saját fiókok" },
       {
         type: "note",
-        html: `<strong>A promptok nagy része böngészőt feltételez.</strong> A legtöbb „Open Chrome” utasítással indul: a Bot weboldalakat nyit meg, például a Google Mapset, a versenytársak profiljait vagy a Semrusht és az Ahrefst. A dokumentáció szerint a Bot a saját felhős gépén böngészőt használhat, és sok böngészős eszközt kezel külön csatlakozó nélkül is. (<a href="${docs.apps}">Use the computer and apps</a>, <a href="${docs.faq}">FAQ</a>) A fizetős eszközökhöz (Semrush, Ahrefs) saját fiók kell: a prompt a te fiókodba lép be, előfizetést nem pótol. Ugyanez igaz a Google Search Console-ra, a Google Business Profile statisztikáira és a Google Analyticsre.`,
+        html: `<strong>A promptok nagy része böngészőt feltételez.</strong> A legtöbb „Open Chrome” utasítással indul: a Bot weboldalakat nyit meg, például a Google Mapset, a versenytársak profiljait vagy a Semrusht és az Ahrefst. A dokumentáció szerint a Bot egy állandó felhős gépen böngészőt használhat, és sok böngészős eszközt kezel külön csatlakozó nélkül is. (<a href="${docs.apps}">Use the computer and apps</a>, <a href="${docs.faq}">FAQ</a>) A fizetős eszközökhöz (Semrush, Ahrefs) saját fiók kell: a prompt a te fiókodba lép be, előfizetést nem pótol. Ugyanez igaz a Google Search Console-ra, a Google Business Profile statisztikáira és a Google Analyticsre.`,
       },
       {
         type: "p",
-        html: `A böngésző közös: a dokumentáció szerint ha egy Botnál belépsz, a munkamenet a többi Botod számára is elérhető. (<a href="${docs.apps}">Use the computer and apps</a>) Belépés előtt ezért gondold át, mely Botjaid férnek hozzá a gépedhez, és ellenőrizd a jóváhagyási szabályaidat, ahogy az <a href="/5-nap/5-nap-masodik-bot-biztonsag/">5. napon</a> láttad.`,
+        html: `A böngésző közös: a dokumentáció szerint ha egy Botnál belépsz, a munkamenet a többi Botod számára is elérhető. (<a href="${docs.apps}">Use the computer and apps</a>) Belépés előtt ezért gondold át, hogy a belépett fiókot az összes Botod használhatja, és ellenőrizd a jóváhagyási szabályaidat, ahogy az <a href="/5-nap/5-nap-masodik-bot-biztonsag/">5. napon</a> láttad.`,
       },
       { type: "h2", text: "Amit nem ellenőriztünk" },
       {
