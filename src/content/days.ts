@@ -354,7 +354,7 @@ instead of using old data.`,
     pitfall: `<strong>Túl sok apró jóváhagyás.</strong> „it keeps asking me for trivial permissions (like filing Linear tickets), brings everything to a halt.” (${cite("pgenius")}) A dokumentáció szerint ilyenkor egy szűk, ismert lépésre szóló Allow automatically szabály segít, a kockázatos lépések pedig Ask first alatt maradnak. (<a href="${docs.approve}">Approvals</a>)`,
     steps: [
       {
-        name: "Tedd fel a négy kérdést",
+        name: "Tedd fel a gyakorlólap négy kérdését",
         text: "A dokumentáció szerint akkor kell külön Bot, ha a munkának saját célja, eszközei, munkastílusa, jóváhagyási határa vagy ütemezése van. Ha egyik sem, maradj egy Botnál.",
       },
       {

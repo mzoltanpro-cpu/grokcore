@@ -270,7 +270,7 @@ Keep it concise. Only include information that will help me on the call.`,
           "Más eszközök kellenek hozzá?",
           "Más munkastílust vagy jóváhagyási határt kér?",
           "Saját ismétlődő ütemezése van?",
-          "Ha mind nem: maradok a meglévő Botnál. Ha igen: előbb megnézem, nem fedi-e le már egy meglévő Bot (duplikátum).",
+          "Ha egyik sem igaz: maradok a meglévő Botnál. Ha igen: előbb megnézem, nem fedi-e le már egy meglévő Bot (duplikátum).",
         ],
       },
       {
