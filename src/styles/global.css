@@ -188,18 +188,31 @@ a:hover {
   line-height: 1;
 }
 
+/* Fejléc: 1. sor márka + témaváltó, 2. sor a teljes menü (asztalon egy sorban, mobilon vízszintesen görgethető). */
+.brand {
+  order: 1;
+}
+
+.theme-toggle {
+  order: 2;
+  margin-left: auto;
+}
+
 .nav {
+  order: 3;
+  flex-basis: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.15rem 0.35rem;
-  margin-left: auto;
+  gap: 0.15rem 0;
+  margin-left: -0.4rem;
 }
 
 .nav a {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  padding: 0.2rem 0.55rem;
+  padding: 0.2rem 0.4rem;
+  white-space: nowrap;
   color: var(--ink);
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -590,6 +603,10 @@ button.button {
 
 .prompt figcaption,
 .caption,
+main {
+  overflow-wrap: break-word;
+}
+
 .fine,
 .table-wrap caption {
   color: var(--muted);
@@ -847,19 +864,27 @@ caption {
 }
 
 @media (max-width: 720px) {
-  .brand {
-    order: 1;
-  }
-
-  .theme-toggle {
-    order: 2;
-    margin-left: auto;
+  .header-inner {
+    padding-bottom: 0.2rem;
   }
 
   .nav {
-    order: 3;
-    flex-basis: 100%;
-    margin-left: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    margin-inline: -0.8rem;
+    padding-inline: 0.3rem;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 0.8rem, #000 calc(100% - 2rem), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 0.8rem, #000 calc(100% - 2rem), transparent 100%);
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    flex: none;
   }
 
   .wrap {
