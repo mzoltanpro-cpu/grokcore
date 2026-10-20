@@ -79,13 +79,7 @@ const ld = {
           <figcaption>{prompt.label}</figcaption>
           <pre><code>{prompt.code}</code></pre>
           <p class="caption">
-            {originLabel[prompt.origin]}
-            {prompt.author && <> – {prompt.author}</>}
-            {prompt.url && (
-              <>
-                : <a href={prompt.url}>{prompt.url}</a>
-              </>
-            )}
+            {originLabel[prompt.origin]}{prompt.author && <> – {prompt.author}</>}{prompt.url && <>: <a href={prompt.url}>{prompt.url}</a></>}
           </p>
         </figure>
       ))

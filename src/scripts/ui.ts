@@ -98,8 +98,18 @@ function initProgress(): void {
   current.scrollIntoView({ inline: "center", block: "nearest" });
 }
 
+/* Mobilon a menü egy vízszintesen görgethető sor: az aktuális oldal menüpontja legyen látható. */
+function initNavScroll(): void {
+  const nav = document.querySelector<HTMLElement>(".site-header .nav");
+  const current = nav?.querySelector<HTMLElement>("a[aria-current='page']");
+  if (!nav || !current || nav.scrollWidth <= nav.clientWidth) return;
+  const target = current.offsetLeft - (nav.clientWidth - current.offsetWidth) / 2;
+  nav.scrollLeft = Math.max(0, target);
+}
+
 export function initPage(): void {
   initTheme();
   initNewsletter();
   initProgress();
+  initNavScroll();
 }

@@ -72,7 +72,7 @@ const ld = {
       {
         groups.map((group) => (
           <a class="tag" href={`#kat-${officialCategoryKey(group.category)}`}>
-            {group.hu} <span lang="en">({group.category})</span> · {group.items.length}
+            {group.hu}{group.hu !== group.category && <> <span lang="en">({group.category})</span></>} · {group.items.length}
           </a>
         ))
       }
@@ -84,7 +84,7 @@ const ld = {
       <section class="section" aria-labelledby={`kat-${officialCategoryKey(group.category)}`} data-official-category={group.category}>
         <div class="section-head">
           <h2 id={`kat-${officialCategoryKey(group.category)}`}>
-            {group.hu} <span class="fine" lang="en">({group.category})</span>
+            {group.hu}{group.hu !== group.category && <> <span class="fine" lang="en">({group.category})</span></>}
           </h2>
           <p>{group.items.length} sablon</p>
         </div>
@@ -93,7 +93,7 @@ const ld = {
             <li class="bot-card" id={item.slug} data-official={item.slug}>
               <h3 class="bot-name" lang="en">{item.name}</h3>
               <p class="bot-by">
-                <span lang="en">{item.category}</span> · {officialCategoryLabel(item.category)}
+                <span lang="en">{item.category}</span>{officialCategoryLabel(item.category) !== item.category && <> · {officialCategoryLabel(item.category)}</>}
               </p>
               <p>{item.summaryHu}</p>
               <figure class="quote-box">
@@ -145,7 +145,7 @@ const ld = {
     </div>
     <ul class="checklist">
       <li>
-        A lista az <a href={officialSourceUrl}>x.ai hivatalos sablonoldalának</a> mind a(z) {officialTemplates.length} kártyáját
+        A lista az <a href={officialSourceUrl}>x.ai hivatalos sablonoldalának</a> összes kártyáját ({officialTemplates.length} db)
         tartalmazza, az ottani kategóriákkal; {withInstall} sablonnál van közvetlen hozzáadási link.
       </li>
       <li>A név, a kategória és a leírás eredetiben marad. A magyar összefoglaló a sajátunk, csak a hivatalos leírásból.</li>

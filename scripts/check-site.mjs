@@ -215,7 +215,7 @@ for (const item of templates) {
   if (Number.isNaN(Date.parse(item.postedAt))) fail(`${rel}: hibás közzétételi időpont a JSON-ban`);
   if (!html.includes(`href="${item.templateUrl}" data-source-link`)) fail(`${rel}: nincs sablonlink a Forrás blokkban`);
   if (!html.includes(`href="${item.postUrl}" data-post-link`)) fail(`${rel}: nincs X-poszt link a Forrás blokkban`);
-  if (!html.includes(`lekérve: ${item.fetched}`)) fail(`${rel}: nincs lekérési dátum`);
+  if (!html.includes(`Lekérve: ${item.fetched}`)) fail(`${rel}: nincs lekérési dátum`);
   if (!html.includes("budapesti idő")) fail(`${rel}: a közzététel ideje nincs budapesti időben jelölve`);
   if (!html.includes("Nem hivatalos")) fail(`${rel}: hiányzik a nem hivatalos jelölés`);
   if (/<img\b/.test(html)) fail(`${rel}: kép (logó/avatár) nem kerülhet a sablon-oldalra`);

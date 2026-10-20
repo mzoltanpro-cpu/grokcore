@@ -191,7 +191,7 @@ const ld = {
         <li>Készítő: {item.author} (<a href={`https://x.com/${item.handle.replace(/^@/, "")}`}>{item.handle}</a>)</li>
         <li>Közzétéve: <time datetime={item.postedAt}>{posted}</time> (budapesti idő)</li>
         <li>Sablon: <a href={item.templateUrl} data-source-link>{item.templateUrl}</a></li>
-        <li>lekérve: {item.fetched}</li>
+        <li>Lekérve: {item.fetched}</li>
         {
           item.discoveredVia?.map((via) => (
             <li>
