@@ -8,6 +8,7 @@ import type { Block, Step } from "./types";
  * Ami a hivatalos dokumentációban nem szerepel, és mi sem próbáltuk ki, marker()-t kap.
  */
 export const advancedFetched = "2026-10-19";
+const seoFetched = "2026-10-20";
 
 export type AdvancedSource = {
   title: string;
@@ -29,6 +30,8 @@ export type AdvancedGuide = {
   lead: string;
   audience: string;
   minutes: string;
+  /** Ha az útmutató forrásait nem az advancedFetched napon kértük le. */
+  fetched?: string;
   steps: Step[];
   blocks: Block[];
   sources: AdvancedSource[];
@@ -97,12 +100,21 @@ const src = {
     date: "2026-10-13 18:29 (budapesti idő)",
     kind: "kozossegi",
   },
+  seo: {
+    title: "„Top 20 Grok Bot Prompts For SEO - The Only Stack You'll Ever Need” (X-cikk, angol)",
+    url: "https://x.com/bloggersarvesh/status/2090071557590900974",
+    author: "Sarvesh Shrivastava (@bloggersarvesh)",
+    date: "2026-08-19",
+    kind: "kozossegi",
+  },
   dBots: { title: "Create and manage Bots (docs.x.ai)", url: docs.bots, author: "docs.x.ai", date: "lekérve 2026-10-19", kind: "hivatalos" },
   dSkills: { title: "Skills and routines (docs.x.ai)", url: docs.skills, author: "docs.x.ai", date: "lekérve 2026-10-19", kind: "hivatalos" },
   dApprove: { title: "Approvals, security, and privacy (docs.x.ai)", url: docs.approve, author: "docs.x.ai", date: "lekérve 2026-10-19", kind: "hivatalos" },
   dApps: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: "lekérve 2026-10-19", kind: "hivatalos" },
   dSettings: { title: "Settings and notifications (docs.x.ai)", url: docs.settings, author: "docs.x.ai", date: "lekérve 2026-10-19", kind: "hivatalos" },
   dFaq: { title: "Frequently asked questions (docs.x.ai)", url: docs.faq, author: "docs.x.ai", date: "lekérve 2026-10-19", kind: "hivatalos" },
+  dAppsSeo: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: `lekérve ${seoFetched}`, kind: "hivatalos" },
+  dFaqSeo: { title: "Frequently asked questions (docs.x.ai)", url: docs.faq, author: "docs.x.ai", date: `lekérve ${seoFetched}`, kind: "hivatalos" },
 } satisfies Record<string, AdvancedSource>;
 
 /** Rövid hivatkozás a szövegben: szerző + link. */
@@ -481,6 +493,176 @@ export const advancedGuides: AdvancedGuide[] = [
     ],
     sources: [src.brain, src.pms, src.eng, src.dBots, src.dApps, src.dSkills, src.dApprove, src.dSettings],
   },
+  {
+    slug: "seo-promptok",
+    title: "Helyi SEO-promptok: egyszer az üzleti háttér, utána célzott feladatok",
+    nav: "SEO-promptok",
+    card: "Egy közösségi X-cikk összefoglalója: a vállalkozásod adatait egyszer adod meg, utána egyenként futtatsz helyi SEO-promptokat.",
+    description:
+      "Helyi SEO Grok Bottal: Sarvesh Shrivastava (@bloggersarvesh) 20 promptos X-cikkének magyar összefoglalója. Üzleti háttér egyszer, utána Google Business Profile, weboldal, backlinkek, tartalom és mérés. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "Ez az oldal egy más által írt cikk rövid magyar összefoglalója, nem saját módszer. Sarvesh Shrivastava (@bloggersarvesh) 2026-08-19-én közzétett X-cikke 20 promptot ad helyi vállalkozások keresőoptimalizálásához (local SEO). A lényeg: a vállalkozásod adatait egyszer adod meg a Botnak, utána egyenként, célzott feladatokat futtatsz.",
+    audience: "Annak szól, akinek helyi vállalkozása van, vagy ilyennek intézi a keresőoptimalizálást, és már végigment a Kezdő 5 napon.",
+    minutes: "Kb. 20 perc az oldal elolvasására, a mi becslésünk",
+    fetched: seoFetched,
+    steps: [
+      {
+        name: "Töltsd be egyszer az üzleti hátteret",
+        text: "Másold ki a szerző business context promptját, a szögletes zárójeles részeket cseréld ki a saját adataidra, és küldd el a Botnak, mielőtt bármelyik SEO-promptot futtatnád.",
+      },
+      {
+        name: "Egyszerre egy promptot futtass",
+        text: "A szerző szerint ne futtasd mind a 20-at egyszerre. Az ő sorrendjében az első héten a háttér után az 1. és a 2. prompt jön (GBP-kategóriák és -attribútumok).",
+      },
+      {
+        name: "Készítsd elő a böngészőt és a fiókokat",
+        text: "Nézd meg, mit nyit meg a prompt. Ahol a saját fiókodba kell belépni (például Semrush, Ahrefs, Google Search Console), ott saját hozzáférés kell; a fizetős eszközökhöz saját előfizetés.",
+      },
+      {
+        name: "Nézd át az eredményt, mielőtt változtatsz",
+        text: "A promptok táblázatot, rangsorolt teendőlistát és szövegjavaslatot kérnek. Hogy ebből mi kerül ki a profilodra vagy a weboldaladra, azt te döntöd el.",
+      },
+    ],
+    blocks: [
+      {
+        type: "note",
+        html: `<strong>Összefoglaló, nem saját anyag.</strong> Ez az oldal ${c("seo")} „Top 20 Grok Bot Prompts For SEO - The Only Stack You'll Ever Need” című X-cikkét foglalja össze magyarul. Közzétéve: ${src.seo.date}. A 20 prompt teljes szövegét az <a href="${src.seo.url}">eredeti posztban</a> találod; itt négyet idézünk szó szerint, angolul. Lekérve: ${seoFetched}.`,
+      },
+      { type: "h2", text: "A módszer: egyszer a háttér, utána célzott promptok" },
+      {
+        type: "p",
+        html: `A szerző azzal kezd, hogy mielőtt egyetlen SEO-promptot futtatnál, add meg a Botnak a vállalkozásod hátterét („load your business context”). Ehhez egy hosszú sablont ad, szögletes zárójeles kitöltendő részekkel: alapadatok (név, cím, telefon, weboldal, Google Business Profile), szolgáltatások és szolgáltatási területek, az öt fő kulcsszó, a jelenlegi helyzet (értékelések, látogatottság, map pack), három versenytárs, az eddigi SEO-munka, végül az, hogyan dolgozzon a Bot. Ez utóbbiban a gyors eredményeket kéri előre, minden javaslatnál hatásszintet és várható időt, a versenytársak összevetését táblázatban, és hogy a Bot szóljon, ha bizonytalan, ne találgasson.`,
+      },
+      {
+        type: "p",
+        html: `A szerző szerint ezután minden prompt pontosabb lesz, mert a Bot már a te vállalkozásodra válaszol, nem egy ismeretlen ember SEO-kérdésére. A célzott promptok mindegyike egyetlen feladatot végez (például egy kategória-auditot vagy egy profilleírás átírását), és a legtöbb összehasonlító táblázatot és rangsorolt teendőlistát kér.`,
+      },
+      {
+        type: "prompt",
+        label: "Sarvesh Shrivastava: üzleti háttér (business context), eredeti",
+        code: "Here is everything you need to know about my business before we start any SEO work. Reference this every time I ask you to run an audit, build a strategy, or analyze competitors. Never ask me for this information again.  BUSINESS BASICS: Business name: [your business name] Address: [full address] Phone: [phone number] Website: [website URL] Google Business Profile: [GBP URL] Years in business: [X years]   Team size: [solo / small team / large team]  SERVICES + MARKET: Primary service: [what you do]   Secondary services: [service 2], [service 3], [service 4]   Service areas: [city 1], [city 2], [city 3], [city 4], [city 5]   Target customer: [who your best customer is] Average job value: [$X]  SEO GOALS: Top 5 keywords I want to rank for: [keyword 1], [keyword 2], [keyword 3], [keyword 4], [keyword 5]   Keywords I currently rank for: [keyword 1], [keyword 2] Keywords I should rank for but don't: [keyword 1], [keyword 2]  CURRENT STANDINGS: Google reviews: [X] total, [X] star rating, [X] new reviews per month   GBP monthly views: [X impressions if known] Monthly website traffic: [X visits if known] Current map pack status: [ranking for X, not ranking for Y] Biggest SEO problem right now: [one sentence - be honest]  COMPETITORS: [competitor name] - [GBP URL] - [website] - [why they're beating you if you know] [competitor name] - [GBP URL] - [website] - [why they're beating you if you know] [competitor name] - [GBP URL] - [website] - [why they're beating you if you know]  WHAT I'VE ALREADY TRIED: [List any SEO work already done - agency, DIY, tools used, what worked, what didn't]  HOW I WANT YOU TO WORK: Always prioritize quick wins over long-term plays unless i ask otherwise.   When you give me a recommendation, tell me the impact level (high/medium/low) and how long it will take to see results. Always output data in spreadsheet format when comparing competitors. When you're unsure about something, tell me - don't guess. Never ask me for this information again. Use it as the base for everything we do together.",
+        caption: `Forrás: ${c("seo")}, ${src.seo.date} (közösségi forrás). A szögletes zárójeles részeket a saját adataiddal cseréld ki.`,
+      },
+      {
+        type: "p",
+        html: `A sablon azt kéri, hogy a Bot soha többé ne kérdezze meg ezeket az adatokat. A dokumentáció szerint fontos döntésnél érdemes a Botot az aktuális forrás ellenőrzésére kérni, ahelyett hogy a memóriájára hagyatkozna. (<a href="${docs.faq}">FAQ</a>) Saját javaslatunk: a gyorsan változó számokat (értékelések, helyezések) frissítsd, mielőtt egy újabb auditot futtatsz.`,
+      },
+      { type: "h2", text: "A négy rész röviden" },
+      {
+        type: "p",
+        html: `A 20 prompt négy részre oszlik. Az alábbi összefoglalás a sajátunk, nem fordítás; a promptok szövege az eredeti cikkben van.`,
+      },
+      {
+        type: "p",
+        html: `<strong>1. rész: Google Business Profile (1–8. prompt).</strong> A Bot böngészőben megnyitja a versenytársak és többnyire a te Google Business Profile-odat (GBP), összehasonlító táblázatot készít, majd teendőlistát vagy kész szöveget ad.`,
+      },
+      {
+        type: "ul",
+        items: [
+          `<strong>GBP category audit:</strong> három kulcsszóra megnézi a Google Mapsen, kik vannak a Map Packben, kigyűjti a fő és másodlagos kategóriáikat, és rangsorolja, melyiket érdemes felvenned.`,
+          `<strong>GBP attributes audit:</strong> a profilokon látható attribútumok (például „free estimates”, „24/7 availability”) összevetése, a hiányzók három csoportban.`,
+          `<strong>Competitor review teardown:</strong> a versenytársak utolsó 50 értékelése: friss értékelések száma 30, 60 és 90 napra, gyakori szolgáltatások, helyek, panaszok, és kifejezések, amelyeket érdemes az ügyfeleidtől kérni.`,
+          `<strong>Review response strategy:</strong> a tulajdonosi válaszok elemzése, majd válaszsablonok csillagszám szerint, 40–80 szóban.`,
+          `<strong>GBP posts strategy:</strong> a versenytársak posztolási szokásai, majd 8 hetes posztnaptár heti 2–3 poszttal.`,
+          `<strong>Services section optimization:</strong> a szolgáltatások szakasz összevetése a versenytársakéval és a weboldaladdal, majd szolgáltatásleírások 40–60 szóban.`,
+          `<strong>GBP description optimization:</strong> a profilleírások elemzése, majd három, 750 karakter alatti változat (kulcsszó-, konverzió- és bizalomközpontú).`,
+          `<strong>GBP photo audit:</strong> a fotók száma, típusa és feltöltési üteme, majd 8 hetes fotóterv fotólistával, elnevezési szabállyal és geotagelési útmutatóval.`,
+        ],
+      },
+      {
+        type: "p",
+        html: `<strong>2. rész: weboldal (9–13. prompt).</strong> Kulcsszavak, meglévő és hiányzó oldalak, a Google Search Console adatai és az ügyfelek nyelvezete.`,
+      },
+      {
+        type: "ul",
+        items: [
+          `<strong>Keyword gap audit:</strong> a Semrush Keyword Gap eszközével azok a kulcsszavak, amelyekre a versenytársak rangsorolnak, te nem, szűrve és rangsorolva, mindegyiknél azzal, hogy meglévő oldalt kell javítani vagy újat írni.`,
+          `<strong>Money page audit:</strong> a Google Search Console három havi adataiból oldalanként a kulcsszavak és helyezések, majd prioritási lista rövid, közepes és hosszú távra.`,
+          `<strong>Service + city page builder:</strong> megnézi, mely szolgáltatás–város oldalak hiányoznak a weboldaladról, és mindegyikhez teljes oldalt ír (SEO-cím, meta description, H1, szakaszok, FAQ, CTA).`,
+          `<strong>Google Search Console analysis:</strong> a 11–20. helyen álló kulcsszavak felderítése, és 30 napos javítási terv kész title tagekkel, H1-ekkel és meta descriptionökkel.`,
+          `<strong>Review sentiment analysis:</strong> versenytársanként az utolsó 100 értékelés nyelvezete összevetve a tieiddel, majd ebből a GBP-leírás, a főoldali címsor és az értékeléskérő szöveg átírása.`,
+        ],
+      },
+      {
+        type: "p",
+        html: `<strong>3. rész: backlinkek és tekintély (14–16. prompt).</strong> Honnan kapnak linket a versenytársak, egyeznek-e a cégadataid a könyvtárakban, és milyen szándékkal keresnek az ügyfelek.`,
+      },
+      {
+        type: "ul",
+        items: [
+          `<strong>Competitor backlink audit:</strong> az Ahrefs Site Explorerrel a három versenytárs szűrt backlinkjei, azok a domainek, amelyek őket linkelik, téged nem, majd 90 napos linképítési terv megkereső levelekkel.`,
+          `<strong>Local citation audit:</strong> a cégneved, címed és telefonszámod (NAP) egyezése sorban több könyvtárban (például Yelp, Bing Places, Apple Maps, Facebook), az eltérések táblázatban, javítási lista és havi ellenőrzőlista.`,
+          `<strong>Local search intent mapping:</strong> a Semrushban a szakmád kulcsszavai négy vásárlói szakaszba sorolva, a problémáját még meg sem nevezőtől a most megrendelőig, szakaszonként tartalomstratégiával.`,
+        ],
+      },
+      {
+        type: "p",
+        html: `<strong>4. rész: tartalom és mérés (17–20. prompt).</strong> Hiányzó tartalmak, a vállalkozás mint entitás, posztolási minták és havi riport.`,
+      },
+      {
+        type: "ul",
+        items: [
+          `<strong>Content gap analysis:</strong> a Semrush Content Gap eszközével kérdő kulcsszavak, amelyekre a versenytársaknak van tartalma, neked nincs, a top 20-hoz cím, URL slug és content brief.`,
+          `<strong>Entity optimisation:</strong> Knowledge Panel, Wikidata és schema-ellenőrzés, majd terv kész LocalBusiness JSON-LD kóddal, profilokkal és márkaemlítésekkel.`,
+          `<strong>Competitor GBP posting pattern analysis:</strong> a versenytársak látható posztolási előzményei soronként, a mintázatok (nap, időpont, típus, szezon), és ebből posztolási stratégia az első négy hét posztjaival.`,
+          `<strong>Monthly SEO performance report:</strong> a Google Search Console, a Google Business Profile és a Google Analytics 4 adataiból egyoldalas havi riport az előző 30 nappal összevetve.`,
+        ],
+      },
+      {
+        type: "p",
+        html: `A szerző a cikk végén sorrendet is ad: ne futtasd mind a 20-at egyszerre, az első héten a háttér és az 1–2. prompt jön, a többi hetekre bontva követi, a 11–12. héten a havi riporttal. A pontos ütemezés az <a href="${src.seo.url}">eredeti cikkben</a> van.`,
+      },
+      { type: "h2", text: "Lépések" },
+      { type: "steps" },
+      { type: "h2", text: "Három további eredeti prompt" },
+      {
+        type: "prompt",
+        label: "1. prompt: GBP category audit, eredeti",
+        code: "Open Chrome and go to Google Maps. Search '[service] in [city]' for these 3 keywords: [keyword1], [keyword2], [keyword3]. For each search, note which of my competitors show up in the Map Pack. Then open each competitor's GBP listing and extract their primary category and all secondary categories.  Put everything in a spreadsheet. One tab per keyword. Columns: business name, primary category, secondary categories, star rating, review count, ranking position. Highlight any categories my competitors have that I'm missing from my GBP.  Then give me a prioritized list of categories I should add, ranked by how many top competitors have them. Start with the ones all 3 competitors share - those are non-negotiable. End with the ones only 1 competitor has - those are differentiation opportunities.",
+        caption: `Forrás: ${c("seo")}, ${src.seo.date} (közösségi forrás). A szerző ezzel kezd minden ügyfélnél.`,
+      },
+      {
+        type: "prompt",
+        label: "11. prompt: service + city page builder, eredeti",
+        code: "I need to build location-specific service pages for my website. My primary service is [your main service], the cities I serve are [city1], [city2], [city3], [city4], [city5], my website is [URL], and my target keyword pattern is [service] + [city], [service] near [city], best [service] in [city].   First open Chrome and check my website at [URL] and tell me which city plus service combination pages already exist and which are missing.   Then for each missing combination write a fully optimized page that includes: an SEO title under 60 characters that naturally includes service and city, a meta description under 155 characters that includes service and city and a compelling reason to click, an H1 heading with service and city written naturally, an opening paragraph of 100 words that addresses the specific pain point of someone in that city needing this service right now, a why choose us section of 150 words specific to that city mentioning local landmarks or neighborhoods or area-specific challenges where relevant, a service details section of 200 words covering what the service includes and what the process looks like and what the customer gets, a social proof section with a placeholder for reviews from that city, a FAQ section with 3 questions specific to customers in that city, and a CTA with phone number and 'Call now for same-day service in [city]'.   For each page also give me the exact URL slug, 3 internal linking opportunities from existing pages on my site, and 2 local citations or directories where I should list this specific city plus service combination.",
+        caption: `Forrás: ${c("seo")}, ${src.seo.date} (közösségi forrás).`,
+      },
+      {
+        type: "prompt",
+        label: "15. prompt: local citation audit, eredeti",
+        code: "My business information is: Name: [exact business name], Address: [exact address including suite or unit if applicable], Phone: [phone number], Website: [URL]. Open Chrome and search for my business name across these platforms one by one:   Google Business Profile, Yelp, Bing Places, Apple Maps, Facebook, BBB, Angi, HomeAdvisor, Thumbtack, Houzz, Yellow Pages, Manta, Foursquare, Superpages, Citysearch, and any industry-specific directories for [your industry]. For each platform record whether my listing exists, the business name as listed (exact), the address as listed (exact), the phone number as listed (exact), the website URL as listed, whether there are duplicate listings, and the star rating and review count if applicable.   Create a spreadsheet with all findings and flag every inconsistency in red. Then give me a priority fix list showing which inconsistencies are most damaging to local rankings, step-by-step instructions for correcting each one, a list of high-value directories where I have no listing at all and should create one immediately, and a monthly citation maintenance checklist so this problem never comes back.",
+        caption: `Forrás: ${c("seo")}, ${src.seo.date} (közösségi forrás). A felsorolt könyvtárak a szerző listája.`,
+      },
+      { type: "h2", text: "Böngésző és saját fiókok" },
+      {
+        type: "note",
+        html: `<strong>A promptok nagy része böngészőt feltételez.</strong> A legtöbb „Open Chrome” utasítással indul: a Bot weboldalakat nyit meg, például a Google Mapset, a versenytársak profiljait vagy a Semrusht és az Ahrefst. A dokumentáció szerint a Bot a saját felhős gépén böngészőt használhat, és sok böngészős eszközt kezel külön csatlakozó nélkül is. (<a href="${docs.apps}">Use the computer and apps</a>, <a href="${docs.faq}">FAQ</a>) A fizetős eszközökhöz (Semrush, Ahrefs) saját fiók kell: a prompt a te fiókodba lép be, előfizetést nem pótol. Ugyanez igaz a Google Search Console-ra, a Google Business Profile statisztikáira és a Google Analyticsre.`,
+      },
+      {
+        type: "p",
+        html: `A böngésző közös: a dokumentáció szerint ha egy Botnál belépsz, a munkamenet a többi Botod számára is elérhető. (<a href="${docs.apps}">Use the computer and apps</a>) Belépés előtt ezért gondold át, mely Botjaid férnek hozzá a gépedhez, és ellenőrizd a jóváhagyási szabályaidat, ahogy az <a href="/5-nap/5-nap-masodik-bot-biztonsag/">5. napon</a> láttad.`,
+      },
+      { type: "h2", text: "Amit nem ellenőriztünk" },
+      {
+        type: "ul",
+        items: [
+          `A promptokat nem próbáltuk ki; azt sem, hogy a Bot mindegyik oldalt ki tudja-e olvasni úgy, ahogy a prompt kéri.`,
+          `A cikkben szereplő eredményeket és számokat a szerző saját tapasztalataként közli; ezeket nem vesszük át, és független mérés nincs róluk.`,
+          `A cikk végén a szerző a saját marketingügynöksége szolgáltatását ajánlja.`,
+        ],
+      },
+      {
+        type: "note",
+        html: `<strong>Forrás és szerző.</strong> Ez az oldal Sarvesh Shrivastava (@bloggersarvesh) „Top 20 Grok Bot Prompts For SEO - The Only Stack You'll Ever Need” című, ${src.seo.date}-én közzétett X-cikkének rövid magyar összefoglalója, nem saját módszer és nem fordítás. A 20 prompt teljes angol szövegét és a szerző ajánlott sorrendjét az eredeti posztban olvashatod: <a href="${src.seo.url}">${src.seo.url}</a>`,
+      },
+      {
+        type: "done",
+        items: [
+          "Egyszer betöltötted az üzleti hátteredet, futtattál egy célzott promptot, és tudod, melyik prompthoz kell böngészős belépés vagy saját fizetős fiók.",
+        ],
+      },
+    ],
+    sources: [src.seo, src.dAppsSeo, src.dFaqSeo],
+  },
 ];
 
 export function advancedPath(slug: string): string {
@@ -492,3 +674,6 @@ export function getAdvanced(slug: string): AdvancedGuide {
   if (!guide) throw new Error(`Ismeretlen haladó útmutató: ${slug}`);
   return guide;
 }
+
+/** Az összes haladó útmutató lekérési napjai, időrendben, ismétlés nélkül. */
+export const advancedFetchedDates = [...new Set(advancedGuides.map((guide) => guide.fetched ?? advancedFetched))].sort().join(", ");

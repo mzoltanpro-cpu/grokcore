@@ -15,6 +15,7 @@ const previous = index > 0 ? advancedGuides[index - 1] : undefined;
 const next = index < advancedGuides.length - 1 ? advancedGuides[index + 1] : undefined;
 const origin = siteOrigin(Astro.site);
 const path = advancedPath(guide.slug);
+const fetched = guide.fetched ?? advancedFetched;
 const title = `${guide.title} | ${siteConfig.name}`;
 
 const howTo = {
@@ -61,7 +62,7 @@ const howTo = {
     <ul class="meta-row">
       <li>{index + 1} / {advancedGuides.length}</li>
       <li>{guide.minutes}</li>
-      <li>Források lekérve: <time datetime={advancedFetched}>{advancedFetched}</time></li>
+      <li>Források lekérve: <time datetime={fetched}>{fetched}</time></li>
     </ul>
     <p class="lede">{guide.lead}</p>
     <p class="fine">{guide.audience} Még nem kezdted el? <a href="/5-nap/">Kezdd az 5 nappal.</a></p>
@@ -82,7 +83,8 @@ const howTo = {
         }
       </ul>
       <p class="fine">
-        Saját magyar szöveg, nem fordítás. A forrásokat {advancedFetched}-én nyitottuk meg. A gyártói forrásokat a Grok
+        Saját magyar szöveg, nem fordítás.
+        {guide.fetched ? `A források lekérésének napja: ${fetched}.` : `A forrásokat ${advancedFetched}-én nyitottuk meg.`} A gyártói forrásokat a Grok
         Bot fejlesztői írták, az eredményeik a saját beszámolóik. A nem ellenőrzött állítást [ELLENŐRIZENDŐ] jelöli, a
         saját példáinkat külön megjelöljük. A felület feliratai változhatnak. Nem állunk kapcsolatban a SpaceXSI-vel és a
         forrásként idézett szerzőkkel.
