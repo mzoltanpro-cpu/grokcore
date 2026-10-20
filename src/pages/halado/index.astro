@@ -1,13 +1,13 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { advancedFetched, advancedGuides, advancedPath } from "../../content/advanced";
+import { advancedFetchedDates, advancedGuides, advancedPath } from "../../content/advanced";
 import { absUrl, siteConfig, siteOrigin } from "../../lib/site";
 
 const origin = siteOrigin(Astro.site);
 const path = "/halado/";
 const title = `Haladó Grok Bot útmutatók magyarul | ${siteConfig.name}`;
 const description =
-  "A Botkezdő saját haladó Grok Bot útmutatói a Kezdő 5 nap után: botcsapat, rutinok ütemezése, második agy fájlokból. Nem hivatalos x.ai anyag, forrásolva.";
+  "A Botkezdő saját haladó Grok Bot útmutatói a Kezdő 5 nap után: botcsapat, rutinok ütemezése, második agy fájlokból, helyi SEO-promptok. Nem hivatalos x.ai anyag, forrásolva.";
 
 const ld = {
   "@context": "https://schema.org",
@@ -41,7 +41,8 @@ const ld = {
   <h1>Haladó útmutatók (saját)</h1>
   <p class="lede">
     Ha megvan az első Botod, az első routine-od és a jóváhagyási szabályaid, innen léphetsz tovább: több Botból csapat,
-    takarékos rutinok és egy Bot, amely fájlokban tartja, amit rólad tudnia kell.
+    takarékos rutinok, egy Bot, amely fájlokban tartja, amit rólad tudnia kell, és egy közösségi cikk összefoglalója
+    helyi SEO-promptokról.
   </p>
   <aside class="note" aria-label="Nem hivatalos anyag" data-own-guides>
     <p>
@@ -54,7 +55,7 @@ const ld = {
       <strong>Saját magyar szöveg, forrással.</strong> Az útmutatókat mi írtuk, nem fordítások. Forrásként az x.ai
       oldalán megjelent, xAI-munkatársak által írt útmutatókat (gyártói forrás), közösségi X-cikkeket és a docs.x.ai
       dokumentációt használtuk. Minden oldalon ott a szerző, a link, a dátum
-      és a forrás típusa. Ami nem ellenőrzött, [ELLENŐRIZENDŐ] jelölést kap. Források lekérve: {advancedFetched}.
+      és a forrás típusa. Ami nem ellenőrzött, [ELLENŐRIZENDŐ] jelölést kap. Források lekérve: {advancedFetchedDates}.
     </p>
   </aside>
   <section class="section" aria-labelledby="utmutatok-lista">

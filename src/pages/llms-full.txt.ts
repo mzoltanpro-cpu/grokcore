@@ -6,7 +6,7 @@ import { appName, categoryLabel, dayLabel, marketplaceBots, marketplaceFetched, 
 import { budapestTime, communityTemplates, templateMissing, templateNonAffiliation, templatePath } from "../content/templates";
 import { addIns, guides, guidesFetched, guidesIndexUrl, guideUrl, useCases, useCasesFetched, useCasesUrl } from "../content/guides";
 import { installMissing, officialByCategory, officialFetched, officialSourceUrl, officialTemplates } from "../content/official";
-import { advancedFetched, advancedGuides, advancedPath, sourceKindLabel } from "../content/advanced";
+import { advancedFetchedDates, advancedGuides, advancedPath, sourceKindLabel } from "../content/advanced";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
 export const GET: APIRoute = ({ site }) => {
@@ -142,7 +142,7 @@ export const GET: APIRoute = ({ site }) => {
   parts.push(
     "## Haladó útmutatók (a Botkezdő saját anyaga, nem hivatalos x.ai útmutató; a Kezdő 5 nap után)",
     "",
-    `Saját magyar szöveg, nem fordítás, nem hivatalos x.ai anyag; a hivatalos útmutatók összefoglalója a fenti külön szakaszban van. Források lekérve: ${advancedFetched}. Oldal: ${absUrl(origin, "/halado/")}`,
+    `Saját magyar szöveg, nem fordítás, nem hivatalos x.ai anyag; a hivatalos útmutatók összefoglalója a fenti külön szakaszban van. Források lekérve: ${advancedFetchedDates}. Oldal: ${absUrl(origin, "/halado/")}`,
     "",
   );
   for (const g of advancedGuides) {

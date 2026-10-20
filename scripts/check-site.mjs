@@ -32,6 +32,7 @@ const required = [
   "halado/botcsapat/index.html",
   "halado/rutinok-ritmusa/index.html",
   "halado/masodik-agy/index.html",
+  "halado/seo-promptok/index.html",
   "forrasok/index.html",
   "rolunk/index.html",
   "szponzoracio/index.html",
