@@ -33,6 +33,7 @@ const required = [
   "halado/rutinok-ritmusa/index.html",
   "halado/masodik-agy/index.html",
   "halado/seo-promptok/index.html",
+  "halado/nyomtato-beallitas/index.html",
   "forrasok/index.html",
   "rolunk/index.html",
   "szponzoracio/index.html",

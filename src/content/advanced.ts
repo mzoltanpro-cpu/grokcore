@@ -9,6 +9,7 @@ import type { Block, Step } from "./types";
  */
 export const advancedFetched = "2026-10-19";
 const seoFetched = "2026-10-20";
+const printerFetched = "2026-10-21";
 
 export type AdvancedSource = {
   title: string;
@@ -113,6 +114,22 @@ const src = {
   dApps: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: "lekérve 2026-10-19", kind: "hivatalos" },
   dSettings: { title: "Settings and notifications (docs.x.ai)", url: docs.settings, author: "docs.x.ai", date: "lekérve 2026-10-19", kind: "hivatalos" },
   dFaq: { title: "Frequently asked questions (docs.x.ai)", url: docs.faq, author: "docs.x.ai", date: "lekérve 2026-10-19", kind: "hivatalos" },
+  printer: {
+    title: "„grok bot just took over my printer...” (X-poszt, angol)",
+    url: "https://x.com/Av1dlive/status/2112152148045943113",
+    author: "Avid (@Av1dlive)",
+    date: "2026-10-19 14:01 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  printerPrompt: {
+    title: "„full prompt:” – a teljes prompt a szerző első válaszában (X-válasz, angol)",
+    url: "https://x.com/Av1dlive/status/2112152151460020238",
+    author: "Avid (@Av1dlive)",
+    date: "2026-10-19 14:01 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  dAppsPrinter: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: `lekérve ${printerFetched}`, kind: "hivatalos" },
+  dApprovePrinter: { title: "Approvals, security, and privacy (docs.x.ai)", url: docs.approve, author: "docs.x.ai", date: `lekérve ${printerFetched}`, kind: "hivatalos" },
   dAppsSeo: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: `lekérve ${seoFetched}`, kind: "hivatalos" },
   dFaqSeo: { title: "Frequently asked questions (docs.x.ai)", url: docs.faq, author: "docs.x.ai", date: `lekérve ${seoFetched}`, kind: "hivatalos" },
 } satisfies Record<string, AdvancedSource>;
@@ -662,6 +679,116 @@ export const advancedGuides: AdvancedGuide[] = [
       },
     ],
     sources: [src.seo, src.dAppsSeo, src.dFaqSeo],
+  },
+  {
+    slug: "nyomtato-beallitas",
+    title: "Nyomtató rendbetétele egy prompttal: driverless nyomtatás és szkennelés mappába",
+    nav: "Nyomtató beállítása",
+    card: "Egy közösségi X-poszt összefoglalója: a Bot megkeresi az otthoni nyomtatót, menti a beállításait, rendet tesz, és beállítja a driverless nyomtatást és a szkennelést mappába.",
+    description:
+      "Otthoni nyomtató rendbetétele Grok Bottal: Avid (@Av1dlive) X-posztjának magyar összefoglalója hat lépésben, a teljes eredeti prompttal. Driverless nyomtatás (IPP Everywhere, AirPrint, Mopria) és szkennelés mappába, felhős fiók nélkül. Előfeltétel: asztali app helyi futtatással. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "Ez az oldal egy más által írt X-poszt rövid magyar összefoglalója, nem saját módszer. Avid (@Av1dlive) 2026-10-19-én hat lépésben írta le, hogyan tetette rendbe egy prompttal az otthoni nyomtatóját: a Bot megkeresi a hálózaton, elmenti a beállításait, a jóváhagyásával rendet tesz, majd beállítja a driverless nyomtatást és a szkennelést egy mappába. A prompt teljes, eredeti szövegét is közöljük.",
+    audience: "Annak szól, akinek Wi-Fi-re kötött otthoni nyomtatója van, Mac vagy Windows gépen használja a Grok Bot asztali appját, és már végigment a Kezdő 5 napon.",
+    minutes: "Kb. 15 perc az oldal elolvasására, a mi becslésünk",
+    fetched: printerFetched,
+    steps: [
+      {
+        name: "Egy hálózaton",
+        text: "A számítógéped és a nyomtató ugyanarra a Wi-Fi-re csatlakozzon.",
+      },
+      {
+        name: "Prompt és fotó",
+        text: "Másold be az alábbi promptot a Grok Botba, és csatolj mellé egy fotót a nyomtató típuscímkéjéről.",
+      },
+      {
+        name: "Az admin oldal",
+        text: "A Bot megkeresi a hálózaton a nyomtató beépített, rejtett admin weboldalát. Neked csak egyszer kell megnyitnod.",
+      },
+      {
+        name: "Igen a takarításra",
+        text: "Jóváhagyod a javasolt takarítást: az automatikus firmware-frissítés és a tintareklámok kikapcsolását, valamint az alvás beállításának javítását. A szerző szerint mindez visszafordítható.",
+      },
+      {
+        name: "Driverless nyomtatás",
+        text: "A Bot beállítja a driver nélküli nyomtatást, így az otthoni laptopok és telefonok külön program nélkül tudnak nyomtatni.",
+      },
+      {
+        name: "Szkennelés mappába",
+        text: "A szkennelt anyag egy mappába kerül a számítógépeden, felhős fiók nélkül.",
+      },
+    ],
+    blocks: [
+      {
+        type: "note",
+        html: `<strong>Összefoglaló, nem saját anyag.</strong> Ez az oldal ${c("printer")} X-posztját foglalja össze magyarul. Közzétéve: ${src.printer.date}. A teljes prompt a szerző első válaszában van, ugyanekkor közzétéve. Poszt: <a href="${src.printer.url}">${src.printer.url}</a>. Válasz a prompttal: <a href="${src.printerPrompt.url}">${src.printerPrompt.url}</a>. Lekérve: ${printerFetched}.`,
+      },
+      {
+        type: "note",
+        html: `<strong>Előfeltétel: a Bot felhős gépe nem látja az otthoni hálózatodat.</strong> A Grok Bot egy felhős gépen dolgozik, a nyomtatód viszont az otthoni Wi-Fi-den van. A dokumentáció szerint: „The Grok Bot cloud computer is separate from the Mac or Windows computer in front of you. A Bot only runs commands on your local computer when that capability is enabled and you approve it under your local-computer policy.” (<a href="${docs.apps}">Use the computer and apps</a>, „Your local computer is separate” szakasz) Ehhez tehát a Grok Bot asztali appja kell a Mac vagy Windows gépeden, bekapcsolt helyi futtatással, és minden helyi lépést neked kell jóváhagynod. A beállítás helye: Settings → General → Bot → Execution on Local Computer; az alapértelmezett <strong>Ask every time</strong> minden alkalommal rákérdez. A dokumentáció a <strong>Never allow</strong> beállítást javasolja, hacsak egy Botnak nincs konkrét oka a helyi gépen dolgozni; a beállítás később is módosítható, így a munka után visszaállíthatod. (<a href="${docs.approve}">Approvals, security, and privacy</a>, „Control access to your local computer” szakasz)`,
+      },
+      { type: "h2", text: "Mit ígér a poszt?" },
+      {
+        type: "p",
+        html: `A szerző szerint egy prompt és öt perc után nincs több tintás nyaggatás, nincs „printer offline”, és a ház bármely pontjáról tud nyomtatni és szkennelni. Az ő nyomtatója 2024-es. A végeredményt úgy foglalja össze, hogy a meglévő nyomtató végre úgy működik, ahogy kellene. Ezeket az állításokat nem ellenőriztük (lásd lent).`,
+      },
+      { type: "h2", text: "A hat lépés" },
+      { type: "steps" },
+      { type: "h2", text: "Mit kér a prompt a Bottól?" },
+      {
+        type: "p",
+        html: `A prompt azzal kezdődik, hogy a nyomtató a tiéd, a saját otthoni hálózatodon van, és felhatalmazod a Botot, hogy megkeresse, kiolvassa a beállításait és elvégezze a felsorolt módosításokat; minden módosításnak visszafordíthatónak kell lennie. Utána megadja, mikor van kész a munka, majd sorra kéri: a típus azonosítását a fotóról és a hivatalos kézikönyv megkeresését; a nyomtató megkeresését a hálózaton (Bonjour/mDNS vagy a router eszközlistája) és fix IP-címet, hogy ne legyen „offline”; a beépített admin weboldal (Embedded Web Server) megnyitását, jelszónál pedig csak azt, hogy a Bot megmondja, hol van az alapértelmezett jelszó, találgatás nélkül; a beállítások és a visszaállítás lépéseinek mentését minden módosítás előtt; a takarítás javaslatát, és várakozást a te jóváhagyásodra; driverless nyomtatást (IPP Everywhere / AirPrint / Mopria) a gépen, és útmutatót a telefonokhoz; hálózati szkennelést mappába, felhős fiók nélkül; végül lépésenkénti beszámolót, puskát (cheat sheet) és a visszaállítás lépéseit.`,
+      },
+      {
+        type: "p",
+        html: `Három tiltással zárul: a Bot ne kerülje meg a patron- vagy tintaellenőrzést, ne telepítsen harmadik féltől származó firmware-t, és ne lépjen be helyetted fiókokba.`,
+      },
+      {
+        type: "prompt",
+        label: "Avid (@Av1dlive): a teljes prompt, eredeti",
+        code: `"This is my own printer on my own home network. It keeps showing ink upsells, going "offline", and it only scans through the maker's cloud app. I want it clean, reliable and controlled from this computer. I authorize you to find it on my network, read its settings and make the changes below. Every change must be reversible.
+
+I've attached a photo of the printer's model label.
+
+Done means: the printer is found, its settings are backed up, the cleanup is done, every device on my Wi-Fi can print to it without installing the maker's software, and I can scan to a folder on this computer.
+
+- Identify the model from the photo and look up its official manual.
+- Find the printer on my network (Bonjour/mDNS or the router's device list) and give it a fixed IP so it stops going "offline".
+- Open its built-in admin web page (the Embedded Web Server). If it asks for a password, tell me where the default one is printed. Never guess or brute-force it.
+- Before changing anything, save every setting you'll touch and the undo steps.
+- Propose the cleanup and wait for my OK: turn off automatic firmware updates, turn off marketing, ink-subscription and "offer" prompts, fix the sleep timer, turn off any services I don't use.
+- Set up driverless printing (IPP Everywhere / AirPrint / Mopria) on this computer and tell me how to add it on phones.
+- Set up scan-to-folder or scan from this computer over the network, without a cloud account.
+- Show me each step as you go and end with a cheat sheet and the undo steps.
+
+Never bypass cartridge or ink checks, never flash third-party firmware, never sign in to accounts for me."`,
+        caption: `Forrás: <a href="${src.printerPrompt.url}">${src.printer.author} első válasza</a>, ${src.printerPrompt.date} (közösségi forrás). Szó szerint, a szerző idézőjeleivel együtt. Küldés előtt csatold a típuscímke fotóját.`,
+      },
+      {
+        type: "note",
+        html: `<strong>Saját megjegyzésünk, nem a forrásból: a firmware-frissítés a biztonsági javításokat is hozza.</strong> Ha kikapcsolod az automatikus firmware-frissítést, azzal a biztonsági javítások is elmaradnak. Ilyenkor a frissítéseket magadnak kell figyelned.`,
+      },
+      { type: "h2", text: "Amit nem ellenőriztünk" },
+      {
+        type: "ul",
+        items: [
+          `Az „1 prompt + 5 perc” a szerző állítása, nem mértük. Hogy mennyi idő és hány kör kell, a nyomtató gyártójától és típusától függ.`,
+          `A „minden visszafordítható” (all reversible) állítást sem ellenőriztük. Hogy egy beállítás visszaállítható-e, a nyomtató gyártójától és típusától függ.`,
+          `A promptot egyetlen nyomtatón sem próbáltuk ki, így azt sem, hogy a driverless nyomtatás és a hálózati szkennelés minden típuson beállítható-e.`,
+          `A poszthoz csatolt 20 másodperces videót nem írtuk át.`,
+        ],
+      },
+      {
+        type: "note",
+        html: `<strong>Forrás és szerző.</strong> Ez az oldal a Botkezdő saját útmutatója, nem hivatalos x.ai anyag: Avid (@Av1dlive) ${src.printer.date}-kor közzétett X-posztjának rövid magyar összefoglalója, nem saját módszer és nem fordítás. A hat lépést saját szavainkkal írtuk le; a prompt a szerző első válaszából való, szó szerint. Poszt: <a href="${src.printer.url}">${src.printer.url}</a>. Válasz a prompttal: <a href="${src.printerPrompt.url}">${src.printerPrompt.url}</a>. Lekérve: ${printerFetched}.`,
+      },
+      {
+        type: "done",
+        items: [
+          "Tudod, hogy ehhez az asztali app és bekapcsolt, jóváhagyásos helyi futtatás kell, a beállítások mentése után jóváhagytad a takarítást, és a nyomtató driver nélkül nyomtat, szkennelni pedig egy mappába tud.",
+        ],
+      },
+    ],
+    sources: [src.printer, src.printerPrompt, src.dAppsPrinter, src.dApprovePrinter],
   },
 ];
 
