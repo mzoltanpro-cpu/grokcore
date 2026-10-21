@@ -724,7 +724,7 @@ export const advancedGuides: AdvancedGuide[] = [
       },
       {
         type: "note",
-        html: `<strong>Előfeltétel: a Bot felhős gépe nem látja az otthoni hálózatodat.</strong> A Grok Bot egy felhős gépen dolgozik, a nyomtatód viszont az otthoni Wi-Fi-den van. A dokumentáció szerint: „The Grok Bot cloud computer is separate from the Mac or Windows computer in front of you. A Bot only runs commands on your local computer when that capability is enabled and you approve it under your local-computer policy.” (<a href="${docs.apps}">Use the computer and apps</a>, „Your local computer is separate” szakasz) Ehhez tehát a Grok Bot asztali appja kell a Mac vagy Windows gépeden, bekapcsolt helyi futtatással, és minden helyi lépést neked kell jóváhagynod. A beállítás helye: Settings → General → Bot → Execution on Local Computer; az alapértelmezett <strong>Ask every time</strong> minden alkalommal rákérdez. A dokumentáció a <strong>Never allow</strong> beállítást javasolja, hacsak egy Botnak nincs konkrét oka a helyi gépen dolgozni; a beállítás később is módosítható, így a munka után visszaállíthatod. (<a href="${docs.approve}">Approvals, security, and privacy</a>, „Control access to your local computer” szakasz)`,
+        html: `<strong>Előfeltétel: a Bot felhős gépe nem látja az otthoni hálózatodat.</strong> Ez a mi következtetésünk: a Grok Bot egy felhős gépen dolgozik, a nyomtatód viszont az otthoni Wi-Fi-den van. A dokumentáció ennyit mond: „The Grok Bot cloud computer is separate from the Mac or Windows computer in front of you. A Bot only runs commands on your local computer when that capability is enabled and you approve it under your local-computer policy.” (<a href="${docs.apps}">Use the computer and apps</a>, „Your local computer is separate” szakasz) Ehhez tehát a Grok Bot asztali appja kell a Mac vagy Windows gépeden, bekapcsolt helyi futtatással, és a helyi futtatást a beállításod szerint jóvá kell hagynod. A beállítás helye: Settings → General → Bot → Execution on Local Computer; ha már van regisztrált géped, a Settings → Computer → Computers alatt, gépenként. Az alapértelmezett <strong>Ask every time</strong> minden alkalommal rákérdez. A dokumentáció a <strong>Never allow</strong> beállítást javasolja, hacsak egy Botnak nincs konkrét oka a helyi gépen dolgozni; a beállítás később is módosítható, így a munka után visszaállíthatod. (<a href="${docs.approve}">Approvals, security, and privacy</a>, „Control access to your local computer” szakasz)`,
       },
       { type: "h2", text: "Mit ígér a poszt?" },
       {
@@ -761,7 +761,7 @@ Done means: the printer is found, its settings are backed up, the cleanup is don
 - Show me each step as you go and end with a cheat sheet and the undo steps.
 
 Never bypass cartridge or ink checks, never flash third-party firmware, never sign in to accounts for me."`,
-        caption: `Forrás: <a href="${src.printerPrompt.url}">${src.printer.author} első válasza</a>, ${src.printerPrompt.date} (közösségi forrás). Szó szerint, a szerző idézőjeleivel együtt. Küldés előtt csatold a típuscímke fotóját.`,
+        caption: `Forrás: <a href="${src.printerPrompt.url}">${src.printer.author} első válasza</a>, ${src.printerPrompt.date}, közösségi forrás. Szó szerint, a szerző idézőjeleivel együtt. Küldés előtt csatold a típuscímke fotóját.`,
       },
       {
         type: "note",
@@ -779,7 +779,7 @@ Never bypass cartridge or ink checks, never flash third-party firmware, never si
       },
       {
         type: "note",
-        html: `<strong>Forrás és szerző.</strong> Ez az oldal a Botkezdő saját útmutatója, nem hivatalos x.ai anyag: Avid (@Av1dlive) ${src.printer.date}-kor közzétett X-posztjának rövid magyar összefoglalója, nem saját módszer és nem fordítás. A hat lépést saját szavainkkal írtuk le; a prompt a szerző első válaszából való, szó szerint. Poszt: <a href="${src.printer.url}">${src.printer.url}</a>. Válasz a prompttal: <a href="${src.printerPrompt.url}">${src.printerPrompt.url}</a>. Lekérve: ${printerFetched}.`,
+        html: `<strong>Forrás és szerző.</strong> Ez az oldal a Botkezdő saját útmutatója, nem hivatalos x.ai anyag: Avid (@Av1dlive) 2026-10-19-én 14:01-kor (budapesti idő) közzétett X-posztjának rövid magyar összefoglalója, nem saját módszer és nem fordítás. A hat lépést saját szavainkkal írtuk le; a prompt a szerző első válaszából való, szó szerint. Poszt: <a href="${src.printer.url}">${src.printer.url}</a>. Válasz a prompttal: <a href="${src.printerPrompt.url}">${src.printerPrompt.url}</a>. Lekérve: ${printerFetched}.`,
       },
       {
         type: "done",
