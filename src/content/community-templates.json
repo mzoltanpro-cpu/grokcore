@@ -2091,5 +2091,264 @@
     "skills": [],
     "routines": [],
     "integrations": []
+  },
+  {
+    "slug": "script-this-routine",
+    "name": "Script This Routine",
+    "author": "Kevin Logan",
+    "handle": "@Kevin_Logan",
+    "postUrl": "https://x.com/Kevin_Logan/status/2112505666942407076",
+    "postedAt": "2026-10-20T11:26:14Z",
+    "templateUrl": "https://x.ai/bot/9E8iw2zlg2fTWzUT6RUsP",
+    "templatePageReadable": true,
+    "fetched": "2026-10-21",
+    "summaryHu": "Takarékossági bot a Grok Bot rutinjaihoz. A sablon leírása szerint végignézi az összes botod rutinjait, és a gépies ellenőrzéseket kicsi, tesztelt szkriptekké alakítja, így a rutin csak akkor ébreszti fel a botot, ha tényleg van teendő. Telepítés után minden botodtól lekéri a rutinokat, és egyetlen rövid jelentést küld a javaslatokkal és a becsült heti tokenmegtakarítással; utána csak az általad kiválasztott szkripteket építi meg és teszteli, a rutint pedig a gazdabottal frissítteti. Nem módosít ütemezést, nem tesz titkos adatot a szkriptekbe, és semmit nem szkriptel, ami üzenetet küld, vásárol vagy posztol. A készítő szerint a szkriptekkel 70–95% spórolható.",
+    "postQuote": "I created a Bot that looks at all routines you are running and checks to see if they can be ran as a Script. Scripts could save 70-95%",
+    "templateQuote": "Audits every routine on your Grok Bots and turns mechanical checks into small tested scripts, so each routine wakes the bot only when there's something to act on. As soon as it's installed, it asks each bot for its routines and sends one short report: a summary line, one line per suggestion, a single Leave alone line, and an estimated weekly token savings line. Then it builds only the scripts you pick, tests each one, asks the owning bot to update its own routine, and offers a Monday 9am weekly check once. It never changes schedules, touches the Keychain, puts secrets in scripts, or scripts anything that sends, buys, or posts.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti ellenőrzés hétfőn 9-kor (egyszer felajánlja)",
+        "quote": "offers a Monday 9am weekly check once",
+        "from": "template"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "x-following-cleanup",
+    "name": "X Following Cleanup",
+    "author": "JKash",
+    "handle": "@JKash000",
+    "postUrl": "https://x.com/JKash000/status/2112528539274584196",
+    "postedAt": "2026-10-20T12:57:07Z",
+    "templateUrl": "https://x.ai/bot/4yPjIA8Zp0BHH3wR62sea",
+    "templatePageReadable": true,
+    "fetched": "2026-10-21",
+    "summaryHu": "X-követéslista-takarító bot. A sablon leírása szerint megkeresi a követett fiókjaid között a botokat és az inaktív fiókokat, és biztonságos tempóban kikövet helyetted. A készítő a saját listáján a nem hitelesített, inaktív fiókokat követte ki vele; a sablonlink megnyitása után a Bot egy beszélgetéssel indítja a folyamatot.",
+    "postQuote": "I just finished cleaning up my following list and unfollowed all unverified inactive accounts.  \n\nIf you want to do the same thing, click on this link and Grok @Bot will start you off with a chat to begin the process.",
+    "templateQuote": "Finds bots and inactive accounts in your X Following list and unfollows them for you at a safe pace.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "X (követett fiókok)",
+        "quote": "Finds bots and inactive accounts in your X Following list",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "pre-mortem",
+    "name": "Pre-mortem",
+    "author": "Diana Park",
+    "handle": "@madebydia",
+    "postUrl": "https://x.com/madebydia/status/2112556983010410745",
+    "postedAt": "2026-10-20T14:50:08Z",
+    "templateUrl": "https://x.ai/bot/_cDvv5zEOH3stL56PmEAc",
+    "templatePageReadable": true,
+    "fetched": "2026-10-21",
+    "summaryHu": "Reggeli előrelátó bot a napodhoz. A sablon leírása szerint reggelente átnézi a naptáradat, a feladataidat, a jegyzeteidet és az időjárást, végiggondolja, hogyan sülhet el rosszul a nap, és megmondja azt a néhány dolgot, amit érdemes korán rendbe tenni. A készítő szerint az e-mailjeit is átnézi, és eddig ez hozta neki a legtöbb hasznot a Grok Botból.",
+    "postQuote": "Best value I've gotten so far out of @Grok @Bot is this pre-mortem that checks my calendar, notes, tasks, and email each morning and tells me invaluable ways to not screw up my whole day",
+    "templateQuote": "A morning look-ahead that reads your calendar, tasks, notes, and weather, imagines how today could go wrong, and tells you the few things to fix early.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Reggeli áttekintés",
+        "quote": "checks my calendar, notes, tasks, and email each morning",
+        "from": "post"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "reel-to-x",
+    "name": "Reel ➡️ 𝕏",
+    "author": "Phil",
+    "handle": "@Phil_Holland",
+    "postUrl": "https://x.com/Phil_Holland/status/2112727285925085545",
+    "postedAt": "2026-10-21T02:06:52Z",
+    "templateUrl": "https://x.ai/bot/ydje9SAP_d0lIHxOdu2_j",
+    "templatePageReadable": true,
+    "fetched": "2026-10-21",
+    "summaryHu": "Videóátalakító bot az X-re. A sablon leírása szerint beilleszted egy Instagram-, TikTok- vagy YouTube Shorts-videó linkjét, és visszakapod X-re kész MP4-ként, mellé egy kimásolható posztvázlattal, amely megnevezi az eredeti készítőt. Azoknak készült, akik a klipeket nem linkként, hanem natív videóként teszik fel az X-re.",
+    "postQuote": "Here’s a Grok Bot that turns Instagram, TikTok, or YouTube Shorts into an X-ready video 🎬\n\nPaste the link and get the MP4 ➕ a post draft that credits the creator. Upload it as native video, not a link ➡️ 𝕏",
+    "templateQuote": "Paste an Instagram, TikTok, or YouTube Shorts link and get back an X-ready MP4 plus a copyable post draft that credits the creator. Built for anyone who reposts clips to X as native video instead of a link.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Instagram, TikTok, YouTube Shorts (link)",
+        "quote": "Paste an Instagram, TikTok, or YouTube Shorts link",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "mail-in-x-chat",
+    "name": "Mail in X Chat",
+    "author": "Phil",
+    "handle": "@Phil_Holland",
+    "postUrl": "https://x.com/Phil_Holland/status/2112675618487947266",
+    "postedAt": "2026-10-20T22:41:33Z",
+    "templateUrl": "https://x.ai/bot/h1bJOR_y1RysAZrmkN05m",
+    "templatePageReadable": true,
+    "fetched": "2026-10-21",
+    "summaryHu": "E-mail az X Chatben. A sablon leírása szerint a fontos leveleidet rövid kártyákként egyetlen X Chat-beszélgetésbe hozza, és csak akkor küld választ, ha jóváhagyod. A bot saját postafiókjával önállóan működik, nem kell hozzá Mac, bővítmény vagy másik bot. A készítő szerint nem kell jelszót megadni, gyors a beállítás, és párban használható az iMessage Relay sablonjával.",
+    "postQuote": "Grok Bot can bring emails into one X Chat thread as short cards. Reply there and it sends  📬\n\n🧩 Runs on its own, no Mac or extension\n🔒 No passwords shared, fast setup\n📱 Pairs w/ iMessage Relay if you want",
+    "templateQuote": "Brings your important email into one X Chat as short cards, and sends a reply only after you say yes. Works on its own with the bot's own inbox, with no Mac, extension, or other bot needed.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "X Chat",
+        "quote": "Brings your important email into one X Chat as short cards",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "jane",
+    "name": "Jane",
+    "author": "Kent Langley",
+    "handle": "@KentLangley",
+    "postUrl": "https://x.com/KentLangley/status/2112681032944345570",
+    "postedAt": "2026-10-20T23:03:04Z",
+    "templateUrl": "https://x.ai/bot/vZYguWcn-Sy20b1XHNM_V",
+    "templatePageReadable": true,
+    "fetched": "2026-10-21",
+    "summaryHu": "Tanítóbot általános iskolás gyerekeknek. A sablon leírása szerint a bot üzemelteti a nyílt forráskódú Jane tanulóalkalmazást, és minden éjjel új, a gyerek előző napi teljesítményéhez igazodó feladatot ír; a Marble készségtérképére épül. A készítő szerint pontosan így használja otthon a fiával, és ez az első Grok Botja.",
+    "postQuote": "Got Grok Bot? Make a Jane bot and it'll host an adaptive learning program for your grade-schooler. Jane is built on the Marble skill map, and the bot writes fresh lessons every night based on how your kid did the day before.",
+    "templateQuote": "A teacher bot that hosts the open-source Jane learning app for your grade-school child and writes a fresh, adaptive quest every night based on how they did, built on the Marble skill taxonomy.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Minden éjjel új, igazodó feladat",
+        "quote": "writes a fresh, adaptive quest every night based on how they did",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Jane (nyílt forráskódú tanulóalkalmazás)",
+        "quote": "hosts the open-source Jane learning app",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "bookmark-to-output",
+    "name": "Bookmark to Output",
+    "author": "Mustafa Ergisi",
+    "handle": "@mustafaergisi",
+    "postUrl": "https://x.com/mustafaergisi/status/2112521400443351316",
+    "postedAt": "2026-10-20T12:28:45Z",
+    "templateUrl": "https://x.ai/bot/ARXeG7AiPt_UyrFGEXJzj",
+    "templatePageReadable": true,
+    "fetched": "2026-10-21",
+    "summaryHu": "Könyvjelző-feldolgozó bot. A sablon leírása szerint az X-en elmentett posztjaidból és linkjeidből csomagonként egy használható dolgot készít: rövidlistát, tervet, promptsablont, kísérletet vagy összefoglalót, és jóváhagyásod után az X-könyvjelzőidet témamappákba is rendezi. A készítő példái: ötletből egyhetes kísérlet, oktatóanyagból gyakorlóterv, AI-eszközökből rövidlista.",
+    "postQuote": "Why do we save so many posts and never use any of them? 😅\n\nThis free Grok Bot template reads your X bookmarks and turns them into a plan you can start today 💪\n\n💡 Ideas → a 1-week experiment\n📚 Tutorials → a practice plan\n🤖 AI tools → a shortlist",
+    "templateQuote": "Turns your saved X posts and links into one usable thing per batch, such as a shortlist, plan, prompt template, experiment or brief. It can also file your X bookmarks into topic folders once you approve.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "X-könyvjelzők",
+        "quote": "It can also file your X bookmarks into topic folders once you approve.",
+        "from": "template"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "tech-demos",
+        "name": "Tech Demos",
+        "noteHu": "A hivatalos Marketplace Tech Demos botja (Matt Palmer) hasonló témájú, de más bot: hétköznaponként az X-könyvjelzőkből választ egy új könyvtárat, és jóváhagyás után Cursor felhőügynökkel demót épít belőle."
+      }
+    ]
+  },
+  {
+    "slug": "allergy-friendly-eats",
+    "name": "Allergy-Friendly Eats",
+    "author": "Vineyard Hill Bots",
+    "handle": "@dalegandy",
+    "postUrl": "https://x.com/dalegandy/status/2112685289025994800",
+    "postedAt": "2026-10-20T23:19:59Z",
+    "templateUrl": "https://x.ai/bot/uQhDO7G-zeHut15X_KHbe",
+    "templatePageReadable": true,
+    "fetched": "2026-10-21",
+    "summaryHu": "Ételallergiás segítő bot. A sablon leírása szerint megjegyzi az ételallergiáidat és -intoleranciáidat, majd biztonságos rendelést keres az éttermekben, ellenőrzi a termékcímkéket, és allergiabarát étkezéseket és bevásárlólistákat tervez. A készítő glutén-, tej- vagy dióallergiásoknak ajánlja, és azt tanácsolja, hogy az étteremmel mindig egyeztess.",
+    "postQuote": "Eating out with a gluten, dairy, or nut allergy is a pain. So I made a free Grok Bot that remembers your allergies, finds safe orders at restaurants, checks labels, and plans easy meals at home. Try Allergy-Friendly Eats here 👇",
+    "templateQuote": "Remembers your food allergies and intolerances, then finds safe restaurant orders, checks labels, and plans allergy-friendly meals and grocery lists.",
+    "memory": [
+      {
+        "labelHu": "Ételallergiák és -intoleranciák",
+        "quote": "Remembers your food allergies and intolerances",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "bot-updates",
+    "name": "Grok Bot Updates",
+    "author": "XPixel",
+    "handle": "@xpixeladventure",
+    "postUrl": "https://x.com/xpixeladventure/status/2112521838937141483",
+    "postedAt": "2026-10-20T12:30:29Z",
+    "templateUrl": "https://x.ai/bot/VbuugtxjDt7meMkKNfzkl",
+    "templatePageReadable": true,
+    "fetched": "2026-10-21",
+    "summaryHu": "Nem hivatalos hírfigyelő a Grok Bot változásairól. A sablon leírása szerint nyilvános forrásokból (hivatalos changelog, alkalmazásbolti megjegyzések, súgóoldalak, hivatalos X-posztok) gyűjti a változásokat, a legújabbal kezdve, mindegyiket dátummal és forrással. Elválasztja a megerősített híreket a pletykáktól, elmondja, mit jelentenek a botjaidra nézve, és megjegyzi, mit láttál már, így nem ismétel.",
+    "postQuote": "Built a bot that tells me what changed in Grok Bot. Dated, sourced, newest first, rumors kept separate. It remembers what I already saw, so no repeats. I was just tired of digging through changelogs.",
+    "templateQuote": "Unofficial, reads public sources. Know what changed in Grok Bot: official changelog, app store notes, help pages and official X posts, newest first, each with date and source. Separates confirmed from rumor, says what it means for your bots, remembers what you have seen.",
+    "memory": [
+      {
+        "labelHu": "Amit már láttál",
+        "quote": "remembers what you have seen",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "inbox-manager",
+    "name": "Inbox Manager",
+    "author": "Gaurav Singh",
+    "handle": "@ubiquitous_mind",
+    "postUrl": "https://x.com/ubiquitous_mind/status/2112608796757344509",
+    "postedAt": "2026-10-20T18:16:02Z",
+    "templateUrl": "https://x.ai/bot/VPr1VsoKJ5XG_T3hITN0v",
+    "templatePageReadable": true,
+    "fetched": "2026-10-21",
+    "summaryHu": "Gmail-rendrakó bot. A sablon leírása szerint hetente megkeresi a legtöbb levelet küldő feladókat, és mindegyiknél javasolja, hogy iratkozz le, iktasd, archiváld vagy tartsd meg, de csak azt hajtja végre, amit jóváhagysz. A készítő a saját Gmail-fiókjához és naptárához építette.",
+    "postQuote": "Opening my inbox on a Monday felt like walking into a messy room.\n\nI built Inbox Manager on @bot for my own Gmail and Calendar. It runs a weekly review and asks before it acts on anything.",
+    "templateQuote": "Keeps your Gmail tidy. Each week it finds the noisiest senders, suggests whether to unsubscribe, file, archive or keep each one, and only acts on what you approve.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti áttekintés",
+        "quote": "Each week it finds the noisiest senders",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Gmail",
+        "quote": "Keeps your Gmail tidy.",
+        "from": "template"
+      }
+    ]
   }
 ]
