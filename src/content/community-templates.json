@@ -2350,5 +2350,210 @@
         "from": "template"
       }
     ]
+  },
+  {
+    "slug": "dad-bot",
+    "name": "Dad Bot",
+    "author": "Mike P",
+    "handle": "@mikepat711",
+    "postUrl": "https://x.com/mikepat711/status/2112859643915407504",
+    "postedAt": "2026-10-21T10:52:48Z",
+    "templateUrl": "https://x.ai/bot/bTPU8XhCVxWwvF0rHGlKD",
+    "templatePageReadable": true,
+    "fetched": "2026-10-22",
+    "summaryHu": "Grok Bot-bevezető idősebbeknek. A sablon leírása szerint türelmes, kedves segítő, amely lépésről lépésre segít az idősebb felhasználóknak megbarátkozni a Grok Bottal: egyszerű emlékeztetőket állít be, ellenőrzi a gyanús, csalásnak tűnő üzeneteket, és nagy betűs puskalapokat készít. A készítő azt javasolja, hogy telepítsd a szüleidnek vagy nagyszüleidnek, indítsd el nekik a botot, és ők írják be vagy hangüzemmódban mondják el, mire használnák. Szerinte már a csalásfigyelő miatt is megéri.",
+    "postQuote": "Dad Bot is a patient helper that gets older folks comfortable with Grok Bot, one easy step at a time. It sets up reminders, spots scams, and more. \n\nIf you can think of one obvious use case for your parents or grandparents, get them installed, launch this bot, and tell them to either type their use case or launch voice mode and ask live. Honestly I think the scam finder is worth it alone",
+    "templateQuote": "A patient, warm guide that helps older adults get comfortable with Grok Bot, with simple reminders, scam checks, and large-print cheat sheets.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "drive-vault",
+    "name": "Drive Vault",
+    "author": "X Freeze",
+    "handle": "@XFreeze",
+    "postUrl": "https://x.com/XFreeze/status/2112794321502027812",
+    "postedAt": "2026-10-21T06:33:14Z",
+    "templateUrl": "https://x.ai/bot/aFTVbLfYRPhj3V3NfYltq",
+    "templatePageReadable": true,
+    "fetched": "2026-10-22",
+    "summaryHu": "Tárhely- és letöltéssegítő bot. A sablon leírása szerint megakadályozza, hogy a botjaid közös számítógépén elfogyjon a hely: a régi fájlokat biztonságosan átteszi a Google Drive-ra, és bármelyik fájlból Drive-linket készít, amelyet a telefonodon le tudsz tölteni. A készítő szerint minden feltöltést ellenőriz, mielőtt helyet szabadít fel, így a megakadt feladat folytatódhat; a Grok Botban készült videókat pedig egy linkkel, egy koppintással töltheted le a telefonodra.",
+    "postQuote": "Drive Vault fixes this. When space runs out, it moves old raw files you're not using to your Google Drive, checks every upload, then frees the space so the task keeps going. Google Drive gives you up to 5TB, so there's plenty of room with basic subscription \n\n2. Downloading videos to your phone\nGetting a video out of Grok Bot onto your phone is a pain right now. Drive Vault uploads it to Google Drive and sends you a link.",
+    "templateQuote": "Keeps your bots' shared computer from running out of space by safely moving old files to Google Drive, and turns any file into a Drive link you can download on your phone.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Google Drive",
+        "quote": "safely moving old files to Google Drive",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "app-replicator",
+    "name": "APP REPLICATOR",
+    "author": "Brian Roemmele",
+    "handle": "@BrianRoemmele",
+    "postUrl": "https://x.com/BrianRoemmele/status/2113140131813356006",
+    "postedAt": "2026-10-22T05:27:22Z",
+    "templateUrl": "https://x.ai/bot/EIaKiBO_5k6RITsM47150",
+    "templatePageReadable": true,
+    "fetched": "2026-10-22",
+    "summaryHu": "Funkció-újraépítő bot. A sablon leírása szerint egy általad birtokolt alkalmazásból azt az egy funkciót építi újra, amelyet tényleg használsz, „clean-room” módon (a forráskód másolása nélkül), ingyenes vagy olcsó eszközökkel. A készítő szerint türelmes, kezdőknek is szól, csak olyan szoftveren dolgozik, amelyhez jogod van, minden megállapítását megjelöli (CONFIRMED, INFERENCE vagy UNKNOWN), és őszintén megmondja, ha nem éri meg az újraépítés.",
+    "postQuote": "Paying every month for an app when you only use one feature of it? APP REPLICATOR is a Grok Bot that works out how that feature behaves, writes its own spec for it, and helps you build a clean-room version on a free or low-cost stack. \n\nIt's patient and assumes no experience, so it works for first-time AI users. It also uses evidence instead of hype and tells you honestly when a rebuild isn't worth doing.",
+    "templateQuote": "Rebuild the one feature you actually use from an app you own, clean-room, on a free or low-cost stack. Patient, evidence-first, and honest about when a rebuild isn't worth it.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "video-creator",
+    "name": "Video Creator",
+    "author": "Farzad",
+    "handle": "@farzyness",
+    "postUrl": "https://x.com/farzyness/status/2112941787526447195",
+    "postedAt": "2026-10-21T16:19:13Z",
+    "templateUrl": "https://x.ai/bot/RPtsHesZPgAlwMOZAX8Ef",
+    "templatePageReadable": true,
+    "fetched": "2026-10-22",
+    "summaryHu": "Magyarázóvideó-készítő bot. A sablon leírása szerint egy teljes magyarázóvideós csapatot működtet az elejétől a végéig: kutatás, forgatókönyv, hang, animáció, vágás, gépies minőségellenőrzés és nem nyilvános (unlisted) feltöltés; egy rendező és négy segítő dolgozik benne. A készítő egy saját videóját is ezzel a folyamattal készíttette.",
+    "postQuote": "If you want to make videos like these of your own, use my Video Creator bot:",
+    "templateQuote": "Runs an explainer video team end to end: research, script, voice, invented-look animation, edit, mechanical QA, unlisted upload. A director plus four helpers.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "fake-review-buster",
+    "name": "Fake Review Buster",
+    "author": "Jeff Stone",
+    "handle": "@jeffnixonstone",
+    "postUrl": "https://x.com/jeffnixonstone/status/2112914378660131032",
+    "postedAt": "2026-10-21T14:30:18Z",
+    "templateUrl": "https://x.ai/bot/9ztGgqFRgI-HZd4kALfUc",
+    "templatePageReadable": true,
+    "fetched": "2026-10-22",
+    "summaryHu": "Értékelés-ellenőrző bot. A sablon leírása szerint bármilyen termék, étterem vagy szolgáltatás értékeléseiről megvizsgálja, valódiak-e, és 1-től 10-ig terjedő, a megbízhatósággal korrigált pontszámot ad. A készítő szerint átnézi az értékelők profilját, kiszűri a botokat, a valódi panaszokat dupla súllyal számolja, a fizetett posztokat pedig lepontozza; az ő példájában egy 4,8 csillagos étterem 6,5/10-et kapott.",
+    "postQuote": "Built a @bot that scores restaurants, products & services after removing fake reviews. A restaurant at 4.8★ dropped to 6.5/10. It checks reviewer profiles, drops bots, double-weights real complaints, and penalizes paid posts.",
+    "templateQuote": "Checks whether the reviews of any product, restaurant or service are real, and gives a trust-adjusted score from 1 to 10.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "starlink-check",
+    "name": "Starlink Check",
+    "author": "nick",
+    "handle": "@thecsguy",
+    "postUrl": "https://x.com/thecsguy/status/2113015216514711844",
+    "postedAt": "2026-10-21T21:11:00Z",
+    "templateUrl": "https://x.ai/bot/WA8NMMcNsQjCe3OGRr2Qz",
+    "templatePageReadable": true,
+    "fetched": "2026-10-22",
+    "summaryHu": "Starlink-elérhetőség-ellenőrző bot. A sablon leírása szerint megnézi, elérhető-e a Starlink otthoni internet a címeden, és milyen csomagok, árak és akciók vannak. A készítő szerint a területedet figyelni is tudja, és szól, amikor ott is elérhetővé válik.",
+    "postQuote": "I made a Grok Bot that answers one question: can I get Starlink at my house?\n\nGive it your address and it checks availability, plans, and monthly price. It can also keep watching and ping you the day your area opens up.",
+    "templateQuote": "Checks if Starlink home internet is available at your address, with plans, prices, and promos.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "convert-bot",
+    "name": "Convert Bot",
+    "author": "brflux",
+    "handle": "@brflux",
+    "postUrl": "https://x.com/brflux/status/2112929836461367504",
+    "postedAt": "2026-10-21T15:31:44Z",
+    "templateUrl": "https://x.ai/bot/O77giEZSfcdxq30tfFFM1",
+    "templatePageReadable": true,
+    "fetched": "2026-10-22",
+    "summaryHu": "Videó- és hangátalakító bot. A sablon leírása szerint más formátumra alakítja a videó- és hangfájljaidat, álló vagy négyzetes képarányra igazítja a videókat a közösségi oldalakhoz, vágja és tömöríti a klipeket, és kinyeri a hangot a videóból. A készítő szerint MP4, MOV, WebM, GIF, WAV vagy MP3 formátumot is kérhetsz, és nem kell hozzá programot telepíteni.",
+    "postQuote": "Made a little bot that converts video and audio for you. Drop in a clip and get back MP4, MOV, WebM, GIF, WAV, MP3, or whatever you need, reframed to 9:16 for Reels and TikTok if you want. No software to install. Free to grab:",
+    "templateQuote": "Converts your video and audio files to other formats, reframes videos to vertical or square for social, trims and compresses clips, and pulls audio out of video.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "best-video-editor",
+        "name": "Video Edit Desk",
+        "noteHu": "A hivatalos Marketplace Video Edit Desk botja (X Freeze) hasonló témájú, de más bot: az a feltöltött felvételből vágott klipeket, beégetett feliratot és platformméretű exportot készít a jegyzeteid alapján."
+      }
+    ]
+  },
+  {
+    "slug": "playlist-builder",
+    "name": "Playlist Builder",
+    "author": "Kolby Baxter",
+    "handle": "@KolbyBBaxter",
+    "postUrl": "https://x.com/KolbyBBaxter/status/2113115477744718220",
+    "postedAt": "2026-10-22T03:49:24Z",
+    "templateUrl": "https://x.ai/bot/b9RN8hUpNPLfNlu7hMg5P",
+    "templatePageReadable": true,
+    "fetched": "2026-10-22",
+    "summaryHu": "Spotify-lejátszásilista-készítő bot. A sablon leírása szerint a Spotifyon kedvelt dalaidat műfaj, hangulat és energia szerint válogatott lejátszási listákba rendezi, és elmondja, mit árul el rólad a zenei ízlésed; annak szól, akinek nagy, sosem rendezett zenei gyűjteménye van. A készítő a saját 1164 kedvelt dalán futtatta, és 10 lejátszási listát kapott.",
+    "postQuote": "Let my Grok Bot loose on all 1,164 of my Spotify Liked Songs. It told me what my taste says about me, then built 10 playlists by mood and energy, from Slime Season to 3 AM Slowed. Made it a template so you can run it on yours.",
+    "templateQuote": "Turns your Spotify Liked Songs into curated playlists by genre, mood, and energy, and tells you what your taste says about you. For anyone with a big library they never organized.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Spotify (kedvelt dalok)",
+        "quote": "Turns your Spotify Liked Songs into curated playlists",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "kitchen-multitasker",
+    "name": "The Kitchen Multitasker",
+    "author": "Dayton",
+    "handle": "@dayyanl",
+    "postUrl": "https://x.com/dayyanl/status/2112994651544391936",
+    "postedAt": "2026-10-21T19:49:17Z",
+    "templateUrl": "https://x.ai/bot/KbN7hSejURNMKlbiMSIuN",
+    "templatePageReadable": true,
+    "fetched": "2026-10-22",
+    "summaryHu": "Konyhai segítő bot ételtudománnyal. A sablon leírása szerint megmondod, mit szeretnél főzni, és a receptet a magyarázattal együtt kapod meg: a mögötte lévő tudományt, a technikát, a szükséges eszközöket és a régi szakácskönyveket, amelyekből származik. A sablon szerint nem szereti az egyetlen célra jó konyhai eszközöket, inkább a többfélére használhatókat.",
+    "postQuote": "Meet The Kitchen Multitasker 🍳\n\nTell it what you want to cook. You get the recipe AND the why: the science, the technique, and the cookbooks it came from.\n\nHates unitaskers. Loves multitaskers.",
+    "templateQuote": "A food-science kitchen helper that hates unitaskers and loves multitaskers. Tell it what you want to cook and it gives you the recipe plus the why behind it: the science, the technique, the gear, and the old cookbooks it came from.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "focus-coach",
+    "name": "Focus Coach",
+    "author": "Andrei",
+    "handle": "@altf4andrei",
+    "postUrl": "https://x.com/altf4andrei/status/2112898057008447836",
+    "postedAt": "2026-10-21T13:25:27Z",
+    "templateUrl": "https://x.ai/bot/Hk6CLyQgRaaSica5noyX7",
+    "templatePageReadable": true,
+    "fetched": "2026-10-22",
+    "summaryHu": "Fókuszedző bot számítógéphez. A sablon leírása szerint egy apró helyi naplózóval követi, mely alkalmazások és oldalak kötik le a figyelmedet Macen vagy Windowsos gépen, óránként ránéz, és csak akkor szól, ha a figyelemelterelés tényleg elviszi az idődet. A készítő példája: mennyi ideig görgeted az X-et.",
+    "postQuote": "My goal with this bot was it creates a script that monitors your focused window on the computer, example how long do you browse X. Then once every hour the bot nudges you if you are doing unproductive activities.",
+    "templateQuote": "A focus coach that tracks which apps and sites hold your attention on your Mac or Windows PC with a tiny local logger, then checks in hourly and nudges you only when distractions are eating your time.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Óránkénti ránézés",
+        "quote": "checks in hourly",
+        "from": "template"
+      }
+    ],
+    "integrations": []
   }
 ]
