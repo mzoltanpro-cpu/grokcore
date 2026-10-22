@@ -313,7 +313,19 @@ h3 {
 
 h1 {
   margin: 0 0 1rem;
-  font-size: clamp(2.15rem, 5vw, 3.7rem);
+  font-size: clamp(2.15rem, 4.4vw, 3.4rem);
+  text-wrap: balance;
+}
+
+/* A cím mindig a teljes tartalomszélességet kapja, akkor is, ha egy keskeny
+   (68ch) .prose cikkben ül; a szöveg szélessége nem változik. */
+main > .wrap {
+  container-type: inline-size;
+}
+
+.prose > h1 {
+  width: 100cqi;
+  max-width: 100cqi;
 }
 
 h2 {
