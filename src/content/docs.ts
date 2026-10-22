@@ -10,6 +10,8 @@ export const docs = {
   troubleshooting: "https://docs.x.ai/grok-bot/troubleshooting",
   settings: "https://docs.x.ai/grok-bot/settings-and-notifications",
   chat: "https://docs.x.ai/grok-bot/chat-and-collaboration",
+  teamBots: "https://docs.x.ai/grok-bot/team-bots",
+  teamsEnterprise: "https://docs.x.ai/grok-bot/teams-and-enterprises",
   product: "https://grokbot.com",
   productCanonical: "https://x.ai/bot",
   plans: "https://cursor.com/help/grok-bot/plans",

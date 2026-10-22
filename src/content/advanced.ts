@@ -10,6 +10,8 @@ import type { Block, Step } from "./types";
 export const advancedFetched = "2026-10-19";
 const seoFetched = "2026-10-20";
 const printerFetched = "2026-10-21";
+const woodFetched = "2026-10-22";
+const templateFetched = "2026-10-22";
 
 export type AdvancedSource = {
   title: string;
@@ -132,6 +134,40 @@ const src = {
   dApprovePrinter: { title: "Approvals, security, and privacy (docs.x.ai)", url: docs.approve, author: "docs.x.ai", date: `lekérve ${printerFetched}`, kind: "hivatalos" },
   dAppsSeo: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: `lekérve ${seoFetched}`, kind: "hivatalos" },
   dFaqSeo: { title: "Frequently asked questions (docs.x.ai)", url: docs.faq, author: "docs.x.ai", date: `lekérve ${seoFetched}`, kind: "hivatalos" },
+  wood: {
+    title: "„Grok Bot: A Practical Guide to Getting Work Done” (blogcikk, angol)",
+    url: "https://www.tonywood.org/writing/how-to-use-grok-bot-a-practical-guide/",
+    author: "Tony Wood",
+    date: "2026-10-17",
+    kind: "kozossegi",
+  },
+  dBotsWood: { title: "Create and manage Bots (docs.x.ai)", url: docs.bots, author: "docs.x.ai", date: `lekérve ${woodFetched}`, kind: "hivatalos" },
+  dAppsWood: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: `lekérve ${woodFetched}`, kind: "hivatalos" },
+  dSkillsWood: { title: "Skills and routines (docs.x.ai)", url: docs.skills, author: "docs.x.ai", date: `lekérve ${woodFetched}`, kind: "hivatalos" },
+  dApproveWood: { title: "Approvals, security, and privacy (docs.x.ai)", url: docs.approve, author: "docs.x.ai", date: `lekérve ${woodFetched}`, kind: "hivatalos" },
+  dTeamsWood: { title: "Teams and enterprises (docs.x.ai)", url: docs.teamsEnterprise, author: "docs.x.ai", date: `lekérve ${woodFetched}`, kind: "hivatalos" },
+  dSettingsWood: { title: "Settings and notifications (docs.x.ai)", url: docs.settings, author: "docs.x.ai", date: `lekérve ${woodFetched}`, kind: "hivatalos" },
+  plansWood: { title: "Grok Bot plans (cursor.com)", url: docs.plans, author: "cursor.com", date: `lekérve ${woodFetched}`, kind: "hivatalos" },
+  tplPost: {
+    title: "„When you fork our AEO/SEO Bot…” (X-poszt, angol)",
+    url: "https://x.com/ericosiu/status/2110370150272692621",
+    author: "@ericosiu",
+    date: "2026-10-14 16:00 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  tplPage: {
+    title: "AEO/SEO Bot by Eric (x.ai sablonoldal, angol)",
+    url: "https://x.ai/bot/Jyx1Lg-VzYgyjDc-y-GQi",
+    author: "@ericosiu",
+    date: `lekérve ${templateFetched}`,
+    kind: "kozossegi",
+  },
+  dBotsTpl: { title: "Create and manage Bots (docs.x.ai)", url: docs.bots, author: "docs.x.ai", date: `lekérve ${templateFetched}`, kind: "hivatalos" },
+  dFaqTpl: { title: "Frequently asked questions (docs.x.ai)", url: docs.faq, author: "docs.x.ai", date: `lekérve ${templateFetched}`, kind: "hivatalos" },
+  dTeamBotsTpl: { title: "Team Bots (docs.x.ai)", url: docs.teamBots, author: "docs.x.ai", date: `lekérve ${templateFetched}`, kind: "hivatalos" },
+  dApproveTpl: { title: "Approvals, security, and privacy (docs.x.ai)", url: docs.approve, author: "docs.x.ai", date: `lekérve ${templateFetched}`, kind: "hivatalos" },
+  dAppsTpl: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: `lekérve ${templateFetched}`, kind: "hivatalos" },
+  dSkillsTpl: { title: "Skills and routines (docs.x.ai)", url: docs.skills, author: "docs.x.ai", date: `lekérve ${templateFetched}`, kind: "hivatalos" },
 } satisfies Record<string, AdvancedSource>;
 
 /** Rövid hivatkozás a szövegben: szerző + link. */
@@ -789,6 +825,369 @@ Never bypass cartridge or ink checks, never flash third-party firmware, never si
       },
     ],
     sources: [src.printer, src.printerPrompt, src.dAppsPrinter, src.dApprovePrinter],
+  },
+  {
+    slug: "feladattol-rutinig",
+    title: "Egy feladattól a rutinig: megbeszélés-előkészítés lépésről lépésre",
+    nav: "Feladattól rutinig",
+    card: "Egy közösségi blogcikk összefoglalója: egy Bot egy feladattal, saját ellenőrzés és javítás, majd skill és routine, egy megbeszélés-előkészítő példán.",
+    description:
+      "Egy feladattól a routine-ig Grok Bottal: Tony Wood blogcikkének magyar összefoglalója egy megbeszélés-előkészítő példán. Bot és leírás, háttér és memória, közös gép és connectorok, skill, routine és eseményindítás, négy eredeti prompttal. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "Ez az oldal egy más által írt blogcikk rövid magyar összefoglalója, nem saját módszer. Tony Wood 2026-10-17-én megjelent cikkének kiindulópontja: adj a Botnak egyetlen hasznos feladatot, kapj egy eredményt, amelyet ellenőrizni tudsz, és csak utána tanítsd meg jobban csinálni. A példa végig ugyanaz: egy partnertárgyalás előtti, egyoldalas összefoglaló (brief), amelyből lépésenként skill, majd routine lesz.",
+    audience: "Annak szól, aki végigment a Kezdő 5 napon, és egy már működő feladatból megbízható, ismételhető folyamatot szeretne.",
+    minutes: "Kb. 20 perc az oldal elolvasására, a mi becslésünk",
+    fetched: woodFetched,
+    steps: [
+      {
+        name: "Egy Bot, egy feladat",
+        text: "Hozz létre egy Botot egyetlen feladatra (a cikkben: megbeszélések előkészítése), és a leírásába írd bele a felelősségét, a várt eredményt és azt, hol áll meg.",
+      },
+      {
+        name: "Kevés, jóváhagyott forrás",
+        text: "Az első körhöz néhány általad jóváhagyott jegyzet és nyilvános link elég. Az adott megbeszélés dátuma, résztvevői és célja a kérésbe kerül, nem a leírásba.",
+      },
+      {
+        name: "Első futtatás, saját ellenőrzés",
+        text: "Futtasd le egyszer, olvasd el az eredményt, nyiss meg néhány forrást, és nézd meg, hogy ami megállapodásként szerepel, tényleg az volt-e.",
+      },
+      {
+        name: "Konkrét javítások",
+        text: "Konkrét visszajelzést adj (például: mindegyik forrásnál legyen ott a dátum), és gyűjtsd össze a javításokat, mielőtt újra futtatnád.",
+      },
+      {
+        name: "A bevált módszer skillként",
+        text: "Mentsd skillként a javított módszert, olvasd el, mit mentett a Bot, és próbáld ki egy másik megbeszélésen is.",
+      },
+      {
+        name: "Routine csak a megbízható folyamatból",
+        text: "Ütemezést csak a bevált skillre kérj. Nézd meg az ütemezést, az időzónát és a következő futást, és előbb biztonságos adaton próbáld ki, mert a tesztfuttatás valódi munkát végez.",
+      },
+    ],
+    blocks: [
+      {
+        type: "note",
+        html: `<strong>Összefoglaló, nem saját anyag.</strong> Ez az oldal ${c("wood")} „Grok Bot: A Practical Guide to Getting Work Done” című blogcikkét foglalja össze magyarul, saját szavainkkal; nem fordítás. Közzétéve: ${src.wood.date}. A cikkből négy promptot idézünk szó szerint, angolul. A szerző a cikket Nate Herk egy YouTube-videójára építette, a termékadatokat a dokumentációval vetette össze, és azt írja, hogy új, saját kipróbálásról nem számol be: a promptok és a munkafolyamat szerkesztői javaslatok. Cikk: <a href="${src.wood.url}">${src.wood.url}</a>. Lekérve: ${woodFetched}.`,
+      },
+      { type: "h2", text: "Mit javasol a cikk?" },
+      {
+        type: "p",
+        html: `A szerző azt javasolja, hogy ne szerepekkel és címekkel kezdj, hanem egy hasznos feladattal: adj a Botnak egy munkát, kapj egy ellenőrizhető eredményt, és utána tanítsd meg, hogyan csinálja jobban. A példája egy partnertárgyalás előtti, egyoldalas összefoglaló. Ebből lesz előbb egy kijavított első futás, aztán egy skill, végül egy routine.`,
+      },
+      {
+        type: "p",
+        html: `Az alapokat itt nem ismételjük. A Bot létrehozását, az appok bekötését, a skillt és a routine-t a <a href="/5-nap/">Kezdő 5 napon</a> mutattuk meg (<a href="/5-nap/2-nap-appok-bekotese/">2. nap</a>: appok, <a href="/5-nap/3-nap-elso-feladat/">3. nap</a>: első feladat, <a href="/5-nap/4-nap-skill-routine/">4. nap</a>: skill és routine, <a href="/5-nap/5-nap-masodik-bot-biztonsag/">5. nap</a>: második Bot és jóváhagyások). Hogy milyen gyakran fusson egy routine, és mi legyen éjjel a jóváhagyásokkal, arról a <a href="/halado/rutinok-ritmusa/">Rutinok okosan</a> oldal szól. Ez az oldal azt mutatja meg, hogyan jut el egyetlen feladat egy teljes példán végig a routine-ig.`,
+      },
+      { type: "h2", text: "Lépések" },
+      { type: "steps" },
+      { type: "h2", text: "A részek röviden" },
+      {
+        type: "table",
+        caption: "A cikk áttekintése a részekről, saját szavainkkal",
+        headers: ["Rész", "Mit jelent", "A megbeszélés-példában"],
+        rows: [
+          ["Bot", "Egy elnevezett segítő, tartós szereppel.", "Készítsen fel a partnertárgyalásaimra."],
+          ["Háttér és memória", "Ami az adott feladathoz elérhető, és ami hosszabb távon megmarad.", "Az aktuális megbeszélés anyagai, és hogy rövid összefoglalót szeretnél."],
+          ["Gép és connectorok", "Weboldalak, fájlok és alkalmazások használata.", "A jóváhagyott jegyzetek olvasása és a partner nyilvános weboldalának megnézése."],
+          ["Skill", "Egy elmentett módszer egy feladatra.", "A közösen kialakított megbeszélés-előkészítés."],
+          ["Routine", "Ütemezett vagy egy támogatott eseményre induló munkafolyamat.", "Az összefoglaló elkészítése egy rendszeres megbeszélés előtt."],
+        ],
+      },
+      { type: "h2", text: "Bot és leírás" },
+      {
+        type: "p",
+        html: `A Botot a New → Create new Bot menüvel hozod létre, a nevét és a leírását a profiljában (Edit Profile) állítod be. A dokumentáció szerint ami tartósan igaz, az a leírásba kerül, az adott feladat részletei a beszélgetésbe. (<a href="${docs.bots}">Create and manage Bots</a>) A szerző Botja a Meeting Preparation nevet kapja, és a leírásában három dolog áll: mi a felelőssége, milyen eredményt vársz, és hol áll meg. Az indoka: ha egy megbeszélés dátuma és résztvevői a leírásba kerülnek, a következő havi megbeszélés örökli az előző feltevéseit.`,
+      },
+      {
+        type: "prompt",
+        label: "Tony Wood: a Bot leírása, eredeti",
+        code: "Prepare concise briefs for my partnership meetings. Use the sources I approve, show what has changed and identify questions worth asking. Link important claims to their sources. Leave unknowns visible. Prepare drafts for my review; ask before sending messages or changing shared records.",
+        caption: `Forrás: ${c("wood")}, ${src.wood.date} (közösségi forrás), a cikk 1. szakasza. Szó szerint.`,
+      },
+      { type: "h2", text: "Háttér és memória" },
+      {
+        type: "p",
+        html: `Az első próbához a szerző néhány jóváhagyott jegyzetet és nyilvános linket ad, a megbeszélés céljával, résztvevőivel és a várt döntéssel. A dokumentáció szerint a Bot megjegyzi a tartós munkamódszert, a fontos tényeket és a korábbi munkái összefoglalóit, de fontos döntésnél érdemes megkérni, hogy idézze vagy nyissa meg újra az aktuális adatot. (<a href="${docs.bots}">Create and manage Bots</a>)`,
+      },
+      {
+        type: "p",
+        html: `A szerző példájával: hogy egyoldalas összefoglalót szeretnél, az jó tartós beállítás; az viszont, hogy „a szerződés jövő hónapban lejár”, egy aktuális szerződést és egy valódi dátumot kíván. Ezért azt javasolja, hogy az aktuális összefoglaló, a döntések és a megállapodott teendők egy általad kezelt dokumentumban legyenek, és minden új futás azt olvassa el. Ezt te is meg tudod nézni, ki tudod javítani, és át tudod vinni egy másik eszközbe.`,
+      },
+      { type: "h2", text: "A közös gép és a connectorok" },
+      {
+        type: "p",
+        html: `A dokumentáció szerint minden Bot egy állandó felhős gépen dolgozik, böngészővel, fájlrendszerrel és terminállal, és a felhős munka akkor sem áll le, ha bezárod az appot vagy a laptopodat. A Botjaidnak külön képernyőjük van, de a gép közös: a böngésző sütijei és belépései, a fájlok és a parancssori hitelesítők minden Botodnál elérhetők. A képernyők külön munkafelületek, nem külön biztonsági határok, és a dokumentáció kifejezetten kéri, hogy a külön Botokat ne használd biztonsági határként. (<a href="${docs.apps}">Use the computer and apps</a>, <a href="${docs.approve}">Approvals</a>) A szerző ebből azt vonja le, hogy ha az egyik Botot „A cég”, a másikat „B cég” névre kereszteled, attól a két cég adatai még nem válnak szét.`,
+      },
+      {
+        type: "p",
+        html: `A saját laptopod elérése külön képesség: a dokumentáció szerint a Bot csak akkor futtat parancsot a helyi gépeden, ha ez be van kapcsolva, és a beállításod szerint jóváhagyod. (<a href="${docs.apps}">Use the computer and apps</a>) A szerző következtetése, hogy egy helyi fájlútvonal megadása önmagában még nem ad hozzáférést; ő egy szándékosan kiválasztott csatolmánnyal vagy egy jóváhagyott mappával kezdene.`,
+      },
+      {
+        type: "p",
+        html: `A connectorokat a Connect apps alatt pluginként telepíted. A dokumentáció azt javasolja, hogy ahol van connector, azt használd, máshol a böngészőt; a telepített connector fiókszintű, vagyis minden személyes Botodnál elérhető. (<a href="${docs.apps}">Use the computer and apps</a>) A szerző csak azt kötné be, amire a feladatnak éppen szüksége van, és megnézné, hogy a hozzáférés csak olvas vagy módosíthat is, és személyes vagy céges adatot ér-e el. Jelszóhoz az átadást (handover) vagy a támogatott biztonságos bevitelt javasolja; a dokumentáció is azt kéri, hogy jelszót és egyszer használatos kódot ne másolj a chatbe, és jelzi, hogy egyes oldalak lejáratják a munkamenetet. (<a href="${docs.apps}">Use the computer and apps</a>, <a href="${docs.approve}">Approvals</a>)`,
+      },
+      {
+        type: "note",
+        html: `<strong>Saját megjegyzésünk, nem a forrásból: a közös gép minden Botodé.</strong> Amit egy Botnak megadsz (belépés, fájl, connector), azt a többi Botod is eléri. Bizalmas céges anyag előtt nézd meg a Cursor adatkezelési feltételeit: a megnyitott dokumentáció nem ígér EU-n belüli adattárolást. A Grok Bot adattárolást igényel, az adatvédelmi beállításokat a Cursor-fiókodban kezeled (<a href="${docs.approve}">Approvals</a>), az adattárolási vállalásokról (residency commitments) pedig a dokumentáció a Cursor-fiókcsapathoz irányít (<a href="${docs.teamsEnterprise}">Teams and enterprises</a>). A Cursor biztonsági oldala: <a href="${docs.securityCursor}">cursor.com/security</a>.`,
+      },
+      { type: "h2", text: "Első futtatás és javítás" },
+      {
+        type: "p",
+        html: `Ha megvannak a jóváhagyott források, a szerző ezzel a kéréssel indítaná az első futást:`,
+      },
+      {
+        type: "prompt",
+        label: "Tony Wood: az első feladat, eredeti",
+        code: "Prepare a one-page brief for Thursday's partnership meeting. Use the notes and links I have supplied. Cover the meeting's purpose, what we agreed last time, relevant changes since then, three questions worth asking and any information we still need. Link each important observation to its source. Distinguish facts from your suggestions. Save the brief in our agreed meeting folder and show it to me here. Do not send anything or change the action list.",
+        caption: `Forrás: ${c("wood")}, ${src.wood.date} (közösségi forrás), a cikk 5. szakasza. Szó szerint.`,
+      },
+      {
+        type: "p",
+        html: `Utána olvasd el az eredményt. A szerző azt javasolja, hogy kövess néhány linket, nézd meg, hogy ami megállapodásként szerepel, tényleg megállapodás volt-e, és gondold végig, segítenek-e a javasolt kérdések. A visszajelzés legyen konkrét, például: ez csak lehetőség volt, nem vállalás; mindegyik forrásnál legyen ott a dátum; a nyitott üzleti kérdés kerüljön a tetejére. Ezekből derül ki, milyen a jó eredmény, ezért gyűjtsd össze őket, mielőtt újra futtatnád.`,
+      },
+      { type: "h2", text: "A bevált módszer skillként" },
+      {
+        type: "p",
+        html: `A dokumentáció szerint a skill egy újrahasználható utasításkészlet. Az asztali app szövegmezőjében a <code>/</code> jellel hivatkozol egy mentett skillre, a <code>@</code> jellel Botokra, csoportokra, routine-okra és connectorokra. (<a href="${docs.skills}">Skills and routines</a>) A kijavított összefoglaló után a szerző ezt kérné:`,
+      },
+      {
+        type: "prompt",
+        label: "Tony Wood: a módszer mentése skillként, eredeti",
+        code: "Save the meeting-preparation method we have agreed as a skill. Include the approved sources, how to identify the right meeting, the brief's structure and our corrections. Require source dates and links. If notes conflict, show both accounts. If something essential is unavailable, say what is missing. Keep messages and record changes for my approval.",
+        caption: `Forrás: ${c("wood")}, ${src.wood.date} (közösségi forrás), a cikk 6. szakasza. Szó szerint.`,
+      },
+      {
+        type: "p",
+        html: `Olvasd el, mit mentett a Bot. A szerző szerint egy jó skillből a jó eredményt és a hibát is fel lehet ismerni, és érdemes beleírni, mi legyen, ha egy forrás üres, ha egy cégnév kétértelmű, vagy ha egy korábbinak hitt megbeszélés meg sem történt. Ha egy futás csalódást okoz, a mentett módszert javítsd, különben hétről hétre ugyanazt a javítást adod.`,
+      },
+      {
+        type: "p",
+        html: `Ahol a kattintások számítanak (a szerző példájában egy nehézkes riportfelület), a Teach a task funkcióval meg is mutathatod a Botnak a böngészős lépéseket, és átnézheted a belőle készült skillt. A dokumentáció szerint ezt fokozatosan kapcsolják be; ha nem látod, kérd meg a Botot, hogy írásos utasításból és az elvégzett feladatból készítsen skillt. (<a href="${docs.skills}">Skills and routines</a>) A szerző szerint egy sikeres bemutató csak kiinduló módszer, ezért próbáld ki egy másik, biztonságos példán is.`,
+      },
+      { type: "h2", text: "Routine a megbízható folyamatból" },
+      {
+        type: "p",
+        html: `A dokumentáció szerint a routine-t attól a Bottól kérd, amelyiknek a feladat a dolga, és nézd meg az ütemezést, az időzónát és a következő futást. A háttérben futó routine-ok akkor is futhatnak, ha a laptopod le van csukva. (<a href="${docs.skills}">Skills and routines</a>) A szerző routine-kérése:`,
+      },
+      {
+        type: "prompt",
+        label: "Tony Wood: a routine, eredeti",
+        code: "Every weekday at 07:30 Europe/London, check for partnership meetings in the next two working days. Run our meeting-preparation skill for meetings without a current brief. Leave the result in this conversation and our agreed folder. Report missing sources. Keep any messages or changes to shared records for my approval.",
+        caption: `Forrás: ${c("wood")}, ${src.wood.date} (közösségi forrás), a cikk 8. szakasza. Szó szerint. <strong>Időzóna: a szerző Europe/London időzónát ír; magyar használatnál írd helyette, hogy Europe/Budapest.</strong>`,
+      },
+      {
+        type: "p",
+        html: `A szerző szerint az aktuális összefoglaló (current brief) fogalmát a skillben pontosan meg kell határozni: melyik megbeszélésről van szó, mikor készült az összefoglaló, és mi változott azóta. Így nem gyűlnek egymás mellé ismétlődő összefoglalók.`,
+      },
+      {
+        type: "p",
+        html: `Mielőtt az ütemezésre hagyatkoznál, nézz meg egy tesztfuttatást. A dokumentáció szerint a tesztfuttatás valódi munkát végez, ezért biztonságos bemenettel próbáld. Két ütemezett futás között legalább öt percnek el kell telnie, és routine-onként a 20 legutóbbi futás adatai maradnak meg, a sikertelenekkel együtt. (<a href="${docs.skills}">Skills and routines</a>) A routine létrehozását a <a href="/5-nap/4-nap-skill-routine/">4. napon</a> mutattuk meg, a gyakoriságról a <a href="/halado/rutinok-ritmusa/">Rutinok okosan</a> oldal szól.`,
+      },
+      { type: "h2", text: "Ha egy esemény indítja" },
+      {
+        type: "p",
+        html: `Az ütemezés egy adott időpontban indít, az esemény akkor, amikor valami történik. A dokumentáció szerint a Cursor-fiók integrációi egy eseményre, például egy Slack-üzenetre vagy egy GitHub-értesítésre is elindíthatnak egy routine-t; ezek nem azonosak a Slack- és GitHub-pluginnal, és saját bekötést kérhetnek. (<a href="${docs.skills}">Skills and routines</a>) A szerző két óvatossági szabályt ad: minden beérkező kérés kapjon állandó azonosítót, és új munka előtt a Bot nézze meg, van-e már ilyen; a beérkező szöveget pedig adatként kell kezelni, nem utasításként, vagyis egy űrlapon beküldött szöveg ne adhasson a Botnak új utasítást vagy hozzáférést.`,
+      },
+      { type: "h2", text: "Másolás, törlés, elrejtés" },
+      {
+        type: "p",
+        html: `A cikk arra is figyelmeztet, hogy nézd meg, mit viszel át, amikor egy Botot másolsz vagy megosztasz. A dokumentáció szerint egy megosztott Bot hozzáadása másolatot készít a fogadó fiókjában, de nem adja át a gépedet, a belépéseidet és a beszélgetéseidet. A Duplicate más: a profilt, a beállításokat, a bekapcsolt skilleket, a routine-okat és az avatart viszi, a beszélgetést, a tanult memóriát és a csatolmányokat nem. (<a href="${docs.bots}">Create and manage Bots</a>) Hogy egy megosztott sablonból mi jön át, arról külön oldalunk szól: <a href="/halado/sablon-mi-jon-at/">Mi jön át egy sablonból?</a>`,
+      },
+      {
+        type: "p",
+        html: `A dokumentáció szerint a közös gép fájljai és belépései nincsenek Botonként elkülönítve, és egy Bot törlése után is a gépen maradhatnak; egy Bot elrejtése pedig nem szünetelteti sem a Botot, sem a routine-jait. (<a href="${docs.bots}">Create and manage Bots</a>) A szerző ezért azt javasolja, hogy amikor egy munka véget ér, a kapcsolatokat szándékosan bontsd, a munkaadatokat pedig szándékosan töröld.`,
+      },
+      { type: "h2", text: "Jóváhagyás, nyilvántartás és költség" },
+      {
+        type: "p",
+        html: `A szerző szerint a fontos határok ne csak a kérésben, hanem a beállításokban is szerepeljenek. A dokumentáció szerint az Ask first szabályok mindig megállítják a rájuk illő műveleteket, az Auto Review pedig modellalapú, és a legkisebb jogosultság elvét kiegészíti, nem helyettesíti. (<a href="${docs.approve}">Approvals</a>) A szerző a külső üzeneteket, a költést és a fontos nyilvántartások módosítását emberi jóváhagyáshoz kötné. A szabályok beállítását az <a href="/5-nap/5-nap-masodik-bot-biztonsag/">5. napon</a> mutattuk meg.`,
+      },
+      {
+        type: "p",
+        html: `A fontos munkák mellé a szerző egy egyszerű nyilvántartást is vezetne: kérés, felelős, források, állapot, link az eredményre, és ami rád vár. Az állapotok legyenek pontosak: a „brief kész” nem ugyanaz, mint a „brief ellenőrizve”, és az „előkészített válasz” sem ugyanaz, mint az „elküldött levél”.`,
+      },
+      {
+        type: "p",
+        html: `Költség: a Cursor leírása szerint a keret hetente frissül, utána a többlethasználat az előre fizetett kreditből megy, vagy ha be van kapcsolva, on-demand használatként folytatódhat. (<a href="${docs.plans}">Grok Bot plans</a>) A szerző azt javasolja, hogy gyakori routine-ok előtt állítsd be a költéskorlátot. Értesítést Botonként kapcsolhatsz be arra az esetre, ha a Bot végzett vagy válaszra vár. (<a href="${docs.settings}">Settings and notifications</a>)`,
+      },
+      { type: "h2", text: "Amit nem ellenőriztünk" },
+      {
+        type: "ul",
+        items: [
+          `A promptokat és a megbeszélés-előkészítő folyamatot nem próbáltuk ki; a szerző szerint ezek szerkesztői javaslatok, nem tesztelt eredmények.`,
+          `Nate Herk videóját nem néztük meg. A cikk a videó alapján a közös és az egyéni memóriát, valamint a hosszú beszélgetések automatikus rövidítését (compaction) is említi; ezt a dokumentációban nem találtuk, és nem ellenőriztük.`,
+          `Hogy a Teach a task a te fiókodban elérhető-e: a dokumentáció szerint fokozatosan kapcsolják be.`,
+          `Hogy mennyi heti keretet fogyaszt egy hétköznaponként futó routine: ez fióktól és csomagtól függ.`,
+        ],
+      },
+      {
+        type: "note",
+        html: `<strong>Forrás és szerző.</strong> Ez az oldal a Botkezdő saját útmutatója, nem hivatalos x.ai anyag: Tony Wood 2026-10-17-én közzétett, „Grok Bot: A Practical Guide to Getting Work Done” című blogcikkének rövid magyar összefoglalója, nem saját módszer és nem fordítás. A cikk minden joga a szerzőé (© 2026 Tony Wood. All rights reserved.), ezért saját szavainkkal foglaljuk össze, és csak négy promptot idézünk szó szerint. A teljes cikket az eredeti oldalon olvashatod: <a href="${src.wood.url}">${src.wood.url}</a>. Lekérve: ${woodFetched}.`,
+      },
+      {
+        type: "done",
+        items: [
+          "Van egy Botod egyetlen feladatra, a leírásában a határokkal; egyszer lefuttattad és kijavítottad, a bevált módszert skillként mentetted, és routine-t csak tesztfuttatás után, Europe/Budapest időzónával állítottál be.",
+        ],
+      },
+    ],
+    sources: [src.wood, src.dBotsWood, src.dAppsWood, src.dSkillsWood, src.dApproveWood, src.dTeamsWood, src.dSettingsWood, src.plansWood],
+  },
+  {
+    slug: "sablon-mi-jon-at",
+    title: "Sablon átvétele: mi jön át egy megosztott Botból, és mi marad a készítőnél",
+    nav: "Mi jön át egy sablonból?",
+    card: "Egy közösségi X-poszt és a dokumentáció alapján: mit visz át egy megosztott Bot-sablon, mit nem, és mit kell magadnak beállítanod.",
+    description:
+      "Megosztott Grok Bot-sablon átvétele: @ericosiu X-posztjának magyar összefoglalója a hivatalos dokumentációval összevetve. Mi jön át (leírás, skillek, routine-ok), mi nem (gép, belépések, beszélgetés), mi a helyzet a memóriával és a jóváhagyásokkal, saját ellenőrzőlistával. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "Ez az oldal egy más által írt X-poszt rövid magyar összefoglalója, a hivatalos dokumentációval kiegészítve. @ericosiu 2026-10-14-én azt írta le, mi jön át, amikor valaki átveszi az általuk nyilvánosan megosztott AEO/SEO Bot sablonját, és mi marad náluk. Itt azt nézzük meg, mit mond erről a dokumentáció, és mit érdemes magadnak beállítanod.",
+    audience: "Annak szól, aki egy más által megosztott Bot-sablont venne át, vagy a saját Botját osztaná meg, és már végigment a Kezdő 5 napon.",
+    minutes: "Kb. 10 perc az oldal elolvasására, a mi becslésünk",
+    fetched: templateFetched,
+    steps: [
+      {
+        name: "Nézd meg az előnézetet",
+        text: "A sablon x.ai-oldalán olvasd el a nevet, a leírást, a skilleket és a routine-okat, mielőtt bármit hozzáadnál.",
+      },
+      {
+        name: "Add to Grok Bot: saját másolat",
+        text: "A hozzáadás másolatot készít a fiókodban. Más által készített sablonnál a gombbal a harmadik féltől származó Botokra vonatkozó feltételeket is elfogadod.",
+      },
+      {
+        name: "A saját forrásaid, csak a szükséges connectorral",
+        text: "A sablon nem hozza a készítő belépéseit: a saját oldaladat és forrásaidat neked kell bekötnöd. Csak azt a connectort kapcsold be, amelyre a munkához szükség van.",
+      },
+      {
+        name: "Routine-ok és saját Ask first szabály",
+        text: "Nézd át az átjött routine-okat, mielőtt futni hagynád őket (a tesztfuttatás valódi munkát végez), és állíts be saját Ask first szabályt a küldésre, az írásra és a közzétételre.",
+      },
+      {
+        name: "Ha te osztasz meg",
+        text: "Mielőtt a saját Botodat megosztanád, vedd ki a leírásból és a skillekből az API-kulcsokat, a belső URL-eket és az ügyféladatokat.",
+      },
+    ],
+    blocks: [
+      {
+        type: "note",
+        html: `<strong>Összefoglaló, nem saját anyag.</strong> Ez az oldal ${c("tplPost")} X-posztját foglalja össze magyarul, saját szavainkkal; nem fordítás. Közzétéve: ${src.tplPost.date}. A posztban nincs prompt, ezért ezen az oldalon sem idézünk promptot; helyette egy saját ellenőrzőlistát adunk. A poszt állításait a hivatalos dokumentációval vetettük össze. Poszt: <a href="${src.tplPost.url}">${src.tplPost.url}</a>. Lekérve: ${templateFetched}.`,
+      },
+      { type: "h2", text: "Mit mond a poszt?" },
+      {
+        type: "p",
+        html: `A szerző szerint aki átveszi az AEO/SEO Botjukat, az a munkamódszerüket kapja meg, a hozzáféréseiket nem. Egy Grok Bot-sablon négy dolgot visz át: a Bot nevét és munkaleírását, a skilljeit (a lépésről lépésre követett módszereket), a routine-jait (az ütemezetten, kérés nélkül futó feladatokat) és az identitását. Nem viszi át a számítógép-hozzáférésüket, a belépéseiket, a beszélgetéseiket és azt, amit az eredeti Bot megjegyzett. A saját oldaladat és forrásaidat te kötöd be, így a Bot a te tartalmadból tanul, nem az övékből.`,
+      },
+      {
+        type: "p",
+        html: `A szerző azt írja, ezért meri nyilvánossá tenni a sablont: a folyamat és a korlátai átmennek, köztük az a szabály, hogy egy oldal sem kerül ki, amíg egy szerkesztő jóvá nem hagyja, a privát adat pedig náluk marad. Azt is írja, hogy egy kipróbált folyamatból gyorsabb indulni, mint egy üres promptból; ez a véleménye, nem mért adat.`,
+      },
+      {
+        type: "p",
+        html: `A szerző a „fork” szót használja. A dokumentáció ehelyett sablonról (template), hozzáadásról (Add to Grok Bot), importálásról és másolásról (Duplicate) beszél, ezért mi is ezeket a kifejezéseket használjuk. A poszt képén szereplő, parancssorra emlékeztető sor díszítés: a dokumentáció nem ír ilyen parancsról. A sablont a hivatalos x.ai-oldalán, az Add to Grok Bot gombbal lehet hozzáadni: <a href="${src.tplPage.url}">AEO/SEO Bot by Eric</a>. Az oldal maga figyelmeztet: „This AI bot was created by a third-party user, not by SpaceXSI. It may act on your behalf.”`,
+      },
+      { type: "h2", text: "Mit mond a dokumentáció?" },
+      {
+        type: "p",
+        html: `A dokumentáció szerint a megosztási link előnézete a Bot megosztott beállításait mutatja: az identitását, a leírását, a skilljeit és a routine-jait. A hozzáadásról ezt írja: „Adding a shared Bot creates a copy on the recipient's account. It does not give them your computer, logins, or conversation history.” A GYIK ugyanezt mondja, és hozzáteszi, hogy a hozzáadással a fogadó elfogadja a harmadik féltől származó Botokra vonatkozó feltételeket. (<a href="${docs.bots}">Create and manage Bots</a>, <a href="${docs.faq}">FAQ</a>) A saját Bot másolása (Duplicate) más szabályokkal működik:`,
+      },
+      {
+        type: "table",
+        caption: "Mi jön át és mi nem, a dokumentáció szerint (lekérve 2026-10-22)",
+        headers: ["Mód", "Átjön", "Nem jön át"],
+        rows: [
+          [
+            "Megosztott sablon (Add to Grok Bot)",
+            `Identitás, leírás, skillek, routine-ok; a fogadó fiókjában saját másolat készül. (<a href="${docs.bots}">Bots</a>)`,
+            `A készítő gépe, belépései és beszélgetései. (<a href="${docs.bots}">Bots</a>, <a href="${docs.faq}">FAQ</a>)`,
+          ],
+          [
+            "Duplicate (saját Bot másolása)",
+            `Profil, beállítások, bekapcsolt skillek, routine-ok, avatar. (<a href="${docs.bots}">Bots</a>)`,
+            `Beszélgetés, tanult memória, csatolmányok. (<a href="${docs.bots}">Bots</a>)`,
+          ],
+        ],
+      },
+      {
+        type: "p",
+        html: `A Team Bots oldal táblázata szerint egy nyilvános sablon minden másolatát az új tulajdonosa tartja karban, külön-külön. (<a href="${docs.teamBots}">Team Bots</a>)`,
+      },
+      { type: "h2", text: "A memória pontosítása" },
+      {
+        type: "p",
+        html: `A poszt szerint semmi nem jön át abból, amit az eredeti Bot megjegyzett. A dokumentáció ezt sablonra szó szerint nem mondja ki: a tanult memória kizárását a Duplicate-nél írja. A Team Bots oldal táblázata szerint nyilvános sablonnál a memória „Starts from what the template shares, then separate per copy”, vagyis abból indul, amit a sablon megoszt, és utána másolatonként külön él. (<a href="${docs.teamBots}">Team Bots</a>) Ami a sablon leírásában és skilljeiben szövegként benne van, az tehát átjön; hogy a készítő Botjának tanult memóriájából pontosan mennyi, azt nem tudjuk (lásd lent).`,
+      },
+      { type: "h2", text: "A leírt szabály átjön, a beállított védelem nem" },
+      {
+        type: "p",
+        html: `A szerző szerint a korlátok is átmennek, például hogy egy oldal sem kerül ki szerkesztői jóváhagyás nélkül. A sablonoldal leírása szerint a Bot a piszkozatokat közzététel nélkül hagyja, amíg be nem gépelsz egy pontos közzétételi sort („leaves drafts unpublished until you type an exact publish line”). (<a href="${src.tplPage.url}">AEO/SEO Bot by Eric</a>) Ami így, szövegként a leírásban vagy egy skillben szerepel, az a sablonnal együtt átjön.`,
+      },
+      {
+        type: "note",
+        html: `<strong>Ez a mi következtetésünk:</strong> a leírt szabály még nem beállított védelem. A dokumentáció szerint „Personal Auto-review rules are stored on the current desktop and synced to its Grok Bot computer”, vagyis a személyes Auto-review szabályok az asztali gépen és a Grok Bot-gépen vannak, nem a Botban. Ebből arra következtetünk, hogy egy sablon nem hozza magával a készítő jóváhagyási szabályait: az Auto-review szabályokat (például Ask first) az átvevőnek magának kell beállítania. Az Ask first szabályok a dokumentáció szerint mindig megállítják a rájuk illő műveleteket. (<a href="${docs.approve}">Approvals</a>) A beállításukat az <a href="/5-nap/5-nap-masodik-bot-biztonsag/">5. napon</a> mutattuk meg.`,
+      },
+      { type: "h2", text: "Lépések" },
+      { type: "steps" },
+      { type: "h2", text: "Ellenőrzőlista egy sablon átvételéhez" },
+      {
+        type: "p",
+        html: `<strong>Saját ellenőrzőlistánk, nem a posztból és nem a dokumentációból.</strong> A fenti, dokumentált tényekből raktuk össze; a sablont magát nem vettük át.`,
+      },
+      { type: "p", html: `<strong>Ami átjön: nézd át, mielőtt használod.</strong>` },
+      {
+        type: "ul",
+        items: [
+          `A leírás: kinek dolgozik a Bot, mit csinál, hol áll meg. Igaz-e ez rád is?`,
+          `A skillek: milyen lépéseket követ, és melyik ír, küld vagy tesz közzé valamit.`,
+          `A routine-ok: mikor futnak, milyen időzónában, és mit csinálnak.`,
+        ],
+      },
+      { type: "p", html: `<strong>Ami nem jön át: ezt neked kell pótolnod.</strong>` },
+      {
+        type: "ul",
+        items: [
+          `A készítő belépései és connectorai. A saját oldaladhoz és forrásaidhoz a te fiókodban kell bekötnöd a connectort vagy belépned.`,
+          `A készítő beszélgetései és gépe. A Bot a korábbi munkájukat nem ismeri, csak azt, ami a leírásban és a skillekben szerepel.`,
+          `A készítő jóváhagyási beállításai (ez a mi következtetésünk, lásd fent).`,
+        ],
+      },
+      { type: "p", html: `<strong>Amit magadnak kell beállítanod.</strong>` },
+      {
+        type: "ul",
+        items: [
+          `Csak a szükséges connectort kapcsold be. A telepített connector fiókszintű, vagyis minden személyes Botodnál elérhető. (<a href="${docs.apps}">Use the computer and apps</a>)`,
+          `Ask first szabályt a küldésre, az írásra és a közzétételre, mielőtt a routine-ok futni kezdenek.`,
+          `Egy tesztfuttatást biztonságos bemenettel: a dokumentáció szerint ez valódi munkát végez. (<a href="${docs.skills}">Skills and routines</a>)`,
+        ],
+      },
+      {
+        type: "note",
+        html: `<strong>Saját megjegyzésünk, nem a forrásból: az átvett routine a te fiókodban fut.</strong> Egy átvett sablon routine-jai az átvétel után a te fiókodban, a te connectoraiddal futhatnak. Mielőtt bekapcsolod őket, nézd át, mit csinálnak, és az írási, küldési és közzétételi lépésekhez kérj jóváhagyást. A sablonoldal is jelzi: „It may act on your behalf.”`,
+      },
+      { type: "h2", text: "Ha te osztod meg a saját Botodat" },
+      {
+        type: "p",
+        html: `A dokumentáció szerint a megosztási linknél választhatsz, ki nyithatja meg: Public link vagy Team-only. Megosztás előtt pedig ezt kéri: „Remove API keys, internal URLs, customer data, and anything else you would not put in a public document before you share.” (<a href="${docs.bots}">Create and manage Bots</a>) A poszt szerzője ugyanezt a szétválasztást írja le: a folyamatot megosztotta, a hozzáféréseket és az adatokat nem.`,
+      },
+      { type: "h2", text: "Amit nem ellenőriztünk" },
+      {
+        type: "ul",
+        items: [
+          `Nem vettük át az AEO/SEO Bot sablont, így azt sem láttuk, pontosan mi jön át vele.`,
+          `Hogy az átvett routine-ok bekapcsolva vagy szüneteltetve érkeznek-e: a dokumentáció erről nem ír.`,
+          `A „so it behaves the way ours does” állítást: a viselkedés a saját forrásaidtól és connectoraidtól is függ.`,
+          `Hogy a sablon pontosan mennyit visz át a készítő Botjának tanult memóriájából: a dokumentáció szerint a másolat memóriája abból indul, amit a sablon megoszt.`,
+        ],
+      },
+      {
+        type: "note",
+        html: `<strong>Forrás és szerző.</strong> Ez az oldal a Botkezdő saját útmutatója, nem hivatalos x.ai anyag: @ericosiu 2026-10-14-én 16:00-kor (budapesti idő) közzétett X-posztjának rövid magyar összefoglalója, a hivatalos dokumentációval kiegészítve; nem saját módszer és nem fordítás. A szerző válaszában egy webinár-regisztráció és egy harmadik féltől származó sablonoldal linkje is szerepel; ezeket nem linkeljük, a sablont a hivatalos x.ai-oldalán találod. Poszt: <a href="${src.tplPost.url}">${src.tplPost.url}</a>. Sablonoldal: <a href="${src.tplPage.url}">${src.tplPage.url}</a>. Lekérve: ${templateFetched}.`,
+      },
+      {
+        type: "done",
+        items: [
+          "Átnézted a sablon leírását, skilljeit és routine-jait, a saját forrásaidat kötötted be, a küldéshez, az íráshoz és a közzétételhez saját Ask first szabályt állítottál be, és tudod, mi marad a készítőnél.",
+        ],
+      },
+    ],
+    sources: [src.tplPost, src.tplPage, src.dBotsTpl, src.dFaqTpl, src.dTeamBotsTpl, src.dApproveTpl, src.dAppsTpl, src.dSkillsTpl],
   },
 ];
 
