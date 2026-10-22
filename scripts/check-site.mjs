@@ -36,6 +36,7 @@ const required = [
   "halado/nyomtato-beallitas/index.html",
   "halado/feladattol-rutinig/index.html",
   "halado/sablon-mi-jon-at/index.html",
+  "halado/heti-keret-sporolas/index.html",
   "forrasok/index.html",
   "rolunk/index.html",
   "szponzoracio/index.html",

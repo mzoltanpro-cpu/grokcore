@@ -12,6 +12,7 @@ const seoFetched = "2026-10-20";
 const printerFetched = "2026-10-21";
 const woodFetched = "2026-10-22";
 const templateFetched = "2026-10-22";
+const kanikaFetched = "2026-10-22";
 
 export type AdvancedSource = {
   title: string;
@@ -168,6 +169,25 @@ const src = {
   dApproveTpl: { title: "Approvals, security, and privacy (docs.x.ai)", url: docs.approve, author: "docs.x.ai", date: `lekérve ${templateFetched}`, kind: "hivatalos" },
   dAppsTpl: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: `lekérve ${templateFetched}`, kind: "hivatalos" },
   dSkillsTpl: { title: "Skills and routines (docs.x.ai)", url: docs.skills, author: "docs.x.ai", date: `lekérve ${templateFetched}`, kind: "hivatalos" },
+  kanika: {
+    title: "„How To Make Your Grok Bot Weekly Limit Last 8x Longer (Full Setup + Prompts)” (X-cikk, angol)",
+    url: "https://x.com/KanikaBK/status/2112829012515160139",
+    author: "Kanika (@KanikaBK)",
+    date: "2026-10-21 10:51 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  xsPricingK: { title: "The X Subscription: Pricing (docs.x.ai)", url: docs.xsPricing, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  xsGrokBotK: { title: "The X Subscription: Grok Bot (docs.x.ai)", url: docs.xsGrokBot, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  xsSpendingCapsK: { title: "The X Subscription: Spending caps (docs.x.ai)", url: docs.xsSpendingCaps, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  xsExtraUsageK: { title: "The X Subscription: Extra usage (docs.x.ai)", url: docs.xsExtraUsage, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  plansK: { title: "Grok Bot plans (cursor.com)", url: docs.plans, author: "cursor.com", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  faqCursorK: { title: "Grok Bot FAQs (cursor.com)", url: docs.faqCursor, author: "cursor.com", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  routinesHelpK: { title: "Grok Bot routines (cursor.com)", url: docs.routinesHelp, author: "cursor.com", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  modelsHelpK: { title: "Grok Bot models (cursor.com)", url: docs.modelsHelp, author: "cursor.com", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  dOverviewK: { title: "Grok Bot overview (docs.x.ai)", url: docs.overview, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  dSettingsK: { title: "Settings and notifications (docs.x.ai)", url: docs.settings, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  dAppsK: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  dFaqK: { title: "Frequently asked questions (docs.x.ai)", url: docs.faq, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
 } satisfies Record<string, AdvancedSource>;
 
 /** Rövid hivatkozás a szövegben: szerző + link. */
@@ -1188,6 +1208,209 @@ Never bypass cartridge or ink checks, never flash third-party firmware, never si
       },
     ],
     sources: [src.tplPost, src.tplPage, src.dBotsTpl, src.dFaqTpl, src.dTeamBotsTpl, src.dApproveTpl, src.dAppsTpl, src.dSkillsTpl],
+  },
+  {
+    slug: "heti-keret-sporolas",
+    title: "Spórolj a heti kerettel: mérés, pontos első üzenet, takarékos routine-ok",
+    nav: "Heti keret spórolás",
+    card: "Egy közösségi X-cikk összefoglalója: hogyan mérd, mennyit fogyaszt egy feladat, és hogyan fogyasszon kevesebbet pontos első üzenettel, rövid chatekkel, takarékos routine-okkal és connectorokkal.",
+    description:
+      "Grok Bot heti keret takarékosan: Kanika (@KanikaBK) X-cikkének magyar összefoglalója a hivatalos dokumentációval összevetve. Mérés előtte és utána, pontos első üzenet, egy chat egy munka, routine-ok átnézése, connector a böngésző előtt, költéskorlát. Négy eredeti prompttal. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "Ez az oldal egy más által írt X-cikk rövid magyar összefoglalója, nem saját módszer. Kanika (@KanikaBK) 2026-10-21-én azt írta le, hogyan fogyasztott ugyanaz a feladat kevesebbet a heti keretéből, miután megváltoztatta, hogyan adja ki a munkát a Botnak. A cikk címe 8x hosszabb keretet ígér, de a szerző saját számai (75% helyett 37%) egyetlen feladaton nagyjából kétszeres különbséget mutatnak. Mi szorzót nem ígérünk, és saját mérést nem végeztünk.",
+    audience: "Annak szól, akinek a heti kerete a hét vége előtt elfogy, vagy aki tudni szeretné, mennyit fogyasztanak a feladatai, és már végigment a Kezdő 5 napon.",
+    minutes: "Kb. 15 perc az oldal elolvasására, a mi becslésünk",
+    fetched: kanikaFetched,
+    steps: [
+      {
+        name: "Nézd meg a heti keretedet",
+        text: "A Grok Botban a Settings → Usage & Billing alatt, weben a grok.com/dashboard oldal Usage részén. Régebbi előfizetésnél a cursor.com/dashboard oldalon.",
+      },
+      {
+        name: "Mérj egy valódi feladaton",
+        text: "Válassz egy hetente ismétlődő feladatot, és jegyezd fel a keret állását előtte és utána, előbb a megszokott módon, aztán a lenti beállításokkal. Mérés előtt szüneteltesd a routine-okat, és csak piszkozatot kérj.",
+      },
+      {
+        name: "Egy pontos első üzenet",
+        text: "Mondd meg az első üzenetben, mit csináljon, hol, milyen háttérrel, és mi számít késznek.",
+      },
+      {
+        name: "Egy chat, egy munka",
+        text: "Egy munka végén mentesd el egy fájlba a rövid összefoglalóját, és a következő munkát új chatben kezdd, ezzel a fájllal.",
+      },
+      {
+        name: "Nézd át a routine-okat",
+        text: "Kérj listát a routine-jaidról, ritkítsd őket, szűkítsd a triggereket, és szüneteltesd, amire ezen a héten nincs szükséged.",
+      },
+      {
+        name: "Connector a böngésző előtt, és költéskorlát",
+        text: "Ahol van connector, azt használja a Bot, ne a böngészőt. A fizetős többlethasználatra állíts havi korlátot, vagy hagyd kikapcsolva az Auto Top-upot.",
+      },
+    ],
+    blocks: [
+      {
+        type: "note",
+        html: `<strong>Összefoglaló, nem saját anyag.</strong> Ez az oldal ${c("kanika")} „How To Make Your Grok Bot Weekly Limit Last 8x Longer (Full Setup + Prompts)” című X-cikkét foglalja össze magyarul, saját szavainkkal; nem fordítás. Közzétéve: ${src.kanika.date}. A cikkből négy promptot (és egy rövid kiegészítőt) idézünk szó szerint, angolul. <strong>A címben szereplő 8x-et nem vesszük át:</strong> a szerző saját mérése szerint ugyanaz a feladat a heti keret 75%-a helyett 37%-ot fogyasztott, ami nagyjából kétszeres különbség, egyetlen feladaton. A cikk maga is azt írja, hogy mérés nélkül a „8x” csak találgatás. Cikk: <a href="${src.kanika.url}">${src.kanika.url}</a>. Lekérve: ${kanikaFetched}.`,
+      },
+      { type: "h2", text: "Hogyan működik a heti keret?" },
+      {
+        type: "p",
+        html: `Az alábbiak csak a The X Subscriptionre igazak. A dokumentáció szerint a Grok Bot a Premium, a Super és az Ultra csomagban van benne, a Plusban nincs. Listaárak: Premium 30 USD/hó, Super 100 USD/hó, Ultra 200 USD/hó; éves fizetésnél havonta 25, 84, illetve 167 USD. A listaár nem tartalmazza az adót („List prices do not include sales tax”), és az árak változhatnak; a pontos, aktuális árat a <a href="${docs.xsPricing}">Pricing</a> oldalon nézd meg. (lekérve ${kanikaFetched}) A régebbi Cursor-, SuperGrok- és X Premium-előfizetések tovább élnek, és ezeknél a keret és a használat felülete eltér: a dokumentáció szerint váltás előtt a használatot a cursor.com/dashboard oldalon nézed. (<a href="${docs.xsGrokBot}">The X Subscription: Grok Bot</a>)`,
+      },
+      {
+        type: "p",
+        html: `A Cursor súgója szerint a Grok Bot ugyanabból a heti keretből fogyaszt, mint a Cursor és a Grok appok („not a separate Grok Bot meter”), és a keret hetente frissül. Ha elfogy, a többlethasználat az előre fizetett kreditből megy. (<a href="${docs.plans}">Grok Bot plans</a>) A próbakeretnél a súgó ki is mondja, hogy a fogyasztást a lépések és a tokenek mérik, nem az elküldött üzenetek száma; általánosabban pedig azt írja, hogy a fogyasztás attól függ, milyen munkát adsz a Botnak, és mennyi erőfeszítést kíván egy feladat. (<a href="${docs.plans}">Grok Bot plans</a>, <a href="${docs.modelsHelp}">Grok Bot models</a>) Modellt nem választhatsz: „Cursor manages model selection, so there is no model picker.” (<a href="${docs.settings}">Settings and notifications</a>) A szerző ebből azt vonja le, hogy minden megtakarítás abból jön, hogyan adod ki a munkát.`,
+      },
+      { type: "h2", text: "Lépések" },
+      { type: "steps" },
+      { type: "h2", text: "Először mérj" },
+      {
+        type: "p",
+        html: `A szerző szerint ezt a lépést szokták kihagyni. A használatot a Grok Botban a Settings → Usage &amp; Billing alatt látod, amely a dokumentáció szerint a heti keretet és a jogosult fiókoknál az on-demand használatot mutatja (<a href="${docs.settings}">Settings and notifications</a>); weben a grok.com/dashboard oldal Usage részén (<a href="${docs.plans}">Grok Bot plans</a>).`,
+      },
+      {
+        type: "p",
+        html: `A módszere: válassz egy valódi, hetente ismétlődő feladatot (az ő példája az olvasatlan levelek összefoglalása és válaszpiszkozatok). Jegyezd fel a keret állását, futtasd a feladatot a megszokott módon (egy régi, hosszú chatben, homályos kéréssel), és jegyezd fel újra; a különbség a feladat ára (a táblázatban: Alap). Utána ugyanezt a lenti beállításokkal (a táblázatban: Új). Mindkettőt háromszor, és vedd az átlagot, mert egy futás félrevezethet. Mérés előtt szüneteltesd a routine-jaidat, különben más munka is belekeveredik a számokba.`,
+      },
+      {
+        type: "table",
+        caption: "Mérőtáblázat a szerző táblázata alapján, magyar fejlécekkel, üresen; az értékek a heti keret százalékában. Saját mérést nem végeztünk.",
+        headers: ["Futás", "Mód", "Előtte", "Utána", "Fogyott"],
+        rows: [
+          ["1", "Alap", "", "", ""],
+          ["2", "Alap", "", "", ""],
+          ["3", "Alap", "", "", ""],
+          ["1", "Új", "", "", ""],
+          ["2", "Új", "", "", ""],
+          ["3", "Új", "", "", ""],
+          ["Átlag", "Alap ÷ Új", "", "", "…x"],
+        ],
+      },
+      {
+        type: "p",
+        html: `A szerző szerint az eredmény a táblázat utolsó cellája, nem a cikk címe. Az ő száma, egyetlen feladatra: 75% helyett 37%, vagyis kb. 2x. Hogy ezt egy vagy három futásból számolta, a cikkből nem derül ki.`,
+      },
+      {
+        type: "note",
+        html: `<strong>Saját megjegyzésünk, nem a forrásból: a mérés valódi munka.</strong> A mérés maga is fogyasztja a keretet, és a Bot közben valódi munkát végez. Tesztnél csak piszkozatot kérj, küldést ne (a szerző példájában a válaszokból is csak piszkozat legyen). A routine-ok tesztfuttatásáról a súgó is azt írja: „A routine that never runs doesn't spend usage. Test does, because it performs the work.” (<a href="${docs.routinesHelp}">Grok Bot routines</a>) A connectorok minden Botodnál elérhetők, ezért csak azt kösd be, amire a feladathoz szükség van, és ha elég, csak olvasási hozzáféréssel. (<a href="${docs.apps}">Use the computer and apps</a>)`,
+      },
+      { type: "h2", text: "Egy pontos első üzenet" },
+      {
+        type: "p",
+        html: `A dokumentáció szerint egy jó feladat megmondja, mit csináljon a Bot, hol dolgozzon, milyen háttérrel, és milyen a kész munka: „This tells the Bot what to do, where to work, what context to pull in, and what finished work looks like.” (<a href="${docs.overview}">Overview</a>) A szerző szerint a homályos kérés kalandozásra készteti a Botot, a kalandozás pedig lépés, vagyis fogyasztás. Az ő sablonja:`,
+      },
+      {
+        type: "prompt",
+        label: "Kanika (@KanikaBK): első üzenet sablon, eredeti",
+        code: `Task: [what to do, in one line]
+Where: [which app or file, e.g. my Gmail, last 24 hours only]
+Use: [the context it needs, nothing more]
+Done when: [the exact output, e.g. a list of max 10 items, 1 line each]
+Stop after that. Don't research anything extra.
+If you get stuck twice, stop and ask me.`,
+        caption: `Forrás: ${c("kanika")}, ${src.kanika.date} (közösségi forrás), a cikk 2. lépése. Szó szerint. A szögletes zárójeles részeket cseréld ki a saját feladatodra.`,
+      },
+      { type: "h2", text: "Egy chat, egy munka" },
+      {
+        type: "p",
+        html: `A dokumentáció szerint a Bot megőrzi a tartós beállításokat, a szerepedet és a korábbi munkák összefoglalóit („Stable preferences, role context, and summaries of prior work.”). (<a href="${docs.overview}">Overview</a>) A szerző ebből arra jut, hogy a Botnak nincs szüksége a teljes régi chatre: egy chat, egy munka. Saját hibájaként írja, hogy egy hétig egyetlen óriási chatet használt. Egy munka végén ezt kéri:`,
+      },
+      {
+        type: "prompt",
+        label: "Kanika (@KanikaBK): munka-összefoglaló fájlba, eredeti",
+        code: `Save a short summary of this job to a file:
+what we did, the decisions, the file names, and the next step.
+Max 10 lines. Then tell me the file name.`,
+        caption: `Forrás: ${c("kanika")}, ${src.kanika.date} (közösségi forrás), a cikk 3. lépése. Szó szerint.`,
+      },
+      {
+        type: "prompt",
+        label: "Kanika (@KanikaBK): új chat a fájllal, eredeti",
+        code: `New job. Read [file name] first. That's all the context you need.
+Next step: [what to do now].`,
+        caption: `Forrás: ${c("kanika")}, ugyanott. Szó szerint; ezt az új chat első üzeneteként küldi.`,
+      },
+      {
+        type: "p",
+        html: `A szerző maga írja, hogy a dokumentáció nem ígéri meg, mennyit spórol egy új chat; ezért kell mérni. Hogy fájlba írt összefoglalóval hogyan építhetsz hosszabb távú tudásbázist, arról a <a href="/halado/masodik-agy/">Második agy</a> oldal szól.`,
+      },
+      { type: "h2", text: "Routine-ok: a csendes fogyasztás" },
+      {
+        type: "p",
+        html: `A Cursor súgója egyenesen kimondja: „Each run spends usage, so a routine that runs often spends more than one that runs rarely. An hourly schedule, a short interval, or a Slack trigger on a busy channel can use a week of usage in a day.” A Slack-triggernél azt kéri: „Keep the channel and phrase narrow.” Ha a heti keret a vártnál gyorsabban fogy, a súgó szerint szüneteltesd a nem szükséges routine-okat, mert ami nem fut, az nem fogyaszt. (<a href="${docs.routinesHelp}">Grok Bot routines</a>) A szerző konkrét ütemet is javasol (2–3 óránként vagy napi háromszor, nem tízpercenként); ez az ő javaslata, a dokumentáció ilyen számot nem ad. Hogy milyen gyakran fusson egy routine, mikor jobb egy esemény, és hogyan legyen a gyakori rutin előtt egy olcsó ellenőrzés, arról a <a href="/halado/rutinok-ritmusa/">Rutinok okosan</a> oldal szól részletesen.`,
+      },
+      {
+        type: "prompt",
+        label: "Kanika (@KanikaBK): routine-ok átnézése, eredeti",
+        code: `List all my routines. For each one show: what it does, how often it runs,
+and whether it actually found something useful in its last few runs.
+Then suggest a slower schedule or a narrow trigger for each one.
+Don't change anything until I say yes.`,
+        caption: `Forrás: ${c("kanika")}, ${src.kanika.date} (közösségi forrás), a cikk 4. lépése. Szó szerint. Az utolsó sor miatt a Bot csak javasol, a változtatásról te döntesz.`,
+      },
+      { type: "h2", text: "Connector a böngésző előtt" },
+      {
+        type: "p",
+        html: `A dokumentáció szerint ahol van connector, azt érdemes használni: „Prefer a connector when one is available: it is often more reliable than clicking through a website.” (<a href="${docs.apps}">Use the computer and apps</a>) A GYIK is strukturáltabbnak és megbízhatóbbnak nevezi („more structured and reliable”). (<a href="${docs.faq}">FAQ</a>) Hogy ez kevesebb lépést és így kevesebb fogyasztást jelent, az a szerző következtetése; a dokumentáció csak a megbízhatóságról ír. A connectorok bekötését a <a href="/5-nap/2-nap-appok-bekotese/">2. napon</a> mutattuk meg.`,
+      },
+      {
+        type: "prompt",
+        label: "Kanika (@KanikaBK): connector előbb, eredeti",
+        code: `For every task: use a connected app first.
+Only open the browser if there's no connector for it.
+Tell me when you had to use the browser, and why.`,
+        caption: `Forrás: ${c("kanika")}, ${src.kanika.date} (közösségi forrás), a cikk 6. lépése. Szó szerint.`,
+      },
+      { type: "h2", text: "Költéskorlát" },
+      {
+        type: "p",
+        html: `A szerző azt javasolja, hogy egy rossz hét ne lepjen meg a kártyaszámládon. A Cursor GYIK-je szerint a The X Subscriptionön „leave Auto Top-up off or set a monthly additional usage limit under Additional usage credits at grok.com/dashboard/billing”. (<a href="${docs.faqCursor}">Grok Bot FAQs</a>) A dokumentáció szerint az Auto Top-up nem kötelező, és csak akkor fut, ha bekapcsolod („Auto Top-up is optional and only runs after you enable it.”). (<a href="${docs.xsExtraUsage}">Extra usage</a>)`,
+      },
+      {
+        type: "p",
+        html: `Hogy a korlát megállítja-e a már futó feladatot, arról a két forrás mást mond, és mi nem döntjük el. A Cursor GYIK-je ugyanabban a válaszban, a régebbi Cursor-csomagok on-demand limitjéről szóló rész után ezt írja: „The cap does not stop a Bot in the middle of a run, so a running task can go a little past it.” (<a href="${docs.faqCursor}">Grok Bot FAQs</a>) A The X Subscription dokumentációja viszont így fogalmaz: „To put a hard stop on paid Additional Usage, set a monthly additional usage limit.” (<a href="${docs.xsSpendingCaps}">Spending caps</a>) A szerző a Cursor-súgót követi: szerinte egy futó munka kicsit túlmehet a korláton.`,
+      },
+      {
+        type: "p",
+        html: `A szerző pénzben is kiszámolja: ha ugyanabból a keretből kétszer annyi munka jön ki, nem kell a 30 dolláros Premiumról a 100 dolláros Superre váltania. Ez az ő saját döntése és számítása.`,
+      },
+      { type: "h2", text: "Amit nem ellenőriztünk" },
+      {
+        type: "ul",
+        items: [
+          `A szerző 75% → 37%-os mérését: egyetlen feladaton mérte, és nem derül ki, hány futásból. Azt sem, hogy a módszer nálad mennyit spórol; saját mérést nem végeztünk.`,
+          `Hogy egy új chat ténylegesen mennyivel kevesebbet fogyaszt: a dokumentáció erről nem ír.`,
+          `Hogy a connector használata mennyivel kevesebb lépést jelent, mint a böngésző: a dokumentáció csak megbízhatóbbnak nevezi.`,
+          `Hogy a The X Subscriptionön a havi additional usage limit megállítja-e a már futó feladatot: a Cursor-súgó szerint nem, a docs.x.ai „hard stop”-ot ír.`,
+          `A javasolt gyakoriságot (2–3 óránként, napi háromszor): ez a szerző javaslata.`,
+          `A magyarországi adóval növelt végösszeget: az árak listaárak, adó nélkül.`,
+        ],
+      },
+      {
+        type: "note",
+        html: `<strong>Forrás és szerző.</strong> Ez az oldal a Botkezdő saját útmutatója, nem hivatalos x.ai anyag: Kanika (@KanikaBK) 2026-10-21-én 10:51-kor (budapesti idő) közzétett X-cikkének rövid magyar összefoglalója, a hivatalos dokumentációval és a Cursor súgójával összevetve; nem saját módszer és nem fordítás. A teljes cikket és az összes promptot az eredeti posztban olvashatod: <a href="${src.kanika.url}">${src.kanika.url}</a>. Lekérve: ${kanikaFetched}.`,
+      },
+      {
+        type: "done",
+        items: [
+          "Tudod, hol látod a heti keretedet, kitöltötted a mérőtáblázatot egy valódi feladaton (piszkozatokkal), pontos első üzenettel és munkánként új chattel dolgozol, átnézted a routine-jaidat, és beállítottad a költéskorlátot.",
+        ],
+      },
+    ],
+    sources: [
+      src.kanika,
+      src.xsPricingK,
+      src.xsGrokBotK,
+      src.plansK,
+      src.modelsHelpK,
+      src.dSettingsK,
+      src.dOverviewK,
+      src.routinesHelpK,
+      src.dAppsK,
+      src.dFaqK,
+      src.faqCursorK,
+      src.xsExtraUsageK,
+      src.xsSpendingCapsK,
+    ],
   },
 ];
 
