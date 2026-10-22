@@ -895,7 +895,7 @@ Never bypass cartridge or ink checks, never flash third-party firmware, never si
       },
       {
         type: "p",
-        html: `Az alapokat itt nem ismételjük. A Bot létrehozását, az appok bekötését, a skillt és a routine-t a <a href="/5-nap/">Kezdő 5 napon</a> mutattuk meg (<a href="/5-nap/2-nap-appok-bekotese/">2. nap</a>: appok, <a href="/5-nap/3-nap-elso-feladat/">3. nap</a>: első feladat, <a href="/5-nap/4-nap-skill-routine/">4. nap</a>: skill és routine, <a href="/5-nap/5-nap-masodik-bot-biztonsag/">5. nap</a>: második Bot és jóváhagyások). Hogy milyen gyakran fusson egy routine, és mi legyen éjjel a jóváhagyásokkal, arról a <a href="/halado/rutinok-ritmusa/">Rutinok okosan</a> oldal szól. Ez az oldal azt mutatja meg, hogyan jut el egyetlen feladat egy teljes példán végig a routine-ig.`,
+        html: `Az alapokat itt nem ismételjük. A Bot létrehozását, az appok bekötését, a skillt és a routine-t a <a href="/5-nap/">Kezdő 5 napon</a> mutattuk meg (<a href="/5-nap/2-nap-appok-bekotese/">2. nap</a>: appok, <a href="/5-nap/3-nap-elso-feladat/">3. nap</a>: első feladat, <a href="/5-nap/4-nap-skill-routine/">4. nap</a>: skill és routine, <a href="/5-nap/5-nap-masodik-bot-biztonsag/">5. nap</a>: második Bot és jóváhagyások). Hogy milyen gyakran fusson egy routine, és mi legyen éjjel a jóváhagyásokkal, arról a <a href="/halado/rutinok-ritmusa/">Rutinok okosan</a> oldal szól. Ez az oldal egyetlen, végigvitt példán mutatja meg, hogyan jut el egy feladat a routine-ig.`,
       },
       { type: "h2", text: "Lépések" },
       { type: "steps" },
@@ -1363,7 +1363,7 @@ Tell me when you had to use the browser, and why.`,
       { type: "h2", text: "Költéskorlát" },
       {
         type: "p",
-        html: `A szerző azt javasolja, hogy egy rossz hét ne lepjen meg a kártyaszámládon. A Cursor GYIK-je szerint a The X Subscriptionön „leave Auto Top-up off or set a monthly additional usage limit under Additional usage credits at grok.com/dashboard/billing”. (<a href="${docs.faqCursor}">Grok Bot FAQs</a>) A dokumentáció szerint az Auto Top-up nem kötelező, és csak akkor fut, ha bekapcsolod („Auto Top-up is optional and only runs after you enable it.”). (<a href="${docs.xsExtraUsage}">Extra usage</a>)`,
+        html: `A szerző azt javasolja, hogy egy rosszul sikerült hét ne okozzon meglepetést a bankkártyádon. A Cursor GYIK-je szerint a The X Subscriptionön „leave Auto Top-up off or set a monthly additional usage limit under Additional usage credits at grok.com/dashboard/billing”. (<a href="${docs.faqCursor}">Grok Bot FAQs</a>) A dokumentáció szerint az Auto Top-up nem kötelező, és csak akkor fut, ha bekapcsolod („Auto Top-up is optional and only runs after you enable it.”). (<a href="${docs.xsExtraUsage}">Extra usage</a>)`,
       },
       {
         type: "p",
