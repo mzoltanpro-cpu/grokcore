@@ -2784,5 +2784,153 @@
     "skills": [],
     "routines": [],
     "integrations": []
+  },
+  {
+    "slug": "commitments",
+    "name": "Commitments",
+    "author": "Sam Lambert",
+    "handle": "@samlambert",
+    "postUrl": "https://x.com/samlambert/status/2099584402045210992",
+    "postedAt": "2026-09-14T19:41:44Z",
+    "templateUrl": "https://x.ai/bot/rFShmowW_3x_qeXQQB-sn",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Vállaláskövető bot. A sablon leírása szerint elkapja az ígéreteket, amelyeket Slacken, Notionban és e-mailben teszel, felírja őket egy Notion-adatbázisba, és nyitva tartja őket, amíg el nem készülnek. A készítő szerint a Slacket, a Notiont és az e-mailt figyeli a vállalásai után, és nagyon hasznosnak tartja.",
+    "postQuote": "Built a Grok @bot that watches Slack, Notion, and email for commitments I make, logs them in Notion, and keeps them open until they’re actually done. Extremely useful!",
+    "templateQuote": "Catches promises you make in Slack, Notion, and email, logs them in a Notion database, and keeps them open until they're done.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Slack",
+        "quote": "Catches promises you make in Slack, Notion, and email",
+        "from": "template"
+      },
+      {
+        "name": "Notion",
+        "quote": "logs them in a Notion database",
+        "from": "template"
+      },
+      {
+        "name": "E-mail",
+        "quote": "Catches promises you make in Slack, Notion, and email",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („至高の Grok Bot 10選”, 2026-10-23)",
+        "url": "https://x.com/cu30rry_/status/2113591766184317130"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "follow-through-agent",
+        "name": "GTM Loop Closer",
+        "noteHu": "A hivatalos Marketplace GTM Loop Closer botja (Jon Grigull) hasonló témájú, de más bot: a meetingekben, e-mailekben, Slacken, CRM-ben vagy feladatkezelőben elmaradt ígéreteket és teendőket keresi, megmutatja a bizonyítékot, és előkészíti a lezáró választ vagy feladatot."
+      }
+    ]
+  },
+  {
+    "slug": "trimmy",
+    "name": "trimmy",
+    "author": "TimDOES",
+    "handle": "@TimDOES",
+    "postUrl": "https://x.com/TimDOES/status/2106820628213051751",
+    "postedAt": "2026-10-04T18:55:55Z",
+    "templateUrl": "https://x.ai/bot/DLSYM3q3eUsy4Si4fTPwa",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Takarító bot a többi Grok Botodhoz. A sablon leírása szerint a többi botod mentett kontextusát nyesi meg: ráirányítod egy vagy több botra, és vágólistát ad a duplikált, elavult és felduzzadt memóriáról, skillekről és rutinokról, amelyet néhány koppintással jóváhagysz. A készítő szerint számozott javaslatlistát készít (például a régi, egymásnak ellentmondó szabályok törlése, a törölt botokra vonatkozó szabályok javítása, az ismétlődő szabályok összevonása, a nagy kontextus fájlba archiválása), te megmondod, melyik számokat hajtsa végre, és közvetlen jóváhagyás nélkül semmit nem változtat.",
+    "postQuote": "It will clean up any/all of your bots’ context. It’s garbage collection for your bot instructions, context, routines, etc\n\nThen you just need to tell it which numbers to do and it handles it all for you. You can also offer instructions for each improvement that need a different fix\n\nIt will never change anything without direct approval\n\nI have mine set to analyze all my bots once a week",
+    "templateQuote": "Trims the saved context on your other Grok Bots. Point it at bots and it returns a cut list of duplicate, stale, and bloated memory, skills, and routines, which you approve with a few taps.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti elemzés az összes botra (a készítő saját beállítása)",
+        "quote": "I have mine set to analyze all my bots once a week",
+        "from": "post"
+      }
+    ],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („至高の Grok Bot 10選”, 2026-10-23)",
+        "url": "https://x.com/cu30rry_/status/2113591766184317130"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "alfred",
+        "name": "Alfred",
+        "noteHu": "A hivatalos Marketplace Alfred botja (Robin Delta) hasonló témájú, de más bot: az egész Grok Bot-szervezetedet tervezi meg és vizsgálja át, hogy minden botnak legyen emberi gazdája és ne legyenek duplikált feladatok, nem az egyes botok mentett kontextusát nyesi."
+      }
+    ]
+  },
+  {
+    "slug": "explainer-video-bot",
+    "name": "Explainer Video bot",
+    "author": "ChaosLensX",
+    "handle": "@ChaosLensX",
+    "postUrl": "https://x.com/ChaosLensX/status/2110319950178951454",
+    "postedAt": "2026-10-14T10:40:58Z",
+    "templateUrl": "https://x.ai/bot/rFn9Q2pLJKFkSF4JN3Spx",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Magyarázóvideó-készítő bot. A sablon leírása szerint egy nyers ötletből kész, narrált magyarázó videót készít animációval, felirattal és hanggal, oktató tartalomhoz YouTube-ra, TikTokra vagy Facebookra. A készítő 80 másodperces mintavideót mutatott be a posztjában; a szálban írt válaszai szerint a bot ellenőrzi a tényeket és a számokat, megírja a forgatókönyvet, felveszi a narrációt, elkészíti a mozgógrafikát és a feliratot, és ElevenLabshez is kapcsolódik. Ugyanott azt is írta, hogy ezt a botot egy X-en talált sablonból készítette, de nem emlékszik, kié volt; az x.ai lapon az ő nevén szerepel. A sablonlinket ugyanebben a szálban, egy válaszában osztotta meg: https://x.com/ChaosLensX/status/2110407009770287573",
+    "postQuote": "I just made an 80-second explainer video with Grok Bot about the journey of one breath through your body 🌬️\n\nAll I gave it was a vague idea of what I wanted to see, and the result is honestly amazing. There's a glowing swarm of air travelling from your nose all the way to your cells and back out again, with a warm British narrator, captions and ambient sound.",
+    "templateQuote": "Turns a rough idea into a polished, narrated explainer video with animation, captions and sound. Great for educational content on YouTube, TikTok or Facebook.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („至高の Grok Bot 10選”, 2026-10-23)",
+        "url": "https://x.com/cu30rry_/status/2113591766184317130"
+      }
+    ]
+  },
+  {
+    "slug": "sentinel",
+    "name": "Sentinel",
+    "author": "Morgan",
+    "handle": "@badmorgan420",
+    "postUrl": "https://x.com/badmorgan420/status/2113317030094864508",
+    "postedAt": "2026-10-22T17:10:18Z",
+    "templateUrl": "https://x.ai/bot/pYlSkzY_JDuMEZDuseCMO",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Infobiztonsági hírfigyelő bot mérnököknek és üzemeltetőknek (SRE). A sablon leírása szerint éjjel-nappal figyeli az X-et új CVE-k, zero-day hibák, aktívan kihasznált sebezhetőségek, nagy adatszivárgások és ellátásilánc-támadások után, riasztás előtt megerősíti a hírt, és sürgős jelzést, valamint a saját technológiai környezetedre szabott napi összefoglalót küld. A készítő posztja csak annyit ír, hogy infobiztonsági Grok Botot készített.",
+    "postQuote": "i created a Grok Bot for infosec",
+    "templateQuote": "An infosec news watcher for engineers and SREs. Watches X around the clock for new CVEs, zero-days, actively exploited bugs, major breaches, and supply-chain compromises, corroborates before alerting, and sends urgent pings plus a daily digest tuned to your stack.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi összefoglaló a saját technológiai környezetedre szabva",
+        "quote": "a daily digest tuned to your stack",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "X",
+        "quote": "Watches X around the clock",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "@cu30rry_ válogatásából („至高の Grok Bot 10選”, 2026-10-23)",
+        "url": "https://x.com/cu30rry_/status/2113591766184317130"
+      },
+      {
+        "labelHu": "@cu30rry_ napi válogatásából („本日のGrok Bot 10選”, 2026-10-23)",
+        "url": "https://x.com/cu30rry_/status/2113466693456728417"
+      }
+    ]
   }
 ]
