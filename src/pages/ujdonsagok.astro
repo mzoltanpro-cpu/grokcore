@@ -1,0 +1,141 @@
+---
+import Base from "../layouts/Base.astro";
+import {
+  changelogChecked,
+  changelogItemCount,
+  changelogReleases,
+  changelogRssUrl,
+  changelogSourceUrl,
+  formatAlsoIncludes,
+  huDate,
+  inlineHtml,
+  latestRelease,
+  releaseAnchor,
+  releaseSourceUrl,
+  sectionHeading,
+} from "../content/changelog";
+import { absUrl, siteConfig, siteOrigin } from "../lib/site";
+
+const origin = siteOrigin(Astro.site);
+const path = "/ujdonsagok/";
+const oldest = changelogReleases[changelogReleases.length - 1];
+const title = `Újdonságok: a Grok Bot changelog magyarul | ${siteConfig.name}`;
+const description = `A hivatalos Grok Bot changelog (x.ai/changelog/bot) mind a ${changelogReleases.length} kiadása nem hivatalos magyar fordításban, a legújabb elöl: v${latestRelease.version} (${huDate(latestRelease.date)}). Az eredeti az irányadó.`;
+
+const ld = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Grok Bot újdonságok – a changelog nem hivatalos magyar fordítása",
+  description,
+  inLanguage: "hu",
+  url: absUrl(origin, path),
+  dateModified: changelogChecked,
+  isBasedOn: {
+    "@type": "WebPage",
+    name: "Grok Bot Changelog",
+    url: changelogSourceUrl,
+    inLanguage: "en",
+    publisher: { "@type": "Organization", name: "SpaceXSI" },
+  },
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: changelogReleases.length,
+    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    itemListElement: changelogReleases.map((release, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: `v${release.version}: ${release.title.hu}`,
+      url: absUrl(origin, `${path}#${releaseAnchor(release.version)}`),
+    })),
+  },
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  path={path}
+  current="changelog"
+  jsonLd={[ld]}
+  crumbs={[
+    { name: siteConfig.name, path: "/" },
+    { name: "Újdonságok", path },
+  ]}
+>
+  <p class="eyebrow">Nem hivatalos fordítás · {changelogReleases.length} kiadás</p>
+  <h1>Újdonságok: a Grok Bot changelog magyarul</h1>
+  <p class="lede">
+    A Grok Bot hivatalos kiadási jegyzékének minden kiadása magyarul, a legújabb elöl. Egy kiadásban az Új, a Fejlesztve és
+    a Javítva szakasz azt sorolja fel, amit az eredeti. A Teams és az Enterprise jelölés ott áll, ahol a forrás is
+    jelöli.
+  </p>
+  <ul class="meta-row">
+    <li>
+      Forrás: <a href={changelogSourceUrl} lang="en">Grok Bot Changelog</a> (x.ai, angol)
+    </li>
+    <li>RSS: <a href={changelogRssUrl}>x.ai/changelog/bot/rss.xml</a></li>
+    <li>
+      Utoljára ellenőrizve: <time datetime={changelogChecked}>{huDate(changelogChecked)}</time>
+    </li>
+  </ul>
+  <aside class="note" aria-label="Nem hivatalos fordítás" data-changelog-note>
+    <p>
+      <strong>Nem hivatalos magyar fordítás.</strong> Az eredeti, angol nyelvű <a href={changelogSourceUrl}>changelog</a>
+      az irányadó; eltérés esetén az számít. Csak azt fordítjuk, ami ott áll. A termék-, felület-, funkció- és
+      connectorneveket, a billentyűparancsokat és a linkeket eredetiben hagyjuk. Nem állunk kapcsolatban az x.ai-t
+      üzemeltető SpaceXSI-vel, és ők nem támogatják ezt az oldalt.
+    </p>
+  </aside>
+
+  <nav class="section release-index" aria-labelledby="kiadasok-cim">
+    <h2 id="kiadasok-cim">Kiadások</h2>
+    <p class="fine">
+      {changelogReleases.length} kiadás, {changelogItemCount} tétel, v{oldest.version} ({huDate(oldest.date)}) és
+      v{latestRelease.version} ({huDate(latestRelease.date)}) között.
+    </p>
+    <ul class="tag-row plain-list">
+      {
+        changelogReleases.map((release) => (
+          <li>
+            <a class="tag" href={`#${releaseAnchor(release.version)}`}>
+              v{release.version}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+
+  {
+    changelogReleases.map((release) => (
+      <article class="release" id={releaseAnchor(release.version)} data-release={release.version}>
+        <p class="release-meta">
+          <span class="release-version">v{release.version}</span>
+          <time datetime={release.date}>{huDate(release.date)}</time>
+        </p>
+        <h2>{release.title.hu}</h2>
+        {release.alsoIncludes.length > 0 && (
+          <p class="fine">Ezeket is tartalmazza: {formatAlsoIncludes(release.alsoIncludes)}</p>
+        )}
+        {release.sections.map((section) => (
+          <section class="release-section">
+            <h3>{sectionHeading(section.kind)}</h3>
+            <ul class="release-list">
+              {section.items.map((item) => (
+                <li>
+                  <Fragment set:html={inlineHtml(item.hu)} />
+                  {item.label && <span class="tag">{item.label}</span>}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+        <p class="fine">
+          <a href={releaseSourceUrl(release.version)} data-release-link>
+            Eredeti bejegyzés: v{release.version} (x.ai, angol)
+          </a>
+        </p>
+      </article>
+    ))
+  }
+</Base>

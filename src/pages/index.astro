@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Signup from "../components/Signup.astro";
 import { days } from "../content/days";
 import { beginnerBots, marketplaceBots, marketplacePath } from "../content/marketplace";
+import { huDate, latestRelease } from "../content/changelog";
 import { dayPath, siteConfig } from "../lib/site";
 
 const title = `${siteConfig.name} – Grok Bot kezdőknek, 5 nap alatt`;
@@ -30,21 +31,32 @@ const description =
         <li>Nincs cookie, nincs követőkód</li>
       </ul>
     </div>
-    <aside class="path-card" aria-label="Az öt nap">
-      <p class="path-kicker">{siteConfig.courseName}</p>
-      <ol>
-        {
-          days.map((day) => (
-            <li>
-              <a href={dayPath(day.slug)}>
-                <span class="path-num">0{day.n}</span>
-                <span>{day.nav}</span>
-              </a>
-            </li>
-          ))
-        }
-      </ol>
-    </aside>
+    <div class="hero-side">
+      <aside class="path-card" aria-label="Az öt nap">
+        <p class="path-kicker">{siteConfig.courseName}</p>
+        <ol>
+          {
+            days.map((day) => (
+              <li>
+                <a href={dayPath(day.slug)}>
+                  <span class="path-num">0{day.n}</span>
+                  <span>{day.nav}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </aside>
+      <section class="update-box" aria-labelledby="frissites-cim" data-latest-release={latestRelease.version}>
+        <h2 id="frissites-cim">Legutóbbi Grok Bot frissítés</h2>
+        <p class="release-meta">
+          <span class="release-version">v{latestRelease.version}</span>
+          <time datetime={latestRelease.date}>{huDate(latestRelease.date)}</time>
+        </p>
+        <p>{latestRelease.title.hu}</p>
+        <p><a href="/ujdonsagok/">Az összes újdonság magyarul</a></p>
+      </section>
+    </div>
   </section>
 
   <section class="section" aria-labelledby="miert-cim">
