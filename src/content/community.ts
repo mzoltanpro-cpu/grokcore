@@ -36,7 +36,6 @@ export const community = {
   dhivagar: { handle: "@dhivagar", date: "2026-08-29", url: "https://x.com/i/status/2093568280065945789" },
   debs: { handle: "@debs_obrien", date: "2026-10-14", url: "https://x.com/debs_obrien/status/2110477175069798427" },
   fenech: { handle: "@Michael_Fenech_", date: "2026-10-02", url: "https://x.com/Michael_Fenech_/status/2106037490578518128" },
-  cyb3r: { handle: "@Cyb3rCricket", date: "2026-10-13", url: "https://x.com/Cyb3rCricket/status/2110121951175852534" },
   pgenius: { handle: "@PGeniusAI", date: "2026-09-14", url: "https://x.com/i/status/2099469701076173192" },
 } as const;
 
