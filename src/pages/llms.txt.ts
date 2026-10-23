@@ -7,6 +7,16 @@ import { budapestTime, communityTemplates, templatePath } from "../content/templ
 import { guides, guidesFetched, guidesIndexUrl, guideUrl, useCasesUrl } from "../content/guides";
 import { installMissing, officialCategoryLabel, officialFetched, officialSourceUrl, officialTemplates } from "../content/official";
 import { advancedFetchedDates, advancedGuides, advancedPath } from "../content/advanced";
+import {
+  changelogChecked,
+  changelogReleases,
+  changelogRssUrl,
+  changelogSourceUrl,
+  huDate,
+  latestRelease,
+  releaseAnchor,
+  releaseSourceUrl,
+} from "../content/changelog";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
 export const GET: APIRoute = ({ site }) => {
@@ -69,6 +79,16 @@ export const GET: APIRoute = ({ site }) => {
     "",
     `- [Haladó útmutatók](${absUrl(origin, "/halado/")})`,
     ...advancedGuides.map((g) => `- [${g.title}](${absUrl(origin, advancedPath(g.slug))}): ${g.description} Források: ${g.sources.map((s) => s.url).join(", ")}`),
+    "",
+    "## Grok Bot újdonságok (a hivatalos changelog nem hivatalos magyar fordítása)",
+    "",
+    `A ${changelogSourceUrl} oldal (RSS: ${changelogRssUrl}) mind a ${changelogReleases.length} Grok Bot-kiadása magyarul, a legújabb elöl. Az eredeti, angol changelog az irányadó. Utoljára ellenőrizve: ${changelogChecked}. Legutóbbi kiadás: v${latestRelease.version} (${latestRelease.date}). Nem állunk kapcsolatban a SpaceXSI-vel.`,
+    "",
+    `- [Újdonságok](${absUrl(origin, "/ujdonsagok/")})`,
+    ...changelogReleases.map(
+      (release) =>
+        `- [v${release.version} – ${huDate(release.date)}: ${release.title.hu}](${absUrl(origin, "/ujdonsagok/")}#${releaseAnchor(release.version)}) Eredeti: ${releaseSourceUrl(release.version)}`,
+    ),
     "",
     "## Az oldal",
     "",

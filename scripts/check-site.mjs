@@ -37,6 +37,7 @@ const required = [
   "halado/feladattol-rutinig/index.html",
   "halado/sablon-mi-jon-at/index.html",
   "halado/heti-keret-sporolas/index.html",
+  "ujdonsagok/index.html",
   "forrasok/index.html",
   "rolunk/index.html",
   "szponzoracio/index.html",
@@ -336,6 +337,37 @@ if (!advancedHtml.includes("data-own-guides") || !advancedHtml.includes("nem hiv
 const guidesMain = (guidesHtml.match(/<main[^>]*>([\s\S]*?)<\/main>/) || ["", guidesHtml])[1];
 if (/href="\/halado\/|data-advanced-block/.test(guidesMain)) fail("utmutatok/index.html: a hivatalos útmutatók oldalán nem lehet haladó (saját) útmutató-blokk vagy link");
 if (!/<nav class="nav"[^>]*>[\s\S]*?<a href="\/halado\/" aria-current="page">\s*Haladó\s*<\/a>[\s\S]*?<\/nav>/.test(advancedHtml)) fail("halado/index.html: nincs „Haladó” menüpont a fő navigációban");
+
+// Újdonságok: a changelog.ts minden kiadása kint van, a legújabb elöl, az eredeti bejegyzésre mutató linkkel;
+// forrás, RSS, ellenőrzési dátum és nem hivatalos jelölés; a kezdőlap dobozát a legújabb kiadás adja.
+const changelogSrc = await readFile(path.join(root, "src/content/changelog.ts"), "utf8");
+const changelogVersions = [...changelogSrc.matchAll(/^ {4}version: "(\d+\.\d+\.\d+)",$/gm)].map((m) => m[1]);
+const byVersionDesc = (a, b) => b.localeCompare(a, "en", { numeric: true });
+const changelogHtml = byRel.has("ujdonsagok/index.html") ? await readFile(byRel.get("ujdonsagok/index.html"), "utf8") : "";
+const renderedReleases = [...changelogHtml.matchAll(/data-release="([^"]+)"/g)].map((m) => m[1]);
+if (changelogVersions.length === 0) fail("changelog.ts: nincs kiadás");
+if (renderedReleases.join() !== [...changelogVersions].sort(byVersionDesc).join()) {
+  fail("ujdonsagok/index.html: a kiadások nem egyeznek a changelog.ts-sel, vagy nem a legújabb áll elöl");
+}
+for (const version of changelogVersions) {
+  if (!changelogHtml.includes(`href="https://x.ai/changelog/bot#v${version}" data-release-link`)) {
+    fail(`ujdonsagok/index.html: nincs eredeti link: v${version}`);
+  }
+}
+for (const needle of ['href="https://x.ai/changelog/bot"', 'href="https://x.ai/changelog/bot/rss.xml"', "Utoljára ellenőrizve", "data-changelog-note", "Nem hivatalos magyar fordítás"]) {
+  if (!changelogHtml.includes(needle)) fail(`ujdonsagok/index.html: hiányzik: ${needle}`);
+}
+if (!/<nav class="nav"[^>]*>[\s\S]*?<a href="\/ujdonsagok\/" aria-current="page">\s*Újdonságok\s*<\/a>[\s\S]*?<\/nav>/.test(changelogHtml)) {
+  fail("ujdonsagok/index.html: nincs „Újdonságok” menüpont a fő navigációban");
+}
+const latestVersion = [...changelogVersions].sort(byVersionDesc)[0];
+const homeHtml = byRel.has("index.html") ? await readFile(byRel.get("index.html"), "utf8") : "";
+const latestBox = homeHtml.match(/<section[^>]*data-latest-release="([^"]+)"[^>]*>([\s\S]*?)<\/section>/);
+if (!latestBox) fail("index.html: hiányzik a „Legutóbbi Grok Bot frissítés” doboz");
+else {
+  if (latestBox[1] !== latestVersion) fail(`index.html: a frissítésdoboz nem a legújabb kiadást mutatja (${latestBox[1]} ≠ ${latestVersion})`);
+  if (!latestBox[2].includes('href="/ujdonsagok/"')) fail("index.html: a frissítésdoboz nem linkeli az Újdonságok oldalt");
+}
 
 let canonicalOrigin = "";
 const external = new Set();
