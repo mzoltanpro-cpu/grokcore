@@ -45,7 +45,7 @@ const ld = {
       "@type": "ListItem",
       position: index + 1,
       name: `v${release.version}: ${release.title.hu}`,
-      url: absUrl(origin, `${path}#${releaseAnchor(release.version)}`),
+      url: `${absUrl(origin, path)}#${releaseAnchor(release.version)}`,
     })),
   },
 };
