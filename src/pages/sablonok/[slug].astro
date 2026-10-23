@@ -99,6 +99,13 @@ const ld = {
           </p>
         ))
       }
+      {
+        item.relatedTemplates?.map((rel) => (
+          <p class="fine" data-related-template={rel.slug}>
+            Megjegyzés: {rel.noteHu} <a href={templatePath(rel.slug)}>{rel.name} adatlapja</a>
+          </p>
+        ))
+      }
     </section>
 
     <section class="bot-block" id="memoria" data-block="memoria">
