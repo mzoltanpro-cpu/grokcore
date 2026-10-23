@@ -204,14 +204,15 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.15rem 0;
-  margin-left: -0.4rem;
+  margin-left: -0.3rem;
 }
 
 .nav a {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.3rem;
+  font-size: 1rem;
   white-space: nowrap;
   color: var(--ink);
   text-decoration: none;
