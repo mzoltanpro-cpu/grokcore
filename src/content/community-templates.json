@@ -2555,5 +2555,234 @@
       }
     ],
     "integrations": []
+  },
+  {
+    "slug": "bookmark-debt-collector",
+    "name": "Bookmark Debt Collector",
+    "author": "Harris",
+    "handle": "@harris_p10",
+    "postUrl": "https://x.com/harris_p10/status/2113289856734417220",
+    "postedAt": "2026-10-22T15:22:19Z",
+    "templateUrl": "https://x.ai/bot/kh0FE5498wURU-QxPfLfW",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "X-könyvjelző-rendező bot. A sablon leírása szerint a mentett X-posztjaidból megosztható „Bookmark Wrapped” kártyát készít, kiszűri a már elérhetetlen könyvjelzőket, a megmaradtakhoz pedig egy-egy időkorlátos következő lépést ad; az X-en csak olvas. A készítő szerint hetente egyszer elküldheti a három legfontosabb könyvjelződet konkrét javaslattal: elolvasni, cselekedni vagy törölni.",
+    "postQuote": "So I built Bookmark Debt Collector, a Grok @bot that:\n\n1. Turns your bookmarks into a clean visual of who and what you save. Your Bookmark Wrapped™\n2. Optionally, sends you your top 3 bookmarks once a week to read, act on, or remove with concrete suggestions.",
+    "templateQuote": "Turns your X bookmarks into a shareable Bookmark Wrapped card, finds the ones that already died, gives every survivor one time-boxed next action, and can nudge you weekly. Read-only on X.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti emlékeztető (opcionális)",
+        "quote": "can nudge you weekly",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "X (könyvjelzők, csak olvasás)",
+        "quote": "Read-only on X.",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "smart-shopper",
+    "name": "Smart Shopper",
+    "author": "JP",
+    "handle": "@Jprz1321",
+    "postUrl": "https://x.com/Jprz1321/status/2113325691265527997",
+    "postedAt": "2026-10-22T17:44:43Z",
+    "templateUrl": "https://x.ai/bot/zafLolp-y0aoEwGpZd_qv",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Árfigyelő és ajándékkereső bot. A sablon leírása szerint bármelyik webáruházban naponta figyeli az árakat a szállítással és adóval együtt, valódi ajándékötleteket keres a várható érkezési dátummal, és a jóváhagyásod nélkül soha nem vásárol. A készítő szerint nemcsak az Amazonon, hanem bármelyik boltban működik; a sablonlinket a bejelentő szál következő posztjában osztotta meg.",
+    "postQuote": "Smart Shopper is a price-drop sniper and gift finder for any store, not just Amazon.",
+    "templateQuote": "Price-drop sniper and gift finder for any store. Watches prices daily with shipping and tax included, finds real gift picks with arrive-by dates, and never buys without your OK.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi árfigyelés",
+        "quote": "Watches prices daily",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "deal-hunting",
+        "name": "Deal Hunting",
+        "noteHu": "A hivatalos Marketplace Deal Hunting botja (Shimecki) hasonló témájú, de más bot: az a szállítással és adóval számolt valós árakra és a kedvenc boltjaidra épít, opcionális figyelőlistával, ajándékkeresés nélkül."
+      }
+    ]
+  },
+  {
+    "slug": "akapen-bot",
+    "name": "akapen bot",
+    "author": "まさお@AI駆動開発",
+    "handle": "@AI_masaou",
+    "postUrl": "https://x.com/AI_masaou/status/2113180061822230740",
+    "postedAt": "2026-10-22T08:06:02Z",
+    "templateUrl": "https://x.ai/bot/Afsn2TQt9PTy8v1LFhtXb",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "„Piros tollas” jóváhagyó bot (japán nyelvű sablon). A sablon leírása szerint mielőtt bármit elkészítene, egy javaslatot ellenőrző HTML-lapként megmutat, és csak a válaszaid, javításaid (a „piros tollad”) után halad tovább; a felület elrendezésének és a tervezési irány egyeztetéséhez, valamint hosszabb szövegek véleményezéséhez és javításához használható. A készítő szerint a telepítéshez az akapen forrására is szükség van, ezt előbb elő kell készíteni.",
+    "postQuote": "この使い方を僕のGrokBOTでも採用したー！\n\nBOTもシェアできるようにしてみた！導入する時にakapenのソースが必要なのでそこだけ準備を・・・！",
+    "templateQuote": "作る前に1案を確認用のHTMLシートにして見せ、あなたの赤ペン（回答・訂正）をもらってから進める「赤ペン先生」Bot。UI配置や設計方針の認識合わせ、長文への指摘・添削に使えます。",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "bills",
+    "name": "Bills",
+    "author": "Daniel Dewhurst",
+    "handle": "@DanNinetySeven",
+    "postUrl": "https://x.com/DanNinetySeven/status/2113219193667526893",
+    "postedAt": "2026-10-22T10:41:32Z",
+    "templateUrl": "https://x.ai/bot/W4QR9L1qUuMaTIv61t8tl",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Háztartási számlafigyelő bot. A sablon leírása szerint az e-mailjeidből követi a háztartási számláidat, előfizetéseidet és megújításaidat, jelzi az áremeléseket és a hiányzó számlákat, és a megújítások előtt emlékeztet. A készítő szerint az áremeléseket el is magyarázza, és megírja az alkudozó e-mailek piszkozatát.",
+    "postQuote": "Bills: finds my household bills in email, explains price rises and drafts the negotiation emails",
+    "templateQuote": "Tracks your household bills, subscriptions and renewals from your email, flags price rises and missing bills, and reminds you before renewals.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "E-mail",
+        "quote": "from your email",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "penny-doge",
+    "name": "Penny DOGE",
+    "author": "Bowie",
+    "handle": "@BowieHole",
+    "postUrl": "https://x.com/BowieHole/status/2113280435711316092",
+    "postedAt": "2026-10-22T14:44:53Z",
+    "templateUrl": "https://x.ai/bot/ddv4iJmX4WD1mU2s7WPm0",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Keretspórolós bot a Grok Bot-flottádhoz. A sablon leírása szerint megkeresi, hol pazarolják a botjaid a használati keretet, és fontossági sorrendbe állítja a javításokat; csak javasol, a többi botodat soha nem módosítja. Heti ingyenes vizsgálattal dolgozik a saját gépén, vagy azonnal, ha beilleszted a Usage oldal képernyőképét vagy a rutinjaid listáját. A név egy „garasoskodó” szójáték, semmi köze kormányhivatalhoz vagy a Dogecoinhoz. A készítő a saját keret-aggodalmai miatt építette.",
+    "postQuote": "I had usage concerns early on so I made this bot to monitor and reduce waste:",
+    "templateQuote": "Finds where your Grok Bot fleet wastes usage and ranks the fixes. It only recommends and never edits your other bots. Works from a free weekly scan on its own computer, or right away from a Usage page screenshot or routine list you paste in. Penny DOGE is a penny-pincher pun, not affiliated with any government agency or with Dogecoin.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti ingyenes vizsgálat",
+        "quote": "a free weekly scan",
+        "from": "template"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "the-tiebreaker",
+    "name": "The Tiebreaker",
+    "author": "Si",
+    "handle": "@SiEdgeGeek",
+    "postUrl": "https://x.com/SiEdgeGeek/status/2113290231340581189",
+    "postedAt": "2026-10-22T15:23:48Z",
+    "templateUrl": "https://x.ai/bot/ZTQNZCP_XiSq4yozGrGP-",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Döntéssegítő bot nehéz kérdésekhez. A sablon leírása szerint bármilyen nehéz döntést odaadhatsz neki: mindkét oldal mellett erősebben érvel, mint te tudnál, aztán kilép a szerepből, megmondja, mit gondol valójában, és megosztható döntéskártyát készít. A készítő szerint végül azt is elárulja, ő maga mit tenne.",
+    "postQuote": "I built a Grok bot that argues both sides of your hardest decision better than you can.\n\nThen it drops the act and tells you what it would actually do.",
+    "templateQuote": "Can't decide? Give it any hard call. It argues both sides harder than you can, then drops the act and tells you what it really thinks, with a shareable verdict card.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "youtube-strategy-professor",
+    "name": "YouTube Strategy Professor",
+    "author": "Abdullah",
+    "handle": "@stratbyabdullah",
+    "postUrl": "https://x.com/stratbyabdullah/status/2113234915701805197",
+    "postedAt": "2026-10-22T11:44:00Z",
+    "templateUrl": "https://x.ai/bot/FWt2FMtlFfACgHC809qmz",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "YouTube-stratégiai tanár bot tartalomkészítőknek. A sablon leírása szerint minden nap utánanéz a hivatalos YouTube-frissítéseknek és a vezető stratégáknak, majd forrásokkal ellátott összefoglalót küld a csomagolásról (cím, bélyegkép), a nézőmegtartásról, a bevételszerzésről, és egy napi kísérletet is javasol. A készítő saját botja minden reggel ilyen összefoglalót küld neki.",
+    "postQuote": "Kevin (my @bot) gives me a Youtube Updates and Strategy Digest every morning",
+    "templateQuote": "A YouTube strategy tutor that researches official updates and top strategists every day, then sends you a sourced digest on packaging, retention, monetization and a daily experiment.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi kutatás és összefoglaló",
+        "quote": "researches official updates and top strategists every day",
+        "from": "template"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "sports-fan-desk",
+    "name": "Sports Fan Desk",
+    "author": "Ashley",
+    "handle": "@ashleyschendel",
+    "postUrl": "https://x.com/ashleyschendel/status/2113423762637127877",
+    "postedAt": "2026-10-23T00:14:25Z",
+    "templateUrl": "https://x.ai/bot/vh6EO3QKPOND6N4XKNhco",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Sportkutató bot szurkolóknak. A sablon leírása szerint személyes sportkutató asztal profi, egyetemi és iskolai sporthoz: követheted a csapataidat, Fan, Analyst vagy Quant módban tanulhatod a játékot, és forrásokkal alátámasztott elemzést kapsz, kitalált eredmények és hamis jóslatok nélkül. A készítő szerint élő eredményeket, híreket, meccselőzeteseket és összefoglalókat ad, elválasztja a tényeket a pletykáktól, és közérthetően elmagyarázza a számokat.",
+    "postQuote": "You pick your teams and it gives you live scores, news, game previews and recaps. It even separates real facts from rumors and explains the numbers in plain English.",
+    "templateQuote": "Sports Fan Desk is your personal sports research desk for pro, college, and school sports. Follow your teams, learn the game in Fan, Analyst, or Quant mode, and get sourced analysis that shows its work, with no invented scores and no fake predictions.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "mac-perms",
+    "name": "Mac Perms",
+    "author": "Asher Armstrong",
+    "handle": "@AsherBArmstrong",
+    "postUrl": "https://x.com/AsherBArmstrong/status/2113467664270086209",
+    "postedAt": "2026-10-23T03:08:52Z",
+    "templateUrl": "https://x.ai/bot/haHLoMf3xp7rAZ1fyjzsX",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Mac-engedélybeállító bot. A sablon leírása szerint úgy állítja be a Macedet, hogy a Grok Bot használhassa az Apple-alkalmazásaidat, a fájljaidat és az automatizálást, majd minden engedélyt egy csak olvasó teszttel ellenőriz. A készítő szerint csak meg kell mondanod, mely funkciókhoz férjen hozzá, és a bot kéri tőled a jóváhagyást.",
+    "postQuote": "I built a bot for that. Simply tell it which features you want it to be able to access, and it’ll prompt you to approve them. Then you’re good to go!",
+    "templateQuote": "Sets up your Mac so Grok Bot can use your Apple apps, files and automation, then proves each permission works with a read-only test.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "macOS (Apple-alkalmazások, fájlok, automatizálás)",
+        "quote": "use your Apple apps, files and automation",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "what-should-my-bot-do",
+    "name": "What Should My Bot Do?",
+    "author": "Roshel Perera",
+    "handle": "@RoshelPere15695",
+    "postUrl": "https://x.com/RoshelPere15695/status/2113254070806880548",
+    "postedAt": "2026-10-22T13:00:07Z",
+    "templateUrl": "https://x.ai/bot/KOJbYHQwZmEacXcdpkdUZ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Első-feladat-kereső bot kezdőknek. A sablon leírása szerint öt kérdést tesz fel a vállalkozásodról, aztán megtervezi az első AI-ügynöködet, három következő feladatot javasol, és mindegyikhez ingyenes útmutatót ad; csak piszkozatokat készít. A készítő szerint a leggyakoribb kérdésre válaszol, amit kap: mit csináljon először a botod; a jóváhagyásod nélkül semmit nem küld el.",
+    "postQuote": "it asks a few questions about your business, then picks your first job and the next few after it. drafts only, nothing gets sent without you",
+    "templateQuote": "Free Grok Bot template: 5 questions about your business, then your first AI agent, 3 next jobs and a free guide for each. Drafts only.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
   }
 ]

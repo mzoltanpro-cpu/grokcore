@@ -246,14 +246,13 @@ Keep it concise. Only include information that will help me on the call.`,
     troubleshooting: [
       {
         problem: "Az ütemezett futás rossz eredményt ad.",
-        fix: `${community.cyb3r.handle}: „Most Grok Bot automations break because they get scheduled before they've ever worked once by hand.” Állítsd szünetre, futtasd kézzel, javítsd, és csak utána kapcsold vissza.`,
+        fix: "A dokumentáció szerint a routine-t szüneteltetheted, és Test runnal kipróbálhatod. Állítsd szünetre, futtasd kézzel, javítsd, és csak utána kapcsold vissza.",
       },
     ],
     sources: [
       { title: "Skills and routines (docs.x.ai)", url: docs.skills },
       { title: "Grok Bot GYIK (cursor.com)", url: docs.faqCursor },
       { title: `${community.rachit.handle} – reggeli AI-hír prompt`, url: community.rachit.url },
-      { title: `${community.cyb3r.handle} – előbb kézzel`, url: community.cyb3r.url },
       { title: `${community.fenech.handle} – pre-call brief`, url: community.fenech.url },
       { title: `${community.gusmacca.handle} – keret és routine-ok`, url: community.gusmacca.url },
       { title: "r/GrokBot – My Grok Bot is unresponsive", url: community.redditUnresponsive.url },

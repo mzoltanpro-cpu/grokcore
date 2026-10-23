@@ -296,7 +296,7 @@ Don't change the source file.`,
     blocks: [
       {
         type: "p",
-        html: `Egy felhasználó szerint a legtöbb automatizálás azért romlik el, mert előbb ütemezik, mint hogy egyszer kézzel működött volna: „Most Grok Bot automations break because they get scheduled before they've ever worked once by hand.” A sorrendje: „1. Do it once in chat … 4. Test it. … 5. Then schedule it.” (${cite("cyb3r")}) Egy másik felhasználó első hete: „Day 1: one bot, one job. Day 2: connect read-only. Day 3: schedule it. Day 7: keep, tune or retire.” (${cite("gannotti")})`,
+        html: `A dokumentáció szerint egyszeri feladattal kezdj, tedd megbízhatóvá, mentsd el skillként, és csak utána automatizáld: „Start with a one-time task. Make it reliable, save the method as a skill, and only then automate it.” (<a href="${docs.skills}">Skills and routines</a>) Egy felhasználó első hete: „Day 1: one bot, one job. Day 2: connect read-only. Day 3: schedule it. Day 7: keep, tune or retire.” (${cite("gannotti")})`,
       },
       { type: "h2", text: "Skill vagy routine?" },
       {
@@ -335,7 +335,6 @@ instead of using old data.`,
       { title: "Frequently asked questions (docs.x.ai)", url: docs.faq, kind: "hivatalos" },
       { title: "Grok Bot GYIK (cursor.com) – próbakredit", url: docs.faqCursor, kind: "hivatalos" },
       communitySource("rachit", "reggeli AI-hír routine, kész prompttal"),
-      communitySource("cyb3r", "előbb kézzel, csak utána ütemezés"),
       communitySource("gannotti", "első hét: egy Bot, egy feladat"),
       communitySource("gusmacca", "a routine-ok gyorsan fogyasztják a keretet"),
       communitySource("redditUnresponsive", "némán leálló Bot a keret miatt"),
