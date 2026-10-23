@@ -7,6 +7,18 @@ import { budapestTime, communityTemplates, templateMissing, templateNonAffiliati
 import { addIns, guides, guidesFetched, guidesIndexUrl, guideUrl, useCases, useCasesFetched, useCasesUrl } from "../content/guides";
 import { installMissing, officialByCategory, officialFetched, officialSourceUrl, officialTemplates } from "../content/official";
 import { advancedFetchedDates, advancedGuides, advancedPath, sourceKindLabel } from "../content/advanced";
+import {
+  changelogChecked,
+  changelogReleases,
+  changelogRssUrl,
+  changelogSourceUrl,
+  formatAlsoIncludes,
+  huDate,
+  inlineText,
+  releaseAnchor,
+  releaseSourceUrl,
+  sectionHeading,
+} from "../content/changelog";
 import { absUrl, dayPath, siteConfig, siteOrigin } from "../lib/site";
 
 export const GET: APIRoute = ({ site }) => {
@@ -151,6 +163,23 @@ export const GET: APIRoute = ({ site }) => {
     parts.push("", "Források:");
     for (const s of g.sources) parts.push(`- ${s.title} – ${s.author}, ${s.date}. ${sourceKindLabel[s.kind]}: ${s.url}`);
     parts.push("");
+  }
+
+  parts.push(
+    "## Grok Bot újdonságok (a hivatalos changelog nem hivatalos magyar fordítása)",
+    "",
+    `Forrás: ${changelogSourceUrl} (RSS: ${changelogRssUrl}), utoljára ellenőrizve: ${changelogChecked}. Nem hivatalos magyar fordítás; az eredeti, angol changelog az irányadó. Csak a forrásban szereplő tételek, a Teams és az Enterprise jelölés a forrás szerint. Oldal: ${absUrl(origin, "/ujdonsagok/")}`,
+    "",
+  );
+  for (const release of changelogReleases) {
+    parts.push(`### v${release.version} – ${huDate(release.date)}: ${release.title.hu}`, "");
+    if (release.alsoIncludes.length) parts.push(`Ezeket is tartalmazza: ${formatAlsoIncludes(release.alsoIncludes)}`, "");
+    for (const section of release.sections) {
+      parts.push(`${sectionHeading(section.kind)}:`);
+      for (const item of section.items) parts.push(`- ${inlineText(item.hu)}${item.label ? ` (${item.label})` : ""}`);
+      parts.push("");
+    }
+    parts.push(`Eredeti: ${releaseSourceUrl(release.version)}`, "");
   }
 
   parts.push("## Gyakori kérdések", "");
