@@ -103,7 +103,7 @@ export const changelog: ChangelogRelease[] = [
           { hu: "Egy Bot törlése véglegesen eltávolítja a beszélgetéseit, a memóriáját, a routine-jait és a mellékleteit, és eltávolítja a Slack-appját.", en: "Deleting a Bot permanently erases its conversations, memory, routines, and attachments, and removes its Slack app." },
           { hu: "Az első e-mail, amelyet egy Bot egy új címzettnek küld, egykattintásos leiratkozási linket tartalmaz.", en: "The first email a Bot sends to someone new includes a one-click unsubscribe link." },
           { hu: "Ha a Slackben arra kéred a Botot, hogy vizsgáljon ki, kutasson utána vagy ellenőrizzen valamit, gyors válasz helyett kutatáson alapuló választ kapsz.", en: "In Slack, asking the Bot to investigate, research, or check something gets a researched answer instead of a quick reply." },
-          { hu: "A fiókod törlése előtt megjelenik, mit veszítenél el, egy már egyesített Grok-fiók csatolásakor pedig hiba helyett felajánlja a beolvasztást.", en: "Deleting your account first lists what you'd lose, and linking an already unified Grok account offers to merge into it instead of failing." },
+          { hu: "A fiókod törlése előtt megjelenik, mit veszítenél el, egy már egyesített Grok-fiók csatolásakor pedig hiba helyett felajánlja, hogy beleolvasztja a fiókodat.", en: "Deleting your account first lists what you'd lose, and linking an already unified Grok account offers to merge into it instead of failing." },
           { hu: "A válaszokban a forráslinkek kompakt hivatkozáscímkékként, a cégnevek pedig tickerjelvényként jelennek meg.", en: "Source links in replies show as compact citation chips, and company names as ticker pills." },
           { hu: "A chat-táblázatok számoszlopai a tizedesvesszőhöz igazodnak, fejléc-alsorokkal, összesítő sorokkal és lábjegyzetekkel.", en: "Number columns in chat tables line up on the decimal point, with header sublines, summary rows, and footnotes." },
           { hu: "Az általad küldött fájlok kártyaként jelennek meg a típusukkal, nevükkel és méretükkel, a feliratos képeknél pedig egérrámutatásra megjelenik a Copy és a Download.", en: "Files you send show as cards with their type, name, and size, and captioned images offer Copy and Download on hover." },
@@ -247,7 +247,7 @@ export const changelog: ChangelogRelease[] = [
           { hu: "A Secure Form több weboldalon tölti ki a mezőket, a más oldalakról beágyazott keretekben is, ahelyett hogy üresen hagyná őket.", en: "Secure Form fills fields on more websites, including inside embedded frames from other sites, instead of leaving them empty." },
           { hu: "Ha egy routine-nak be kell jelentkeznie egy oldalra, az adott lépésnél a chatben megkérdez téged, ahelyett hogy csendben leállna.", en: "When a routine needs to sign in to a site, it asks you in chat at that step instead of quietly stopping." },
           { hu: "A Botok a bejelentkezési adatokat és más több mezőből álló adatokat egyetlen Secure Formon kérik, egy egyetlen értéket tartalmazó titokkérő kártya helyett.", en: "Bots ask for logins and other multi-field details on one Secure Form instead of a secret request card that holds a single value." },
-          { hu: "A képernyőkép-, gép- és böngészőműveletek akkor is működnek, ha nem kötötted be az 1Passwordöt, ahelyett hogy egy mentett belépési adatokra vonatkozó ellenőrzésen elakadnának.", en: "Screenshot, computer, and browser actions keep working when you haven't connected 1Password, instead of failing on a saved-login check." },
+          { hu: "A képernyőkép-, gép- és böngészőműveletek akkor is működnek, ha nem kötötted be az 1Passwordöt, ahelyett hogy egy mentett belépési adatokra vonatkozó ellenőrzésen meghiúsulnának.", en: "Screenshot, computer, and browser actions keep working when you haven't connected 1Password, instead of failing on a saved-login check." },
           { hu: "Ha egy másik időzónából üzensz, az azonnal frissíti azt a zónát, amelyet a Bot az ütemezésekhez és az emlékeztetőkhöz használ, hacsak nem választottál egyet a Settings Timezone részében.", en: "Messaging from another time zone updates the zone the Bot uses for schedules and reminders right away, unless you chose one under Timezone in Settings." },
           { hu: "Az avatarszerkesztő által kínált bármely alakú Botok, például a szikra vagy a csillag, sablonként megoszthatók anélkül, hogy a Bot kinézete megváltozna.", en: "Bots with any shape the avatar editor offers, such as sparkle or star, can be shared as templates without the Bot changing its look." },
           { hu: "Egy Bot saját postafiókjába érkező e-mailek megtartják minden link webcímét, így a Bot megnyithatja az ellenőrző és bejelentkezési linkeket.", en: "Emails that arrive in a Bot's own inbox keep each link's web address, so the Bot can open verification and sign-in links." },
@@ -321,7 +321,7 @@ export const changelog: ChangelogRelease[] = [
           { hu: "A Connect Apps a legtöbbször telepített pluginokat listázza elsőként, a keresés azokat a pluginokat is megtalálja, amelyek leírása egyezik, és a találat nélküli keresés ezt jelzi is.", en: "Connect Apps lists the most-installed plugins first, search also finds plugins whose description matches, and a search with no results says so." },
           { hu: "A Botok megvárhatják, amíg egy háttérparancs befejeződik a gépükön; ez Waiting on results feliratként látszik.", en: "Bots can wait for a background command on their computer to finish, shown as Waiting on results." },
           { hu: "Ha a GitHub elutasít egy repositoryt, vagy a Vercel egy csapatot, a Bot olyanokat javasol, amelyeket elér, vagy újracsatlakozásra kér.", en: "When GitHub refuses a repository or Vercel a team, the Bot suggests ones it can reach or asks you to reconnect." },
-          { hu: "Egy privát Tailscale-hálózaton lévő MCP-szerver hozzáadásakor az app elmagyarázza, hogy a Grok Bot még nem éri el, és javasolja, hogy tedd elérhetővé a Tailscale Funnellel.", en: "Adding an MCP server on a private Tailscale network now explains that Grok Bot can't reach it yet and suggests exposing it with Tailscale Funnel." },
+          { hu: "Egy privát Tailscale-hálózaton lévő MCP-szerver hozzáadása mostantól elmagyarázza, hogy a Grok Bot még nem éri el, és javasolja, hogy tedd elérhetővé a Tailscale Funnellel.", en: "Adding an MCP server on a private Tailscale network now explains that Grok Bot can't reach it yet and suggests exposing it with Tailscale Funnel." },
           { hu: "A canvasok és a dokumentumok egyaránt Page címkét kapnak.", en: "Canvases and documents are both labeled Page." },
           { hu: "Ha # jelet írsz az üzenetszerkesztőbe, már nem nyílik meg a pull request-választó.", en: "Typing # in the composer no longer opens the pull request picker." },
         ],
@@ -356,7 +356,7 @@ export const changelog: ChangelogRelease[] = [
           { hu: "A Botok már nem jelentkeztetnek ki egy connectorból, miközben javítják, és egy connector-fiók, amelyből kijelentkezel, kijelentkezve marad.", en: "Bots no longer sign you out of a connector while repairing it, and a connector account you sign out of stays signed out." },
           { hu: "Ha egy modell nem érhető el a régiódban, a kör leáll, és elmagyarázza, miért, a Botok pedig visszaváltanak a Grokra.", en: "When a model isn't available in your region, the turn stops and explains why, and Bots fall back to Grok." },
           { hu: "A Slackben a Botok azokra az üzenetekre is válaszolnak, amelyeknek a szálát nem tudják olvasni, és ha egy csapattárs Botját kérdezed, az már nem kerül be az oldalsávodba.", en: "In Slack, Bots answer messages whose thread they can't read, and asking a teammate's Bot no longer adds it to your sidebar." },
-          { hu: "Ha a grok.com dashboardjáról kötöd be a Slacket, az app most visszavisz oda, hogy befejezd a Slack-fiókod összekapcsolását.", en: "Connecting Slack from the dashboard on grok.com now brings you back there to finish linking your Slack account." },
+          { hu: "Ha a grok.com dashboardjáról kötöd be a Slacket, mostantól visszakerülsz oda, hogy befejezd a Slack-fiókod összekapcsolását.", en: "Connecting Slack from the dashboard on grok.com now brings you back there to finish linking your Slack account." },
           { hu: "Hanghívásokban a Bot tudja a mai dátumot a te időzónádban, ahelyett hogy néha a holnapit használná.", en: "In voice calls, the Bot knows today's date in your time zone instead of sometimes using tomorrow's." },
           { hu: "Linuxon az app továbbra is reagál, és ki lehet lépni belőle, amíg egy értesítés látszik.", en: "On Linux, the app stays responsive and can quit while a notification is showing." },
           { hu: "A Usage & Billing a Current plan alatt mutatja a csomagod nevét, a használatmérő pedig felhasználtként jelöli a százalékát.", en: "Usage & Billing shows your plan name on Current plan, and the usage meter labels its percentage as used." },
@@ -386,7 +386,7 @@ export const changelog: ChangelogRelease[] = [
           { hu: "Ha / jelet írsz az üzenetszerkesztőbe, már nem nyílik meg a skillek és műveletek menüje.", en: "Typing / in the composer no longer opens a menu of skills and actions." },
           { hu: "A Botok gyorsabban dolgoznak a gépükön: a műveletek hamarabb lezárulnak, a képernyőképek gyorsabban visszaérkeznek, és az új ablakok kihagynak egy ötmásodperces várakozást.", en: "Bots work faster on their computer: actions settle sooner, screenshots come back quicker, and new windows skip a five-second wait." },
           { hu: "A Bot gépének képernyője 1920 × 1200-as az eddigi 1280 × 800 helyett, így több hely van, amikor figyeled, vagy átveszed az irányítást.", en: "The Bot's computer has a 1920 × 1200 screen, up from 1280 × 800, giving more room when you watch it or take over." },
-          { label: "Teams", hu: "Az általa követett Slack-szálakban egy Team Bot csendben marad azokra a címkézetlen válaszokra, amelyekhez nincs rá szükség, például a csak emojis válaszokra.", en: "In Slack threads it follows, a Team Bot stays quiet on untagged replies that don't need it, such as emoji-only replies." },
+          { label: "Teams", hu: "Az általa követett Slack-szálakban egy Team Bot nem reagál azokra a címkézetlen válaszokra, amelyekhez nincs rá szükség, például a csak emojis válaszokra.", en: "In Slack threads it follows, a Team Bot stays quiet on untagged replies that don't need it, such as emoji-only replies." },
         ],
       },
       {
@@ -394,7 +394,7 @@ export const changelog: ChangelogRelease[] = [
         items: [
           { hu: "A Gmail-műveletek ritkábban hiúsulnak meg: a küldés és a válasz már nem jelez hiányzó eszközt, és a Botok kivárják a Google sebességkorlátjait.", en: "Gmail actions fail less often: send and reply no longer report a missing tool, and Bots wait out Google's rate limits." },
           { hu: "Az e-mail-vázlatok kártyaként jelennek meg a chatben, a Stoppal megszakított Send is kimegy, és a mellékletek megtartják a fájlnevüket.", en: "Email drafts show up as a card in the chat, a Send cut off by Stop still goes out, and attachments keep their file names." },
-          { hu: "A Bot böngészője helyreáll egy összeomlott lapból, kezeli a nagy feltöltéseket, és 25 másodperc után feladja egy elakadt oldalt.", en: "The Bot's browser recovers from a crashed tab, handles large uploads, and gives up on a stuck page after 25 seconds." },
+          { hu: "A Bot böngészője helyreáll egy összeomlott lapból, kezeli a nagy feltöltéseket, és 25 másodperc után lemond egy elakadt oldalról.", en: "The Bot's browser recovers from a crashed tab, handles large uploads, and gives up on a stuck page after 25 seconds." },
           { hu: "A Stop vagy egy új üzenet nagyjából 30 másodpercen belül leállítja azt a Botot, amely egy nem reagáló lépésen akadt el.", en: "Stop or a new message ends a Bot that's stuck on an unresponsive step within about 30 seconds." },
           { hu: "A Secure Formok a Bot által megnyitott oldalon töltik ki a mezőket, a fizetési kártyamezők pedig Secure Formot kapnak képernyőátadás helyett.", en: "Secure Forms fill into the page the Bot has open, and checkout card fields get a Secure Form instead of a screen handoff." },
           { hu: "Ha az X-nek vagy a Vercelnek újra be kell jelentkezned, a Bot újracsatlakozási kártyát mutat, ahelyett hogy újrapróbálkozna vagy feladná.", en: "When X or Vercel needs you to sign in again, the Bot shows a reconnect card instead of retrying or giving up." },
@@ -497,7 +497,7 @@ export const changelog: ChangelogRelease[] = [
         items: [
           { hu: "A frissítések letöltése folytatódik, miután a géped felébred az alvásból, Macen pedig egy lemezképről vagy a Downloads mappából futó példány felajánlja a Move to Applications lehetőséget.", en: "Update downloads resume after your computer sleeps, and on Mac a copy running from a disk image or Downloads offers Move to Applications." },
           { hu: "Az a Bot, amely egy nem reagáló parancson vagy gépen akad el, egy megjegyzéssel leállítja magát, és a következő üzeneted ott folytatja, ahol abbamaradt.", en: "A Bot that hangs on an unresponsive command or computer stops itself with a note, and your next message picks up where it left off." },
-          { hu: "A telefonod minden Bot-válaszról csak egyszer értesít, és soha nem a törölt Bot-chatekről.", en: "Your phone notifies you about each Bot reply only once, and never for Bot chats you've deleted." },
+          { hu: "A telefonod minden Bot-válaszról csak egyszer értesít, a törölt Bot-chatekről pedig soha.", en: "Your phone notifies you about each Bot reply only once, and never for Bot chats you've deleted." },
         ],
       },
     ],
@@ -734,7 +734,7 @@ export const changelog: ChangelogRelease[] = [
         kind: "new",
         items: [
           { hu: "A Settings Language részében választhatod a cseh, a dán, a finn, a magyar vagy a norvég (bokmål) nyelvet, és a Follow System ezeket választja, ha a géped valamelyiket használja.", en: "You can choose Czech, Danish, Finnish, Hungarian, or Norwegian Bokmål under Language in Settings, and Follow System selects them when your computer uses one." },
-          { label: "Enterprise", hu: "Bekapcsolt Terminate Inactive Computers mellett a tagok Grok Bot-gépei 30 nap használat nélkül leállításra kerülnek.", en: "With Terminate Inactive Computers on, members' Grok Bot computers are terminated after 30 days without use." },
+          { label: "Enterprise", hu: "Bekapcsolt Terminate Inactive Computers mellett a tagok Grok Bot-gépei 30 nap használat nélkül megszűnnek.", en: "With Terminate Inactive Computers on, members' Grok Bot computers are terminated after 30 days without use." },
         ],
       },
       {
@@ -956,7 +956,7 @@ export const changelog: ChangelogRelease[] = [
       {
         kind: "improved",
         items: [
-          { hu: "Minden Bot azon a fülön nyílik meg újra, amelyet utoljára megnyitottál, újraindítás után is.", en: "Each Bot reopens on the tab you last had open, even after a restart." },
+          { hu: "Minden Bot azon a fülön nyílik meg újra, amely utoljára nyitva volt, újraindítás után is.", en: "Each Bot reopens on the tab you last had open, even after a restart." },
         ],
       },
       {
@@ -1031,7 +1031,7 @@ export const changelog: ChangelogRelease[] = [
         kind: "new",
         items: [
           { hu: "Adj hozzá egynél több fiókot, és válts közöttük a fiókmenüből; mindegyik megtartja a saját Botjait és adatait ezen a gépen.", en: "Add more than one account and switch between them from the account menu; each keeps its own Bots and data on this computer." },
-          { hu: "Adj hozzá egy Botot közvetlenül a Marketplace-beli sorából.", en: "Add a Bot straight from its row in the Marketplace." },
+          { hu: "Adj hozzá egy Botot közvetlenül a Marketplace-ben lévő sorából.", en: "Add a Bot straight from its row in the Marketplace." },
           { label: "Enterprise", hu: "A Conversation Insightsszal rendelkező Enterprise-adminok a Grok Bot oldalon látják a csapatuk leggyakoribb Grok Bot-felhasználási módjait, a teljes bontásra mutató linkkel.", en: "Enterprise admins with Conversation Insights see their team's top Grok Bot use cases on the Grok Bot page, with a link to the full breakdown." },
         ],
       },
@@ -1341,7 +1341,7 @@ export const changelog: ChangelogRelease[] = [
       {
         kind: "new",
         items: [
-          { hu: "Az üzenetekben a pull request-linkek mutatják a számot, a címet, és azt, hogy nyitott, draft, merged vagy closed állapotú-e.", en: "Pull request links in messages show the number, title, and whether it's open, draft, merged, or closed." },
+          { hu: "Az üzenetekben a pull request-linkek mutatják a számot, a címet, és azt, hogy nyitott, piszkozat, egyesített vagy lezárt állapotú-e.", en: "Pull request links in messages show the number, title, and whether it's open, draft, merged, or closed." },
           { hu: "A Botod létrehozhat egy új Botot az egyik oldalsávszakaszodban.", en: "Your Bot can create a new Bot inside one of your sidebar sections." },
         ],
       },
@@ -1457,7 +1457,7 @@ export const changelog: ChangelogRelease[] = [
           { label: "Enterprise", hu: "A dashboard Action Recording funkciója a tagok Grok Bot-műveleteit a csapatod auditnaplójába rögzíti.", en: "Action Recording on the dashboard records members' Grok Bot actions to your team's audit log." },
           { hu: "A Grok Bot arab, ukrán, holland, görög, afrikaans és héber nyelven is elérhető, az arabhoz és a héberhez jobbról balra haladó elrendezéssel.", en: "Grok Bot is available in Arabic, Ukrainian, Dutch, Greek, Afrikaans, and Hebrew, with right-to-left layouts for Arabic and Hebrew." },
           { hu: "A Command-Shift-V vagy a Ctrl-Shift-V formázás nélkül illeszti be a szöveget az üzenetmezőbe.", en: "Command-Shift-V, or Ctrl-Shift-V, pastes text into the message box without formatting." },
-          { hu: "Egy feladatot az egyik gépeden egy másik gépről is jóváhagyhatsz, ahol be vagy jelentkezve.", en: "You can approve a task on one computer from another computer where you're signed in." },
+          { hu: "Az egyik gépeden futó feladatot egy másik gépről is jóváhagyhatod, ahol be vagy jelentkezve.", en: "You can approve a task on one computer from another computer where you're signed in." },
           { label: "Enterprise", hu: "Az Enterprise-használati beállítások egy Personal Usage diagramot mutatnak a költésedről az előző hónaphoz és a korlátodhoz képest.", en: "Enterprise usage settings show a Personal Usage chart of your spend against last month and your limit." },
         ],
       },
