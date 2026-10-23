@@ -34,6 +34,8 @@ export type CommunityTemplate = {
   discoveredVia?: { labelHu: string; url: string }[];
   /** Hasonló témájú, de más hivatalos Marketplace-bot. */
   relatedMarketplace?: { slug: string; name: string; noteHu: string }[];
+  /** Hasonló témájú, de más közösségi sablon ezen az oldalon. */
+  relatedTemplates?: { slug: string; name: string; noteHu: string }[];
 };
 
 export const communityTemplates = raw as CommunityTemplate[];

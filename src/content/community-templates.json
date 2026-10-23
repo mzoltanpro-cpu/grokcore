@@ -2932,5 +2932,186 @@
         "url": "https://x.com/cu30rry_/status/2113466693456728417"
       }
     ]
+  },
+  {
+    "slug": "professor-g",
+    "name": "Professor G",
+    "author": "Mike P",
+    "handle": "@mikepat711",
+    "postUrl": "https://x.com/mikepat711/status/2111548114641269036",
+    "postedAt": "2026-10-17T20:01:15Z",
+    "templateUrl": "https://x.ai/bot/O-KFiRuTucT9OlE7tg3gk",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Tanítóbot bármilyen témához. A sablon leírása szerint türelmes tanárként lépésről lépésre tanít meg bármit, és addig kérdez vissza, amíg el nem tudod magyarázni a tananyagot; vezeti az olvasmánylistádat is, és a valódi érdeklődési köreid alapján ajánl könyveket. A készítő szerint elég annyit írni a botnak, hogy „teach me”, és hogy mit szeretnél megtanulni, és könnyen érthető hasonlatokkal teli, felépített kurzust kapsz. Azt is írja, hogy korábban Claude-dal használta, és a Grok Botban már működnek a felugró feleletválasztós kérdések, amelyek a Grok chatből hiányoztak.",
+    "postQuote": "I used to use this with claude, and later ported it over to Grok, but it didn't work well in Grok because Grok's model just wasn't as good at teaching, and Grok chat didn't have multiple-choice pop-up capability.  Grok Bot fixes all of this.  Just tell Professor G to \"teach me\" whatever you're trying to learn, and it'll give you a structured course full of easy to understand analogies. Has helped me learn so many things on the fly.",
+    "templateQuote": "A patient tutor that teaches you any topic step by step and quizzes you until you can explain it back. It also keeps your reading list and recommends books from your real interests.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "a készítő saját sablongyűjtő cikkéből („Steal these Grok Bots. Steal the Avatars Too”, 2026-10-23)",
+        "url": "https://x.com/mikepat711/status/2113692456881365304"
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "jane",
+        "name": "Jane",
+        "noteHu": "A közösségi Jane sablon (Kent Langley) szintén tanítóbot, de más bot: általános iskolás gyerekeknek ír napi feladatokat a nyílt forráskódú Jane tanulóalkalmazásban, nem felnőtteknek tanít tetszőleges témát."
+      }
+    ]
+  },
+  {
+    "slug": "budget-bot",
+    "name": "Budget Bot",
+    "author": "Mike P",
+    "handle": "@mikepat711",
+    "postUrl": "https://x.com/mikepat711/status/2113057811940659422",
+    "postedAt": "2026-10-22T00:00:15Z",
+    "templateUrl": "https://x.ai/bot/VkyS_4ND_gJWpdjaCPuSV",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Háztartási költségvetés-vezető bot. Fontos: a bankszámláidhoz és a kártyáidhoz fér hozzá, a Grok Bot pénzügyi (Finance) connectorán keresztül olvassa a számláidat és a tranzakcióidat. A sablon leírása szerint nullára tervezett (zero-sum) háztartási költségvetést vezet: a Finance connectorral összeköti a bankodat és a kártyáidat, költségvetési táblázatot épít a Google Drive-odban, naponta rögzíti az új tranzakciókat, és napi Budget Dashboardot vezet. A készítő szerint a bot figyeli a folyószámláit, az új tranzakciókat kategorizálja és beírja a táblázatba, minden reggel elküldi a dashboard linkjét az új tételekkel és a besorolásukkal, a sablon pedig lépésről lépésre végigvezet a beállításon.",
+    "postQuote": "1) connects to my checking accounts via Grok Bot’s finance connector.\n\n2) Monitors my accounts for new transactions. When a new transaction appears, my Bot categorizes and logs them in a spreadsheet it built and saved to Google Drive\n\n3) Every morning, my budget bot sends me the link to this dashboard with all new updates, mentions each new transaction and tells me how it categorized them.",
+    "templateQuote": "A zero-sum household budget assistant: links your bank and cards through Finance, builds your budget sheet in Google Drive, logs new transactions daily, and keeps a daily Budget Dashboard.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Az új tranzakciók napi rögzítése a költségvetési táblázatba",
+        "quote": "logs new transactions daily",
+        "from": "template"
+      },
+      {
+        "labelHu": "Reggeli üzenet a dashboard linkjével és az új tranzakciók besorolásával",
+        "quote": "Every morning, my budget bot sends me the link to this dashboard with all new updates, mentions each new transaction and tells me how it categorized them.",
+        "from": "post"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Finance (pénzügyi connector: bankszámlák és kártyák)",
+        "quote": "links your bank and cards through Finance",
+        "from": "template"
+      },
+      {
+        "name": "Google Drive",
+        "quote": "builds your budget sheet in Google Drive",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "a készítő saját sablongyűjtő cikkéből („Steal these Grok Bots. Steal the Avatars Too”, 2026-10-23)",
+        "url": "https://x.com/mikepat711/status/2113692456881365304"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "credit-card-max",
+        "name": "Credit Card Max",
+        "noteHu": "A hivatalos Marketplace Credit Card Max botja (Trevin Chow) hasonló témájú, de más bot: szintén a Grok Finance (Plaid) adataiból dolgozik, de azt mondja meg, melyik kártyát érdemes használni, és a pontokat, jóváírásokat követi, nem költségvetést vezet."
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "bills",
+        "name": "Bills",
+        "noteHu": "A közösségi Bills sablon (Daniel Dewhurst) hasonló témájú, de más bot: az e-mailjeidből követi a háztartási számlákat, előfizetéseket és megújításokat, nem a bankszámláidat olvassa, és nem vezet költségvetést."
+      }
+    ]
+  },
+  {
+    "slug": "automobot",
+    "name": "Automobot",
+    "author": "Mike P",
+    "handle": "@mikepat711",
+    "postUrl": "https://x.com/mikepat711/status/2112219622812651566",
+    "postedAt": "2026-10-19T16:29:35Z",
+    "templateUrl": "https://x.ai/bot/io_qNEIpuf2feXwL2oldi",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Autófenntartás-követő bot. A sablon leírása szerint nyilvántartja az autód karbantartását: műszaki vizsga, forgalmi regisztráció, biztosítás, olajcsere, gumik, gyártói visszahívások és szervizelőzmények. Ha lefotózol egy matricát vagy egy számlát, az emlékeztetőket a bot intézi. A készítő szerint azoknak szól, akik rendre elfelejtik a vizsgát, a regisztráció lejártát, az olajcserét, a gumik cseréjét, a gyártói visszahívásokat (a poszt az amerikai közlekedésbiztonsági hivatal, az NHTSA visszahívásait említi) vagy az új biztosítási kártya kesztyűtartóba tételét.",
+    "postQuote": "You’re type B. You always forget to schedule vehicle inspection. You never remember when registration is due. If you drive an ICE vehicle, you forget to get an oil change until your engine screams. Tire rotation? Forget about it. Your vehicle received a NHTSA recall? You never find out and chuck the mail. New insurance cards coming in the mail that need to go into your glove box? lol, good one.\n\nIf this is you, Automobot is for you. It handles all of these things, and much more.",
+    "templateQuote": "Automobot tracks your car's upkeep: inspection, registration, insurance, oil changes, tires, recalls, and service history. Snap a photo of a sticker or receipt and it handles the reminders.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "a készítő saját sablongyűjtő cikkéből („Steal these Grok Bots. Steal the Avatars Too”, 2026-10-23)",
+        "url": "https://x.com/mikepat711/status/2113692456881365304"
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "car-deal-scout",
+        "name": "Car Deal Scout",
+        "noteHu": "A közösségi Car Deal Scout sablon (Kent Weber) szintén autós, de más bot: új autót keres a hirdetési oldalakon, nem a meglévő autód karbantartását követi."
+      }
+    ]
+  },
+  {
+    "slug": "errand-buddy",
+    "name": "Errand Buddy",
+    "author": "Mike P",
+    "handle": "@mikepat711",
+    "postUrl": "https://x.com/mikepat711/status/2111213218626453959",
+    "postedAt": "2026-10-16T21:50:30Z",
+    "templateUrl": "https://x.ai/bot/NmaUB-rEQD7Q3t5_Dp7CS",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Helyalapú bevásárló-emlékeztető bot. Kell hozzá iPhone a Parancsok (Shortcuts) appal, valamint Notion; a sablon leírása szerint Notion helyett egy egyszerű, beépített lista is megfelel. A sablon leírása szerint vezeti a beszerzendők listáját, és szól, mit vegyél meg, amint az iPhone-od jelzi, hogy megérkeztél egy boltba. A készítő szerint a gyakran látogatott boltokat felveszed az iPhone Parancsok appjába; ha a telefon a bolt közelébe ér, egy webhook szól a botnak, az átnézi a listát, és push-értesítést küld arról, amit ott megvehetsz. A beállításon a sablon lépésről lépésre végigvezet.",
+    "postQuote": "My Errand Buddy template will walk you through a step-by-step setup for receiving automatic reminders to grab items on your list when you arrive at the store they are located at.\n\nYou set this up by adding stores you frequently visit to your \"shortcuts\" iPhone app. When your phone sees that you're near the store, it triggers a webhook that alerts your Errand Buddy to check the errands list, and remind you about anything on your list that you can pickup while you're there.",
+    "templateQuote": "Keeps your errands list and pings you with what to grab the moment your iPhone says you've arrived at a store. Works with Notion (or a simple built-in list) plus iPhone Shortcuts.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Notion",
+        "quote": "Works with Notion (or a simple built-in list)",
+        "from": "template"
+      },
+      {
+        "name": "iPhone Parancsok (Shortcuts)",
+        "quote": "plus iPhone Shortcuts",
+        "from": "template"
+      }
+    ],
+    "discoveredVia": [
+      {
+        "labelHu": "a készítő saját sablongyűjtő cikkéből („Steal these Grok Bots. Steal the Avatars Too”, 2026-10-23)",
+        "url": "https://x.com/mikepat711/status/2113692456881365304"
+      }
+    ]
+  },
+  {
+    "slug": "tesla-wrap-builder",
+    "name": "Tesla Wrap Builder",
+    "author": "Mike P",
+    "handle": "@mikepat711",
+    "postUrl": "https://x.com/mikepat711/status/2106020563672060183",
+    "postedAt": "2026-10-02T13:56:45Z",
+    "templateUrl": "https://x.ai/bot/9bKx_1Qc-S3xUrlH0oRv5",
+    "templatePageReadable": true,
+    "fetched": "2026-10-23",
+    "summaryHu": "Mintatervező bot a Tesla képernyőjén látható 3D autóhoz. A sablon leírása szerint egyedi „wrap” mintát tervez a Tesla Paint Shop funkciójához (nem valódi fóliázáshoz): a logódat, fotódat, mintádat, szövegedet vagy színeidet a Tesla hivatalos, a típusodhoz tartozó sablonjára illeszti, és feltölthető fájlként adja vissza. A készítő szerint a bot először megkérdezi, milyen Teslád van, aztán meghatározott szabályok szerint készíti a mintát; bármelyik Teslához és bármilyen mintához használható.",
+    "postQuote": "Here is my Tesla Wrap Builder Bot template. The template will start by asking you which Tesla you own, and then will follow a set of rules for creating wraps for your vehicle. This is based on the wrap I shared earlier. Can use this for any Tesla and any wrap design you’d like :)",
+    "templateQuote": "Designs custom wraps for your Tesla's on-screen 3D car in Paint Shop (not real vinyl): your logo, photo, pattern, text or colours, fitted to Tesla's official template for your model and handed back as a file ready to upload.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "a készítő saját sablongyűjtő cikkéből („Steal these Grok Bots. Steal the Avatars Too”, 2026-10-23)",
+        "url": "https://x.com/mikepat711/status/2113692456881365304"
+      }
+    ]
   }
 ]
