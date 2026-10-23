@@ -13,6 +13,7 @@ const printerFetched = "2026-10-21";
 const woodFetched = "2026-10-22";
 const templateFetched = "2026-10-22";
 const kanikaFetched = "2026-10-22";
+const brainFetched = "2026-10-23";
 
 export type AdvancedSource = {
   title: string;
@@ -104,6 +105,20 @@ const src = {
     date: "2026-10-13 18:29 (budapesti idő)",
     kind: "kozossegi",
   },
+  tsuki: {
+    title: "„Second Brain Engineering: Build a Grok Bot That Turns Your Notes Into Finished Work” (X-cikk, angol)",
+    url: "https://x.com/tsukiema_/status/2112947495059743047",
+    author: "tsukiema (@tsukiema_)",
+    date: "2026-10-21 18:41 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  karpathy: {
+    title: "„LLM Knowledge Bases” (X-poszt, angol)",
+    url: "https://x.com/karpathy/status/2039805659525644595",
+    author: "Andrej Karpathy (@karpathy)",
+    date: "2026-04-02 22:42 (budapesti idő)",
+    kind: "kozossegi",
+  },
   seo: {
     title: "„Top 20 Grok Bot Prompts For SEO - The Only Stack You'll Ever Need” (X-cikk, angol)",
     url: "https://x.com/bloggersarvesh/status/2090071557590900974",
@@ -188,6 +203,12 @@ const src = {
   dSettingsK: { title: "Settings and notifications (docs.x.ai)", url: docs.settings, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
   dAppsK: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
   dFaqK: { title: "Frequently asked questions (docs.x.ai)", url: docs.faq, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
+  dBotsBrain: { title: "Create and manage Bots (docs.x.ai)", url: docs.bots, author: "docs.x.ai", date: `lekérve ${brainFetched}`, kind: "hivatalos" },
+  dAppsBrain: { title: "Use the computer and apps (docs.x.ai)", url: docs.apps, author: "docs.x.ai", date: `lekérve ${brainFetched}`, kind: "hivatalos" },
+  dSkillsBrain: { title: "Skills and routines (docs.x.ai)", url: docs.skills, author: "docs.x.ai", date: `lekérve ${brainFetched}`, kind: "hivatalos" },
+  dFilesBrain: { title: "Files and results (docs.x.ai)", url: docs.files, author: "docs.x.ai", date: `lekérve ${brainFetched}`, kind: "hivatalos" },
+  dApproveBrain: { title: "Approvals, security, and privacy (docs.x.ai)", url: docs.approve, author: "docs.x.ai", date: `lekérve ${brainFetched}`, kind: "hivatalos" },
+  dSettingsBrain: { title: "Settings and notifications (docs.x.ai)", url: docs.settings, author: "docs.x.ai", date: `lekérve ${brainFetched}`, kind: "hivatalos" },
 } satisfies Record<string, AdvancedSource>;
 
 /** Rövid hivatkozás a szövegben: szerző + link. */
@@ -477,12 +498,13 @@ export const advancedGuides: AdvancedGuide[] = [
     slug: "masodik-agy",
     title: "Második agy fájlokból, reggeli oldallal",
     nav: "Második agy",
-    card: "Egy Bot, amely fájlokban tartja, amit rólad és a munkádról tudnia kell, és reggel egy oldalon összefoglal.",
+    card: "Egy Bot, amely fájlokban tartja, amit rólad és a munkádról tudnia kell, és reggel egy oldalon összefoglal. Két közösségi cikk alapján, négy eredeti prompttal.",
     description:
-      "Személyes tudásbázis Grok Bottal: fájl rólad, mappaszerkezet, éjszakai iktatás, reggeli oldal, skillek és szabályfájl. Adatvédelmi figyelmeztetéssel. Haladó útmutató a Kezdő 5 nap után.",
-    lead: "A Bot memóriája rövid összefoglalókat őriz. Ami hosszabb távon kell, azt érdemes fájlba írni a Bot gépén, mert az szó szerint megmarad, és minden Botod el tudja olvasni. @Argona0x közösségi cikke hét lépésben építi fel egy „Brain” nevű Botból a személyes tudásbázist. Itt röviden, magyarul vesszük végig, a dokumentációval összevetve.",
+      "Személyes tudásbázis Grok Bottal két közösségi X-cikk (@Argona0x, @tsukiema_) alapján: fájl rólad, mappaszerkezet, éjszakai iktatás, reggeli oldal, skillek és szabályfájl. Négy eredeti prompt, ellenőrzőlista az első piszkozathoz, adatvédelmi figyelmeztetés. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "A Bot memóriája rövid összefoglalókat őriz. Ami hosszabb távon kell, azt érdemes fájlba írni a Bot gépén, mert az szó szerint megmarad, és minden Botod el tudja olvasni. @Argona0x közösségi cikke hét lépésben építi fel egy „Brain” nevű Botból a személyes tudásbázist. Második forrásként tsukiema (@tsukiema_) cikkét is felhasználjuk: ugyanezt a felépítést hat lépésben, lassabb és jobban ellenőrizhető sorrendben írja le, és a promptjait szövegként közli. Itt röviden, magyarul vesszük végig, a dokumentációval összevetve.",
     audience: "Annak szól, aki a 2. napon már bekötötte a levelezését és a naptárát, és egy Botot személyes asszisztensként használ.",
     minutes: "Kb. 45 perc az első lépésekre, a mi becslésünk",
+    fetched: brainFetched,
     steps: [
       {
         name: "Egy fájl rólad",
@@ -523,11 +545,38 @@ export const advancedGuides: AdvancedGuide[] = [
         type: "p",
         html: `A dokumentáció szerint a Bot megjegyzi a tartós beállításokat, a fontos tényeket és a korábbi munkák összefoglalóit, de a memória nem helyettesíti a hiteles forrást. A változó tények maradjanak a forrásrendszerben, és fontos döntésnél a Bot nyissa meg újra az aktuális adatot. (<a href="${docs.bots}">Create and manage Bots</a>) A tartós fájlokat a közös <code>/workspace</code> mappába érdemes tenni, és minden Botod olvashatja őket. (<a href="${docs.apps}">Use the computer and apps</a>) A cikk erre épít: a „második agy” egy mappa, nem a chat.`,
       },
-      { type: "h2", text: "A hét lépés" },
+      { type: "h2", text: "Az első cikk hét lépése" },
       { type: "steps" },
       {
         type: "p",
         html: `Az 1. lépés ötlete ${c("pms")} (${vendor}) útmutatójából jön, aki ezt tartja a leghasznosabb utasításnak, amit kipróbált: „Read my past Slack messages and develop a Slack style guide for me”. Az 5. lépés sorrendje a dokumentációé: előbb egyszer elvégezni, megbízhatóvá tenni, skillként menteni, és csak utána automatizálni. (<a href="${docs.skills}">Skills and routines</a>) A 6. lépés ${c("eng")} (${vendor}) szabálykönyvére hasonlít, amelyet az operatív Botja minden reggel átnéz a többiekkel.`,
+      },
+      { type: "h2", text: "A második cikk: kis lépésekben, ellenőrzéssel" },
+      {
+        type: "p",
+        html: `${c("tsuki")} cikke ugyanazt a mappát és ugyanazokat a fájlokat építi fel (<code>raw/</code>, <code>people/</code>, <code>projects/</code>, <code>out/</code>, <code>INDEX.md</code>, <code>log.md</code>, <code>me.md</code>, <code>voice.md</code>, <code>attention.md</code>, <code>rules.md</code>), de lassabban. Előbb egyetlen beszélgetésből készíttet kész válaszpiszkozatot, ezt átnézi és javítja, csak utána menti skillként, köti be a Gmailt, és csak a végén ütemez. Ez a dokumentáció sorrendje is: előbb egyszer elvégezni, megbízhatóvá tenni, skillként menteni, és csak utána automatizálni. (<a href="${docs.skills}">Skills and routines</a>) A szerző szerint az első alkalommal elég egy teljes kör: egy új forrás, a mentett összefoglaló átnézése, egy használható piszkozat és annak javítása.`,
+      },
+      {
+        type: "p",
+        html: `Mindkét cikk Andrej Karpathy 2026. áprilisi posztjára épít (<a href="${src.karpathy.url}">„LLM Knowledge Bases”</a>), amelyben a nyers forrásokat egy <code>raw/</code> mappába gyűjti, és ezekből egy LLM markdown-fájlokból álló wikit ír és tart karban. tsukiema posztja „LLM Wiki” néven említi; Karpathy posztjának címe „LLM Knowledge Bases”.`,
+      },
+      { type: "p", html: `<strong>Négy kérdés az első piszkozathoz.</strong> A cikk 3. lépése szerint az első kész válaszpiszkozatot így érdemes átnézni, és addig javítani, amíg tényleg elküldenéd:` },
+      {
+        type: "ol",
+        items: [
+          "Megmaradt, hogy ki mit mondott?",
+          "A piszkozat arra válaszol, amit a másik fél ténylegesen kért?",
+          "Világosan el vannak választva a javasolt lépések a már megtett ígéretektől?",
+          "Követi a jóváhagyott írási szabályaidat?",
+        ],
+      },
+      {
+        type: "p",
+        html: `<strong>Futtasd kétszer az iktatást.</strong> A cikk 4. lépése a Gmail-címkés iktatást először legfeljebb öt levélen próbálja ki, majd ugyanazon az öt levélen még egyszer lefuttatja. A második futásnak fel kell ismernie a már mentett leveleket, és nem hozhat létre másolatot. Ez akkor számít, ha egy félbeszakadt futás később folytatódik. Az éjszakai routine csak ezután készüljön el, ugyanezzel az ellenőrzéssel, és új routine-t a <em>Test run</em> gombbal, biztonságos bemenettel próbálj ki. (<a href="${docs.skills}">Skills and routines</a>)`,
+      },
+      {
+        type: "p",
+        html: `Napközben kézzel is küldhetsz anyagot: iPhone-on a rendszer megosztás menüjével fotót, fájlt, linket vagy szöveget küldhetsz egy kiválasztott Grok Bot-chatbe, Androidon a megosztás jelenleg csak szöveget fogad. (<a href="${docs.files}">Files and results</a>) A szerző azt javasolja, hogy linknél az eredeti cím és a mentés napja mellé azt is írd oda, miért tartod meg.`,
       },
       { type: "h2", text: "Takarékosan a rutinokkal" },
       {
@@ -539,32 +588,57 @@ export const advancedGuides: AdvancedGuide[] = [
         type: "prompt",
         label: "@Argona0x: az egész egyben, eredeti",
         code: "build the second brain this article describes, and wait for my yes before each routine.",
-        caption: `Forrás: ${c("brain")}, ${src.brain.date} (közösségi forrás). A szerző ezt a sort a teljes cikk elé írva javasolja beilleszteni. A cikk többi promptja beágyazott blokkban van, ezeket nem tudtuk szövegként kiolvasni, ezért nem közöljük.`,
+        caption: `Forrás: ${c("brain")}, ${src.brain.date} (közösségi forrás). A szerző ezt a sort a teljes cikk elé írva javasolja beilleszteni. A cikk többi promptját itt nem idézzük; a lenti négy eredeti prompt ${c("tsuki")} cikkéből való.`,
+      },
+      {
+        type: "prompt",
+        label: "tsukiema: a Bot leírása (1. lépés), eredeti",
+        code: "Maintain my second brain in /workspace/brain.\nRead INDEX.md and rules.md at the start of a task, then open the relevant files.\nUse voice.md when drafting in my name.\nPreserve original material in raw/ and link each summary to its sources.\nCheck changing facts in the current source before using them.\nSave drafts and plans in out/ and show me the result.\nAsk for approval before sending, publishing, purchasing, deleting, or changing external records.\nReport missing access and failed checks clearly.",
+        caption: `Forrás: ${c("tsuki")}, ${src.tsuki.date} (közösségi forrás), a cikk 1. lépése. Szó szerint. A szerző ezt az Edit Profile alatt a Bot leírásába (description) illeszti be. (<a href="${docs.bots}">Create and manage Bots</a>)`,
+      },
+      {
+        type: "prompt",
+        label: "tsukiema: beszélgetésből válaszpiszkozat (3. lépés), eredeti",
+        code: "Use the attached conversation to prepare my next reply.\n\nRead voice.md, rules.md, and the relevant project file first.\nPreserve the new source material in raw/ and update the project summary with source links.\n\nReturn:\n1. The other person's request in one sentence.\n2. Confirmed commitments, with a source for each.\n3. Missing information that affects the reply.\n4. A concise reply in my voice, saved in out/.\n\nUse current source material for dates, prices, and status.\nIf a commitment needs my decision, leave it as a clearly marked question outside the draft.\nKeep supporting notes separate from the message text.\nShow the draft here and leave sending to me.",
+        caption: `Forrás: ${c("tsuki")}, ugyanott, a cikk 3. lépése. Szó szerint. A szerző egy aktuális projektbeszélgetést és a saját jegyzeteit csatolja mellé, még a levelezés bekötése előtt. A küldés nálad marad.`,
+      },
+      {
+        type: "prompt",
+        label: "tsukiema: reggeli összefoglaló routine (5. lépés), eredeti",
+        code: "Draft a weekday 07:30 morning routine in [YOUR TIME ZONE].\nRead rules.md and attention.md, then check the relevant current sources.\n\nSave the brief in out/ and show it in this conversation.\nKeep it under 400 words, with these sections only when useful:\n\nFacts: relevant changes, each with a source and check time.\nInferences: possible implications, explicitly labelled.\nCompleted: files or drafts actually produced, with paths.\nYour decision: items waiting for my approval and the exact choice needed.\nQuestions: missing information that blocks useful work.\n\nPrioritize my confirmed commitments and deadlines.\nIf nothing changed, stay quiet. If a source check fails, report the failure and affected items.\nShow the schedule, next run, sources, and approval boundary before enabling it.",
+        caption: `Forrás: ${c("tsuki")}, ugyanott, a cikk 5. lépése. Szó szerint. A [YOUR TIME ZONE] helyére a saját időzónádat írd, például Europe/Budapest. A szakaszok a dokumentáció ajánlását követik: tények, következtetések, elvégzett és jóváhagyásra váró lépések, nyitott kérdések. (<a href="${docs.files}">Files and results</a>)`,
+      },
+      {
+        type: "prompt",
+        label: "tsukiema: javításból szabály (6. lépés), eredeti",
+        code: "Turn this correction into a proposed rule for rules.md.\nState when it applies and include a short example.\nCheck for an existing rule that covers the same behavior or conflicts with it.\nShow me the proposed change before saving it.\nApply the approved rule to the current artifact and show the revision.",
+        caption: `Forrás: ${c("tsuki")}, ugyanott, a cikk 6. lépése. Szó szerint. A szerző szerint a javítás legyen konkrét: a „legyen természetesebb” helyett például az, hogy ügyfélnek írt válaszban keresztnéven szólítson, és egy folyamatban lévő szálban hagyja el a nyitó üdvözlést.`,
       },
       {
         type: "prompt",
         label: "Saját példánk, nem a forrásból",
         code: "Kérdezz ki engem egyenként, legfeljebb tíz kérdésben: miben dolgozom, kikkel (csak szerepkör, név nélkül), milyen visszatérő feladataim vannak, és hogyan szoktam írni (hossz, megszólítás, elköszönés, hangnem). A válaszaimból írd meg a /workspace/agy/rolam.md és a /workspace/agy/stilus.md fájlt. Mutasd meg mindkettőt, és állj meg. Rutint csak akkor hozz létre, ha előtte megkérdeztél, és igent mondtam.",
-        caption: "Ez a változat nem kér leveleket, így kevesebb harmadik személyről szóló adat kerül a gépre.",
+        caption: "Ez a változat nem kér leveleket, így kevesebb harmadik személyről szóló adat kerül a gépre: adatvédelmi szempontból ez a kíméletesebb kezdés. tsukiema is a kikérdezést javasolja, ha nincs írásmintád.",
       },
       { type: "h2", text: "Amit nem ellenőriztünk" },
       {
         type: "ul",
         items: [
-          `A cikk útmutató, nem beszámoló: a szerző nem közöl saját mért eredményt, mi sem próbáltuk ki a teljes felépítést.`,
+          `Mindkét cikk útmutató, nem beszámoló: egyik szerző sem közöl saját mért eredményt, és mi sem próbáltuk ki a teljes felépítést.`,
+          `Mindkét cikk azt írja, hogy egy poszt, amely a Karpathy leírta tudásbázis egy megépített változatát mutatja be, 85\u00a0000 könyvjelzőt kapott. Linket egyik sem ad, ezért nem ellenőriztük.`,
+          `Mindkét cikk idézi „a legtöbbször mentett útmutatót”, amely szerint az Obsidiant nyitva kell hagyni, mert a kapcsolat csak addig működik, amíg az app fut. Szerzőt és linket egyik sem ad, ezért nem ellenőriztük.`,
           `A Main Bot cseréje a sidebar csillagos Botjára jobb kattintással (Replace with different Bot): ${marker("felület, a docs.x.ai-n nem találtuk")}`,
-          `Megosztás iPhone-ról bármely appból a Brain chatbe (share menü → Grok Bot → Attach): ${marker("mobil megosztás menete")}`,
           `A cikk ár- és próbaidő-adatait nem vesszük át; ezekről az <a href="/5-nap/1-nap-letoltes-belepes/">1. nap</a> szól, forrással.`,
         ],
       },
       {
         type: "done",
         items: [
-          "Van egy rolam.md és egy stilus.md fájlod, tudod, mi kerül fájlba és mit néz meg a Bot mindig a forrásban, és csak a te igeneddel indult rutin.",
+          "Van egy rolam.md és egy stilus.md fájlod, tudod, mi kerül fájlba és mit néz meg a Bot mindig a forrásban, az első piszkozatot a négy kérdéssel átnézted, és csak a te igeneddel indult rutin.",
         ],
       },
     ],
-    sources: [src.brain, src.pms, src.eng, src.dBots, src.dApps, src.dSkills, src.dApprove, src.dSettings],
+    sources: [src.brain, src.tsuki, src.karpathy, src.pms, src.eng, src.dBotsBrain, src.dAppsBrain, src.dSkillsBrain, src.dFilesBrain, src.dApproveBrain, src.dSettingsBrain],
   },
   {
     slug: "seo-promptok",
