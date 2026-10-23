@@ -4,6 +4,7 @@ export const docs = {
   bots: "https://docs.x.ai/grok-bot/bots",
   skills: "https://docs.x.ai/grok-bot/skills-routines-and-automations",
   apps: "https://docs.x.ai/grok-bot/computer-and-apps",
+  files: "https://docs.x.ai/grok-bot/files-and-results",
   approve: "https://docs.x.ai/grok-bot/approvals-security-and-privacy",
   faq: "https://docs.x.ai/grok-bot/faq",
   mobile: "https://docs.x.ai/grok-bot/mobile",
