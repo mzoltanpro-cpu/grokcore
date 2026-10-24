@@ -119,6 +119,7 @@ export const GET: APIRoute = ({ site }) => {
       `Skillek: ${item.skills.map((s) => s.name).join(", ") || templateMissing}`,
       `Rutinok: ${item.routines.length ? `${item.routines.map((r) => r.labelHu).join("; ")} (a forrás nem nevez meg routine-t; név és ütemezés: ${templateMissing})` : templateMissing}`,
       `Integrációk: ${item.integrations.map((i) => i.name).join(", ") || templateMissing}`,
+      ...(item.noteHu ? [`Megjegyzés: ${item.noteHu}`] : []),
       `Oldal: ${absUrl(origin, templatePath(item.slug))}`,
       `Forrás: X-poszt ${item.postUrl} (${item.handle}, közzétéve ${budapestTime(item.postedAt)} budapesti idő szerint); sablon ${item.templateUrl}; lekérve: ${item.fetched}`,
       "",
