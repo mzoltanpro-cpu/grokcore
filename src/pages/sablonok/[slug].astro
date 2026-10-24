@@ -92,6 +92,7 @@ const ld = {
           A készítő X-posztja ({item.postLang === "ja" ? "japán" : item.postLang === "zh" ? "kínai" : "angol"} idézet): <a href={item.postUrl}>{item.handle} · x.com</a>
         </figcaption>
       </figure>
+      {item.noteHu && <p class="fine" data-template-note>Megjegyzés: {item.noteHu}</p>}
       {
         item.relatedMarketplace?.map((rel) => (
           <p class="fine" data-related-marketplace={rel.slug}>

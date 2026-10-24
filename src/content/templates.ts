@@ -32,6 +32,8 @@ export type CommunityTemplate = {
   /** Hol bukkantunk rá (pl. egy válogatás vagy szál); nem forrás, csak jelzés. */
   postLang?: "en" | "ja" | "zh";
   discoveredVia?: { labelHu: string; url: string }[];
+  /** Önálló Megjegyzés a kártyán (pl. földrajzi korlát), ha nem másik botra mutat. */
+  noteHu?: string;
   /** Hasonló témájú, de más hivatalos Marketplace-bot. */
   relatedMarketplace?: { slug: string; name: string; noteHu: string }[];
   /** Hasonló témájú, de más közösségi sablon ezen az oldalon. */

@@ -3395,5 +3395,37 @@
     "skills": [],
     "routines": [],
     "integrations": []
+  },
+  {
+    "slug": "apple-inventory-deal-bot",
+    "name": "Apple Inventory & Deal Bot",
+    "author": "Phil",
+    "handle": "@Phil_Holland",
+    "postUrl": "https://x.com/Phil_Holland/status/2111638882194436276",
+    "postedAt": "2026-10-18T02:01:56Z",
+    "templateUrl": "https://x.ai/bot/Vx13jzt30gpYEztDQbueA",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Apple-termékkereső és akciófigyelő bot. A sablon leírása szerint megkeresi, hol van készleten pontosan az az Apple-termék, amelyet szeretnél, és megmutatja, ki tudja a leghamarabb és a legolcsóbban eljuttatni hozzád: az Apple, a mobilszolgáltatók (carriers), a nagy áruházláncok (big-box stores), az Amazon és a gyárilag felújított (certified refurb) ajánlatok közül. Kiszámolja a valódi végösszeget, figyeli, mikor kerül újra készletre a termék és mikor csökken az ára, és csak a te igenedre vásárol. A készítő a sablonlistájában úgy foglalja össze, hogy a közelben vagy országosan (nationwide) keresi a készletet, valódi akciókról küld riasztást, és felújított változatokat is mutat.",
+    "postQuote": "Just made the best @Apple Inventory and Deal finder with @grok @bot\n\nToo good not to share. These are so fun!",
+    "templateQuote": "Finds the exact Apple product you want in stock and shows who can get it into your hands soonest and cheapest, across Apple, carriers, big-box stores, Amazon, and certified refurb. It works out the true cost, watches for restocks and price drops, and buys only on your yes.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "discoveredVia": [
+      {
+        "labelHu": "a készítő saját sablonlistájából (2026-10-24)",
+        "url": "https://x.com/Phil_Holland/status/2113775301603803253"
+      }
+    ],
+    "noteHu": "amerikai fókuszú sablon. Az Apple, a mobilszolgáltatók (carriers), a nagy áruházláncok (big-box stores) és az Amazon készletét figyeli, a készítő szerint a közelben vagy országosan (nationwide); ezek a leírás alapján amerikai kereskedők. Magyar vagy európai boltot a sablon leírása nem említ.",
+    "relatedTemplates": [
+      {
+        "slug": "smart-shopper",
+        "name": "Smart Shopper",
+        "noteHu": "A közösségi Smart Shopper sablon (JP) szintén árfigyelő, de más bot: bármelyik webáruházban figyeli az árakat, és ajándékot is keres, nem kifejezetten Apple-termékek készletét követi."
+      }
+    ]
   }
 ]
