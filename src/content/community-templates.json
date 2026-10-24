@@ -3427,5 +3427,24 @@
         "noteHu": "A közösségi Smart Shopper sablon (JP) szintén árfigyelő, de más bot: bármelyik webáruházban figyeli az árakat, és ajándékot is keres, nem kifejezetten Apple-termékek készletét követi."
       }
     ]
+  },
+  {
+    "slug": "dashboard-maker",
+    "name": "Dashboard Maker",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "postUrl": "https://x.com/Av1dlive/status/2113979312139538607",
+    "postedAt": "2026-10-24T13:01:58Z",
+    "templateUrl": "https://x.ai/bot/qbiG4Q0RQuy0Y_C8Hr--l",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Céges munkaterület-építő sablon. A sablon x.ai lapja szerint kitalálja, mire érdemes dashboardot készíteni a munkádban, élő Page-eket épít valós adatokból, és kivezeti azokat, amelyeket senki nem használ. A készítő X-posztja szerint a csatlakoztatott appokból élő dashboardokat épít, magától naprakészen tartja őket, a teljes beállítás egy Grok Bot-sablon, és a használt dashboard-promptok a válaszokban vannak.",
+    "postQuote": "grok bot just replaced notion in ONE update... and most people haven't noticed yet\n\nit builds live dashboards from your connected apps and keeps them updated on its own\n\nthe full setup is one grok bot template, link in replies ↓\n\np.s.: all the prompts for all dashboards i use is in the replies as well.",
+    "templateQuote": "Figures out what in your work deserves a dashboard, builds those as live Pages from real data, and retires the ones nobody uses.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A „replaced Notion” állítás a készítő marketingje; nem ellenőriztük. Az automatikus frissítés gyakoriságát és költségét sem mértük. A sablon x.ai lapja harmadik féltől származó botot jelöl, nem xAI-terméket."
   }
 ]
