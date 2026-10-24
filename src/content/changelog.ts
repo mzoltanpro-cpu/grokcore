@@ -19,7 +19,7 @@
 export const changelogSourceUrl = "https://x.ai/changelog/bot";
 export const changelogRssUrl = "https://x.ai/changelog/bot/rss.xml";
 /** A forrás utolsó ellenőrzésének napja (ISO). */
-export const changelogChecked = "2026-10-23";
+export const changelogChecked = "2026-10-24";
 
 export type ChangelogLabel = "Teams" | "Enterprise";
 export type ChangelogSectionKind = "new" | "improved" | "fixed";
@@ -49,6 +49,54 @@ export type ChangelogRelease = {
 };
 
 export const changelog: ChangelogRelease[] = [
+  {
+    version: "0.75.5",
+    date: "2026-10-23",
+    title: { hu: "Vault, e-mail-továbbítás és kevesebb jóváhagyási kártya", en: "Vault, email forwarding, and fewer approval cards" },
+    alsoIncludes: ["0.75.3", "0.75.4"],
+    sections: [
+      {
+        kind: "new",
+        items: [
+          { hu: "A Botok a Settingsben egy Vaultba menthetik a bejelentkezési adataidat, a kártyáidat és az elérhetőségeidet, és kitölthetik őket bejelentkezéskor vagy fizetéskor. Grok Bot 0.75.2 vagy újabb szükséges.", en: "Bots can save your logins, cards, and contact info to a Vault in Settings and fill them in to sign in or check out. Requires Grok Bot 0.75.2 or later." },
+          { hu: "A Botok a saját postafiókjukból továbbíthatnak egy e-mailt az eredeti formázásával, képeivel és mellékleteivel. Grok Bot 0.75.2 vagy újabb szükséges.", en: "Bots can forward an email from their own inbox with its original formatting, images, and attachments. Requires Grok Bot 0.75.2 or later." },
+          { hu: "A Botok rögzítik, ki kérte az egyes üzeneteket, amelyeket a Slackben közzétesznek, így a szálban bárki megkérdezheti, ki kérte őket.", en: "Bots record who asked for each message they post in Slack, so anyone in the thread can ask who requested it." },
+          { hu: "Halloweenre tök alakot adhatsz egy Botnak, amikor létrehozod, vagy amikor megváltoztatod az avatarját. Grok Bot 0.75.2 vagy újabb szükséges.", en: "For Halloween, you can give a Bot a pumpkin shape when you create it or change its avatar. Requires Grok Bot 0.75.2 or later." },
+        ],
+      },
+      {
+        kind: "improved",
+        items: [
+          { hu: "Az Auto-review ritkábban kérdez rá egy olyan műveletre, amelyet a saját szavaiddal kértél.", en: "Auto-review asks less often for an action you asked for in your own words." },
+          { hu: "Ha elutasítasz egy jóváhagyási kártyát, a Bot leáll, és addig nem próbálja újra azt a műveletet, amíg nem küldesz egy újabb üzenetet.", en: "After you deny an approval card, the Bot stops and doesn't try that action again until you send another message." },
+          { hu: "Az e-mailek és Slack-üzenetek, amelyeket a Bottal küldetsz el, elmennek, amint az Auto-review engedélyezi őket, a routine-okban és más körökben indított küldések viszont továbbra is vázlatként várnak.", en: "Emails and Slack messages you ask a Bot to send go out once Auto-review allows them, while sends on routine and other turns still wait as drafts." },
+          { hu: "Amikor a Bot átadja neked a gépét, hogy bejelentkezz egy olyan oldalra, amelyhez van connector, annak a connectornak a bekötőkártyáját is felajánlja.", en: "When the Bot hands you its computer to sign in to a site that has a connector, it also offers that connector's connect card." },
+          { hu: "Ha az X-fiókodról kérdezed a Botot, az X a csatolt X-fiókodon keresztül kapcsolódik be, akkor is, ha eltávolítottad az X plugint.", en: "Asking a Bot about your X account connects X through your linked X account, even if you removed the X plugin." },
+          { hu: "Az X bekötése ugyanazon a fiókon keresztül az X Moneyt is beköti, és ha az X Money-egyenlegedről, -tevékenységedről vagy -kártyádról kérdezel, az telepíti az X Moneyt.", en: "Connecting X also connects X Money through the same account, and asking about your X Money balance, activity, or card installs X Money." },
+          { hu: "A routine-jaid összesen óránként legfeljebb 300-szor futhatnak 100 helyett, egy-egy routine pedig legfeljebb 200-szor.", en: "Your routines can run up to 300 times an hour in total instead of 100, and each routine up to 200 times." },
+          { hu: "Ha be van kapcsolva a Route traffic through this computer, a Settings megmutatja, hány oldalt tiltott le, mert privát vagy VPN-címre oldódik fel.", en: "With Route traffic through this computer on, Settings shows how many sites were blocked because they resolve to a private or VPN address." },
+          { label: "Teams", hu: "A csapattagok a Team Bottal folytatott saját közvetlen üzenetükben reagálhatnak az üzenetekre, idézhetnek az Add to chat segítségével, és válaszolhatnak a kártyákra.", en: "Teammates in their own DM with a Team Bot can react to messages, quote with Add to chat, and answer cards." },
+          { label: "Teams", hu: "A Team Botok úgy nevezik meg a connectorokat, ahogy a pluginlistád, például Google Slides, amikor engedélyt kérnek egy használatára, vagy elmondják, kiét használták.", en: "Team Bots name connectors as your plugin list does, such as Google Slides, when they ask to use one or say whose they used." },
+          { hu: "Ha a Grok Business seated még nem terjed ki a Grok Botra, a használati korlátról szóló üzenet azt írja, hogy kérd meg a Grok Business-adminodat, hogy kösse be a csapatodat.", en: "If your Grok Business seat doesn't cover Grok Bot yet, the usage limit message says to ask your Grok Business admin to connect your team." },
+        ],
+      },
+      {
+        kind: "fixed",
+        items: [
+          { hu: "Az Auto-review ritkábban tér át jóváhagyási kártyára: újrapróbálja a sikertelen ellenőrzést, és a hosszú chateket is átnézi ahelyett, hogy leállna.", en: "Auto-review falls back to an approval card less often, retrying a check that fails and reviewing long chats instead of stopping." },
+          { hu: "Az Auto-review már nem enged át egy olyan műveletet, amely előtt a kérésed szerint meg kellett állni, például egy üzenet elküldését, amikor csak vázlatot kértél.", en: "Auto-review no longer waves through an action your request said to stop before, such as sending a message you asked only to draft." },
+          { hu: "Ha az X-követőidről kérdezed a Botot, egyenes választ kapsz arról, hogy az X ezt nem kínálja, ahelyett hogy egy böngészős X-bejelentkezés indulna.", en: "Asking a Bot about your X followers gets a plain answer that X doesn't offer it, instead of a browser sign-in to X." },
+          { hu: "Egy fiókegyesítés után továbbra is kezelheted az általad létrehozott Botokat, és megoszthatod őket a csapatoddal.", en: "After an account merge, you keep managing the Bots you created and can share them with your team." },
+          { hu: "A több szerverből álló pluginek, például a Salesforce, minden szervert külön sorban mutatnak, így mindegyiket láthatod, és mindegyikbe bejelentkezhetsz.", en: "Plugins with several servers, such as Salesforce, show each server as its own row, so you can see and sign in to every one." },
+          { hu: "A Slackben a Botok azokra a szálválaszokra is felelnek, amelyeket a csatornába is elküldtek, ugyanúgy, mint a többi szálválaszra.", en: "In Slack, Bots answer thread replies that were also sent to the channel, as they do other thread replies." },
+          { label: "Teams", hu: "Egy Team Bot Share this Bot kártyáján az, aki egy csoporton keresztül kezeli a Botot, Manager szerepkörrel látja magát.", en: "On a Team Bot's Share this Bot card, someone who manages the Bot through a group sees their role as Manager." },
+          { label: "Teams", hu: "Az a munka, amelyet egy Team Bot egy megosztott chatben továbbad, használhatja az általad engedélyezett connectorokat, és a válasza megmondja, kinek a connectorát használta.", en: "Work a Team Bot hands off in a shared chat can use the connectors you allowed, and its reply says whose connector it used." },
+          { label: "Teams", hu: "Amikor egy Team Bot routine-ja egy Slack-szálban válaszol, a Bot követi a szálat, és @mention nélkül is felel a későbbi válaszokra.", en: "When a Team Bot's routine replies in a Slack thread, the Bot follows the thread and answers later replies without an @mention." },
+          { hu: "Ha visszaállítasz egy chatet, amelynek az első üzenetét letiltották, az új üzenetekre hiba helyett válasz érkezik.", en: "After you reset a chat whose first message was blocked, new messages get replies instead of an error." },
+        ],
+      },
+    ],
+  },
   {
     version: "0.75.2",
     date: "2026-10-22",
