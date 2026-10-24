@@ -3113,5 +3113,287 @@
         "url": "https://x.com/mikepat711/status/2113692456881365304"
       }
     ]
+  },
+  {
+    "slug": "dropped-ball-scanner",
+    "name": "Dropped-Ball Scanner",
+    "author": "Austen Allred",
+    "handle": "@Austen",
+    "postUrl": "https://x.com/Austen/status/2113760782492000356",
+    "postedAt": "2026-10-23T22:33:36Z",
+    "templateUrl": "https://x.ai/bot/E-uo4CQ__9GjtWYhWLPQF",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Esti „elejtett labda”-kereső. A sablon leírása szerint esténként átnézi az e-mailjeidet, a chatjeidet és az SMS-eidet, és kiszűri a megválaszolatlan kéréseket, valamint azokat az ígéreteidet, amelyekhez nincs következő lépés; csak az újakat küldi el, mindegyikhez egy koppintással használható pótló üzenetvázlattal. A készítő posztja szerint a meeting-jegyzeteket és a Slacket is átnézi, a tételeket aszerint rangsorolja, mekkora kárt okoz a csúszás, és felajánlja a segítséget a rendbetételhez.",
+    "postQuote": "My new favorite Grok @bot template:\n\nIt sweeps my email, texts, meeting notes, and Slack looking for commitments I’ve made and missed or other asks that are waiting on me.\n\nIt ranks them according to how much damage is happening and offers to help fix.",
+    "templateQuote": "An evening sweep of your email, chat, and texts that catches unanswered asks and promises you made with no next step. It only pushes what's new, each with a one-tap recovery draft.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Esti átnézés: e-mail, chat, SMS",
+        "quote": "An evening sweep of your email, chat, and texts",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Slack",
+        "quote": "It sweeps my email, texts, meeting notes, and Slack",
+        "from": "post"
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "commitments",
+        "name": "Commitments",
+        "noteHu": "A közösségi Commitments sablon (Sam Lambert) szintén a vállalásaidat fogja meg, de más bot: a Slackből, a Notionből és az e-mailből gyűjtött ígéreteket egy Notion-adatbázisban vezeti, amíg el nem készülnek."
+      }
+    ]
+  },
+  {
+    "slug": "security-audit-bot",
+    "name": "Security Audit Bot",
+    "author": "Phil",
+    "handle": "@Phil_Holland",
+    "postUrl": "https://x.com/Phil_Holland/status/2113717196136546403",
+    "postedAt": "2026-10-23T19:40:25Z",
+    "templateUrl": "https://x.ai/bot/ksa8bHwOSris1UoZtCUhU",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Biztonsági auditbot a saját kódodhoz. A sablon leírása szerint átnézi a te tulajdonodban lévő kódot, ingyenes szkennereket és a Cloudflare hatlépéses audit-skilljét futtatja, majd ellenőrzött jelentést ad, amelyben minden találathoz a legkisebb szükséges javítást javasolja; a találatok privátak maradnak. A készítő posztja annyit ír, hogy kérd meg a Grok Botodat, adja hozzá a Security Audit Botot.",
+    "postQuote": "Own your own security.",
+    "templateQuote": "Reviews code you own, runs free scanners plus Cloudflare's six-phase audit skill, and returns a verified report with the smallest fix per finding. Findings stay private.",
+    "memory": [],
+    "skills": [
+      {
+        "name": "Cloudflare hatlépéses audit-skill",
+        "quote": "runs free scanners plus Cloudflare's six-phase audit skill",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "nightly-audit-engineer",
+        "name": "Nightly Audit Engineer",
+        "noteHu": "A hivatalos Marketplace Nightly Audit Engineer botja (Lingxi Li) szintén kódot vizsgál, de más bot: éjszakánként a teljes kódbázist nézi át, és területenként takarító PR-t készít."
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "dependency-secret-audit",
+        "name": "Dependency & Secret Audit",
+        "noteHu": "A közösségi Dependency & Secret Audit sablon (T1000) hasonló témájú, de más bot: egy beillesztett GitHub-repóban a sebezhető csomagokat és a kiszivárgott kulcsokat keresi, és éjjel csak új hibánál szól."
+      }
+    ]
+  },
+  {
+    "slug": "handyman",
+    "name": "Handyman",
+    "author": "Dylan",
+    "handle": "@dkmitc",
+    "postUrl": "https://x.com/dkmitc/status/2113789426904039633",
+    "postedAt": "2026-10-24T00:27:26Z",
+    "templateUrl": "https://x.ai/bot/rQvB9sFrdQU7Ef43jOxgI",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Otthoni karbantartás-nyilvántartó. A sablon leírása szerint megjegyzi a szűrőméretet, a háztartási gépek típusát és a javítások előzményeit, és szól, amikor esedékes a szűrőcsere, a vízmelegítő átöblítése, az ereszcsatorna vagy egy-egy szezonális teendő; a jóváhagyásod nélkül semmit nem foglal le és nem vásárol. A készítő posztja szerint frissítette a botot: megkérheted, hogy készítsen hozzá könnyen kezelhető felületű alkalmazást, és ha több ingatlant kezelsz, a karbantartást ingatlanonként is rendezheti.",
+    "postQuote": "I’ve updated my handyman bot!\nPeople seemed to be enjoying it the last time I posted so I wanted to share again. Take it to the next level by asking it to build you an app with an easy to navigate interface. For those managing multiple properties you can also have it organize maintenance by properties.",
+    "templateQuote": "A home maintenance tracker that remembers your filter size, appliance models, and repair history, and reminds you when filters, water heater flushes, gutters, and seasonal chores are due. It never books or buys anything without your OK.",
+    "memory": [
+      {
+        "labelHu": "Szűrőméret, gépek típusa, javítási előzmények",
+        "quote": "remembers your filter size, appliance models, and repair history",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Emlékeztető az esedékes karbantartásokra",
+        "quote": "reminds you when filters, water heater flushes, gutters, and seasonal chores are due",
+        "from": "template"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "sherlock-holmes-fact-checker",
+    "name": "Sherlock Holmes (Fact Checker)",
+    "author": "Tom⚡️",
+    "handle": "@TitaniumTomP",
+    "postUrl": "https://x.com/TitaniumTomP/status/2113661289587499223",
+    "postedAt": "2026-10-23T15:58:16Z",
+    "templateUrl": "https://x.ai/bot/r_TDh1tl_1k1DgYyldhfj",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Tényellenőrző bot. A sablon leírása szerint bármilyen történetet, linket, idézetet vagy pletykát beilleszthetsz, és állításonként, valódi forrásokkal ellenőrzi; minden „ügy” egy saját Igazságmérő (Truth Meter) diagrammal és egy felfelé vagy lefelé mutató hüvelykujjas ítélettel indul. A készítő posztja szerint bármilyen hírcikket beilleszthetsz, és azonnali elemzést kapsz róla.",
+    "postQuote": "Paste any news article to get an instant breakdown, and fact-check anything.",
+    "templateQuote": "Paste any story, link, quote, or rumor and Sherlock fact-checks it claim by claim with real sources. Every case opens with a branded Truth Meter chart and a thumbs-up or thumbs-down verdict.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "researchy",
+        "name": "Researchy",
+        "noteHu": "A hivatalos Marketplace Researchy botja (Farzad) szintén kutat és tényt ellenőriz, de más bot: minden kört a legújabb Grok modellel és élő webes kereséssel futtat, nem egy-egy beillesztett állítást pontoz."
+      }
+    ]
+  },
+  {
+    "slug": "last-call",
+    "name": "Last Call",
+    "author": "nick",
+    "handle": "@thecsguy",
+    "postUrl": "https://x.com/thecsguy/status/2113829582868562344",
+    "postedAt": "2026-10-24T03:07:00Z",
+    "templateUrl": "https://x.ai/bot/YuGzbyI7jVfZedsRUOLCm",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Ingyenes próbaidőszak-figyelő. A sablon leírása szerint kiszúrja az ingyenes próbaidőszakokat, amelyekre feliratkozol, néhány nappal azelőtt figyelmeztet, hogy fizetősre váltanának, és felajánlja, hogy lemondja őket helyetted. A készítő posztja szerint a próbaidőszakok arra építenek, hogy elfelejted őket, ezért készítette a botot.",
+    "postQuote": "free trials count on you forgetting.\n\nso i made a grok bot for it. last call catches every trial i sign up for, warns me a few days before it charges, and offers to cancel it for me.\n\nnever paying for a trial i forgot again! 💪",
+    "templateQuote": "Catches free trials you sign up for, warns you a few days before they turn into a charge, and offers to cancel them for you.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Figyelmeztetés néhány nappal a terhelés előtt",
+        "quote": "warns you a few days before they turn into a charge",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "karen-subscription-canceller",
+        "name": "Karen the Canceller of Paid Subs",
+        "noteHu": "A közösségi Karen the Canceller of Paid Subs sablon (Allan Branch) hasonló témájú, de más bot: a már fizetős előfizetéseidet keresi meg a postafiókjaidban, és a kiválasztottakat lemondja."
+      },
+      {
+        "slug": "bills",
+        "name": "Bills",
+        "noteHu": "A közösségi Bills sablon (Daniel Dewhurst) a háztartási számlákat, előfizetéseket és megújításokat követi az e-mailjeidből, nem kifejezetten a próbaidőszakokat."
+      }
+    ]
+  },
+  {
+    "slug": "covered",
+    "name": "Covered",
+    "author": "Mike Heckert",
+    "handle": "@MichaelHeckert",
+    "postUrl": "https://x.com/MichaelHeckert/status/2113712551670456582",
+    "postedAt": "2026-10-23T19:21:57Z",
+    "templateUrl": "https://x.ai/bot/JE8skJITEDqsPpFOZUsBh",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Garancia- és visszahívás-kereső. A sablon leírása szerint megkeresi azokat az ingyenes javításokat, cseréket és garanciális igényeket, amelyek a tulajdonodban lévő dolgokra már most járnak neked, és megírja hozzá az igénylés vázlatát; beadni neked kell. A készítő posztja szerint a 2015-ös Nissan Altimájánál nyitott gyártói visszahívást talált (a motorháztető zárja meghibásodhat, és menet közben felcsapódhat a motorháztető), a javítás bármelyik Nissan-márkakereskedésben ingyenes, és a bot a telefonhíváshoz szükséges szöveget is megírta.",
+    "postQuote": "Covered, my new free @bot template, checked my 2015 Altima and found an open recall: the hood latch can fail and the hood can fly up mid-drive.\n\nFix is free at any Nissan dealer, and it wrote my call script.",
+    "templateQuote": "Covered finds the free repairs, replacements, and warranty claims you're already owed on the stuff you own, and drafts the claim. You file it.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "bot-beginner",
+    "name": "Bot Beginner: Your First 7 Days",
+    "author": "John Walker",
+    "handle": "@JohnWalker",
+    "postUrl": "https://x.com/JohnWalker/status/2113832658358694355",
+    "postedAt": "2026-10-24T03:19:13Z",
+    "templateUrl": "https://x.ai/bot/cMdLGSR7HxIQHHoVmfC0w",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Hétnapos kezdőkurzus Grok Bothoz. A sablon leírása szerint barátságos edzőként 7 napon át naponta egy apró tippet ad, mindegyikhez egy kis kipróbálandó feladattal; ha gyorsabban haladnál, bármikor kérheted a következőt a „next tip” üzenettel. Ingyenesen használható, de Grok Bot-hozzáférés kell hozzá. A készítő posztja szerint a saját tempódban tanulhatsz, túl bonyolult technikai szöveg és nyomás nélkül.",
+    "postQuote": "Seeing Grok Bot everywhere but no clue how to use it?\nMeet Bot Beginner, your starter guide to everything Grok Bot (a Bot to help you begin):\n\nLearn at your pace - no over-the-head tech talk and no pressure.\n\nFree to use. You need Grok Bot access.",
+    "templateQuote": "New to Grok Bot? A friendly coach that gives you one small tip a day for 7 days, with one tiny thing to try each time. Go faster any time by saying 'next tip.' Free to use; you need Grok Bot access.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi egy tipp 7 napon át",
+        "quote": "gives you one small tip a day for 7 days",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "bot-tutorial",
+        "name": "Grok Bot Tutorial",
+        "noteHu": "A közösségi Grok Bot Tutorial sablon (Sawyer Merritt) szintén kezdőknek szól, de más bot: 20 leckés gyakorlati kurzus minden funkcióhoz, nem hétnapos napi tipp."
+      }
+    ]
+  },
+  {
+    "slug": "gdpr-bot",
+    "name": "GDPR Bot",
+    "author": "Szilágyi Pál",
+    "handle": "@szilagyipal",
+    "postUrl": "https://x.com/szilagyipal/status/2113727885148352958",
+    "postedAt": "2026-10-23T20:22:53Z",
+    "templateUrl": "https://x.ai/bot/TxD2DkGjehpQftH2lvriK",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "GDPR-asszisztens weboldal-tulajdonosoknak. A sablon leírása szerint követi az új ítélkezési gyakorlatot, az EDPB (Európai Adatvédelmi Testület) és a nemzeti adatvédelmi hatóságok iránymutatásait, valamint az uniós MI-rendeletet (AI Act); hetente átvizsgálja a weboldalaidat követőkódok (trackerek), hozzájárulás-kezelési problémák és az adatkezelési tájékoztató hiányosságai után, és pontozott, esetjogra hivatkozó megállapításokat ad javításvázlatokkal. A készítő posztja szerint ez az első sablonja, és hetente bővíti a funkcióit.",
+    "postQuote": "My first bot template (not very original, but useful, I will update the functionalities every week):",
+    "templateQuote": "A GDPR assistant that keeps up with new case law, EDPB and national DPA guidance, and the AI Act. Each week it scans your websites for trackers, consent problems and gaps in the privacy notice, and gives you scored, case-backed findings with draft fixes.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti weboldal-ellenőrzés",
+        "quote": "Each week it scans your websites for trackers, consent problems and gaps in the privacy notice",
+        "from": "template"
+      }
+    ],
+    "integrations": []
+  },
+  {
+    "slug": "listener",
+    "name": "Listener",
+    "author": "SamWise",
+    "handle": "@SirWiseSam",
+    "postUrl": "https://x.com/SirWiseSam/status/2113609113250996614",
+    "postedAt": "2026-10-23T12:30:56Z",
+    "templateUrl": "https://x.ai/bot/paJW1WyYhTPtrM-8LQ_c5",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Videó- és podcast-összefoglaló. A sablon leírása szerint helyetted végignézi a hosszú YouTube-podcastokat, X-klipeket és hívásokat, majd rövid összefoglalót küld időbélyeges, szakaszról szakaszra haladó áttekintéssel, ellenőrzött állításokkal, azzal, mit érdemes átugrani, és a legjobb néhány klippel. A készítő posztja szerint bármilyen videót, podcastot vagy linket odaadhatsz neki; ő arra is használja, hogy magyarázkodás helyett egy linket ad meg kontextusként.",
+    "postQuote": "This is my listener bot.\n\nGive it any video, podcast, or link and it will summarize, fact-check, and timestamp key parts or sections to skip.\n\nI use it for videos I watch or am interested in, sharing a link for context instead of explaining.",
+    "templateQuote": "Watches long YouTube podcasts, X clips, and calls so you don't have to, then sends a short brief with a timestamped beat-by-beat, fact-checked claims, what to skip, and the best few clips.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "clip-bot",
+        "name": "Clip Bot",
+        "noteHu": "A hivatalos Marketplace Clip Botja (This Week in AI) szintén hosszú felvételekkel dolgozik, de más bot: a legjobb pillanatokat rövid, feliratozott klipekre vágja, nem összefoglalót és tényellenőrzést ad."
+      }
+    ]
+  },
+  {
+    "slug": "disk-saver",
+    "name": "Disk Saver",
+    "author": "Hovhannes Mkhitaryan",
+    "handle": "@hovinthenorth",
+    "postUrl": "https://x.com/hovinthenorth/status/2113751731406528764",
+    "postedAt": "2026-10-23T21:57:39Z",
+    "templateUrl": "https://x.ai/bot/Va3fg4mNOJ7XHSmI_b7R5",
+    "templatePageReadable": true,
+    "fetched": "2026-10-24",
+    "summaryHu": "Számítógép-takarító bot. A sablon leírása szerint átvizsgálja a számítógép állapotát és tárhelyét, megkeresi a nagy, duplikált vagy elavult fájlokat és gyorsítótárakat, és biztonságos optimalizálási és takarítási tervet javasol, amelyet neked kell jóváhagynod. A készítő posztja szerint a Grok Bot így kitakaríthatja a gépedet, és tisztán is tarthatja.",
+    "postQuote": "Let Grok Bot Clean Up Your Computer (& keep it clean)\n\nUse my Disk Saver @bot template:",
+    "templateQuote": "Screens a computer's health and storage, finds large, duplicate, or stale files and caches, and proposes safe file optimization and cleanup plans for approval.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
   }
 ]
