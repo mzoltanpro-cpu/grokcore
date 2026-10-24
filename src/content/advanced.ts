@@ -15,6 +15,7 @@ const templateFetched = "2026-10-22";
 const kanikaFetched = "2026-10-22";
 const brainFetched = "2026-10-23";
 const shopFetched = "2026-10-24";
+const dashboardFetched = "2026-10-24";
 
 export type AdvancedSource = {
   title: string;
@@ -245,6 +246,23 @@ const src = {
   xsPricingShop: { title: "The X Subscription: Pricing (docs.x.ai)", url: docs.xsPricing, author: "docs.x.ai", date: `lekérve ${shopFetched}`, kind: "hivatalos" },
   dTroubleShop: { title: "Troubleshooting (docs.x.ai)", url: docs.troubleshooting, author: "docs.x.ai", date: `lekérve ${shopFetched}`, kind: "hivatalos" },
   routinesHelpShop: { title: "Grok Bot routines (cursor.com)", url: docs.routinesHelp, author: "cursor.com", date: `lekérve ${shopFetched}`, kind: "hivatalos" },
+  companyOsPost: {
+    title: "„grok bot just replaced notion in ONE update...” (X-poszt, angol)",
+    url: "https://x.com/Av1dlive/status/2113979312139538607",
+    author: "Avid (@Av1dlive)",
+    date: "2026-10-24 15:01 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  companyOsTpl: {
+    title: "Dashboard Maker by Avid (x.ai sablonoldal, angol)",
+    url: "https://x.ai/bot/qbiG4Q0RQuy0Y_C8Hr--l",
+    author: "Avid (@Av1dlive)",
+    date: `lekérve ${dashboardFetched}`,
+    kind: "kozossegi",
+  },
+  dChangelogPages: { title: "Grok Bot changelog (x.ai)", url: docs.changelog, author: "x.ai", date: `lekérve ${dashboardFetched}`, kind: "hivatalos" },
+  dBotsDashboard: { title: "Create and manage Bots (docs.x.ai)", url: docs.bots, author: "docs.x.ai", date: `lekérve ${dashboardFetched}`, kind: "hivatalos" },
+  dSkillsDashboard: { title: "Skills and routines (docs.x.ai)", url: docs.skills, author: "docs.x.ai", date: `lekérve ${dashboardFetched}`, kind: "hivatalos" },
 } satisfies Record<string, AdvancedSource>;
 
 /** Rövid hivatkozás a szövegben: szerző + link. */
@@ -1771,6 +1789,153 @@ Tell me when you had to use the browser, and why.`,
       },
     ],
     sources: [src.shop, src.dApproveShop, src.dAppsShop, src.dSkillsShop, src.dSettingsShop, src.xsPricingShop],
+  },
+  {
+    slug: "company-os-dashboardok",
+    title: "Company OS: élő Page-ek és dashboardok egy összekapcsolt céges munkaterületen",
+    nav: "Company OS dashboardok",
+    card: "Avid (@Av1dlive) X-posztja és Dashboard Maker sablonja: Company OS workspace-szabály, tíz dashboard-prompt, és hogyan illeszkedik a Grok Bot Pages funkciójához.",
+    description:
+      "Élő Grok Bot Pages és dashboardok céges munkaterületként: Avid (@Av1dlive) 2026-10-24-i X-posztjának magyar összefoglalója, a Dashboard Maker sablonnal és négy eredeti prompttal (Company OS, founder, sales, operations). Amit nem ellenőriztünk: Notion-helyettesítés, automatikus frissítés. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "Ez az oldal egy más által írt X-poszt rövid magyar összefoglalója, nem saját módszer. Avid (@Av1dlive) 2026-10-24-én azt írta, hogy a Grok Bot a csatlakoztatott appokból élő dashboardokat épít, magától naprakészen tartja őket, és egy sablonból indul a beállítás. A válaszokban adott Company OS workspace-szabály és tíz konkrét dashboard-prompt követi; itt a lépéseket magyarul foglaljuk össze, és négy promptot idézünk szó szerint, angolul.",
+    audience: "Annak szól, aki végigment a Kezdő 5 napon, és céges áttekintést, értékesítési vagy működési dashboardokat szeretne Page-ekből építeni egy Bot segítségével.",
+    minutes: "Kb. 25 perc az oldal elolvasására, a mi becslésünk",
+    fetched: dashboardFetched,
+    steps: [
+      {
+        name: "Dashboard Maker sablon",
+        text: "Add hozzá a Grok Botodhoz Avid Dashboard Maker sablonját az x.ai sablonoldalán (Add to Grok Bot). A sablon harmadik féltől származó; az oldal figyelmeztet, hogy nem xAI készítette.",
+      },
+      {
+        name: "Company OS workspace-szabály",
+        text: "A szerző szerint először illeszd be a Company OS workspace-utasítást, hogy minden dashboard ugyanabba a munkaterületbe kerüljön.",
+      },
+      {
+        name: "Dashboardok egyenként",
+        text: "Tíz külön prompt következik (founder, sales, customer, project, finance, content, product, team, knowledge, operations). A szerző egy dashboardot egyszerre javasol.",
+      },
+      {
+        name: "Adatok és integrációk",
+        text: "A workspace-szabály üres rekordokkal indul, DEMO példákat kér jelöléssel, és kéri, hogy látszódjon az adat forrása és frissítési ideje; ne jelenjen meg működő gomb vagy élő metrika, ha az nem működik ténylegesen.",
+      },
+      {
+        name: "Naprakészen tartás",
+        text: "A poszt szerint a dashboardok maguktól frissülnek; a changelog szerint a Bot Page-eket közösen szerkesztheted, vagy a Botot kérheted, hogy tartsa naprakészen. A gyakoriságot és költséget nem ellenőriztük.",
+      },
+    ],
+    blocks: [
+      {
+        type: "note",
+        html: `<strong>Összefoglaló, nem saját anyag.</strong> Ez az oldal ${c("companyOsPost")} X-posztját foglalja össze magyarul, saját szavainkkal; nem fordítás. Közzétéve: ${src.companyOsPost.date}. A poszt egy régebbi, „How to Build Anything” című X-cikket idéz; azt nem dolgozzuk fel, csak a dashboard/Pages anyagot és a válasz-promptokat. Poszt: <a href="${src.companyOsPost.url}">${src.companyOsPost.url}</a>. Sablon: <a href="${src.companyOsTpl.url}">${src.companyOsTpl.url}</a>. Közösségi sablon a Botkezdőn: <a href="/sablonok/dashboard-maker/">Dashboard Maker</a>. Lekérve: ${dashboardFetched}.`,
+      },
+      { type: "h2", text: "Mit ígér a poszt?" },
+      {
+        type: "p",
+        html: `A szerző szerint a Grok Bot „egyetlen frissítésben” helyettesíthette a Notiont (a szerző szavai; nem ellenőriztük). Azt állítja, hogy a csatlakoztatott appokból élő dashboardokat épít, magától naprakészen tartja őket, a teljes beállítás egy Grok Bot-sablon, és a használt dashboard-promptok a poszt válaszai között vannak. A sablon x.ai leírása szerint kitalálja, mire érdemes dashboardot készíteni, élő Page-eket épít valós adatokból, és kivezeti a nem használtakat. (<a href="${src.companyOsTpl.url}">Dashboard Maker by Avid</a>)`,
+      },
+      {
+        type: "p",
+        html: `A hivatalos changelog (0.75.2, 2026-10-22) szerint a Botok Page-eket készíthetnek, például riportokat, feljegyzéseket és dashboardokat, amelyeket közösen szerkeszthetsz, vagy amelyeket a Bot naprakészen tart. (<a href="${docs.changelog}">Grok Bot changelog</a>, lekérve ${dashboardFetched}; magyar összefoglaló: <a href="/ujdonsagok/">Újdonságok</a>) A dokumentáció a Botok létrehozásáról és sablonok hozzáadásáról beszél. (<a href="${docs.bots}">Create and manage Bots</a>)`,
+      },
+      { type: "h2", text: "1. lépés: Dashboard Maker sablon" },
+      {
+        type: "p",
+        html: `A szerző a válaszokban linkeli a sablont: <a href="${src.companyOsTpl.url}">${src.companyOsTpl.url}</a>. Az oldal szerint Avid készítette; harmadik féltől származó bot, „not by SpaceXSI”, és az Add to Grok Bot gomb elfogadja a feltételeket. A sablon hozzáadása után a tíz dashboard-promptot a poszt válaszaiból másolhatod be (lásd lent és a forrásban).`,
+      },
+      { type: "h2", text: "2. lépés: Company OS workspace" },
+      {
+        type: "p",
+        html: `A szerző „Company OS” néven ad egy workspace-utasítást, amelyet a többi dashboard-prompt előtt kell beilleszteni, hogy minden ugyanahhoz a munkaterülethez tartozzon. A válaszokban tíz számozott dashboard következik: founder’s dashboard, sales pipeline, customer hub, project tracker, company finances, content engine, product roadmap, team and hiring, company knowledge, operations dashboard.`,
+      },
+      {
+        type: "prompt",
+        label: "@Av1dlive: Company OS workspace-szabály, eredeti",
+        code: `Build a connected company workspace using dashboards and pages.
+
+Use consistent navigation and reuse records across dashboards where supported. Give each dashboard a clear overview and supporting detail pages.
+
+Start with empty records. If you need examples, label them DEMO. Never invent business metrics.
+
+Show where data comes from and when it was updated. Clearly identify anything that needs an integration, manual update or external automation. Don't display a working button or live metric unless it actually works.
+
+Build one dashboard at a time using the prompts below.`,
+        caption: `Forrás: ${c("companyOsPost")} válaszai a poszthoz, ${src.companyOsPost.date}, közösségi forrás. Szó szerint.`,
+      },
+      { type: "h2", text: "3. lépés: példa dashboard-promptok" },
+      {
+        type: "p",
+        html: `Az alábbi három prompt a szerző válaszainak 1., 2. és 10. pontja. A többi (customer hub, project tracker, finance, content, product roadmap, team, knowledge) ugyanígy épül: rövid célleírás, majd <code>[start of prompt]</code>, majd a részletes utasítás. A teljes szöveget a poszt válaszai tartalmazzák: <a href="${src.companyOsPost.url}">${src.companyOsPost.url}</a>.`,
+      },
+      {
+        type: "prompt",
+        label: "@Av1dlive: 1. founder’s dashboard, eredeti",
+        code: `Create a founder's dashboard with sections for this week's priorities, company goals, key metrics, blockers and decisions needed.
+
+Give each priority an owner, deadline, status and next action. Give each metric a definition, target, reporting period and source.
+
+Add a weekly review page: what changed, what slipped, what we learned and what happens next.
+
+Link to the other company dashboards as we build them. Keep the overview focused on items needing attention.`,
+        caption: `Forrás: ${c("companyOsPost")} válaszai, közösségi forrás. Szó szerint.`,
+      },
+      {
+        type: "prompt",
+        label: "@Av1dlive: 2. sales pipeline, eredeti",
+        code: `Create a sales dashboard with stages: new lead, qualified, meeting booked, proposal sent, negotiation, won and lost.
+
+Each deal needs a company, contact, owner, value, expected close date, last interaction and next follow-up.
+
+Add views for overdue follow-ups, deals closing this month and deals with no next action. Create a detail page for each deal with notes, objections and interaction history.
+
+Calculate pipeline totals only from actual records. Leave conversion rates empty until enough data exists.`,
+        caption: `Forrás: ${c("companyOsPost")} válaszai, közösségi forrás. Szó szerint.`,
+      },
+      {
+        type: "prompt",
+        label: "@Av1dlive: 10. operations dashboard, eredeti",
+        code: `Create an operations dashboard for recurring processes, vendors, subscriptions, renewals and operational incidents.
+
+Each process needs an owner, cadence, next due date, checklist and escalation path. Each vendor needs a service, internal owner, cost, renewal date and contract link.
+
+Add views for work due this week, upcoming renewals and unresolved incidents. Incident pages need impact, timeline, resolution and prevention actions.
+
+Only automate reminders or recurring tasks where supported. Otherwise provide a manual checklist and identify the automation needed.`,
+        caption: `Forrás: ${c("companyOsPost")} válaszai, közösségi forrás. Szó szerint.`,
+      },
+      { type: "h2", text: "A többi dashboard röviden" },
+      {
+        type: "ul",
+        items: [
+          "3. customer hub: onboarding, aktív ügyfelek, support, renewals; ügyféloldalak és nézetek hiányos onboardingra, nyitott issue-ra, közelgő megújításra.",
+          "4. project tracker: aktív projektek, mérföldkövek, határidők, blokkolt munka; feladatok tulajdonossal és státusszal; ügyfél-projektek összekapcsolása.",
+          "5. company finances: számlák, kifizetések, kiadások, ismétlődő kötelezettségek; bevétel vs. készpénz; cash forecast explicit feltételezésekkel.",
+          "6. content engine: ötlet → publikálás fázisok; naptár, review queue, library; scheduled csak integráció mellett.",
+          "7. product roadmap: feedback, feature, bug, release; now/next/later és bug queue — a nyilvános szálban a 7. prompt szövege a „Include a decision” szótag után megszakad, a teljes mondatot nem idézzük.",
+          "8. team and hiring: directory, szerepkörök, nyitott pozíciók, onboarding; érzékeny adatok korlátozása, ha támogatott.",
+          "9. company knowledge: SOP-k, policy-k, FAQ-k; owner, utolsó felülvizsgálat, start-here oldal.",
+        ],
+      },
+      { type: "h2", text: "Amit nem ellenőriztünk" },
+      {
+        type: "ul",
+        items: [
+          `A „replaced Notion in ONE update” és hasonló marketingállítások a szerző szavai; nem mértük, hogy egy Grok Bot Pages-munkaterület valóban helyettesíti-e a Notiont vagy más wiki/CRM eszközt.`,
+          `A „keeps them updated on its own” automatikus frissítés gyakoriságát, mechanizmusát és költségét (heti keret, routine, connector-hívások) nem ellenőriztük.`,
+          `A promptokat és a Dashboard Maker sablont nem próbáltuk ki saját céges adatokkal; nem tudjuk, mely connectorokkal mely metrikák válnak élővé.`,
+          `A poszt csatolt képeit és a 20 másodperces videót nem elemeztük; további részletek lehetnek bennük.`,
+          `A 7. (product roadmap) prompt nyilvános másolatában a „Create release pages…” mondat a „Include a decision” szóig tart; a folytatást nem találtuk megbízható forrásban, ezért nem idéztük.`,
+        ],
+      },
+      {
+        type: "done",
+        items: [
+          "Hozzáadtad a Dashboard Maker sablont, és tudod, hogy harmadik féltől származik.",
+          "Beillesztetted a Company OS workspace-szabályt, majd legalább egy dashboard-promptot a szerző válaszaiból.",
+          "Tudod, mely állításokat (Notion, automatikus frissítés) nem ellenőriztünk.",
+        ],
+      },
+    ],
+    sources: [src.companyOsPost, src.companyOsTpl, src.dChangelogPages, src.dBotsDashboard, src.dSkillsDashboard],
   },
 ];
 
