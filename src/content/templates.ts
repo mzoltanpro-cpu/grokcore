@@ -15,7 +15,7 @@ export type CommunityTemplate = {
   name: string;
   author: string;
   handle: string;
-  postUrl: string;
+  postUrl?: string;
   /** UTC ISO időbélyeg, az oldal budapesti időre váltja. */
   postedAt: string;
   templateUrl: string;

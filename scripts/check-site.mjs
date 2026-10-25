@@ -216,12 +216,12 @@ for (const item of templates) {
     if (!section) fail(`${rel}: hiányzó blokk: ${block}`);
     else if (!/<h2[\s>]/.test(section[1])) fail(`${rel}: a(z) ${block} blokknak nincs címe`);
   }
-  if (!/^https:\/\/x\.com\/[^/]+\/status\/\d+$/.test(item.postUrl ?? "")) fail(`${rel}: hibás X-poszt URL a JSON-ban`);
+  if (item.postUrl !== undefined && !/^https:\/\/x\.com\/[^/]+\/status\/\d+$/.test(item.postUrl)) fail(`${rel}: hibás X-poszt URL a JSON-ban`);
   if (!item.templateUrl?.startsWith("https://x.ai/bot/")) fail(`${rel}: hibás sablon-URL a JSON-ban`);
   if (!/^@\w+$/.test(item.handle ?? "")) fail(`${rel}: hibás handle a JSON-ban`);
   if (Number.isNaN(Date.parse(item.postedAt))) fail(`${rel}: hibás közzétételi időpont a JSON-ban`);
   if (!html.includes(`href="${item.templateUrl}" data-source-link`)) fail(`${rel}: nincs sablonlink a Forrás blokkban`);
-  if (!html.includes(`href="${item.postUrl}" data-post-link`)) fail(`${rel}: nincs X-poszt link a Forrás blokkban`);
+  if (item.postUrl ? !html.includes(`href="${item.postUrl}" data-post-link`) : !html.includes("data-post-removed")) fail(`${rel}: nincs X-poszt link a Forrás blokkban`);
   if (!html.includes(`Lekérve: ${item.fetched}`)) fail(`${rel}: nincs lekérési dátum`);
   if (!html.includes("budapesti idő")) fail(`${rel}: a közzététel ideje nincs budapesti időben jelölve`);
   if (!html.includes("Nem hivatalos")) fail(`${rel}: hiányzik a nem hivatalos jelölés`);

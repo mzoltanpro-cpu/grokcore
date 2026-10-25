@@ -40,7 +40,7 @@ const ld = {
   inLanguage: "hu",
   description: item.summaryHu,
   author: { "@type": "Person", name: item.author, url: `https://x.com/${item.handle.replace(/^@/, "")}` },
-  sameAs: [item.templateUrl, item.postUrl],
+  sameAs: [item.templateUrl, item.postUrl].filter(Boolean),
   isPartOf: { "@type": "WebPage", url: absUrl(origin, "/sablonok/") },
 };
 ---
@@ -85,11 +85,11 @@ const ld = {
         )
       }
       <figure class="quote-box">
-        <blockquote cite={item.postUrl}>
+        <blockquote cite={item.postUrl ?? undefined}>
           {item.postQuote.split("\n\n").map((para) => <p lang={item.postLang ?? "en"}>{para}</p>)}
         </blockquote>
         <figcaption class="fine">
-          A készítő X-posztja ({item.postLang === "ja" ? "japán" : item.postLang === "zh" ? "kínai" : "angol"} idézet): <a href={item.postUrl}>{item.handle} · x.com</a>
+          A készítő X-posztja ({item.postLang === "ja" ? "japán" : item.postLang === "zh" ? "kínai" : "angol"} idézet): {item.postUrl ? <a href={item.postUrl}>{item.handle} · x.com</a> : <span>{item.handle} (a poszt már nem elérhető)</span>}
         </figcaption>
       </figure>
       {item.noteHu && <p class="fine" data-template-note>Megjegyzés: {item.noteHu}</p>}
@@ -195,7 +195,7 @@ const ld = {
     <section class="bot-block sources" id="forras" data-block="forras">
       <h2>Forrás</h2>
       <ul class="plain-list">
-        <li>X-poszt: <a href={item.postUrl} data-post-link>{item.postUrl}</a></li>
+        {item.postUrl ? <li>X-poszt: <a href={item.postUrl} data-post-link>{item.postUrl}</a></li> : <li data-post-removed>X-poszt: a készítő törölte, már nem elérhető</li>}
         <li>Készítő: {item.author} (<a href={`https://x.com/${item.handle.replace(/^@/, "")}`}>{item.handle}</a>)</li>
         <li>Közzétéve: <time datetime={item.postedAt}>{posted}</time> (budapesti idő)</li>
         <li>Sablon: <a href={item.templateUrl} data-source-link>{item.templateUrl}</a></li>
