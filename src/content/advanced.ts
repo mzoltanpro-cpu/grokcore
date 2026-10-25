@@ -13,6 +13,7 @@ const printerFetched = "2026-10-21";
 const woodFetched = "2026-10-22";
 const templateFetched = "2026-10-22";
 const kanikaFetched = "2026-10-22";
+const secondSourcesFetched = "2026-10-25";
 const brainFetched = "2026-10-23";
 const shopFetched = "2026-10-24";
 const dashboardFetched = "2026-10-24";
@@ -191,6 +192,20 @@ const src = {
     url: "https://x.com/KanikaBK/status/2112829012515160139",
     author: "Kanika (@KanikaBK)",
     date: "2026-10-21 10:51 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  radar: {
+    title: "„How to Stop Your Grok Bot From Eating a Week of Usage in a Day” (X-cikk, angol)",
+    url: "https://x.com/GrokBotRadar/status/2105065358038360334",
+    author: "Fan Grok Bot Radar (@GrokBotRadar)",
+    date: "2026-09-30 00:41 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  gresham: {
+    title: "„How to Make Grok Bot Do 10x More Work Without Upgrading Your Plan (Full Course)” (X-cikk, angol)",
+    url: "https://x.com/Greshamtrade/status/2112214741103825314",
+    author: "Gresham (@Greshamtrade)",
+    date: "2026-10-19 18:10 (budapesti idő)",
     kind: "kozossegi",
   },
   xsPricingK: { title: "The X Subscription: Pricing (docs.x.ai)", url: docs.xsPricing, author: "docs.x.ai", date: `lekérve ${kanikaFetched}`, kind: "hivatalos" },
@@ -1445,12 +1460,12 @@ Never bypass cartridge or ink checks, never flash third-party firmware, never si
     slug: "heti-keret-sporolas",
     title: "Spórolj a heti kerettel: mérés, pontos első üzenet, takarékos routine-ok",
     nav: "Heti keret spórolás",
-    card: "Egy közösségi X-cikk összefoglalója: hogyan mérd, mennyit fogyaszt egy feladat, és hogyan fogyasszon kevesebbet pontos első üzenettel, rövid chatekkel, takarékos routine-okkal és connectorokkal.",
+    card: "Három közösségi X-cikk összefoglalója: mérés, takarékos routine-ok, chat és Duplicate, kevesebb újramunka auditból és ellenőrzött kész állapottal.",
     description:
-      "Grok Bot heti keret takarékosan: Kanika (@KanikaBK) X-cikkének magyar összefoglalója a hivatalos dokumentációval összevetve. Mérés előtte és utána, pontos első üzenet, egy chat egy munka, routine-ok átnézése, connector a böngésző előtt, költéskorlát. Négy eredeti prompttal. Haladó útmutató a Kezdő 5 nap után.",
-    lead: "Ez az oldal egy más által írt X-cikk rövid magyar összefoglalója, nem saját módszer. Kanika (@KanikaBK) 2026-10-21-én azt írta le, hogyan fogyasztott ugyanaz a feladat kevesebbet a heti keretéből, miután megváltoztatta, hogyan adja ki a munkát a Botnak. A cikk címe 8x hosszabb keretet ígér, de a szerző saját számai (75% helyett 37%) egyetlen feladaton nagyjából kétszeres különbséget mutatnak. Mi szorzót nem ígérünk, és saját mérést nem végeztünk.",
+      "Grok Bot heti keret takarékosan: Kanika (@KanikaBK), @GrokBotRadar és @Greshamtrade X-cikkeinek magyar összefoglalója a hivatalos dokumentációval összevetve. Mérés, pontos első üzenet, routine-ok, connector, költéskorlát; második és harmadik forrás: gyakoriság, chat-újraolvasás, Duplicate, Bot↔Bot, szkript; audit, újrahasznosítás, PASS/FAIL/UNKNOWN. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "Ez az oldal három más által írt X-cikk rövid magyar összefoglalója, nem saját módszer. Kanika (@KanikaBK) 2026-10-21-én azt írta le, hogyan fogyasztott ugyanaz a feladat kevesebbet a heti keretéből, miután megváltoztatta, hogyan adja ki a munkát a Botnak. Kiegészítésként @GrokBotRadar és @Greshamtrade cikkei is szerepelnek: mi ébreszti fel a Botot, hogyan spórolj chaten és Duplicate-tel, és hogyan jöjjön ki több használható eredmény ugyanabból a keretből kevesebb újramunkával. A Kanika-cikk címe 8x hosszabb keretet ígér, de a szerző saját számai (75% helyett 37%) egyetlen feladaton nagyjából kétszeres különbséget mutatnak. Mi szorzót nem ígérünk, és saját mérést nem végeztünk.",
     audience: "Annak szól, akinek a heti kerete a hét vége előtt elfogy, vagy aki tudni szeretné, mennyit fogyasztanak a feladatai, és már végigment a Kezdő 5 napon.",
-    minutes: "Kb. 15 perc az oldal elolvasására, a mi becslésünk",
+    minutes: "Kb. 22 perc az oldal elolvasására, a mi becslésünk",
     fetched: kanikaFetched,
     steps: [
       {
@@ -1605,21 +1620,101 @@ Tell me when you had to use the browser, and why.`,
         type: "p",
         html: `A szerző pénzben is kiszámolja: ha ugyanabból a keretből kétszer annyi munka jön ki, nem kell a 30 dolláros Premiumról a 100 dolláros Superre váltania. Ez az ő saját döntése és számítása.`,
       },
+      { type: "h2", text: "A második forrás: @GrokBotRadar – gyakoriság, chat, Duplicate" },
+      {
+        type: "p",
+        html: `${c("radar")} „How to Stop Your Grok Bot From Eating a Week of Usage in a Day” című X-cikke (közzétéve: ${src.radar.date}) ugyanazt a kérdést nézi más szögből: mennyit ébreszted a Botot, és mennyit olvas újra minden alkalommal. A cikk egy része a régi Cursor-csomagra ír (használat a cursor.com/dashboard oldalon, on-demand); ezt nem vesszük át, mert az oldal a The X Subscriptiont és a <a href="https://grok.com/dashboard">grok.com/dashboard</a> felületét írja le. Régebbi Cursor-előfizetésnél a keret és a költéskorlát felülete ettől eltérhet. (<a href="${docs.plans}">Grok Bot plans</a>) Cikk: <a href="${src.radar.url}">${src.radar.url}</a>.`,
+      },
+      {
+        type: "p",
+        html: `A Cursor routines súgója szerint minden futás fogyaszt, a gyakori ütemezés és a forgalmas Slack-csatornán szűk trigger nélkül egy nap alatt is elviheti a heti keretet; a trigger és az ütemezés legyen szűk, az időzóna pedig a Settings → Bot alatti Timezone beállítás szerint értendő. (<a href="${docs.routinesHelp}">Grok Bot routines</a>, lekérve ${secondSourcesFetched}) Hogy milyen gyakran fusson egy routine, és mikor jobb eseményre várni, arról a <a href="/halado/rutinok-ritmusa/">Rutinok ritmusa</a> oldal részletesen foglalkozik vele.`,
+      },
+      {
+        type: "p",
+        html: `A hivatalos dokumentáció nem írja le szó szerint, hogy minden válasz újraküldi a teljes beszélgetést. A Cursor fórumon a csapat 2026-09-05-én ezt írta: „The full transcript is sent to the model on every turn”, és 2026-10-20-án jelezte, hogy a kézi compact és a working-set mérő még nincs kész. (<a href="https://forum.cursor.com/t/grok-bot-x-connector-lacks-recent-search-direct-api-requires-separate-credits/168333">Cursor fórum</a>) Ez staff-válasz, nem docs.x.ai állítás. Hosszú chatnél a dokumentáció szerint a tartós fájlok a közös gép <code>/workspace</code> mappájában maradnak. (<a href="${docs.apps}">Use the computer and apps</a>)`,
+      },
+      {
+        type: "p",
+        html: `A csoportos chat súgója szerint „Every Bot reply counts toward your usage, including replies in a group and messages between Bots. Fewer Bots in a group means fewer replies.” Nincs kapcsoló, amivel kikapcsolnád a Botok közti üzenetváltást. (<a href="https://cursor.com/help/grok-bot/group-chats">Group chats, Cursor súgó</a>, lekérve ${secondSourcesFetched}) A Radar cikk egy vezető Botot és subagenteket javasol; hogy a subagent olcsóbb lenne, hivatalos oldal nem írja — csak a kevesebb Bot↔Bot üzenet logikája igazolt.`,
+      },
+      {
+        type: "p",
+        html: `Modellválasztó nincs: „Cursor manages model selection, so there is no model picker.” (<a href="${docs.settings}">Settings and notifications</a>) A használatot a súgó és a dokumentáció Grok Bot használatként rögzíti, nem szolgáltató vagy modellnév szerint („not by provider or model name”). (<a href="${docs.modelsHelp}">Grok Bot models</a>, <a href="${docs.settings}">Settings and notifications</a>) Routine-onként az app a 20 legutóbbi futás rekordját tartja meg; költség Botonként nem látszik. (<a href="${docs.skills}">Skills and routines</a>)`,
+      },
+      {
+        type: "p",
+        html: `Amíg nincs kézi compact, a Radar cikk a Duplicate-et ajánlja „tiszta induláshoz”: a dokumentáció szerint a másolat „carries the profile, settings, enabled skills, routines, and avatar”, de „does not copy conversation history, learned memory, or chat attachments.” (<a href="${docs.bots}">Create and manage Bots</a>) <strong>Figyelem:</strong> az elrejtés nem szünetelteti a Botot és a routine-jait („Hiding does not pause the Bot or its routines.”). Ha a régi Botot elrejted, de a routine-jai futnak, és a másolat is átviszi a routine-okat, dupla futás lehet — előbb szüneteltesd a régi Bot routine-jait. Tartós szabályokat személyes Botnál már nem a leírásba írsz: a dokumentáció szerint mondd meg a Botnak chatben, és tartsd a fájlokat a <code>/workspace</code>-ben. (<a href="https://cursor.com/help/grok-bot/edit-bot">Edit your Bot, Cursor súgó</a>, lekérve ${secondSourcesFetched})`,
+      },
+      {
+        type: "p",
+        html: `Ismétlődő, szabályalapú tömeges munkára a dokumentáció szerint a Bot gépe terminált és böngészőt ad („persistent cloud computer with a browser, filesystem, and terminal”). (<a href="${docs.overview}">Overview</a>) A Radar cikk szkriptet javasol az egyforma szabályokhoz, a modellt az ítéletre; a megtakarítás mértékét hivatalos forrás nem közli. A GYIK connector előnyben részesítése megbízhatóságról szól: „Use a connector when one is available for a more structured and reliable integration.” (<a href="${docs.faq}">FAQ</a>) Olcsóbbnak a dokumentáció nem nevezi; a külső szolgáltatások saját kreditet számláznak.`,
+      },
+      { type: "h2", text: "Kevesebb újramunka: audit, újrahasznosítás, ellenőrzött kész" },
+      {
+        type: "p",
+        html: `${c("gresham")} „How to Make Grok Bot Do 10x More Work Without Upgrading Your Plan (Full Course)” című X-cikke (közzétéve: ${src.gresham.date}) arról szól, hogyan jöjjön ki több <em>használható</em> eredmény ugyanabból a keretből: kevesebb ismétlés, kevesebb felesleges olvasás, ellenőrzött „kész” állapot. A cím „10x” száma a szerző szerint illusztratív példa (pl. 100 feladat és token-becslés), nem mért adat — nem vesszük át számként. Cikk: <a href="${src.gresham.url}">${src.gresham.url}</a>. Lekérve: ${secondSourcesFetched}.`,
+      },
+      {
+        type: "p",
+        html: `Első lépés: audit az utolsó futásokon. A szerző azt javasolja, hogy előbb a legnagyobb, megfigyelt pazarlást javítsd, és tarts meg egy alapfutást összehasonlításhoz. A Bot nem lát Botonkénti token-számlálót; ami nem mérhető, maradjon „unknown”.`,
+      },
+      {
+        type: "prompt",
+        label: "Gresham (@Greshamtrade): workflow-audit, eredeti",
+        code: `Audit my workflow: <describe the recurring job>.
+Review up to five recent runs and any available usage records. Map each step, its inputs, tool calls, retries, output, and manual corrections.
+Identify repeated reads, unchanged-source checks, duplicate work, and failed steps that restart completed work. Separate observed facts from estimates. Mark unavailable measurements as unknown.
+Return a table: step, useful outcome, waste observed, proposed fix, and possible quality tradeoff. Recommend the first change to test. Do not modify schedules or install tools yet.`,
+        caption: `Forrás: ${c("gresham")}, ${src.gresham.date} (közösségi forrás), a cikk 1. fejezete. Szó szerint; a <code>&lt;describe the recurring job&gt;</code> helyére írd a saját ismétlődő feladatodat. A cikkben a sortörések az X-kinyerés miatt összeolvadtak; itt mondathatáron állítottuk vissza, a szöveget nem változtattuk.`,
+      },
+      {
+        type: "p",
+        html: `Olvasás: csak azt kérdezd, amire a feladatnak válaszolnia kell; a teljes oldal helyett releváns részeket és forrás-útvonalakat tarts meg. Kész munka: mentsd az eredményt forrással, ellenőrzés idejével és frissítési szabállyal; újrahasználatnál tartsd meg az eredeti ellenőrzés dátumát, ne minősíts régi tényet újonnan ellenőrzöttnek. Ütemezésnél a szerző három állapotot különít el: unchanged (nincs releváns változás), changed, és check failed — a sikertelen ellenőrzés <strong>nem</strong> számít „nincs változásnak”. (A cikk külső eszközöket is említ; telepítési útmutatót nem másolunk.)`,
+      },
+      {
+        type: "p",
+        html: `Hibánál: checkpoint a befejezett lépéseknél, legfeljebb két próba ugyanarra a műveletre, és folytatáskor csak a befejezetlen lépés újrapróbálása — ez finomítja Kanika „kétszer elakad, állj meg” szabályát.`,
+      },
+      {
+        type: "prompt",
+        label: "Gresham (@Greshamtrade): checkpoint és újrapróbálás, eredeti",
+        code: `Allow at most two attempts at the same failing operation. Make the second attempt only when a specific change could resolve the failure.
+Save completed work before retrying. If the operation still fails, record the exact error, affected output, and smallest next step needed.
+Continue work that does not need the missing information. Leave any conclusions that depend on it unresolved.
+On resumption, load the checkpoint and retry only the unfinished operation. Do not restart completed assignments.`,
+        caption: `Forrás: ${c("gresham")}, a cikk 7. fejezete. Szó szerint; sortörések mondathatáron, mint az audit promptnál.`,
+      },
+      {
+        type: "p",
+        html: `„Kész” ne legyen szó nélküli állítás: a szerző PASS / FAIL / UNKNOWN ellenőrzőlistát kér, egy javító kör után, és ha kötelező pont még mindig bukik, NEEDS REVIEW — ne „complete”.`,
+      },
+      {
+        type: "prompt",
+        label: "Gresham (@Greshamtrade): „kész” ellenőrzőlista, eredeti",
+        code: `Before starting, list what must be true for this result to be ready to use.
+After drafting, evaluate each check against evidence. Mark PASS, FAIL, or UNKNOWN and include the supporting source or artifact.
+Make one correction pass focused on the failed checks. Then recheck any conclusions affected by those changes.
+Preserve sections that already pass. If a required check still fails or remains unknown, return NEEDS REVIEW with the exact issue. Do not label the result complete.`,
+        caption: `Forrás: ${c("gresham")}, a cikk 8. fejezete. Szó szerint; sortörések mondathatáron.`,
+      },
       { type: "h2", text: "Amit nem ellenőriztünk" },
       {
         type: "ul",
         items: [
           `A szerző 75% → 37%-os mérését: egyetlen feladaton mérte, és nem derül ki, hány futásból. Azt sem, hogy a módszer nálad mennyit spórol; saját mérést nem végeztünk.`,
-          `Hogy egy új chat ténylegesen mennyivel kevesebbet fogyaszt: a dokumentáció erről nem ír.`,
+          `Hogy egy új chat ténylegesen mennyivel kevesebbet fogyaszt: a dokumentáció erről nem ír; a staff a fórumon óvatos volt, hogy az új szoba mindig tiszta kontextussal indul.`,
           `Hogy a connector használata mennyivel kevesebb lépést jelent, mint a böngésző: a dokumentáció csak megbízhatóbbnak nevezi.`,
           `Hogy a The X Subscriptionön a havi additional usage limit megállítja-e a már futó feladatot: a Cursor-súgó szerint nem, a docs.x.ai „hard stop”-ot ír.`,
-          `A javasolt gyakoriságot (2–3 óránként, napi háromszor): ez a szerző javaslata.`,
+          `A javasolt gyakoriságot (2–3 óránként, napi háromszor): ez Kanika szerző javaslata.`,
           `A magyarországi adóval növelt végösszeget: az árak listaárak, adó nélkül.`,
+          `@GrokBotRadar cikkének számlázási részét (Cursor-fiók, on-demand, cursor.com/dashboard) nem vettük át; a modell-láthatósági állítását sem, mert a mai docs ellenkezőjét írja.`,
+          `A Radar „subagent olcsóbb” és „90% szkript-megtakarítás” állításait; a Gresham audit-, checkpoint- és ellenőrzőlista-promptjait nem próbáltuk ki.`,
+          `Gresham címében és szövegében az illusztratív „10x” / token-példák: nem mért eredmény.`,
         ],
       },
       {
         type: "note",
-        html: `<strong>Forrás és szerző.</strong> Ez az oldal a Botkezdő saját útmutatója, nem hivatalos x.ai anyag: Kanika (@KanikaBK) 2026-10-21-én 10:51-kor (budapesti idő) közzétett X-cikkének rövid magyar összefoglalója, a hivatalos dokumentációval és a Cursor súgójával összevetve; nem saját módszer és nem fordítás. A teljes cikket és az összes promptot az eredeti posztban olvashatod: <a href="${src.kanika.url}">${src.kanika.url}</a>. Lekérve: ${kanikaFetched}.`,
+        html: `<strong>Forrás és szerző.</strong> Ez az oldal a Botkezdő saját útmutatója, nem hivatalos x.ai anyag: Kanika (@KanikaBK) 2026-10-21-én 10:51-kor (budapesti idő), Fan Grok Bot Radar (@GrokBotRadar) 2026-09-30-án 00:41-kor (budapesti idő) és Gresham (@Greshamtrade) 2026-10-19-én 18:10-kor (budapesti idő) közzétett X-cikkeinek rövid magyar összefoglalója, a hivatalos dokumentációval és a Cursor súgójával összevetve; nem saját módszer és nem fordítás. Kanika: <a href="${src.kanika.url}">${src.kanika.url}</a> (lekérve ${kanikaFetched}). Radar: <a href="${src.radar.url}">${src.radar.url}</a>. Gresham: <a href="${src.gresham.url}">${src.gresham.url}</a>. Második és harmadik forrás ellenőrizve: ${secondSourcesFetched}.`,
       },
       {
         type: "done",
@@ -1630,6 +1725,8 @@ Tell me when you had to use the browser, and why.`,
     ],
     sources: [
       src.kanika,
+      src.radar,
+      src.gresham,
       src.xsPricingK,
       src.xsGrokBotK,
       src.plansK,
