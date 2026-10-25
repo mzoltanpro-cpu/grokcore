@@ -1463,9 +1463,9 @@ Never bypass cartridge or ink checks, never flash third-party firmware, never si
     card: "Három közösségi X-cikk összefoglalója: mérés, takarékos routine-ok, chat és Duplicate, kevesebb újramunka auditból és ellenőrzött kész állapottal.",
     description:
       "Grok Bot heti keret takarékosan: Kanika (@KanikaBK), @GrokBotRadar és @Greshamtrade X-cikkeinek magyar összefoglalója a hivatalos dokumentációval összevetve. Mérés, pontos első üzenet, routine-ok, connector, költéskorlát; második és harmadik forrás: gyakoriság, chat-újraolvasás, Duplicate, Bot↔Bot, szkript; audit, újrahasznosítás, PASS/FAIL/UNKNOWN. Haladó útmutató a Kezdő 5 nap után.",
-    lead: "Ez az oldal három más által írt X-cikk rövid magyar összefoglalója, nem saját módszer. Kanika (@KanikaBK) 2026-10-21-én azt írta le, hogyan fogyasztott ugyanaz a feladat kevesebbet a heti keretéből, miután megváltoztatta, hogyan adja ki a munkát a Botnak. Kiegészítésként @GrokBotRadar és @Greshamtrade cikkei is szerepelnek: mi ébreszti fel a Bott, hogyan spórolj chaten és Duplicate-tel, és hogyan jöjjön ki több használható eredmény ugyanabból a keretből kevesebb újramunkával. A Kanika-cikk címe 8x hosszabb keretet ígér, de a szerző saját számai (75% helyett 37%) egyetlen feladaton nagyjából kétszeres különbséget mutatnak. Mi szorzót nem ígérünk, és saját mérést nem végeztünk.",
+    lead: "Ez az oldal három más által írt X-cikk rövid magyar összefoglalója, nem saját módszer. Kanika (@KanikaBK) 2026-10-21-én azt írta le, hogyan fogyasztott ugyanaz a feladat kevesebbet a heti keretéből, miután megváltoztatta, hogyan adja ki a munkát a Botnak. Kiegészítésként @GrokBotRadar és @Greshamtrade cikkei is szerepelnek: mi ébreszti fel a Botot, hogyan spórolj chaten és Duplicate-tel, és hogyan jöjjön ki több használható eredmény ugyanabból a keretből kevesebb újramunkával. A Kanika-cikk címe 8x hosszabb keretet ígér, de a szerző saját számai (75% helyett 37%) egyetlen feladaton nagyjából kétszeres különbséget mutatnak. Mi szorzót nem ígérünk, és saját mérést nem végeztünk.",
     audience: "Annak szól, akinek a heti kerete a hét vége előtt elfogy, vagy aki tudni szeretné, mennyit fogyasztanak a feladatai, és már végigment a Kezdő 5 napon.",
-    minutes: "Kb. 15 perc az oldal elolvasására, a mi becslésünk",
+    minutes: "Kb. 22 perc az oldal elolvasására, a mi becslésünk",
     fetched: kanikaFetched,
     steps: [
       {
@@ -1627,7 +1627,7 @@ Tell me when you had to use the browser, and why.`,
       },
       {
         type: "p",
-        html: `A Cursor súgója egyértelműen figyelmeztet: „An hourly schedule, a short interval, or a Slack trigger on a busy channel can use a week of usage in a day.” Ugyanitt: „Each run spends usage, so a routine that runs often spends more than one that runs rarely.” A trigger legyen szűk („Keep the channel and phrase narrow”), az ütemezés pedig a Settings → Bot alatti Timezone szerint értelmezett („Schedules use the time zone in Settings, under Bot, labeled Timezone”). (<a href="${docs.routinesHelp}">Grok Bot routines</a>, lekérve ${secondSourcesFetched}) Hogy milyen gyakran fusson egy routine, és mikor jobb eseményre várni, a <a href="/halado/rutinok-ritmusa/">Rutinok ritmusa</a> oldalon részletesen szól.`,
+        html: `A Cursor routines súgója szerint minden futás fogyaszt, a gyakori ütemezés és a forgalmas Slack-csatornán szűk trigger nélkül egy nap alatt is elviheti a heti keretet; a trigger és az ütemezés legyen szűk, az időzóna pedig a Settings → Bot alatti Timezone beállítás szerint értendő. (<a href="${docs.routinesHelp}">Grok Bot routines</a>, lekérve ${secondSourcesFetched}) Hogy milyen gyakran fusson egy routine, és mikor jobb eseményre várni, arról a <a href="/halado/rutinok-ritmusa/">Rutinok ritmusa</a> oldal részletesen foglalkozik vele.`,
       },
       {
         type: "p",
