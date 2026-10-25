@@ -63,7 +63,7 @@ export const GET: APIRoute = ({ site }) => {
     `- [Gyűjtemény](${absUrl(origin, "/sablonok/")})`,
     ...communityTemplates.map(
       (item) =>
-        `- [${item.name}](${absUrl(origin, templatePath(item.slug))}): ${item.summaryHu} Készítő: ${item.handle}, ${budapestTime(item.postedAt)} (budapesti idő). Sablon: ${item.templateUrl} X-poszt: ${item.postUrl}`,
+        `- [${item.name}](${absUrl(origin, templatePath(item.slug))}): ${item.summaryHu} Készítő: ${item.handle}, ${budapestTime(item.postedAt)} (budapesti idő). Sablon: ${item.templateUrl} X-poszt: ${item.postUrl ?? "(törölve)"}`,
     ),
     "",
     "## Hivatalos Grok Bot útmutatók (nem hivatalos magyar összefoglalók)",

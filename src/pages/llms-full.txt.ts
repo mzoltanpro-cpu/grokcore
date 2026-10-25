@@ -121,7 +121,7 @@ export const GET: APIRoute = ({ site }) => {
       `Integrációk: ${item.integrations.map((i) => i.name).join(", ") || templateMissing}`,
       ...(item.noteHu ? [`Megjegyzés: ${item.noteHu}`] : []),
       `Oldal: ${absUrl(origin, templatePath(item.slug))}`,
-      `Forrás: X-poszt ${item.postUrl} (${item.handle}, közzétéve ${budapestTime(item.postedAt)} budapesti idő szerint); sablon ${item.templateUrl}; lekérve: ${item.fetched}`,
+      `Forrás: X-poszt ${item.postUrl ?? "(törölve)"} (${item.handle}, közzétéve ${budapestTime(item.postedAt)} budapesti idő szerint); sablon ${item.templateUrl}; lekérve: ${item.fetched}`,
       "",
     );
   }

@@ -2302,7 +2302,6 @@
     "name": "Grok Bot Updates",
     "author": "XPixel",
     "handle": "@xpixeladventure",
-    "postUrl": "https://x.com/xpixeladventure/status/2112521838937141483",
     "postedAt": "2026-10-20T12:30:29Z",
     "templateUrl": "https://x.ai/bot/VbuugtxjDt7meMkKNfzkl",
     "templatePageReadable": true,
@@ -3446,5 +3445,289 @@
     "routines": [],
     "integrations": [],
     "noteHu": "A „replaced Notion” állítás a készítő marketingje; nem ellenőriztük. Az automatikus frissítés gyakoriságát és költségét sem mértük. A sablon x.ai lapja harmadik féltől származó botot jelöl, nem xAI-terméket."
+  },
+  {
+    "slug": "crate-digger",
+    "name": "Crate Digger",
+    "author": "Melodies & Masterpieces",
+    "handle": "@SVG__Collection",
+    "postUrl": "https://x.com/SVG__Collection/status/2113992460301172805",
+    "postedAt": "2026-10-24T13:54:13Z",
+    "templateUrl": "https://x.ai/bot/E8zHAEQEU5cnDojAFkrYb",
+    "templatePageReadable": true,
+    "fetched": "2026-10-25",
+    "summaryHu": "Napi albumajánló. A sablon leírása szerint ha nem tudod, mit hallgass ma, néhány gyors kérdésre válaszolsz a hangulatodról, a terveidről és a kedvenc korszakodról, és 10 000-nél is több album közül kiválaszt neked egyet, a saját zenei platformodra mutató linkkel; minden műfaj szóba jöhet, és a kevésbé ismert lemezeket részesíti előnyben a nyilvánvaló választásokkal szemben. A készítő posztja szerint 6 gyors kérdésből áll a folyamat.",
+    "postQuote": "Answer 6 quick questions on mood, plans and era, and it digs through 10,000+ albums to pick one for you, linked on your platform. Every genre, deep cuts over the obvious.",
+    "templateQuote": "Not sure what to listen to today? Answer a few quick questions about your mood, plans and favourite era, and get one album picked from 10,000+ for you, with a link for your platform. From Melodies & Masterpieces, open to every genre, always after deep cuts over the obvious.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "playlist-builder",
+        "name": "Playlist Builder",
+        "noteHu": "A közösségi Playlist Builder sablon (Kolby Baxter) szintén zenei bot, de más: a Spotify-on kedvelt dalaidat rendezi műfaj, hangulat és energia szerint lejátszási listákba, nem új albumot ajánl."
+      }
+    ]
+  },
+  {
+    "slug": "gift-finder",
+    "name": "Gift Finder",
+    "author": "Dirty Tesla",
+    "handle": "@DirtyTesLa",
+    "postUrl": "https://x.com/DirtyTesLa/status/2114065343098339533",
+    "postedAt": "2026-10-24T18:43:49Z",
+    "templateUrl": "https://x.ai/bot/4lZO4FyyTC0GtX2_k9ESv",
+    "templatePageReadable": true,
+    "fetched": "2026-10-25",
+    "summaryHu": "Ünnepi ajándékkereső szülőknek. A sablon leírása szerint segít korrekt áron megszerezni az idei keresett, nehezen beszerezhető ünnepi ajándékokat: életkor és érdeklődés szerint népszerű játékokat javasol, figyeli a boltokban az újbóli készletre kerülést és a valódi árcsökkenést, és csak akkor szól, ha valamit tényleg érdemes megvenni. A készítő posztja szerint elmondta neki, mit szeretnek a gyerekei; a bot az összes boltot összehasonlítja, de ismeri a kedvenc boltjaidat, és kerüli a felvásárlókat (scalpers) és a hamis hirdetéseket.",
+    "postQuote": "I told it what my kids like. Then it helps find hard to get gifts. Compares across all stores, but knows your preferred stores. Avoids scalpers/fake listings.",
+    "templateQuote": "Helps parents and gift-givers land this year's hot, hard-to-get holiday gifts at a fair price. Suggests popular toys by age and interest, watches stores for restocks and real price drops, and only pings you when something is worth buying.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Készlet- és árcsökkenés-figyelés",
+        "quote": "watches stores for restocks and real price drops",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "smart-shopper",
+        "name": "Smart Shopper",
+        "noteHu": "A közösségi Smart Shopper sablon (JP) is keres ajándékot és figyel árakat, de más bot: bármelyik webáruházban követi az árak alakulását szállítással és adóval együtt, nem kifejezetten a nehezen beszerezhető ünnepi ajándékokra épül."
+      }
+    ]
+  },
+  {
+    "slug": "x-to-linkedin",
+    "name": "X to LinkedIn",
+    "author": "Pratik Gandhi",
+    "handle": "@pratikg",
+    "postUrl": "https://x.com/pratikg/status/2114184104405287020",
+    "postedAt": "2026-10-25T02:35:44Z",
+    "templateUrl": "https://x.ai/bot/NreQEY_NUMvtMd-ueZOWK",
+    "templatePageReadable": true,
+    "fetched": "2026-10-25",
+    "summaryHu": "X-posztokból LinkedIn-posztok. A sablon leírása szerint figyeli az X-fiókodat, és a valódi posztjaidból (a viccelődős posztokból, a repostokból és a válaszokból nem) LinkedIn-posztot készít, ugyanazokat az embereket megjelölve; mindegyiket előbb jóváhagyásra küldi, vagy ha így választod, közzé is teszi helyetted. Azoknak készült, akik X-en posztolnak, de a LinkedInre ritkán jutnak el. A készítő posztja szerint te hagyod jóvá, ő posztol, és a megjelölések természetesen átkerülnek.",
+    "postQuote": "> You approve, it posts\n> Tags port naturally\n> No thought leadership needed",
+    "templateQuote": "Watches your X account and turns your real posts (not shitposts, reposts or replies) into LinkedIn posts with the same people tagged, sending each one for your OK first or posting it for you if you choose. Made for people who post on X but rarely get around to LinkedIn.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "X",
+        "quote": "Watches your X account",
+        "from": "template"
+      },
+      {
+        "name": "LinkedIn",
+        "quote": "into LinkedIn posts with the same people tagged",
+        "from": "template"
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "repost-x-posts-everywhere",
+        "name": "repost X posts everywhere",
+        "noteHu": "A közösségi repost X posts everywhere sablon (jack friks) szintén továbbviszi az X-posztjaidat, de más bot: a Post Bridge-en keresztül automatikusan tükrözi őket a Threadsre, a LinkedInre, a Facebookra és a Blueskyra, nem írja át őket külön LinkedIn-posztnak."
+      }
+    ]
+  },
+  {
+    "slug": "house-memory",
+    "name": "House Memory",
+    "author": "Kent Weber",
+    "handle": "@KentBWeber",
+    "postUrl": "https://x.com/KentBWeber/status/2114055027463762247",
+    "postedAt": "2026-10-24T18:02:50Z",
+    "templateUrl": "https://x.ai/bot/AQ1p3iuOog95-lwGd9mtO",
+    "templatePageReadable": true,
+    "fetched": "2026-10-25",
+    "summaryHu": "Otthoni karbantartási napló a saját táblázatodban. A sablon leírása szerint a ház karbantartását, a garanciákat és az anyagokat a saját táblázatodban (spreadsheet) vezeti, kézi adatbevitel nélkül: elég lefotóznod valamit vagy elmondanod egy hangjegyzetben, és rögzíti a falfestékek színét, a szűrők típusát, a sorozatszámokat, a fa- és szegélyanyagokat meg az ütemezéseket, majd szól, amikor valami esedékes. A készítő posztja szerint ingyenes, házat birtoklóknak készült.",
+    "postQuote": "I built House Memory, a free homeowner maintenance tracker bot. Too fun not to share!\n\nNo data entry. Snap a pic or say a note: warranties, filters, serial numbers, paint colors. It lands in your own spreadsheet, with reminders when things are due.",
+    "templateQuote": "Keeps your home maintenance, warranties, and materials in your own spreadsheet. No data entry. Just snap a pic (or speak a note) to log your stuff and get reminders: paint colors, filter types, serial numbers, wood and trim, and schedules. Let House Memory ping you when things are due.",
+    "memory": [
+      {
+        "labelHu": "Festékszínek, szűrőtípusok, sorozatszámok, ütemezések",
+        "quote": "paint colors, filter types, serial numbers, wood and trim, and schedules",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Emlékeztető, amikor valami esedékes",
+        "quote": "Let House Memory ping you when things are due.",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "handyman",
+        "name": "Handyman",
+        "noteHu": "A közösségi Handyman sablon (Dylan) szintén otthoni karbantartás-nyilvántartó, de más bot: a szűrőméretet, a gépek típusát és a javítási előzményeket jegyzi meg, és a szezonális teendőkre emlékeztet; a House Memory mindent egy saját táblázatba gyűjt fotóból vagy hangjegyzetből."
+      }
+    ]
+  },
+  {
+    "slug": "kindle-courier",
+    "name": "Kindle Courier 2.0.0",
+    "author": "George Hong",
+    "handle": "@DomainMaster",
+    "postUrl": "https://x.com/DomainMaster/status/2114023099570254249",
+    "postedAt": "2026-10-24T15:55:58Z",
+    "templateUrl": "https://x.ai/bot/LXZMn9iFYykfjhOdwffV6",
+    "templatePageReadable": true,
+    "fetched": "2026-10-25",
+    "summaryHu": "Cikkek és videók Kindle-re küldése. A sablon leírása szerint elküldhetsz neki egy nyilvános cikket, X-posztot vagy -szálat, egy videó URL-jét, vagy feltölthetsz PDF-, EPUB- vagy DOCX-fájlt: a webes és videós tartalmat EPUB-bá alakítja, a feltöltött fájlokat változtatás nélkül továbbítja, és e-mailben elküldi a Kindle-címedre. A készítő posztja szerint ez a 2.0.0-s verzió, és az elkészült EPUB-okat ellenőrzi is.",
+    "postQuote": "Turn public articles, X posts/threads and video URLs into checked EPUBs. Uploaded PDFs, EPUBs and DOCX files are forwarded unchanged by default.\n\nEmail them to your Kindle address.",
+    "templateQuote": "Send a public article, X post or thread, or video URL—or upload a PDF, EPUB or DOCX file. Kindle Courier turns web and video content into EPUBs, forwards uploaded files unchanged, and emails them to your Kindle address.\nCreated by George Hong (@DomainMaster).",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Kindle (e-mail)",
+        "quote": "emails them to your Kindle address",
+        "from": "template"
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "book-maker",
+        "name": "Book Maker",
+        "noteHu": "A közösségi Book Maker sablon (yugo.spice) szintén tud EPUB-ot küldeni a Kindle-re, de más bot: egy témából vagy forrásból többfejezetes kézikönyvet ír a Notionbe, nem meglévő cikkeket és fájlokat alakít át."
+      }
+    ]
+  },
+  {
+    "slug": "make-it-a-10",
+    "name": "Make It a 10",
+    "author": "Luke Henderson",
+    "handle": "@metalfox",
+    "postUrl": "https://x.com/metalfox/status/2114014057145753988",
+    "postedAt": "2026-10-24T15:20:02Z",
+    "templateUrl": "https://x.ai/bot/rVZtWMQwb_6tXAQPatay5",
+    "templatePageReadable": true,
+    "fetched": "2026-10-25",
+    "summaryHu": "Szigorú bíráló, amely tízesre húzza a munkádat. A sablon leírása szerint abból indul ki, hogy a munkád 3/10-es, majd pontosan megmutatja, mi kell a 7-eshez és a 10-eshez: írást, kódot, terveket vagy dizájnt pontoz az általad választott szempontok szerint, a saját értékelésére egy második kritikai kört is lefuttat, és visszaadja a 3 legfontosabb javítást egy átírt változattal együtt, hízelgés nélkül. A készítő posztja szerint egy promptot tett sablonná, amelyet addig újra meg újra bemásolt a Grok Botba.",
+    "postQuote": "I kept pasting this prompt into Grok Bot, so I made it a template.",
+    "templateQuote": "Assumes your work is a 3/10, then shows exactly what gets it to a 7 and a 10. Scores writing, code, designs or plans on the dimensions you pick, runs a second critic pass on its own review, and hands back the top 3 fixes plus a rewrite. No flattery.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "critiquito",
+        "name": "Critiquito: Design Critique",
+        "noteHu": "A hivatalos Marketplace Critiquito botja (Manuel Muñoz Solera) szintén rangsorolt javításokat ad, de más bot: kifejezetten képernyőképek és Figma-tervek dizájnkritikájára készült, nem írja át a munkát."
+      }
+    ]
+  },
+  {
+    "slug": "template-safety-checker",
+    "name": "Template Safety Checker",
+    "author": "✦ Jorhan",
+    "handle": "@Jorhan",
+    "postUrl": "https://x.com/Jorhan/status/2114167591660843400",
+    "postedAt": "2026-10-25T01:30:07Z",
+    "templateUrl": "https://x.ai/bot/8JbRKMaD-VrcN_QyitMXN",
+    "templatePageReadable": true,
+    "fetched": "2026-10-25",
+    "summaryHu": "Biztonsági ellenőrzés sablon telepítése előtt. A sablon leírása szerint beilleszthetsz bármilyen Grok Bot-sablont, linket vagy JSON-t, és közérthetően elmondja, mihez fér hozzá, milyen intő jelek (red flags) vannak benne, és biztonságos-e telepíteni; csak olvas, semmit nem telepít és nem futtat. A készítő posztja szerint biztonságos, óvatosságot igénylő vagy nem biztonságos minősítést ad, idézi a pontos sorokat, és teszteléskor kiszúrt egy rejtett megjegyzést, amely belépési adatokat és kártyaadatokat próbált megszerezni.",
+    "postQuote": "it rates it safe, caution, or unsafe and quotes the exact lines why. in testing it caught a hidden comment trying to grab logins and cards",
+    "templateQuote": "Paste any Grok Bot template, link, or JSON and get a plain read on what it can touch, its red flags, and whether it's safe to install. Read-only: it never installs or runs anything.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "table-for-2",
+    "name": "Table for 2",
+    "author": "KavyStones",
+    "handle": "@GoodLuckBells",
+    "postUrl": "https://x.com/GoodLuckBells/status/2114000652611563578",
+    "postedAt": "2026-10-24T14:26:46Z",
+    "templateUrl": "https://x.ai/bot/Gut0vvFCUWcdYvd6hGShc",
+    "templatePageReadable": true,
+    "fetched": "2026-10-25",
+    "summaryHu": "Étteremkereső és asztalfoglaló bármelyik országban. A sablon leírása szerint jó éttermeket keres és asztalt foglal bármelyik országban, a saját nyelveden beszélgetve; otthonra és utazáshoz is. A készítő posztja szerint a világ szinte bármelyik városában működik: megmondod, hol, mikor és hány főre, a többit pedig elintézi.",
+    "postQuote": "Just launched Table for 2 🍽️, a Grok Bot that finds great restaurants and books your table in almost any city in the world, in your own language. Tell it where, when and how many, and it handles the rest.",
+    "templateQuote": "Finds great restaurants and books tables in any country, chatting in your own language. For anyone who wants dinner plans handled at home or while travelling.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "the-maitre-d",
+        "name": "The Maitre D",
+        "noteHu": "A közösségi The Maitre D sablon (TeslaAiGirl) szintén éttermet keres és asztalt foglal, de más bot: este, létszám, környék és hangulat alapján 4 javaslatot hoz foglalási és térképlinkkel."
+      }
+    ]
+  },
+  {
+    "slug": "course-builder-coach",
+    "name": "Course Builder & Coach",
+    "author": "Jesse Heredia",
+    "handle": "@JesseHeredia",
+    "postUrl": "https://x.com/JesseHeredia/status/2114186297958936934",
+    "postedAt": "2026-10-25T02:44:27Z",
+    "templateUrl": "https://x.ai/bot/x24KSm9R7DzNiaSeekeKY",
+    "templatePageReadable": true,
+    "fetched": "2026-10-25",
+    "summaryHu": "Saját tanfolyam bármilyen témából. A sablon leírása szerint megnevezel egy témát, és ingyenes, lépésről lépésre haladó tanfolyamot épít az igényeidre: képernyőnként egy leckét ellenőrzött videóval, rövid kvízzel, tanulókártyákkal és tanúsítvánnyal. A bot követi a haladásodat, a tanfolyam saját forrásaiból válaszol a kérdéseidre, pontozza, ahogy visszamagyarázod az anyagot, és ha kéred, naponta edzőként is foglalkozik veled a chatben; minden tény a forrására hivatkozik, és a jóváhagyásod nélkül semmit nem oszt meg és nem ütemez. A készítő posztja szerint a tanfolyamot a célodhoz és a szintedhez igazítja.",
+    "postQuote": "Free Grok Bot template: name any topic and it builds you a step-by-step course around your goal and level. Videos, quizzes, flashcards, progress tracking and an optional daily coach in chat. Every fact links to its source.",
+    "templateQuote": "Name any topic and get a free, step-by-step course built around your needs: one lesson per screen with a verified video, a quick quiz, flashcards and a certificate. Your bot tracks your progress, answers questions from the course's own sources, scores your explain-backs, and can coach you daily in chat if you want it to. Every fact links to its source. Nothing is shared or scheduled without your OK.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Opcionális napi coaching a chatben",
+        "quote": "can coach you daily in chat if you want it to",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "professor-g",
+        "name": "Professor G",
+        "noteHu": "A közösségi Professor G sablon (Mike P) szintén bármilyen témát tanít lépésről lépésre, és kikérdez, amíg vissza nem tudod magyarázni; emellett az olvasmánylistádat is vezeti. A Course Builder & Coach teljes tanfolyamot épít videókkal, tanulókártyákkal és tanúsítvánnyal."
+      }
+    ]
+  },
+  {
+    "slug": "scam-text-email-checker",
+    "name": "Scam Text & Email Checker",
+    "author": "Giga",
+    "handle": "@LouDeSant",
+    "postUrl": "https://x.com/LouDeSant/status/2114078194857132244",
+    "postedAt": "2026-10-24T19:34:53Z",
+    "templateUrl": "https://x.ai/bot/HeysWXLhG5F2dQuu6RvQJ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-25",
+    "summaryHu": "Csalásgyanús üzenetek ellenőrzése bármilyen nyelven. A sablon leírása szerint a gyanús SMS-eket, e-maileket és közvetlen üzeneteket (DM) csalásra utaló jelek után vizsgálja, és azon a nyelven válaszol, amelyen írsz: egyértelmű ítéletet ad (valószínűleg hiteles, légy óvatos, vagy valószínűleg csalás), felsorolja az intő és a megnyugtató jeleket, és pontosan megmondja, mi a teendő. A készítő posztja szerint ingyenes, és bármilyen nyelvű üzenetet beilleszthetsz.",
+    "postQuote": "Got a sketchy text or email? Paste it into this free bot in any language. It tells you if it's a scam, shows the red flags, and says what to do next.",
+    "templateQuote": "Checks suspicious texts, emails, and DMs for scam signs and answers in whatever language you write in. Gives a clear verdict (Likely legit, Be careful, or Likely scam), the red and green flags, and exactly what to do next.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "scam-email-detector",
+        "name": "Scam Email Detector",
+        "noteHu": "A közösségi Scam Email Detector sablon (Dirty Tesla) szintén a csalásokra figyel, de más bot: folyamatosan figyeli a postafiókodat, és az adathalász e-mailekre magától figyelmeztet; a Scam Text & Email Checker a beillesztett üzeneteket bírálja el."
+      }
+    ]
   }
 ]
