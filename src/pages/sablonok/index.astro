@@ -68,7 +68,7 @@ const ld = {
             <p>{item.summaryHu}</p>
             <p class="fine">
               <a href={templatePath(item.slug)}>Részletek</a> · {item.postUrl && <><a href={item.postUrl}>X-poszt</a> ·{" "}</>}
-              <a href={item.templateUrl}>Sablon (x.ai)</a>
+              {item.templateRemoved ? <span>Sablon (x.ai): már nem elérhető</span> : <a href={item.templateUrl}>Sablon (x.ai)</a>}
             </p>
           </li>
         ))

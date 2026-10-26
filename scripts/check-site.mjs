@@ -220,7 +220,7 @@ for (const item of templates) {
   if (!item.templateUrl?.startsWith("https://x.ai/bot/")) fail(`${rel}: hibás sablon-URL a JSON-ban`);
   if (!/^@\w+$/.test(item.handle ?? "")) fail(`${rel}: hibás handle a JSON-ban`);
   if (Number.isNaN(Date.parse(item.postedAt))) fail(`${rel}: hibás közzétételi időpont a JSON-ban`);
-  if (!html.includes(`href="${item.templateUrl}" data-source-link`)) fail(`${rel}: nincs sablonlink a Forrás blokkban`);
+  if (item.templateRemoved ? !html.includes("data-template-removed") : !html.includes(`href="${item.templateUrl}" data-source-link`)) fail(`${rel}: nincs sablonlink a Forrás blokkban`);
   if (item.postUrl ? !html.includes(`href="${item.postUrl}" data-post-link`) : !html.includes("data-post-removed")) fail(`${rel}: nincs X-poszt link a Forrás blokkban`);
   if (!html.includes(`Lekérve: ${item.fetched}`)) fail(`${rel}: nincs lekérési dátum`);
   if (!html.includes("budapesti idő")) fail(`${rel}: a közzététel ideje nincs budapesti időben jelölve`);
