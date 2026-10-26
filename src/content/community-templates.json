@@ -2305,6 +2305,7 @@
     "postedAt": "2026-10-20T12:30:29Z",
     "templateUrl": "https://x.ai/bot/VbuugtxjDt7meMkKNfzkl",
     "templatePageReadable": true,
+    "templateRemoved": true,
     "fetched": "2026-10-21",
     "summaryHu": "Nem hivatalos hírfigyelő a Grok Bot változásairól. A sablon leírása szerint nyilvános forrásokból (hivatalos changelog, alkalmazásbolti megjegyzések, súgóoldalak, hivatalos X-posztok) gyűjti a változásokat, a legújabbal kezdve, mindegyiket dátummal és forrással. Elválasztja a megerősített híreket a pletykáktól, elmondja, mit jelentenek a botjaidra nézve, és megjegyzi, mit láttál már, így nem ismétel.",
     "postQuote": "Built a bot that tells me what changed in Grok Bot. Dated, sourced, newest first, rumors kept separate. It remembers what I already saw, so no repeats. I was just tired of digging through changelogs.",
@@ -2318,7 +2319,8 @@
     ],
     "skills": [],
     "routines": [],
-    "integrations": []
+    "integrations": [],
+    "noteHu": "A 2026-10-26-i ellenőrzéskor a sablon x.ai lapja már nem volt elérhető (404), így a sablon jelenleg nem adható hozzá a Grok Bothoz; a leírást forrásként megőriztük."
   },
   {
     "slug": "inbox-manager",
@@ -3729,5 +3731,317 @@
         "noteHu": "A közösségi Scam Email Detector sablon (Dirty Tesla) szintén a csalásokra figyel, de más bot: folyamatosan figyeli a postafiókodat, és az adathalász e-mailekre magától figyelmeztet; a Scam Text & Email Checker a beillesztett üzeneteket bírálja el."
       }
     ]
+  },
+  {
+    "slug": "email-bot",
+    "name": "Email Bot",
+    "author": "Austen Allred",
+    "handle": "@Austen",
+    "postUrl": "https://x.com/Austen/status/2114428790315381036",
+    "postedAt": "2026-10-25T18:48:02Z",
+    "templateUrl": "https://x.ai/bot/v5U_zbJBHfp6jZU6R3buT",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Óránkénti postafiók-rendrakás elfoglalt embereknek. A sablon leírása szerint óránként átnézi a beérkezett leveleidet: archiválja a zajt, megtartja, amivel neked kell foglalkoznod, és a saját stílusodban válaszvázlatokat ír, de soha nem küld el semmit. A készítő posztja szerint több fiókon át kezeli az e-mailjeit, tanul abból, ahogyan dolgozol, leiratkozik a kéretlen levelekről, és megtanulja a hangodat a válaszvázlatokhoz.",
+    "postQuote": "Learns from how you operate, archives what you request, unsubscribes from junk, learns your voice to draft replies to everything automatically.",
+    "templateQuote": "Hourly inbox triage for busy people. It archives noise, keeps what needs you, and drafts replies in your voice. It never sends.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Óránkénti postafiók-átnézés",
+        "quote": "Hourly inbox triage",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "inbox-manager",
+        "name": "Inbox Manager",
+        "noteHu": "A közösségi Inbox Manager sablon (Gaurav Singh) szintén a Gmailt tartja rendben, de más bot: hetente megkeresi a legzajosabb feladókat, és javasolja, kiről iratkozz le, mit archiválj; válaszvázlatokat nem ír."
+      },
+      {
+        "slug": "mail-in-x-chat",
+        "name": "Mail in X Chat",
+        "noteHu": "A közösségi Mail in X Chat sablon (Phil) a fontos leveleidet rövid kártyákként egy X Chatbe hozza, és csak a jóváhagyásod után küld választ; az Email Bot óránként archivál és vázlatot ír, de nem küld."
+      }
+    ]
+  },
+  {
+    "slug": "renovation-planner",
+    "name": "Renovation Planner",
+    "author": "Michael",
+    "handle": "@mglashouwer",
+    "postUrl": "https://x.com/mglashouwer/status/2114413868394983875",
+    "postedAt": "2026-10-25T17:48:44Z",
+    "templateUrl": "https://x.ai/bot/jHCMjCW17rXgGxJdrHLcQ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Felújítás-tervező lépésről lépésre. A sablon leírása szerint végigvezet egy felújításon, például fürdőszobán, konyhán vagy tetőtéren: összeírja a kívánságaidat, saját méretarányos modellt épít alaprajzokkal, hangulatképeket készít, amelyeket könnyen átszínezhetsz, forrásokkal ellátott árakat keres, és a kivitelezői árajánlatokat valóban összehasonlíthatóvá teszi. Semmit nem küld el, nem rendel meg és nem foglal le magától. A készítő posztja szerint ezzel tervezték újra a fürdőszobájukat.",
+    "postQuote": "Built a Grok Bot that helped us redesign our bathroom: it rebuilds the room as a measured model, draws floor plans, makes mood images you can restyle, and keeps contractor quotes comparable.",
+    "templateQuote": "Guides you step by step through a renovation such as a bathroom, kitchen or attic. It lists your wishes, builds its own measured model with floor plans, makes mood images you can easily restyle, finds prices with sources and makes quotes truly comparable. It never sends, orders or books anything itself.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "house-memory",
+        "name": "House Memory",
+        "noteHu": "A közösségi House Memory sablon (Kent Weber) szintén az otthonhoz kapcsolódik, de más bot: a meglévő ház karbantartását, garanciáit és anyagait vezeti egy saját táblázatban, nem felújítást tervez."
+      }
+    ]
+  },
+  {
+    "slug": "x-bookmarks-organizer",
+    "name": "X Bookmarks Organizer",
+    "author": "Jonathan Newburg",
+    "handle": "@realjohnnewburg",
+    "postUrl": "https://x.com/realjohnnewburg/status/2114472488478585198",
+    "postedAt": "2026-10-25T21:41:40Z",
+    "templateUrl": "https://x.ai/bot/qFiT0P20Y-2V-Pa7d_uaO",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "X-könyvjelzők rendezése mappákba. A sablon leírása szerint átnézi az X-könyvjelzőidet, a posztok tartalma alapján témamappákat javasol (a meglévő mappáidat megtartja), a jóváhagyásod után besorolja őket, majd egy napi automatikus rutinnal az újonnan mentett posztokat is rendezi. A készítő posztja szerint nem kell kézzel mappákat létrehoznod és több ezer posztot átnézned, és API nélkül is működik.",
+    "postQuote": "Now, you can let Grok Bot create the folders and organize everything for you without needing the API!",
+    "templateQuote": "Scans your X bookmarks, proposes topic folders from post content (and keeps any folders you already have), files them after you approve, then keeps new bookmarks sorted with a daily auto-organize routine.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi automatikus rendezés",
+        "quote": "keeps new bookmarks sorted with a daily auto-organize routine",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "X (könyvjelzők)",
+        "quote": "Scans your X bookmarks",
+        "from": "template"
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "bookmark-to-output",
+        "name": "Bookmark to Output",
+        "noteHu": "A közösségi Bookmark to Output sablon (Mustafa Ergisi) jóváhagyás után szintén témamappákba tudja sorolni az X-könyvjelzőidet, de a fő feladata más: a mentett posztokból egy-egy használható anyagot (listát, tervet, vázlatot) készít."
+      },
+      {
+        "slug": "bookmark-debt-collector",
+        "name": "Bookmark Debt Collector",
+        "noteHu": "A közösségi Bookmark Debt Collector sablon (Harris) a könyvjelzőidből összesítő kártyát készít, és mindegyikhez egy következő lépést ad; mappákba nem rendez."
+      }
+    ]
+  },
+  {
+    "slug": "morning-brief",
+    "name": "Morning Brief",
+    "author": "Dannyijbol",
+    "handle": "@Dannyijbol",
+    "postUrl": "https://x.com/Dannyijbol/status/2114276906967396376",
+    "postedAt": "2026-10-25T08:44:30Z",
+    "templateUrl": "https://x.ai/bot/WFlAa803MHnTUoVuHtaRq",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Reggeli összefoglaló a téged érdeklő témákról. A sablon leírása szerint megadod a témákat, cégeket és embereket, akiket követsz, és minden reggel rövid, forrásokkal ellátott összefoglalót küld arról, mi változott valójában; azokon a napokon, amikor semmi, csendben marad. A készítő posztja szerint ingyenes, és azért készítette, mert minden nap rákérdezett az MI-nél, van-e valami újdonság.",
+    "postQuote": "So I built a bot that watches the topics I care about and sends me one summary each morning, with sources, only when something's actually new.",
+    "templateQuote": "Tell it the topics, companies, and people you follow, and every morning it sends a short, sourced rundown of what actually changed. It stays quiet on days when nothing did.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Reggeli összefoglaló, csak ha van újdonság",
+        "quote": "every morning it sends a short, sourced rundown of what actually changed",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "x-brief",
+        "name": "X Brief",
+        "noteHu": "A hivatalos Marketplace X Brief botja (Dan McAteer) szintén napi rövid összefoglalót készít, de csak a kiválasztott X-fiókokból és témákból; a Morning Brief bármilyen témát, céget és embert figyel, forrásokkal."
+      },
+      {
+        "slug": "the-morning-newspaper",
+        "name": "The Morning Newspaper",
+        "noteHu": "A hivatalos Marketplace The Morning Newspaper botja (Karen X. Cheng) is reggeli összefoglaló, de az e-mailjeidből és a naptáradból állít össze nyomtatható újságot."
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "ai-radar",
+        "name": "AI Radar",
+        "noteHu": "A közösségi AI Radar sablon (Gota) szintén csak a lényeges újdonságokról szól, de kifejezetten MI-hírekre szakosodott."
+      }
+    ]
+  },
+  {
+    "slug": "decide",
+    "name": "Decide",
+    "author": "Luke Kim",
+    "handle": "@lukekim",
+    "postUrl": "https://x.com/lukekim/status/2114472524436423074",
+    "postedAt": "2026-10-25T21:41:49Z",
+    "templateUrl": "https://x.ai/bot/1HPCd_jvXRCkh7BGXBvZf",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Döntéssegítő coach nehéz kérdésekhez. A sablon leírása szerint bármilyen nehéz döntésen végigvezet, egyszerre egy kérdéssel, amíg el nem kötelezed magad egy első lépés és egy visszatekintési (check-in) időpont mellett; Kahneman, a Heath fivérek, Bezos, Annie Duke és Tony Robbins bevált módszereire épül. A készítő posztja szerint a Marketplace-en tette közzé, és visszajelzést kér.",
+    "postQuote": "Need help making a decision?",
+    "templateQuote": "A decision coach that walks you through any hard call, one question at a time, until you've committed with a first move and a check-in date. Built on proven methods from Kahneman, the Heath brothers, Bezos, Annie Duke, and Tony Robbins.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "the-tiebreaker",
+        "name": "The Tiebreaker",
+        "noteHu": "A közösségi The Tiebreaker sablon (Si) szintén nehéz döntésekben segít, de más bot: mindkét oldalt végigérveli, majd megmondja a saját véleményét egy megosztható ítéletkártyával; a Decide kérdésről kérdésre vezet egy első lépésig."
+      }
+    ]
+  },
+  {
+    "slug": "receipt-keeper",
+    "name": "Receipt Keeper",
+    "author": "Kent Weber",
+    "handle": "@KentBWeber",
+    "postUrl": "https://x.com/KentBWeber/status/2114341023354962188",
+    "postedAt": "2026-10-25T12:59:17Z",
+    "templateUrl": "https://x.ai/bot/3ZpWwU-KhU953eArYJ8ST",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Nyugták nyilvántartása a saját táblázatodban. A sablon leírása szerint minden nyugtát a saját táblázatodban (spreadsheet) tárol, kézi adatbevitel nélkül: elég lefotóznod vagy továbbítanod egy e-mailt, és ha szeretnéd, megjegyzést is mondhatsz hozzá. Rögzíti a kereskedőt, a dátumot, a végösszeget, az adót, a kártya utolsó 4 számjegyét és a kategóriát a kiadások követéséhez, az adózáshoz, a visszavitelhez és a garanciákhoz; a beleegyezésed nélkül semmit nem oszt meg és nem töröl. A készítő posztja szerint ingyenes, és sok más alkalmazás és rendszer kipróbálása után készítette.",
+    "postQuote": "No data entry. Snap a pic, forward an email, or add a note. Stores the date, total, tax, and category, and puts it in your own spreadsheet.",
+    "templateQuote": "Keeps every receipt in your own spreadsheet. Just snap a photo or forward an email. No data entry. Say a note if you like. It logs merchant, date, total, tax, card last 4, and category for expense tracking, taxes, returns, and warranties. Never shares or deletes without your yes.",
+    "memory": [
+      {
+        "labelHu": "Kereskedő, dátum, végösszeg, adó, kártya utolsó 4 számjegye, kategória",
+        "quote": "It logs merchant, date, total, tax, card last 4, and category",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "house-memory",
+        "name": "House Memory",
+        "noteHu": "A közösségi House Memory sablon ugyanattól a készítőtől (Kent Weber) ugyanígy, fotóból vagy hangjegyzetből dolgozik a saját táblázatodba, de a ház karbantartását és garanciáit vezeti."
+      },
+      {
+        "slug": "budget-bot",
+        "name": "Budget Bot",
+        "noteHu": "A közösségi Budget Bot sablon (Mike P) a bankszámlád és kártyáid tranzakcióiból teljes háztartási költségvetést vezet; a Receipt Keeper csak a nyugtákat gyűjti."
+      }
+    ]
+  },
+  {
+    "slug": "free-trial-reminder",
+    "name": "Free Trial Reminder",
+    "author": "Andres Ruggiero",
+    "handle": "@AndresRuggiero3",
+    "postUrl": "https://x.com/AndresRuggiero3/status/2114375681069215926",
+    "postedAt": "2026-10-25T15:17:00Z",
+    "templateUrl": "https://x.ai/bot/8R-EJYXBy-sKXuVMtPVf4",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Figyelmeztet, mielőtt egy ingyenes próbaidőszak fizetőssé válik. A sablon leírása szerint kiszűri az e-mailjeidből az ingyenes próbaidőszakokat, néhány nappal azelőtt figyelmeztet, hogy terhelés lenne belőlük, és csak a megerősítésed után mondja le őket; azoknak készült, akik kevesebb meglepetésszerű terhelést szeretnének. A készítő posztja szerint te választod ki, hogy lemondja, megtartsa vagy később emlékeztessen, és csendben marad, ha semmi nem esedékes.",
+    "postQuote": "You pick cancel, keep, or remind later. Quiet when nothing's due.",
+    "templateQuote": "Catches free trials in your email, warns a few days before they turn into a charge, and cancels them only after you confirm. For anyone who wants fewer surprise charges.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "karen-subscription-canceller",
+        "name": "Karen the Canceller of Paid Subs",
+        "noteHu": "A közösségi Karen the Canceller of Paid Subs sablon (Allan Branch) a már fizetős előfizetéseidet keresi meg és mondja le; a Free Trial Reminder az ingyenes próbaidőszakokra figyel, még a terhelés előtt."
+      },
+      {
+        "slug": "bills",
+        "name": "Bills",
+        "noteHu": "A közösségi Bills sablon (Daniel Dewhurst) a háztartási számlákat, előfizetéseket és megújításokat követi, és a megújítások előtt emlékeztet."
+      }
+    ]
+  },
+  {
+    "slug": "lexy",
+    "name": "Lexy",
+    "author": "petru",
+    "handle": "@realpetru",
+    "postUrl": "https://x.com/realpetru/status/2114120901272711351",
+    "postedAt": "2026-10-24T22:24:35Z",
+    "templateUrl": "https://x.ai/bot/DkHvWCLMU2k2qN9lfPoP_",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Jogi és ügyintézési segítő bármelyik országban. A sablon leírása szerint személyes és háztartási jogi és adminisztratív ügyekben segít bármelyik országban: fogyasztói jogok, garanciák, számlák, szerződések, bérleti szerződések, banki és biztosítási papírmunka, adatvédelmi kérelmek, munkajogi alapok és bírságok, az országodra vonatkozó hivatalos hivatkozásokkal; a vázlatokat te hagyod jóvá, mielőtt bármi kimenne. A készítő posztja szerint először megkérdezi, melyik országban vagy, csak vázlatot ír, az elküldés a te dolgod, és nem ügyvéd.",
+    "postQuote": "First it asks which country you're in. Then warranties, shop fights, bills, contracts, privacy requests, the personal legal admin. Drafts only. You send. Not a lawyer.",
+    "templateQuote": "Personal and household legal & admin helper for any country. Consumer rights, warranties, bills, contracts, leases, banking and insurance paperwork, privacy requests, employment basics, and fines — with official citations for your country, and drafts you approve before anything goes out.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő posztja szerint a bot nem ügyvéd (Not a lawyer); jogi tanácsadást nem helyettesít.",
+    "relatedTemplates": [
+      {
+        "slug": "gdpr-bot",
+        "name": "GDPR Bot",
+        "noteHu": "A közösségi GDPR Bot sablon (Szilágyi Pál) szintén jogi témájú, de más bot: weboldalak GDPR-megfelelését vizsgálja hetente, esetjogra hivatkozva, nem magánszemélyek ügyintézésében segít."
+      }
+    ]
+  },
+  {
+    "slug": "podsum",
+    "name": "PodSum",
+    "author": "ghetti",
+    "handle": "@Ghettibeats",
+    "postUrl": "https://x.com/Ghettibeats/status/2114400265939959871",
+    "postedAt": "2026-10-25T16:54:41Z",
+    "templateUrl": "https://x.ai/bot/iI4fzf2Pt5KO2HSriCQww",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Podcast- és videó-összefoglaló az átirat alapján. A sablon leírása szerint beillesztesz egy podcast- vagy videólinket, vagy csatolsz egy felvételt, és a chatben teljes, az átiratra épülő összefoglalót kapsz: felütéssel, szakaszokkal, valódi idézetekkel, tanulságokkal és nyitott kérdésekkel. A készítő posztja szerint Matt Pocock egyik podcastjával kipróbálva visszakapta a teljes gondolatmenetet, a valódi idézeteket és a tanulságokat, egyenesen az átiratból.",
+    "postQuote": "got back the full argument, real quotes, and takeaways, straight from the transcript.",
+    "templateQuote": "Paste a podcast or video link, or attach a recording, and get a full, transcript-grounded brief in chat: hook, sections, real quotes, takeaways, and open questions.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "clip-bot",
+        "name": "Clip Bot",
+        "noteHu": "A hivatalos Marketplace Clip Bot botja (This Week in AI) szintén hosszú felvételekkel dolgozik, de más bot: a legjobb pillanatokat rövid, feliratozott klipekre vágja, nem írásos összefoglalót ad."
+      }
+    ]
+  },
+  {
+    "slug": "next-episode",
+    "name": "Next Episode",
+    "author": "Nazhand 🇮🇷🇨🇦",
+    "handle": "@najandz",
+    "postUrl": "https://x.com/najandz/status/2114588198257172790",
+    "postedAt": "2026-10-26T05:21:28Z",
+    "templateUrl": "https://x.ai/bot/weo-9S-ST5vG6owNwE7vQ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Sorozatajánló a következő estére. A sablon leírása szerint megmondod, mit szerettél, milyen a hangulatod, mennyi időd van és milyen streamingszolgáltatásaid vannak, és 3–5 spoilermentes sorozatajánlatot kapsz arról, hol nézheted őket; idővel megtanulja az ízlésedet. A készítő posztja szerint azoknak szól, akik nem tudják eldönteni, mit nézzenek ma este.",
+    "postQuote": "Next Episode on Grok Bot gives you 3 to 5 spoiler-free TV picks based on what you love, plus where to stream them.",
+    "templateQuote": "Finds your next TV series: tell it what you've loved, your mood, time, and streaming services, and get 3 to 5 spoiler-free picks with where to watch. It learns your taste over time.",
+    "memory": [
+      {
+        "labelHu": "Az ízlésed",
+        "quote": "It learns your taste over time.",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [],
+    "integrations": []
   }
 ]

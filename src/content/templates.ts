@@ -16,6 +16,8 @@ export type CommunityTemplate = {
   author: string;
   handle: string;
   postUrl?: string;
+  /** true, ha az x.ai sablonlap megszűnt (404); az URL csak szövegként marad forrásként. */
+  templateRemoved?: boolean;
   /** UTC ISO időbélyeg, az oldal budapesti időre váltja. */
   postedAt: string;
   templateUrl: string;
