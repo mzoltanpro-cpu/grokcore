@@ -4043,5 +4043,88 @@
     "skills": [],
     "routines": [],
     "integrations": []
+  },
+  {
+    "slug": "fitness-coach-corey",
+    "name": "Fitness Coach",
+    "author": "Corey",
+    "handle": "@coreyganim",
+    "postUrl": "https://x.com/coreyganim/status/2114703733007188231",
+    "postedAt": "2026-10-26T13:00:33Z",
+    "templateUrl": "https://x.ai/bot/RJaAVGv0DKddKYaJQuGs5",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Személyi edző és táplálkozási coach. A sablon leírása szerint az első napon interjúztat, felépíti az edzésprogramodat és a táplálkozási tervedet, coachingol minden edzésen, és a bejelentkezéseid alapján igazít. A készítő posztja szerint Mind Pump nyilvános módszertanára épül: sportolóprofil, gyakorlatkönyvtár, edzés- és táplálkozási playbookok; kérdésenként interjú → profil és kezdő edzésblokk → kalória, makró és étkezési időzítés → első edzés megírása → edzés közbeni coaching és top set napló. Ingyenes sablon.",
+    "postQuote": "I built a Grok Bot that acts as en elite fitness coach.\n\nIt includes:\n\n-My full athlete profile\n-A complete exercise library\n-In-depth training and nutrition playbooks based on @Mindpump's public methodology\n\n(Mind Pump is my favorite fitness podcast, the hosts have 20+ years of training experience and they 100% know their stuff. This Bot is trained on all their publicly available knowledge).\n\nI worked out the kinks then turned it into a free Grok Bot template called Fitness Coach.\n\nInstall it and it:\n1. Interviews you, one question at a time\n2. Builds your profile and a starting training block\n3. Sets your calories, macros, and meal timing\n4. Writes your first session\n5. Coaches each workout and logs your top sets\n\nI've been having a ton of fun with it!\n\nYou can grab the free template here: https://x.ai/bot/RJaAVGv0DKddKYaJQuGs5",
+    "templateQuote": "A personal trainer and nutrition coach that interviews you on day one, then builds your training program and nutrition plan, coaches each session, and adjusts from your check-ins. Built on Mind Pump's public training and nutrition principles.",
+    "memory": [
+      {
+        "labelHu": "Sportolóprofil",
+        "quote": "My full athlete profile",
+        "from": "post"
+      },
+      {
+        "labelHu": "Gyakorlatkönyvtár",
+        "quote": "A complete exercise library",
+        "from": "post"
+      },
+      {
+        "labelHu": "Edzés- és táplálkozási playbookok (Mind Pump nyilvános módszertana)",
+        "quote": "In-depth training and nutrition playbooks based on @Mindpump's public methodology",
+        "from": "post"
+      }
+    ],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "fitness-coach",
+        "name": "Fitness Coach",
+        "noteHu": "A Paul Blanche (@paulblanche21) Fitness Coach sablonja hasonló nevű, de más bot: okosóra-exportból napi terhelhetőséget és heti pihenő-/edzéstervet ad, nem Mind Pump-alapú személyi edző."
+      },
+      {
+        "slug": "kilo",
+        "name": "Kilo",
+        "noteHu": "A Kilo (@4TechX) szintén fitneszedző, de más bot: progresszív terhelés edzésnaplóból és Health-képernyőképek, nem Mind Pump playbookok."
+      }
+    ],
+    "noteHu": "A készítő szerint a bot a Mind Pump podcast nyilvános módszertanára épül; ez nem hivatalos Mind Pump termék."
+  },
+  {
+    "slug": "x-virality-score",
+    "name": "X Virality Score",
+    "author": "theGreatest",
+    "handle": "@thegreatest_sv",
+    "postUrl": "https://x.com/thegreatest_sv/status/2100236496837984387",
+    "postedAt": "2026-09-16T14:52:56Z",
+    "templateUrl": "https://x.ai/bot/qG9mJ4EM-96hA3A1UNw4E",
+    "templatePageReadable": true,
+    "fetched": "2026-10-26",
+    "summaryHu": "Készítőknek és bloggereknek való X-virality desk. A sablon leírása szerint figyeli a te watchlistedet, megtalálja a már sikeres (elég megtekintésű) posztokat, kulcsszavakat bányász belőlük, angol piszkozatokat és rövid videótippet ír, és első futáskor felépíti a saját GitHub Pages virality boardodat. A készítő X-cikke szerint nem autoposter: te maradsz a közzétevő; a desk scoutol, piszkozatol, a boardon pedig X Score / Day Target és DONE/NOT DONE chippekkel követheted. Ingyenes, kísérleti eszköz; a cikk GitHub-repót és nyilvános boardot is linkel.",
+    "postQuote": "X Virality Score: the free desk that tells beginners what to post \n\nI used to open X every morning and still freeze.\nI scrolled. I liked other people's posts. I still did not know what I should write today.\n\nSo I built X Virality Score: a free public experimental tool for creators.\n\nIt is not an autoposter. It is not an engagement farm.\nYou stay the publisher. The desk does the chores.\n\nHow it works:\n1. Put your account list in config/watchlist.json\n2. It reads original posts over a view floor (default 5k; stars at 10k)\n3. It finds keywords and patterns\n4. It writes drafts from those keywords (keywords → pattern brief → English draft + short video tip)\n5. It also checks ~20 outside posts for today's meta\n\nBot Marketplace: https://x.ai/bot/qG9mJ4EM-96hA3A1UNw4E\nGitHub: https://github.com/monkeyteamvip/x-virality-score\nBoard: https://monkeyteamvip.github.io/kiosa-board/",
+    "templateQuote": "Watches your X watchlist, finds posts that already hit, mines keywords, drafts EN posts + video tips, and scaffolds your own GitHub Pages virality...",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi digest délelőtt (a cikk szerint dél előtt)",
+        "quote": "Target: digest ready before noon",
+        "from": "post"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "X (csak olvasás a cikk szerint)",
+        "quote": "Keep a read-only X session on the box browser",
+        "from": "post"
+      },
+      {
+        "name": "GitHub / GitHub Pages",
+        "quote": "scaffolds your own GitHub Pages virality",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A készítő cikke külső GitHub-repót és nyilvános boardot is linkel; ezek nem a Botkezdő részei. Van egy második, ugyanolyan nevű sablon-URL is (https://x.ai/bot/BIvSSU3sukmkTpMeSnft-); ide a cikk „Do this / Marketplace” linkjét vettük fel."
   }
 ]
