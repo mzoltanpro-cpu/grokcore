@@ -4126,5 +4126,317 @@
       }
     ],
     "noteHu": "A készítő cikke külső GitHub-repót és nyilvános boardot is linkel; ezek nem a Botkezdő részei. Van egy második, ugyanolyan nevű sablon-URL is (https://x.ai/bot/BIvSSU3sukmkTpMeSnft-); ide a cikk „Do this / Marketplace” linkjét vettük fel."
+  },
+  {
+    "slug": "quality-control-bot",
+    "name": "Quality Control Bot",
+    "author": "Austen Allred",
+    "handle": "@Austen",
+    "postUrl": "https://x.com/Austen/status/2114803593941549488",
+    "postedAt": "2026-10-26T19:37:22Z",
+    "templateUrl": "https://x.ai/bot/naGR5kuKNpP7qdHipc0hy",
+    "templatePageReadable": true,
+    "fetched": "2026-10-27",
+    "summaryHu": "Napi minőségellenőrzés a weboldaladon, első látogatóként. A sablon leírása szerint folyamatosan teszteli a weboldalaidat úgy, mintha először járna ott: végigjárja az oldalakat és a linkeket, kipróbálja az űrlapokat és a gombokat (CTA-kat) anélkül, hogy valóban elküldené őket, és csak az új vagy visszatérő hibákat jelenti. A készítő posztja szerint azért készítette, mert az oldalukon egy link napokig hibás volt egy elromlott integráció miatt, és senki nem vette észre.",
+    "postQuote": "Put together a Quality Control Bot that crawls the entire website as a first-time user every day, tests all forms and CTAs.",
+    "templateQuote": "Continuous QA and first-time-user testing for your websites. It crawls pages and links, tests forms and CTAs without submitting them for real, and reports only new or regressed issues.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi teljes ellenőrzés első látogatóként",
+        "quote": "crawls the entire website as a first-time user every day",
+        "from": "post"
+      }
+    ],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "startup-qa-bot",
+        "name": "Startup QA Bot",
+        "noteHu": "A hivatalos Marketplace Startup QA Bot botja (Shub Gaur) szintén rendszeresen végigjárja a terméket, de saját tesztfiókkal, és azt is jelenti, mi került ki vagy mi tűnt el; a Quality Control Bot a nyilvános weboldalt nézi első látogatóként."
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "site-qa-desk",
+        "name": "Site QA Desk",
+        "noteHu": "A közösségi Site QA Desk sablon (T1000) egy beillesztett linkről egyszeri ellenőrzést végez asztali és mobil nézetben, képernyőképekkel; a Quality Control Bot naponta, magától fut, és csak az új hibákat jelenti."
+      },
+      {
+        "slug": "website-health-check",
+        "name": "Website Health Check",
+        "noteHu": "A közösségi Website Health Check sablon (Emmett Armstrong) A–F osztályzatot ad a sebességre, akadálymentességre és a hibás linkekre; űrlapokat és gombokat nem tesztel."
+      }
+    ]
+  },
+  {
+    "slug": "non-evil-sales-bot",
+    "name": "Non-Evil Sales Bot",
+    "author": "Austen Allred",
+    "handle": "@Austen",
+    "postUrl": "https://x.com/Austen/status/2114708312981639244",
+    "postedAt": "2026-10-26T13:18:45Z",
+    "templateUrl": "https://x.ai/bot/5YWYxtjBD3kmr95SoCAzz",
+    "templatePageReadable": true,
+    "fetched": "2026-10-27",
+    "summaryHu": "Ajánláson alapuló értékesítés kéretlen levelek helyett. A sablon leírása szerint megkeresi az ideális ügyfélprofilodnak (ICP) megfelelő cégeket, átnézi az e-mailjeidet, üzeneteidet, naptáradat, chatjeidet, az X-et és a befektetői kapcsolataidat, hogy megtalálja a legközelebbi valódi bemutatási (intro) lehetőséget, közben feltérképezi a kapcsolati hálódat, és a saját hangodon ír megkereső vázlatokat. Csak vázlatot ír: semmi nem megy ki a jóváhagyásod nélkül. A készítő posztja szerint a legtöbb értékesítési eszköz spamküldésre épül, ő az ellenkezőjét akarta.",
+    "postQuote": "Most sales tools are built to send spam, but I wanted the opposite:",
+    "templateQuote": "Finds companies that fit your ICP, mines your email, texts, calendar, chat, X and investor network for the closest real intro, maps your network as it goes, and drafts outreach in your voice. Drafts only: nothing goes out without your yes.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "E-mail, üzenetek, naptár, chat, X",
+        "quote": "mines your email, texts, calendar, chat, X and investor network",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A sablon leírása szerint csak vázlatot ír (Drafts only), semmit nem küld el a jóváhagyásod nélkül.",
+    "relatedMarketplace": [
+      {
+        "slug": "warm-intro-finder",
+        "name": "GTM Connections",
+        "noteHu": "A hivatalos Marketplace GTM Connections botja (Brian Joseph) szintén közös ismerősökön és korábbi beszélgetéseken át keres utat egy célcéghez, és megírja a bemutatáskérést; a Non-Evil Sales Bot ezt az ügyfélprofil alapján megtalált cégekkel kombinálja."
+      },
+      {
+        "slug": "prospector",
+        "name": "GTM Prospecting",
+        "noteHu": "A hivatalos Marketplace GTM Prospecting botja (Caro Scalercio) az ügyfélprofilból célzott érdeklődőlistát készít és első megkereséseket ír; a meleg bemutatási utakat kevésbé keresi."
+      }
+    ]
+  },
+  {
+    "slug": "iphone-screenshot-bot",
+    "name": "iPhone Screenshot Bot",
+    "author": "Ryan G",
+    "handle": "@RyDawg42",
+    "postUrl": "https://x.com/RyDawg42/status/2114825534840672604",
+    "postedAt": "2026-10-26T21:04:33Z",
+    "templateUrl": "https://x.ai/bot/BlzS2Llj7_9VSmi3TjX0r",
+    "templatePageReadable": true,
+    "fetched": "2026-10-27",
+    "summaryHu": "Képernyőképekből szép iPhone-bemutatóképek. A sablon leírása szerint elküldöd az alkalmazásod képernyőképeit, és tiszta iPhone-mockupokat kapsz vissza fehér, sötét fényes, színátmenetes vagy egyedi színű háttéren, kérésre a saját logóddal alul; minden telefon azonos méretű marad, a színek és a térközök állíthatók. A készítő posztja szerint egyszerre egy vagy több álló képernyőképet is feltölthetsz, és a logót be- vagy kikapcsolhatod.",
+    "postQuote": "I like to show them on X inside of an iPhone with a light or dark background. So I built a template just for that.",
+    "templateQuote": "Send it app screenshots and get clean iPhone mockups back, on white, dark glow, gradient, or custom-color backgrounds, with your own logo at the bottom if you want. Every phone stays the same size, with adjustable colors and spacing.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "image-gen-bot",
+        "name": "Stills & Clips Desk",
+        "noteHu": "A hivatalos Marketplace Stills & Clips Desk botja (Matt Palmer) a dokumentációhoz szintén rendbe teszi a képernyőképeket, de fő feladata állóképek és rövid klipek kivágása felvételekből; iPhone-keretes bemutatóképet nem készít."
+      }
+    ]
+  },
+  {
+    "slug": "snapshot",
+    "name": "Snapshot",
+    "author": "Tom⚡️",
+    "handle": "@TitaniumTomP",
+    "postUrl": "https://x.com/TitaniumTomP/status/2114824160132415856",
+    "postedAt": "2026-10-26T20:59:05Z",
+    "templateUrl": "https://x.ai/bot/X75TPzxEpW-J_hbKjhy57",
+    "templatePageReadable": true,
+    "fetched": "2026-10-27",
+    "summaryHu": "Szabadon posztolható valódi fotó egy szóból. A sablon leírása szerint beírsz egy szót vagy rövid kifejezést, például „golden retriever” vagy „Eiffel Tower”, és visszakapsz róla egy valódi fotót, amelyet szabadon közzétehetsz. A készítő posztja szerint már nem keres képeket a Google-ben, hanem a Snapshot botjával talál jogdíjmentes képet, amelyet letölthet és újra felhasználhat.",
+    "postQuote": "I just have my Grok Bot, Snapshot, find me a royalty-free image that I can download and reuse.",
+    "templateQuote": "Type a word or short phrase, like \"golden retriever\" or \"Eiffel Tower\", and get back a real photo of it that's free to post.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "sparkle",
+    "name": "Sparkle",
+    "author": "M.C.A Hogarth",
+    "handle": "@mcahogarth",
+    "postUrl": "https://x.com/mcahogarth/status/2114818674045661373",
+    "postedAt": "2026-10-26T20:37:17Z",
+    "templateUrl": "https://x.ai/bot/fB68VTA4W-1fQxWiCQnS9",
+    "templatePageReadable": true,
+    "fetched": "2026-10-27",
+    "summaryHu": "Napi inspiráció családi beszélgetésekhez és íráshoz. A sablon leírása szerint egy kedves, napi inspirációs bot, amely minden alkalommal egy jó „kincset” keres a családi beszélgetésekhez és az íráshoz, és frissen tartja az ötleteket, hogy ne ragadj le ugyanazoknál a gondolatoknál. Induláskor megkérdezi az érdeklődési köreidet, a helyedet, a gyakoriságot és azt, hogy kérsz-e szentírási (bibliai) részeket. A készítő posztja szerint a környékbeli hírekből is elmondja, ami érdekes lehet számodra.",
+    "postQuote": "This first one is an inspiration bot that gives you new and interesting things to think about and tells you about your local news that might be interesting to you.",
+    "templateQuote": "A warm daily inspiration bot that finds one good treasure for family conversation and writing fuel, and keeps ideas fresh so you don't fall into the same mental ruts. Opens by asking your interests, location, cadence, and whether you want scripture.",
+    "memory": [
+      {
+        "labelHu": "Érdeklődési körök, hely, gyakoriság, szentírás kérése",
+        "quote": "Opens by asking your interests, location, cadence, and whether you want scripture.",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "birthday-message-bot",
+    "name": "Birthday Message Bot",
+    "author": "Queenyx 👑",
+    "handle": "@Queenity78",
+    "postUrl": "https://x.com/Queenity78/status/2114848953401266475",
+    "postedAt": "2026-10-26T22:37:37Z",
+    "templateUrl": "https://x.ai/bot/gyMx_xOIoH8wUHS0muoPG",
+    "templatePageReadable": true,
+    "fetched": "2026-10-27",
+    "summaryHu": "Születésnapi üzenetek, hogy egy barátodé se maradjon ki. A sablon leírása szerint összegyűjti a születésnapokat a naptáraidból és a Facebookról, és előző este megír egy meleg, személyes üzenetvázlatot, amelyet te hagysz jóvá és küldesz el. A készítő posztja szerint azoknak készült, akik elfelejtenek születésnapi üzenetet küldeni a barátaiknak.",
+    "postQuote": "Do you forget to send your friends birthday messages?",
+    "templateQuote": "Never miss a friend's birthday. It gathers birthdays from your calendars and Facebook and has a warm, personal message drafted the evening before, ready for you to approve and send.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Üzenetvázlat a születésnap előtti estén",
+        "quote": "has a warm, personal message drafted the evening before",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Naptár, Facebook",
+        "quote": "gathers birthdays from your calendars and Facebook",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A készítő posztja szerint a bot elküldi helyetted az üzeneteket, a sablon leírása szerint viszont az üzenet jóváhagyásra kész vázlat (ready for you to approve and send)."
+  },
+  {
+    "slug": "study-buddy",
+    "name": "Study Buddy",
+    "author": "Yonatan Langer",
+    "handle": "@yonatan_langer",
+    "postUrl": "https://x.com/yonatan_langer/status/2114870059575222334",
+    "postedAt": "2026-10-27T00:01:29Z",
+    "templateUrl": "https://x.ai/bot/bxlNO70DBmOumx0hLhwPs",
+    "templatePageReadable": true,
+    "fetched": "2026-10-27",
+    "summaryHu": "Tanulási terv, kártyák és napi kvíz a vizsgáig. A sablon leírása szerint feltöltöd a jegyzeteidet vagy egy PDF-et, és tanulási tervet, oldalszámmal hivatkozott tanulókártyákat (flashcard) és napi kvízeket kapsz egészen a vizsga napjáig; olyan diákoknak készült, akiknek van kitűzött vizsgaidőpontjuk. A készítő posztja szerint nem talál ki válaszokat: ha valami nincs benne a tananyagodban, ezt megmondja.",
+    "postQuote": "Upload the PDF. Set the date.",
+    "templateQuote": "Upload your notes or a PDF and get a study plan, page-cited flashcards and daily quizzes until exam day. Made for students with a set exam date.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi kvíz a vizsgáig",
+        "quote": "a quiz every day until the exam",
+        "from": "post"
+      }
+    ],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "course-builder-coach",
+        "name": "Course Builder & Coach",
+        "noteHu": "A közösségi Course Builder & Coach sablon (Jesse Heredia) szintén ad kvízt és tanulókártyákat, de bármilyen témából saját kurzust épít; a Study Buddy a te jegyzeteidből dolgozik egy adott vizsgadátumig."
+      }
+    ]
+  },
+  {
+    "slug": "call-minutes-maker",
+    "name": "Call Minutes Maker (議事録起こすマン)",
+    "author": "Eri@個人開発するUXデザイナー",
+    "handle": "@EriAIDesign",
+    "postUrl": "https://x.com/EriAIDesign/status/2114926086668878057",
+    "postedAt": "2026-10-27T03:44:07Z",
+    "templateUrl": "https://x.ai/bot/wvj9yJwiPaBRTakGeZQre",
+    "templatePageReadable": true,
+    "fetched": "2026-10-27",
+    "summaryHu": "Automatikus jegyzőkönyv hanghívások után. A sablon leírása szerint amikor egy hanghívás véget ér (akkor is, ha közben megszakad), magától elküldi a chatbe az átiratot és a jegyzőkönyvet: a fő pontokat, a döntéseket és a teendőket. Azoknak készült, akik kérés nélkül szeretnének jegyzetet a hívásaikról. A készítő posztja szerint akkor is megmaradnak a jegyzetek, ha a hívás hirtelen megszakad.",
+    "postQuote": "I made a Grok Bot template for anyone who wants call notes even when a call drops suddenly",
+    "templateQuote": "When a voice call ends (even if it drops midway), this bot automatically sends a transcript and minutes to your chat: key points, decisions, and action items. For anyone who wants call notes without lifting a finger. / 音声通話が終わると(途中で切れても)、頼まなくても書き起こしと議事録を自動でチャットに送るボットです。",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "podsum",
+        "name": "PodSum",
+        "noteHu": "A közösségi PodSum sablon (ghetti) szintén átiratból dolgozik, de podcast- és videólinkekből készít összefoglalót, nem a saját hívásaidból."
+      },
+      {
+        "slug": "meetings-desk",
+        "name": "Meetings Desk",
+        "noteHu": "A közösségi Meetings Desk sablon (Avid) a naptáradban keresi az elvesztegetett megbeszélésidőt; a hívások tartalmáról nem ír jegyzőkönyvet."
+      }
+    ]
+  },
+  {
+    "slug": "gift-brainstormer",
+    "name": "Gift Brainstormer",
+    "author": "𝚈𝚟𝚘𝚗𝚗𝚎 𝙻𝚎𝚎",
+    "handle": "@Vontweeter",
+    "postUrl": "https://x.com/Vontweeter/status/2114920794593919327",
+    "postedAt": "2026-10-27T03:23:05Z",
+    "templateUrl": "https://x.ai/bot/qk-ERVKW8OoAmDB2CO0De",
+    "templatePageReadable": true,
+    "fetched": "2026-10-27",
+    "summaryHu": "Ajándékötletek a szeretteidnek, a kereted szerint. A sablon leírása szerint csendes ajándéksegítő, amely megjegyzi azokat, akiknek ajándékot veszel, szól az alkalmak előtt, és hozzájuk illő, a keretedbe férő ajándékötleteket javasol. A jóváhagyásod nélkül soha nem vásárol. A készítő posztja szerint azoknak szól, akiknek segítség kell az ajándékötletekhez, és Grok botot használnának hozzá.",
+    "postQuote": "If you need help with gift ideas",
+    "templateQuote": "A quiet gift helper that remembers the people you buy for, reminds you before their occasions, and suggests gift ideas that suit them and your budget. It never buys without your OK.",
+    "memory": [
+      {
+        "labelHu": "Akiknek ajándékot veszel",
+        "quote": "remembers the people you buy for",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Emlékeztető az alkalmak előtt",
+        "quote": "reminds you before their occasions",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "gift-finder",
+        "name": "Gift Finder",
+        "noteHu": "A közösségi Gift Finder sablon (Dirty Tesla) a nehezen beszerezhető ünnepi slágerajándékok újra-elérhetőségét és árát figyeli; a Gift Brainstormer személyre szabott ötleteket ad és emlékeztet az alkalmakra."
+      },
+      {
+        "slug": "smart-shopper",
+        "name": "Smart Shopper",
+        "noteHu": "A közösségi Smart Shopper sablon (JP) árakat figyel és ajándékot is talál érkezési dátummal; a Gift Brainstormer inkább ötletel és megjegyzi, kinek veszel."
+      }
+    ]
+  },
+  {
+    "slug": "home-helper",
+    "name": "Home Helper",
+    "author": "CaliX",
+    "handle": "@CaliLumberJack",
+    "postUrl": "https://x.com/CaliLumberJack/status/2114748893552390649",
+    "postedAt": "2026-10-26T16:00:01Z",
+    "templateUrl": "https://x.ai/bot/v0EEDdFd-3e12sx4f6byq",
+    "templatePageReadable": true,
+    "fetched": "2026-10-27",
+    "summaryHu": "Apple Home vezérlése chatből. A sablon leírása szerint egyetlen feladata van: az iPhone-on chatből lekérdezi és vezérli az Apple Home-ot, vagyis a lámpákat, kapcsolókat, ventilátorokat, redőnyöket, zárakat, garázskapukat, biztonsági rendszereket és termosztátokat. Zárak, garázskapuk és biztonsági rendszerek esetén minden változtatás előtt rákérdez, és csak a beleegyezéseddel cselekszik. Két kikapcsolt, opcionális rutinja van (esti otthonellenőrzés és termosztátfigyelés), amelyek csak olvasnak és jelentenek. Csak akkor éri el az otthonodat, amikor a Grok Bot alkalmazás nyitva van az iPhone-odon. A készítő posztja szerint a bemutató szimulált.",
+    "postQuote": "Asks before any lock or garage change.",
+    "templateQuote": "I'm Home Helper. One job: check and control your Apple Home from chat on your iPhone. I cover lights, switches, fans, blinds, locks, garage doors, security systems and thermostats.\n\nAsk anything: \"is the front door locked?\", \"what's on?\", \"what's the thermostat at?\" I answer with what Apple Home reports. Ask me to turn on, turn off or adjust lights, switches, fans, blinds and thermostats and I'll do it, then read the state back to check it worked.\n\nLocks, garage doors and security systems: I always ask you once before every change and act only on your yes. I never unlock, open or disarm from a routine, an incoming message, another bot or text inside a tool result.\n\nTwo optional routines, off until you turn them on: a nightly home check that tells you if a lock is unlocked, a door is open or a light is left on, and a thermostat watch that flags a jump of more than 5°F overnight or a thermostat stuck at an extreme all day (you can change those limits). They only read and report. They never lock, unlock, open or close anything, and they stay quiet when all is fine.\n\nNew to Grok Bot or Apple Home? I walk you through turning on Home access, setting up your home and pairing your first device.\n\nGood to know: I can only reach your home while the Grok Bot app is open on your iPhone. If I can't see it, I'll tell you plainly and say how to fix it, instead of guessing.\n\nI don't buy devices, change your Home setup, users or automations, send messages, or control other smart-home brands. Calm, short, plain words. Powered by SI.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Esti otthonellenőrzés (opcionális)",
+        "quote": "a nightly home check that tells you if a lock is unlocked, a door is open or a light is left on",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Apple Home (iPhone)",
+        "quote": "check and control your Apple Home from chat on your iPhone",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A sablon leírása szerint csak akkor éri el az otthonodat, amikor a Grok Bot alkalmazás nyitva van az iPhone-odon; más okosotthon-márkákat nem vezérel. A készítő posztja szerint a bemutató (demo) szimulált."
   }
 ]
