@@ -19,7 +19,7 @@
 export const changelogSourceUrl = "https://x.ai/changelog/bot";
 export const changelogRssUrl = "https://x.ai/changelog/bot/rss.xml";
 /** A forrás utolsó ellenőrzésének napja (ISO). */
-export const changelogChecked = "2026-10-24";
+export const changelogChecked = "2026-10-27";
 
 export type ChangelogLabel = "Teams" | "Enterprise";
 export type ChangelogSectionKind = "new" | "improved" | "fixed";
@@ -49,6 +49,48 @@ export type ChangelogRelease = {
 };
 
 export const changelog: ChangelogRelease[] = [
+  {
+    version: "0.75.8",
+    date: "2026-10-24",
+    title: { hu: "Auto-review szabálykártyák és okosabb connectorok", en: "Auto-review rule cards and smarter connectors" },
+    alsoIncludes: ["0.75.6", "0.75.7"],
+    sections: [
+      {
+        kind: "new",
+        items: [
+          { hu: "Az appban a Bot felajánlhatja, hogy egy általad jóváhagyott kártyán hozzáad, módosít vagy eltávolít egyet az [Auto-review rules](https://docs.x.ai/grok-bot/approvals-security-and-privacy#configure-auto-review) közül. Grok Bot 0.75.2 vagy újabb szükséges.", en: "In the app, a Bot can offer to add, change, or remove one of your [Auto-review rules](https://docs.x.ai/grok-bot/approvals-security-and-privacy#configure-auto-review) on a card you confirm. Requires Grok Bot 0.75.2 or later." },
+        ],
+      },
+      {
+        kind: "improved",
+        items: [
+          { hu: "Az Auto-review még egyszer átnézi a műveletet, mielőtt jóváhagyási kártyát mutatna, így kevesebb biztonságos művelethez kell kártya.", en: "Auto-review takes a second look before showing an approval card, so fewer safe actions need one." },
+          { hu: "A Bot állapotsora rögtön a küldés után megjelenik, gyors válaszoknál is.", en: "A Bot's status line shows up right after you send, even for quick replies." },
+          { hu: "Amikor a háttérmunka befejeződik, a Bot elvégzi, amit kértél, azokkal a lépésekkel együtt, amelyeket a befejezés utánra kértél, és elmondja, mit tenne ezután, ahelyett hogy magától vagy egy másik ágens jóváhagyására cselekedne. Grok Bot 0.75.2 vagy újabb szükséges.", en: "When background work finishes, the Bot completes what you asked, including steps you said to take once it was done, and says what it would do next instead of acting on its own or on another agent's approval. Requires Grok Bot 0.75.2 or later." },
+          { hu: "Az Auto-review már nem tekinti önmagában kockázatosnak, ha a Bot elment vagy szerkeszt egyet a routine-jai közül.", en: "Auto-review no longer counts a Bot saving or editing one of its routines as risky by itself." },
+          { hu: "A Slackben megjelenő Auto-review jóváhagyási kártyák leírják a műveletet, ahogy az appban is.", en: "Auto-review approval cards in Slack describe the action, as they do in the app." },
+          { hu: "Az időpont-egyeztetés a bekötött naptáradat használja, a Google Calendart vagy az Outlook Calendart, és csak akkor ajánlja fel egy bekötését, ha egyik sincs bekötve.", en: "Scheduling uses the calendar you've connected, Google Calendar or Outlook Calendar, and offers to connect one only when neither is." },
+          { hu: "Egy csak általad látható chatben a Bot kérdezés nélkül olvassa a saját privát fájljaidat.", en: "In a chat only you can see, a Bot reads your own private files without asking first." },
+          { hu: "Ha a Bot munka közben telepít egy plugint, azonnal használhatja a plugin skilljeit.", en: "When a Bot installs a plugin while working, it can use the plugin's skills right away." },
+          { label: "Teams", hu: "Akik nincsenek rajta egy Team Bot megosztási listáján, a csapattagokat is beleértve, már nem férnek hozzá, amíg egy tulajdonos meg nem osztja velük.", en: "People not on a Team Bot's share list, including teammates, no longer have access to it until an owner shares it with them." },
+        ],
+      },
+      {
+        kind: "fixed",
+        items: [
+          { hu: "Ha egy connector, például az X, új eszközöket vagy mezőket kap, a Botok újrabekötés nélkül használhatják őket.", en: "When a connector such as X adds tools or fields, Bots can use them without you reconnecting it." },
+          { hu: "Az a connector, amelynek lejárt a bejelentkezése, az appban Authenticate állapotot mutat Connected helyett, egyezően azzal, amit a Bot mond. Grok Bot 0.71.2 vagy újabb szükséges.", en: "A connector whose sign-in expired shows Authenticate in the app instead of Connected, matching what the Bot says. Requires Grok Bot 0.71.2 or later." },
+          { hu: "A connector által fájlként visszaadott képek képként jutnak el a Bothoz, a többi bináris fájlt pedig már nem olvassa olvashatatlan szövegként.", en: "Images a connector returns as files reach the Bot as images, and other binary files are no longer read as garbled text." },
+          { hu: "Az X Money több X-fióknál egy koppintással bekötődik, és ha a tiédet nem tudja bekötni, a Bot ezt megmondja, ahelyett hogy bejelentkezést ajánlana fel.", en: "X Money connects in one tap for more X accounts, and if it can't connect yours, the Bot says so instead of offering a sign-in." },
+          { hu: "Ha a Bot helyetted posztol a Slackbe, például egy routine-ból, a telefonod nem kap értesítést, és az olvasatlan-jelvény száma sem nő.", en: "When a Bot posts to Slack for you, such as from a routine, your phone isn't notified and its unread badge doesn't go up." },
+          { hu: "Ha a Slackben egy biztonsági ellenőrzés blokkolja a Bot válaszát, a Bot ezt jelzi, és azt javasolja, próbálkozz egy másik üzenettel.", en: "In Slack, when a safety check blocks a Bot's reply, the Bot says so and suggests trying a different message." },
+          { hu: "A legtöbb fióknál, ha be van kapcsolva a [Route traffic through this computer](https://docs.x.ai/grok-bot/private-networks#route-through-a-members-desktop), a kapcsolat azonnal helyreáll, amint a Bot gépe felébred.", en: "For most accounts, with [Route traffic through this computer](https://docs.x.ai/grok-bot/private-networks#route-through-a-members-desktop) on, the connection comes back as soon as the Bot's computer wakes." },
+          { label: "Teams", hu: "Egy Team Bot routine-jai olvashatják azokat a Slack-csatornákat, amelyekben te és a Bot is benne vagytok, ahelyett hogy minden olvasást elutasítanának.", en: "A Team Bot's routines can read Slack channels you and the Bot are both in, instead of refusing every read." },
+          { label: "Teams", hu: "Amikor egy Team Bot szerkeszti az egyik saját Slack-üzenetét, az üzeneten halvány (edited) címke látszik.", en: "When a Team Bot edits one of its own Slack messages, the message shows a muted (edited) label." },
+        ],
+      },
+    ],
+  },
   {
     version: "0.75.5",
     date: "2026-10-23",
