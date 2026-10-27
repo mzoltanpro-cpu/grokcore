@@ -13,7 +13,8 @@ const printerFetched = "2026-10-21";
 const woodFetched = "2026-10-22";
 const templateFetched = "2026-10-22";
 const kanikaFetched = "2026-10-22";
-const secondSourcesFetched = "2026-10-25";
+const secondSourcesFetched = "2026-10-27";
+const advancedU53Fetched = "2026-10-27";
 const brainFetched = "2026-10-23";
 const shopFetched = "2026-10-24";
 const dashboardFetched = "2026-10-24";
@@ -195,10 +196,24 @@ const src = {
     kind: "kozossegi",
   },
   radar: {
-    title: "„How to Stop Your Grok Bot From Eating a Week of Usage in a Day” (X-cikk, angol)",
+    title: "„How to Stop Your Grok Bot From Eating a Week of Usage in a Day” (X-cikk, angol, Article #7)",
     url: "https://x.com/GrokBotRadar/status/2105065358038360334",
     author: "Fan Grok Bot Radar (@GrokBotRadar)",
     date: "2026-09-30 00:41 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  radarReread: {
+    title: "„Most of Your Grok Bot Usage Is Re-Reading. Here's How to Stop Paying for It.” (X-cikk, angol)",
+    url: "https://x.com/GrokBotRadar/status/2114409935345971231",
+    author: "Fan Grok Bot Radar (@GrokBotRadar)",
+    date: "2026-10-25 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  fenech: {
+    title: "„Your Grok Bot routines could be doing unnecessary work…” (X-poszt, angol)",
+    url: "https://x.com/Michael_Fenech_/status/2114661816873734316",
+    author: "@Michael_Fenech_",
+    date: "2026-10-26 11:14 (budapesti idő)",
     kind: "kozossegi",
   },
   gresham: {
@@ -440,10 +455,10 @@ export const advancedGuides: AdvancedGuide[] = [
     slug: "rutinok-ritmusa",
     title: "Rutinok okosan: ritmus, változásfigyelés, éjszakai futás",
     nav: "Rutinok ritmusa",
-    card: "Milyen gyakran fusson egy rutin, mikor jobb egy esemény, mi lesz éjjel a jóváhagyásokkal, és mit nézz meg, ha egy futás elmarad.",
+    card: "Milyen gyakran fusson egy rutin, mikor jobb egy esemény, mi lesz éjjel a jóváhagyásokkal, heti karbantartó funkcióellenőrző prompt (@Michael_Fenech_), és mit nézz meg, ha egy futás elmarad.",
     description:
-      "Grok Bot routine-ok ütemezése: esemény vagy ütemezés, olcsó változásellenőrzés, éjszakai futás jóváhagyás nélkül, saját futásnapló, és mit nézz meg, ha egy ütemezett futás elmarad. @gippp69 és az AI Tamer cikke alapján, a docs.x.ai-n ellenőrzött tényekkel. Haladó útmutató a Kezdő 5 nap után.",
-    lead: "A 4. napon láttad, hogy minden futás fogyasztja a keretet. Ez az oldal abban segít, hogy eldöntsd, milyen gyakran fusson egy rutin, mikor ne is ütemezd, és mi történjen, ha éjjel a jóváhagyásodra lenne szükség.",
+      "Grok Bot routine-ok ütemezése: esemény vagy ütemezés, olcsó változásellenőrzés, éjszakai futás jóváhagyás nélkül, saját futásnapló, @Michael_Fenech_ heti karbantartó promptja, és mit nézz meg, ha egy ütemezett futás elmarad. @gippp69 és az AI Tamer cikke alapján, a docs.x.ai-n ellenőrzött tényekkel. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "A 4. napon láttad, hogy minden futás fogyasztja a keretet. Ez az oldal abban segít, hogy eldöntsd, milyen gyakran fusson egy rutin, mikor ne is ütemezd, mi történjen, ha éjjel a jóváhagyásodra lenne szükség, és hetente egyszer a fő Botod megvizsgálja, van-e új hivatalos funkció, ami javítaná a meglévő rutinokat (@Michael_Fenech_).",
     audience: "Annak szól, akinek már van legalább egy működő routine-ja (a 4. napról).",
     minutes: "Kb. 30 perc, a mi becslésünk",
     steps: [
@@ -471,7 +486,7 @@ export const advancedGuides: AdvancedGuide[] = [
     blocks: [
       {
         type: "p",
-        html: `A fő forrás ${c("clock")} közösségi cikke (nem gyártói). Második forrásként ${c("tamer")} 2026-10-10-i cikkét használjuk; az oldal szerint egy bot írta. Minden Grok Bot-tényt a hivatalos dokumentációban is megkerestünk. Amit nem találtunk meg benne, azt jelöltük.`,
+        html: `A fő forrás ${c("clock")} közösségi cikke (nem gyártói). Második forrásként ${c("tamer")} 2026-10-10-i cikkét használjuk; az oldal szerint egy bot írta. Harmadik közösségi forrás: ${c("fenech")} heti karbantartó rutinja (${src.fenech.date}). Minden Grok Bot-tényt a hivatalos dokumentációban is megkerestünk. Amit nem találtunk meg benne, azt jelöltük.`,
       },
       { type: "h2", text: "Miért számít az ütemezés?" },
       {
@@ -605,24 +620,68 @@ export const advancedGuides: AdvancedGuide[] = [
           [`Kimaradt futást ne várj pótlásra; minden futás az utolsó sikeres óta történteket dolgozza fel.`, `A szerző saját tervezési szabálya. A dokumentáció ehhez hasonlót ajánl: ahol lehet, legyen az újrapróbálás megismételhető (idempotens). (<a href="${docs.skills}">Skills and routines</a>)`],
         ],
       },
+      { type: "h2", text: "Heti karbantartó rutin" },
+      {
+        type: "p",
+        html: `${c("fenech")} azt javasolja, hetente egyszer add ezt a promptot <strong>a fő Botodnak</strong> (nem külön „Chief of Staff” vagy botcsapat): nézze meg, jelent-e meg az elmúlt héten olyan hivatalos újdonság, ami egyszerűsítené, olcsóbbá tenné vagy megbízhatóbbá tenné a meglévő rutinokat és skilleket. A Bot csak javaslatot ad, kis próbát kér, és semmit nem változtat a jóváhagyásod nélkül. Poszt: <a href="${src.fenech.url}">${src.fenech.url}</a> (${src.fenech.date}).`,
+      },
+      {
+        type: "prompt",
+        label: "@Michael_Fenech_: heti funkcióellenőrző rutin, eredeti",
+        code: `Once a week, check whether new Grok Bot features could make my setup simpler, cheaper or more reliable.
+
+1: Find what's new.
+
+Check the official Grok Bot docs, help pages, changelog and announcements from the past week. List each new or changed feature with its source link. Only include what the official sources confirm, and mark anything still rolling out.
+
+2: Map my current setup.
+
+List my bots, routines, skills and connectors, what each does, how often it runs, and where it fails, needs me to step in, or uses a workaround.
+
+3: Match features to real problems.
+
+For each new feature, say whether it removes a workaround, a manual step, a duplicate routine, a failure or a step where I'm the bottleneck. Skip features that don't solve something real in my setup.
+
+4: Propose specific changes.
+
+For each match, state what changes, which bot or routine it affects, what improves (fewer runs, fewer steps, less of my time, fewer failures), the risk, and how to undo it.
+
+5: Test before switching.
+
+Recommend a small trial for each change, run it alongside the current version where you can, and show me the result before replacing anything.
+
+6: Change nothing without my yes.
+
+Report proposals only. Don't edit, pause or delete any routine, bot or skill until I approve it.
+
+7: Keep a log.
+
+Record each change we make, what it replaced and whether it worked, so we can see the setup improving over time.`,
+        caption: `Forrás: ${c("fenech")}, ${src.fenech.date} (közösségi forrás). Szó szerint, angolul. Az eredeti poszt a bevezetőben „Chief of Staff”-ot írt; itt a fő Botodnak szánjuk (AgentCore-határ). Lekérve: ${advancedU53Fetched}.`,
+      },
       { type: "h2", text: "Amit nem ellenőriztünk" },
       {
         type: "ul",
         items: [
           `Az AI Tamer cikkét az oldal szerint egy bot írta („Written by Desk Bot, a bot”). A cikk forrásokat ad, a fenti állításait a dokumentációban megkerestük, de a promptjait nem próbáltuk ki.`,
+          `${c("fenech")} heti karbantartó promptját nem futtattuk végig; csak a poszt szövegét vettük át.`,
           `A 2026-10-09-i fórumhiba (késő vagy elmaradt ütemezett futások) egy régebbi, egyszeri bejelentés; lehet, hogy azóta elavult. Javítási dátumot a cikk nem ad, és mi sem találtunk.`,
           `Az AI Tamer szerint a Súgó hibajelentést kér, ha egy routine nincs szüneteltetve, 24 óránál régebben nem futott, és nem mutat hibát. Ezt a Cursor súgó Routines oldalán nem találtuk.`,
           `Az AI Tamer szerint a routine-ok listája asztali appban a Bot nevére kattintva a Tasks alatt van; a dokumentáció szerint a Details fülön. (<a href="${docs.skills}">Skills and routines</a>) A felület változhat.`,
         ],
       },
       {
+        type: "note",
+        html: `<strong>Forrás: @Michael_Fenech_.</strong> Heti karbantartó rutin: <a href="${src.fenech.url}">${src.fenech.url}</a>, ${src.fenech.date}. Lekérve: ${advancedU53Fetched}.`,
+      },
+      {
         type: "done",
         items: [
-          "Minden rutinodról tudod, miért ilyen gyakran fut, a gyakoriak előtt van egy gyors ellenőrzés, az éjszakaiak befejezése előre el van döntve, van futásnaplód, és tudod, mit nézz meg, ha egy ütemezett futás elmarad.",
+          "Minden rutinodról tudod, miért ilyen gyakran fut, a gyakoriak előtt van egy gyors ellenőrzés, az éjszakaiak befejezése előre el van döntve, van futásnaplód, hetente fut a funkcióellenőrző prompt a fő Botodon, és tudod, mit nézz meg, ha egy ütemezett futás elmarad.",
         ],
       },
     ],
-    sources: [src.clock, src.tamer, src.tamerForum, src.dSkills, src.dApprove, src.dApps, src.dSettings, src.dTroubleShop, src.routinesHelpShop],
+    sources: [src.clock, src.tamer, src.fenech, src.tamerForum, src.dSkills, src.dApprove, src.dApps, src.dSettings, src.dTroubleShop, src.routinesHelpShop],
   },
   {
     slug: "masodik-agy",
@@ -1460,10 +1519,10 @@ Never bypass cartridge or ink checks, never flash third-party firmware, never si
     slug: "heti-keret-sporolas",
     title: "Spórolj a heti kerettel: mérés, pontos első üzenet, takarékos routine-ok",
     nav: "Heti keret spórolás",
-    card: "Három közösségi X-cikk összefoglalója: mérés, takarékos routine-ok, chat és Duplicate, kevesebb újramunka auditból és ellenőrzött kész állapottal.",
+    card: "Három közösségi X-cikk összefoglalója: mérés, közös heti pool, Usage export (ellenőrizendő), változásellenőrző prompt, takarékos routine-ok, chat és Duplicate.",
     description:
-      "Grok Bot heti keret takarékosan: Kanika (@KanikaBK), @GrokBotRadar és @Greshamtrade X-cikkeinek magyar összefoglalója a hivatalos dokumentációval összevetve. Mérés, pontos első üzenet, routine-ok, connector, költéskorlát; második és harmadik forrás: gyakoriság, chat-újraolvasás, Duplicate, Bot↔Bot, szkript; audit, újrahasznosítás, PASS/FAIL/UNKNOWN. Haladó útmutató a Kezdő 5 nap után.",
-    lead: "Ez az oldal három más által írt X-cikk rövid magyar összefoglalója, nem saját módszer. Kanika (@KanikaBK) 2026-10-21-én azt írta le, hogyan fogyasztott ugyanaz a feladat kevesebbet a heti keretéből, miután megváltoztatta, hogyan adja ki a munkát a Botnak. Kiegészítésként @GrokBotRadar és @Greshamtrade cikkei is szerepelnek: mi ébreszti fel a Botot, hogyan spórolj chaten és Duplicate-tel, és hogyan jöjjön ki több használható eredmény ugyanabból a keretből kevesebb újramunkával. A Kanika-cikk címe 8x hosszabb keretet ígér, de a szerző saját számai (75% helyett 37%) egyetlen feladaton nagyjából kétszeres különbséget mutatnak. Mi szorzót nem ígérünk, és saját mérést nem végeztünk.",
+      "Grok Bot heti keret takarékosan: Kanika (@KanikaBK), @GrokBotRadar (friss újraolvasás-cikk, 2026-10-25) és @Greshamtrade X-cikkeinek magyar összefoglalója a hivatalos dokumentációval összevetve. Mérés, közös X Subscription pool, Plus nélkül Bot, Auto Top-up, Usage CSV (export: ellenőrizendő), változásellenőrző előszűrő prompt, routine-ok, connector, költéskorlát. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "Ez az oldal három más által írt X-cikk rövid magyar összefoglalója, nem saját módszer. Kanika (@KanikaBK) 2026-10-21-én azt írta le, hogyan fogyasztott ugyanaz a feladat kevesebbet a heti keretéből, miután megváltoztatta, hogyan adja ki a munkát a Botnak. @GrokBotRadar 2026-10-25-i cikke a szerző szerint felváltja a korábbi „Article #7”-et: az újraolvasás és a közös heti pool a középpontban, változásellenőrző prompttal. @Greshamtrade a kevesebb újramunkáról szól. A Kanika-cikk címe 8x-et ígér; a szerző saját mérését nem vesszük át számként. Mi szorzót nem ígérünk, és saját mérést nem végeztünk.",
     audience: "Annak szól, akinek a heti kerete a hét vége előtt elfogy, vagy aki tudni szeretné, mennyit fogyasztanak a feladatai, és már végigment a Kezdő 5 napon.",
     minutes: "Kb. 22 perc az oldal elolvasására, a mi becslésünk",
     fetched: kanikaFetched,
@@ -1620,34 +1679,52 @@ Tell me when you had to use the browser, and why.`,
         type: "p",
         html: `A szerző pénzben is kiszámolja: ha ugyanabból a keretből kétszer annyi munka jön ki, nem kell a 30 dolláros Premiumról a 100 dolláros Superre váltania. Ez az ő saját döntése és számítása.`,
       },
-      { type: "h2", text: "A második forrás: @GrokBotRadar – gyakoriság, chat, Duplicate" },
+      { type: "h2", text: "A második forrás: @GrokBotRadar – újraolvasás, közös pool, export, változásellenőrzés" },
       {
         type: "p",
-        html: `${c("radar")} „How to Stop Your Grok Bot From Eating a Week of Usage in a Day” című X-cikke (közzétéve: ${src.radar.date}) ugyanazt a kérdést nézi más szögből: mennyit ébreszted a Botot, és mennyit olvas újra minden alkalommal. A cikk egy része a régi Cursor-csomagra ír (használat a cursor.com/dashboard oldalon, on-demand); ezt nem vesszük át, mert az oldal a The X Subscriptiont és a <a href="https://grok.com/dashboard">grok.com/dashboard</a> felületét írja le. Régebbi Cursor-előfizetésnél a keret és a költéskorlát felülete ettől eltérhet. (<a href="${docs.plans}">Grok Bot plans</a>) Cikk: <a href="${src.radar.url}">${src.radar.url}</a>.`,
+        html: `${c("radarReread")} „Most of Your Grok Bot Usage Is Re-Reading…” című X-cikke (közzétéve: ${src.radarReread.date}) a szerző szerint <strong>felváltja</strong> a korábbi Article #7-et (${c("radar")}, ${src.radar.date}): <a href="${src.radar.url}">${src.radar.url}</a>. A friss cikk középpontjában az áll, hogy a Bot sokszor nem „gondolkodik”, hanem újraolvas – és hogy a The X Subscriptionön a Grok Bot, a Cursor és a Grok appok <strong>egy közös heti poolból</strong> fogyasztanak. Cikk: <a href="${src.radarReread.url}">${src.radarReread.url}</a>. Lekérve: ${secondSourcesFetched}.`,
       },
       {
         type: "p",
-        html: `A Cursor routines súgója szerint minden futás fogyaszt, a gyakori ütemezés és a forgalmas Slack-csatornán szűk trigger nélkül egy nap alatt is elviheti a heti keretet; a trigger és az ütemezés legyen szűk, az időzóna pedig a Settings → Bot alatti Timezone beállítás szerint értendő. (<a href="${docs.routinesHelp}">Grok Bot routines</a>, lekérve ${secondSourcesFetched}) Hogy milyen gyakran fusson egy routine, és mikor jobb eseményre várni, arról a <a href="/halado/rutinok-ritmusa/">Rutinok ritmusa</a> oldal részletesen foglalkozik vele.`,
+        html: `A Cursor súgója ezt írja a poolról: „Grok Bot usage draws from the same weekly pool as Cursor and the Grok apps, not a separate Grok Bot meter.” A keret hetente frissül; ha elfogy, a többlet az előre fizetett kreditből megy. (<a href="${docs.plans}">Grok Bot plans</a>, lekérve ${secondSourcesFetched}) A dokumentáció szerint a Grok Bot a Premium, Super és Ultra csomagban van benne, a <strong>Plusban nincs</strong>. (<a href="${docs.xsGrokBot}">The X Subscription: Grok Bot</a>) A kód Cursorban futtatása sem külön mérő: ugyanabból a poolból számol.`,
       },
       {
         type: "p",
-        html: `A hivatalos dokumentáció nem írja le szó szerint, hogy minden válasz újraküldi a teljes beszélgetést. A Cursor fórumon a csapat 2026-09-05-én ezt írta: „The full transcript is sent to the model on every turn”, és 2026-10-20-án jelezte, hogy a kézi compact és a working-set mérő még nincs kész. (<a href="https://forum.cursor.com/t/grok-bot-x-connector-lacks-recent-search-direct-api-requires-separate-credits/168333">Cursor fórum</a>) Ez staff-válasz, nem docs.x.ai állítás. Hosszú chatnél a dokumentáció szerint a tartós fájlok a közös gép <code>/workspace</code> mappájában maradnak. (<a href="${docs.apps}">Use the computer and apps</a>)`,
+        html: `A Radar cikk és a közösség sok egyéni CSV-beszámolót idéz (magas „cache read” arány, re-read share). <strong>Ezeket mért tényként nem vesszük át</strong>; a szerzők saját exportjaik, nem ellenőriztük. A hasznos irány: a saját heti százalékodat nézd export előtt és után. A cikk szerint a <a href="https://grok.com/dashboard">grok.com/dashboard</a> Usage oldalán van Export, amely a fogyasztás részleteit CSV-be adja, és látható lehet az újraolvasás aránya; a fájlban nincs Bot-oszlop. ${marker("a Usage oldal Export gombját a docs.x.ai és a cursor.com súgóban nem találtuk – ELLENŐRIZENDŐ")} Ha exportálsz, a sorokban lehet e-mail cím: ne töltsd fel nyersen nyilvánosan.`,
       },
       {
         type: "p",
-        html: `A csoportos chat súgója szerint „Every Bot reply counts toward your usage, including replies in a group and messages between Bots. Fewer Bots in a group means fewer replies.” Nincs kapcsoló, amivel kikapcsolnád a Botok közti üzenetváltást. (<a href="https://cursor.com/help/grok-bot/group-chats">Group chats, Cursor súgó</a>, lekérve ${secondSourcesFetched}) A Radar cikk egy vezető Botot és subagenteket javasol; hogy a subagent olcsóbb lenne, hivatalos oldal nem írja — csak a kevesebb Bot↔Bot üzenet logikája igazolt.`,
+        html: `A Cursor routines súgója szerint minden futás fogyaszt, a gyakori ütemezés és a forgalmas Slack-csatornán szűk trigger nélkül egy nap alatt is elviheti a heti keretet; a trigger és az ütemezés legyen szűk. (<a href="${docs.routinesHelp}">Grok Bot routines</a>, lekérve ${secondSourcesFetched}) A Radar cikk a routine-okat tartja az első helyen; a részletes ütemezésről a <a href="/halado/rutinok-ritmusa/">Rutinok okosan</a> oldal szól.`,
       },
       {
         type: "p",
-        html: `Modellválasztó nincs: „Cursor manages model selection, so there is no model picker.” (<a href="${docs.settings}">Settings and notifications</a>) A használatot a súgó és a dokumentáció Grok Bot használatként rögzíti, nem szolgáltató vagy modellnév szerint („not by provider or model name”). (<a href="${docs.modelsHelp}">Grok Bot models</a>, <a href="${docs.settings}">Settings and notifications</a>) Routine-onként az app a 20 legutóbbi futás rekordját tartja meg; költség Botonként nem látszik. (<a href="${docs.skills}">Skills and routines</a>)`,
+        html: `<strong>Ellenőrizés előtt, teljes munka után.</strong> Ha egy feladatnak gyors órája van, de nincs eseményindító, a Radar cikk két lépéses rutint javasol: először csak egy értéket olvas (hash, darabszám, időbélyeg), összeveti a mentett állapottal; ha ugyanaz, „no change” és megáll. A teljes munka csak változáskor fut. A „don’t browse around” sor fontos: különben az ellenőrzés is teljes futás lesz.`,
+      },
+      {
+        type: "prompt",
+        label: "@GrokBotRadar: változásellenőrző előszűrő, eredeti",
+        code: `Before doing any work, read only [the status field / latest commit / item count / last-updated date] and compare it to the value saved in routines/state/[name].txt. If it matches, log no change and stop. Don't open anything else. Don't browse around. If it changed, save the new value, then do the job.`,
+        caption: `Forrás: ${c("radarReread")}, ${src.radarReread.date} (közösségi forrás). Szó szerint. A <code>[name]</code> és a zárójelben jelölt mező a saját rutinodra cserélendő. Lekérve: ${secondSourcesFetched}.`,
       },
       {
         type: "p",
-        html: `Amíg nincs kézi compact, a Radar cikk a Duplicate-et ajánlja „tiszta induláshoz”: a dokumentáció szerint a másolat „carries the profile, settings, enabled skills, routines, and avatar”, de „does not copy conversation history, learned memory, or chat attachments.” (<a href="${docs.bots}">Create and manage Bots</a>) <strong>Figyelem:</strong> az elrejtés nem szünetelteti a Botot és a routine-jait („Hiding does not pause the Bot or its routines.”). Ha a régi Botot elrejted, de a routine-jai futnak, és a másolat is átviszi a routine-okat, dupla futás lehet — előbb szüneteltesd a régi Bot routine-jait. Tartós szabályokat személyes Botnál már nem a leírásba írsz: a dokumentáció szerint mondd meg a Botnak chatben, és tartsd a fájlokat a <code>/workspace</code>-ben. (<a href="https://cursor.com/help/grok-bot/edit-bot">Edit your Bot, Cursor súgó</a>, lekérve ${secondSourcesFetched})`,
+        html: `A hivatalos dokumentáció nem írja le szó szerint, hogy minden válasz újraküldi a teljes beszélgetést. A Cursor fórumon a csapat 2026-09-05-én ezt írta: „The full transcript is sent to the model on every turn”, és 2026-10-20-án jelezte, hogy a kézi compact és a working-set mérő még nincs kész. (<a href="https://forum.cursor.com/t/grok-bot-x-connector-lacks-recent-search-direct-api-requires-separate-credits/168333">Cursor fórum</a>) Ez staff-válasz, nem docs.x.ai állítás. Egy chat, egy munka; állapot fájlba. Hosszú chatnél a tartós fájlok a közös gép <code>/workspace</code> mappájában maradnak. (<a href="${docs.apps}">Use the computer and apps</a>)`,
       },
       {
         type: "p",
-        html: `Ismétlődő, szabályalapú tömeges munkára a dokumentáció szerint a Bot gépe terminált és böngészőt ad („persistent cloud computer with a browser, filesystem, and terminal”). (<a href="${docs.overview}">Overview</a>) A Radar cikk szkriptet javasol az egyforma szabályokhoz, a modellt az ítéletre; a megtakarítás mértékét hivatalos forrás nem közli. A GYIK connector előnyben részesítése megbízhatóságról szól: „Use a connector when one is available for a more structured and reliable integration.” (<a href="${docs.faq}">FAQ</a>) Olcsóbbnak a dokumentáció nem nevezi; a külső szolgáltatások saját kreditet számláznak.`,
+        html: `A csoportos chat súgója szerint „Every Bot reply counts toward your usage, including replies in a group and messages between Bots. Fewer Bots in a group means fewer replies.” (<a href="https://cursor.com/help/grok-bot/group-chats">Group chats, Cursor súgó</a>, lekérve ${secondSourcesFetched}) A Radar cikk egyetlen „vezető” Botot és fájlútvonal-handoffot javasol a sok Bot együtt ébresztése helyett; a dokumentáció is óv a párhuzamos handoffoktól.`,
+      },
+      {
+        type: "p",
+        html: `Modellválasztó nincs: „Cursor manages model selection, so there is no model picker.” (<a href="${docs.settings}">Settings and notifications</a>) Routine-onként az app a 20 legutóbbi futás rekordját tartja meg. (<a href="${docs.skills}">Skills and routines</a>) A költéskorlát a <a href="https://grok.com/dashboard/billing">grok.com/dashboard/billing</a> oldalon: Auto Top-up kikapcsolva, vagy havi additional usage limit – ezt a fenti „Költéskorlát” szakasz és a Cursor GYIK is leírja.`,
+      },
+      {
+        type: "p",
+        html: `Amíg nincs kézi compact, a Radar cikk a Duplicate-et ajánlja tiszta induláshoz: a dokumentáció szerint a másolat „carries the profile, settings, enabled skills, routines, and avatar”, de „does not copy conversation history, learned memory, or chat attachments.” (<a href="${docs.bots}">Create and manage Bots</a>) <strong>Figyelem:</strong> az elrejtés nem szünetelteti a Botot és a routine-jait. Ha a régi Bot routine-jai futnak, dupla fogyasztás lehet – előbb szüneteltesd őket. Tartós szabályok fájlban a <code>/workspace</code>-ben. (<a href="https://cursor.com/help/grok-bot/edit-bot">Edit your Bot, Cursor súgó</a>, lekérve ${secondSourcesFetched})`,
+      },
+      {
+        type: "p",
+        html: `A dokumentáció connector előnyben részesítése megbízhatóságról szól: „Prefer a connector when one is available: it is often more reliable than clicking through a website.” (<a href="${docs.apps}">Use the computer and apps</a>) A Radar cikk mechanikus lépéseket terminálban vagy parancsokban javasol, ahol lehet; a külső szolgáltatások saját számlázást jelentenek. <strong>Más ágensre „offloading”</strong> (Claude Code, DeepSeek, OpenCode stb.) <strong>nem része ennek az oldalnak</strong> (AgentCore-határ).`,
       },
       { type: "h2", text: "Kevesebb újramunka: audit, újrahasznosítás, ellenőrzött kész" },
       {
@@ -1707,14 +1784,16 @@ Preserve sections that already pass. If a required check still fails or remains 
           `Hogy a The X Subscriptionön a havi additional usage limit megállítja-e a már futó feladatot: a Cursor-súgó szerint nem, a docs.x.ai „hard stop”-ot ír.`,
           `A javasolt gyakoriságot (2–3 óránként, napi háromszor): ez Kanika szerző javaslata.`,
           `A magyarországi adóval növelt végösszeget: az árak listaárak, adó nélkül.`,
-          `@GrokBotRadar cikkének számlázási részét (Cursor-fiók, on-demand, cursor.com/dashboard) nem vettük át; a modell-láthatósági állítását sem, mert a mai docs ellenkezőjét írja.`,
-          `A Radar „subagent olcsóbb” és „90% szkript-megtakarítás” állításait; a Gresham audit-, checkpoint- és ellenőrzőlista-promptjait nem próbáltuk ki.`,
+          `${c("radarReread")} cikkében szereplő token-számok, százalékok és dollárösszegek (közösségi CSV-beszámolók, szerzői állítások): egyéni beszámolók, nem ellenőriztük, nem vesszük át mért tényként.`,
+          `A grok.com/dashboard Usage oldal <strong>Export</strong> gombja: a Radar cikk és a közösség leírja; a docs.x.ai és a cursor.com súgóban ${marker("nem találtuk – ELLENŐRIZENDŐ")}.`,
+          `A korábbi Article #7 (${c("radar")}) egyes Cursor-fiókos részeit nem vettük át; a friss cikk a The X Subscription pooljára épül.`,
+          `A Radar „subagent olcsóbb” és szkript-megtakarítás állításait; a Gresham audit-, checkpoint- és ellenőrzőlista-promptjait nem próbáltuk ki.`,
           `Gresham címében és szövegében az illusztratív „10x” / token-példák: nem mért eredmény.`,
         ],
       },
       {
         type: "note",
-        html: `<strong>Forrás és szerző.</strong> Ez az oldal a Botkezdő saját útmutatója, nem hivatalos x.ai anyag: Kanika (@KanikaBK) 2026-10-21-én 10:51-kor (budapesti idő), Fan Grok Bot Radar (@GrokBotRadar) 2026-09-30-án 00:41-kor (budapesti idő) és Gresham (@Greshamtrade) 2026-10-19-én 18:10-kor (budapesti idő) közzétett X-cikkeinek rövid magyar összefoglalója, a hivatalos dokumentációval és a Cursor súgójával összevetve; nem saját módszer és nem fordítás. Kanika: <a href="${src.kanika.url}">${src.kanika.url}</a> (lekérve ${kanikaFetched}). Radar: <a href="${src.radar.url}">${src.radar.url}</a>. Gresham: <a href="${src.gresham.url}">${src.gresham.url}</a>. Második és harmadik forrás ellenőrizve: ${secondSourcesFetched}.`,
+        html: `<strong>Forrás és szerző.</strong> Ez az oldal a Botkezdő saját útmutatója, nem hivatalos x.ai anyag: Kanika (@KanikaBK) 2026-10-21-én 10:51-kor (budapesti idő), Fan Grok Bot Radar (@GrokBotRadar) 2026-10-25-i friss cikk és a 2026-09-30-i Article #7 előzmény, valamint Gresham (@Greshamtrade) 2026-10-19-én 18:10-kor (budapesti idő) közzétett X-cikkeinek rövid magyar összefoglalója, a hivatalos dokumentációval és a Cursor súgójával összevetve; nem saját módszer és nem fordítás. Kanika: <a href="${src.kanika.url}">${src.kanika.url}</a> (lekérve ${kanikaFetched}). Radar (friss): <a href="${src.radarReread.url}">${src.radarReread.url}</a>. Article #7 előzmény: <a href="${src.radar.url}">${src.radar.url}</a>. Gresham: <a href="${src.gresham.url}">${src.gresham.url}</a>. Második és harmadik forrás ellenőrizve: ${secondSourcesFetched}.`,
       },
       {
         type: "done",
@@ -1725,6 +1804,7 @@ Preserve sections that already pass. If a required check still fails or remains 
     ],
     sources: [
       src.kanika,
+      src.radarReread,
       src.radar,
       src.gresham,
       src.xsPricingK,
