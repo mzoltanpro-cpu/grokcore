@@ -657,7 +657,7 @@ Report proposals only. Don't edit, pause or delete any routine, bot or skill unt
 7: Keep a log.
 
 Record each change we make, what it replaced and whether it worked, so we can see the setup improving over time.`,
-        caption: `Forrás: ${c("fenech")}, ${src.fenech.date} (közösségi forrás). Szó szerint, angolul. Az eredeti poszt a bevezetőben „Chief of Staff”-ot írt; itt a fő Botodnak szánjuk (AgentCore-határ). Lekérve: ${advancedU53Fetched}.`,
+        caption: `Forrás: ${c("fenech")}, ${src.fenech.date} (közösségi forrás). Szó szerint, angolul. Az eredeti poszt a bevezetőben „Chief of Staff”-ot írt; itt a fő Botodnak szánjuk. Lekérve: ${advancedU53Fetched}.`,
       },
       { type: "h2", text: "Amit nem ellenőriztünk" },
       {
@@ -1656,7 +1656,7 @@ Don't change anything until I say yes.`,
       { type: "h2", text: "Connector a böngésző előtt" },
       {
         type: "p",
-        html: `A dokumentáció szerint ahol van connector, azt érdemes használni: „Prefer a connector when one is available: it is often more reliable than clicking through a website.” (<a href="${docs.apps}">Use the computer and apps</a>) A GYIK is strukturáltabbnak és megbízhatóbbnak nevezi („more structured and reliable”). (<a href="${docs.faq}">FAQ</a>) Hogy ez kevesebb lépést és így kevesebb fogyasztást jelent, az a szerző következtetése; a dokumentáció csak a megbízhatóságról ír. A connectorok bekötését a <a href="/5-nap/2-nap-appok-bekotese/">2. napon</a> mutattuk meg.`,
+        html: `A dokumentáció szerint ahol van connector, azt érdemes használni: „Prefer an app when one is available: it is often more reliable than clicking through a website.” (<a href="${docs.apps}">Use the computer and apps</a>) A GYIK is strukturáltabbnak és megbízhatóbbnak nevezi („more structured and reliable”). (<a href="${docs.faq}">FAQ</a>) Hogy ez kevesebb lépést és így kevesebb fogyasztást jelent, az a szerző következtetése; a dokumentáció csak a megbízhatóságról ír. A connectorok bekötését a <a href="/5-nap/2-nap-appok-bekotese/">2. napon</a> mutattuk meg.`,
       },
       {
         type: "prompt",
@@ -1698,7 +1698,7 @@ Tell me when you had to use the browser, and why.`,
       },
       {
         type: "p",
-        html: `<strong>Ellenőrizés előtt, teljes munka után.</strong> Ha egy feladatnak gyors órája van, de nincs eseményindító, a Radar cikk két lépéses rutint javasol: először csak egy értéket olvas (hash, darabszám, időbélyeg), összeveti a mentett állapottal; ha ugyanaz, „no change” és megáll. A teljes munka csak változáskor fut. A „don’t browse around” sor fontos: különben az ellenőrzés is teljes futás lesz.`,
+        html: `<strong>Ellenőrzés előtt, teljes munka után.</strong> Ha egy feladatnak gyors órája van, de nincs eseményindító, a Radar cikk két lépéses rutint javasol: először csak egy értéket olvas (hash, darabszám, időbélyeg), összeveti a mentett állapottal; ha ugyanaz, „no change” és megáll. A teljes munka csak változáskor fut. A „don’t browse around” sor fontos: különben az ellenőrzés is teljes futás lesz.`,
       },
       {
         type: "prompt",
@@ -1724,7 +1724,7 @@ Tell me when you had to use the browser, and why.`,
       },
       {
         type: "p",
-        html: `A dokumentáció connector előnyben részesítése megbízhatóságról szól: „Prefer a connector when one is available: it is often more reliable than clicking through a website.” (<a href="${docs.apps}">Use the computer and apps</a>) A Radar cikk mechanikus lépéseket terminálban vagy parancsokban javasol, ahol lehet; a külső szolgáltatások saját számlázást jelentenek. <strong>Más ágensre „offloading”</strong> (Claude Code, DeepSeek, OpenCode stb.) <strong>nem része ennek az oldalnak</strong> (AgentCore-határ).`,
+        html: `A dokumentáció connector előnyben részesítése megbízhatóságról szól: „Prefer an app when one is available: it is often more reliable than clicking through a website.” (<a href="${docs.apps}">Use the computer and apps</a>) A Radar cikk mechanikus lépéseket terminálban vagy parancsokban javasol, ahol lehet; a külső szolgáltatások saját számlázást jelentenek. <strong>Más ágensre „offloading”</strong> (Claude Code, DeepSeek, OpenCode stb.) <strong>nem része ennek az oldalnak</strong>.`,
       },
       { type: "h2", text: "Kevesebb újramunka: audit, újrahasznosítás, ellenőrzött kész" },
       {
