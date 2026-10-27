@@ -4,7 +4,7 @@
  * A cím, a kategória és a dátum az x.ai oldaláról való, eredeti (angol) formában.
  */
 export const guidesIndexUrl = "https://x.ai/bot/guides";
-export const guidesFetched = "2026-10-18";
+export const guidesFetched = "2026-10-26";
 
 export type Guide = {
   slug: string;
@@ -27,6 +27,15 @@ export const guides: Guide[] = [
     featured: true,
     summaryHu:
       "Hat marketingbotból álló csapat: Market Researcher, Product Marketer, Performance Marketer, Website Ops, Marketing Analyst és Project Manager. A szerző egy kitalált légitársaság (X-Air) példáján mutatja végig a folyamatot a versenytárs-kutatástól a Google Docs-beli pozicionáláson és a Google Ads kampányvázakon át a marketingoldalra nyitott PR-ig. A Marketing Analyst élő hirdetéshez, licithez vagy kerethez nem nyúl, a döntések az embernél maradnak.",
+  },
+  {
+    slug: "grok-bot-for-clay",
+    title: "Grok Bot for Clay",
+    category: "Sales",
+    published: "2026-10-20",
+    featured: true,
+    summaryHu:
+      "A Clay pluginnal a GTM-munkafolyamatok egy mondattal indulnak a UI kattintgatása helyett: a Grok Bot építi a workflow-t, a Clay adja az adatot és az infrastruktúrát (200+ adatforrás a Clay marketplace-en). Amit a Clay önmagában nem tud: webes űrlapkitöltés, mobilról indított folyamat, bejelentkezés más appokba, többappos lezárás (például Notion DB frissítése). Példa a Speed to Lead teszt: e-mail → Clay enrichment → Slack feladat → a bot kitölti a demó-űrlapot → méri a válaszidőt → eredmény vissza Claybe. Beüzemelés: Connect apps → Clay telepítés → workspace → opcionálisan Gmail/Slack/Granola/Notion → leírás alapján építés. A plugin cégek és kontaktok keresését, enrichmentet, Audience/CRM-lekérdezést, Clay Functions hívást, valamint a kreditegyenleg és a workspace ellenőrzését teszi lehetővé.",
   },
   {
     slug: "grok-bot-for-founder-led-sales",
