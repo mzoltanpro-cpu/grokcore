@@ -35,7 +35,7 @@ export const guides: Guide[] = [
     published: "2026-10-20",
     featured: true,
     summaryHu:
-      "A Clay pluginnal a GTM-munkafolyamatok egy mondattal indulnak a UI kattintgatása helyett: a Grok Bot építi a workflow-t, a Clay adja az adatot és az infrastruktúrát (200+ adatforrás a Clay marketplace-en). Amit a Clay önmagában nem tud: webes űrlapkitöltés, mobilról indított folyamat, bejelentkezés más appokba, többappos lezárás (például Notion DB frissítése). Példa a Speed to Lead teszt: e-mail → Clay enrichment → Slack feladat → a bot kitölti a demó-űrlapot → méri a válaszidőt → eredmény vissza Claybe. Beüzemelés: Connect apps → Clay telepítés → workspace → opcionálisan Gmail/Slack/Granola/Notion → leírás alapján építés. A plugin cégek és kontaktok keresését, enrichmentet, Audience/CRM-lekérdezést, Clay Functions hívást és krediteket ad.",
+      "A Clay pluginnal a GTM-munkafolyamatok egy mondattal indulnak a UI kattintgatása helyett: a Grok Bot építi a workflow-t, a Clay adja az adatot és az infrastruktúrát (200+ adatforrás a Clay marketplace-en). Amit a Clay önmagában nem tud: webes űrlapkitöltés, mobilról indított folyamat, bejelentkezés más appokba, többappos lezárás (például Notion DB frissítése). Példa a Speed to Lead teszt: e-mail → Clay enrichment → Slack feladat → a bot kitölti a demó-űrlapot → méri a válaszidőt → eredmény vissza Claybe. Beüzemelés: Connect apps → Clay telepítés → workspace → opcionálisan Gmail/Slack/Granola/Notion → leírás alapján építés. A plugin cégek és kontaktok keresését, enrichmentet, Audience/CRM-lekérdezést, Clay Functions hívást, valamint a kreditegyenleg és a workspace ellenőrzését teszi lehetővé.",
   },
   {
     slug: "grok-bot-for-founder-led-sales",
