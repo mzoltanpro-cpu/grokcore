@@ -4438,5 +4438,327 @@
       }
     ],
     "noteHu": "A sablon leírása szerint csak akkor éri el az otthonodat, amikor a Grok Bot alkalmazás nyitva van az iPhone-odon; más okosotthon-márkákat nem vezérel. A készítő posztja szerint a bemutató (demo) szimulált."
+  },
+  {
+    "slug": "talk-me-out-of-it",
+    "name": "Talk Me Out of It 🛒",
+    "author": "Jen X🗽",
+    "handle": "@jenrenee",
+    "postUrl": "https://x.com/jenrenee/status/2115100226973561029",
+    "postedAt": "2026-10-27T15:16:05Z",
+    "templateUrl": "https://x.ai/bot/ao2PDf0BjOkY2CP3BtX8z",
+    "templatePageReadable": true,
+    "fetched": "2026-10-28",
+    "summaryHu": "Lebeszél a felesleges vásárlásokról. A sablon leírása szerint mielőtt valamit a kosárba tennél, a bot humorosan „megszórja” (roast) az impulzusvásárlásodat, ítéletet mond róla, és számolja, mennyi pénzt spórolt meg neked. A készítő a posztjában új vásárlási botjaként mutatja be.",
+    "postQuote": "Check out my new shopping bot…",
+    "templateQuote": "Add to cart? Not so fast. It roasts your impulse buys, gives a verdict, and counts every dollar it saved you. Made by Jen X @jenrenee.",
+    "memory": [
+      {
+        "labelHu": "Megspórolt összeg számlálása",
+        "quote": "counts every dollar it saved you",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "smart-shopper",
+        "name": "Smart Shopper",
+        "noteHu": "A közösségi Smart Shopper sablon árfigyelő és ajándékkereső, vagyis a jobb vásárlásban segít; a Talk Me Out of It ezzel szemben a felesleges vásárlást próbálja megakadályozni."
+      }
+    ]
+  },
+  {
+    "slug": "hrrrr-file-agent",
+    "name": "Hrrrr: File Agent",
+    "author": "Ralph Bibera",
+    "handle": "@ralphbibera",
+    "postUrl": "https://x.com/ralphbibera/status/2115124201476800900",
+    "postedAt": "2026-10-27T16:51:21Z",
+    "templateUrl": "https://x.ai/bot/pBoLReeAAO4zd7rcyVNsu",
+    "templatePageReadable": true,
+    "fetched": "2026-10-28",
+    "summaryHu": "Mindenes fájlkezelő a hétköznapi irodai papírmunkához. A sablon leírása szerint kezeli a PDF-, Word-, Excel-, PowerPoint- és CSV-fájlokat, a Google Docs és Sheets dokumentumokat, átnevezi, rendezi és tartalom (jelentés) alapján megkeresi a fájlokat a Google Drive-on, OneDrive-on, Dropboxban vagy Boxban, és a dokumentumokról, nyugtákról és igazolványokról készült fotókat tiszta, kereshető PDF-fé szkenneli. A készítő posztja szerint azért készítette, mert űrlapokat kellett kitöltenie és igazolványokat szkennelnie, és nem akart külön PDF- és szkennerappot megnyitni.",
+    "postQuote": "built a bot instead. meet hrrrr, my file agent",
+    "templateQuote": "An all-in-one file agent for everyday office paperwork: PDFs, Word, Excel, PowerPoint, CSV, and Google Docs and Sheets, plus renaming, sorting and finding files by meaning across Google Drive, OneDrive, Dropbox or Box. It also scans photos of documents, receipts and IDs into clean, searchable PDFs.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Google Drive, OneDrive, Dropbox, Box",
+        "quote": "across Google Drive, OneDrive, Dropbox or Box",
+        "from": "template"
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "convert-bot",
+        "name": "Convert Bot",
+        "noteHu": "A közösségi Convert Bot sablon videó- és hangfájlokat alakít át; a Hrrrr: File Agent irodai dokumentumokkal (PDF, Office, táblázatok) és szkenneléssel foglalkozik."
+      }
+    ]
+  },
+  {
+    "slug": "presents",
+    "name": "Presents",
+    "author": "Dylan",
+    "handle": "@dkmitc",
+    "postUrl": "https://x.com/dkmitc/status/2115095630725218609",
+    "postedAt": "2026-10-27T14:57:49Z",
+    "templateUrl": "https://x.ai/bot/-brAwcxWN1wwOGNnu7IkU",
+    "templatePageReadable": true,
+    "fetched": "2026-10-28",
+    "summaryHu": "Ünnepi ajándéktervező. A sablon leírása szerint személyenként külön ajándéklistát vezet fotókkal, a megbízható boltok legjobb áraival, kerettel és rendelési határidőkkel, készít egy ajándék-appot, amelyben minden személynek saját füle van, és figyeli az árcsökkenéseket. Semmit nem vásárol meg, csak ha kéred. A készítő posztja szerint a frissítés óta a kedvenc boltjaidat is megjegyzi.",
+    "postQuote": "It now keeps track of preferred stores and will build out an easy to use app to help you keep track of gifts for friends and families!",
+    "templateQuote": "A holiday gift planner that keeps one list per person with photos, best prices from trusted stores, budgets, and order-by dates, plus a gift app with a tab per person, and watches for price drops. It never buys anything unless you say so.",
+    "memory": [
+      {
+        "labelHu": "Személyenkénti ajándéklista",
+        "quote": "keeps one list per person with photos, best prices from trusted stores, budgets, and order-by dates",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kedvenc boltok",
+        "quote": "keeps track of preferred stores",
+        "from": "post"
+      }
+    ],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Árcsökkenés figyelése",
+        "quote": "watches for price drops",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint semmit nem vásárol meg, csak ha kéred (It never buys anything unless you say so).",
+    "relatedTemplates": [
+      {
+        "slug": "gift-brainstormer",
+        "name": "Gift Brainstormer",
+        "noteHu": "A közösségi Gift Brainstormer sablon (𝚈𝚟𝚘𝚗𝚗𝚎 𝙻𝚎𝚎) szintén megjegyzi, kinek veszel ajándékot, és ötleteket ad; a Presents ezen felül személyenkénti listát, árakat, rendelési határidőket és saját ajándék-appot ad."
+      },
+      {
+        "slug": "gift-finder",
+        "name": "Gift Finder",
+        "noteHu": "A közösségi Gift Finder sablon (Dirty Tesla) a nehezen beszerezhető, felkapott ünnepi ajándékokra (főleg játékokra) figyel készletre és árra."
+      }
+    ]
+  },
+  {
+    "slug": "move-ready",
+    "name": "Move Ready",
+    "author": "Andrea | Draft and Focus",
+    "handle": "@draftandfocus",
+    "postUrl": "https://x.com/draftandfocus/status/2115080226212544734",
+    "postedAt": "2026-10-27T13:56:36Z",
+    "templateUrl": "https://x.ai/bot/VwU2QpMdkEMR1zQ8gNIAf",
+    "templatePageReadable": true,
+    "fetched": "2026-10-28",
+    "summaryHu": "Albérlőknek: dátumozott nyilvántartás a lakás állapotáról a beköltözéstől a kiköltözésig. A sablon leírása szerint bármelyik országban, csupán fotókból vezeti a nyilvántartást, elolvassa a bérleti szerződést, megkeresi a kaucióra vonatkozó hivatalos helyi szabályokat, emlékeztet a fontos dátumokra, megtervezi a kiköltözést, és tételenként összeveti a végső állapotot a beköltözéskorival. Csak leveleket fogalmaz meg, amelyeket te küldesz el, a bérbeadóval soha nem veszi fel a kapcsolatot. A készítő posztja szerint az albérlete szeptemberben beázott, és egyetlen dátumozott beköltözési fotó többet segített a kaució ügyében, mint az emlékezete.",
+    "postQuote": "So I built Move Ready, a Grok bot that builds that record from day one. It drafts the letters. You send them.",
+    "templateQuote": "Move Ready helps renters in any country keep a clear, dated record of their home from move-in to move-out, from photos alone. It reads your lease, finds the official local deposit rules, reminds you of key dates, plans your move-out and compares the final condition with move-in item by item. It only drafts letters for you to send and never contacts your landlord.",
+    "memory": [
+      {
+        "labelHu": "Dátumozott lakásállapot-nyilvántartás",
+        "quote": "keep a clear, dated record of their home from move-in to move-out, from photos alone",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Emlékeztetők a fontos dátumokra",
+        "quote": "reminds you of key dates",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint csak leveleket fogalmaz, és soha nem lép kapcsolatba a bérbeadóval (never contacts your landlord).",
+    "relatedTemplates": [
+      {
+        "slug": "lexy",
+        "name": "Lexy",
+        "noteHu": "A közösségi Lexy sablon (petru) általános jogi és ügyintézési segítő bármely országban, a bérleti szerződésekkel is foglalkozik; a Move Ready kifejezetten a lakás állapotának dokumentálására és a kaució visszaszerzésére összpontosít."
+      }
+    ]
+  },
+  {
+    "slug": "tour-guide",
+    "name": "Tour Guide",
+    "author": "ThunderX",
+    "handle": "@LeeMatt17631",
+    "postUrl": "https://x.com/LeeMatt17631/status/2115046680290881565",
+    "postedAt": "2026-10-27T11:43:18Z",
+    "templateUrl": "https://x.ai/bot/JV6YIfX2EPzy1egwNmkya",
+    "templatePageReadable": true,
+    "fetched": "2026-10-28",
+    "summaryHu": "Családi utazástervező. A sablon leírása szerint napról napra lebontott útitervet készít valós, dátummal ellátott árakkal, figyeli a foglalási időablakokat, és az utazás alatt rövid reggeli üzeneteket küld. A foglalást és a fizetést te intézed; a bot lépésről lépésre haladó ellenőrzőlistákat ad hozzá. A készítő a posztjában a kedvenc botjaként mutatja be.",
+    "postQuote": "I love my Tour Guide Bot😍",
+    "templateQuote": "A family travel planner that builds day-by-day trip plans with real, dated prices, watches booking windows, and sends short morning prompts during the trip. You book and pay; it hands you step-by-step checklists.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Reggeli üzenetek az utazás alatt",
+        "quote": "sends short morning prompts during the trip",
+        "from": "template"
+      },
+      {
+        "labelHu": "Foglalási időablakok figyelése",
+        "quote": "watches booking windows",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint a foglalást és a fizetést te végzed (You book and pay).",
+    "relatedTemplates": [
+      {
+        "slug": "trip-pilot",
+        "name": "Trip Pilot",
+        "noteHu": "A közösségi Trip Pilot sablon (J Allen) szintén napi bontású útitervet készít, de inkább repülőjegyárakat és pontokkal váltható (award) helyeket figyel; a Tour Guide családi utazásokra és az út közbeni reggeli üzenetekre épít."
+      }
+    ]
+  },
+  {
+    "slug": "inbox-injection-guard",
+    "name": "Inbox Injection Guard",
+    "author": "Helmet Required (Debi)",
+    "handle": "@HopefullySC",
+    "postUrl": "https://x.com/HopefullySC/status/2115197452051742988",
+    "postedAt": "2026-10-27T21:42:25Z",
+    "templateUrl": "https://x.ai/bot/kLp7FHjgMyVTU9Ez64n-E",
+    "templatePageReadable": true,
+    "fetched": "2026-10-28",
+    "summaryHu": "Rejtett, MI-asszisztenseknek szóló utasításokat keres a leveleidben. A sablon leírása szerint átvizsgálja az e-mailjeidet olyan rejtett utasítások (prompt injection) után, mint a fehér szöveg, a nulla szélességű karakterek vagy az „ignore previous instructions” sorok, és ítéletet ad, a rejtett szöveget idézve. Mindenkinek szól, aki MI-t enged olvasni a postafiókjába; csak olvas, semmit nem módosít. A készítő posztja szerint nála automatikusan fut.",
+    "postQuote": "And here is my Grok @bot that checks for nepharious emails... it is on autopilot for me.",
+    "templateQuote": "Screens your email for hidden instructions aimed at AI assistants, like white text, zero-width characters and \"ignore previous instructions\" lines, and gives a verdict with the hidden text quoted. For anyone who lets an AI read their inbox; read-only.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "E-mail (csak olvasás)",
+        "quote": "For anyone who lets an AI read their inbox; read-only.",
+        "from": "template"
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "scam-email-detector",
+        "name": "Scam Email Detector",
+        "noteHu": "A közösségi Scam Email Detector sablon (Dirty Tesla) az adathalász és csaló leveleket jelzi neked; az Inbox Injection Guard azokat a rejtett utasításokat keresi, amelyek a postafiókot olvasó MI-asszisztenst akarják félrevezetni."
+      }
+    ]
+  },
+  {
+    "slug": "at-home-date-night",
+    "name": "At-Home Date Night",
+    "author": "Jennifer Nelson",
+    "handle": "@JenniferNe83522",
+    "postUrl": "https://x.com/JenniferNe83522/status/2115141670119305357",
+    "postedAt": "2026-10-27T18:00:46Z",
+    "templateUrl": "https://x.ai/bot/2RtFkdtZBUF_THR9XCCVS",
+    "templatePageReadable": true,
+    "fetched": "2026-10-28",
+    "summaryHu": "Heti randiötletek otthonra, ingyen vagy olcsón. A sablon leírása szerint hetente küld meghitt, otthon megvalósítható randiötleteket, elmenni sehova nem kell. A készítő posztja szerint nincs tömeg és nincs éttermi számla.",
+    "postQuote": "Weekly free/cheap ideas. Cozy. No crowds. No restaurant bill.",
+    "templateQuote": "Weekly free or cheap date nights at home — cozy ideas, no going out.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Heti randiötletek",
+        "quote": "Weekly free or cheap date nights at home",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "love",
+        "name": "Love ❤️",
+        "noteHu": "A hivatalos Marketplace Love ❤️ botja (Danny Buck) a párkapcsolati teendőkben segít: emlékeztet, randikat, asztalfoglalást és ajándékokat készít elő; az At-Home Date Night csak otthoni, ingyenes vagy olcsó randiötleteket ad."
+      }
+    ]
+  },
+  {
+    "slug": "data-hygienist",
+    "name": "Data Hygienist",
+    "author": "Kevin Chau",
+    "handle": "@kchau",
+    "postUrl": "https://x.com/kchau/status/2115283474190115291",
+    "postedAt": "2026-10-28T03:24:14Z",
+    "templateUrl": "https://x.ai/bot/4F9o96I6Pu8kBGm1fjfpm",
+    "templatePageReadable": true,
+    "fetched": "2026-10-28",
+    "summaryHu": "A Gmail-tárhely tehermentesítése. A sablon leírása szerint rendszeresen a Kukába helyezi a régi, értéktelen Promóciók (Promotions) leveleket, hogy a személyes Gmail-fiókod a tárhelykorlát alatt maradjon, a fontos, csillagozott, továbbított és fizetéssel kapcsolatos leveleket viszont védi. A készítő posztja szerint évek óta kézzel kellett ürítenie a Gmailjét emiatt.",
+    "postQuote": "Now my Data Hygeniest @bot does it for me.",
+    "templateQuote": "Keeps personal Gmail under its storage limit by regularly moving old no-value Promotions to Trash, while protecting Important, starred, forwarded, and payment mail.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Rendszeres promóciós levél-takarítás",
+        "quote": "regularly moving old no-value Promotions to Trash",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Gmail",
+        "quote": "Keeps personal Gmail under its storage limit",
+        "from": "template"
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "inbox-manager",
+        "name": "Inbox Manager",
+        "noteHu": "A közösségi Inbox Manager sablon (Gaurav Singh) hetente a legzajosabb feladókat nézi, és csak a jóváhagyásod után cselekszik; a Data Hygienist a tárhelykorlátra figyelve rendszeresen a Kukába teszi a régi promóciós leveleket."
+      }
+    ]
+  },
+  {
+    "slug": "gatekeeper",
+    "name": "Gatekeeper",
+    "author": "Abel",
+    "handle": "@WreckItAbel",
+    "postUrl": "https://x.com/WreckItAbel/status/2114848007367933987",
+    "postedAt": "2026-10-26T22:33:51Z",
+    "templateUrl": "https://x.ai/bot/GMgVqKF_rn4UU6jISZ_V_",
+    "templatePageReadable": true,
+    "fetched": "2026-10-28",
+    "summaryHu": "Otthoni hálózati rendszergazda. A sablon leírása szerint figyeli a Wi-Fi-t, a routert és a csatlakoztatott eszközöket, segít a lassú vagy megszakadó internet hibaelhárításában, valamint a biztonsági és szülői felügyeleti beállításokban, és mindig rákérdez, mielőtt bármit megváltoztatna. A készítő egy válaszban ajánlotta a saját botjaként.",
+    "postQuote": "Or use my grok bot.",
+    "templateQuote": "A home network admin for your house. It watches your Wi-Fi, router and connected devices, troubleshoots slow or dropped internet, and helps with security and parental controls, always asking before it changes anything.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint mindig rákérdez, mielőtt bármit megváltoztatna (always asking before it changes anything)."
+  },
+  {
+    "slug": "spacewise",
+    "name": "Spacewise",
+    "author": "Stijn (Supervised)",
+    "handle": "@StinoMertens",
+    "postUrl": "https://x.com/StinoMertens/status/2115330885612679291",
+    "postedAt": "2026-10-28T06:32:38Z",
+    "templateUrl": "https://x.ai/bot/2ArZjibPAUi04C-HyMBhB",
+    "templatePageReadable": true,
+    "fetched": "2026-10-28",
+    "summaryHu": "Otthoni rendrakás-tervező fotók alapján. A sablon leírása szerint feltöltöd egy szoba, konyha, kamra, gardrób vagy garázs fotóit, és konkrét tervet kapsz arról, mi hová kerüljön zónák szerint és aszerint, milyen gyakran használod. Javasol szelektálást, de soha nem utasít arra, hogy kidobj valamit. A készítő egy válaszában leírta a módszerét (a napi holmik szemmagasságban, a szezonálisak fent, a „talán” halom egy dátumozott dobozba), és ehhez használja a Spacewise-t.",
+    "postQuote": "I use Spacewise for that plan:",
+    "templateQuote": "Home organization planner. Upload photos of a room, kitchen, pantry, closet or garage; get a concrete plan for what goes where by zone and how often you use it. Suggests decluttering, never orders you to throw things away.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint javasol szelektálást, de soha nem utasít arra, hogy kidobj valamit (never orders you to throw things away)."
   }
 ]
