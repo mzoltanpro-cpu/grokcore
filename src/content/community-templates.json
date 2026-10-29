@@ -4760,5 +4760,341 @@
     "routines": [],
     "integrations": [],
     "noteHu": "A sablon leírása szerint javasol szelektálást, de soha nem utasít arra, hogy kidobj valamit (never orders you to throw things away)."
+  },
+  {
+    "slug": "doc-merger",
+    "name": "Doc Merger",
+    "author": "Brian Roemmele",
+    "handle": "@BrianRoemmele",
+    "postUrl": "https://x.com/BrianRoemmele/status/2115501459542573101",
+    "postedAt": "2026-10-28T17:50:26Z",
+    "templateUrl": "https://x.ai/bot/tMEJdHdRUQHgQMOOy-xjj",
+    "templatePageReadable": true,
+    "fetched": "2026-10-29",
+    "summaryHu": "Szétszórt dokumentumokból egyetlen rendezett mesterfájl. A sablon leírása szerint a dokumentumhalmazt egy fő fájllá fűzi össze (PDF, valamint HTML, Word és TXT formátumban), rendezett tartalomjegyzékkel, ellenőrzi, hogy minden fájl bekerült-e, és köztes mentési pontokkal dolgozik, így akár több száz dokumentum is összefűzhető anélkül, hogy elölről kellene kezdeni. A készítő posztja szerint a könyvedhez, archívumodhoz vagy tudásbázisodhoz készült.",
+    "postQuote": "So I built Doc Merger.",
+    "templateQuote": "Turns a scattered pile of documents into one master file (PDF plus HTML, Word, and TXT) with an ordered table of contents, a check that every file made it in, and checkpoints so even hundreds of docs merge without starting over.",
+    "memory": [
+      {
+        "labelHu": "Köztes mentési pontok",
+        "quote": "checkpoints so even hundreds of docs merge without starting over",
+        "from": "template"
+      }
+    ],
+    "skills": [
+      {
+        "labelHu": "Összefűzés PDF, HTML, Word és TXT formátumba",
+        "quote": "one master file (PDF plus HTML, Word, and TXT)",
+        "from": "template"
+      },
+      {
+        "labelHu": "Teljességellenőrzés",
+        "quote": "a check that every file made it in",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "hrrrr-file-agent",
+        "name": "Hrrrr: File Agent",
+        "noteHu": "A közösségi Hrrrr: File Agent sablon általános irodai fájlkezelő (átnevezés, rendezés, keresés, szkennelés); a Doc Merger kifejezetten sok dokumentum egyetlen, tartalomjegyzékes mesterfájllá fűzésére való."
+      }
+    ]
+  },
+  {
+    "slug": "email-unsubscribe",
+    "name": "Email Unsubscribe",
+    "author": "Ishu Agrawal",
+    "handle": "@ishuagra02",
+    "postUrl": "https://x.com/ishuagra02/status/2115631005910589481",
+    "postedAt": "2026-10-29T02:25:12Z",
+    "templateUrl": "https://x.ai/bot/FTcgIpHIif9slntQ-03Ca",
+    "templatePageReadable": true,
+    "fetched": "2026-10-29",
+    "summaryHu": "Leiratkozás a nem olvasott hírlevelekről. A sablon leírása szerint megkeresi azokat a hírleveleket és marketingleveleket, amelyeket figyelmen kívül hagysz, bejelölheted, melyiket tartod meg, a többiről pedig leiratkoztat, a fontos értesítéseket (fizetési kérések, nyugták, biztonsági figyelmeztetések) viszont békén hagyja. A készítő posztja szerint meg tudja különböztetni a hírleveleket az értesítésektől.",
+    "postQuote": "It's smart since it differentiates between newsletters and notifications that you may want to keep.",
+    "templateQuote": "Finds the newsletters and marketing emails you ignore, lets you tick which to keep, and unsubscribes you from the rest, while leaving notifications like payment requests, receipts, and security alerts alone.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "E-mail",
+        "quote": "Finds the newsletters and marketing emails you ignore",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A sablon leírása szerint csak azokról a levelezőlistákról iratkoztat le, amelyeket nem jelöltél megtartásra (lets you tick which to keep).",
+    "relatedTemplates": [
+      {
+        "slug": "inbox-manager",
+        "name": "Inbox Manager",
+        "noteHu": "A közösségi Inbox Manager sablon hetente javasolja, mely zajos feladókról iratkozz le, mit archiválj vagy tarts meg; az Email Unsubscribe kifejezetten a hírlevelekről és marketinglevelekről való leiratkozásra összpontosít."
+      }
+    ]
+  },
+  {
+    "slug": "fix-stuck-bot-computer",
+    "name": "Fix Stuck Bot Computer",
+    "author": "Alx Spiker",
+    "handle": "@YourFutureCoder",
+    "postUrl": "https://x.com/YourFutureCoder/status/2115647143616925769",
+    "postedAt": "2026-10-29T03:29:20Z",
+    "templateUrl": "https://x.ai/bot/Gn8FzIIeWIzxQbIs6g1Nc",
+    "templatePageReadable": true,
+    "fetched": "2026-10-29",
+    "summaryHu": "Segít, ha a Grok Bot gépe beragad. A sablon leírása szerint helyrehozza a Grok Bot számítógépét, ha az lefagy, megakasztja a botjaidat vagy nem válaszol, utána ellenőrzi az állapotát, és figyel arra, hogy ne fogyjon el a memória. A készítő posztja szerint a 14 perces lefagyási/időtúllépési hibára készítette, és nála kétszer, valamint néhány másik felhasználónál is működött.",
+    "postQuote": "I made a bot to fix Grok Bots 14 minute computer hang/timeout problem.",
+    "templateQuote": "Gets your Grok Bot's computer unstuck when it hangs, freezes your bots, or won't respond, then checks its health and keeps memory from running out.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Beragadt gép helyreállítása",
+        "quote": "Gets your Grok Bot's computer unstuck when it hangs, freezes your bots, or won't respond",
+        "from": "template"
+      },
+      {
+        "labelHu": "Állapot- és memóriaellenőrzés",
+        "quote": "checks its health and keeps memory from running out",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A működését csak a készítő saját beszámolója támasztja alá (It has worked for me twice now and a few others); hivatalos javításnak nem tekinthető."
+  },
+  {
+    "slug": "game-maker",
+    "name": "Game Maker",
+    "author": "Recruta Zero",
+    "handle": "@RecrutaZero",
+    "postUrl": "https://x.com/RecrutaZero/status/2115567342197354900",
+    "postedAt": "2026-10-28T22:12:14Z",
+    "templateUrl": "https://x.ai/bot/loKhvB4900t8Zh9NDJruG",
+    "templatePageReadable": true,
+    "fetched": "2026-10-29",
+    "summaryHu": "Egyszerű játékok készítése lépésről lépésre. A sablon leírása szerint veled együtt böngészőben futó, szöveges és egyszerű 2D-s játékokat épít, egyetlen HTML-fájlként játszható formában, és segít tesztelni, majd közzétenni őket az itch.io oldalon. A készítő (portugál nyelvű) posztja szerint ezzel a sablonnal készítette a profilján megosztott játékokat, és abban is segít, hogyan fogadhatsz adományokat.",
+    "postQuote": "Aqui está o modelo usado do Grok Bot para criar os joguinhos que tenho compartilhado aqui no meu perfil.",
+    "templateQuote": "Builds browser-based, text, and simple 2D games with you as playable single-file HTML, step by step, and helps you test and publish them on itch.io.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Egyfájlos HTML-játékok",
+        "quote": "playable single-file HTML, step by step",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "itch.io",
+        "quote": "helps you test and publish them on itch.io",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "second-brain",
+    "name": "Second Brain",
+    "author": "Michael Ahlers",
+    "handle": "@MichaelAhlers",
+    "postUrl": "https://x.com/MichaelAhlers/status/2115507322319786092",
+    "postedAt": "2026-10-28T18:13:44Z",
+    "templateUrl": "https://x.ai/bot/GVD2kI7YlcScbED7KgxlI",
+    "templatePageReadable": true,
+    "fetched": "2026-10-29",
+    "summaryHu": "„Második agy” az Obsidian-jegyzeteidhez. A sablon leírása szerint rendezetten, összekapcsoltan és naprakészen tartja az Obsidian-tárolódat (vault): típus szerint iktatja a jegyzeteket, témakör szerint címkézi őket, minden reggel feldolgozza a napi jegyzeteidet, és minden szerkesztés előtt ellenőrzi a szinkronizálást. A készítő posztja szerint a naplóját is gondozza és a feladatait is összehangolja.",
+    "postQuote": "a @grok @bot that keeps my @obsdmd vault tidy, curates my journal, orchestrates tasks, and wires it all together.",
+    "templateQuote": "Keeps your Obsidian vault organized, linked, and current. It files notes by type, tags them by domain, ingests your dailies every morning, and checks sync before every edit.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi jegyzetek reggeli feldolgozása",
+        "quote": "ingests your dailies every morning",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Obsidian",
+        "quote": "Keeps your Obsidian vault organized, linked, and current.",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A sablon leírása szerint minden szerkesztés előtt ellenőrzi a szinkronizálást (checks sync before every edit).",
+    "relatedTemplates": [
+      {
+        "slug": "notes-bot",
+        "name": "Notes Bot",
+        "noteHu": "A közösségi Notes Bot sablon (@XFreeze) egyszerű jegyzettömb, amely Google Docba ment; a Second Brain egy meglévő Obsidian-tárolót rendez, címkéz és kapcsol össze."
+      }
+    ]
+  },
+  {
+    "slug": "helpdesk",
+    "name": "helpdesk",
+    "author": "Edmundo Ponce",
+    "handle": "@moondough",
+    "postUrl": "https://x.com/moondough/status/2115436137334575351",
+    "postedAt": "2026-10-28T13:30:52Z",
+    "templateUrl": "https://x.ai/bot/QRlE_6dqqnXr_WRGr2eMU",
+    "templatePageReadable": true,
+    "fetched": "2026-10-29",
+    "summaryHu": "Közérthető műszaki segítség, ha valami elromlott. A sablon leírása szerint a Starlink-antennától a laptopig bármilyen eszköz hibáját leírhatod vagy lefotózhatod, és lépésről lépésre végigvezet a javításon, a legbiztonságosabb lépéssel kezdve, majd rövid, elmenthető útmutatót ír róla. A készítő posztja szerint Starlink-gondokhoz (akadályok, lassú sebesség, kimaradás, beállítás), telefonokhoz, Wi-Fi-hez és nyomtatókhoz is használható.",
+    "postQuote": "Plus phones, Wi-Fi and printers. Snap a photo, get the fix.",
+    "templateQuote": "Tech broke? From Starlink dishes to laptops, describe it or send a photo and helpdesk walks you through the fix step by step, safest first, then writes a short how-to you can save. Works with Starlink; not an official Starlink, SpaceX or X product.",
+    "memory": [
+      {
+        "labelHu": "Elmenthető rövid útmutatók",
+        "quote": "writes a short how-to you can save",
+        "from": "template"
+      }
+    ],
+    "skills": [
+      {
+        "labelHu": "Hibaelhárítás fotó vagy leírás alapján",
+        "quote": "describe it or send a photo and helpdesk walks you through the fix step by step, safest first",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint nem hivatalos Starlink-, SpaceX- vagy X-termék (not an official Starlink, SpaceX or X product)."
+  },
+  {
+    "slug": "inbox-to-calendar-catcher",
+    "name": "Inbox-to-Calendar Catcher",
+    "author": "Louise P",
+    "handle": "@louise19plowman",
+    "postUrl": "https://x.com/louise19plowman/status/2115535921231675724",
+    "postedAt": "2026-10-28T20:07:23Z",
+    "templateUrl": "https://x.ai/bot/ZzvR1QB_S5CLJhPQRctnu",
+    "templatePageReadable": true,
+    "fetched": "2026-10-29",
+    "summaryHu": "A levelekben rejlő időpontokat naptárba teszi. A sablon leírása szerint megkeresi az e-mailjeidben az időpontokat, foglalásokat, csomagkézbesítéseket, repülőutakat és más terveket, és naptáreseményeket készít belőlük, amelyeket te hagysz jóvá. Csak olvas és piszkozatot készít, soha nem válaszol és nem jelez vissza helyetted. A készítő posztja szerint ha azt írod, hogy „add all”, mind bekerül a naptáradba.",
+    "postQuote": "It finds plans in your email and drafts events. Reply \"add all\" and they're on your calendar.",
+    "templateQuote": "Finds appointments, reservations, deliveries, flights and other plans in your email and turns them into calendar events you approve. It only reads and drafts, and never replies or RSVPs for you.",
+    "memory": [],
+    "skills": [],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "E-mail és naptár",
+        "quote": "turns them into calendar events you approve",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A sablon leírása szerint csak olvas és piszkozatot készít, soha nem válaszol és nem jelez vissza helyetted (never replies or RSVPs for you)."
+  },
+  {
+    "slug": "deal-scout",
+    "name": "Deal Scout",
+    "author": "DBCrypto",
+    "handle": "@DBCrypt0",
+    "postUrl": "https://x.com/DBCrypt0/status/2115572839361519895",
+    "postedAt": "2026-10-28T22:34:05Z",
+    "templateUrl": "https://x.ai/bot/b7s0ryUaULdkN6euiloiF",
+    "templatePageReadable": true,
+    "fetched": "2026-10-29",
+    "summaryHu": "Árfigyelő a kívánságlistádhoz. A sablon leírása szerint figyeli a kívánságlistádat, és szól, ha egy termék a közelben vagy online jó áron kapható, napi összefoglalót küld, és a korábbi vásárlásaid nyugtái alapján az árcsökkenéseket is ellenőrzi. A készítő posztja szerint a célárnál jelez, amerikai áruházakat (Amazon, Walmart, Target, Best Buy, Costco) néz át, és soha nem vásárol a jóváhagyása nélkül.",
+    "postQuote": "Never buys without my OK",
+    "templateQuote": "Watches your wishlist and tells you when items are in stock nearby or online at a good price, with a daily roundup and receipt price-drop checks.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Napi összefoglaló",
+        "quote": "with a daily roundup and receipt price-drop checks",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A készítő posztjában felsorolt boltok amerikaiak (Amazon, Walmart, Target, Best Buy, Costco); magyarországi boltokkal való működéséről a forrás nem szól.",
+    "relatedMarketplace": [
+      {
+        "slug": "deal-hunting",
+        "name": "Deal Hunting",
+        "noteHu": "A hivatalos Marketplace Deal Hunting botja (Shimecki) is valódi végösszeggel keres árakat és figyelőlistát vezet."
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "smart-shopper",
+        "name": "Smart Shopper",
+        "noteHu": "A közösségi Smart Shopper sablon szintén árcsökkenést figyel bármely boltban, és ajándékot is keres; a Deal Scout a kívánságlistára, a készletre és a korábbi vásárlások árcsökkenésére épít."
+      }
+    ]
+  },
+  {
+    "slug": "party-wedding-planner",
+    "name": "Party & Wedding Planner",
+    "author": "Yonatan Langer",
+    "handle": "@yonatan_langer",
+    "postUrl": "https://x.com/yonatan_langer/status/2115419161467973756",
+    "postedAt": "2026-10-28T12:23:25Z",
+    "templateUrl": "https://x.ai/bot/brBoOg0lEg4e3ZwwowzeT",
+    "templatePageReadable": true,
+    "fetched": "2026-10-29",
+    "summaryHu": "Buli- és esküvőszervező egy oldalon. A sablon leírása szerint a „bulit tartunk” mondatból idővonalat, költségkeretet, meghívóterveket és visszajelzés-követőt (RSVP) készít egyetlen oldalon, mindenkinek, aki esküvőt, születésnapot vagy más ünnepséget szervez, és maga is élvezni szeretné. A készítő posztja szerint minden hétfőn teendőlistát is küld egészen a nagy napig.",
+    "postQuote": "plus a to-do list every Monday until the day.",
+    "templateQuote": "Turns \"we're having a party\" into a timeline, budget, invite designs and an RSVP tracker on one page. For anyone hosting a wedding, birthday or celebration who wants to enjoy it.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Idővonal, költségkeret, meghívók, RSVP",
+        "quote": "a timeline, budget, invite designs and an RSVP tracker on one page",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Hétfői teendőlista",
+        "quote": "plus a to-do list every Monday until the day.",
+        "from": "post"
+      }
+    ],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "event-producer",
+        "name": "Event Producer",
+        "noteHu": "A hivatalos Marketplace Event Producer botja (Jenna Nanpei) szakmai rendezvényekhez készít forgatókönyvet, vendéglistát és ellenőrzőlistát; a Party & Wedding Planner magánünnepségekre (esküvő, születésnap) szól."
+      }
+    ]
+  },
+  {
+    "slug": "vampbot",
+    "name": "Vampbot",
+    "author": "Vladgz 🥷",
+    "handle": "@StarkDegenz",
+    "postUrl": "https://x.com/StarkDegenz/status/2115500873359180262",
+    "postedAt": "2026-10-28T17:48:06Z",
+    "templateUrl": "https://x.ai/bot/rBr1cSxaPWjsmaVn1WOxu",
+    "templatePageReadable": true,
+    "fetched": "2026-10-29",
+    "summaryHu": "Ötletforrás a meglévő botjaid fejlesztéséhez. A sablon leírása szerint figyeli az új Grok Bot-sablonokat és a nyilvános ügynökképességeket (agent skills), és megmondja, melyik új funkció tehetné jobbá a már meglévő botjaidat. Megkeresi, elolvassa, szűri és javasolja őket, de semmit nem telepít és nem módosít. A készítő posztja szerint ez a bot egyetlen feladata.",
+    "postQuote": "It scans new Grok Bot templates and public agent skills, then tells you which feature would upgrade your bots.",
+    "templateQuote": "Watches Grok Bot templates and public agent skills and tells you which new ones could improve the bots you already have. It finds, reads, filters and proposes, but never installs or changes anything.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Sablon- és skillfigyelés",
+        "quote": "Watches Grok Bot templates and public agent skills",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint csak javasol, semmit nem telepít és nem módosít (never installs or changes anything).",
+    "relatedTemplates": [
+      {
+        "slug": "changelog-scout",
+        "name": "Changelog Scout",
+        "noteHu": "A közösségi Changelog Scout sablon a hivatalos Grok Bot-változásnaplót figyeli; a Vampbot a közösségi sablonokból és nyilvános skillekből keres fejlesztési ötleteket a botjaidhoz."
+      }
+    ]
   }
 ]
