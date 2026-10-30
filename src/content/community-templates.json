@@ -2640,8 +2640,8 @@
     "slug": "bills",
     "name": "Bills",
     "author": "Daniel Dewhurst",
-    "handle": "@DanNinetySeven",
-    "postUrl": "https://x.com/DanNinetySeven/status/2113219193667526893",
+    "handle": "@ddewhurst",
+    "postUrl": "https://x.com/ddewhurst/status/2113219193667526893",
     "postedAt": "2026-10-22T10:41:32Z",
     "templateUrl": "https://x.ai/bot/W4QR9L1qUuMaTIv61t8tl",
     "templatePageReadable": true,
@@ -2748,8 +2748,8 @@
     "slug": "mac-perms",
     "name": "Mac Perms",
     "author": "Asher Armstrong",
-    "handle": "@AsherBArmstrong",
-    "postUrl": "https://x.com/AsherBArmstrong/status/2113467664270086209",
+    "handle": "@AsherArmstrong",
+    "postUrl": "https://x.com/AsherArmstrong/status/2113467664270086209",
     "postedAt": "2026-10-23T03:08:52Z",
     "templateUrl": "https://x.ai/bot/haHLoMf3xp7rAZ1fyjzsX",
     "templatePageReadable": true,
@@ -4746,8 +4746,8 @@
     "slug": "spacewise",
     "name": "Spacewise",
     "author": "Stijn (Supervised)",
-    "handle": "@StinoMertens",
-    "postUrl": "https://x.com/StinoMertens/status/2115330885612679291",
+    "handle": "@StarFinch",
+    "postUrl": "https://x.com/StarFinch/status/2115330885612679291",
     "postedAt": "2026-10-28T06:32:38Z",
     "templateUrl": "https://x.ai/bot/2ArZjibPAUi04C-HyMBhB",
     "templatePageReadable": true,
@@ -5094,6 +5094,369 @@
         "slug": "changelog-scout",
         "name": "Changelog Scout",
         "noteHu": "A közösségi Changelog Scout sablon a hivatalos Grok Bot-változásnaplót figyeli; a Vampbot a közösségi sablonokból és nyilvános skillekből keres fejlesztési ötleteket a botjaidhoz."
+      }
+    ]
+  },
+  {
+    "slug": "fred",
+    "name": "Fred",
+    "author": "Parker 🐐",
+    "handle": "@DotComParker",
+    "postUrl": "https://x.com/DotComParker/status/2115826239231660433",
+    "postedAt": "2026-10-29T15:21:00Z",
+    "templateUrl": "https://x.ai/bot/OLEh3dJE_hXSrhlJsibAq",
+    "templatePageReadable": true,
+    "fetched": "2026-10-30",
+    "summaryHu": "Közösségimédia-kezelő bot alkotóknak és kisvállalkozásoknak. A sablon leírása szerint megtanulja a szakterületedet (niche), összekapcsolható a Buffer vagy más posztütemező eszközzel, naponta kutatja, mi terjed éppen, és posztterveket ír, amelyeket te hagysz jóvá. A készítő posztja szerint az ő oldalain az elmúlt 30 napban több mint 10 millió megjelenést hozott, és ingyen adja tovább.",
+    "postQuote": "I built a social media management bot that has gotten me over 10,000,000 impressions in the last 30 days, and I’m giving it to you for free.",
+    "templateQuote": "Fred runs your social media: learns your niche, connects Buffer or other posting tools, researches what's going viral daily, and drafts posts for your approval. Built for creators and small businesses.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Napi trendkutatás",
+        "quote": "researches what's going viral daily",
+        "from": "template"
+      },
+      {
+        "labelHu": "Poszttervek jóváhagyásra",
+        "quote": "drafts posts for your approval",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "Buffer vagy más posztütemező",
+        "quote": "connects Buffer or other posting tools",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A 10 millió megjelenés a készítő saját állítása; a forrás nem igazolja.",
+    "relatedMarketplace": [
+      {
+        "slug": "distro-bot",
+        "name": "Distro Bot",
+        "noteHu": "A hivatalos Marketplace Distro Bot teljes marketingkört visz (hirdetések, kreatívok, elemzés, posztok); a Fred kifejezetten a közösségimédia-posztok tervezésére szól."
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "x-agent",
+        "name": "X Agent",
+        "noteHu": "A közösségi X Agent sablon AI- és programozási beszélgetésekre ír választerveket a hangodon; a Fred a saját közösségimédia-oldalaid posztjait tervezi a szakterületed trendjei alapján."
+      }
+    ]
+  },
+  {
+    "slug": "font-designer",
+    "name": "Font Designer",
+    "author": "Jenny Marquis",
+    "handle": "@JennyMarquis",
+    "postUrl": "https://x.com/JennyMarquis/status/2115884996103692303",
+    "postedAt": "2026-10-29T19:14:28Z",
+    "templateUrl": "https://x.ai/bot/vSvN9TKvB4zykoj44rWy6",
+    "templatePageReadable": true,
+    "fetched": "2026-10-30",
+    "summaryHu": "Saját betűtípus a kézírásodból. A sablon leírása szerint kinyomtatod a gyakorlólapot, kitöltöd, elküldöd róla a fotókat, és telepíthető betűtípust kapsz .ttf és .otf fájlként, előnézettel együtt; mindez privát módon, a bot saját gépén készül. A készítő posztja szerint ezzel készítette élete első betűtípusát „Slop Queen” néven.",
+    "postQuote": "Here's the first font I've made ever",
+    "templateQuote": "Turns photos of your handwriting into a real, installable font. Print the practice sheet, fill it in, send photos, and get .ttf and .otf files plus a preview, all made privately on the bot's own computer.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kézírásból betűtípus",
+        "quote": "Turns photos of your handwriting into a real, installable font.",
+        "from": "template"
+      },
+      {
+        "labelHu": ".ttf és .otf fájlok előnézettel",
+        "quote": "get .ttf and .otf files plus a preview",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "recall-radar",
+    "name": "Recall Radar",
+    "author": "Kevin Logan",
+    "handle": "@Kevin_Logan",
+    "postUrl": "https://x.com/Kevin_Logan/status/2115732118986764492",
+    "postedAt": "2026-10-29T09:07:00Z",
+    "templateUrl": "https://x.ai/bot/NDz3Eb34xrF2SKj832Ugs",
+    "templatePageReadable": true,
+    "fetched": "2026-10-30",
+    "summaryHu": "Visszahívás-figyelő a tárgyaidhoz. A sablon leírása szerint a rendelési e-mailjeidből és fotóidból összeírja, mi van a birtokodban, és szól, ha bármelyiket visszahívják, beleértve az autóidat is. A készítő posztja szerint így nem maradsz le egyetlen biztonsági figyelmeztetésről sem.",
+    "postQuote": "No more missed safety notices.",
+    "templateQuote": "Finds what you own from your order emails and photos, then alerts you when any of it, including your cars, gets recalled.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Tárgyleltár rendelésekből és fotókból",
+        "quote": "Finds what you own from your order emails and photos",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "E-mail",
+        "quote": "Recall Radar reads your order emails",
+        "from": "post"
+      }
+    ],
+    "noteHu": "A forrás nem részletezi, mely országok visszahívási adatbázisait nézi; magyarországi termékvisszahívásokról nem szól.",
+    "relatedTemplates": [
+      {
+        "slug": "automobot",
+        "name": "Automobot",
+        "noteHu": "A közösségi Automobot sablon az autód karbantartását és visszahívásait is követi; a Recall Radar minden megvásárolt tárgyadat figyeli visszahívás szempontjából."
+      }
+    ]
+  },
+  {
+    "slug": "keepsettings",
+    "name": "KeepSettings",
+    "author": "DivyQueen 🇺🇸",
+    "handle": "@DivysQueen",
+    "postUrl": "https://x.com/DivysQueen/status/2115977751471743147",
+    "postedAt": "2026-10-30T01:23:03Z",
+    "templateUrl": "https://x.ai/bot/AxfgVvfQNsa0W2xY_i4dI",
+    "templatePageReadable": true,
+    "fetched": "2026-10-30",
+    "summaryHu": "Őrzi a telefonod adatvédelmi beállításait. A sablon leírása szerint csak olvasó figyelő iPhone-ra, iPadre és Samsung/Android készülékre: koppintással választod ki a beállításokat, frissítések után automatikusan ellenőriz, közérthető lépéseket ad, és a családi készülékekhez külön alapállapotot tart. A készítő posztja szerint szól, ha egy frissítés csendben visszaállít egy beállítást; ez volt az első botja.",
+    "postQuote": "Alerts you when an update quietly resets one",
+    "templateQuote": "A read-only privacy settings watchdog for iPhone, iPad, and Samsung/Android. Tap-to-pick setup, a smart auto check after updates, and plain-English steps, with separate baselines for family devices.",
+    "memory": [
+      {
+        "labelHu": "Külön alapállapot a családi eszközökhöz",
+        "quote": "separate baselines for family devices",
+        "from": "template"
+      }
+    ],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Automatikus ellenőrzés frissítés után",
+        "quote": "a smart auto check after updates",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint csak olvas (read-only), a beállításokat neked kell visszaállítanod a lépései alapján.",
+    "relatedTemplates": [
+      {
+        "slug": "privacy",
+        "name": "Privacy",
+        "noteHu": "A közösségi Privacy sablon a weben keresi a személyes adataidat és adatszivárgásokat; a KeepSettings a saját telefonod és táblagéped adatvédelmi beállításait figyeli."
+      }
+    ]
+  },
+  {
+    "slug": "the-wife-saver",
+    "name": "The Wife Saver",
+    "author": "Brandon Barton",
+    "handle": "@BrandonBarton26",
+    "postUrl": "https://x.com/BrandonBarton26/status/2115993739369832959",
+    "postedAt": "2026-10-30T02:26:35Z",
+    "templateUrl": "https://x.ai/bot/p8seabKRwwNjuQGfHb15F",
+    "templatePageReadable": true,
+    "fetched": "2026-10-30",
+    "summaryHu": "Családi háztartási központ egy helyen. A sablon leírása szerint a Grok Botot a család ügyeinek gyűjtőhelyévé teszi: beosztások, étkezések és bevásárlás-átvétel, számlák, iskola, utazások, otthoni karbantartás és otthoni informatika – mindenkinek, aki háztartást visz (anyák, apák, egyedülálló szülők, párok). A készítő két gyereket nevelő, teljes munkaidőben dolgozó apaként építette, és ingyenesen osztja meg.",
+    "postQuote": "So I built The Wife Saver with @bot. It runs schedules, school, meals, grocery pickup, budget, and trips for the family. Free to use.",
+    "templateQuote": "Free template that turns Grok Bot into a family household hub: schedules, meals and grocery pickup, bills, school, trips, home upkeep and home IT, kept in one place. For anyone running a home: moms, dads, single parents, and couples.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Beosztás, étkezés, bevásárlás, számlák, iskola, utazás",
+        "quote": "schedules, meals and grocery pickup, bills, school, trips, home upkeep and home IT, kept in one place",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A posztban említett bevásárlás-átvételről (grocery pickup) a forrás nem írja, mely boltokkal működik.",
+    "relatedMarketplace": [
+      {
+        "slug": "nyc-parent",
+        "name": "NYC Parent",
+        "noteHu": "A hivatalos Marketplace NYC Parent botja New York-i szülőknek követi az iskolát, naptárt és a háztartási teendőket; a The Wife Saver nem helyhez kötött családi központ."
+      }
+    ]
+  },
+  {
+    "slug": "no-slop",
+    "name": "No Slop",
+    "author": "MASON VERSLUIS",
+    "handle": "@MasonVersluis",
+    "postUrl": "https://x.com/MasonVersluis/status/2115900174497361955",
+    "postedAt": "2026-10-29T20:14:47Z",
+    "templateUrl": "https://x.ai/bot/i0NQas2N2X672-J7L4H5v",
+    "templatePageReadable": true,
+    "fetched": "2026-10-30",
+    "summaryHu": "Írásstílus-skill a saját X-posztjaidból, hogy ne hangozz MI-nek. A sablon leírása szerint az X-kapcsolaton át összegyűjti a leghosszabb posztjaidat (100, 250 vagy 500 darabot), valós számokkal elemzi a stílusodat, és tiltólistára teszi a tipikus MI-fordulatokat, majd letölthető csomagot készít (stílusutasítások, példaposztok, beállítási útmutató) ChatGPT-hez vagy Grok Bot-skillként. A leírás szerint soha nem posztol, kedvel vagy válaszol helyetted az X-en.",
+    "postQuote": "i just built a new Grok @Bot that collects 500 of your own X posts (specifically the LONGEST ones) and builds a writing skill that sounds like YOU",
+    "templateQuote": "You are No Slop. Your only job: turn a person's own X posts into a writing skill that sounds exactly like them and never like AI.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Stíluselemzés valós számokkal",
+        "quote": "ANALYZE (real counts only, never guess)",
+        "from": "template"
+      },
+      {
+        "labelHu": "Letölthető stíluscsomag",
+        "quote": "A zip of all three.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "name": "X",
+        "quote": "Pull their posts through the X connection",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A sablon leírása szerint csak a saját posztjaidat használja, és nem posztol, kedvel, válaszol, üzen vagy követ az X-en (never post, like, reply, DM or follow on X). A stíluselemzés angol nyelvű posztokra van hangolva; magyar szövegekről a forrás nem szól.",
+    "relatedMarketplace": [
+      {
+        "slug": "human-copywriter",
+        "name": "Copy Humanizer",
+        "noteHu": "A hivatalos Marketplace Copy Humanizer botja a kész szövegeidet írja át emberibbre; a No Slop a régi X-posztjaidból épít újrahasznosítható stílusleírást."
+      }
+    ]
+  },
+  {
+    "slug": "omarchytv-installer",
+    "name": "OmarchyTV Installer",
+    "author": "Marco Porro",
+    "handle": "@MarcoPorro",
+    "postUrl": "https://x.com/MarcoPorro/status/2115810275589046577",
+    "postedAt": "2026-10-29T14:17:34Z",
+    "templateUrl": "https://x.ai/bot/kkVjmjPKhIb2atxHQPsfp",
+    "templatePageReadable": true,
+    "fetched": "2026-10-30",
+    "summaryHu": "Telepítési segéd az OmarchyTV tévés kezelőfelülethez. A sablon leírása szerint lépésről lépésre telepíti az OmarchyTV nevű, MIT-licencű nyílt forráskódú tévés indítóképernyőt (launcher) Android TV, Google TV, LG webOS vagy Samsung Tizen tévére, ellenőrzött hivatalos kiadásokból. A készítő posztja szerint a letöltéseket SHA-256 ellenőrzőösszeggel is ellenőrzi.",
+    "postQuote": "Meet OmarchyTV Installer, a Grok Bot that walks you through it step by step on Android TV, Google TV, LG webOS or Samsung Tizen, with official releases + SHA-256 checks ✅",
+    "templateQuote": "Gets OmarchyTV, the MIT open-source TV launcher, installed on your Android TV, Google TV, LG webOS or Samsung Tizen TV, step by step with verified official releases.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Lépésenkénti telepítés",
+        "quote": "step by step with verified official releases",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "vivian",
+    "name": "Vivian",
+    "author": "Martha 🌑🚀",
+    "handle": "@MyTeslaMoonship",
+    "postUrl": "https://x.com/MyTeslaMoonship/status/2115772132663669067",
+    "postedAt": "2026-10-29T11:46:00Z",
+    "templateUrl": "https://x.ai/bot/tl1Ih8-CLh1fwTp51jqme",
+    "templatePageReadable": true,
+    "fetched": "2026-10-30",
+    "summaryHu": "Személyes bevásárlósegéd. A sablon leírása szerint akciókat keres, ellenőrzi a kuponkódokat és leárazásokat, vezeti a heti bevásárlólistádat (kérésre SMS-ben is elküldi a telefonodra), ellenőrzi a készletet, és követi a csomagjaidat. A készítő posztja szerint az akciók figyelése mellett a beérkező csomagjaira is figyel, így nem kell folyton ellenőriznie őket.",
+    "postQuote": "While checking for deals, she keeps an eye on my incoming packages so I don’t have to keep checking myself!",
+    "templateQuote": "A personal shopper that hunts deals, checks codes and sales, keeps your weekly shopping list (with an optional text to your phone), verifies stock, and tracks your packages.",
+    "memory": [
+      {
+        "labelHu": "Heti bevásárlólista",
+        "quote": "keeps your weekly shopping list",
+        "from": "template"
+      }
+    ],
+    "skills": [
+      {
+        "labelHu": "Akció-, kód- és készletfigyelés",
+        "quote": "hunts deals, checks codes and sales",
+        "from": "template"
+      },
+      {
+        "labelHu": "Csomagkövetés",
+        "quote": "tracks your packages",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "smart-shopper",
+        "name": "Smart Shopper",
+        "noteHu": "A közösségi Smart Shopper sablon árcsökkenést figyel és ajándékot keres; a Vivian a heti bevásárlólistát és a csomagkövetést is kezeli."
+      },
+      {
+        "slug": "deal-scout",
+        "name": "Deal Scout",
+        "noteHu": "A közösségi Deal Scout sablon kívánságlista alapján figyel árakat; a Vivian általános bevásárlósegéd csomagkövetéssel."
+      }
+    ]
+  },
+  {
+    "slug": "x-banner-maker",
+    "name": "X Banner Maker",
+    "author": "brflux (aka brett)",
+    "handle": "@brflux",
+    "postUrl": "https://x.com/brflux/status/2115991312432316806",
+    "postedAt": "2026-10-30T02:16:56Z",
+    "templateUrl": "https://x.ai/bot/4T6Thj34oUhb4fUurFdWA",
+    "templatePageReadable": true,
+    "fetched": "2026-10-30",
+    "summaryHu": "X-fejléckép (banner) a saját grafikádból. A sablon leírása szerint olyan X-fejlécet tervez a saját képeidből, amely asztali gépen, az X iPhone-alkalmazásában és Androidon is olvasható marad, a kinézetet és az elrendezést pedig egyszerű mondatokkal irányíthatod. A készítő posztja szerint ingyenes, és bírja az iPhone-os vágást, a Dynamic Islandet és az androidos kameralyukakat is.",
+    "postQuote": "Made a free bot that designs your X banner from your own art, and it survives the iPhone crop, the Dynamic Island, and Android punch holes.",
+    "templateQuote": "Designs X (Twitter) header banners from your own art that stay readable on desktop, the X iPhone app and Android. You steer the look and placement in plain words.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Minden eszközön olvasható fejléc",
+        "quote": "stay readable on desktop, the X iPhone app and Android",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő posztja egy nyilvános GitHub-eszközkészletet is linkel (github.com/brflux/x-banner-kit)."
+  },
+  {
+    "slug": "proofcheck",
+    "name": "ProofCheck",
+    "author": "John P Creates",
+    "handle": "@johnp_creates",
+    "postUrl": "https://x.com/johnp_creates/status/2115841502622671246",
+    "postedAt": "2026-10-29T16:21:39Z",
+    "templateUrl": "https://x.ai/bot/GQGgQKHphrXUjK0NxeZ9L",
+    "templatePageReadable": true,
+    "fetched": "2026-10-30",
+    "summaryHu": "Valódi-e a terjedő kép? A sablon leírása szerint ellenőrzi, hogy a virális X-fotók, friss hírekhez kapcsolódó képek és képernyőképek valódiak-e, egy korábbi eseményből újrahasznosítottak, manipuláltak vagy MI által készítettek, és érthető szöveges értékelést ad, kérésre X-en megosztható képkártyával. A készítő posztja szerint ingyen kipróbálható.",
+    "postQuote": "Try ProofCheck free here:",
+    "templateQuote": "Verifies whether viral X photos, breaking-news images, and screenshots are real, recycled from an older event, doctored, or AI-generated, with a clear text scorecard and an optional shareable image card for X.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kép-hitelességvizsgálat",
+        "quote": "real, recycled from an older event, doctored, or AI-generated",
+        "from": "template"
+      },
+      {
+        "labelHu": "Szöveges értékelés és megosztható kártya",
+        "quote": "a clear text scorecard and an optional shareable image card for X",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő a sablont egy válaszposztban osztotta meg; az értékelés tájékoztató jellegű, nem perdöntő bizonyíték.",
+    "relatedTemplates": [
+      {
+        "slug": "sherlock-holmes-fact-checker",
+        "name": "Sherlock Holmes (Fact Checker)",
+        "noteHu": "A közösségi Sherlock Holmes sablon állításokat, híreket és pletykákat ellenőriz forrásokkal; a ProofCheck kifejezetten képek és képernyőképek hitelességét vizsgálja."
       }
     ]
   }
