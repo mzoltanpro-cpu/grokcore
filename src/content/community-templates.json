@@ -5459,5 +5459,357 @@
         "noteHu": "A közösségi Sherlock Holmes sablon állításokat, híreket és pletykákat ellenőriz forrásokkal; a ProofCheck kifejezetten képek és képernyőképek hitelességét vizsgálja."
       }
     ]
+  },
+  {
+    "slug": "action-button-bot",
+    "name": "Action Button Bot",
+    "author": "Chris",
+    "handle": "@everestchris6",
+    "postUrl": "https://x.com/everestchris6/status/2116184125640261875",
+    "postedAt": "2026-10-30T15:03:07Z",
+    "templateUrl": "https://x.ai/bot/yc8yWwlDJLRwr0JuyHRhA",
+    "templatePageReadable": true,
+    "fetched": "2026-10-31",
+    "summaryHu": "Kérdezz bármit arról, ami éppen a telefonod képernyőjén van. A sablon leírása szerint iPhone-on az Action Button (műveletgomb) nyomva tartásával bármely reel, videó vagy weboldal közben hangosan feltehetsz egy kérdést, és a választ csendes értesítésként kapod meg; a bot a képernyőképből, a posztból, annak kommentjeiből és webes keresésből állítja össze. A készítő szálának nyitóposztja szerint ingyenes iPhone-parancsként (Shortcut) építette és nyílt forráskódúvá tette; a linket a szál következő posztjában adta meg.",
+    "postQuote": "you can get it here for free:",
+    "templateQuote": "Hold your iPhone Action Button on any reel, video or page, ask a question out loud, and get a silent answer as a notification, built from the screenshot, the post, its comments and a web search.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Hangos kérdés arról, ami a képernyőn van",
+        "quote": "ask a question out loud, and get a silent answer as a notification",
+        "from": "template"
+      },
+      {
+        "labelHu": "Válasz képernyőképből, posztból, kommentekből és webes keresésből",
+        "quote": "built from the screenshot, the post, its comments and a web search",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Olyan iPhone kell hozzá, amelyen van Action Button. Android-változatot egy másik felhasználó (@natwc) osztott meg Android Assist Bot néven a készítő szála alatt."
+  },
+  {
+    "slug": "whatsapper",
+    "name": "WhatsApper",
+    "author": "Gonto 🤓",
+    "handle": "@mgonto",
+    "postUrl": "https://x.com/mgonto/status/2116293235173740905",
+    "postedAt": "2026-10-30T22:16:40Z",
+    "templateUrl": "https://x.ai/bot/Lr1qQk4Csgtz127NJPpQ2",
+    "templatePageReadable": true,
+    "fetched": "2026-10-31",
+    "summaryHu": "WhatsApp-segéd jóváhagyásos küldéssel. A sablon leírása szerint elolvassa a WhatsApp-csevegéseidet és -csoportjaidat, a te hangodon fogalmaz meg üzeneteket, és csak akkor küldi el őket, ha a pontos szöveget jóváhagytad. A WhatsApp-kapcsolatot óránkénti szinkronizálással tartja életben, és titkosított biztonsági mentést készít GitHubra vagy Google Drive-ra. A készítő (spanyol nyelvű) posztja szerint telepítéskor csatlakozik a WhatsAppodhoz, és ha a telepítés elromlik, helyreállítja.",
+    "postQuote": "Les dejo aca el Grok Bot que todo latino tiene que tener: WhatsApper",
+    "templateQuote": "Reads your WhatsApp chats and groups, drafts messages in your voice, and sends them only after you approve the exact text. It keeps your WhatsApp link healthy with hourly syncs and an encrypted backup to GitHub or Google Drive.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Üzenetvázlat a te hangodon, küldés csak jóváhagyással",
+        "quote": "drafts messages in your voice, and sends them only after you approve the exact text",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Óránkénti szinkronizálás",
+        "quote": "hourly syncs",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "labelHu": "WhatsApp",
+        "quote": "Reads your WhatsApp chats and groups",
+        "from": "template"
+      },
+      {
+        "labelHu": "GitHub vagy Google Drive (titkosított mentés)",
+        "quote": "an encrypted backup to GitHub or Google Drive",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A bot olvassa a WhatsApp-üzeneteidet; a forrás nem részletezi, pontosan hogyan jön létre a WhatsApp-kapcsolat."
+  },
+  {
+    "slug": "liked-songs-dj",
+    "name": "Grok Bot DJ From Your Liked Songs",
+    "author": "Brian Roemmele",
+    "handle": "@BrianRoemmele",
+    "postUrl": "https://x.com/BrianRoemmele/status/2116236766051221902",
+    "postedAt": "2026-10-30T18:32:17Z",
+    "templateUrl": "https://x.ai/bot/UjSmyVMFFcQSdMxct69iQ",
+    "templatePageReadable": true,
+    "fetched": "2026-10-31",
+    "summaryHu": "Saját rádiós DJ a kedvenc zenéidből. A sablon leírása szerint kiválasztasz egy DJ-stílust (az egyetemi rádiótól a „quiet storm” hangulatig), és a zenei könyvtáradból vagy a streamingszolgáltatásban kedvelt dalaidból ritkábban hallott dalokat is tartalmazó összeállításokat készít beszélt átvezetőkkel, dupla kattintással lejátszható formában. A készítő posztja szerint a késő esti egyetemi rádiók DJ-it idézi meg, és a Macjén fut.",
+    "postQuote": "I brought back the college radio DJ I grew up listening to. It lives on my Mac",
+    "templateQuote": "A DJ for the music you already love. Pick a DJ style, from college radio to quiet storm, and it turns your library or streaming likes into deep-cut sets with spoken breaks, ready to play with a double-click.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "DJ-stílus választása",
+        "quote": "Pick a DJ style, from college radio to quiet storm",
+        "from": "template"
+      },
+      {
+        "labelHu": "Összeállítás beszélt átvezetőkkel",
+        "quote": "deep-cut sets with spoken breaks",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő posztja szerint Macen fut; a forrás nem nevezi meg, mely streamingszolgáltatásokkal működik.",
+    "relatedTemplates": [
+      {
+        "slug": "playlist-builder",
+        "name": "Playlist Builder",
+        "noteHu": "A közösségi Playlist Builder a Spotify kedvelt dalaiból rendez lejátszási listákat; a Grok Bot DJ beszélt átvezetőkkel, DJ-stílusban állít össze szetteket."
+      }
+    ]
+  },
+  {
+    "slug": "reply-only-inbox",
+    "name": "Reply-Only Inbox",
+    "author": "TONY™",
+    "handle": "@TONYxTWO",
+    "postUrl": "https://x.com/TONYxTWO/status/2116150872753484003",
+    "postedAt": "2026-10-30T12:50:58Z",
+    "templateUrl": "https://x.ai/bot/eLbpNePyctDIPNHImm6Qi",
+    "templatePageReadable": true,
+    "fetched": "2026-10-31",
+    "summaryHu": "Kiüríti a túlcsordult postafiókot, aztán csak a válaszra váró leveleknél szól. A sablon leírása szerint lenullázza a hatalmas olvasatlan halmot, ezután csak akkor értesít, ha egy e-mail választ igényel, a válaszvázlatok pedig a jóváhagyásodig nem mennek ki. A készítő posztja szerint egy éjszaka alatt 28 764 levelet takarított ki és jelölt olvasottnak.",
+    "postQuote": "Grok Bot just cleaned up 28,764 emails in my inbox and marked every single one as read while I slept",
+    "templateQuote": "Zero a huge unread pile, then only ping you for emails that need a reply. Drafts stay behind your approval.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Olvasatlan halom lenullázása",
+        "quote": "Zero a huge unread pile",
+        "from": "template"
+      },
+      {
+        "labelHu": "Értesítés csak válaszra váró levélnél",
+        "quote": "only ping you for emails that need a reply",
+        "from": "template"
+      },
+      {
+        "labelHu": "Vázlatok jóváhagyás mögött",
+        "quote": "Drafts stay behind your approval",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A 28 764 levél a készítő saját beszámolója. A forrás nem nevezi meg, mely levelezőszolgáltatással működik.",
+    "relatedTemplates": [
+      {
+        "slug": "email-bot",
+        "name": "Email Bot",
+        "noteHu": "A közösségi Email Bot óránként rendezi a postafiókot és válaszvázlatokat ír; a Reply-Only Inbox először lenullázza az olvasatlan halmot, utána csak a válaszra váró leveleknél szól."
+      },
+      {
+        "slug": "inbox-manager",
+        "name": "Inbox Manager",
+        "noteHu": "A közösségi Inbox Manager hetente a legzajosabb feladókat válogatja ki leiratkozásra vagy archiválásra."
+      }
+    ]
+  },
+  {
+    "slug": "data-viz-bot",
+    "name": "Data Viz Bot",
+    "author": "Arthur MacWaters",
+    "handle": "@ArthurMacwaters",
+    "postUrl": "https://x.com/ArthurMacwaters/status/2116304629676019981",
+    "postedAt": "2026-10-30T23:01:57Z",
+    "templateUrl": "https://x.ai/bot/X1u9J-wW3i4eHLyixnLqM",
+    "templatePageReadable": true,
+    "fetched": "2026-10-31",
+    "summaryHu": "Sűrű adatokból egyetlen áttekinthető grafikon. A sablon leírása szerint a sűrű jelentésekből, hivatalos beszámolókból, táblázatokból és adathalmazokból egyetlen tiszta, telefonon is jól olvasható grafikont készít közérthető címmel. Bedobhatsz PDF-et, képernyőképet, linket vagy bemásolt számokat, és megosztható képet kapsz vissza. A készítő posztja szerint ezt a sablont nagyon sokat használja.",
+    "postQuote": "I use this one a lot",
+    "templateQuote": "Turns dense reports, filings, tables, and datasets into one clean, phone-friendly chart with a plain-English headline. Drop in a PDF, screenshot, link, or pasted numbers and get a shareable image back.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "PDF, képernyőkép, link vagy számok bemenetként",
+        "quote": "Drop in a PDF, screenshot, link, or pasted numbers",
+        "from": "template"
+      },
+      {
+        "labelHu": "Telefonbarát grafikon közérthető címmel",
+        "quote": "one clean, phone-friendly chart with a plain-English headline",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A leírás angol nyelvű (plain-English) címsort említ; a magyar nyelvű kimenetről a forrás nem szól."
+  },
+  {
+    "slug": "tiny-panels",
+    "name": "Tiny Panels",
+    "author": "Nicolas Dovetta",
+    "handle": "@NDovetta",
+    "postUrl": "https://x.com/NDovetta/status/2116416917154263439",
+    "postedAt": "2026-10-31T06:28:08Z",
+    "templateUrl": "https://x.ai/bot/N_Yu5fatUnllARL4I9X-r",
+    "templatePageReadable": true,
+    "fetched": "2026-10-31",
+    "summaryHu": "Képregényoldal bármilyen történetből. A sablon leírása szerint néhány sorból, bemásolt e-mailből, hangüzenetből vagy pár fotóból percek alatt kész, feliratozott képregényoldalt készít; utána más stílusokat is kipróbálhatsz, oldalról oldalra folytathatod, nyomtatható PDF-et kérhetsz, vagy posztolható képsorrá alakíthatod. Családi emlékekhez, gyerekmeséhez, születésnapi ajándéknak vagy képregényként elmesélt ötlethez ajánlja. A készítő posztja szerint a saját családi történetei képregénnyé alakítása közben építette.",
+    "postQuote": "It turns any story into a comic.",
+    "templateQuote": "Tiny Panels turns any story into a comic page. Send a few lines, a pasted email, a voice note, or a few photos, and get back a finished, lettered page in minutes. Then try other styles, keep going page by page, grab a print-ready PDF, or turn it into a strip to post. Great for family memories, a kid's story, a birthday gift, or a pitch told as a comic. Made by a dad who built it while turning his own family stories into a comic.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kész, feliratozott oldal percek alatt",
+        "quote": "get back a finished, lettered page in minutes",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nyomtatható PDF vagy posztolható képsor",
+        "quote": "grab a print-ready PDF, or turn it into a strip to post",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "mood-board",
+    "name": "Mood Board",
+    "author": "Tom⚡️",
+    "handle": "@TitaniumTomP",
+    "postUrl": "https://x.com/TitaniumTomP/status/2116175511290274073",
+    "postedAt": "2026-10-30T14:28:53Z",
+    "templateUrl": "https://x.ai/bot/vGuTrqMdV4C_7dtKQcZVT",
+    "templatePageReadable": true,
+    "fetched": "2026-10-31",
+    "summaryHu": "Hangulattábla (mood board) egyetlen ötletből. A sablon leírása szerint elmondod a hangulatot (például „hangulatos őszi faház” vagy „lávás kazamata a játékomhoz”), ő pedig 9–12 kiemelkedő Unsplash-fotót választ, és kollázsképet, valamint megosztható oldalt küld vissza hozzáillő színpalettával, kulcsszavakkal és minden fotós feltüntetésével. Játékgrafikához, tervezési projektekhez, utazásokhoz vagy egy stílus kereséséhez ajánlja.",
+    "postQuote": "Every photographer gets credited and your idea gets inspiration.",
+    "templateQuote": "Mood Board turns any idea into a visual mood board. Tell it a vibe, like \"lava dungeon for my game,\" \"cozy fall cabin\" or \"Tesla road trip,\" and it picks 9 to 12 standout Unsplash photos. It sends back a collage image and a shareable page with a matching color palette, keywords and a credit for every photographer. It's great for game art, design projects, trips, or just chasing an aesthetic.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "9–12 válogatott fotó",
+        "quote": "it picks 9 to 12 standout Unsplash photos",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kollázs, színpaletta, fotósok feltüntetése",
+        "quote": "a collage image and a shareable page with a matching color palette, keywords and a credit for every photographer",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Unsplash",
+        "quote": "Unsplash photos",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "koi",
+    "name": "KOI",
+    "author": "Leo",
+    "handle": "@piccionenter",
+    "postUrl": "https://x.com/piccionenter/status/2116205760723968453",
+    "postedAt": "2026-10-30T16:29:05Z",
+    "templateUrl": "https://x.ai/bot/eE6cohFaLXY0YDoua6mJo",
+    "templatePageReadable": true,
+    "fetched": "2026-10-31",
+    "summaryHu": "A napod élő, háromdimenziós koitóként. A sablon leírása szerint a Gmail-fiókodból és a Google Naptáradból élő 3D-s koitavat készít, amelyet minden reggel meglátogathatsz: az események lótuszként lebegnek, az e-mail-szálak koiként úsznak, a sürgős ügyek pedig lampionként és papírhajóként világítanak. A készítő posztja szerint ezzel nyerte meg a varsói Grok Bot Meetupot.",
+    "postQuote": "Last night I’ve Won the Grok Bot Meetup in Warsaw.",
+    "templateQuote": "Your life, quietly alive. KOI turns your Gmail and Google Calendar into a living 3D koi pond you visit each morning: events float as lotuses, email threads swim as koi, and urgent things glow as lanterns and paper boats.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Napi áttekintés vizuális koitóként",
+        "quote": "events float as lotuses, email threads swim as koi, and urgent things glow as lanterns and paper boats",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Gmail",
+        "quote": "turns your Gmail and Google Calendar",
+        "from": "template"
+      },
+      {
+        "labelHu": "Google Naptár",
+        "quote": "Gmail and Google Calendar",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "minecraft-coach",
+    "name": "Minecraft Coach",
+    "author": "Byte Cipher",
+    "handle": "@bytecipher01",
+    "postUrl": "https://x.com/bytecipher01/status/2116103743397568735",
+    "postedAt": "2026-10-30T09:43:42Z",
+    "templateUrl": "https://x.ai/bot/GMAYDX9GFKrjBtaRaFrNj",
+    "templatePageReadable": true,
+    "fetched": "2026-10-31",
+    "summaryHu": "Minecraft-segéd Java és Bedrock kiadáshoz. A sablon leírása szerint megtervezi a túlélést, az építményeket, a farmokat és a redstone-szerkezeteket, és először megkérdezi, melyik kiadással játszol; minden válaszában megadja a játékverziót, az ellenőrzés dátumát és a forrást, és csak akkor tanácsol vagy cselekszik, ha kéred. A készítő posztja szerint ez az első Grok Botja, még teszteli, és visszajelzést kér.",
+    "postQuote": "My 1st GrokBot @bot Minecraft coach is live",
+    "templateQuote": "Plans your survival, builds, farms and redstone for Java or Bedrock, and asks which edition you play first. Every answer names the game version, check date and source, and it only advises and acts when you ask.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Túlélés, építés, farmok, redstone",
+        "quote": "Plans your survival, builds, farms and redstone for Java or Bedrock",
+        "from": "template"
+      },
+      {
+        "labelHu": "Verzió, dátum és forrás minden válaszban",
+        "quote": "Every answer names the game version, check date and source",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő szerint még tesztelés alatt áll, és nem tudja, hol hibázhat."
+  },
+  {
+    "slug": "scam-check-for-x",
+    "name": "Scam Check for X",
+    "author": "brflux (aka brett)",
+    "handle": "@brflux",
+    "postUrl": "https://x.com/brflux/status/2116285924568928489",
+    "postedAt": "2026-10-30T21:47:37Z",
+    "templateUrl": "https://x.ai/bot/s0IwjnUv7BX_bI8Q4UR2j",
+    "templatePageReadable": true,
+    "fetched": "2026-10-31",
+    "summaryHu": "Átverés-e ez az X-poszt? A sablon leírása szerint bemásolod bármely X-poszt linkjét, és egyértelmű ítéletet kapsz arról, hogy átverés, figyelemvadász tartalom (engagement bait) vagy valódi-e, a gyanús jelek felsorolásával, valamint egy rövid jelentéssel, amelyet visszajelzésként elküldhetsz. A készítő posztja szerint ingyen kipróbálható.",
+    "postQuote": "Made a bot that sniffs out X scams",
+    "templateQuote": "Paste any X post link and get a plain verdict on whether it's a scam, engagement bait, or legit, with the red flags spelled out and a short report you can send to feedback.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Ítélet: átverés, figyelemvadászat vagy valódi",
+        "quote": "whether it's a scam, engagement bait, or legit",
+        "from": "template"
+      },
+      {
+        "labelHu": "Gyanús jelek és rövid jelentés",
+        "quote": "with the red flags spelled out and a short report you can send to feedback",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Az ítélet tájékoztató jellegű, nem perdöntő.",
+    "relatedTemplates": [
+      {
+        "slug": "scam-text-email-checker",
+        "name": "Scam Text & Email Checker",
+        "noteHu": "A közösségi Scam Text & Email Checker gyanús SMS-eket, e-maileket és DM-eket ellenőriz; a Scam Check for X kifejezetten X-posztok linkjét vizsgálja."
+      }
+    ]
   }
 ]
