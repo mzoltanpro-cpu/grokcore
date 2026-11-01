@@ -5811,5 +5811,404 @@
         "noteHu": "A közösségi Scam Text & Email Checker gyanús SMS-eket, e-maileket és DM-eket ellenőriz; a Scam Check for X kifejezetten X-posztok linkjét vizsgálja."
       }
     ]
+  },
+  {
+    "slug": "child-safety-coach",
+    "name": "🔐 Child Safety Coach",
+    "author": "Phil",
+    "handle": "@Phil_Holland",
+    "postUrl": "https://x.com/Phil_Holland/status/2116552290752409880",
+    "postedAt": "2026-10-31T15:26:04Z",
+    "templateUrl": "https://x.ai/bot/MCxw03O1xLB7lH7uX0W5u",
+    "templatePageReadable": true,
+    "fetched": "2026-11-01",
+    "summaryHu": "Szülői segéd a gyerek telefonjának biztonságos beállításához. A sablon leírása szerint végigvezeti a szülőt egy gyerek iPhone-jának vagy Samsung/Android telefonjának, valamint a rajta lévő AI-alkalmazásoknak a lezárásán, majd később visszatér, hogy a beállítások ne álljanak vissza észrevétlenül. A készítő posztja szerint előbb a Screen Time (Képernyőidő) vagy a Family Link beállítását mutatja meg, utána az AI-alkalmazásokét, és rendszerfrissítések után újra ellenőrizteti a beállításokat.",
+    "postQuote": "It circles back after OS updates so settings don’t silently revert.",
+    "templateQuote": "Helps a parent lock down a child’s iPhone or Samsung/Android and the AI apps on it, then circle back so settings don’t silently revert. Calm coach for device controls and plain AI safety — not a message scanner.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Gyerektelefon lezárása (iPhone, Samsung/Android) és az AI-alkalmazások beállítása",
+        "quote": "lock down a child’s iPhone or Samsung/Android and the AI apps on it",
+        "from": "template"
+      },
+      {
+        "labelHu": "Lépésenkénti útmutató a Screen Time / Family Link beállításához",
+        "quote": "Walkthroughs to lock down a kid’s iPhone or Samsung/Android — Screen Time / Family Link, then the AI apps on top.",
+        "from": "post"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Visszaellenőrzés, hogy a beállítások ne álljanak vissza",
+        "quote": "then circle back so settings don’t silently revert",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint nem üzenetszkenner: az eszközbeállításokban és az alapvető AI-biztonságban segít, a gyerek üzeneteit nem olvassa. A készítő posztja szerint az ötlet @k_holl62350-tól származik."
+  },
+  {
+    "slug": "networking-match-scout",
+    "name": "Networking Match Scout",
+    "author": "Hades",
+    "handle": "@0xHvdes",
+    "postUrl": "https://x.com/0xHvdes/status/2116583243830960417",
+    "postedAt": "2026-10-31T17:29:04Z",
+    "templateUrl": "https://x.ai/bot/LC1vyxrS0uaZs2fBDJfCS",
+    "templatePageReadable": true,
+    "fetched": "2026-11-01",
+    "summaryHu": "Napi kapcsolatajánló: kivel érdemes megismerkedned. A sablon leírása szerint naponta 2–3 valóban releváns embert talál neked a nyilvános X-aktivitás és a web alapján, bármilyen szakterületen, és mindegyiknél megírja, miért illetek össze, valamint egy természetes első lépést a kapcsolatfelvételhez. A készítő szálának nyitóposztja szerint beolvassa a posztjaidat, és pár kérdést tesz fel arról, kikkel szeretnél megismerkedni; a linket a szál következő posztjában adta meg.",
+    "postQuote": "add it to your agent stack, answer a few quick questions, and ask it to find you 2-3+ people worth knowing every morning.",
+    "templateQuote": "Finds 2–3 genuinely relevant people for you to meet each day from public X activity and the web, in any niche, with why you fit and one natural first move for each.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Napi 2–3 releváns ember az X-ről és a webről",
+        "quote": "Finds 2–3 genuinely relevant people for you to meet each day from public X activity and the web",
+        "from": "template"
+      },
+      {
+        "labelHu": "Miért illetek össze, és mi legyen az első lépés",
+        "quote": "with why you fit and one natural first move for each",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Reggeli ajánlás",
+        "quote": "ask it to find you 2-3+ people worth knowing every morning",
+        "from": "post"
+      }
+    ],
+    "integrations": [
+      {
+        "labelHu": "X (nyilvános aktivitás)",
+        "quote": "from public X activity and the web",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A bot csak javasol; a kapcsolatfelvételt neked kell megtenned."
+  },
+  {
+    "slug": "citation-counter",
+    "name": "Citation Counter",
+    "author": "Szilágyi Pál",
+    "handle": "@szilagyipal",
+    "postUrl": "https://x.com/szilagyipal/status/2116543541962752123",
+    "postedAt": "2026-10-31T14:51:18Z",
+    "templateUrl": "https://x.ai/bot/SfYpLpmhHaa5r3kRflLnj",
+    "templatePageReadable": true,
+    "fetched": "2026-11-01",
+    "summaryHu": "Kutatóknak: publikációs profilok szinkronban tartása és hivatkozásfigyelés. A sablon leírása szerint csatlakozik az országod hivatalos publikációs és hivatkozási nyilvántartásához, ehhez igazítja a Google Scholar-, Academia.edu-, ORCID- és ResearchGate-profilodat, és hetente jelentést küld az új hivatkozásokról és az SSRN-statisztikáidról. A készítő (magyar fejlesztő) posztja szerint ez a második botja, és folyamatosan követi a munkáidra érkező hivatkozásokat.",
+    "postQuote": "Here is my second bot, for academics: it connects to your national register",
+    "templateQuote": "Connects to your country's official publication and citation register, keeps Google Scholar, Academia.edu, ORCID and ResearchGate in sync with it, and sends a weekly update on new citations and your SSRN stats. For academics who want accurate profiles without the busywork.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Profilok szinkronizálása a hivatalos nyilvántartással",
+        "quote": "keeps Google Scholar, Academia.edu, ORCID and ResearchGate in sync with it",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Heti jelentés az új hivatkozásokról és az SSRN-statisztikákról",
+        "quote": "sends a weekly update on new citations and your SSRN stats",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "labelHu": "Az ország hivatalos publikációs és hivatkozási nyilvántartása",
+        "quote": "Connects to your country's official publication and citation register",
+        "from": "template"
+      },
+      {
+        "labelHu": "Google Scholar, Academia.edu, ORCID, ResearchGate",
+        "quote": "Google Scholar, Academia.edu, ORCID and ResearchGate",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem nevezi meg, mely országok nyilvántartásaival működik; hogy a magyar MTMT-vel működik-e, a forrásból nem derül ki."
+  },
+  {
+    "slug": "quit-coach",
+    "name": "Quit Coach",
+    "author": "Patrick Nelson",
+    "handle": "@PatrickNelson00",
+    "postUrl": "https://x.com/PatrickNelson00/status/2116697149463568706",
+    "postedAt": "2026-11-01T01:01:41Z",
+    "templateUrl": "https://x.ai/bot/fee8FVjjoFIN5Ff_KLwXK",
+    "templatePageReadable": true,
+    "fetched": "2026-11-01",
+    "summaryHu": "Leszokássegítő coach dohányosoknak. A sablon leírása szerint egyetlen emberrel foglalkozik: segít végleg letenni a cigarettát, kijelölt leszokási nappal, a kiváltó helyzetek feltérképezésével, sóvárgáskezelési technikákkal és napi gyakorlatokkal; a megcsúszást adatnak tekinti, nem kudarcnak, és soha nem szégyenít meg. A füstmentes napokat és a megtakarított pénzt a naplózott időpontokból számolja. A készítő posztja szerint ő maga is ezzel szokott le, és a bot kognitív viselkedésterápiás (CBT) stílusú tervet készít.",
+    "postQuote": "QC will plan a full CBT style quit plan with you and guide you through daily exercises leading up to your quit day.",
+    "templateQuote": "Quit-smoking coach for one person, who tells you their name, location and time zone in the first chat. Your one job is helping them quit for good and stay quit.\n\nHow you work:\n- Run the skills: quit-intake on first contact, quit-prep-curriculum for the daily plan, quit-log-and-progress whenever they report a smoke or ask about progress, quit-urge-and-slip-rescue when they have an urge, feel bored, or slip. Follow the written skills; don't improvise daily content.\n- Ask a few questions at a time, never a questionnaire.\n- Treat past quit attempts as proof they can do it. A slip is data, not failure. Never shame or lecture.\n- Evidence-based only: a set quit date, trigger mapping and swaps, craving tactics, nicotine replacement (patch plus gum or lozenge) and prescription options (varenicline, bupropion) as things to discuss with their doctor. Respect a choice to skip nicotine replacement without pushing. Mention free support: 1-800-QUIT-NOW.\n- You are not a doctor. Medication, dosing and symptoms such as lightheadedness go to their clinician or pharmacist.\n- Never invent a number, stat or source. Say when you don't have one. Compute days smoke-free, time since last cigarette and money saved from logged timestamps, never by guessing. Correct your own mistakes plainly.\n- Offer routines in one sentence (daily prep exercise at their free hour until quit day, daily check-ins in week 1, spaced check-ins in weeks 2 to 4, optional nudges before trigger times, milestone messages at days 3, 7, 14 and 30). Create one only after an explicit yes.\n- Talk like a warm, plain-spoken friend. Keep replies short.\n\nAnti-jobs: you don't give medical advice, don't shame, don't contact anyone else (including family) unless they ask, and don't create a routine without a yes. Everything they tell you stays private.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Leszokási terv: leszokási nap, kiváltó helyzetek, sóvárgáskezelés",
+        "quote": "a set quit date, trigger mapping and swaps, craving tactics",
+        "from": "template"
+      },
+      {
+        "labelHu": "Megcsúszás után is támogat, szégyenítés nélkül",
+        "quote": "A slip is data, not failure. Never shame or lecture.",
+        "from": "template"
+      },
+      {
+        "labelHu": "Füstmentes napok és megtakarított pénz számolása",
+        "quote": "Compute days smoke-free, time since last cigarette and money saved from logged timestamps",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Napi gyakorlat a leszokási napig, majd ritkuló bejelentkezések (csak a te igenedre)",
+        "quote": "daily prep exercise at their free hour until quit day, daily check-ins in week 1, spaced check-ins in weeks 2 to 4",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "Nem orvos: a gyógyszerekről és tünetekről a sablon szerint az orvossal vagy gyógyszerésszel kell egyeztetni. A sablonban említett ingyenes segélyvonal (1-800-QUIT-NOW) amerikai szám."
+  },
+  {
+    "slug": "photolibbot",
+    "name": "PhotoLibBot",
+    "author": "Joe Magyar",
+    "handle": "@j_magyar",
+    "postUrl": "https://x.com/j_magyar/status/2116794202516582833",
+    "postedAt": "2026-11-01T07:27:20Z",
+    "templateUrl": "https://x.ai/bot/Z3pD_vxqPizBArbO3KAsp",
+    "templatePageReadable": true,
+    "fetched": "2026-11-01",
+    "summaryHu": "Rendet tesz a szétszórt fotóid és videóid között. A sablon leírása szerint régi meghajtókról, telefonokról, zip-fájlokból és számítógépes mentésekből több ezer fotót és videót rendez egyetlen, dátum szerint rendezett, duplikátummentes könyvtárba, minden lépést ellenőrizve és naplózva, a végén pedig egy ellenőrzött fő példányt és két ellenőrzött biztonsági mentést készít. A készítő posztja szerint fotó- és videórendező Grok Botként osztotta meg kipróbálásra.",
+    "postQuote": "Please try out my photo and video organizing Grok Bot",
+    "templateQuote": "Turns thousands of scattered photos and videos from old drives, phones, zips and PC backups into one dated, de-duplicated library, with every step verified and logged. It finishes with a verified master copy and two verified backups.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Egyetlen, dátum szerint rendezett, duplikátummentes könyvtár",
+        "quote": "into one dated, de-duplicated library",
+        "from": "template"
+      },
+      {
+        "labelHu": "Ellenőrzött fő példány és két ellenőrzött mentés",
+        "quote": "It finishes with a verified master copy and two verified backups.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem részletezi, milyen tárhelyre készülnek a mentések."
+  },
+  {
+    "slug": "xy-stream-recap",
+    "name": "XY Stream Recap",
+    "author": "XPixel",
+    "handle": "@xpixeladventure",
+    "postUrl": "https://x.com/xpixeladventure/status/2116700435117486316",
+    "postedAt": "2026-11-01T01:14:44Z",
+    "templateUrl": "https://x.ai/bot/Wn-DMs4QF5z9KYxpszPbR",
+    "templatePageReadable": true,
+    "fetched": "2026-11-01",
+    "summaryHu": "Összefoglaló élő adásokról, X Spaces-beszélgetésekről és videókról. A sablon leírása szerint elküldöd egy befejezett YouTube- vagy X-élőadás, egy rögzített X Space vagy bármely YouTube- vagy X-videó, podcast linkjét, és teljes összefoglalót kapsz, a közönség kérdéseit és a rájuk adott válaszokat, valamint időbélyeges témalistát. A készítő posztja szerint nem kell hozzá bejelentkezni.",
+    "postQuote": "drop a link to a finished stream, Space or YouTube video and get the full summary, every audience Q&A and a topic list with timestamps. No login.",
+    "templateQuote": "Recaps finished livestreams on YouTube and X, recorded X Spaces, and any other video or podcast on YouTube or X. Send a link and get a full summary, the audience questions and answers, and a topic list with timestamps.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Teljes összefoglaló egy linkből",
+        "quote": "Send a link and get a full summary",
+        "from": "template"
+      },
+      {
+        "labelHu": "Közönségkérdések és válaszok, időbélyeges témalista",
+        "quote": "the audience questions and answers, and a topic list with timestamps",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "YouTube és X (élő adások, Spaces, videók)",
+        "quote": "Recaps finished livestreams on YouTube and X, recorded X Spaces",
+        "from": "template"
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "podsum",
+        "name": "PodSum",
+        "noteHu": "A közösségi PodSum podcast- és videólinkekből készít összefoglalót; az XY Stream Recap élő adásokra és X Spaces-felvételekre is kitér, a közönség kérdéseivel és időbélyeges témalistával."
+      }
+    ]
+  },
+  {
+    "slug": "family-security-coach",
+    "name": "Family Security Coach",
+    "author": "Eduardo Muth Martinez",
+    "handle": "@EduMuthMartinez",
+    "postUrl": "https://x.com/EduMuthMartinez/status/2116709361003217395",
+    "postedAt": "2026-11-01T01:50:12Z",
+    "templateUrl": "https://x.ai/bot/WfGstPAic3rkxpFBCzy-m",
+    "templatePageReadable": true,
+    "fetched": "2026-11-01",
+    "summaryHu": "Türelmes biztonsági coach a családnak. A sablon leírása szerint napi 15 perces lépésekben segít bebiztosítani a fiókjaidat, a telefonodat és a pénzügyeidet, minden reggel csendben átnézi a megbízható forrásokat új fenyegetések után kutatva, és nyomtatható útmutatókkal, valamint általad elküldhető üzenetvázlatokkal segít megvédeni a családodat. Soha nem kéri el a jelszavaidat. A készítő szálában a sablon mellett egy saját, magyarázó videó is szerepel.",
+    "postQuote": "Family Security Coach (Grok Bot template):",
+    "templateQuote": "A patient coach that helps you lock down your accounts, phone, and money one 15-minute step at a time, quietly checks trusted sources every morning for new threats, and helps you protect your family with printable guides and message drafts you send yourself. It never asks for your passwords.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Fiókok, telefon és pénzügyek bebiztosítása 15 perces lépésekben",
+        "quote": "lock down your accounts, phone, and money one 15-minute step at a time",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nyomtatható útmutatók és üzenetvázlatok a családnak",
+        "quote": "printable guides and message drafts you send yourself",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Reggeli fenyegetésfigyelés megbízható forrásokból",
+        "quote": "quietly checks trusted sources every morning for new threats",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint soha nem kéri el a jelszavaidat; az üzeneteket te magad küldöd el.",
+    "relatedTemplates": [
+      {
+        "slug": "scam-text-email-checker",
+        "name": "Scam Text & Email Checker",
+        "noteHu": "A közösségi Scam Text & Email Checker egy-egy gyanús üzenetet ellenőriz; a Family Security Coach lépésenként a fiókjaid és eszközeid védelmét erősíti meg."
+      }
+    ]
+  },
+  {
+    "slug": "game-deals-radar",
+    "name": "Game Deals Radar",
+    "author": "JPipo86",
+    "handle": "@JPipo86",
+    "postUrl": "https://x.com/JPipo86/status/2116530642473390088",
+    "postedAt": "2026-10-31T14:00:03Z",
+    "templateUrl": "https://x.ai/bot/l8tq3o7JcvC-YFV2HaHfu",
+    "templatePageReadable": true,
+    "fetched": "2026-11-01",
+    "summaryHu": "Játékakció-figyelő. A sablon leírása szerint naponta rövid összefoglalót küld az Xbox, PlayStation, Switch és Steam valódi, éppen élő akcióiról, és szól, ha egy kívánságlistádon lévő játék ára csökken; minden árat élőben ellenőriz, sosem találgat. A készítő (spanyol nyelvű) posztja szerint helyetted figyeli az árakat, ha nem akarod a megjelenés napján teljes áron megvenni a játékot.",
+    "postQuote": "Game Deals Radar vigila los precios por ti",
+    "templateQuote": "Sends a short daily roundup of real, live game sales across Xbox, PlayStation, Switch, and Steam, and pings you when a wishlist game drops in price. Every price is verified live, never guessed.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Élőben ellenőrzött árak",
+        "quote": "Every price is verified live, never guessed.",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Napi akció-összefoglaló",
+        "quote": "Sends a short daily roundup of real, live game sales across Xbox, PlayStation, Switch, and Steam",
+        "from": "template"
+      },
+      {
+        "labelHu": "Értesítés, ha egy kívánságlistás játék ára csökken",
+        "quote": "pings you when a wishlist game drops in price",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "labelHu": "Xbox, PlayStation, Switch, Steam",
+        "quote": "across Xbox, PlayStation, Switch, and Steam",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem részletezi, mely régió vagy ország boltjainak árait figyeli.",
+    "relatedTemplates": [
+      {
+        "slug": "deal-scout",
+        "name": "Deal Scout",
+        "noteHu": "A közösségi Deal Scout általános kívánságlista-árfigyelő; a Game Deals Radar kifejezetten konzol- és PC-játékok akcióit figyeli."
+      }
+    ]
+  },
+  {
+    "slug": "sneaker-scout",
+    "name": "Sneaker Scout",
+    "author": "TeslaAiGirl",
+    "handle": "@TeslaAiGirl",
+    "postUrl": "https://x.com/TeslaAiGirl/status/2116592800213115243",
+    "postedAt": "2026-10-31T18:07:02Z",
+    "templateUrl": "https://x.ai/bot/uo4PK9GMRrUhto5lqOcaw",
+    "templatePageReadable": true,
+    "fetched": "2026-11-01",
+    "summaryHu": "Személyes sneakervadász bármilyen márkához. A sablon leírása szerint figyeli az új megjelenéseket (drop), a ritka párokat és a használt, keresett darabokat a méretedben, és értesítést küld árakkal és linkekkel, emlékeztetőt a megjelenések előtt, valamint jelez, ha egy ár csökken. A készítő posztja szerint új és vintage darabokra is jó.",
+    "postQuote": "This bot is for new AND vintage finds.",
+    "templateQuote": "Your personal sneaker hunter for any brand. It tracks new drops, rare pairs and used grails in your size, and sends alerts with prices and links, drop reminders and price-drop alerts.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Új megjelenések, ritka és használt párok a méretedben",
+        "quote": "It tracks new drops, rare pairs and used grails in your size",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Értesítések árakkal és linkekkel, drop-emlékeztetők, árcsökkenés-jelzés",
+        "quote": "sends alerts with prices and links, drop reminders and price-drop alerts",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "Ugyanez a készítő egy csak Nike Air Jordan megjelenésekre szabott változatot is megosztott (Jordan Hunter)."
+  },
+  {
+    "slug": "holiday-bot",
+    "name": "Holiday Bot",
+    "author": "Brett",
+    "handle": "@Bro7388",
+    "postUrl": "https://x.com/Bro7388/status/2116658519642362280",
+    "postedAt": "2026-10-31T22:28:11Z",
+    "templateUrl": "https://x.ai/bot/wR8vyi6pNYipW8-vJJ8n-",
+    "templatePageReadable": true,
+    "fetched": "2026-11-01",
+    "summaryHu": "Egész éves ünnepi segéd. A sablon leírása szerint barátságosan visszaszámol minden ünnepig (például „12 nap karácsonyig”), dátumhoz kötött, kíméletes emlékeztetőket, ötletes tippeket és ajándékötleteket küld, és ha kéred, egy kis jelmezes képet is készít. Bármikor elhalaszthatod vagy kikapcsolhatod. A készítő posztja szerint szezonban naponta egy rövid üzenetet küld.",
+    "postQuote": "made a holiday bot for grok bot.",
+    "templateQuote": "🎃🦃🎄 your holiday helper for the whole year. a friendly countdown to every holiday (\"12 days until christmas\"), gentle date-based reminders, fun tips and gift ideas 🎁 want a tiny costume picture too? totally optional 🎭 just say snooze 😴 or off anytime",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Visszaszámlálás minden ünnepig",
+        "quote": "a friendly countdown to every holiday",
+        "from": "template"
+      },
+      {
+        "labelHu": "Tippek és ajándékötletek",
+        "quote": "fun tips and gift ideas",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Szezonban napi egy rövid üzenet",
+        "quote": "sends one short note a day in season",
+        "from": "post"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A forrás nem részletezi, mely ország ünnepeit követi.",
+    "relatedTemplates": [
+      {
+        "slug": "birthday-message-bot",
+        "name": "Birthday Message Bot",
+        "noteHu": "A közösségi Birthday Message Bot születésnapi üzenetekben segít; a Holiday Bot az ünnepekig számol vissza."
+      }
+    ]
   }
 ]
