@@ -6210,5 +6210,362 @@
         "noteHu": "A közösségi Birthday Message Bot születésnapi üzenetekben segít; a Holiday Bot az ünnepekig számol vissza."
       }
     ]
+  },
+  {
+    "slug": "explain-like-im-five",
+    "name": "Explain Like I'm Five",
+    "author": "Rich Silver",
+    "handle": "@RichSilver",
+    "postUrl": "https://x.com/RichSilver/status/2116924413593457027",
+    "postedAt": "2026-11-01T16:04:45Z",
+    "templateUrl": "https://x.ai/bot/76OxtIBZQQ_WpwaZcq4_a",
+    "templatePageReadable": true,
+    "fetched": "2026-11-02",
+    "summaryHu": "Magyarázó bot, amely bármit a nulláról kezdve elmagyaráz. A sablon leírása szerint témákat, linkeket, tudományos cikkeket és kódot bont le úgy, mintha egy nagyon okos ötévesnek magyarázná; van egy „életkor-” és egy „fölényesség-” szabályzója, és alkalmazkodik ahhoz, ahogyan te a legkönnyebben tanulsz. A készítő posztja szerint elég bemásolni egy linket, egy cikket, egy kódrészletet vagy bármilyen ijesztő szakszót.",
+    "postQuote": "Paste it a link, a paper, code, or any scary word, and it breaks it down from zero.",
+    "templateQuote": "A smug-genius explainer who breaks down anything (topics, links, papers, code) from zero, like you're a very smart five-year-old. It has an age dial and a smug dial, and it adapts to how your brain likes to learn.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Bármi elmagyarázása a nulláról (téma, link, cikk, kód)",
+        "quote": "breaks down anything (topics, links, papers, code) from zero",
+        "from": "template"
+      },
+      {
+        "labelHu": "Állítható életkor és fölényesség",
+        "quote": "It has an age dial and a smug dial",
+        "from": "template"
+      },
+      {
+        "labelHu": "Alkalmazkodik a tanulási stílusodhoz",
+        "quote": "it adapts to how your brain likes to learn",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A bot szándékosan „fölényes zseni” hangnemben beszél; a forrás nem említ időzített rutint."
+  },
+  {
+    "slug": "study-cartoons",
+    "name": "Study Cartoons",
+    "author": "Marc Saint-Jour",
+    "handle": "@MSaintjour",
+    "postUrl": "https://x.com/MSaintjour/status/2117112962867503487",
+    "postedAt": "2026-11-02T04:33:59Z",
+    "templateUrl": "https://x.ai/bot/U8o9QCutuyeFJ9Jdbrqui",
+    "templatePageReadable": true,
+    "fetched": "2026-11-02",
+    "summaryHu": "Tanulási segédletből rövid rajzfilm, szülőknek és diákoknak. A sablon leírása szerint lefotózod a tanulási segédletet (study guide), és egy rövid rajzfilmet kapsz, amely bármilyen tantárgyat és évfolyamot feldolgoz, a végén a kulcsfogalmak összefoglalójával. A készítő posztja szerint a rajzfilm sorrendben követi a segédletet. Narrált változathoz hangszolgáltatás kell, de van teljesen feliratos változat is, külön fiók nélkül.",
+    "postQuote": "Your kid snaps a photo of their study guide, and it turns into a cartoon they'll actually want to watch.",
+    "templateQuote": "Send a photo of your study guide and get a short cartoon that teaches it, for any subject and grade, with a key terms recap. Narrated with a voice service, or a full caption version with no extra account.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Fotóból rövid tanító rajzfilm, bármely tantárgyhoz és évfolyamhoz",
+        "quote": "Send a photo of your study guide and get a short cartoon that teaches it, for any subject and grade",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kulcsfogalmak összefoglalója a végén",
+        "quote": "ends with a key-terms recap",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Hangszolgáltatás a narrációhoz (opcionális; feliratos változat fiók nélkül)",
+        "quote": "Narrated with a voice service, or a full caption version with no extra account.",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem nevezi meg a hangszolgáltatást, és nem írja le, hogyan kezeli a magyar nyelvű segédleteket.",
+    "relatedTemplates": [
+      {
+        "slug": "study-buddy",
+        "name": "Study Buddy",
+        "noteHu": "A közösségi Study Buddy jegyzetekből tanulási tervet, kártyákat és napi kvízt készít; a Study Cartoons a segédletből rövid rajzfilmet."
+      }
+    ]
+  },
+  {
+    "slug": "meal-planner",
+    "name": "Meal planner",
+    "author": "Rachel V",
+    "handle": "@RachelVT42",
+    "postUrl": "https://x.com/RachelVT42/status/2117014246332465206",
+    "postedAt": "2026-11-01T22:01:43Z",
+    "templateUrl": "https://x.ai/bot/04sgrpvtAre-Khtz6KDyg",
+    "templatePageReadable": true,
+    "fetched": "2026-11-02",
+    "summaryHu": "Heti menütervező és élelmiszercímke-olvasó felnőtteknek. A sablon leírása szerint a konyhádhoz, a kamrádhoz és a költségvetésedhez igazítva tervezi meg a heti étkezéseket, és árazott, a bolti sorok szerint rendezett bevásárlólistát készít. A készítő posztja szerint egészséges étkezéstervezésre szánta, például egy halloweeni nassolás után.",
+    "postQuote": "my grok bot template on healthy meal planning",
+    "templateQuote": "A meal planner and food label reader for adults. It plans weekly meals around your kitchen, pantry and budget, and builds a priced, aisle-sorted grocery list.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Heti menü a konyhád, a kamrád és a költségvetésed szerint",
+        "quote": "plans weekly meals around your kitchen, pantry and budget",
+        "from": "template"
+      },
+      {
+        "labelHu": "Árazott, sorok szerint rendezett bevásárlólista",
+        "quote": "builds a priced, aisle-sorted grocery list",
+        "from": "template"
+      },
+      {
+        "labelHu": "Élelmiszercímkék értelmezése",
+        "quote": "food label reader",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem részletezi, mely boltok árait használja; a magyar boltokra vonatkozóan nincs adat.",
+    "relatedTemplates": [
+      {
+        "slug": "chef-ramsey",
+        "name": "Chef Ramsey",
+        "noteHu": "A közösségi Chef Ramsey szintén heti menüt tervez és bevásárol; a Meal planner a kamrakészletre, a költségvetésre és a címkék értelmezésére is figyel."
+      }
+    ]
+  },
+  {
+    "slug": "political-spam-blocker",
+    "name": "Political Spam Blocker",
+    "author": "Sawyer Merritt",
+    "handle": "@SawyerMerritt",
+    "postUrl": "https://x.com/SawyerMerritt/status/2117092773996224702",
+    "postedAt": "2026-11-02T03:13:45Z",
+    "templateUrl": "https://x.ai/bot/cU45-LD3a0tBwILes2aLL",
+    "templatePageReadable": true,
+    "fetched": "2026-11-02",
+    "summaryHu": "Politikai és kampányspam-szűrő. A sablon leírása szerint kitakarítja a politikai és választási spamet a postafiókodból, leiratkoztat a kampánylistákról, kérésre automatikusan „STOP” választ küld a politikai SMS-ekre, és segít letiltani a kampányhívásokat, bárhol is élsz. A készítő posztja szerint az e-mailes spamet blokkolja, a kampány-SMS-listákról leiratkoztat, és a nem kívánt kampányhívásokat is blokkolja.",
+    "postQuote": "blocks political/election spam from your email, unsubscribes you from campaign text lists, blocks unwanted campaign phone calls",
+    "templateQuote": "Clears political and election spam out of your inbox, gets you off campaign lists, can auto-reply STOP to political texts, and helps you shut off campaign calls, wherever you live.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Politikai és választási spam eltávolítása a postafiókból",
+        "quote": "Clears political and election spam out of your inbox",
+        "from": "template"
+      },
+      {
+        "labelHu": "Leiratkozás a kampánylistákról",
+        "quote": "gets you off campaign lists",
+        "from": "template"
+      },
+      {
+        "labelHu": "Automatikus „STOP” válasz a politikai SMS-ekre (opcionális)",
+        "quote": "can auto-reply STOP to political texts",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kampányhívások letiltása",
+        "quote": "helps you shut off campaign calls",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő amerikai, és a „STOP” válasz amerikai gyakorlat; a sablon szerint bárhol működik, de a forrás nem részletezi a magyar viszonyokat. A szöveg a készítő egy válaszposztjából származik."
+  },
+  {
+    "slug": "ablelatch",
+    "name": "AbleLatch",
+    "author": "CaliX",
+    "handle": "@CaliLumberJack",
+    "postUrl": "https://x.com/CaliLumberJack/status/2116983617398472768",
+    "postedAt": "2026-11-01T20:00:00Z",
+    "templateUrl": "https://x.ai/bot/M6gJAA-Hlh1u3rcwychpu",
+    "templatePageReadable": true,
+    "fetched": "2026-11-02",
+    "summaryHu": "Ingyenes napi segéd fogyatékossággal élőknek és korlátozott beviteli lehetőségű felhasználóknak. A sablon leírása szerint számozott menükkel dolgozik, amelyek szemmel vezérléssel, kapcsolóval, hanggal, AAC-eszközzel (alternatív és augmentatív kommunikáció), agy–számítógép interfésszel (BCI) és gondozói segítséggel is használhatók, bármilyen nyelven.",
+    "postQuote": "AbleLatch: a free SI template for people with disabilities and limited input.",
+    "templateQuote": "A free daily SI helper for people with disabilities and limited input: number menus that work with eye-gaze, switch, voice, AAC, BCI and caregivers, in any language.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Számozott menük korlátozott beviteli lehetőséghez",
+        "quote": "number menus that work with eye-gaze, switch, voice, AAC, BCI and caregivers",
+        "from": "template"
+      },
+      {
+        "labelHu": "Bármilyen nyelven",
+        "quote": "in any language",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő posztja egy heti összefoglaló, amely több sablonját is felsorolja; a sablon részletes működését a forrás nem írja le."
+  },
+  {
+    "slug": "inbox-janitor",
+    "name": "Inbox Janitor",
+    "author": "Lian",
+    "handle": "@lianlian00",
+    "postUrl": "https://x.com/lianlian00/status/2116860426311159834",
+    "postedAt": "2026-11-01T11:50:29Z",
+    "templateUrl": "https://x.ai/bot/9K024ry4Cm8YMKSINDX0W",
+    "templatePageReadable": true,
+    "fetched": "2026-11-02",
+    "summaryHu": "Óvatos postafiók-takarító Gmailhez és Outlookhoz. A sablon leírása szerint a jóváhagyásod után a kukába mozgatja a kéretlen, spam- és adathalász leveleket, kilistázza az előfizetéseidet, nyomon követi, mely számlák vannak kifizetve, és szól a csalásgyanús és a fontos levelekről. Soha nem küld e-mailt, és soha nem üríti a kukát. A készítő posztja szerint a több mint 700 levelét 6 perc alatt rendbe tette.",
+    "postQuote": "my inbox had 700+ emails. I created a bot to cleaned it in 6 minutes.",
+    "templateQuote": "A careful email assistant for your Gmail or Outlook inboxes. It moves junk, spam and phishing to trash after you approve, lists your subscriptions, tracks which bills are paid, and alerts you to fraud and important mail. It never sends email and never empties your trash.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kéretlen, spam- és adathalász levelek a kukába (jóváhagyás után)",
+        "quote": "It moves junk, spam and phishing to trash after you approve",
+        "from": "template"
+      },
+      {
+        "labelHu": "Előfizetések listázása, kifizetett számlák követése",
+        "quote": "lists your subscriptions, tracks which bills are paid",
+        "from": "template"
+      },
+      {
+        "labelHu": "Figyelmeztetés csalásra és fontos levelekre",
+        "quote": "alerts you to fraud and important mail",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Gmail vagy Outlook",
+        "quote": "for your Gmail or Outlook inboxes",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A sablon leírása szerint soha nem küld e-mailt, és soha nem üríti a kukát.",
+    "relatedTemplates": [
+      {
+        "slug": "inbox-manager",
+        "name": "Inbox Manager",
+        "noteHu": "A közösségi Inbox Manager hetente a legtöbb levelet küldő feladókat rendezi; az Inbox Janitor a spamet és az adathalászatot takarítja, és a számlákat is követi."
+      }
+    ]
+  },
+  {
+    "slug": "butubot",
+    "name": "ButuBot",
+    "author": "Pete Biggam",
+    "handle": "@petebiggam",
+    "postUrl": "https://x.com/petebiggam/status/2117058172016017739",
+    "postedAt": "2026-11-02T00:56:15Z",
+    "templateUrl": "https://x.ai/bot/1MJ49UuH3iBiT8inT8Wn9",
+    "templatePageReadable": true,
+    "fetched": "2026-11-02",
+    "summaryHu": "Személyes informatikai segítség Linuxos számítógéphez. A sablon leírása szerint beolvassa a rendszernaplókat, kideríti a lefagyások, összeomlások és illesztőprogram-hibák okát, és végigvezet a javításon. A készítő posztja szerint a javítás lépésről lépésre történik.",
+    "postQuote": "It reads your logs, diagnoses freezes, crashes and driver problems, and walks you through the fix step by step.",
+    "templateQuote": "Personal IT support for your Linux computer. It reads your logs, diagnoses freezes, crashes and driver problems, and walks you through the fixes.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Rendszernaplók elemzése",
+        "quote": "It reads your logs",
+        "from": "template"
+      },
+      {
+        "labelHu": "Lefagyások, összeomlások és illesztőprogram-hibák diagnózisa",
+        "quote": "diagnoses freezes, crashes and driver problems",
+        "from": "template"
+      },
+      {
+        "labelHu": "Lépésenkénti javítási útmutató",
+        "quote": "walks you through the fix step by step",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Csak Linuxhoz készült; a forrás nem részletezi, hogyan fér hozzá a naplókhoz.",
+    "relatedTemplates": [
+      {
+        "slug": "helpdesk",
+        "name": "helpdesk",
+        "noteHu": "A közösségi helpdesk bármilyen eszköz hibájában közérthetően segít; a ButuBot kifejezetten Linuxos gépekre és a naplók elemzésére szakosodott."
+      }
+    ]
+  },
+  {
+    "slug": "avatar-maker",
+    "name": "Avatar Maker",
+    "author": "Rafal",
+    "handle": "@rafalmmmmm",
+    "postUrl": "https://x.com/rafalmmmmm/status/2116925801744797700",
+    "postedAt": "2026-11-01T16:10:16Z",
+    "templateUrl": "https://x.ai/bot/WghK4WQ3X-n83_ovWq_zR",
+    "templatePageReadable": true,
+    "fetched": "2026-11-02",
+    "summaryHu": "Animált profilkép a botjaidnak. A sablon leírása szerint aranyos, animált profilképeket rajzol a Grok Bot avatarstílusában (egyszínű folt két szemvonással), és be is állítja őket a botodnak. A készítő posztja szerint az ő Kovalski nevű botja egy pingvint kapott, amely ugrál, csapkod a szárnyával és pislog, ismétlődő animációban.",
+    "postQuote": "It's a little penguin that hops, flaps and blinks on loop",
+    "templateQuote": "Draws cute animated profile pictures in the Grok Bot avatar style (a flat colour blob with two eye dashes) and sets them for your bot.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Animált profilkép Grok Bot-stílusban",
+        "quote": "Draws cute animated profile pictures in the Grok Bot avatar style",
+        "from": "template"
+      },
+      {
+        "labelHu": "A kép beállítása a botodnak",
+        "quote": "sets them for your bot",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "relatedMarketplace": [
+      {
+        "slug": "pfp-bot",
+        "name": "Pfp Bot",
+        "noteHu": "A hivatalos Marketplace Pfp Botja (Shub Gaur) a te fotódból készít Grokbot-stílusú ikont; az Avatar Maker animált profilképet rajzol és állít be a botjaidnak."
+      }
+    ]
+  },
+  {
+    "slug": "print-lab",
+    "name": "Print Lab",
+    "author": "scottexplores.base.eth",
+    "handle": "@ScottExplores29",
+    "postUrl": "https://x.com/ScottExplores29/status/2116948802468991031",
+    "postedAt": "2026-11-01T17:41:40Z",
+    "templateUrl": "https://x.ai/bot/xJijPjgnHPDHr9wDGS1tl",
+    "templatePageReadable": true,
+    "fetched": "2026-11-02",
+    "summaryHu": "3D-nyomtatási segéd. A sablon leírása szerint modelleket keres, tervez, szeletel és nyomtat ki neked, 3D-előnézettel, tálcatérképpel és minden nyomtatásnál kamerás ellenőrzéssel. A készítő posztja szerint a Bambu nyomtatóját kezeli: nyomtatás előtt 3D-nézetet és tálcaelrendezést mutat, követi, melyik AMS-helyen milyen filament van, és a nyomtatás végéig fotókat küld az állásról.",
+    "postQuote": "It designs the part, shows you a 3D view and the plate layout before anything prints, tracks which filament is in each AMS slot, and sends progress photos until it's done.",
+    "templateQuote": "A 3D printing assistant that finds, designs, slices and prints models for you, with 3D previews, plate maps and camera checks on every print.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Modell keresése, tervezése, szeletelése és nyomtatása",
+        "quote": "finds, designs, slices and prints models for you",
+        "from": "template"
+      },
+      {
+        "labelHu": "3D-előnézet, tálcatérkép, kamerás ellenőrzés",
+        "quote": "with 3D previews, plate maps and camera checks on every print",
+        "from": "template"
+      },
+      {
+        "labelHu": "Filament követése az AMS-helyeken",
+        "quote": "tracks which filament is in each AMS slot",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Bambu 3D-nyomtató",
+        "quote": "runs my Bambu printer",
+        "from": "post"
+      }
+    ],
+    "noteHu": "A forrás csak Bambu nyomtatót említ; más gyártók támogatásáról nincs adat."
   }
 ]
