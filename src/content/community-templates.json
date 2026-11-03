@@ -6567,5 +6567,277 @@
       }
     ],
     "noteHu": "A forrás csak Bambu nyomtatót említ; más gyártók támogatásáról nincs adat."
+  },
+  {
+    "slug": "shawty-short-form-creator",
+    "name": "Shawty · Short-Form creator",
+    "author": "Farzad 🇺🇸 🇮🇷",
+    "handle": "@farzyness",
+    "postUrl": "https://x.com/farzyness/status/2117412903460753526",
+    "postedAt": "2026-11-03T00:25:50Z",
+    "templateUrl": "https://x.ai/bot/uVuCGFzXGUoZ-pE4SDwnF",
+    "templatePageReadable": true,
+    "fetched": "2026-11-03",
+    "summaryHu": "Rövid, álló formátumú videókat készítő bot. A sablon leírása szerint bármilyen témáról, amit megadsz, gyorsan tényellenőrzött, hangalámondásos, animált függőleges rövid videót (Shorts) készít, és X-en érkező válaszkérésekre is tud egyedi rövid videóval felelni. A készítő posztjában nyilvános próbát hirdetett: aki a poszt alá videókérést írt, annak a bot kb. 20 percen belül videóval válaszolt.",
+    "postQuote": "My Grok Bot named Shawty will make a short video based on your request.",
+    "templateQuote": "Makes fact-checked, voiced, animated vertical Shorts on any topic you hand it, fast, and can answer X reply requests with a custom Short.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Tényellenőrzött, hangalámondásos, animált függőleges rövid videó bármilyen témáról",
+        "quote": "Makes fact-checked, voiced, animated vertical Shorts on any topic you hand it",
+        "from": "template"
+      },
+      {
+        "labelHu": "X-es válaszkérésekre egyedi rövid videóval felel",
+        "quote": "can answer X reply requests with a custom Short",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "X (válaszkérések fogadása)",
+        "quote": "can answer X reply requests",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A sablonlink a készítő saját, közvetlenül e poszt alá írt válaszában szerepel. A forrás nem nevezi meg, milyen videó- és hangszolgáltatást használ, és nem írja le, hogyan kezeli a magyar nyelvű kéréseket.",
+    "relatedTemplates": [
+      {
+        "slug": "video-studio",
+        "name": "Grok Bot Video Studio",
+        "noteHu": "A Video Studio teljes videóstúdió (magyarázóvideók, műsorvezetős rövidek, többjelenetes történetek, zeneklipek); a Shawty kifejezetten gyors, függőleges rövid videókra készült."
+      },
+      {
+        "slug": "explainer-video-bot",
+        "name": "Explainer Video bot",
+        "noteHu": "Az Explainer Video bot egy ötletből narrált magyarázóvideót készít; a Shawty rövid, álló Shorts-formátumra fókuszál."
+      }
+    ]
+  },
+  {
+    "slug": "routine-auditor",
+    "name": "Routine Auditor",
+    "author": "Brad Garland",
+    "handle": "@bradgarland",
+    "postUrl": "https://x.com/bradgarland/status/2117401689724727807",
+    "postedAt": "2026-11-02T23:41:16Z",
+    "templateUrl": "https://x.ai/bot/3y5FglJHBwwg_nR7TxFaI",
+    "templatePageReadable": true,
+    "fetched": "2026-11-03",
+    "summaryHu": "Havi rutin-ellenőr azoknak, akiknek sok időzített rutinjuk fut. A sablon leírása szerint havonta egyszer átnézi a rutinjaidat: naplózza az összes futást, megkeresi a hibás és a semmit sem csináló futásokat, osztályzatot ad minden rutinra, és lefaragási javaslatokat tesz, amelyeket te hagysz jóvá. A készítő posztja szerint 40-nél több rutinja közül a futások harmada nem talált semmi teendőt, ezért minden rutint a „marad, ritkítás, eseményindító vagy megszüntetés” szempontok szerint értékel.",
+    "postQuote": "So I built a monthly audit that grades every routine keep, slow down, trigger, or retire.",
+    "templateQuote": "Audits your routines once a month: logs every run, finds failures and runs that do nothing, grades each routine and proposes trims you approve. Made for people running 15 or more routines.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Minden futás naplózása, hibás és üres futások kiszűrése",
+        "quote": "logs every run, finds failures and runs that do nothing",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rutinok osztályozása, jóváhagyásra váró lefaragási javaslatok",
+        "quote": "grades each routine and proposes trims you approve",
+        "from": "template"
+      },
+      {
+        "labelHu": "Értékelés: marad, ritkítás, eseményindító vagy megszüntetés",
+        "quote": "grades every routine keep, slow down, trigger, or retire",
+        "from": "post"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Havi rutinaudit",
+        "quote": "Audits your routines once a month",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint 15 vagy több rutint futtatóknak készült; kevés rutinnál kisebb a haszna.",
+    "relatedTemplates": [
+      {
+        "slug": "usage-watch",
+        "name": "Usage Watch",
+        "noteHu": "A Usage Watch naptárra teszi a rutinokat a keretvisszaállásig, és a legnagyobb fogyasztókat jelzi; a Routine Auditor havonta osztályozza a rutinokat a futásnaplók alapján."
+      },
+      {
+        "slug": "script-this-routine",
+        "name": "Script This Routine",
+        "noteHu": "A Script This Routine a gépies ellenőrzéseket kis szkriptekre cseréli; a Routine Auditor csak értékel és javasol, a módosítást te hagyod jóvá."
+      }
+    ]
+  },
+  {
+    "slug": "genealogybot",
+    "name": "GenealogyBot",
+    "author": "Scott Jordan",
+    "handle": "@scottcjordan",
+    "postUrl": "https://x.com/scottcjordan/status/2117436402355094014",
+    "postedAt": "2026-11-03T01:59:13Z",
+    "templateUrl": "https://x.ai/bot/j6tQoM_OsdYKrG6mfttN_",
+    "templatePageReadable": true,
+    "fetched": "2026-11-03",
+    "summaryHu": "Családfakutató bot. A sablon leírása szerint gondos családtörténeti kutatóként generációról generációra visszafelé építi fel a családfádat, minden adatot valós forráshoz köt, és mindegyiket „bizonyított”, „valószínű” vagy „feltételezés” besorolással jelöli. A készítő posztja szerint először a saját gépén állította be, és az eredmény után sablont készített belőle.",
+    "postQuote": "So I made a Grok Bot Template out of it.",
+    "templateQuote": "A careful family-history researcher that builds your tree back generation by generation, tying every fact to a real source and grading it proven, probable, or a guess.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Családfa építése generációról generációra visszafelé",
+        "quote": "builds your tree back generation by generation",
+        "from": "template"
+      },
+      {
+        "labelHu": "Minden adat valós forráshoz kötve",
+        "quote": "tying every fact to a real source",
+        "from": "template"
+      },
+      {
+        "labelHu": "Megbízhatósági besorolás: bizonyított, valószínű, feltételezés",
+        "quote": "grading it proven, probable, or a guess",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem nevezi meg, mely anyakönyvi vagy levéltári adatbázisokat használja; magyar levéltári forrásokról nincs adat."
+  },
+  {
+    "slug": "media-kit",
+    "name": "Media Kit",
+    "author": "Shahrul",
+    "handle": "@shahrulestar",
+    "postUrl": "https://x.com/shahrulestar/status/2117511356958314746",
+    "postedAt": "2026-11-03T06:57:03Z",
+    "templateUrl": "https://x.ai/bot/ocYXtRqCo1Z3at7hDvWR8",
+    "templatePageReadable": true,
+    "fetched": "2026-11-03",
+    "summaryHu": "Fájl- és médiasegéd. A sablon leírása szerint bármilyen képet, videót, hangot, PDF-et vagy dokumentumot (vagy linket) küldhetsz neki, és megmondod, mit szeretnél: átalakítás, háttéreltávolítás, átméretezés, tömörítés, szövegfelismerés (OCR), vágás, összefűzés és más műveletek; az új fájlt visszaküldi. A készítő posztja szerint így nem kell véletlenszerű konvertáló oldalakat keresgélni.",
+    "postQuote": "No more hunting for random converter sites.",
+    "templateQuote": "Your file and media helper. Send any picture, video, audio, PDF or document (or a link) and say what you want: convert, remove the background, resize, compress, OCR, trim, merge and more. It sends back the new file.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kép, videó, hang, PDF vagy dokumentum fogadása (linkről is)",
+        "quote": "Send any picture, video, audio, PDF or document (or a link)",
+        "from": "template"
+      },
+      {
+        "labelHu": "Átalakítás, háttéreltávolítás, átméretezés, tömörítés, OCR, vágás, összefűzés",
+        "quote": "convert, remove the background, resize, compress, OCR, trim, merge and more",
+        "from": "template"
+      },
+      {
+        "labelHu": "Az elkészült fájl visszaküldése",
+        "quote": "It sends back the new file.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem részletezi, mely fájlformátumokat támogatja, és mekkora fájlméretig.",
+    "relatedTemplates": [
+      {
+        "slug": "convert-bot",
+        "name": "Convert Bot",
+        "noteHu": "A Convert Bot videó- és hangfájlokra szakosodott; a Media Kit képeket, PDF-eket és dokumentumokat is kezel, OCR-rel és háttéreltávolítással."
+      }
+    ]
+  },
+  {
+    "slug": "jim-life-reset-mentor",
+    "name": "Jim – Life Reset Mentor",
+    "author": "skan",
+    "handle": "@skan_io",
+    "postUrl": "https://x.com/skan_io/status/2117416078343029017",
+    "postedAt": "2026-11-03T00:38:27Z",
+    "templateUrl": "https://x.ai/bot/r_CMgXVxSBRKhogVE42c6",
+    "templatePageReadable": true,
+    "fetched": "2026-11-03",
+    "summaryHu": "Személyes életvezetési mentor. A sablon leírása szerint Jim Rohn filozófiájára és Dan Koe „hozd rendbe az egész életed egy nap alatt” módszerére épül: kikérdez, hogy kiderüljön, mi elől menekülsz és mit építesz, aztán rövid bejelentkezésekkel tart a kis napi rutinjaidon. A készítő posztja szerint neki is segített, ezért osztotta meg.",
+    "postQuote": "it fixed mine and im sharing it with you.",
+    "templateQuote": "A personal mentor built on Jim Rohn's philosophy and Dan Koe's 'fix your entire life in 1 day' protocol. It interviews you to find what you're running from and building toward, then keeps you on small daily disciplines with short check-ins.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kikérdezés: mi elől menekülsz és mit építesz",
+        "quote": "It interviews you to find what you're running from and building toward",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kis napi rutinok tartása rövid bejelentkezésekkel",
+        "quote": "keeps you on small daily disciplines with short check-ins",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, milyen gyakran jelentkezik be a bot, és nem említ külön integrációt. Önfejlesztési segéd, nem pszichológiai vagy egészségügyi tanácsadás.",
+    "relatedTemplates": [
+      {
+        "slug": "be-happier",
+        "name": "Be Happier",
+        "noteHu": "A Be Happier hetente az e-mailed és a naptárad alapján javasol 3 dolgot; a Jim – Life Reset Mentor kikérdezés után napi kis rutinokon tart."
+      }
+    ]
+  },
+  {
+    "slug": "security-deposit-recovery-helper",
+    "name": "Security Deposit Recovery Helper",
+    "author": "Prabhu | Grok Bots 🤖",
+    "handle": "@KuttyPrabhu",
+    "postUrl": "https://x.com/KuttyPrabhu/status/2117274995110158670",
+    "postedAt": "2026-11-02T15:17:50Z",
+    "templateUrl": "https://x.ai/bot/EFx_nomEVvWEvzP2ZB0Eb",
+    "templatePageReadable": true,
+    "fetched": "2026-11-03",
+    "summaryHu": "Bérlőknek szóló segéd a kaució visszaszerzéséhez. A sablon leírása szerint beköltözéskor és kiköltözéskor segít megvédeni a kauciót, a jogtalan levonásokat pedig bizonyítékokkal és a megfelelő következő lépéssel vitatja: rákérdez a helyszínre, a dátumokra és az összegekre, szó szerint idézi a bérleti szerződés vonatkozó pontjait, rákeres az adott hely szabályaira hivatalos forrással, és udvarias, de határozott felszólító levelet fogalmaz, amelyet te küldesz el. A készítő posztja szerint minden levonást összevet a szerződéssel és a helyi szabályokkal.",
+    "postQuote": "checks each charge against your lease and local rules and drafts the letter",
+    "templateQuote": "ONE JOB: help a renter get their security deposit back. Protect it at move-in and move-out. Challenge unfair deductions with evidence and the right next step.",
+    "memory": [
+      {
+        "labelHu": "Ügynapló dátumokkal, összegekkel, határidőkkel",
+        "quote": "Update the case log: dates, amounts, deadlines, what was sent.",
+        "from": "template"
+      }
+    ],
+    "skills": [
+      {
+        "labelHu": "Szerződéspontok szó szerinti idézése",
+        "quote": "Read the lease. Quote deposit, notice, deduction and return-deadline clauses verbatim, with clause numbers.",
+        "from": "template"
+      },
+      {
+        "labelHu": "Helyi szabályok keresése hivatalos forrással",
+        "quote": "Web-search the deposit rules for that location this turn. Cite the official source link.",
+        "from": "template"
+      },
+      {
+        "labelHu": "Levonásonkénti értékelés: kopás, valós kár vagy bizonytalan",
+        "quote": "each deduction is wear and tear, real damage, or unclear",
+        "from": "template"
+      },
+      {
+        "labelHu": "Felszólító levél vázlata (te küldöd el)",
+        "quote": "Draft a polite-firm demand letter",
+        "from": "template"
+      },
+      {
+        "labelHu": "Be- és kiköltözési ellenőrzőlista",
+        "quote": "photos, dates, meter readings, keys, written condition report",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Opcionális napi határidő-ellenőrzés (alapból kikapcsolva)",
+        "quote": "Optional routine \"Deposit Desk deadline check\" (0 9 * * * IST) is OFF.",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon szerint nem ügyvéd, csak általános tájékoztatást ad, és üzenetet nem küld, csak vázlatot ír. A magyar szabályok forrásait a bot keresi meg; a sablon példái indiai és kaliforniai esetek."
   }
 ]
