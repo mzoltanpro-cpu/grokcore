@@ -38,6 +38,7 @@ const required = [
   "halado/sablon-mi-jon-at/index.html",
   "halado/heti-keret-sporolas/index.html",
   "halado/vasarlo-bot/index.html",
+  "halado/napi-mentes/index.html",
   "ujdonsagok/index.html",
   "forrasok/index.html",
   "rolunk/index.html",
@@ -338,6 +339,22 @@ if (!advancedHtml.includes("data-own-guides") || !advancedHtml.includes("nem hiv
 const guidesMain = (guidesHtml.match(/<main[^>]*>([\s\S]*?)<\/main>/) || ["", guidesHtml])[1];
 if (/href="\/halado\/|data-advanced-block/.test(guidesMain)) fail("utmutatok/index.html: a hivatalos útmutatók oldalán nem lehet haladó (saját) útmutató-blokk vagy link");
 if (!/<nav class="nav"[^>]*>[\s\S]*?<a href="\/halado\/" aria-current="page">\s*Haladó\s*<\/a>[\s\S]*?<\/nav>/.test(advancedHtml)) fail("halado/index.html: nincs „Haladó” menüpont a fő navigációban");
+const backupPage = byRel.has("halado/napi-mentes/index.html") ? await readFile(byRel.get("halado/napi-mentes/index.html"), "utf8") : "";
+for (const needle of [
+  "Set up a daily backup of my Grok Bot skills, routines, memories and allowlisted settings",
+  "https://x.com/acolombiadev/status/2117029015403831487",
+  "https://gist.github.com/AndreaGriffiths11/18d4add0b1cb6849be3d7eb7b0521937",
+  "/home/box/agent-data/workflows/",
+  ".backup-skipped.json",
+  "docs.x.ai-n nem ellenőriztük",
+  "Ne az egész",
+  "személyes adat",
+  "2026-11-03",
+]) {
+  if (!backupPage.includes(needle)) fail(`halado/napi-mentes/index.html: hiányzik: ${needle}`);
+}
+const sitemapXml = byRel.has("sitemap.xml") ? await readFile(byRel.get("sitemap.xml"), "utf8") : "";
+if (!sitemapXml.includes("/halado/napi-mentes/")) fail("sitemap.xml: nincs a /halado/napi-mentes/ útvonal");
 
 // Újdonságok: a changelog.ts minden kiadása kint van, a legújabb elöl, az eredeti bejegyzésre mutató linkkel;
 // forrás, RSS, ellenőrzési dátum és nem hivatalos jelölés; a kezdőlap dobozát a legújabb kiadás adja.
