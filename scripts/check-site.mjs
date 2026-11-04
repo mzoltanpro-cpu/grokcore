@@ -196,9 +196,38 @@ for (const rel of byRel.keys()) {
 const templates = JSON.parse(await readFile(path.join(root, "src/content/community-templates.json"), "utf8"));
 const tplBlocks = ["leiras", "memoria", "skillek", "rutinok", "integraciok", "forras"];
 const tplMissing = "A listing nem tartalmaz erről adatot.";
+const templateCategories = [
+  "Produktivitás",
+  "E-mail és üzenetek",
+  "Pénzügy és vásárlás",
+  "Egészség és sport",
+  "Otthon, utazás, étkezés",
+  "Fejlesztés és IT",
+  "Marketing és tartalom",
+  "Grok Bot és flotta",
+  "Tanulás",
+  "Egyéb",
+];
+function templateCategoryKey(category) {
+  return category
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
 const tplIndex = byRel.has("sablonok/index.html") ? await readFile(byRel.get("sablonok/index.html"), "utf8") : "";
 if (!tplIndex.includes("Nem hivatalos")) fail("sablonok/index.html: hiányzik a nem hivatalos jelölés");
 if (!tplIndex.includes('"@type":"ItemList"')) fail("sablonok/index.html: hiányzik az ItemList JSON-LD");
+if (!tplIndex.includes("data-tpl-filters") || !tplIndex.includes("data-tpl-q") || !tplIndex.includes("data-tpl-cat")) {
+  fail("sablonok/index.html: hiányzik a kategória- vagy keresőszűrő");
+}
+if (!tplIndex.includes("data-tpl-empty")) fail("sablonok/index.html: hiányzik az üres állapot");
+for (const category of templateCategories) {
+  const key = templateCategoryKey(category);
+  if (!tplIndex.includes(`value="${key}"`)) fail(`sablonok/index.html: a szűrőből hiányzik a kategória: ${category}`);
+  if (!tplIndex.includes(`${category} (`)) fail(`sablonok/index.html: a kategória mellett nincs darabszám: ${category}`);
+}
 const slugs = new Set();
 for (const item of templates) {
   const rel = `sablonok/${item.slug}/index.html`;
@@ -230,6 +259,21 @@ for (const item of templates) {
     if (!(item[field]?.length) && !html.includes(tplMissing)) fail(`${rel}: a hiányzó ${field} nincs jelölve`);
   }
   if (!item.summaryHu) fail(`${rel}: nincs magyar összefoglaló`);
+  if (!Array.isArray(item.categories) || item.categories.length < 1 || item.categories.length > 2) {
+    fail(`${rel}: 1 vagy 2 kategória kell`);
+  } else {
+    const seenCat = new Set();
+    for (const category of item.categories) {
+      if (!templateCategories.includes(category)) fail(`${rel}: ismeretlen kategória: ${category}`);
+      if (seenCat.has(category)) fail(`${rel}: ismétlődő kategória: ${category}`);
+      seenCat.add(category);
+      if (!html.includes(`>${category}</a>`)) fail(`${rel}: a kategória nincs az adatlapon: ${category}`);
+    }
+    const keys = item.categories.map(templateCategoryKey).join(" ");
+    if (!tplIndex.includes(`data-template="${item.slug}"`) || !tplIndex.includes(`data-cats="${keys}"`)) {
+      fail(`sablonok/index.html: a kártyán nincs kategóriakulcs: ${item.slug}`);
+    }
+  }
 }
 for (const rel of byRel.keys()) {
   const m = rel.match(/^sablonok\/([^/]+)\/index\.html$/);

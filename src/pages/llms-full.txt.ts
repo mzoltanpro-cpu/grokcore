@@ -113,7 +113,7 @@ export const GET: APIRoute = ({ site }) => {
     parts.push(
       `### ${item.name}`,
       "",
-      `Készítő: ${item.author} (${item.handle}).`,
+      `Készítő: ${item.author} (${item.handle}). Kategória: ${item.categories.join(", ")}.`,
       `Leírás: ${item.summaryHu}`,
       `Memória: ${item.memory.map((m) => m.labelHu).join("; ") || templateMissing}`,
       `Skillek: ${item.skills.map((s) => s.name).join(", ") || templateMissing}`,

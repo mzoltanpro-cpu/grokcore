@@ -1,7 +1,13 @@
 ---
 import Base from "../../layouts/Base.astro";
 import TemplateNote from "../../components/TemplateNote.astro";
-import { budapestTime, communityTemplates, templatePath } from "../../content/templates";
+import {
+  budapestTime,
+  communityTemplates,
+  templateCategoryCounts,
+  templateCategoryKey,
+  templatePath,
+} from "../../content/templates";
 import { officialTemplates } from "../../content/official";
 import { absUrl, siteConfig, siteOrigin } from "../../lib/site";
 
@@ -54,16 +60,57 @@ const ld = {
   <section class="section" aria-labelledby="sablonlista">
     <div class="section-head">
       <h2 id="sablonlista">A sablonok</h2>
+      <p>
+        A kategóriák a Botkezdő besorolásai a sablon neve és a magyar összefoglaló alapján. Szűrj kategóriára, vagy keress
+        névre, készítőre és összefoglalóra. JavaScript nélkül minden sablon látszik.
+      </p>
     </div>
-    <ul class="bot-grid plain-list">
+    <div class="mp-filters" data-tpl-filters>
+      <div class="field">
+        <label for="tpl-q">Keresés</label>
+        <input
+          id="tpl-q"
+          type="search"
+          name="q"
+          placeholder="pl. naptár, Gmail, @handle"
+          autocomplete="off"
+          data-tpl-q
+        />
+      </div>
+      <div class="field">
+        <label for="tpl-cat">Kategória</label>
+        <select id="tpl-cat" name="kategoria" data-tpl-cat>
+          <option value="">Mind</option>
+          {
+            templateCategoryCounts().map((item) => (
+              <option value={templateCategoryKey(item.category)}>
+                {item.category} ({item.count})
+              </option>
+            ))
+          }
+        </select>
+      </div>
+      <p class="status" role="status" aria-live="polite" data-tpl-count>{communityTemplates.length} sablon</p>
+    </div>
+    <ul class="bot-grid plain-list" data-tpl-list>
       {
         communityTemplates.map((item) => (
-          <li class="bot-card" data-template={item.slug}>
+          <li
+            class="bot-card"
+            data-template={item.slug}
+            data-cats={item.categories.map(templateCategoryKey).join(" ")}
+            data-search={[item.name, item.author, item.handle, item.summaryHu, ...item.categories].join(" ")}
+          >
             <h3 class="bot-name">
               <a href={templatePath(item.slug)}>{item.name}</a>
             </h3>
             <p class="bot-by">
               {item.author} ({item.handle}) · {budapestTime(item.postedAt)}
+            </p>
+            <p class="tag-row">
+              {item.categories.map((category) => (
+                <span class="tag">{category}</span>
+              ))}
             </p>
             <p>{item.summaryHu}</p>
             <p class="fine">
@@ -74,6 +121,7 @@ const ld = {
         ))
       }
     </ul>
+    <p class="fine" data-tpl-empty hidden>Nincs találat. Próbálj kevesebb szűrőt.</p>
   </section>
 
   <section class="section" aria-labelledby="hozzaadas">
@@ -113,3 +161,41 @@ const ld = {
     </ul>
   </section>
 </Base>
+
+<script>
+  const root = document.querySelector<HTMLElement>("[data-tpl-filters]");
+  const cards = [...document.querySelectorAll<HTMLElement>("[data-template]")];
+  const count = document.querySelector<HTMLElement>("[data-tpl-count]");
+  const empty = document.querySelector<HTMLElement>("[data-tpl-empty]");
+  if (root) {
+    const q = root.querySelector<HTMLInputElement>("[data-tpl-q]")!;
+    const cat = root.querySelector<HTMLSelectElement>("[data-tpl-cat]")!;
+    const fold = (value: string) => value.toLowerCase().normalize("NFD").replace(/\p{M}/gu, "");
+    const apply = () => {
+      const text = fold(q.value.trim());
+      let shown = 0;
+      for (const card of cards) {
+        const cats = card.dataset.cats ?? "";
+        const ok =
+          (!cat.value || cats.split(" ").includes(cat.value)) &&
+          (!text || fold(card.dataset.search ?? "").includes(text));
+        card.hidden = !ok;
+        if (ok) shown += 1;
+      }
+      if (count) count.textContent = `${shown} sablon`;
+      if (empty) empty.hidden = shown !== 0;
+      const params = new URLSearchParams();
+      const raw = q.value.trim();
+      if (raw) params.set("q", raw);
+      if (cat.value) params.set("kategoria", cat.value);
+      const query = params.toString();
+      history.replaceState(null, "", query ? `?${query}#sablonlista` : location.pathname);
+    };
+    const params = new URLSearchParams(location.search);
+    q.value = params.get("q") ?? "";
+    const category = params.get("kategoria") ?? "";
+    if ([...cat.options].some((option) => option.value === category)) cat.value = category;
+    for (const el of [q, cat]) el.addEventListener("input", apply);
+    if (location.search) apply();
+  }
+</script>
