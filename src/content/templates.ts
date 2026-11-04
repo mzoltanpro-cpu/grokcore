@@ -10,9 +10,27 @@ import raw from "./community-templates.json";
  */
 type From = "post" | "template";
 
+/** A közösségi gyűjtemény fix kategóriái, abban a sorrendben, ahogy a szűrő mutatja. */
+export const templateCategoryOrder = [
+  "Produktivitás",
+  "E-mail és üzenetek",
+  "Pénzügy és vásárlás",
+  "Egészség és sport",
+  "Otthon, utazás, étkezés",
+  "Fejlesztés és IT",
+  "Marketing és tartalom",
+  "Grok Bot és flotta",
+  "Tanulás",
+  "Egyéb",
+] as const;
+
+export type TemplateCategory = (typeof templateCategoryOrder)[number];
+
 export type CommunityTemplate = {
   slug: string;
   name: string;
+  /** A Botkezdő besorolása a név és a magyar összefoglaló alapján. Egy vagy két címke. */
+  categories: TemplateCategory[];
   author: string;
   handle: string;
   postUrl?: string;
@@ -44,6 +62,20 @@ export type CommunityTemplate = {
 
 export const communityTemplates = raw as CommunityTemplate[];
 
+const allowedTemplateCategories = new Set<string>(templateCategoryOrder);
+for (const item of communityTemplates) {
+  const seen = new Set<string>();
+  if (item.categories.length < 1 || item.categories.length > 2) {
+    throw new Error(`A(z) ${item.slug} sablonnak 1 vagy 2 kategóriája lehet.`);
+  }
+  for (const category of item.categories) {
+    if (!allowedTemplateCategories.has(category) || seen.has(category)) {
+      throw new Error(`A(z) ${item.slug} sablon kategóriája érvénytelen: ${category}`);
+    }
+    seen.add(category);
+  }
+}
+
 /** Ugyanaz a hiányjelölés, mint a Marketplace bot-oldalain. */
 export const templateMissing = "A listing nem tartalmaz erről adatot.";
 
@@ -52,6 +84,23 @@ export const templateNonAffiliation =
 
 export function templatePath(slug: string): string {
   return `/sablonok/${slug}/`;
+}
+
+/** Ékezet nélküli, URL-be tehető kategóriakulcs. A listaoldal legördülője és a kártyák data-cats értéke ezt használja. */
+export function templateCategoryKey(category: string): string {
+  return category
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+export function templateCategoryCounts(): { category: TemplateCategory; count: number }[] {
+  return templateCategoryOrder.map((category) => ({
+    category,
+    count: communityTemplates.filter((item) => item.categories.includes(category)).length,
+  }));
 }
 
 /** „2026-10-17 21:57” formában, Europe/Budapest időzónában. */

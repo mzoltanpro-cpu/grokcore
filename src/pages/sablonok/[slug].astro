@@ -5,6 +5,7 @@ import {
   budapestTime,
   communityTemplates,
   fromLabel,
+  templateCategoryKey,
   templateMissing,
   templatePath,
   type CommunityTemplate,
@@ -67,6 +68,17 @@ const ld = {
       <li>Készítő: {item.author} ({item.handle})</li>
       <li>Megosztva: <time datetime={item.postedAt}>{posted}</time> (budapesti idő)</li>
       <li>Lekérve: <time datetime={item.fetched}>{item.fetched}</time></li>
+      <li>
+        Kategória:
+        {
+          item.categories.map((category, index) => (
+            <>
+              {index > 0 ? ", " : " "}
+              <a href={`/sablonok/?kategoria=${templateCategoryKey(category)}#sablonlista`}>{category}</a>
+            </>
+          ))
+        }
+      </li>
     </ul>
 
     <section class="bot-block" id="leiras" data-block="leiras">

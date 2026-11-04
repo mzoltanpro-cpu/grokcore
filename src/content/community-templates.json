@@ -2,6 +2,9 @@
   {
     "slug": "notes-bot",
     "name": "Notes Bot",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "X Freeze",
     "handle": "@XFreeze",
     "postUrl": "https://x.com/XFreeze/status/2111547144822030394",
@@ -42,6 +45,9 @@
   {
     "slug": "devin-manager",
     "name": "Devin Manager",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Anthony Kroeger",
     "handle": "@kr0der",
     "postUrl": "https://x.com/kr0der/status/2108240764488864114",
@@ -72,6 +78,9 @@
   {
     "slug": "fight-desk",
     "name": "Fight Desk",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "DaveY",
     "handle": "@the_davey",
     "postUrl": "https://x.com/the_davey/status/2108647365108220121",
@@ -117,6 +126,9 @@
   {
     "slug": "viral-selling-video-bot",
     "name": "Viral Selling Video Bot",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Liu Shiyu",
     "handle": "@liushiyumath",
     "postUrl": "https://x.com/liushiyumath/status/2111739826957652027",
@@ -135,6 +147,10 @@
   {
     "slug": "local-business-website-hunter",
     "name": "Local Business Website Hunter",
+    "categories": [
+      "Marketing és tartalom",
+      "Fejlesztés és IT"
+    ],
     "author": "I AM",
     "handle": "@NewLongMoney",
     "postUrl": "https://x.com/NewLongMoney/status/2111720183341687277",
@@ -153,6 +169,9 @@
   {
     "slug": "reply-desk",
     "name": "Reply Desk",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Brian M.",
     "handle": "@lonzom10",
     "postUrl": "https://x.com/lonzom10/status/2103749418457681951",
@@ -171,6 +190,9 @@
   {
     "slug": "calpro",
     "name": "CalPro — calorie and protein tracker",
+    "categories": [
+      "Egészség és sport"
+    ],
     "author": "prorookiegamer",
     "handle": "@prorookiegamer",
     "postUrl": "https://x.com/prorookiegamer/status/2106179552032755941",
@@ -189,6 +211,9 @@
   {
     "slug": "bot-builder",
     "name": "Bot Builder",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Brody",
     "handle": "@brodyis4doge",
     "postUrl": "https://x.com/brodyis4doge/status/2103659125582233767",
@@ -207,6 +232,9 @@
   {
     "slug": "route-planner",
     "name": "Route Planner",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "James Glick",
     "handle": "@JamesBGlick",
     "postUrl": "https://x.com/JamesBGlick/status/2104025212815917507",
@@ -242,6 +270,9 @@
   {
     "slug": "video-studio",
     "name": "Grok Bot Video Studio",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Mike Gannotti 🔳",
     "handle": "@MichaelGannotti",
     "postUrl": "https://x.com/MichaelGannotti/status/2111135660044427513",
@@ -260,6 +291,9 @@
   {
     "slug": "running-coach",
     "name": "Running Coach",
+    "categories": [
+      "Egészség és sport"
+    ],
     "author": "AIVN",
     "handle": "@IHybben",
     "postUrl": "https://x.com/IHybben/status/2103777752553812398",
@@ -284,6 +318,9 @@
   {
     "slug": "x-agent",
     "name": "X Agent",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Mikko Uusitalo",
     "handle": "@MikkoUusitalo1",
     "postUrl": "https://x.com/MikkoUusitalo1/status/2104864235369214436",
@@ -308,6 +345,10 @@
   {
     "slug": "hatch",
     "name": "Hatch",
+    "categories": [
+      "Marketing és tartalom",
+      "Fejlesztés és IT"
+    ],
     "author": "littletechbird",
     "handle": "@littletechbird",
     "postUrl": "https://x.com/littletechbird/status/2100911955099947248",
@@ -326,6 +367,9 @@
   {
     "slug": "usage-watch",
     "name": "Usage Watch",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Luis Barragan",
     "handle": "@luisbarragan",
     "postUrl": "https://x.com/luisbarragan/status/2111229701314535863",
@@ -350,6 +394,9 @@
   {
     "slug": "site-coach",
     "name": "Site Coach",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Phil",
     "handle": "@Phil_Holland",
     "postUrl": "https://x.com/Phil_Holland/status/2111488822047584521",
@@ -391,6 +438,9 @@
   {
     "slug": "vibe-check",
     "name": "Vibe Check",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Chris Priddy",
     "handle": "@priddysharp",
     "postUrl": "https://x.com/priddysharp/status/2111217009614794815",
@@ -415,6 +465,9 @@
   {
     "slug": "hagglebot",
     "name": "Hagglebot",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Anon Haggle",
     "handle": "@AnonHaggle",
     "postUrl": "https://x.com/AnonHaggle/status/2111213528023715927",
@@ -446,6 +499,9 @@
   {
     "slug": "sell-anything",
     "name": "Sell Anything",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "CJD",
     "handle": "@cjdinnison",
     "postUrl": "https://x.com/cjdinnison/status/2111607251157078208",
@@ -485,6 +541,9 @@
   {
     "slug": "bottleneck-desk",
     "name": "Bottleneck Desk",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2111504263432241437",
@@ -519,6 +578,9 @@
   {
     "slug": "cloud-spend-desk",
     "name": "Cloud Spend Desk",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2111504263432241437",
@@ -547,6 +609,9 @@
   {
     "slug": "ad-spend-desk",
     "name": "Ad Spend Desk",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2111504263432241437",
@@ -578,6 +643,9 @@
   {
     "slug": "doge-procurement-desk",
     "name": "DOGE Procurement Desk",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2111504263432241437",
@@ -609,6 +677,9 @@
   {
     "slug": "meetings-desk",
     "name": "Meetings Desk",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2111504263432241437",
@@ -633,6 +704,9 @@
   {
     "slug": "privacy",
     "name": "Privacy",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "S.O. Washington",
     "handle": "@SOwashington26",
     "postUrl": "https://x.com/SOwashington26/status/2111689920914035133",
@@ -657,6 +731,9 @@
   {
     "slug": "t3-code-bridge",
     "name": "T3 Code Bridge",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Trevin Chow",
     "handle": "@trevin",
     "postUrl": "https://x.com/trevin/status/2111631433299374450",
@@ -687,6 +764,9 @@
   {
     "slug": "site-qa-desk",
     "name": "Site QA Desk",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "T1000",
     "handle": "@teeRex247",
     "postUrl": "https://x.com/teeRex247/status/2111559967031337327",
@@ -718,6 +798,9 @@
   {
     "slug": "dependency-secret-audit",
     "name": "Dependency & Secret Audit",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "T1000",
     "handle": "@teeRex247",
     "postUrl": "https://x.com/teeRex247/status/2111694959283769403",
@@ -754,6 +837,9 @@
   {
     "slug": "farm-manager",
     "name": "Farm Manager",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Luke",
     "handle": "@PrairieWatcher",
     "postUrl": "https://x.com/PrairieWatcher/status/2111646898209562781",
@@ -778,6 +864,9 @@
   {
     "slug": "premortem-desk",
     "name": "Premortem Desk",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "T1000",
     "handle": "@teeRex247",
     "postUrl": "https://x.com/teeRex247/status/2111654861796188336",
@@ -815,6 +904,9 @@
   {
     "slug": "snowflake-analyst",
     "name": "Snowflake Analyst",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "BigDataDude",
     "handle": "@big_data_dude",
     "postUrl": "https://x.com/big_data_dude/status/2111809841622565048",
@@ -851,6 +943,9 @@
   {
     "slug": "magnum-pi",
     "name": "Magnum P.I.",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "DJ",
     "handle": "@congressdj",
     "postUrl": "https://x.com/congressdj/status/2111782639103345038",
@@ -875,6 +970,9 @@
   {
     "slug": "notion-bot",
     "name": "Notion Bot",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Thomas Meijer",
     "handle": "@ijsthee",
     "postUrl": "https://x.com/ijsthee/status/2111109412052185594",
@@ -911,6 +1009,9 @@
   {
     "slug": "terminal-boss",
     "name": "Terminal Boss 🖥️",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Phil",
     "handle": "@Phil_Holland",
     "postUrl": "https://x.com/Phil_Holland/status/2111658606726918454",
@@ -941,6 +1042,9 @@
   {
     "slug": "book-maker",
     "name": "Book Maker",
+    "categories": [
+      "Tanulás"
+    ],
     "author": "yugo.spice 🇨🇦",
     "handle": "@rabspice",
     "postUrl": "https://x.com/rabspice/status/2112006032193159578",
@@ -971,6 +1075,9 @@
   {
     "slug": "career-agent",
     "name": "Career Agent",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Phillip Green",
     "handle": "@phillipggreen",
     "postUrl": "https://x.com/phillipggreen/status/2111997489322627582",
@@ -995,6 +1102,9 @@
   {
     "slug": "chef-ramsey",
     "name": "Chef Ramsey",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Caveman Actual",
     "handle": "@Caveman__Actual",
     "postUrl": "https://x.com/Caveman__Actual/status/2112044475128107096",
@@ -1013,6 +1123,9 @@
   {
     "slug": "trip-pilot",
     "name": "Trip Pilot",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "J Allen",
     "handle": "@BTC_Yogi",
     "postUrl": "https://x.com/BTC_Yogi/status/2112042195377349067",
@@ -1037,6 +1150,9 @@
   {
     "slug": "kilo",
     "name": "Kilo",
+    "categories": [
+      "Egészség és sport"
+    ],
     "author": "X4Tech",
     "handle": "@4TechX",
     "postUrl": "https://x.com/4TechX/status/2112054073964793945",
@@ -1061,6 +1177,9 @@
   {
     "slug": "claude-remote",
     "name": "Claude Remote",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "nick",
     "handle": "@thecsguy",
     "postUrl": "https://x.com/thecsguy/status/2111986186784743932",
@@ -1085,6 +1204,9 @@
   {
     "slug": "master",
     "name": "Master",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Farzad 🇺🇸 🇮🇷",
     "handle": "@farzyness",
     "postUrl": "https://x.com/farzyness/status/2093384064363377099",
@@ -1109,6 +1231,9 @@
   {
     "slug": "u1-creator",
     "name": "U1 Creator",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "John L 📐🇺🇸",
     "handle": "@msmage",
     "postUrl": "https://x.com/msmage/status/2108321222065013075",
@@ -1127,6 +1252,9 @@
   {
     "slug": "scam-email-detector",
     "name": "Scam Email Detector",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Dirty Tesla",
     "handle": "@DirtyTesLa",
     "postUrl": "https://x.com/DirtyTesLa/status/2110037338755657863",
@@ -1145,6 +1273,9 @@
   {
     "slug": "consider-it-marketed",
     "name": "Consider It Marketed",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Cindy",
     "handle": "@CindyH874325640",
     "postUrl": "https://x.com/CindyH874325640/status/2101866621228785883",
@@ -1175,6 +1306,9 @@
   {
     "slug": "lg-laundry-specialist",
     "name": "LG Laundry Specialist",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Bryan Wilson",
     "handle": "@Bwilson",
     "postUrl": "https://x.com/Bwilson/status/2097121334748643683",
@@ -1205,6 +1339,10 @@
   {
     "slug": "bot-tutorial",
     "name": "Grok Bot Tutorial",
+    "categories": [
+      "Grok Bot és flotta",
+      "Tanulás"
+    ],
     "author": "Sawyer Merritt",
     "handle": "@SawyerMerritt",
     "postUrl": "https://x.com/SawyerMerritt/status/2106481373997596984",
@@ -1223,6 +1361,9 @@
   {
     "slug": "validator",
     "name": "Validator",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
@@ -1248,6 +1389,9 @@
   {
     "slug": "quant-desk-lead",
     "name": "Quant Desk Lead",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
@@ -1272,6 +1416,9 @@
   {
     "slug": "quant-researcher",
     "name": "Quant Researcher",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
@@ -1290,6 +1437,9 @@
   {
     "slug": "risk-controller",
     "name": "Risk Controller",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
@@ -1308,6 +1458,9 @@
   {
     "slug": "market-intelligence",
     "name": "Market Intelligence",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
@@ -1339,6 +1492,9 @@
   {
     "slug": "execution-operator",
     "name": "Execution Operator",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
@@ -1364,6 +1520,9 @@
   {
     "slug": "portfolio-adviser",
     "name": "Portfolio Adviser",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2107907926321217644",
@@ -1382,6 +1541,9 @@
   {
     "slug": "be-happier",
     "name": "Be Happier",
+    "categories": [
+      "Egészség és sport"
+    ],
     "author": "Lenny Rachitsky",
     "handle": "@lennysan",
     "postUrl": "https://x.com/lennysan/status/2093428147194847238",
@@ -1412,6 +1574,9 @@
   {
     "slug": "talent-matchmaker",
     "name": "Talent Matchmaker",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Lenny Rachitsky",
     "handle": "@lennysan",
     "postUrl": "https://x.com/lennysan/status/2093428147194847238",
@@ -1443,6 +1608,9 @@
   {
     "slug": "lennybot",
     "name": "Lennybot",
+    "categories": [
+      "Tanulás"
+    ],
     "author": "Lenny Rachitsky",
     "handle": "@lennysan",
     "postUrl": "https://x.com/lennysan/status/2093428147194847238",
@@ -1473,6 +1641,9 @@
   {
     "slug": "shepherd",
     "name": "Shepherd",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "herdr",
     "handle": "@herdrdev",
     "postUrl": "https://x.com/herdrdev/status/2094129284885467399",
@@ -1503,6 +1674,9 @@
   {
     "slug": "seoagent",
     "name": "SEOAgent",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Alec Lindsay",
     "handle": "@alindsay77",
     "postUrl": "https://x.com/alindsay77/status/2095301891336949905",
@@ -1551,6 +1725,9 @@
   {
     "slug": "fitness-coach",
     "name": "Fitness Coach",
+    "categories": [
+      "Egészség és sport"
+    ],
     "author": "Paul Blanche",
     "handle": "@paulblanche21",
     "postUrl": "https://x.com/paulblanche21/status/2109966238910665042",
@@ -1588,6 +1765,9 @@
   {
     "slug": "changelog-scout",
     "name": "Changelog Scout",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Aaron Makelky",
     "handle": "@theaaron",
     "postUrl": "https://x.com/theaaron/status/2108934418127823226",
@@ -1612,6 +1792,9 @@
   {
     "slug": "ai-radar",
     "name": "AI Radar",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Gota",
     "handle": "@gota_bara",
     "postUrl": "https://x.com/gota_bara/status/2109968003047858239",
@@ -1631,6 +1814,9 @@
   {
     "slug": "bot-treats",
     "name": "Bot Treats",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Melvin Vivas",
     "handle": "@melvindvivas",
     "postUrl": "https://x.com/melvindvivas/status/2109734435931476463",
@@ -1649,6 +1835,9 @@
   {
     "slug": "apple-dev",
     "name": "Apple Dev",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Evan Bacon",
     "handle": "@Baconbrix",
     "postUrl": "https://x.com/Baconbrix/status/2098196516121002418",
@@ -1679,6 +1868,9 @@
   {
     "slug": "repost-x-posts-everywhere",
     "name": "repost X posts everywhere",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "jack friks",
     "handle": "@jackfriks",
     "postUrl": "https://x.com/jackfriks/status/2093719119984001073",
@@ -1715,6 +1907,9 @@
   {
     "slug": "fondi",
     "name": "Fondi",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Nao",
     "handle": "@naoufal_elh",
     "postUrl": "https://x.com/naoufal_elh/status/2095292060731396277",
@@ -1739,6 +1934,9 @@
   {
     "slug": "ai-video-expert",
     "name": "AI 视频专家",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Kin",
     "handle": "@KinGao476942",
     "postUrl": "https://x.com/KinGao476942/status/2095507795818991826",
@@ -1764,6 +1962,9 @@
   {
     "slug": "fable-oracle",
     "name": "Fable 5.1 Oracle",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Matt Rice",
     "handle": "@bossriceshark",
     "postUrl": "https://x.com/bossriceshark/status/2095151692706967931",
@@ -1794,6 +1995,9 @@
   {
     "slug": "x-algo-post-optimizer",
     "name": "X Algo Post Optimizer",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Colin Gardiner",
     "handle": "@ColinGardiner",
     "postUrl": "https://x.com/ColinGardiner/status/2108314492643979269",
@@ -1812,6 +2016,9 @@
   {
     "slug": "chieeeeefy",
     "name": "Chieeeeefy",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Nao",
     "handle": "@naoufal_elh",
     "postUrl": "https://x.com/naoufal_elh/status/2093393130447921346",
@@ -1860,6 +2067,9 @@
   {
     "slug": "imessage-relay",
     "name": "iMessage Relay",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Phil",
     "handle": "@Phil_Holland",
     "postUrl": "https://x.com/Phil_Holland/status/2112196831916564713",
@@ -1889,6 +2099,9 @@
   {
     "slug": "car-deal-scout",
     "name": "Car Deal Scout",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Kent Weber",
     "handle": "@KentBWeber",
     "postUrl": "https://x.com/KentBWeber/status/2111975498888986905",
@@ -1907,6 +2120,9 @@
   {
     "slug": "karen-subscription-canceller",
     "name": "Karen the Canceller of Paid Subs",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Allan Branch",
     "handle": "@allanbranch",
     "postUrl": "https://x.com/allanbranch/status/2111821697771016240",
@@ -1931,6 +2147,9 @@
   {
     "slug": "orwell-grammar-fix",
     "name": "Orwell (Grammar Fix)",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Tom⚡️",
     "handle": "@TitaniumTomP",
     "postUrl": "https://x.com/TitaniumTomP/status/2112181118438883606",
@@ -1956,6 +2175,9 @@
   {
     "slug": "the-maitre-d",
     "name": "The Maitre D",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "TeslaAiGirl",
     "handle": "@TeslaAiGirl",
     "postUrl": "https://x.com/TeslaAiGirl/status/2112218970829025686",
@@ -1974,6 +2196,9 @@
   {
     "slug": "research",
     "name": "Research",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Trond Eirik Haavarstein",
     "handle": "@xenappblog",
     "postUrl": "https://x.com/xenappblog/status/2111797929518170506",
@@ -2010,6 +2235,10 @@
   {
     "slug": "website-health-check",
     "name": "Website Health Check",
+    "categories": [
+      "Marketing és tartalom",
+      "Fejlesztés és IT"
+    ],
     "author": "Emmett Armstrong 💪",
     "handle": "@EmmettArmstrong",
     "postUrl": "https://x.com/EmmettArmstrong/status/2112256327309500480",
@@ -2035,6 +2264,9 @@
   {
     "slug": "panda-weather",
     "name": "Panda 🐼 Weather 🌤️",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Tom⚡️",
     "handle": "@TitaniumTomP",
     "postUrl": "https://x.com/TitaniumTomP/status/2112181024109084776",
@@ -2059,6 +2291,9 @@
   {
     "slug": "one-thing",
     "name": "One Thing",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Greg · Softkeep",
     "handle": "@KomoriGenjiro",
     "postUrl": "https://x.com/KomoriGenjiro/status/2112229702228123766",
@@ -2077,6 +2312,9 @@
   {
     "slug": "hack-your-house",
     "name": "Hack Your House",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Bud Johnson",
     "handle": "@BudJohnson",
     "postUrl": "https://x.com/BudJohnson/status/2112238533553656073",
@@ -2095,6 +2333,9 @@
   {
     "slug": "script-this-routine",
     "name": "Script This Routine",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Kevin Logan",
     "handle": "@Kevin_Logan",
     "postUrl": "https://x.com/Kevin_Logan/status/2112505666942407076",
@@ -2119,6 +2360,9 @@
   {
     "slug": "x-following-cleanup",
     "name": "X Following Cleanup",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "JKash",
     "handle": "@JKash000",
     "postUrl": "https://x.com/JKash000/status/2112528539274584196",
@@ -2143,6 +2387,9 @@
   {
     "slug": "pre-mortem",
     "name": "Pre-mortem",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Diana Park",
     "handle": "@madebydia",
     "postUrl": "https://x.com/madebydia/status/2112556983010410745",
@@ -2167,6 +2414,9 @@
   {
     "slug": "reel-to-x",
     "name": "Reel ➡️ 𝕏",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Phil",
     "handle": "@Phil_Holland",
     "postUrl": "https://x.com/Phil_Holland/status/2112727285925085545",
@@ -2191,6 +2441,9 @@
   {
     "slug": "mail-in-x-chat",
     "name": "Mail in X Chat",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Phil",
     "handle": "@Phil_Holland",
     "postUrl": "https://x.com/Phil_Holland/status/2112675618487947266",
@@ -2215,6 +2468,9 @@
   {
     "slug": "jane",
     "name": "Jane",
+    "categories": [
+      "Tanulás"
+    ],
     "author": "Kent Langley",
     "handle": "@KentLangley",
     "postUrl": "https://x.com/KentLangley/status/2112681032944345570",
@@ -2245,6 +2501,9 @@
   {
     "slug": "bookmark-to-output",
     "name": "Bookmark to Output",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Mustafa Ergisi",
     "handle": "@mustafaergisi",
     "postUrl": "https://x.com/mustafaergisi/status/2112521400443351316",
@@ -2276,6 +2535,10 @@
   {
     "slug": "allergy-friendly-eats",
     "name": "Allergy-Friendly Eats",
+    "categories": [
+      "Egészség és sport",
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Vineyard Hill Bots",
     "handle": "@dalegandy",
     "postUrl": "https://x.com/dalegandy/status/2112685289025994800",
@@ -2300,6 +2563,9 @@
   {
     "slug": "bot-updates",
     "name": "Grok Bot Updates",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "XPixel",
     "handle": "@xpixeladventure",
     "postedAt": "2026-10-20T12:30:29Z",
@@ -2325,6 +2591,9 @@
   {
     "slug": "inbox-manager",
     "name": "Inbox Manager",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Gaurav Singh",
     "handle": "@ubiquitous_mind",
     "postUrl": "https://x.com/ubiquitous_mind/status/2112608796757344509",
@@ -2355,6 +2624,9 @@
   {
     "slug": "dad-bot",
     "name": "Dad Bot",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Mike P",
     "handle": "@mikepat711",
     "postUrl": "https://x.com/mikepat711/status/2112859643915407504",
@@ -2373,6 +2645,9 @@
   {
     "slug": "drive-vault",
     "name": "Drive Vault",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "X Freeze",
     "handle": "@XFreeze",
     "postUrl": "https://x.com/XFreeze/status/2112794321502027812",
@@ -2397,6 +2672,9 @@
   {
     "slug": "app-replicator",
     "name": "APP REPLICATOR",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Brian Roemmele",
     "handle": "@BrianRoemmele",
     "postUrl": "https://x.com/BrianRoemmele/status/2113140131813356006",
@@ -2415,6 +2693,9 @@
   {
     "slug": "video-creator",
     "name": "Video Creator",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Farzad",
     "handle": "@farzyness",
     "postUrl": "https://x.com/farzyness/status/2112941787526447195",
@@ -2433,6 +2714,9 @@
   {
     "slug": "fake-review-buster",
     "name": "Fake Review Buster",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Jeff Stone",
     "handle": "@jeffnixonstone",
     "postUrl": "https://x.com/jeffnixonstone/status/2112914378660131032",
@@ -2451,6 +2735,9 @@
   {
     "slug": "starlink-check",
     "name": "Starlink Check",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "nick",
     "handle": "@thecsguy",
     "postUrl": "https://x.com/thecsguy/status/2113015216514711844",
@@ -2469,6 +2756,9 @@
   {
     "slug": "convert-bot",
     "name": "Convert Bot",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "brflux",
     "handle": "@brflux",
     "postUrl": "https://x.com/brflux/status/2112929836461367504",
@@ -2494,6 +2784,9 @@
   {
     "slug": "playlist-builder",
     "name": "Playlist Builder",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Kolby Baxter",
     "handle": "@KolbyBBaxter",
     "postUrl": "https://x.com/KolbyBBaxter/status/2113115477744718220",
@@ -2518,6 +2811,9 @@
   {
     "slug": "kitchen-multitasker",
     "name": "The Kitchen Multitasker",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Dayton",
     "handle": "@dayyanl",
     "postUrl": "https://x.com/dayyanl/status/2112994651544391936",
@@ -2536,6 +2832,9 @@
   {
     "slug": "focus-coach",
     "name": "Focus Coach",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Andrei",
     "handle": "@altf4andrei",
     "postUrl": "https://x.com/altf4andrei/status/2112898057008447836",
@@ -2560,6 +2859,9 @@
   {
     "slug": "bookmark-debt-collector",
     "name": "Bookmark Debt Collector",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Harris",
     "handle": "@harris_p10",
     "postUrl": "https://x.com/harris_p10/status/2113289856734417220",
@@ -2590,6 +2892,9 @@
   {
     "slug": "smart-shopper",
     "name": "Smart Shopper",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "JP",
     "handle": "@Jprz1321",
     "postUrl": "https://x.com/Jprz1321/status/2113325691265527997",
@@ -2621,6 +2926,9 @@
   {
     "slug": "akapen-bot",
     "name": "akapen bot",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "まさお@AI駆動開発",
     "handle": "@AI_masaou",
     "postUrl": "https://x.com/AI_masaou/status/2113180061822230740",
@@ -2639,6 +2947,9 @@
   {
     "slug": "bills",
     "name": "Bills",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Daniel Dewhurst",
     "handle": "@ddewhurst",
     "postUrl": "https://x.com/ddewhurst/status/2113219193667526893",
@@ -2663,6 +2974,9 @@
   {
     "slug": "penny-doge",
     "name": "Penny DOGE",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Bowie",
     "handle": "@BowieHole",
     "postUrl": "https://x.com/BowieHole/status/2113280435711316092",
@@ -2687,6 +3001,9 @@
   {
     "slug": "the-tiebreaker",
     "name": "The Tiebreaker",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Si",
     "handle": "@SiEdgeGeek",
     "postUrl": "https://x.com/SiEdgeGeek/status/2113290231340581189",
@@ -2705,6 +3022,9 @@
   {
     "slug": "youtube-strategy-professor",
     "name": "YouTube Strategy Professor",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Abdullah",
     "handle": "@stratbyabdullah",
     "postUrl": "https://x.com/stratbyabdullah/status/2113234915701805197",
@@ -2729,6 +3049,9 @@
   {
     "slug": "sports-fan-desk",
     "name": "Sports Fan Desk",
+    "categories": [
+      "Egészség és sport"
+    ],
     "author": "Ashley",
     "handle": "@ashleyschendel",
     "postUrl": "https://x.com/ashleyschendel/status/2113423762637127877",
@@ -2747,6 +3070,9 @@
   {
     "slug": "mac-perms",
     "name": "Mac Perms",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Asher Armstrong",
     "handle": "@AsherArmstrong",
     "postUrl": "https://x.com/AsherArmstrong/status/2113467664270086209",
@@ -2771,6 +3097,9 @@
   {
     "slug": "what-should-my-bot-do",
     "name": "What Should My Bot Do?",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Roshel Perera",
     "handle": "@RoshelPere15695",
     "postUrl": "https://x.com/RoshelPere15695/status/2113254070806880548",
@@ -2789,6 +3118,9 @@
   {
     "slug": "commitments",
     "name": "Commitments",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Sam Lambert",
     "handle": "@samlambert",
     "postUrl": "https://x.com/samlambert/status/2099584402045210992",
@@ -2836,6 +3168,9 @@
   {
     "slug": "trimmy",
     "name": "trimmy",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "TimDOES",
     "handle": "@TimDOES",
     "postUrl": "https://x.com/TimDOES/status/2106820628213051751",
@@ -2873,6 +3208,9 @@
   {
     "slug": "explainer-video-bot",
     "name": "Explainer Video bot",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "ChaosLensX",
     "handle": "@ChaosLensX",
     "postUrl": "https://x.com/ChaosLensX/status/2110319950178951454",
@@ -2897,6 +3235,9 @@
   {
     "slug": "sentinel",
     "name": "Sentinel",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Morgan",
     "handle": "@badmorgan420",
     "postUrl": "https://x.com/badmorgan420/status/2113317030094864508",
@@ -2937,6 +3278,9 @@
   {
     "slug": "professor-g",
     "name": "Professor G",
+    "categories": [
+      "Tanulás"
+    ],
     "author": "Mike P",
     "handle": "@mikepat711",
     "postUrl": "https://x.com/mikepat711/status/2111548114641269036",
@@ -2968,6 +3312,9 @@
   {
     "slug": "budget-bot",
     "name": "Budget Bot",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Mike P",
     "handle": "@mikepat711",
     "postUrl": "https://x.com/mikepat711/status/2113057811940659422",
@@ -3028,6 +3375,9 @@
   {
     "slug": "automobot",
     "name": "Automobot",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Mike P",
     "handle": "@mikepat711",
     "postUrl": "https://x.com/mikepat711/status/2112219622812651566",
@@ -3059,6 +3409,9 @@
   {
     "slug": "errand-buddy",
     "name": "Errand Buddy",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Mike P",
     "handle": "@mikepat711",
     "postUrl": "https://x.com/mikepat711/status/2111213218626453959",
@@ -3094,6 +3447,9 @@
   {
     "slug": "tesla-wrap-builder",
     "name": "Tesla Wrap Builder",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Mike P",
     "handle": "@mikepat711",
     "postUrl": "https://x.com/mikepat711/status/2106020563672060183",
@@ -3118,6 +3474,10 @@
   {
     "slug": "dropped-ball-scanner",
     "name": "Dropped-Ball Scanner",
+    "categories": [
+      "E-mail és üzenetek",
+      "Produktivitás"
+    ],
     "author": "Austen Allred",
     "handle": "@Austen",
     "postUrl": "https://x.com/Austen/status/2113760782492000356",
@@ -3155,6 +3515,9 @@
   {
     "slug": "security-audit-bot",
     "name": "Security Audit Bot",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Phil",
     "handle": "@Phil_Holland",
     "postUrl": "https://x.com/Phil_Holland/status/2113717196136546403",
@@ -3193,6 +3556,9 @@
   {
     "slug": "handyman",
     "name": "Handyman",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Dylan",
     "handle": "@dkmitc",
     "postUrl": "https://x.com/dkmitc/status/2113789426904039633",
@@ -3223,6 +3589,9 @@
   {
     "slug": "sherlock-holmes-fact-checker",
     "name": "Sherlock Holmes (Fact Checker)",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Tom⚡️",
     "handle": "@TitaniumTomP",
     "postUrl": "https://x.com/TitaniumTomP/status/2113661289587499223",
@@ -3248,6 +3617,9 @@
   {
     "slug": "last-call",
     "name": "Last Call",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "nick",
     "handle": "@thecsguy",
     "postUrl": "https://x.com/thecsguy/status/2113829582868562344",
@@ -3284,6 +3656,9 @@
   {
     "slug": "covered",
     "name": "Covered",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Mike Heckert",
     "handle": "@MichaelHeckert",
     "postUrl": "https://x.com/MichaelHeckert/status/2113712551670456582",
@@ -3302,6 +3677,10 @@
   {
     "slug": "bot-beginner",
     "name": "Bot Beginner: Your First 7 Days",
+    "categories": [
+      "Grok Bot és flotta",
+      "Tanulás"
+    ],
     "author": "John Walker",
     "handle": "@JohnWalker",
     "postUrl": "https://x.com/JohnWalker/status/2113832658358694355",
@@ -3333,6 +3712,9 @@
   {
     "slug": "gdpr-bot",
     "name": "GDPR Bot",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Szilágyi Pál",
     "handle": "@szilagyipal",
     "postUrl": "https://x.com/szilagyipal/status/2113727885148352958",
@@ -3357,6 +3739,9 @@
   {
     "slug": "listener",
     "name": "Listener",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "SamWise",
     "handle": "@SirWiseSam",
     "postUrl": "https://x.com/SirWiseSam/status/2113609113250996614",
@@ -3382,6 +3767,9 @@
   {
     "slug": "disk-saver",
     "name": "Disk Saver",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Hovhannes Mkhitaryan",
     "handle": "@hovinthenorth",
     "postUrl": "https://x.com/hovinthenorth/status/2113751731406528764",
@@ -3400,6 +3788,9 @@
   {
     "slug": "apple-inventory-deal-bot",
     "name": "Apple Inventory & Deal Bot",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Phil",
     "handle": "@Phil_Holland",
     "postUrl": "https://x.com/Phil_Holland/status/2111638882194436276",
@@ -3432,6 +3823,9 @@
   {
     "slug": "dashboard-maker",
     "name": "Dashboard Maker",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Avid",
     "handle": "@Av1dlive",
     "postUrl": "https://x.com/Av1dlive/status/2113979312139538607",
@@ -3451,6 +3845,9 @@
   {
     "slug": "crate-digger",
     "name": "Crate Digger",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Melodies & Masterpieces",
     "handle": "@SVG__Collection",
     "postUrl": "https://x.com/SVG__Collection/status/2113992460301172805",
@@ -3476,6 +3873,9 @@
   {
     "slug": "gift-finder",
     "name": "Gift Finder",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Dirty Tesla",
     "handle": "@DirtyTesLa",
     "postUrl": "https://x.com/DirtyTesLa/status/2114065343098339533",
@@ -3507,6 +3907,9 @@
   {
     "slug": "x-to-linkedin",
     "name": "X to LinkedIn",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Pratik Gandhi",
     "handle": "@pratikg",
     "postUrl": "https://x.com/pratikg/status/2114184104405287020",
@@ -3543,6 +3946,9 @@
   {
     "slug": "house-memory",
     "name": "House Memory",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Kent Weber",
     "handle": "@KentBWeber",
     "postUrl": "https://x.com/KentBWeber/status/2114055027463762247",
@@ -3580,6 +3986,9 @@
   {
     "slug": "kindle-courier",
     "name": "Kindle Courier 2.0.0",
+    "categories": [
+      "Tanulás"
+    ],
     "author": "George Hong",
     "handle": "@DomainMaster",
     "postUrl": "https://x.com/DomainMaster/status/2114023099570254249",
@@ -3611,6 +4020,9 @@
   {
     "slug": "make-it-a-10",
     "name": "Make It a 10",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Luke Henderson",
     "handle": "@metalfox",
     "postUrl": "https://x.com/metalfox/status/2114014057145753988",
@@ -3636,6 +4048,9 @@
   {
     "slug": "template-safety-checker",
     "name": "Template Safety Checker",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "✦ Jorhan",
     "handle": "@Jorhan",
     "postUrl": "https://x.com/Jorhan/status/2114167591660843400",
@@ -3654,6 +4069,9 @@
   {
     "slug": "table-for-2",
     "name": "Table for 2",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "KavyStones",
     "handle": "@GoodLuckBells",
     "postUrl": "https://x.com/GoodLuckBells/status/2114000652611563578",
@@ -3679,6 +4097,9 @@
   {
     "slug": "course-builder-coach",
     "name": "Course Builder & Coach",
+    "categories": [
+      "Tanulás"
+    ],
     "author": "Jesse Heredia",
     "handle": "@JesseHeredia",
     "postUrl": "https://x.com/JesseHeredia/status/2114186297958936934",
@@ -3710,6 +4131,9 @@
   {
     "slug": "scam-text-email-checker",
     "name": "Scam Text & Email Checker",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Giga",
     "handle": "@LouDeSant",
     "postUrl": "https://x.com/LouDeSant/status/2114078194857132244",
@@ -3735,6 +4159,9 @@
   {
     "slug": "email-bot",
     "name": "Email Bot",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Austen Allred",
     "handle": "@Austen",
     "postUrl": "https://x.com/Austen/status/2114428790315381036",
@@ -3771,6 +4198,9 @@
   {
     "slug": "renovation-planner",
     "name": "Renovation Planner",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Michael",
     "handle": "@mglashouwer",
     "postUrl": "https://x.com/mglashouwer/status/2114413868394983875",
@@ -3796,6 +4226,9 @@
   {
     "slug": "x-bookmarks-organizer",
     "name": "X Bookmarks Organizer",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Jonathan Newburg",
     "handle": "@realjohnnewburg",
     "postUrl": "https://x.com/realjohnnewburg/status/2114472488478585198",
@@ -3838,6 +4271,9 @@
   {
     "slug": "morning-brief",
     "name": "Morning Brief",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Dannyijbol",
     "handle": "@Dannyijbol",
     "postUrl": "https://x.com/Dannyijbol/status/2114276906967396376",
@@ -3881,6 +4317,9 @@
   {
     "slug": "decide",
     "name": "Decide",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Luke Kim",
     "handle": "@lukekim",
     "postUrl": "https://x.com/lukekim/status/2114472524436423074",
@@ -3906,6 +4345,9 @@
   {
     "slug": "receipt-keeper",
     "name": "Receipt Keeper",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Kent Weber",
     "handle": "@KentBWeber",
     "postUrl": "https://x.com/KentBWeber/status/2114341023354962188",
@@ -3942,6 +4384,9 @@
   {
     "slug": "free-trial-reminder",
     "name": "Free Trial Reminder",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Andres Ruggiero",
     "handle": "@AndresRuggiero3",
     "postUrl": "https://x.com/AndresRuggiero3/status/2114375681069215926",
@@ -3972,6 +4417,10 @@
   {
     "slug": "lexy",
     "name": "Lexy",
+    "categories": [
+      "Pénzügy és vásárlás",
+      "Otthon, utazás, étkezés"
+    ],
     "author": "petru",
     "handle": "@realpetru",
     "postUrl": "https://x.com/realpetru/status/2114120901272711351",
@@ -3998,6 +4447,9 @@
   {
     "slug": "podsum",
     "name": "PodSum",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "ghetti",
     "handle": "@Ghettibeats",
     "postUrl": "https://x.com/Ghettibeats/status/2114400265939959871",
@@ -4023,6 +4475,9 @@
   {
     "slug": "next-episode",
     "name": "Next Episode",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Nazhand 🇮🇷🇨🇦",
     "handle": "@najandz",
     "postUrl": "https://x.com/najandz/status/2114588198257172790",
@@ -4047,6 +4502,9 @@
   {
     "slug": "fitness-coach-corey",
     "name": "Fitness Coach",
+    "categories": [
+      "Egészség és sport"
+    ],
     "author": "Corey",
     "handle": "@coreyganim",
     "postUrl": "https://x.com/coreyganim/status/2114703733007188231",
@@ -4094,6 +4552,9 @@
   {
     "slug": "x-virality-score",
     "name": "X Virality Score",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "theGreatest",
     "handle": "@thegreatest_sv",
     "postUrl": "https://x.com/thegreatest_sv/status/2100236496837984387",
@@ -4130,6 +4591,9 @@
   {
     "slug": "quality-control-bot",
     "name": "Quality Control Bot",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Austen Allred",
     "handle": "@Austen",
     "postUrl": "https://x.com/Austen/status/2114803593941549488",
@@ -4173,6 +4637,9 @@
   {
     "slug": "non-evil-sales-bot",
     "name": "Non-Evil Sales Bot",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Austen Allred",
     "handle": "@Austen",
     "postUrl": "https://x.com/Austen/status/2114708312981639244",
@@ -4210,6 +4677,9 @@
   {
     "slug": "iphone-screenshot-bot",
     "name": "iPhone Screenshot Bot",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Ryan G",
     "handle": "@RyDawg42",
     "postUrl": "https://x.com/RyDawg42/status/2114825534840672604",
@@ -4235,6 +4705,9 @@
   {
     "slug": "snapshot",
     "name": "Snapshot",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Tom⚡️",
     "handle": "@TitaniumTomP",
     "postUrl": "https://x.com/TitaniumTomP/status/2114824160132415856",
@@ -4253,6 +4726,9 @@
   {
     "slug": "sparkle",
     "name": "Sparkle",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "M.C.A Hogarth",
     "handle": "@mcahogarth",
     "postUrl": "https://x.com/mcahogarth/status/2114818674045661373",
@@ -4277,6 +4753,9 @@
   {
     "slug": "birthday-message-bot",
     "name": "Birthday Message Bot",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Queenyx 👑",
     "handle": "@Queenity78",
     "postUrl": "https://x.com/Queenity78/status/2114848953401266475",
@@ -4308,6 +4787,9 @@
   {
     "slug": "study-buddy",
     "name": "Study Buddy",
+    "categories": [
+      "Tanulás"
+    ],
     "author": "Yonatan Langer",
     "handle": "@yonatan_langer",
     "postUrl": "https://x.com/yonatan_langer/status/2114870059575222334",
@@ -4339,6 +4821,9 @@
   {
     "slug": "call-minutes-maker",
     "name": "Call Minutes Maker (議事録起こすマン)",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Eri@個人開発するUXデザイナー",
     "handle": "@EriAIDesign",
     "postUrl": "https://x.com/EriAIDesign/status/2114926086668878057",
@@ -4369,6 +4854,9 @@
   {
     "slug": "gift-brainstormer",
     "name": "Gift Brainstormer",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "𝚈𝚟𝚘𝚗𝚗𝚎 𝙻𝚎𝚎",
     "handle": "@Vontweeter",
     "postUrl": "https://x.com/Vontweeter/status/2114920794593919327",
@@ -4411,6 +4899,9 @@
   {
     "slug": "home-helper",
     "name": "Home Helper",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "CaliX",
     "handle": "@CaliLumberJack",
     "postUrl": "https://x.com/CaliLumberJack/status/2114748893552390649",
@@ -4442,6 +4933,9 @@
   {
     "slug": "talk-me-out-of-it",
     "name": "Talk Me Out of It 🛒",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Jen X🗽",
     "handle": "@jenrenee",
     "postUrl": "https://x.com/jenrenee/status/2115100226973561029",
@@ -4473,6 +4967,9 @@
   {
     "slug": "hrrrr-file-agent",
     "name": "Hrrrr: File Agent",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Ralph Bibera",
     "handle": "@ralphbibera",
     "postUrl": "https://x.com/ralphbibera/status/2115124201476800900",
@@ -4504,6 +5001,9 @@
   {
     "slug": "presents",
     "name": "Presents",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Dylan",
     "handle": "@dkmitc",
     "postUrl": "https://x.com/dkmitc/status/2115095630725218609",
@@ -4552,6 +5052,9 @@
   {
     "slug": "move-ready",
     "name": "Move Ready",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Andrea | Draft and Focus",
     "handle": "@draftandfocus",
     "postUrl": "https://x.com/draftandfocus/status/2115080226212544734",
@@ -4590,6 +5093,9 @@
   {
     "slug": "tour-guide",
     "name": "Tour Guide",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "ThunderX",
     "handle": "@LeeMatt17631",
     "postUrl": "https://x.com/LeeMatt17631/status/2115046680290881565",
@@ -4627,6 +5133,9 @@
   {
     "slug": "inbox-injection-guard",
     "name": "Inbox Injection Guard",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Helmet Required (Debi)",
     "handle": "@HopefullySC",
     "postUrl": "https://x.com/HopefullySC/status/2115197452051742988",
@@ -4658,6 +5167,9 @@
   {
     "slug": "at-home-date-night",
     "name": "At-Home Date Night",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Jennifer Nelson",
     "handle": "@JenniferNe83522",
     "postUrl": "https://x.com/JenniferNe83522/status/2115141670119305357",
@@ -4689,6 +5201,9 @@
   {
     "slug": "data-hygienist",
     "name": "Data Hygienist",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Kevin Chau",
     "handle": "@kchau",
     "postUrl": "https://x.com/kchau/status/2115283474190115291",
@@ -4726,6 +5241,9 @@
   {
     "slug": "gatekeeper",
     "name": "Gatekeeper",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Abel",
     "handle": "@WreckItAbel",
     "postUrl": "https://x.com/WreckItAbel/status/2114848007367933987",
@@ -4745,6 +5263,9 @@
   {
     "slug": "spacewise",
     "name": "Spacewise",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Stijn (Supervised)",
     "handle": "@StarFinch",
     "postUrl": "https://x.com/StarFinch/status/2115330885612679291",
@@ -4764,6 +5285,9 @@
   {
     "slug": "doc-merger",
     "name": "Doc Merger",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Brian Roemmele",
     "handle": "@BrianRoemmele",
     "postUrl": "https://x.com/BrianRoemmele/status/2115501459542573101",
@@ -4806,6 +5330,9 @@
   {
     "slug": "email-unsubscribe",
     "name": "Email Unsubscribe",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Ishu Agrawal",
     "handle": "@ishuagra02",
     "postUrl": "https://x.com/ishuagra02/status/2115631005910589481",
@@ -4838,6 +5365,9 @@
   {
     "slug": "fix-stuck-bot-computer",
     "name": "Fix Stuck Bot Computer",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Alx Spiker",
     "handle": "@YourFutureCoder",
     "postUrl": "https://x.com/YourFutureCoder/status/2115647143616925769",
@@ -4868,6 +5398,9 @@
   {
     "slug": "game-maker",
     "name": "Game Maker",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Recruta Zero",
     "handle": "@RecrutaZero",
     "postUrl": "https://x.com/RecrutaZero/status/2115567342197354900",
@@ -4898,6 +5431,9 @@
   {
     "slug": "second-brain",
     "name": "Second Brain",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Michael Ahlers",
     "handle": "@MichaelAhlers",
     "postUrl": "https://x.com/MichaelAhlers/status/2115507322319786092",
@@ -4936,6 +5472,9 @@
   {
     "slug": "helpdesk",
     "name": "helpdesk",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Edmundo Ponce",
     "handle": "@moondough",
     "postUrl": "https://x.com/moondough/status/2115436137334575351",
@@ -4967,6 +5506,10 @@
   {
     "slug": "inbox-to-calendar-catcher",
     "name": "Inbox-to-Calendar Catcher",
+    "categories": [
+      "E-mail és üzenetek",
+      "Produktivitás"
+    ],
     "author": "Louise P",
     "handle": "@louise19plowman",
     "postUrl": "https://x.com/louise19plowman/status/2115535921231675724",
@@ -4992,6 +5535,9 @@
   {
     "slug": "deal-scout",
     "name": "Deal Scout",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "DBCrypto",
     "handle": "@DBCrypt0",
     "postUrl": "https://x.com/DBCrypt0/status/2115572839361519895",
@@ -5031,6 +5577,9 @@
   {
     "slug": "party-wedding-planner",
     "name": "Party & Wedding Planner",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Yonatan Langer",
     "handle": "@yonatan_langer",
     "postUrl": "https://x.com/yonatan_langer/status/2115419161467973756",
@@ -5068,6 +5617,9 @@
   {
     "slug": "vampbot",
     "name": "Vampbot",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Vladgz 🥷",
     "handle": "@StarkDegenz",
     "postUrl": "https://x.com/StarkDegenz/status/2115500873359180262",
@@ -5100,6 +5652,9 @@
   {
     "slug": "fred",
     "name": "Fred",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Parker 🐐",
     "handle": "@DotComParker",
     "postUrl": "https://x.com/DotComParker/status/2115826239231660433",
@@ -5150,6 +5705,9 @@
   {
     "slug": "font-designer",
     "name": "Font Designer",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Jenny Marquis",
     "handle": "@JennyMarquis",
     "postUrl": "https://x.com/JennyMarquis/status/2115884996103692303",
@@ -5179,6 +5737,9 @@
   {
     "slug": "recall-radar",
     "name": "Recall Radar",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Kevin Logan",
     "handle": "@Kevin_Logan",
     "postUrl": "https://x.com/Kevin_Logan/status/2115732118986764492",
@@ -5217,6 +5778,9 @@
   {
     "slug": "keepsettings",
     "name": "KeepSettings",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "DivyQueen 🇺🇸",
     "handle": "@DivysQueen",
     "postUrl": "https://x.com/DivysQueen/status/2115977751471743147",
@@ -5255,6 +5819,9 @@
   {
     "slug": "the-wife-saver",
     "name": "The Wife Saver",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Brandon Barton",
     "handle": "@BrandonBarton26",
     "postUrl": "https://x.com/BrandonBarton26/status/2115993739369832959",
@@ -5287,6 +5854,9 @@
   {
     "slug": "no-slop",
     "name": "No Slop",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "MASON VERSLUIS",
     "handle": "@MasonVersluis",
     "postUrl": "https://x.com/MasonVersluis/status/2115900174497361955",
@@ -5330,6 +5900,9 @@
   {
     "slug": "omarchytv-installer",
     "name": "OmarchyTV Installer",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Marco Porro",
     "handle": "@MarcoPorro",
     "postUrl": "https://x.com/MarcoPorro/status/2115810275589046577",
@@ -5354,6 +5927,9 @@
   {
     "slug": "vivian",
     "name": "Vivian",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Martha 🌑🚀",
     "handle": "@MyTeslaMoonship",
     "postUrl": "https://x.com/MyTeslaMoonship/status/2115772132663669067",
@@ -5401,6 +5977,9 @@
   {
     "slug": "x-banner-maker",
     "name": "X Banner Maker",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "brflux (aka brett)",
     "handle": "@brflux",
     "postUrl": "https://x.com/brflux/status/2115991312432316806",
@@ -5426,6 +6005,9 @@
   {
     "slug": "proofcheck",
     "name": "ProofCheck",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "John P Creates",
     "handle": "@johnp_creates",
     "postUrl": "https://x.com/johnp_creates/status/2115841502622671246",
@@ -5463,6 +6045,9 @@
   {
     "slug": "action-button-bot",
     "name": "Action Button Bot",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Chris",
     "handle": "@everestchris6",
     "postUrl": "https://x.com/everestchris6/status/2116184125640261875",
@@ -5493,6 +6078,9 @@
   {
     "slug": "whatsapper",
     "name": "WhatsApper",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Gonto 🤓",
     "handle": "@mgonto",
     "postUrl": "https://x.com/mgonto/status/2116293235173740905",
@@ -5535,6 +6123,9 @@
   {
     "slug": "liked-songs-dj",
     "name": "Grok Bot DJ From Your Liked Songs",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Brian Roemmele",
     "handle": "@BrianRoemmele",
     "postUrl": "https://x.com/BrianRoemmele/status/2116236766051221902",
@@ -5572,6 +6163,9 @@
   {
     "slug": "reply-only-inbox",
     "name": "Reply-Only Inbox",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "TONY™",
     "handle": "@TONYxTWO",
     "postUrl": "https://x.com/TONYxTWO/status/2116150872753484003",
@@ -5619,6 +6213,9 @@
   {
     "slug": "data-viz-bot",
     "name": "Data Viz Bot",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Arthur MacWaters",
     "handle": "@ArthurMacwaters",
     "postUrl": "https://x.com/ArthurMacwaters/status/2116304629676019981",
@@ -5649,6 +6246,9 @@
   {
     "slug": "tiny-panels",
     "name": "Tiny Panels",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Nicolas Dovetta",
     "handle": "@NDovetta",
     "postUrl": "https://x.com/NDovetta/status/2116416917154263439",
@@ -5678,6 +6278,9 @@
   {
     "slug": "mood-board",
     "name": "Mood Board",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Tom⚡️",
     "handle": "@TitaniumTomP",
     "postUrl": "https://x.com/TitaniumTomP/status/2116524995669016948",
@@ -5713,6 +6316,9 @@
   {
     "slug": "koi",
     "name": "KOI",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Leo",
     "handle": "@piccionenter",
     "postUrl": "https://x.com/piccionenter/status/2116205760723968453",
@@ -5748,6 +6354,9 @@
   {
     "slug": "minecraft-coach",
     "name": "Minecraft Coach",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Byte Cipher",
     "handle": "@bytecipher01",
     "postUrl": "https://x.com/bytecipher01/status/2116103743397568735",
@@ -5778,6 +6387,9 @@
   {
     "slug": "scam-check-for-x",
     "name": "Scam Check for X",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "brflux (aka brett)",
     "handle": "@brflux",
     "postUrl": "https://x.com/brflux/status/2116285924568928489",
@@ -5815,6 +6427,9 @@
   {
     "slug": "child-safety-coach",
     "name": "🔐 Child Safety Coach",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Phil",
     "handle": "@Phil_Holland",
     "postUrl": "https://x.com/Phil_Holland/status/2116552290752409880",
@@ -5851,6 +6466,9 @@
   {
     "slug": "networking-match-scout",
     "name": "Networking Match Scout",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Hades",
     "handle": "@0xHvdes",
     "postUrl": "https://x.com/0xHvdes/status/2116583243830960417",
@@ -5893,6 +6511,9 @@
   {
     "slug": "citation-counter",
     "name": "Citation Counter",
+    "categories": [
+      "Tanulás"
+    ],
     "author": "Szilágyi Pál",
     "handle": "@szilagyipal",
     "postUrl": "https://x.com/szilagyipal/status/2116543541962752123",
@@ -5935,6 +6556,9 @@
   {
     "slug": "quit-coach",
     "name": "Quit Coach",
+    "categories": [
+      "Egészség és sport"
+    ],
     "author": "Patrick Nelson",
     "handle": "@PatrickNelson00",
     "postUrl": "https://x.com/PatrickNelson00/status/2116697149463568706",
@@ -5976,6 +6600,9 @@
   {
     "slug": "photolibbot",
     "name": "PhotoLibBot",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Joe Magyar",
     "handle": "@j_magyar",
     "postUrl": "https://x.com/j_magyar/status/2116794202516582833",
@@ -6006,6 +6633,9 @@
   {
     "slug": "xy-stream-recap",
     "name": "XY Stream Recap",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "XPixel",
     "handle": "@xpixeladventure",
     "postUrl": "https://x.com/xpixeladventure/status/2116700435117486316",
@@ -6048,6 +6678,9 @@
   {
     "slug": "family-security-coach",
     "name": "Family Security Coach",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Eduardo Muth Martinez",
     "handle": "@EduMuthMartinez",
     "postUrl": "https://x.com/EduMuthMartinez/status/2116709361003217395",
@@ -6091,6 +6724,9 @@
   {
     "slug": "game-deals-radar",
     "name": "Game Deals Radar",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "JPipo86",
     "handle": "@JPipo86",
     "postUrl": "https://x.com/JPipo86/status/2116530642473390088",
@@ -6140,6 +6776,9 @@
   {
     "slug": "sneaker-scout",
     "name": "Sneaker Scout",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "TeslaAiGirl",
     "handle": "@TeslaAiGirl",
     "postUrl": "https://x.com/TeslaAiGirl/status/2116592800213115243",
@@ -6171,6 +6810,9 @@
   {
     "slug": "holiday-bot",
     "name": "Holiday Bot",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Brett",
     "handle": "@Bro7388",
     "postUrl": "https://x.com/Bro7388/status/2116658519642362280",
@@ -6214,6 +6856,9 @@
   {
     "slug": "explain-like-im-five",
     "name": "Explain Like I'm Five",
+    "categories": [
+      "Tanulás"
+    ],
     "author": "Rich Silver",
     "handle": "@RichSilver",
     "postUrl": "https://x.com/RichSilver/status/2116924413593457027",
@@ -6249,6 +6894,9 @@
   {
     "slug": "study-cartoons",
     "name": "Study Cartoons",
+    "categories": [
+      "Tanulás"
+    ],
     "author": "Marc Saint-Jour",
     "handle": "@MSaintjour",
     "postUrl": "https://x.com/MSaintjour/status/2117112962867503487",
@@ -6292,6 +6940,9 @@
   {
     "slug": "meal-planner",
     "name": "Meal planner",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Rachel V",
     "handle": "@RachelVT42",
     "postUrl": "https://x.com/RachelVT42/status/2117014246332465206",
@@ -6334,6 +6985,9 @@
   {
     "slug": "political-spam-blocker",
     "name": "Political Spam Blocker",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Sawyer Merritt",
     "handle": "@SawyerMerritt",
     "postUrl": "https://x.com/SawyerMerritt/status/2117092773996224702",
@@ -6374,6 +7028,9 @@
   {
     "slug": "ablelatch",
     "name": "AbleLatch",
+    "categories": [
+      "Egészség és sport"
+    ],
     "author": "CaliX",
     "handle": "@CaliLumberJack",
     "postUrl": "https://x.com/CaliLumberJack/status/2116983617398472768",
@@ -6404,6 +7061,9 @@
   {
     "slug": "inbox-janitor",
     "name": "Inbox Janitor",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Lian",
     "handle": "@lianlian00",
     "postUrl": "https://x.com/lianlian00/status/2116860426311159834",
@@ -6452,6 +7112,9 @@
   {
     "slug": "butubot",
     "name": "ButuBot",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "Pete Biggam",
     "handle": "@petebiggam",
     "postUrl": "https://x.com/petebiggam/status/2117058172016017739",
@@ -6494,6 +7157,9 @@
   {
     "slug": "avatar-maker",
     "name": "Avatar Maker",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Rafal",
     "handle": "@rafalmmmmm",
     "postUrl": "https://x.com/rafalmmmmm/status/2116925801744797700",
@@ -6530,6 +7196,9 @@
   {
     "slug": "print-lab",
     "name": "Print Lab",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
     "author": "scottexplores.base.eth",
     "handle": "@ScottExplores29",
     "postUrl": "https://x.com/ScottExplores29/status/2116948802468991031",
@@ -6571,6 +7240,9 @@
   {
     "slug": "shawty-short-form-creator",
     "name": "Shawty · Short-Form creator",
+    "categories": [
+      "Marketing és tartalom"
+    ],
     "author": "Farzad 🇺🇸 🇮🇷",
     "handle": "@farzyness",
     "postUrl": "https://x.com/farzyness/status/2117412903460753526",
@@ -6619,6 +7291,9 @@
   {
     "slug": "routine-auditor",
     "name": "Routine Auditor",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Brad Garland",
     "handle": "@bradgarland",
     "postUrl": "https://x.com/bradgarland/status/2117401689724727807",
@@ -6672,6 +7347,9 @@
   {
     "slug": "genealogybot",
     "name": "GenealogyBot",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Scott Jordan",
     "handle": "@scottcjordan",
     "postUrl": "https://x.com/scottcjordan/status/2117436402355094014",
@@ -6707,6 +7385,9 @@
   {
     "slug": "media-kit",
     "name": "Media Kit",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "Shahrul",
     "handle": "@shahrulestar",
     "postUrl": "https://x.com/shahrulestar/status/2117511356958314746",
@@ -6749,6 +7430,9 @@
   {
     "slug": "jim-life-reset-mentor",
     "name": "Jim – Life Reset Mentor",
+    "categories": [
+      "Produktivitás"
+    ],
     "author": "skan",
     "handle": "@skan_io",
     "postUrl": "https://x.com/skan_io/status/2117416078343029017",
@@ -6786,6 +7470,10 @@
   {
     "slug": "security-deposit-recovery-helper",
     "name": "Security Deposit Recovery Helper",
+    "categories": [
+      "Pénzügy és vásárlás",
+      "Otthon, utazás, étkezés"
+    ],
     "author": "Prabhu | Grok Bots 🤖",
     "handle": "@KuttyPrabhu",
     "postUrl": "https://x.com/KuttyPrabhu/status/2117274995110158670",
@@ -6843,6 +7531,9 @@
   {
     "slug": "broker",
     "name": "Broker",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
     "author": "Dylan",
     "handle": "@dkmitc",
     "postUrl": "https://x.com/dkmitc/status/2117375502285721792",
@@ -6896,6 +7587,9 @@
   {
     "slug": "efficiency-optimizer",
     "name": "Grok Bot Efficiency Optimizer",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Sawyer Merritt",
     "handle": "@SawyerMerritt",
     "postUrl": "https://x.com/SawyerMerritt/status/2117321656146526230",
@@ -6948,6 +7642,9 @@
   {
     "slug": "forge",
     "name": "Forge",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
     "author": "Elisa",
     "handle": "@eeelistar",
     "postUrl": "https://x.com/eeelistar/status/2117551487865811300",
@@ -6997,6 +7694,10 @@
   {
     "slug": "three-quotes",
     "name": "Three Quotes",
+    "categories": [
+      "Otthon, utazás, étkezés",
+      "Pénzügy és vásárlás"
+    ],
     "author": "Brian Roemmele",
     "handle": "@BrianRoemmele",
     "postUrl": "https://x.com/BrianRoemmele/status/2117679311511761308",
@@ -7045,6 +7746,9 @@
   {
     "slug": "x-unbaiter",
     "name": "X Unbaiter",
+    "categories": [
+      "Egyéb"
+    ],
     "author": "Sebastian David Lees",
     "handle": "@sebs_tweets",
     "postUrl": "https://x.com/sebs_tweets/status/2117672426842509439",
@@ -7093,6 +7797,9 @@
   {
     "slug": "breach-watch",
     "name": "Breach Watch",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
     "author": "Tommy",
     "handle": "@tanderson9",
     "postUrl": "https://x.com/tanderson9/status/2117797823291015548",
