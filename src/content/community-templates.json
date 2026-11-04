@@ -6839,5 +6839,307 @@
     ],
     "integrations": [],
     "noteHu": "A sablon szerint nem ügyvéd, csak általános tájékoztatást ad, és üzenetet nem küld, csak vázlatot ír. A magyar szabályok forrásait a bot keresi meg; a sablon példái indiai és kaliforniai esetek."
+  },
+  {
+    "slug": "broker",
+    "name": "Broker",
+    "author": "Dylan",
+    "handle": "@dkmitc",
+    "postUrl": "https://x.com/dkmitc/status/2117375502285721792",
+    "postedAt": "2026-11-02T21:57:13Z",
+    "templateUrl": "https://x.ai/bot/_lwaVlXcjTz2RnZHfJjiD",
+    "templatePageReadable": true,
+    "fetched": "2026-11-04",
+    "summaryHu": "Személyes biztosításkereső bot. A sablon leírása szerint összegyűjti a gépjármű-, lakás- és árvízbiztosításaidat, azonos feltételekre vetve hasonlítja össze az ajánlatokat, jelzi a fedezeti hiányokat és a kedvezményeket, és megújítás előtt emlékeztet, hogy nézz körül újra. A készítő posztja szerint a botja új autóbiztosítást keresett neki, és egy hiányzó részletről (üvegkár-fedezet) maga hívta fel a biztosítót, amíg ő a gyerekeiért ment az iskolába.",
+    "postQuote": "I had my Grok Bot shop around new Auto Insurance.",
+    "templateQuote": "A personal insurance shopper that gathers your auto, home, and flood policies, compares like-for-like quotes, flags coverage gaps and discounts, and reminds you to reshop before renewals.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Gépjármű-, lakás- és árvízbiztosítások összegyűjtése",
+        "quote": "gathers your auto, home, and flood policies",
+        "from": "template"
+      },
+      {
+        "labelHu": "Azonos feltételű ajánlatok összehasonlítása",
+        "quote": "compares like-for-like quotes",
+        "from": "template"
+      },
+      {
+        "labelHu": "Fedezeti hiányok és kedvezmények jelzése",
+        "quote": "flags coverage gaps and discounts",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Emlékeztető megújítás előtt az újbóli ajánlatkérésre",
+        "quote": "reminds you to reshop before renewals",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablonlink a készítő saját, e poszt alá írt válaszában szerepel. A készítő ott azt írja, hogy a telefonhíváshoz külön tárcsázó botot is beállított, de szerinte erre nincs feltétlenül szükség. A forrás amerikai biztosítókkal készült; magyar biztosítókról és a magyar piacon való működésről nincs adat.",
+    "relatedTemplates": [
+      {
+        "slug": "automobot",
+        "name": "Automobot",
+        "noteHu": "Az Automobot az autó teljes karbantartását követi (műszaki vizsga, biztosítás, olajcsere, visszahívások); a Broker kifejezetten biztosítási ajánlatokat hasonlít össze és újrakeres."
+      },
+      {
+        "slug": "lexy",
+        "name": "Lexy",
+        "noteHu": "A Lexy általános háztartási jogi és ügyintézési segéd (biztosítási papírokkal is); a Broker a biztosítások árának és fedezetének összevetésére fókuszál."
+      }
+    ]
+  },
+  {
+    "slug": "efficiency-optimizer",
+    "name": "Grok Bot Efficiency Optimizer",
+    "author": "Sawyer Merritt",
+    "handle": "@SawyerMerritt",
+    "postUrl": "https://x.com/SawyerMerritt/status/2117321656146526230",
+    "postedAt": "2026-11-02T18:23:15Z",
+    "templateUrl": "https://x.ai/bot/6q44k3eKlHmC0keocH7He",
+    "templatePageReadable": true,
+    "fetched": "2026-11-04",
+    "summaryHu": "Keretkímélő bot a Grok Bot-használathoz. A sablon leírása szerint segít, hogy tovább kitartson a Grok Bot-használati kereted: hetente átnézi, mennyit használnak a botjaid és rutinjaid, és javaslatot tesz a hatékonyabb működésre. A készítő posztja szerint hetente emlékeztet a keret visszaállására is, és rövid összesítést ad arról, mely botok és rutinok fogyasztottak a legtöbbet az előző héten.",
+    "postQuote": "I've created a new Grok @Bot Efficiency Optimizer template that helps you make your Grok Bot usage/credits last longer.",
+    "templateQuote": "Helps you make your Grok Bot usage/credits last longer. Every week it reviews what your bots and routines use and suggests ways to make them more efficient.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "A botok és rutinok használatának átnézése, hatékonysági javaslatok",
+        "quote": "reviews what your bots and routines use and suggests ways to make them more efficient",
+        "from": "template"
+      },
+      {
+        "labelHu": "Felesleges használat azonosítása és csökkentési javaslatok",
+        "quote": "identify inefficiencies, and recommend ways to reduce unnecessary usage",
+        "from": "post"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Heti használati átnézés",
+        "quote": "Every week it reviews what your bots and routines use",
+        "from": "template"
+      },
+      {
+        "labelHu": "Heti emlékeztető a keret visszaállásáról, összesítés a legnagyobb fogyasztókról",
+        "quote": "It also reminds you once per week when your usage limits reset and gives you a quick breakdown of which bots and routines used the most the previous week.",
+        "from": "post"
+      }
+    ],
+    "integrations": [],
+    "relatedTemplates": [
+      {
+        "slug": "usage-watch",
+        "name": "Usage Watch",
+        "noteHu": "A Usage Watch naptárra teszi a rutinokat a keretvisszaállásig, és segít szüneteltetni a nagy fogyasztókat; az Efficiency Optimizer heti átnézést és hatékonysági javaslatokat ad."
+      },
+      {
+        "slug": "routine-auditor",
+        "name": "Routine Auditor",
+        "noteHu": "A Routine Auditor havonta osztályozza a rutinokat a futásnaplók alapján; az Efficiency Optimizer hetente nézi a botok és rutinok használatát."
+      }
+    ]
+  },
+  {
+    "slug": "forge",
+    "name": "Forge",
+    "author": "Elisa",
+    "handle": "@eeelistar",
+    "postUrl": "https://x.com/eeelistar/status/2117551487865811300",
+    "postedAt": "2026-11-03T09:36:31Z",
+    "templateUrl": "https://x.ai/bot/Bom43LJKAp5Q0Fz_UYZVE",
+    "templatePageReadable": true,
+    "fetched": "2026-11-04",
+    "summaryHu": "Botépítő bot. A sablon leírása szerint bármilyen feladathoz, amit leírsz, néhány perc alatt megtervez egy új Grok Botot teljes, azonnal futtatható leírással, majd a jóváhagyásod után létre is hozza. A készítő posztja szerint elég egy egysoros leírást adnia, és a bot elkészíti az új botot a feladatleírásával, utasításaival és rutinjaival együtt.",
+    "postQuote": "All I have to do is give Forge a one-line description of what I need and it creates the bot, sets up its job description, instructions and routines",
+    "templateQuote": "Forge designs a new Grok Bot for any job you describe: a complete, ready-to-run spec in minutes, then creates the bot once you say yes.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Új Grok Bot megtervezése bármilyen leírt feladathoz",
+        "quote": "Forge designs a new Grok Bot for any job you describe",
+        "from": "template"
+      },
+      {
+        "labelHu": "Teljes, azonnal futtatható leírás néhány perc alatt",
+        "quote": "a complete, ready-to-run spec in minutes",
+        "from": "template"
+      },
+      {
+        "labelHu": "A bot létrehozása a jóváhagyásod után",
+        "quote": "then creates the bot once you say yes",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablonlink a készítő saját, közvetlenül e poszt alá írt válaszában szerepel.",
+    "relatedMarketplace": [
+      {
+        "slug": "dr-eggbot-v2",
+        "name": "dr eggbot",
+        "noteHu": "A hivatalos dr eggbot szintén Grok Botokat tervez és hoz létre néhány kérdés után; a Forge egyetlen egysoros leírásból indul."
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "bot-builder",
+        "name": "Bot Builder",
+        "noteHu": "A Bot Builder részletes, beilleszthető botleírásokat (specifikációkat) készít; a Forge a jóváhagyás után magát a botot is létrehozza."
+      }
+    ]
+  },
+  {
+    "slug": "three-quotes",
+    "name": "Three Quotes",
+    "author": "Brian Roemmele",
+    "handle": "@BrianRoemmele",
+    "postUrl": "https://x.com/BrianRoemmele/status/2117679311511761308",
+    "postedAt": "2026-11-03T18:04:27Z",
+    "templateUrl": "https://x.ai/bot/GNFPzVh1EezMS0JiNHgcr",
+    "templatePageReadable": true,
+    "fetched": "2026-11-04",
+    "summaryHu": "Árajánlatkérő bot otthoni munkákhoz. A sablon leírása szerint három megbízható árajánlatot szerez engedéllyel rendelkező helyi szakemberektől: úgy írja le a munkát, hogy mindenki ugyanarra adjon árat, megkeresi és ellenőrzi a helyi szakembereket, csak a jóváhagyásoddal hívja fel őket, majd az írásos ajánlatokat egymás mellé állítja, a gyanús pontokat megjelölve. A készítő posztja szerint soha nem vállal kötelezettséget, nem fizet, és nem talál ki számokat.",
+    "postQuote": "It never commits. It never pays. It never makes up a number.",
+    "templateQuote": "Get three solid quotes from licensed local pros. It writes up the job so every pro quotes the same thing, finds and checks local pros, calls each one only with your OK, then lines up the written quotes side by side with red flags marked.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Egységes munkaleírás, hogy minden szakember ugyanarra adjon árat",
+        "quote": "It writes up the job so every pro quotes the same thing",
+        "from": "template"
+      },
+      {
+        "labelHu": "Helyi szakemberek felkutatása és ellenőrzése",
+        "quote": "finds and checks local pros",
+        "from": "template"
+      },
+      {
+        "labelHu": "Írásos ajánlatok egymás mellett, a gyanús pontok megjelölésével",
+        "quote": "lines up the written quotes side by side with red flags marked",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Telefonhívás a szakembereknek, csak a jóváhagyásoddal",
+        "quote": "calls each one only with your OK",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás amerikai környezetre készült (engedéllyel rendelkező helyi szakemberek); magyar szakemberkeresésről és magyar nyelvű hívásokról nincs adat.",
+    "relatedTemplates": [
+      {
+        "slug": "hagglebot",
+        "name": "Hagglebot",
+        "noteHu": "A Hagglebot meglévő számlákon és szerződéseken keres megtakarítást és tárgyal; a Three Quotes új munkákhoz gyűjt és hasonlít össze három ajánlatot."
+      }
+    ]
+  },
+  {
+    "slug": "x-unbaiter",
+    "name": "X Unbaiter",
+    "author": "Sebastian David Lees",
+    "handle": "@sebs_tweets",
+    "postUrl": "https://x.com/sebs_tweets/status/2117672426842509439",
+    "postedAt": "2026-11-03T17:37:05Z",
+    "templateUrl": "https://x.ai/bot/40wlwmt9OINkBw3daAcNR",
+    "templatePageReadable": true,
+    "fetched": "2026-11-04",
+    "summaryHu": "Kattintásvadász X-posztok „kibontója”. A sablon leírása szerint ha bármilyen kattintásvadász X-poszt alá azt válaszolod, hogy „unbait”, egy egyszerű címet kapsz a tényleges válasszal, amelyet a bot a hivatkozott cikkel is összevet, és mellé egy egy koppintásos válaszlinket. A készítő posztja szerint néhány perc múlva küldi el az eredményt.",
+    "postQuote": "I built a bot that unbaits clickbait.",
+    "templateQuote": "Reply \"unbait\" to any clickbait post on X and get a plain headline with the actual answer, checked against the linked article, plus a one-tap reply link.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Egyszerű cím a tényleges válasszal",
+        "quote": "get a plain headline with the actual answer",
+        "from": "template"
+      },
+      {
+        "labelHu": "Összevetés a hivatkozott cikkel",
+        "quote": "checked against the linked article",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egy koppintásos válaszlink",
+        "quote": "plus a one-tap reply link",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "X (indítás „unbait” válasszal)",
+        "quote": "Reply \"unbait\" to any clickbait post on X",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem írja le, hogyan kezeli a magyar nyelvű posztokat és cikkeket.",
+    "relatedTemplates": [
+      {
+        "slug": "scam-check-for-x",
+        "name": "Scam Check for X",
+        "noteHu": "A Scam Check for X azt ítéli meg, hogy egy X-poszt átverés, figyelemvadászat vagy hiteles; az X Unbaiter a kattintásvadász cím mögötti tényleges választ adja meg."
+      }
+    ]
+  },
+  {
+    "slug": "breach-watch",
+    "name": "Breach Watch",
+    "author": "Tommy",
+    "handle": "@tanderson9",
+    "postUrl": "https://x.com/tanderson9/status/2117797823291015548",
+    "postedAt": "2026-11-04T01:55:22Z",
+    "templateUrl": "https://x.ai/bot/PoHak8r9Bo76500L5mpHC",
+    "templatePageReadable": true,
+    "fetched": "2026-11-04",
+    "summaryHu": "Barátságos biztonsági segéd hétköznapi felhasználóknak és kisvállalkozásoknak. A sablon leírása szerint figyeli az általad használt szolgáltatásokat érintő adatszivárgásokat, átnézi a gyanús e-maileket, SMS-eket és linkeket, hogy nem átverések-e, és egyszerű, nyugodt szavakkal végigvezet az alapvető biztonsági ellenőrzéseken.",
+    "postQuote": "I made a Grok Bot called Breach Watch",
+    "templateQuote": "A friendly security helper for everyday people and small businesses. It watches for data breaches at the services you use, checks suspicious emails, texts, and links for scams, and walks you through simple security checkups in plain, calm words.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Adatszivárgások figyelése az általad használt szolgáltatásoknál",
+        "quote": "It watches for data breaches at the services you use",
+        "from": "template"
+      },
+      {
+        "labelHu": "Gyanús e-mailek, SMS-ek és linkek ellenőrzése",
+        "quote": "checks suspicious emails, texts, and links for scams",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egyszerű biztonsági ellenőrzések lépésről lépésre",
+        "quote": "walks you through simple security checkups in plain, calm words",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem nevezi meg, milyen adatszivárgás-adatbázisokat használ.",
+    "relatedTemplates": [
+      {
+        "slug": "privacy",
+        "name": "Privacy",
+        "noteHu": "A Privacy a személyes adataidat is keresi a weben, és adatbróker-törlési kérelmeket készít elő; a Breach Watch egyszerűbb, kezdőbarát biztonsági segéd."
+      },
+      {
+        "slug": "scam-email-detector",
+        "name": "Scam Email Detector",
+        "noteHu": "A Scam Email Detector csak a postafiókot figyeli adathalászatra; a Breach Watch SMS-eket és linkeket is ellenőriz, és adatszivárgásokat is figyel."
+      },
+      {
+        "slug": "family-security-coach",
+        "name": "Family Security Coach",
+        "noteHu": "A Family Security Coach 15 perces lépésekben vezet végig a fiókok és eszközök védelmén; a Breach Watch az adatszivárgás-figyelést és a gyanús üzenetek ellenőrzését is elvégzi."
+      }
+    ]
   }
 ]
