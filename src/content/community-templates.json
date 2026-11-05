@@ -7848,5 +7848,533 @@
         "noteHu": "A Family Security Coach 15 perces lépésekben vezet végig a fiókok és eszközök védelmén; a Breach Watch az adatszivárgás-figyelést és a gyanús üzenetek ellenőrzését is elvégzi."
       }
     ]
+  },
+  {
+    "slug": "ultimate-calling-assistant",
+    "name": "📞Ultimate Calling Assistant Bot",
+    "categories": [
+      "Produktivitás"
+    ],
+    "author": "Brian Roemmele",
+    "handle": "@BrianRoemmele",
+    "postUrl": "https://x.com/BrianRoemmele/status/2118060190872518705",
+    "postedAt": "2026-11-04T19:17:55Z",
+    "templateUrl": "https://x.ai/bot/7mv_WGWHsjwnuQM1k1xB3",
+    "templatePageReadable": true,
+    "fetched": "2026-11-05",
+    "summaryHu": "Telefonos „kapcsolótitkár” hosszú várakozással járó hívásokhoz. A sablon leírása szerint előkészít egy hívási összefoglalót, a Grok Bot beépített hívásfunkciójával végigvárja a telefonos menüket és a tartást, a kívánt eredmény felé viszi a beszélgetést, és színkódolt PDF-jelentést hagy cselekvési tervvel. A készítő posztja szerint az új hívásfunkció bemutatására készítette.",
+    "postQuote": "I built the ultimate calling Grok Bot to showcase this new feature!",
+    "templateQuote": "Your Switchboard Secretary for long-hold calls. It stages a call brief, waits on hold through phone trees using Grok Bot's built-in calling, works toward the outcome you want, and leaves a color-coded PDF report with an action plan.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Hívási összefoglaló előkészítése",
+        "quote": "It stages a call brief",
+        "from": "template"
+      },
+      {
+        "labelHu": "A kívánt eredmény felé viszi a hívást",
+        "quote": "works toward the outcome you want",
+        "from": "template"
+      },
+      {
+        "labelHu": "Színkódolt PDF-jelentés cselekvési tervvel",
+        "quote": "leaves a color-coded PDF report with an action plan",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "A Grok Bot beépített hívásfunkciója (telefonos menük, tartás)",
+        "quote": "waits on hold through phone trees using Grok Bot's built-in calling",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem írja le, hogy a hívások magyar nyelven vagy magyar telefonszámokra működnek-e. Ugyanezen a napon egy másik telefonos sablon is megjelent: a Phone Assistant 1.0 általános hívásokat intéz helyetted, ez a bot a hosszú tartással járó ügyintézős hívásokra fókuszál.",
+    "relatedMarketplace": [
+      {
+        "slug": "dial-bot",
+        "name": "dial bot",
+        "noteHu": "A hivatalos dial bot a Bland AI szolgáltatással indít hívásokat, saját API-kulccsal; ez a sablon a Grok Bot beépített hívásfunkcióját használja, és a hosszú tartásos hívásokra készült."
+      }
+    ]
+  },
+  {
+    "slug": "phone-assistant",
+    "name": "Phone Assistant 1.0",
+    "categories": [
+      "Produktivitás"
+    ],
+    "author": "James Rule XRP ⟐ 👊😎",
+    "handle": "@allthemoney",
+    "postUrl": "https://x.com/allthemoney/status/2117988503342768480",
+    "postedAt": "2026-11-04T14:33:04Z",
+    "templateUrl": "https://x.ai/bot/noLtUQd0VlpAkxkJkVWow",
+    "templatePageReadable": true,
+    "fetched": "2026-11-05",
+    "summaryHu": "Telefonos „recepciós” bot, amely helyetted telefonál. A sablon leírása szerint hívásokat indít, a hívott fél kérdéseit élőben továbbítja neked, hogy válaszolni tudj; bejövő hívásokat nem fogad. Emellett feladatokat irányít a többi botodhoz, és webes, e-mailes és fájlos teendőket is intéz. A készítő posztja szerint a videóján a bot egy pizzarendelést bonyolít le elejétől a végéig.",
+    "postQuote": "Watch mine call in a pizza order, start to finish.",
+    "templateQuote": "A front-desk Grok Bot that makes phone calls for you and passes the other person's questions to you live. It makes calls, it doesn't take them. It also routes tasks to your other bots and handles web, mail, and files.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "A hívott fél kérdéseinek élő továbbítása neked",
+        "quote": "passes the other person's questions to you live",
+        "from": "template"
+      },
+      {
+        "labelHu": "Feladatok továbbítása a többi botodhoz",
+        "quote": "It also routes tasks to your other bots",
+        "from": "template"
+      },
+      {
+        "labelHu": "Webes, e-mailes és fájlos teendők",
+        "quote": "handles web, mail, and files",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Kimenő telefonhívások (bejövőket nem fogad)",
+        "quote": "It makes calls, it doesn't take them.",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem írja le, hogy a hívások magyar nyelven vagy magyar telefonszámokra működnek-e. Ugyanezen a napon jelent meg az Ultimate Calling Assistant Bot is, amely a hosszú tartással járó ügyintézős hívásokra fókuszál.",
+    "relatedMarketplace": [
+      {
+        "slug": "dial-bot",
+        "name": "dial bot",
+        "noteHu": "A hivatalos dial bot a Bland AI szolgáltatással indít hívásokat, saját API-kulccsal; a Phone Assistant 1.0 élőben továbbítja neked a hívott fél kérdéseit."
+      }
+    ]
+  },
+  {
+    "slug": "property-bot",
+    "name": "Property Bot",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Cathryn",
+    "handle": "@cathrynlavery",
+    "postUrl": "https://x.com/cathrynlavery/status/2118078990615499191",
+    "postedAt": "2026-11-04T20:32:38Z",
+    "templateUrl": "https://x.ai/bot/a5wQQGaKc_bm6UFZgmP0c",
+    "templatePageReadable": true,
+    "fetched": "2026-11-05",
+    "summaryHu": "Rövid távú szállásadók kezelője Airbnb- és Vrbo-tulajdonosoknak, akik ingatlankezelő szoftver nélkül, maguk adják ki a lakásukat. A sablon leírása szerint figyeli a foglalásokat, előkészíti a bejelentkezést és az ajtókódokat, takarítót foglal, jelzi a helyi eseményeket, amelyek miatt érdemes emelni az árat, véleményeket fogalmaz, és heti tulajdonosi jelentést küld. A készítő posztja szerint ő maga is ezzel a bottal üzemelteti a kiadó lakását.",
+    "postQuote": "i run my short-term rental with a @bot",
+    "templateQuote": "An Airbnb and Vrbo property manager for owners who host on their own, without property management software. It watches bookings, preps check-ins and door codes, books cleaners, flags local events worth pricing up, drafts reviews, and sends a weekly owner report.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Foglalások figyelése",
+        "quote": "It watches bookings",
+        "from": "template"
+      },
+      {
+        "labelHu": "Bejelentkezés és ajtókódok előkészítése",
+        "quote": "preps check-ins and door codes",
+        "from": "template"
+      },
+      {
+        "labelHu": "Takarító foglalása",
+        "quote": "books cleaners",
+        "from": "template"
+      },
+      {
+        "labelHu": "Árazást érintő helyi események jelzése",
+        "quote": "flags local events worth pricing up",
+        "from": "template"
+      },
+      {
+        "labelHu": "Vélemények megfogalmazása",
+        "quote": "drafts reviews",
+        "from": "template"
+      },
+      {
+        "labelHu": "Vendégüzenetek kezelése",
+        "quote": "guest messages",
+        "from": "post"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Heti tulajdonosi jelentés",
+        "quote": "sends a weekly owner report",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "labelHu": "Airbnb és Vrbo",
+        "quote": "An Airbnb and Vrbo property manager",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem írja le, milyen fiókhozzáférés kell az Airbnb- és Vrbo-fiókhoz, sem azt, hogy a bot önállóan küld-e üzenetet a vendégeknek. Magyar szabályokról (pl. NTAK-adatszolgáltatás, idegenforgalmi adó) nincs adat."
+  },
+  {
+    "slug": "overwatch",
+    "name": "🛰️Overwatch",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
+    "author": "Aaron Makelky",
+    "handle": "@theaaron",
+    "postUrl": "https://x.com/theaaron/status/2118085911909187962",
+    "postedAt": "2026-11-04T21:00:08Z",
+    "templateUrl": "https://x.ai/bot/HtClSXO_AmiQoyYH9aXV9",
+    "templatePageReadable": true,
+    "fetched": "2026-11-05",
+    "summaryHu": "Rendrakó és mentő bot a több botot futtató, közös Grok Bot-számítógéphez. A sablon leírása szerint rendben és tisztán tartja a közös gépet, egy privát GitHub-tárolóba menti, és rövid heti szervezeti áttekintést ad. A készítő posztja szerint a második lépésben a Nous Research Hermes ügynökét lehet ráállítani a létrehozott GitHub-tárolóra.",
+    "postQuote": "step 1: install this @grok @bot template 🛰️ Overwatch",
+    "templateQuote": "Keeps a shared multi-bot Grok Bot computer organized, cleaned up, and backed up to a private GitHub repo, with a short weekly org review.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "A közös, több botos Grok Bot-számítógép rendben és tisztán tartása",
+        "quote": "Keeps a shared multi-bot Grok Bot computer organized, cleaned up",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Rövid heti szervezeti áttekintés",
+        "quote": "with a short weekly org review",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "labelHu": "Mentés privát GitHub-tárolóba",
+        "quote": "backed up to a private GitHub repo",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem részletezi, mit ment és mit töröl a bot a takarításkor. A poszt második lépése (Nous Research Hermes ügynök) külön eszköz, nem a sablon része.",
+    "relatedTemplates": [
+      {
+        "slug": "drive-vault",
+        "name": "Drive Vault",
+        "noteHu": "A Drive Vault a régi fájlokat Google Drive-ra költözteti, hogy ne teljen meg a közös gép; az Overwatch rendet rak, és privát GitHub-tárolóba ment."
+      },
+      {
+        "slug": "routine-auditor",
+        "name": "Routine Auditor",
+        "noteHu": "A Routine Auditor a rutinok futását osztályozza havonta; az Overwatch a közös gép rendjére és mentésére figyel."
+      }
+    ]
+  },
+  {
+    "slug": "cv-pro",
+    "name": "CV Pro",
+    "categories": [
+      "Egyéb"
+    ],
+    "author": "ain",
+    "handle": "@ainponce",
+    "postUrl": "https://x.com/ainponce/status/2118102555561451538",
+    "postedAt": "2026-11-04T22:06:16Z",
+    "templateUrl": "https://x.ai/bot/hTeVavqZNPb8EFGXTRKdL",
+    "templatePageReadable": true,
+    "fetched": "2026-11-05",
+    "summaryHu": "Önéletrajz-átvilágító bot. A sablon (spanyol nyelvű) leírása szerint technikai toborzóként úgy auditálja az önéletrajzodat, mint egy ATS (jelentkezőkövető) rendszer, őszinte pontszámot ad rá, és átírja, hogy átjusson a szűrőn és meggyőzze a felvételi vezetőt. A készítő posztja szerint csak fel kell töltened az önéletrajzodat, és válaszolnod kell a bot kérdéseire.",
+    "postQuote": "solo tenes que subir tu cv y ping pongnear las preguntas",
+    "templateQuote": "Recruiter técnico que audita tu CV como un ATS, le pone un score honesto y lo reescribe para que pase el filtro y convenza a un hiring manager.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Önéletrajz-audit úgy, ahogy egy ATS olvassa",
+        "quote": "audita tu CV como un ATS",
+        "from": "template"
+      },
+      {
+        "labelHu": "Őszinte pontszám",
+        "quote": "le pone un score honesto",
+        "from": "template"
+      },
+      {
+        "labelHu": "Átírás, hogy átjusson a szűrőn és meggyőzze a felvételi vezetőt",
+        "quote": "lo reescribe para que pase el filtro y convenza a un hiring manager",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablonlink a készítő saját, az önéletrajz-átírási tapasztalatairól szóló posztja alá írt válaszában szerepel. A sablon leírása és a poszt spanyol nyelvű; a forrás nem írja le, hogyan kezeli a magyar nyelvű önéletrajzokat.",
+    "relatedTemplates": [
+      {
+        "slug": "career-agent",
+        "name": "Career Agent",
+        "noteHu": "A Career Agent állásokat keres és követ, és jelentkezéseket készít elő; a CV Pro magát az önéletrajzot pontozza és írja át."
+      }
+    ]
+  },
+  {
+    "slug": "fleet-doctor",
+    "name": "Fleet Doctor",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
+    "author": "DBCrypto",
+    "handle": "@DBCrypt0",
+    "postUrl": "https://x.com/DBCrypt0/status/2118139540829589894",
+    "postedAt": "2026-11-05T00:33:14Z",
+    "templateUrl": "https://x.ai/bot/dO9rojWVgFL5kjmWYYu_y",
+    "templatePageReadable": true,
+    "fetched": "2026-11-05",
+    "summaryHu": "Felügyelő bot az összes Grok Botodhoz. A sablon leírása szerint minden hétköznap ellenőrzi, hogy a botjaid rutinjai valóban lefutottak-e, és csak a hibákról szól; havonta kétszer pedig javasolja, hogy a túlterhelt botokat frissített, tiszta másolatként építsd újra, de csak a jóváhagyásoddal. A készítő posztja szerint így ugyanabból a keretből több munka jön ki.",
+    "postQuote": "Fleet Doctor trims them down so every message counts",
+    "templateQuote": "Keeps an eye on all your Grok Bots. Every weekday it checks that their routines actually ran and pings you only about failures, and twice a month it suggests rebuilding bloated bots as upgraded fresh copies, only with your yes.",
+    "memory": [],
+    "skills": [],
+    "routines": [
+      {
+        "labelHu": "Hétköznapi ellenőrzés, hogy a rutinok lefutottak-e, csak hibánál szól",
+        "quote": "Every weekday it checks that their routines actually ran and pings you only about failures",
+        "from": "template"
+      },
+      {
+        "labelHu": "Havonta kétszer javaslat a túlterhelt botok újraépítésére, csak jóváhagyással",
+        "quote": "twice a month it suggests rebuilding bloated bots as upgraded fresh copies, only with your yes",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A poszt „háromszoros” teljesítményre vonatkozó állítása a készítő saját tapasztalata; a forrás nem közöl hozzá mérést.",
+    "relatedTemplates": [
+      {
+        "slug": "routine-auditor",
+        "name": "Routine Auditor",
+        "noteHu": "A Routine Auditor havonta osztályozza a rutinokat a futásnaplók alapján; a Fleet Doctor minden hétköznap nézi, hogy lefutottak-e, és a túlterhelt botok újraépítését is javasolja."
+      },
+      {
+        "slug": "trimmy",
+        "name": "trimmy",
+        "noteHu": "A trimmy a botok elmentett kontextusát nyesi meg; a Fleet Doctor a teljes bot friss másolatként való újraépítését javasolja."
+      },
+      {
+        "slug": "penny-doge",
+        "name": "Penny DOGE",
+        "noteHu": "A Penny DOGE rangsorolja, hol pazarol keretet a flotta; a Fleet Doctor a rutinhibákat jelzi, és újraépítést javasol."
+      }
+    ]
+  },
+  {
+    "slug": "pre-call-brief",
+    "name": "Pre-Call Brief",
+    "categories": [
+      "Produktivitás",
+      "E-mail és üzenetek"
+    ],
+    "author": "CaliX",
+    "handle": "@CaliLumberJack",
+    "postUrl": "https://x.com/CaliLumberJack/status/2118025489394839597",
+    "postedAt": "2026-11-04T17:00:02Z",
+    "templateUrl": "https://x.ai/bot/GjAx9sLjHoYK4AdKV-GxN",
+    "templatePageReadable": true,
+    "fetched": "2026-11-05",
+    "summaryHu": "Felkészítő bot külsős megbeszélések elé. A sablon leírása szerint minden külső résztvevős megbeszélés előtt egyképernyős összefoglalót küld: átnézi a csatolt Google- vagy Outlook-naptárat, kiszűri a cégen kívüli résztvevőket, és összegyűjti, kik ők, mivel foglalkozik a cégük, és miről leveleztetek már. A naptárat és a levelezést csak olvassa. A készítő posztja szerint minden tény forrással szerepel.",
+    "postQuote": "Read-only. Every fact is sourced.",
+    "templateQuote": "One job: before each outside meeting, send you a one-screen brief so you walk in ready. I check your connected calendar (Google or Outlook), spot meetings with people outside your company, and pull together who they are, what their company does, and what you've already talked about. Read-only on calendar and mail.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Külső résztvevős megbeszélések kiszűrése",
+        "quote": "spot meetings with people outside your company",
+        "from": "template"
+      },
+      {
+        "labelHu": "Összefoglaló a résztvevőkről, a cégükről és a korábbi levelezésről",
+        "quote": "pull together who they are, what their company does, and what you've already talked about",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Egyképernyős összefoglaló minden külsős megbeszélés előtt",
+        "quote": "before each outside meeting, send you a one-screen brief",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "labelHu": "Google- vagy Outlook-naptár (csak olvasás)",
+        "quote": "I check your connected calendar (Google or Outlook)",
+        "from": "template"
+      },
+      {
+        "labelHu": "Levelezés (csak olvasás)",
+        "quote": "Read-only on calendar and mail.",
+        "from": "template"
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "account-book",
+        "name": "Account Research Desk",
+        "noteHu": "A hivatalos Account Research Desk értékesítőknek kutatja a cégeket, és fiókstratégiát is ír; a Pre-Call Brief a naptárból magától indul minden külsős megbeszélés előtt."
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "meetings-desk",
+        "name": "Meetings Desk",
+        "noteHu": "A Meetings Desk a felesleges megbeszélési időt keresi a naptárban; a Pre-Call Brief az egyes külsős megbeszélésekre készít fel."
+      }
+    ]
+  },
+  {
+    "slug": "google-search-console-indexer",
+    "name": "Google Search Console Indexer",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Auny 🧡",
+    "handle": "@AunySillyMe",
+    "postUrl": "https://x.com/AunySillyMe/status/2118232688775860690",
+    "postedAt": "2026-11-05T06:43:22Z",
+    "templateUrl": "https://x.ai/bot/KyGauyqAJthOvsN-GFoKS",
+    "templatePageReadable": true,
+    "fetched": "2026-11-05",
+    "summaryHu": "Indexelő bot weboldal-tulajdonosoknak. A sablon leírása szerint gondoskodik róla, hogy a weboldalad oldalai bekerüljenek a Google indexébe: ellenőrzi az oldaltérképeket, a Google napi keretén belül indexelést kér az új oldalakra, és közérthetően elmagyarázza, miért nem jelenik meg egy-egy oldal. A készítő posztja szerint ezt naponta végzi.",
+    "postQuote": "it checks your website’s sitemap every day and asks Google to index what's new",
+    "templateQuote": "Keeps your website's pages indexed in Google. It checks your sitemaps, requests indexing for new pages within Google's daily limit, and explains in plain words why any page isn't showing up.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Indexelés kérése az új oldalakra a Google napi keretén belül",
+        "quote": "requests indexing for new pages within Google's daily limit",
+        "from": "template"
+      },
+      {
+        "labelHu": "Közérthető magyarázat, miért nem jelenik meg egy oldal",
+        "quote": "explains in plain words why any page isn't showing up",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Napi oldaltérkép-ellenőrzés és indexelési kérés",
+        "quote": "it checks your website’s sitemap every day and asks Google to index what's new",
+        "from": "post"
+      }
+    ],
+    "integrations": [
+      {
+        "labelHu": "Google Search Console (oldaltérképek)",
+        "quote": "It checks your sitemaps",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem írja le, milyen Google-fiókhozzáférés kell a Search Console-hoz.",
+    "relatedMarketplace": [
+      {
+        "slug": "seo-aeo-desk",
+        "name": "SEO & AEO Desk",
+        "noteHu": "A hivatalos SEO & AEO Desk kulcsszavakból tartalomötleteket és briefeket készít; ez a sablon az új oldalak indexelését intézi."
+      }
+    ],
+    "relatedTemplates": [
+      {
+        "slug": "site-coach",
+        "name": "Site Coach",
+        "noteHu": "A Site Coach heti összefoglalót ad a Search Console és a GA4 adataiból; ez a sablon naponta indexelést kér az új oldalakra."
+      }
+    ]
+  },
+  {
+    "slug": "zen",
+    "name": "Zen",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Andrea | Draft and Focus",
+    "handle": "@draftandfocus",
+    "postUrl": "https://x.com/draftandfocus/status/2117976470912188634",
+    "postedAt": "2026-11-04T13:45:15Z",
+    "templateUrl": "https://x.ai/bot/AHAWA7vodPGfsEjR33tNs",
+    "templatePageReadable": true,
+    "fetched": "2026-11-05",
+    "summaryHu": "Nyugodt rendrakó és minimalizmus-coach. A sablon leírása szerint a lakásod, a digitális életed és a vállalásaid rendbetételében segít: abban, hogy kevesebbet birtokolj, vásárolj és tarts meg, mindig egy kis, tízperces lépéssel. Soha nem töröl, ad el, vásárol vagy küld semmit helyetted. A készítő posztja szerint először megkérdezi, hol szeretnéd kezdeni.",
+    "postQuote": "It asks where you want to start, then gives you one 10-minute step.",
+    "templateQuote": "A calm declutter, minimalism and essentialism coach for your space, your digital life and your commitments. It helps you own, buy and hold less with one small 10-minute step at a time, and never deletes, sells, buys or sends anything for you.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Rendrakás a lakásban, a digitális életben és a vállalásokban",
+        "quote": "for your space, your digital life and your commitments",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egy kis, tízperces lépés egyszerre",
+        "quote": "one small 10-minute step at a time",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A bot csak tanácsot ad: a sablon leírása szerint semmit nem töröl, ad el, vásárol vagy küld helyetted.",
+    "relatedTemplates": [
+      {
+        "slug": "spacewise",
+        "name": "Spacewise",
+        "noteHu": "A Spacewise fotók alapján konkrét rendszerezési tervet készít egy-egy helyiségre; a Zen apró, tízperces lépésekben segít kevesebbet birtokolni, a digitális életben és a vállalásokban is."
+      }
+    ]
+  },
+  {
+    "slug": "panmian-zhushou",
+    "name": "盘面助手",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
+    "author": "Ringo",
+    "handle": "@RingoDontpanic",
+    "postUrl": "https://x.com/RingoDontpanic/status/2117960390135198182",
+    "postedAt": "2026-11-04T12:41:21Z",
+    "templateUrl": "https://x.ai/bot/HqFR5KwuQuPiY8FG2N376",
+    "templatePageReadable": true,
+    "fetched": "2026-11-05",
+    "summaryHu": "Piacfigyelő segéd amerikai részvényekhez és kriptóhoz (kínai nyelvű sablon). A sablon leírása szerint adatközlések és gyorsjelentések előtt előzetest ad, zárás után rövid összefoglalót küld, és csak külön kérésre magyarázza el, miért mozdult egy eszköz; nem jósol, és nem ad vételi vagy eladási tanácsot. A készítő posztja szerint felveheted a rendszeresen kereskedett eszközeidet, és a bot gyorsjelentések, hírek előtt szól.",
+    "postQuote": "加自己常做的标的，财报、消息出来前提醒你",
+    "templateQuote": "美股＋加密的旁观读市情报伙伴：数据／财报前给前瞻，收盘后给短总结，点名才解读「为什么动了」。不预测、不下买卖建议。",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Csak kérésre magyarázza, miért mozdult egy eszköz",
+        "quote": "点名才解读「为什么动了」",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Előzetes adatközlések és gyorsjelentések előtt",
+        "quote": "数据／财报前给前瞻",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rövid összefoglaló zárás után",
+        "quote": "收盘后给短总结",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon leírása és a poszt kínai nyelvű. A sablon leírása szerint nem jósol, és nem ad vételi vagy eladási tanácsot; ez nem befektetési tanácsadás. A forrás nem nevezi meg, milyen piaci adatforrásokat használ.",
+    "relatedTemplates": [
+      {
+        "slug": "portfolio-adviser",
+        "name": "Portfolio Adviser",
+        "noteHu": "A Portfolio Adviser a saját portfóliód eszközeit és híreit követi, és átnézi az állományt; a 盘面助手 előzeteseket és zárás utáni összefoglalókat ad, tanácsadás nélkül."
+      },
+      {
+        "slug": "quant-desk-lead",
+        "name": "Quant Desk Lead",
+        "noteHu": "A Quant Desk Lead több eszközosztályos napi piaci briefeket és stratégiakutatást végez; a 盘面助手 egyszerűbb, a gyorsjelentésekhez és a zárásokhoz igazodó figyelő."
+      }
+    ]
   }
 ]
