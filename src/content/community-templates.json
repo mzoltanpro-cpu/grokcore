@@ -8376,5 +8376,337 @@
         "noteHu": "A Quant Desk Lead több eszközosztályos napi piaci briefeket és stratégiakutatást végez; a 盘面助手 egyszerűbb, a gyorsjelentésekhez és a zárásokhoz igazodó figyelő."
       }
     ]
+  },
+  {
+    "slug": "shell-cpr",
+    "name": "Shell CPR",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
+    "author": "Leonard",
+    "handle": "@Leoskie_L",
+    "postUrl": "https://x.com/Leoskie_L/status/2118516463296536616",
+    "postedAt": "2026-11-06T01:30:59Z",
+    "templateUrl": "https://x.ai/bot/KrJnZOz6of3i8xIK7vxFc",
+    "templatePageReadable": true,
+    "fetched": "2026-11-06",
+    "summaryHu": "Vékony héjat ad a túlkövér, tokenpazarló Grok Botoknak. A sablon leírása szerint megkeresi a felpuffadt chat-kontextusú botokat, majd (csak ha te engedélyezed) kicseréli őket vékony héjra: exportálja a rutinokat, CreateAgent-tel újat készít, nyugdíjazza a régi azonosítót, újrahuzalozza a peer-eket, és ellenőrzi, hogy senki se pingelje a régit. A készítő posztja szerint a v3-ban a régi héj előbb értesíti a peer-eket, mielőtt átneveznék vagy szüneteltetnék.",
+    "postQuote": "Shell CPR 分享包 v3｜為什麼再打包一次",
+    "templateQuote": "Finds Grok Bots whose chat context is bloated and burning tokens, then (only when you authorize) swaps in a thin shell: export routines, CreateAgent, retire the old id, rewire peers, slim peer reply rules so the new shell doesn’t re-fatten, and prove nothing still pings the old id.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Vékony héjra cserél felhatalmazás után",
+        "quote": "only when you authorize) swaps in a thin shell",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Fleet Doctorhoz és a trimmyhez (kontextus/flotta karcsúsítás); a Shell CPR a felpuffadt bot teljes héjcserejére fókuszál.",
+    "relatedTemplates": [
+      {
+        "slug": "fleet-doctor",
+        "name": "Fleet Doctor",
+        "noteHu": "A Fleet Doctor a rutinhibákat és a túlterhelt botok újraépítését nézi; a Shell CPR a felpuffadt chat-kontextusú botokat cseréli vékony héjra."
+      },
+      {
+        "slug": "trimmy",
+        "name": "trimmy",
+        "noteHu": "A trimmy a botok elmentett kontextusát nyesi meg; a Shell CPR új, vékony héjat készít CreateAgent-tel, és újrahuzalozza a peer-eket."
+      }
+    ]
+  },
+  {
+    "slug": "jk-shuzi-huayuan",
+    "name": "JK 数字花园",
+    "categories": [
+      "Produktivitás",
+      "Tanulás"
+    ],
+    "author": "Jackywine",
+    "handle": "@Jackywine",
+    "postUrl": "https://x.com/Jackywine/status/2118529866077544465",
+    "postedAt": "2026-11-06T02:24:15Z",
+    "templateUrl": "https://x.ai/bot/gdq_d-d9OCnnREs3VwGdV",
+    "templatePageReadable": true,
+    "fetched": "2026-11-06",
+    "summaryHu": "Kétrétegű digitális kert: a flomo a „memória”, a helyi Obsidian a „merevlemez”. A sablon leírása szerint tweeteket vesz fel (rövid leírás + nyers link + #Grokbot/Import), teljes szöveget archivál sűrű kettős linkekkel, összeköti a rokon és árva jegyzeteket, és evergreen jegyzeteket kezel kepano-féle Obsidian eszközökkel; kihagyja az érzelmi/privát tartalmat, és nem publikál, nem telepít. A készítő posztja szerint egy hónapja használja, és a skills részt kepano Obsidian skills-ére alapozta.",
+    "postQuote": "马斯克的 Grok bot 和 Obsidian 进行联动，分享一个我创建并且\n最近一个月常用的 Grok bot：\nJackywine 数字花园",
+    "templateQuote": "双层数字花园：flomo 当内存、本机 Obsidian 当硬盘。推文入库（简介+裸链+#Grokbot/Import）；全文剪藏与密双链；相关/孤儿笔记串库；常青笔记与 kepano 工具。跳过情绪隐私。不发布、不部署。",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Tweetek beemelése Obsidian/flomo kertbe",
+        "quote": "推文入库（简介+裸链+#Grokbot/Import）",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon leírása és a poszt kínai nyelvű. Hasonló a közösségi Notes Bothoz (jegyzetkezelés); ez a sablon flomo + helyi Obsidian kétrétegű kertet céloz.",
+    "relatedTemplates": [
+      {
+        "slug": "notes-bot",
+        "name": "Notes Bot",
+        "noteHu": "A Notes Bot általános jegyzetsegéd; a JK 数字花园 flomo-t és helyi Obsidiant köt össze digitális kertként."
+      }
+    ]
+  },
+  {
+    "slug": "recorded-x-spaces-note-taker",
+    "name": "Recorded X spaces note taker",
+    "categories": [
+      "Marketing és tartalom",
+      "Produktivitás"
+    ],
+    "author": "Cobblr",
+    "handle": "@PeachCobblr",
+    "postUrl": "https://x.com/PeachCobblr/status/2118386227619762348",
+    "postedAt": "2026-11-05T16:53:29Z",
+    "templateUrl": "https://x.ai/bot/X7aszUICnIrq6eMwjoBd-",
+    "templatePageReadable": true,
+    "fetched": "2026-11-06",
+    "summaryHu": "Felvett X Space-ből tiszta, időbélyeges jegyzeteket készít: TL;DR, kulcspontok, idézetek és follow-upok. A sablon leírása szerint kripto Space-ekhez készült, és ingyenes beszédfelismerést futtat a saját gépén. A készítő posztja szerint akkor hasznos, ha hallgatnál, de nincs időd jegyzetelni.",
+    "postQuote": "New grok bot template: Recorded Spaces Note Taker",
+    "templateQuote": "Send it a recorded X Space and get back clean, timestamped notes: TL;DR, key points, quotes, and follow-ups. Built for crypto Spaces, it runs free speech-to-text on its own computer.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Időbélyeges Space-jegyzetek (TL;DR, idézetek)",
+        "quote": "clean, timestamped notes: TL;DR, key points, quotes, and follow-ups",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint kripto Space-ekhez készült, de bármely felvett Space-hez használható. A forrás nem részletezi a beszédfelismerő pontos eszközét."
+  },
+  {
+    "slug": "water-boy",
+    "name": "Water Boy",
+    "categories": [
+      "Egészség és sport"
+    ],
+    "author": "Howischris",
+    "handle": "@howischris__",
+    "postUrl": "https://x.com/howischris__/status/2118453973317501210",
+    "postedAt": "2026-11-05T21:22:40Z",
+    "templateUrl": "https://x.ai/bot/WcOMWnCrDVKjlSem23hyW",
+    "templatePageReadable": true,
+    "fetched": "2026-11-06",
+    "summaryHu": "Hidratációs edző: testsúly és magasság alapján napi vízcélt állít, emlékeztet ivásra, és visszajelez, amíg meg nem erősíted. A sablon leírása szerint helyi vízminőséget is néz, vasárnap víz-híreket és kutatási összefoglalót küld, a haladást pedig királykék (#0103F1) glyph hőérképen mutatja (Departure Mono). A készítő posztja szerint a cél 0–100%-os pontszám, és Kalifornia megyéire, illetve más államokra/országokra is van vízminőség.",
+    "postQuote": "This guy has been super useful.. figured I'd share. :)",
+    "templateQuote": "A hydration coach that sets your daily water goal from your body, reminds you to drink and checks in until you confirm, checks local water quality, and sends a Sunday water news and research digest.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Napi vízcél testsúly/magasság alapján",
+        "quote": "sets your daily water goal from your body",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Vasárnapi víz-hírek és kutatási összefoglaló",
+        "quote": "Sunday water news and research digest",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon leírása Glyph Kit (Alex Traykov) dizájnjeleire hivatkozik. A vízminőség-adatok forrását a sablonlap nem nevezi meg részletesen."
+  },
+  {
+    "slug": "travel-calendar-sync",
+    "name": "Travel Calendar Sync",
+    "categories": [
+      "Otthon, utazás, étkezés",
+      "E-mail és üzenetek"
+    ],
+    "author": "Matt Carlin",
+    "handle": "@carlinmcFL",
+    "postUrl": "https://x.com/carlinmcFL/status/2118432529531416834",
+    "postedAt": "2026-11-05T19:57:28Z",
+    "templateUrl": "https://x.ai/bot/FrCwEP7u_7mRiakVg0HvK",
+    "templatePageReadable": true,
+    "fetched": "2026-11-06",
+    "summaryHu": "Figyeli a foglalási e-maileket (járat, hotel, bérautó), és naprakészen tartja a naptáradat. A sablon leírása szerint opcionális meghívót is küldhet egy rögzített személynek vagy bárkinek az itineráriumból, akinek már megvan az e-mailcíme. A készítő posztja szerint az első futtatáskor rövid beállító Q&A van, Gmail/Outlook foglalásokból dolgozik, és utazási buffereket is tehet a naptárba.",
+    "postQuote": "Free Grok Bot template: Travel Calendar Sync",
+    "templateQuote": "Watches your booking emails for flights, hotels, and rental cars, then keeps your calendar up to date—with optional invites for a fixed person or anyone on the itinerary whose email you already have.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Foglalási e-mailek → naptár frissítés",
+        "quote": "Watches your booking emails for flights, hotels, and rental cars",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Inbox-to-Calendar Catcherhez (e-mail → naptár); a Travel Calendar Sync kifejezetten utazási foglalásokra (járat, hotel, bérautó) és opcionális meghívókra van hangolva.",
+    "relatedTemplates": [
+      {
+        "slug": "inbox-to-calendar-catcher",
+        "name": "Inbox-to-Calendar Catcher",
+        "noteHu": "Az Inbox-to-Calendar Catcher általános e-mailből naptáreseményt készít; a Travel Calendar Sync a foglalási (járat/hotel/bérautó) e-mailekre és az utazási bufferekre fókuszál."
+      }
+    ]
+  },
+  {
+    "slug": "ronin",
+    "name": "Ronin",
+    "categories": [
+      "Produktivitás",
+      "Fejlesztés és IT"
+    ],
+    "author": "Himason",
+    "handle": "@HiiiMason",
+    "postUrl": "https://x.com/HiiiMason/status/2118506545193623683",
+    "postedAt": "2026-11-06T00:51:34Z",
+    "templateUrl": "https://x.ai/bot/TP6XRTT1bx0LIk5jil8_8",
+    "templatePageReadable": true,
+    "fetched": "2026-11-06",
+    "summaryHu": "Red-team kritikus: terveket, appokat, dokumentumokat, kutatást és AI-promptokat szed szét, mielőtt a valóság megtenné. A sablon leírása szerint nyers megállapításokat ad, ahol lehet forrással, hízelgés nélkül; gyenge pontokat és vakfoltokat keres. Nem helyettesít ügyvédet, könyvelőt, mérnököt vagy más engedélyköteles szakembert. A készítő posztja szerint azóta jobb a munkája.",
+    "postQuote": "Recently learned what a red team is and immediately built an AI bot whose only job is to tear apart everything I make.",
+    "templateQuote": "A red-team bot that tears into your plans, apps, documents, research and AI prompts to find how they fail before reality does. Blunt findings, sourced where possible, with no flattery.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Vakfoltok és gyenge pontok keresése",
+        "quote": "Finds weak spots and blind spots",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablonlap szerint nem helyettesít engedélyköteles szakembert. Hasonló a közösségi Grillerhez (konstruktív kritika); a Ronin red-team hangvételű, tervezetekre és promptokra is megy."
+  },
+  {
+    "slug": "pixel-design",
+    "name": "Pixel · Design",
+    "categories": [
+      "Marketing és tartalom",
+      "Fejlesztés és IT"
+    ],
+    "author": "𝕃𝕖𝕧𝕚",
+    "handle": "@LeviHoliday4",
+    "postUrl": "https://x.com/LeviHoliday4/status/2118576747700740457",
+    "postedAt": "2026-11-06T05:30:32Z",
+    "templateUrl": "https://x.ai/bot/gM0DHWfNDysR-M6FdEkhr",
+    "templatePageReadable": true,
+    "fetched": "2026-11-06",
+    "summaryHu": "Design bot logókhoz, thumbnailökhöz, borítókhoz, ikonokhoz és UI-mockupokhoz a saját stílusodban. A sablon leírása szerint valódi szerkesztőkkel dolgozik (GIMP, Inkscape, Krita, ImageMagick), és egyedi vízjelet is készít a posztjaidhoz. A készítő posztja szerint Pixel „a régi módon” készít képet, nem generatív AI-val, és eddig az egyik kedvenc Grok Botja.",
+    "postQuote": "I had Pixel record himself making something to prove that you dont need to AI generate things. AI can now make images the old fashion way.",
+    "templateQuote": "A design bot that makes logos, thumbnails, cover art, icons, and UI mockups in your own style with real editors (GIMP, Inkscape, Krita, ImageMagick), and builds you a custom watermark for your posts.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Logó/thumbnail/UI valódi szerkesztőkkel",
+        "quote": "with real editors (GIMP, Inkscape, Krita, ImageMagick)",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Marketplace-en hasonló a Critiquito (design critique); a Pixel · Design magát a készítést célozza GIMP/Inkscape/Krita/ImageMagick szerkesztőkkel.",
+    "relatedMarketplace": [
+      {
+        "slug": "critiquito",
+        "name": "Critiquito: Design Critique",
+        "noteHu": "A Critiquito design kritikát ad; a Pixel · Design a logókat, thumbnailöket és mockupokat készíti el valódi szerkesztőkkel."
+      }
+    ]
+  },
+  {
+    "slug": "party-planner",
+    "name": "Party planner",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Rachel V",
+    "handle": "@RachelVT42",
+    "postUrl": "https://x.com/RachelVT42/status/2118523392626511956",
+    "postedAt": "2026-11-06T01:58:31Z",
+    "templateUrl": "https://x.ai/bot/crtBQsk_PfE7u8-oascpu",
+    "templatePageReadable": true,
+    "fetched": "2026-11-06",
+    "summaryHu": "Ünnepi party-tervező születésnapokra, babavárókra, esküvőkre, fesztiválokra, osztálytalálkozókra és iskolai programokra. A sablon leírása szerint checklistet, idővonalat, költségvetés-központú helyszínötleteket ad, opcionális fundraisinggel és jegymarketinggel. A készítő posztja szerint néhány kérdés után datált checklistet kapsz (Thanksgiving, ünnepek, születésnap).",
+    "postQuote": "Thanksgiving, holiday parties, a birthday coming up? Answer a few quick questions in my party planner and get a dated checklist.",
+    "templateQuote": "A festive party planner for birthdays, showers, weddings, festivals, reunions, school fun nights and more—checklist, timeline, budget-first venues, optional fundraising and ticket marketing at every scale.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Checklist, idővonal, költségvetés-központú helyszín",
+        "quote": "checklist, timeline, budget-first venues",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Party & Wedding Plannerhez; ez a sablon szélesebb ünnepi/iskolai skálát és opcionális fundraisinget is említ.",
+    "relatedTemplates": [
+      {
+        "slug": "party-wedding-planner",
+        "name": "Party & Wedding Planner",
+        "noteHu": "A Party & Wedding Planner esküvőre és partira fókuszál; a Party planner checklistet és költségvetés-központú helyszíneket ad ünnepekre, iskolai estekre és fundraisinggel is."
+      }
+    ]
+  },
+  {
+    "slug": "refunds-credits",
+    "name": "Refunds & Credits",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
+    "author": "Jason Reece",
+    "handle": "@jwreece",
+    "postUrl": "https://x.com/jwreece/status/2118513940623970803",
+    "postedAt": "2026-11-06T01:20:58Z",
+    "templateUrl": "https://x.ai/bot/FlE2tRVNTP8FQ2on6YRM2",
+    "templatePageReadable": true,
+    "fetched": "2026-11-06",
+    "summaryHu": "Megkeresi és visszaszerzi a neked járó pénzt: visszatérítések, kreditek, class action egyezségek, unclaimed property és lejáró kártyakedvezmények. A sablon leírása szerint élő összesítőt vezet a beérkezett, jóváhagyott, folyamatban lévő és még lehetséges tételekről; a célja, hogy minden hónapban megtermelje a saját költségét. A készítő posztja „Money Badger” néven említi, és 3 hónap alatt $1,220.84 visszaszerzett összeget állít.",
+    "postQuote": "It has brought home $1,220.84 of free money in only 3 months. It looks in 16 different places for your money.",
+    "templateQuote": "Finds and recovers money you're owed, including refunds, credits, class action settlements, unclaimed property and expiring card perks, and keeps a live tally page of what's received, approved, in progress and still possible.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Visszatérítések és unclaimed property keresése",
+        "quote": "refunds, credits, class action settlements, unclaimed property and expiring card perks",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő posztja „Money Badger” néven hivatkozik a botra; a sablonlap címe Refunds & Credits. A $1,220.84 a készítő saját állítása, nem ellenőrzött független adat. Ez nem pénzügyi tanácsadás."
+  },
+  {
+    "slug": "griller",
+    "name": "Griller",
+    "categories": [
+      "Produktivitás",
+      "Fejlesztés és IT"
+    ],
+    "author": "mmt",
+    "handle": "@eaxmmt",
+    "postUrl": "https://x.com/eaxmmt/status/2118534404481970607",
+    "postedAt": "2026-11-06T02:42:17Z",
+    "templateUrl": "https://x.ai/bot/7xhcg2MwpWpFlcSkyMwJT",
+    "templatePageReadable": true,
+    "fetched": "2026-11-06",
+    "summaryHu": "Rövid, konstruktív kritikus termékötletekhez, architektúrához és nehéz döntésekhez. A sablon leírása szerint egyenesen a valódi dealbreaker-ekhez megy, pushbacknél mérlegeli a tradeoffokat, és csak kérésre megy mélyebbre. A készítő posztja szerint azért készült, mert a legtöbb AI-eszköz felhypolja a rossz ötleteket.",
+    "postQuote": "Most AI tools hype up bad ideas and write stiff launch posts, so I made two free Grok Bot templates that do the opposite:\n\nGriller Pokes holes in your product idea and stack before you write code, straight to the dealbreakers.",
+    "templateQuote": "Concise, constructive critic for product ideas, architecture, and tough decisions. Gets straight to the real dealbreakers, weighs tradeoffs on pushback, and goes deeper only when you ask.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Dealbreaker-ek keresése termékötletben",
+        "quote": "Gets straight to the real dealbreakers",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő posztja Drafter nevű társ-sablont is említ; abba a mai batchbe a Griller került be. Hasonló a Roninhoz (kritika); a Griller rövidebb, termék/architektúra dealbreaker-ekre hangolt."
   }
 ]
