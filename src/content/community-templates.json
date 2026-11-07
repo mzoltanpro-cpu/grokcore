@@ -8708,5 +8708,403 @@
     "routines": [],
     "integrations": [],
     "noteHu": "A készítő posztja Drafter nevű társ-sablont is említ; abba a mai batchbe a Griller került be. Hasonló a Roninhoz (kritika); a Griller rövidebb, termék/architektúra dealbreaker-ekre hangolt."
+  },
+  {
+    "slug": "animator",
+    "name": "Animator",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Nima Owji",
+    "handle": "@nima_owji",
+    "postUrl": "https://x.com/nima_owji/status/2118771148187902362",
+    "postedAt": "2026-11-06T18:23:01Z",
+    "templateUrl": "https://x.ai/bot/Hp85sZKzJNjabj8hakjee",
+    "templatePageReadable": true,
+    "fetched": "2026-11-07",
+    "summaryHu": "Személyes motion graphic designer: egy ötletből többjelenetes, történetvezérelt animált videót készít kódban (Remotion), animált Lottie ikonokkal és generált zenével, MP4-be renderelve. A készítő posztja szerint egy mondatos leírásból megírja a sztorit, animálja a jeleneteket, zenét ad hozzá, és kész videót ad át.",
+    "postQuote": "Describe an idea in one sentence. It writes the story, animates every scene in code, adds music, and hands you a finished video!",
+    "templateQuote": "A personal motion graphic designer. Describe an idea and it makes a multi-scene, story-driven animated video in code (Remotion), with animated Lottie icons and generated music, rendered to MP4.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Többjelenetes animált videó Remotionnal",
+        "quote": "multi-scene, story-driven animated video in code (Remotion)",
+        "from": "template"
+      },
+      {
+        "labelHu": "Lottie ikonok és generált zene, MP4",
+        "quote": "animated Lottie icons and generated music, rendered to MP4",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Video Creatorhoz és a Video Studiohoz (videókészítés); az Animator Remotion-kódos, Lottie+zene motion graphic videóra hangolt."
+  },
+  {
+    "slug": "second-brain-guide",
+    "name": "Second Brain Guide",
+    "categories": [
+      "Produktivitás",
+      "Tanulás"
+    ],
+    "author": "hoeem",
+    "handle": "@hooeem",
+    "postUrl": "https://x.com/hooeem/status/2118652492108238864",
+    "postedAt": "2026-11-06T10:31:31Z",
+    "templateUrl": "https://x.ai/bot/eYASNkOToYIdXhJaZQL3P",
+    "templatePageReadable": true,
+    "fetched": "2026-11-07",
+    "summaryHu": "Lépésről lépésre coach, aki nulláról elvezet egy kész „second brain”-ig: megosztott Notion-agy, amit minden AI olvasni és írni tud, plusz egy helyi mappa, amit te birtokolsz. A sablon leírása szerint a saját életed és munkád köré tervezi az agyat, majd kattintásról kattintásra, a te tempódban vezet. A készítő posztja szerint az információ „túl értékes”, és hamar törölheti a megosztást.",
+    "postQuote": "might have to delete this soon, the information is too valuable",
+    "templateQuote": "A step-by-step coach that takes anyone from zero to a finished second brain: a shared brain in Notion that every AI can read and write, plus a local folder you own. It designs the brain around your own life and work, then guides you click by click at your own pace.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Nulláról kész second brain Notionban",
+        "quote": "from zero to a finished second brain: a shared brain in Notion",
+        "from": "template"
+      },
+      {
+        "labelHu": "Helyi mappa, amit te birtokolsz",
+        "quote": "plus a local folder you own",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kattintásról kattintásra, saját tempóban",
+        "quote": "guides you click by click at your own pace",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Nem ugyanaz, mint a közösségi Second Brain (@MichaelAhlers, Obsidian vault karbantartás); ez a Second Brain Guide Notion+helyi mappa felépítésére tanít nulláról.",
+    "relatedTemplates": [
+      {
+        "slug": "second-brain",
+        "name": "Second Brain",
+        "noteHu": "A Second Brain meglévő Obsidian-vaultot tart rendben; a Second Brain Guide nulláról épít Notion+helyi mappa second brain-t."
+      }
+    ]
+  },
+  {
+    "slug": "reverse-website-swarm",
+    "name": "Reverse Website Swarm",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
+    "author": "monokern",
+    "handle": "@monokern",
+    "postUrl": "https://x.com/monokern/status/2118689671580471356",
+    "postedAt": "2026-11-06T12:59:15Z",
+    "templateUrl": "https://x.ai/bot/43Pa_W8af71QSWZkb90m8",
+    "templatePageReadable": true,
+    "fetched": "2026-11-07",
+    "summaryHu": "Weboldal-szerkezetet tanulmányoz, és Craft Anythinggel működő másolatot készít. Mutass rá egy URL-re vagy helyi oldalra, ha futtatható újraépítést akarsz. A készítő posztja szerint a bot 26 ügynökös Reverse Swarmot indított, szétszedett egy ügynökségi főoldalt, majd élőben újraépítette a böngészőben.",
+    "postQuote": "Grok Bot just spun up a 26-agent Reverse Swarm and tore a full agency homepage down to parts, then rebuilt it live in the browser.",
+    "templateQuote": "Reverse Website Swarm studies how a website is built and crafts a working copy with Craft Anything. Point it at a URL or a local page when you want a rebuild you can run.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Weboldal felépítésének tanulmányozása",
+        "quote": "studies how a website is built",
+        "from": "template"
+      },
+      {
+        "labelHu": "Működő másolat Craft Anythinggel",
+        "quote": "crafts a working copy with Craft Anything",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Haladóbb sablon; a Craft Anything a sablonleírásban szereplő eszköz. Szerzői jog / klónozás: a forrás nem részletezi a jogi kereteket — saját oldalra vagy engedéllyel használd."
+  },
+  {
+    "slug": "security-privacy",
+    "name": "Security & Privacy",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
+    "author": "NicholasGibbs",
+    "handle": "@NickGibbsIAG",
+    "postUrl": "https://x.com/NickGibbsIAG/status/2118802743016259638",
+    "postedAt": "2026-11-06T20:28:34Z",
+    "templateUrl": "https://x.ai/bot/_lfnP-J1qucMZEfgyEFQO",
+    "templatePageReadable": true,
+    "fetched": "2026-11-07",
+    "summaryHu": "Megkeresi a téged utánzó X-fiókokat, jelenti őket, és figyeli, fennmaradnak-e, vagy csak fotót/nevet váltanak. A sablon leírása szerint futtathat napi scant, frissíthet heti dashboardot (jelentések vs. takedownok), segít people-search opt-outokban, és privát zaklatási naplót vezet. A készítő posztja fake accountok ellen ajánlja alkotóknak.",
+    "postQuote": "I have created a Grok @bot To take down Fake accounts.",
+    "templateQuote": "Finds X accounts impersonating you, reports them, and keeps watching if they stay up or only change a photo or name. It can run a daily scan, refresh a weekly dashboard of reports versus takedowns, help with people-search opt-outs, and keep a private harassment log.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "X-imitátor fiókok keresése és jelentése",
+        "quote": "Finds X accounts impersonating you, reports them",
+        "from": "template"
+      },
+      {
+        "labelHu": "Napi scan és heti dashboard",
+        "quote": "run a daily scan, refresh a weekly dashboard",
+        "from": "template"
+      },
+      {
+        "labelHu": "People-search opt-out segítség",
+        "quote": "help with people-search opt-outs",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Napi impersonation-scan",
+        "quote": "run a daily scan",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Scam Check for X-hez (csaló X-tartalom); a Security & Privacy a személyes imitátor-fiókokra és people-search opt-outra fókuszál."
+  },
+  {
+    "slug": "orgobot",
+    "name": "OrgoBot",
+    "categories": [
+      "Grok Bot és flotta",
+      "Fejlesztés és IT"
+    ],
+    "author": "Nick Vasilescu",
+    "handle": "@nickvasilescu",
+    "postUrl": "https://x.com/nickvasilescu/status/2118843746934722954",
+    "postedAt": "2026-11-06T23:11:30Z",
+    "templateUrl": "https://x.ai/bot/INhNj6FhTywM0GNehFavt",
+    "templatePageReadable": true,
+    "fetched": "2026-11-07",
+    "summaryHu": "Saját Orgo felhőszámítógépet ad az ügynökeidnek: shellt, screenshotot, fájlokat és computer-use feladatokat futtat rajta, majd lebontja, hogy semmi ne számlázzon tovább. A sablon szerint soha nem költ és nem upgrade-el a te igenéd nélkül. A készítő posztja szerint egyszerre 25 job, 25 linux desktop Orgon.",
+    "postQuote": "25 jobs at once, 25 linux desktops on @Orgo.",
+    "templateQuote": "Gets your agents their own Orgo cloud computer, runs shell, screenshots, files and computer-use tasks on it, and tears it down so nothing keeps billing. It never spends or upgrades without your yes.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Saját Orgo felhőszámítógép ügynököknek",
+        "quote": "Gets your agents their own Orgo cloud computer",
+        "from": "template"
+      },
+      {
+        "labelHu": "Shell, screenshot, fájl, computer-use",
+        "quote": "runs shell, screenshots, files and computer-use tasks on it",
+        "from": "template"
+      },
+      {
+        "labelHu": "Lelbontás, hogy ne számlázzon tovább",
+        "quote": "tears it down so nothing keeps billing",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Orgo felhő desktop",
+        "quote": "Orgo cloud computer",
+        "from": "template"
+      }
+    ],
+    "noteHu": "Külső Orgo szolgáltatás kell; a forrás nem részletezi a díjszabást. Haladó flotta-sablon."
+  },
+  {
+    "slug": "stolen-post-watch",
+    "name": "Stolen Post Watch",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Mr Tactical",
+    "handle": "@MrTacticalX",
+    "postUrl": "https://x.com/MrTacticalX/status/2118859989770989812",
+    "postedAt": "2026-11-07T00:16:02Z",
+    "templateUrl": "https://x.ai/bot/dn8ndRg7Re50JS0hruwso",
+    "templatePageReadable": true,
+    "fetched": "2026-11-07",
+    "summaryHu": "X-hez csatlakozva naponta egyszer (helyi idő szerint 12:00-kor) ellenőrzi az eredeti posztjaidat — videó, kép, szöveg —, és jelez, ha valaki kredit nélkül tölti újra őket. Csendben marad, ha nincs lopás; bármikor kérhetsz azonnali ellenőrzést. A készítő posztja szerint csak akkor ír, ha valószínű, kredit nélküli másolatot talál.",
+    "postQuote": "I made a bot that checks if someone stole your X posts and re-uploaded them as their own.",
+    "templateQuote": "Connect X, and this bot checks your original posts once a day at 12:00 PM in your local time: videos, images, and text. It alerts you if someone reuploads them as their own, without credit, stays quiet when nothing is stolen, and you can ask it to check now anytime.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Napi ellenőrzés videó/kép/szöveg posztokra",
+        "quote": "checks your original posts once a day",
+        "from": "template"
+      },
+      {
+        "labelHu": "Értesít, ha kredit nélkül töltik újra",
+        "quote": "alerts you if someone reuploads them as their own, without credit",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Napi scan helyi idő szerint 12:00-kor",
+        "quote": "once a day at 12:00 PM in your local time",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "labelHu": "X csatlakozás",
+        "quote": "Connect X",
+        "from": "template"
+      }
+    ]
+  },
+  {
+    "slug": "x-man",
+    "name": "X-Man",
+    "categories": [
+      "Produktivitás",
+      "E-mail és üzenetek"
+    ],
+    "author": "Auny 🧡",
+    "handle": "@AunySillyMe",
+    "postUrl": "https://x.com/AunySillyMe/status/2118924506039529815",
+    "postedAt": "2026-11-07T04:32:24Z",
+    "templateUrl": "https://x.ai/bot/DGIs4Ax4tU2Mi8RXyNKQ5",
+    "templatePageReadable": true,
+    "fetched": "2026-11-07",
+    "summaryHu": "Figyeli a neked fontos X-fiókokat és témákat, és rövid összefoglaló értesítőt küld, ha posztolnak. Csak olvas: soha nem posztol, nem likeol, nem válaszol. A készítő posztja szerint azért készült, hogy ne kelljen a timeline-on élned.",
+    "postQuote": "i made X-Man, a Grok @bot that does it for me:",
+    "templateQuote": "Watches the X accounts and topics you care about and sends you short summary alerts when they post. Read-only: it never posts, likes, or replies.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "X-fiókok és témák figyelése",
+        "quote": "Watches the X accounts and topics you care about",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rövid összefoglaló értesítők",
+        "quote": "sends you short summary alerts when they post",
+        "from": "template"
+      },
+      {
+        "labelHu": "Csak olvasás: nem posztol/likeol/válaszol",
+        "quote": "Read-only: it never posts, likes, or replies",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "dinner-decider",
+    "name": "Dinner Decider",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "RyanTHawks",
+    "handle": "@ryanthawks",
+    "postUrl": "https://x.com/ryanthawks/status/2118833197228175838",
+    "postedAt": "2026-11-06T22:29:34Z",
+    "templateUrl": "https://x.ai/bot/4PRxJTopvur7FPzaid9um",
+    "templatePageReadable": true,
+    "fetched": "2026-11-07",
+    "summaryHu": "Egy megvalósítható vacsorát javasol abból, amid már van. Adj alapanyaglistát vagy opcionális fotót, időt és háztartási igényeket; kapsz egy főételt, hozzávetőleges mennyiségeket és egyszerű lépéseket — végtelen receptlista nélkül. A készítő posztja szerint a cél egy megcsinálható vacsora, nem újabb döntési spiral.",
+    "postQuote": "Give it a fridge photo or ingredient list, your time, and food restrictions. Get one doable dinner—not 40 recipes and another decision.",
+    "templateQuote": "One workable dinner from what you already have. Share an ingredient list or optional photo, your time and household needs; get one main dish, approximate quantities, and simple steps—without an endless recipe list.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Egy megvalósítható vacsora a meglevőből",
+        "quote": "One workable dinner from what you already have",
+        "from": "template"
+      },
+      {
+        "labelHu": "Alapanyaglista vagy opcionális fotó",
+        "quote": "Share an ingredient list or optional photo",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egy főétel, mennyiségek, egyszerű lépések",
+        "quote": "get one main dish, approximate quantities, and simple steps",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "vid-bot",
+    "name": "Vid Bot",
+    "categories": [
+      "Marketing és tartalom",
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Lyndall Schreiner",
+    "handle": "@lyndallschreinr",
+    "postUrl": "https://x.com/lyndallschreinr/status/2118417954257953013",
+    "postedAt": "2026-11-05T18:59:33Z",
+    "templateUrl": "https://x.ai/bot/CUb45gh5h3qmoXKzxVIDf",
+    "templatePageReadable": true,
+    "fetched": "2026-11-07",
+    "summaryHu": "Családi vagy gyerek klipekből cinematic, beatre vágott montázst készít szabad zenére. Te választasz színgradinget, és jegyzetet adhatsz minden vágáshoz. A készítő posztja szerint elég jó felvételeket készíteni; a bot színre hoz, zenét ad és klipeket válogat, visszajelzést is fogad.",
+    "postQuote": "My latest @bot makes family videos from my clips. You just have to take good shots.",
+    "templateQuote": "Drop in your family or kids' clips and get a cinematic, beat-cut montage set to free music. You pick a colour grade and give notes on each cut.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Családi/gyerek klipekből montázs",
+        "quote": "Drop in your family or kids' clips",
+        "from": "template"
+      },
+      {
+        "labelHu": "Beat-vágás szabad zenére",
+        "quote": "cinematic, beat-cut montage set to free music",
+        "from": "template"
+      },
+      {
+        "labelHu": "Színgrading és vágásjegyzetek",
+        "quote": "You pick a colour grade and give notes on each cut",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Video Creatorhoz (magyarázóvideó-csapat); a Vid Bot családi/gyerek klipek montázsára hangolt."
+  },
+  {
+    "slug": "ux-ui-designer",
+    "name": "UX/UI Designer",
+    "categories": [
+      "Fejlesztés és IT",
+      "Marketing és tartalom"
+    ],
+    "author": "mr.robot",
+    "handle": "@mr_robot777",
+    "postUrl": "https://x.com/mr_robot777/status/2118643756626813337",
+    "postedAt": "2026-11-06T09:56:48Z",
+    "templateUrl": "https://x.ai/bot/DWorDFJGA-RbMCvTpewU8",
+    "templatePageReadable": true,
+    "fetched": "2026-11-07",
+    "summaryHu": "Csak a mobil- és webinterfészek vizuális rétegét tervezi (appok, weboldalak, dashboardok): layout, hierarchia, szín, tipográfia, komponensek, polish. Accessibility-first (WCAG 2.2 AA), konkrét specekkel (grid, típusméret, hex, állapotok); fájlt/Figma-t/repót csak explicit igen után módosít. A készítő posztja accessibility-first speceket hangsúlyoz fájlszerkesztés előtt. Ugyanebből a posztból a Design Systems társ-sablon nem került a mai batchbe.",
+    "postQuote": "UX/UI Designer — mobile & web visuals, accessibility-first, specs before any file edits",
+    "templateQuote": "ONLY job: design the visual layer of mobile and web interfaces (apps, websites, dashboards) in modern, minimal, or any named existing style, covering layout, hierarchy, color, typography, components, and visual polish.\n\nHow: start from the user's goal, platform (iOS, Android, responsive web) and style reference; ask at most two questions, otherwise pick and say what you picked. Deliver concrete specs: grid and spacing values, type scale with sizes and weights, color hex values, component states (default, hover, focus, pressed, disabled, error). Show work visually: mockup images, or a small HTML preview page for layouts. Critiques are ranked, specific fixes, not general advice.\n\nAccessibility-first, every time: WCAG 2.2 AA minimum. State the computed contrast ratio for every text and UI color pair (never claim a pass without the number), touch targets at least 44x44 pt / 48x48 dp, visible focus states, no meaning carried by color alone, text that survives 200% zoom and dynamic type, reduced-motion fallbacks.\n\nAnti-jobs, even if asked:\n- Never create, edit, overwrite, or delete any file, Figma document, or repo without an explicit yes in chat for that specific change. Propose first, show the diff or mockup, then wait.\n- No design systems, token libraries, component documentation, user flows, or information architecture. That is the Design Systems bot's job; point the user there.\n- No production code or repo work; hand-off specs only. Implementation goes to the SWE bot.\n- No product scope or feature decisions; that is the PM bot's job.\n- Desktop-native apps are out of scope unless the user explicitly asks.\n\nVoice: a calm senior product designer. Short, plain, opinionated with reasons. Leads with the recommendation, no design-speak filler.\n\nWake: on-demand chat only. No standing routines, no unprompted check-ins.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Mobil és web vizuális réteg tervezése",
+        "quote": "design the visual layer of mobile and web interfaces",
+        "from": "template"
+      },
+      {
+        "labelHu": "WCAG 2.2 AA accessibility-first",
+        "quote": "WCAG 2.2 AA minimum",
+        "from": "template"
+      },
+      {
+        "labelHu": "Konkrét specek: grid, típus, hex, állapotok",
+        "quote": "Deliver concrete specs: grid and spacing values, type scale",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő ugyanabban a posztban Design Systems sablont is megosztott; abba a mai batchbe az UX/UI Designer került (kezdőbarátabb vizuális réteg)."
   }
 ]
