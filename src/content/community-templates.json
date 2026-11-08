@@ -3005,8 +3005,8 @@
       "Produktivitás"
     ],
     "author": "Si",
-    "handle": "@SiEdgeGeek",
-    "postUrl": "https://x.com/SiEdgeGeek/status/2113290231340581189",
+    "handle": "@ai_benny100",
+    "postUrl": "https://x.com/ai_benny100/status/2113290231340581189",
     "postedAt": "2026-10-22T15:23:48Z",
     "templateUrl": "https://x.ai/bot/ZTQNZCP_XiSq4yozGrGP-",
     "templatePageReadable": true,
@@ -9106,5 +9106,227 @@
     "routines": [],
     "integrations": [],
     "noteHu": "A készítő ugyanabban a posztban Design Systems sablont is megosztott; abba a mai batchbe az UX/UI Designer került (kezdőbarátabb vizuális réteg)."
+  },
+  {
+    "slug": "device-health-check-bot",
+    "name": "📱💻 Device Health Check Bot",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
+    "author": "Brian Roemmele",
+    "handle": "@BrianRoemmele",
+    "postUrl": "https://x.com/BrianRoemmele/status/2119118790583796069",
+    "postedAt": "2026-11-07T17:24:25Z",
+    "templateUrl": "https://x.ai/bot/oVtHm6fwB4QD1o6lGEfx0",
+    "templatePageReadable": true,
+    "fetched": "2026-11-08",
+    "summaryHu": "Audit-első állapotfelmérés a telefonodhoz és a laptopodhoz: biztonság, adatvédelem, tárhely és lassulás. Rangsorolt javítási listát kapsz, plusz színes HTML- és PDF-jelentést; egyszerre csak azt a javítást végzi el, amit te jóváhagysz, és soha nem nyúl jelszavakhoz, kódokhoz vagy helyreállító kulcsokhoz. A készítő posztja szerint a help-desk botok a szoftverről beszélnek — ez a te iPhone-odat és laptopodat auditálja (csak olvasható ellenőrzés), majd biztonság, adatvédelem, tárhely és sebesség sorrendben ad javítási listát.",
+    "postQuote": "Most help-desk bots answer questions about software. This one audits your own iPhone and laptop.",
+    "templateQuote": "Audit-first checkup for your phone and laptop: security, privacy, storage, and slowdowns. You get a ranked fix list and a colorful HTML plus PDF report; it changes only what you approve, one at a time, and never touches passcodes or recovery keys.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Audit-első telefon- és laptop-ellenőrzés",
+        "quote": "Audit-first checkup for your phone and laptop: security, privacy, storage, and slowdowns",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rangsorolt javítási lista, HTML- és PDF-jelentés",
+        "quote": "a ranked fix list and a colorful HTML plus PDF report",
+        "from": "template"
+      },
+      {
+        "labelHu": "Csak jóváhagyott javítás, nem nyúl helyreállító kulcshoz",
+        "quote": "it changes only what you approve, one at a time, and never touches passcodes or recovery keys",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Nem ugyanaz, mint a közösségi Website Health Check (`@EmmettArmstrong`, weboldal A–F pontozás) vagy a Security Audit Bot (`@Phil_Holland`, saját kód szkennelése). Ez telefon- és laptop-állapotfelmérés rangsorolt javításokkal és HTML+PDF jelentéssel.",
+    "relatedTemplates": [
+      {
+        "slug": "website-health-check",
+        "name": "Website Health Check",
+        "noteHu": "A Website Health Check weboldalt pontoz; a Device Health Check Bot a telefonod és a laptopod állapotát méri fel."
+      },
+      {
+        "slug": "security-audit-bot",
+        "name": "Security Audit Bot",
+        "noteHu": "A Security Audit Bot a saját kódodat szkenneli; ez az eszközödet (iPhone/laptop) auditálja."
+      }
+    ]
+  },
+  {
+    "slug": "bring-a-dish",
+    "name": "Bring a Dish",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Erinn",
+    "handle": "@ErinnFL",
+    "postUrl": "https://x.com/ErinnFL/status/2119122404551110694",
+    "postedAt": "2026-11-07T17:38:47Z",
+    "templateUrl": "https://x.ai/bot/YnB0MGcaCbUsIWKMd6oFx",
+    "templatePageReadable": true,
+    "fetched": "2026-11-08",
+    "summaryHu": "Ha nem te hostolod a hálaadást vagy a karácsonyt: megmondod, hová mész, hányan lesznek, milyen messzire vezetsz, és ki mit nem ehet. Olyan fogást választ, ami jól utazik és először fogy el, plusz mit készíts előre és hogyan csomagold. A készítő posztja szerint vendégségbe viszel valamit, és a bot választja ki, mit vigyél.",
+    "postQuote": "Heading to someone else's house for Thanksgiving or Christmas? I made a bot that picks what you should bring. Tell it how many people, how far you're driving, and who can't eat what. It picks a dish that travels well and disappears first.",
+    "templateQuote": "Not hosting Thanksgiving or Christmas? Tell it where you're going, how many people, how far you're driving, and who can't eat what. It picks a dish that travels well and disappears first, plus what to make ahead and how to pack it.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Vendégségbe vihető fogás választása",
+        "quote": "It picks a dish that travels well and disappears first",
+        "from": "template"
+      },
+      {
+        "labelHu": "Előkészítés és csomagolás",
+        "quote": "plus what to make ahead and how to pack it",
+        "from": "template"
+      },
+      {
+        "labelHu": "Létszám, távolság és allergének figyelembevétele",
+        "quote": "how many people, how far you're driving, and who can't eat what",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló az étkezés témában a közösségi Dinner Deciderhez (`@ryanthawks`, vacsora abból, ami otthon van). A Bring a Dish vendégségbe vihető ünnepi fogást választ (hálaadás/karácsony), utazási távolsággal és allergénekkel.",
+    "relatedTemplates": [
+      {
+        "slug": "dinner-decider",
+        "name": "Dinner Decider",
+        "noteHu": "A Dinner Decider otthoni vacsorát javasol a meglevő alapanyagokból; a Bring a Dish azt választja ki, mit vigyél más házába ünnepre."
+      }
+    ]
+  },
+  {
+    "slug": "cybersecurity-bot",
+    "name": "Cybersecurity Bot",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
+    "author": "Brian Apuja",
+    "handle": "@BrianAhuja",
+    "postUrl": "https://x.com/BrianAhuja/status/2119107980843212888",
+    "postedAt": "2026-11-07T16:41:28Z",
+    "templateUrl": "https://x.ai/bot/hTYGaHobQhRab-Lz9eyhN",
+    "templatePageReadable": true,
+    "fetched": "2026-11-08",
+    "summaryHu": "Csak olvasható biztonsági áttekintés a botjaidhoz, fiókjaidhoz és számítógépeidhez. Az első beállítás hat opcionális funkciót kínál: kiberbiztonsági hírek, adathalászat-vizsgálat, eszközellenőrzés, függőség-átnézés, inbox-tesztelési tervek és privát eszközleltár; semmi sem indul a jóváhagyásod nélkül. A készítő posztja szerint az alapértelmezés csak olvasható, és a változtatásokhoz jóváhagyás kell.",
+    "postQuote": "updated Cybersecurity Bot, now with six opt-in features covering security news, phishing scans, device checks, dependencies, inbox-testing plans and an AI-tool inventory\n\nread-only by default and changes require approval",
+    "templateQuote": "Read-only security reviews for your bots, accounts and computers. First-run setup offers six optional features: cybersecurity news, phishing scans, device checks, dependency reviews, inbox-testing plans and a private tool inventory; nothing starts without your approval.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Csak olvasható biztonsági áttekintés",
+        "quote": "Read-only security reviews for your bots, accounts and computers",
+        "from": "template"
+      },
+      {
+        "labelHu": "Hat opcionális funkció",
+        "quote": "six optional features: cybersecurity news, phishing scans, device checks, dependency reviews, inbox-testing plans and a private tool inventory",
+        "from": "template"
+      },
+      {
+        "labelHu": "Semmi sem indul jóváhagyás nélkül",
+        "quote": "nothing starts without your approval",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló témájú a közösségi Security & Privacy (`@NickGibbsIAG`, X-imitátorok és people-search opt-out) és a Security Audit Bot (`@Phil_Holland`, saját kód szkennelése). Ez a Cybersecurity Bot csak olvasható áttekintés botokra, fiókokra és számítógépekre, hat opcionális funkcióval.",
+    "relatedTemplates": [
+      {
+        "slug": "security-privacy",
+        "name": "Security & Privacy",
+        "noteHu": "A Security & Privacy X-imitátorokat és people-search opt-outot kezel; a Cybersecurity Bot botok, fiókok és gépek csak olvasható biztonsági áttekintését kínálja."
+      },
+      {
+        "slug": "security-audit-bot",
+        "name": "Security Audit Bot",
+        "noteHu": "A Security Audit Bot a saját kódodat szkenneli; ez eszköz- és fiókáttekintés, nem kódaudit."
+      }
+    ]
+  },
+  {
+    "slug": "x-follower-tracker",
+    "name": "X Follower Tracker",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Carlo",
+    "handle": "@Italianclownz",
+    "postUrl": "https://x.com/Italianclownz/status/2119191330853138617",
+    "postedAt": "2026-11-07T22:12:40Z",
+    "templateUrl": "https://x.ai/bot/5SFdHnPJmJHlfUNBkt--w",
+    "templatePageReadable": true,
+    "fetched": "2026-11-08",
+    "summaryHu": "Elmenti, kik követnek X-en, és jelzi, ki unfollowolt, illetve ki új — az általad választott ütemezésben (havi, heti vagy tetszőleges időköz). A készítő posztja szerint ez a bot a követőidet figyeli, és szól, ha valaki leiratkozott.",
+    "postQuote": "Created another Grokbot. This one will keep track of your followers and tell you who unfollowed you. Set it to check, monthly, weekly or any amount of time you wish.",
+    "templateQuote": "Keeps a saved list of who follows you on X and tells you who unfollowed and who's new, on a schedule you choose.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Mentett követőlista X-en",
+        "quote": "Keeps a saved list of who follows you on X",
+        "from": "template"
+      },
+      {
+        "labelHu": "Unfollow és új követők jelzése",
+        "quote": "tells you who unfollowed and who's new, on a schedule you choose",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Nem ugyanaz, mint a közösségi X-Man (`@AunySillyMe`, mások fiókjait és témáit figyeli). Ez a saját követőid listáját menti, és szól, ki unfollowolt és ki új.",
+    "relatedTemplates": [
+      {
+        "slug": "x-man",
+        "name": "X-Man",
+        "noteHu": "Az X-Man a neked fontos más fiókokat figyeli; az X Follower Tracker a saját követőid változását."
+      }
+    ]
+  },
+  {
+    "slug": "meet-my-bot",
+    "name": "Meet My Bot",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
+    "author": "Luis Barragan",
+    "handle": "@luisbarragan",
+    "postUrl": "https://x.com/luisbarragan/status/2119044899538346223",
+    "postedAt": "2026-11-07T12:30:48Z",
+    "templateUrl": "https://x.ai/bot/HuOMWRR5_-Y0Qra8kuZoC",
+    "templatePageReadable": true,
+    "fetched": "2026-11-08",
+    "summaryHu": "Megkeresi a megfelelő Grok Botot bármilyen feladathoz; a készítők a beszélgetésben be is küldhetik a saját botjukat. A meetmybot.ai könyvtárban keres, és mindig feltünteti a készítőt. A készítő posztja szerint már 906 Grok Bot sablon van 599 készítőtől, 24 kategóriában: add a csapatodhoz, és kérdezd meg, mire van szükséged — megtalálja a következő botot.",
+    "postQuote": "Meet My Bot now has 906 Grok Bot templates from 599 creators across 24 categories.\n\nAdd it to your team and ask it what you need built. It'll find your next bot.",
+    "templateQuote": "Meet My Bot finds the right Grok Bot for any job, and creators can submit their own bot right in the chat. It searches the meetmybot.ai directory and always credits the creator.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Grok Bot keresése feladathoz",
+        "quote": "finds the right Grok Bot for any job",
+        "from": "template"
+      },
+      {
+        "labelHu": "Készítők beküldhetik a saját botjukat",
+        "quote": "creators can submit their own bot right in the chat",
+        "from": "template"
+      },
+      {
+        "labelHu": "meetmybot.ai könyvtár, készítő feltüntetése",
+        "quote": "searches the meetmybot.ai directory and always credits the creator",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
   }
 ]
