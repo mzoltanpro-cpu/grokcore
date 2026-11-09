@@ -9328,5 +9328,407 @@
     ],
     "routines": [],
     "integrations": []
+  },
+  {
+    "slug": "thrifty",
+    "name": "Thrifty",
+    "categories": [
+      "Grok Bot és flotta"
+    ],
+    "author": "Joe",
+    "handle": "@joehansen",
+    "postUrl": "https://x.com/joehansen/status/2119423584254980590",
+    "postedAt": "2026-11-08T13:35:34Z",
+    "templateUrl": "https://x.ai/bot/FPawIH2HYV0eLkoDpyGG7",
+    "templatePageReadable": true,
+    "fetched": "2026-11-09",
+    "summaryHu": "Ha elfogy a Grok Bot használati kereted: megkeresi, hová megy a használat (botok, rutinok, egymással beszélgető botok), csökkenti a pazarlást, és minden változtatást te hagysz jóvá. Ingyenes első audit, napi költségkeret és heti előtte/utána jelentés. A készítő posztja szerint ez az ő „token saver” botja, amelyet remél, hogy hamarosan törölhet.",
+    "postQuote": "hopefully I can delete my token saver bot Thrifty",
+    "templateQuote": "Thrifty: stop running out of Grok Bot usage. It finds where your usage goes (bots, routines, bots talking to each other), cuts the waste, and you approve every change. Free first audit, a daily budget, and a weekly before/after report.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Használat-audit: hová megy a keret",
+        "quote": "It finds where your usage goes (bots, routines, bots talking to each other)",
+        "from": "template"
+      },
+      {
+        "labelHu": "Pazarlás csökkentése, minden változás jóváhagyással",
+        "quote": "cuts the waste, and you approve every change",
+        "from": "template"
+      },
+      {
+        "labelHu": "Ingyenes első audit, napi költségkeret, heti jelentés",
+        "quote": "Free first audit, a daily budget, and a weekly before/after report",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Usage Watch sablonhoz (`@luisbarragan`). A Thrifty a használati keret pazarlását keresi meg és vágja vissza jóváhagyással, napi költségkerettel és heti előtte/utána jelentéssel.",
+    "relatedTemplates": [
+      {
+        "slug": "usage-watch",
+        "name": "Usage Watch",
+        "noteHu": "A Usage Watch a használatot figyeli; a Thrifty a pazarlás okát is megkeresi, és jóváhagyással csökkenti."
+      }
+    ]
+  },
+  {
+    "slug": "marketing-manager",
+    "name": "Marketing Manager",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Michael",
+    "handle": "@MichaelGannotti",
+    "postUrl": "https://x.com/MichaelGannotti/status/2119550900951773539",
+    "postedAt": "2026-11-08T22:01:28Z",
+    "templateUrl": "https://x.ai/bot/DRdlYas_qcUcMFuhtHMox",
+    "templatePageReadable": true,
+    "fetched": "2026-11-09",
+    "summaryHu": "Marketingtartalmat tervez, ír, átnéz és igazít a választott közösségi csatornákhoz. A munkafolyamatot egyszerre egy kérdéssel állítod be, és közzététel előtt külön jóváhagyást kér. A készítő posztja szerint ez a sablon azoknak szól, akiknek gondjuk van a Grok Bot X-re vagy más közösségi oldalra feltöltésével.",
+    "postQuote": "Having trouble with Grok Bot uploading to X and or other Social sites? Grab my Grok Bot Marketing Manager template",
+    "templateQuote": "Plan, draft, review, and adapt marketing content for your chosen social channels. Set up your workflow one question at a time, with separate approval before publishing.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Marketingtartalom tervezése, írása, átnézése és igazítása",
+        "quote": "Plan, draft, review, and adapt marketing content for your chosen social channels",
+        "from": "template"
+      },
+      {
+        "labelHu": "Beállítás egyszerre egy kérdéssel",
+        "quote": "Set up your workflow one question at a time",
+        "from": "template"
+      },
+      {
+        "labelHu": "Külön jóváhagyás közzététel előtt",
+        "quote": "with separate approval before publishing",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "unstuck",
+    "name": "Unstuck",
+    "categories": [
+      "Produktivitás",
+      "Egészség és sport"
+    ],
+    "author": "Bill G. Wolcott",
+    "handle": "@billgwolcott",
+    "postUrl": "https://x.com/billgwolcott/status/2119648960675766456",
+    "postedAt": "2026-11-09T04:31:08Z",
+    "templateUrl": "https://x.ai/bot/5Ov0WI-Ad7vtb3yfWT7sP",
+    "templatePageReadable": true,
+    "fetched": "2026-11-09",
+    "summaryHu": "ADHD-s, túl tele fejnek: mindent kiöntesz, akár összevissza, a bot rendezi, kiválaszt EGY következő lépést, és 2 perces indulássá zsugorítja; nyereménynaplót is vezet. A sablon oldala szerint nem orvosi tanács, csak chat, és a készítő maga is ADHD-s. A készítő posztja szerint szégyenítés nélkül működik.",
+    "postQuote": "ADHD brain too full to start anything?",
+    "templateQuote": "ADHD brain full? Dump everything, messy is fine. Unstuck sorts it, picks ONE next step, shrinks it to a 2-minute start, and keeps a wins log. Not medical advice, chat only, built by Bill G. Wolcott, who has ADHD too.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kiöntött teendők rendezése, egyetlen következő lépés",
+        "quote": "Unstuck sorts it, picks ONE next step",
+        "from": "template"
+      },
+      {
+        "labelHu": "A lépés zsugorítása 2 perces indulássá",
+        "quote": "shrinks it to a 2-minute start",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nyereménynapló",
+        "quote": "keeps a wins log",
+        "from": "template"
+      },
+      {
+        "labelHu": "Szégyenítés nélkül",
+        "quote": "No shame, ever.",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi One Thing sablonhoz (`@KomoriGenjiro`, egyetlen teendő). Az Unstuck ADHD-sra szabott: rendez, egy lépést választ és 2 percesre zsugorítja.",
+    "relatedTemplates": [
+      {
+        "slug": "one-thing",
+        "name": "One Thing",
+        "noteHu": "A One Thing egyetlen teendőre fókuszál; az Unstuck a kiöntött teendőkből választ egyet és 2 percesre kicsinyíti."
+      }
+    ]
+  },
+  {
+    "slug": "pattern-check",
+    "name": "Pattern Check",
+    "categories": [
+      "Egyéb"
+    ],
+    "author": "Bill G. Wolcott",
+    "handle": "@billgwolcott",
+    "postUrl": "https://x.com/billgwolcott/status/2119583805271097754",
+    "postedAt": "2026-11-09T00:12:13Z",
+    "templateUrl": "https://x.ai/bot/tVI02-lI_WZ-Hv_v_iPF_",
+    "templatePageReadable": true,
+    "fetched": "2026-11-09",
+    "summaryHu": "Ha egy szülőtől, partnertől vagy exedtől kapott üzenet zavarttá, bűntudatossá vagy kicsivé tesz: beilleszted, és megmutatja, mit csinál az üzenet, normális-e, és segít nyugodt választ írni. Privát, csak chat, nincs plugin vagy bejelentkezés. A készítő posztja szerint 10 másodperc alatt megmondja, mit tesz az üzenet.",
+    "postQuote": "Paste a text from a parent, partner or ex. It names what the message is doing, tells you if it's normal, and helps you answer.",
+    "templateQuote": "Got a message from a parent, partner or ex that leaves you feeling confused, guilty or small? Paste it in, and Pattern Check shows you what it's doing, whether it's normal, and helps you write a calm reply. Private, chat-only, no plugins or logins. Built by Bill G. Wolcott.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Üzenet mintázatának felismerése",
+        "quote": "Pattern Check shows you what it's doing, whether it's normal",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nyugodt válasz megírása",
+        "quote": "helps you write a calm reply",
+        "from": "template"
+      },
+      {
+        "labelHu": "Privát, csak chat, plugin és bejelentkezés nélkül",
+        "quote": "Private, chat-only, no plugins or logins",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "cosmic-daily",
+    "name": "Cosmic Daily",
+    "categories": [
+      "Egyéb",
+      "Tanulás"
+    ],
+    "author": "Tom",
+    "handle": "@TitaniumTomP",
+    "postUrl": "https://x.com/TitaniumTomP/status/2119470312249286803",
+    "postedAt": "2026-11-08T16:41:14Z",
+    "templateUrl": "https://x.ai/bot/PC6RgL7yGOil4Da64i-MG",
+    "templatePageReadable": true,
+    "fetched": "2026-11-09",
+    "summaryHu": "Napi űrcsomag a választott időpontban: a NASA napi csillagászati képe (Astronomy Picture of the Day) érthető angol magyarázattal, plusz a három legfontosabb űrhír.",
+    "postQuote": "Cosmic Daily brings you NASA’s photo of the day, a plain-English explanation, and three space headlines at the time you choose.",
+    "templateQuote": "A daily space drop: NASA's Astronomy Picture of the Day with a plain-English explainer, plus the top 3 space headlines, delivered at your chosen time.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "NASA napi képe érthető magyarázattal",
+        "quote": "NASA's Astronomy Picture of the Day with a plain-English explainer",
+        "from": "template"
+      },
+      {
+        "labelHu": "Három legfontosabb űrhír",
+        "quote": "plus the top 3 space headlines",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kézbesítés a választott időpontban",
+        "quote": "delivered at your chosen time",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "study-buddy-mav",
+    "name": "Study Buddy",
+    "categories": [
+      "Tanulás"
+    ],
+    "author": "Mav",
+    "handle": "@Mavmetax",
+    "postUrl": "https://x.com/Mavmetax/status/2119467929003553136",
+    "postedAt": "2026-11-08T16:31:46Z",
+    "templateUrl": "https://x.ai/bot/_-LDZX4_M3rfCzU-mhftn",
+    "templatePageReadable": true,
+    "fetched": "2026-11-09",
+    "summaryHu": "Elküldöd az óravázlatot vagy a jegyzeteidet, és tanulási útmutatót, gyakorló kvízeket és lapozható tanulókártyákat (flashcard) kapsz. Középiskolásoknak és egyetemistáknak készült, vizsgaemlékeztetőkkel és időzített ismétléssel. A készítő posztja szerint bekerült a „Top 10” listába.",
+    "postQuote": "I made the Top 10 👀",
+    "templateQuote": "Send your class slides or notes and get a study guide, practice quizzes, and flippable flashcards. Built for high school and college students, with exam reminders and spaced review.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Tanulási útmutató, kvízek és kártyák a jegyzetekből",
+        "quote": "get a study guide, practice quizzes, and flippable flashcards",
+        "from": "template"
+      },
+      {
+        "labelHu": "Vizsgaemlékeztetők és időzített ismétlés",
+        "quote": "with exam reminders and spaced review",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Ugyanezen a néven már van közösségi Study Buddy (`@yonatan_langer`, tanulási terv a vizsgáig). Ez egy másik készítő sablonja: óravázlatból útmutatót, kvízt és kártyát készít, vizsgaemlékeztetővel.",
+    "relatedTemplates": [
+      {
+        "slug": "study-buddy",
+        "name": "Study Buddy",
+        "noteHu": "A másik Study Buddy tanulási tervet, kártyákat és napi kvízt ad a vizsgáig; ez óravázlatból útmutatót, kvízt és kártyát készít, emlékeztetőkkel."
+      }
+    ]
+  },
+  {
+    "slug": "following-interest-reviewer",
+    "name": "Following Interest Reviewer",
+    "categories": [
+      "Produktivitás",
+      "Egyéb"
+    ],
+    "author": "Cleetus",
+    "handle": "@175rng",
+    "postUrl": "https://x.com/175rng/status/2119597308048277813",
+    "postedAt": "2026-11-09T01:05:53Z",
+    "templateUrl": "https://x.ai/bot/DV1Icl-5UdIg_hlLaQRSA",
+    "templatePageReadable": true,
+    "fetched": "2026-11-09",
+    "summaryHu": "Átnézi az általad követett X-fiókokat az érdeklődési köröd és a saját idővonalad alapján, a nem illeszkedőket 10-es csomagokban küldi el jóváhagyásra; unfollow csak az engedélyeddel történik. A készítő posztja szerint minden este kis mintát vesz a követettekből, és nem követ ki senkit, amíg nem mondod.",
+    "postQuote": "You set up a bot that reviews who you follow on X.",
+    "templateQuote": "Reviews the X accounts you follow against your interests and your own timeline, then sends mismatches in batches of 10 for you to approve before anything is unfollowed. You stay in control of every unfollow.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Követett fiókok átnézése az érdeklődés alapján",
+        "quote": "Reviews the X accounts you follow against your interests and your own timeline",
+        "from": "template"
+      },
+      {
+        "labelHu": "Eltérések 10-es csomagban, jóváhagyásra",
+        "quote": "sends mismatches in batches of 10 for you to approve",
+        "from": "template"
+      },
+      {
+        "labelHu": "Unfollow csak az engedélyeddel",
+        "quote": "It never unfollows anyone unless I say so.",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi X Follower Trackerhez (`@Italianclownz`, követőváltozások). Ez nem követőket számol, hanem a te követettjeidet veti össze az érdeklődéseddel.",
+    "relatedTemplates": [
+      {
+        "slug": "x-follower-tracker",
+        "name": "X Follower Tracker",
+        "noteHu": "Az X Follower Tracker a követőid változását figyeli; ez a te követettjeidet nézi át az érdeklődésed szerint."
+      }
+    ]
+  },
+  {
+    "slug": "freelancer",
+    "name": "Freelancer",
+    "categories": [
+      "Produktivitás",
+      "Egyéb"
+    ],
+    "author": "Toàn",
+    "handle": "@toannhu_it",
+    "postUrl": "https://x.com/toannhu_it/status/2119463904913088982",
+    "postedAt": "2026-11-08T16:15:47Z",
+    "templateUrl": "https://x.ai/bot/oZao5NkFiaZku3eACtTBh",
+    "templatePageReadable": true,
+    "fetched": "2026-11-09",
+    "summaryHu": "Rövid Upwork-megbízásokat keres a profilodhoz, ajánlatokat fogalmaz meg jóváhagyásra, és jelez, ha új Upwork-üzenet érkezik. Kevesebb, de jobb ajánlatot szeretőknek. A készítő posztja szerint előbb te hagyod jóvá az ajánlatot.",
+    "postQuote": "So I built a Grok Bot that:\n• finds short gigs that fit my profile\n• drafts proposals I approve first\n• pings me when a client replies",
+    "templateQuote": "Finds short Upwork gigs that fit your profile, drafts proposals for your approval, and pings you when new Upwork messages arrive. Built for freelancers who want fewer, better bids.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Profilhoz illő rövid Upwork-megbízások keresése",
+        "quote": "Finds short Upwork gigs that fit your profile",
+        "from": "template"
+      },
+      {
+        "labelHu": "Ajánlatok megfogalmazása jóváhagyásra",
+        "quote": "drafts proposals for your approval",
+        "from": "template"
+      },
+      {
+        "labelHu": "Értesítés új Upwork-üzenetről",
+        "quote": "pings you when new Upwork messages arrive",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "flow-film-maker",
+    "name": "Flow Film Maker",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "ecoay",
+    "handle": "@ecoay",
+    "postUrl": "https://x.com/ecoay/status/2119677516776415297",
+    "postedAt": "2026-11-09T06:24:36Z",
+    "templateUrl": "https://x.ai/bot/EaBu_d_aTVqQffsAheeMC",
+    "templatePageReadable": true,
+    "fetched": "2026-11-09",
+    "summaryHu": "Rövid, álló formátumú AI-filmeket készít a saját karaktereiddel, jeleneteiddel és narrációddal a Google Flow-ban, a saját fiókodon, a te stílusoddal és fotóiddal. Te választod ki az összes képkockát, és addig nem költ kreditet, amíg nem engedélyezed. A készítő posztja szerint naponta egy ingyenes, animált 30 másodperces promóvideót lehet vele készíteni.",
+    "postQuote": "this is how you can for free generate a free fully animated 30 second promo video a day.",
+    "templateQuote": "Makes short vertical AI films with your characters, scenes and narration in Google Flow on your own account, using your art style and photos. You pick every frame, and no credits get spent until you say yes.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Rövid, álló AI-filmek karakterekkel és narrációval",
+        "quote": "Makes short vertical AI films with your characters, scenes and narration in Google Flow",
+        "from": "template"
+      },
+      {
+        "labelHu": "Saját stílus és fotók használata",
+        "quote": "using your art style and photos",
+        "from": "template"
+      },
+      {
+        "labelHu": "Minden képkockát te választasz, kredit csak jóváhagyásra",
+        "quote": "You pick every frame, and no credits get spent until you say yes.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "coding-scribe",
+    "name": "Coding Scribe",
+    "categories": [
+      "Fejlesztés és IT",
+      "Tanulás"
+    ],
+    "author": "Elijah",
+    "handle": "@loco_coder",
+    "postUrl": "https://x.com/loco_coder/status/2119640325492969821",
+    "postedAt": "2026-11-09T03:56:49Z",
+    "templateUrl": "https://x.ai/bot/sYCu3Tox5M_9QWABK2RaF",
+    "templatePageReadable": true,
+    "fetched": "2026-11-09",
+    "summaryHu": "Programozós videókból és oktatóanyagokból (főleg YouTube) tömör, gyakorlatias leírásokat készít, szervezett jegyzetként az Obsidian-tárolódba mentve. A készítő posztja szerint a kulcsleckéket és a valódi kódot egy rendezett jegyzetbe húzza ki, hogy tényleg megjegyezd, amit megnéztél.",
+    "postQuote": "Coding Scribe pulls the key lessons and real code into a tidy note, so you actually remember what you watched.",
+    "templateQuote": "Turns coding videos and tutorials, mostly YouTube, into concise, practical coding tutorials saved as organized notes in your Obsidian vault.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Programozós videókból tömör oktatóanyag",
+        "quote": "Turns coding videos and tutorials, mostly YouTube, into concise, practical coding tutorials",
+        "from": "template"
+      },
+      {
+        "labelHu": "Szervezett jegyzetek az Obsidian-tárolóban",
+        "quote": "saved as organized notes in your Obsidian vault",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
   }
 ]
