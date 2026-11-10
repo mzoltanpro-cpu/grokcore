@@ -4029,6 +4029,7 @@
     "postedAt": "2026-10-24T15:20:02Z",
     "templateUrl": "https://x.ai/bot/rVZtWMQwb_6tXAQPatay5",
     "templatePageReadable": true,
+    "templateRemoved": true,
     "fetched": "2026-10-25",
     "summaryHu": "Szigorú bíráló, amely tízesre húzza a munkádat. A sablon leírása szerint abból indul ki, hogy a munkád 3/10-es, majd pontosan megmutatja, mi kell a 7-eshez és a 10-eshez: írást, kódot, terveket vagy dizájnt pontoz az általad választott szempontok szerint, a saját értékelésére egy második kritikai kört is lefuttat, és visszaadja a 3 legfontosabb javítást egy átírt változattal együtt, hízelgés nélkül. A készítő posztja szerint egy promptot tett sablonná, amelyet addig újra meg újra bemásolt a Grok Botba.",
     "postQuote": "I kept pasting this prompt into Grok Bot, so I made it a template.",
@@ -4037,6 +4038,7 @@
     "skills": [],
     "routines": [],
     "integrations": [],
+    "noteHu": "A 2026-11-10-i ellenőrzéskor a sablon x.ai lapja már nem volt elérhető (404), így a sablon jelenleg nem adható hozzá a Grok Bothoz; a leírást forrásként megőriztük.",
     "relatedMarketplace": [
       {
         "slug": "critiquito",
@@ -9730,5 +9732,474 @@
     ],
     "routines": [],
     "integrations": []
+  },
+  {
+    "slug": "help-i-havent-checked-in",
+    "name": "Help, I Haven't Checked In",
+    "categories": [
+      "Otthon, utazás, étkezés",
+      "Egészség és sport"
+    ],
+    "author": "Brian Roemmele",
+    "handle": "@BrianRoemmele",
+    "postUrl": "https://x.com/BrianRoemmele/status/2119857994582421788",
+    "postedAt": "2026-11-09T18:21:45Z",
+    "templateUrl": "https://x.ai/bot/iGiD-76C2lv6MB1otClec",
+    "templatePageReadable": true,
+    "fetched": "2026-11-10",
+    "summaryHu": "Biztonsági „visszajelző” túrázóknak, terepjárósoknak, kajakosoknak és egyedül utazóknak. Indulás előtt megadod az útvonalat és a visszaérkezés idejét; ha nem jelentkezel, felhívja, e-mailben és üzenetben értesíti a listádon szereplőket az általad jóváhagyott szöveggel és egy útvonaltérképes PDF-útijelentéssel. A készítő posztja szerint nem mentőszolgálat, GPS-nyomkövető vagy vészjelző, és soha nem hívja a 911-et; „a tartalék tartaléka”.",
+    "postQuote": "It's not a rescue service, a GPS tracker, or an emergency beacon. I can't see where you are, and I never call 911 or search and rescue myself.",
+    "templateQuote": "A trip check-in fail-safe for hikers, backcountry drivers, paddlers, and solo travelers. Leave your route and check-in time; if you don't check in, it calls, emails, and texts the people on your list with your approved notice and a PDF trip report with a route map. Not a rescue service, but it just may save a life.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Útvonal és visszaérkezési idő rögzítése indulás előtt",
+        "quote": "Leave your route and check-in time",
+        "from": "template"
+      },
+      {
+        "labelHu": "Hívás, e-mail és üzenet a listádnak, ha nem jelentkezel",
+        "quote": "if you don't check in, it calls, emails, and texts the people on your list with your approved notice",
+        "from": "template"
+      },
+      {
+        "labelHu": "PDF-útijelentés útvonaltérképpel",
+        "quote": "a PDF trip report with a route map",
+        "from": "template"
+      },
+      {
+        "labelHu": "Késésnél új határidő",
+        "quote": "Running late? Send me a new time and I'll move your deadline.",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon a Grok telefonhívásait használja. A forrás nem írja le, hogy a hívások magyar telefonszámokra vagy magyar nyelven működnek-e. A készítő posztja szerint ez nem helyettesíti, hogy egy valódi embernek is elmondd a terved, és jelzés nélküli helyen műholdas üzenetküldőt vagy PLB-t vigyél."
+  },
+  {
+    "slug": "tweet-analyser",
+    "name": "Tweet Analyser",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Zeeshan",
+    "handle": "@zeeshan_utd",
+    "postUrl": "https://x.com/zeeshan_utd/status/2120000242674467017",
+    "postedAt": "2026-11-10T03:47:00Z",
+    "templateUrl": "https://x.ai/bot/Se-KI83s3bSoiGx6jeXMg",
+    "templatePageReadable": true,
+    "fetched": "2026-11-10",
+    "summaryHu": "Beilleszted az X-poszt piszkozatodat, és gyors ítéletet kapsz: mehet, igazítani kell vagy újra kell írni. Érthető javításokat ad az X nyílt forráskódú rangsoroló kódja alapján, és a te hangodon újraírja a szöveget; jelez, ha az X algoritmus-repója változik. A készítő posztja szerint azt is megjelöli, mi ronthatja az elérést (csupa nagybetű, AI-hangzású szöveg, linkek stb.).",
+    "postQuote": "It tells me ship, tweak or rewrite, flags what'll hurt reach (all caps, AI-sounding copy, links, etc), and rewrites",
+    "templateQuote": "Paste an X post draft and get a quick ship/tweak/rewrite verdict, plain-English fixes grounded in X's open-source ranking code, and a rewrite in your voice. It also flags when X's algorithm repo changes.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Mehet / igazítsd / írd újra ítélet a piszkozatra",
+        "quote": "get a quick ship/tweak/rewrite verdict",
+        "from": "template"
+      },
+      {
+        "labelHu": "Javítások az X nyílt forráskódú rangsoroló kódja alapján",
+        "quote": "plain-English fixes grounded in X's open-source ranking code",
+        "from": "template"
+      },
+      {
+        "labelHu": "Újraírás a te hangodon",
+        "quote": "a rewrite in your voice",
+        "from": "template"
+      },
+      {
+        "labelHu": "Jelzés, ha az X algoritmus-repója változik",
+        "quote": "It also flags when X's algorithm repo changes.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi X Algo Post Optimizerhez (`@ColinGardiner`), amely 1-től 10-ig pontozza a piszkozatot. A Tweet Analyser mehet/igazítsd/írd újra ítéletet ad, és figyeli az X algoritmus-repójának változását.",
+    "relatedTemplates": [
+      {
+        "slug": "x-algo-post-optimizer",
+        "name": "X Algo Post Optimizer",
+        "noteHu": "Az X Algo Post Optimizer pontszámot ad; a Tweet Analyser mehet/igazítsd/írd újra ítéletet és újraírást ad."
+      }
+    ]
+  },
+  {
+    "slug": "same-team",
+    "name": "Same Team",
+    "categories": [
+      "E-mail és üzenetek",
+      "Egyéb"
+    ],
+    "author": "Bill G. Wolcott",
+    "handle": "@billgwolcott",
+    "postUrl": "https://x.com/billgwolcott/status/2119804514572341258",
+    "postedAt": "2026-11-09T14:49:14Z",
+    "templateUrl": "https://x.ai/bot/SwPnn9g6m32pNIL-NvJ65",
+    "templatePageReadable": true,
+    "fetched": "2026-11-10",
+    "summaryHu": "Két otthonban nevelt gyerek közös szülőinek: segít világos, barátságos üzeneteket írni a másik szülőnek, gyerekhíreket küldeni, beosztást és ünnepeket tervezni, igazságosan megosztani a költségeket, és átbeszélni a nagy döntéseket. A sablon oldala szerint csak chat, és nem jogi tanács. A készítő posztja szerint az egyetlen oldal a gyereked oldala.",
+    "postQuote": "Co-parenting? The only side is your child's side.",
+    "templateQuote": "Co-parenting in two homes? Same Team helps you write clear, friendly messages to your co-parent, send kid updates, plan schedules and holidays, split costs fairly and talk through big decisions. Chat only, not legal advice. Built by Bill G. Wolcott.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Világos, barátságos üzenetek a másik szülőnek",
+        "quote": "write clear, friendly messages to your co-parent",
+        "from": "template"
+      },
+      {
+        "labelHu": "Gyerekhírek, beosztás és ünnepek tervezése",
+        "quote": "send kid updates, plan schedules and holidays",
+        "from": "template"
+      },
+      {
+        "labelHu": "Költségek igazságos megosztása",
+        "quote": "split costs fairly",
+        "from": "template"
+      },
+      {
+        "labelHu": "Csak chat, nem jogi tanács",
+        "quote": "Chat only, not legal advice.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "call-around",
+    "name": "Call Around",
+    "categories": [
+      "Otthon, utazás, étkezés",
+      "Pénzügy és vásárlás"
+    ],
+    "author": "Ryan",
+    "handle": "@ryanthawks",
+    "postUrl": "https://x.com/ryanthawks/status/2119956356299923711",
+    "postedAt": "2026-11-10T00:52:36Z",
+    "templateUrl": "https://x.ai/bot/BfJSlxG9eRuKVL4jEYse9",
+    "templatePageReadable": true,
+    "fetched": "2026-11-10",
+    "summaryHu": "Helyetted telefonál: felhív néhány helyi vállalkozást ugyanazokkal a kérdésekkel, és rangsorolt összehasonlítást ad az árajánlatokról, a szabad időpontokról és a megjegyzésekről. Minden hívás azzal kezdődik, hogy AI-asszisztens telefonál rögzített vonalon; a hívólistát és a kérdéseket előbb te hagyod jóvá, és nem foglal vagy fizet az igened nélkül. A készítő posztja szerint legfeljebb 5 helyet hív fel (például gumi, vízvezeték-szerelő, asztalfoglalás 12 főre).",
+    "postQuote": "Need tires, a plumber, a table for 12? It calls up to 5 local spots, asks the same questions, and ranks the answers.",
+    "templateQuote": "Call Around phones a few local businesses for you with the same questions and gives you back a ranked comparison of quotes, availability, and notes. Every call opens by saying it's an AI assistant calling for you on a recorded line. It never books or pays without your yes, never shares card or account numbers, and you approve the call list and questions before any call goes out.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Helyi vállalkozások felhívása ugyanazokkal a kérdésekkel",
+        "quote": "phones a few local businesses for you with the same questions",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rangsorolt összehasonlítás: ár, időpont, megjegyzés",
+        "quote": "a ranked comparison of quotes, availability, and notes",
+        "from": "template"
+      },
+      {
+        "labelHu": "Hívólista és kérdések jóváhagyása előre",
+        "quote": "you approve the call list and questions before any call goes out",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nem foglal és nem fizet jóváhagyás nélkül",
+        "quote": "It never books or pays without your yes",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon a Grok Bot telefonhívásait használja. A forrás nem írja le, hogy a hívások magyar telefonszámokra vagy magyar nyelven működnek-e."
+  },
+  {
+    "slug": "host-mode",
+    "name": "Host Mode",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Ryan",
+    "handle": "@ryanthawks",
+    "postUrl": "https://x.com/ryanthawks/status/2119956549707641342",
+    "postedAt": "2026-11-10T00:53:22Z",
+    "templateUrl": "https://x.ai/bot/F0skXyX7J2DtsFPBxzbs3",
+    "templatePageReadable": true,
+    "fetched": "2026-11-10",
+    "summaryHu": "Ünnepi vacsora vagy Friendsgiving megtervezése: menü a létszámhoz és az étrendekhez, adagok, valamint visszafelé számolt kiolvasztási, előkészítési és sütési idővonal (az amerikai USDA kiolvasztási útmutatója alapján). Batyus feliratkozó oldalt is készíthet, kiszámolja a költségmegosztást, és egy bevásárlólistát vagy kosarat állít össze, amelyet te fizetsz ki. Vendégüzeneteket megfogalmaz, de nem küldi el őket, és soha nem fizet.",
+    "postQuote": "Give it a headcount and diets. You get a menu, portions, a turkey thaw date, an oven timeline, a potluck sign-up, and the cost split.",
+    "templateQuote": "Host Mode turns a holiday meal or Friendsgiving into a plan: a menu for your headcount and diets, portions, and a backwards thaw, prep, and oven timeline using USDA thaw guidance. It can also make a potluck sign-up Page, do the cost-share math, and build one grocery list or cart for you to check out. It drafts guest messages but never sends them, and never pays.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Menü és adagok a létszámhoz és étrendekhez",
+        "quote": "a menu for your headcount and diets, portions",
+        "from": "template"
+      },
+      {
+        "labelHu": "Visszafelé számolt kiolvasztási, előkészítési és sütési idővonal",
+        "quote": "a backwards thaw, prep, and oven timeline using USDA thaw guidance",
+        "from": "template"
+      },
+      {
+        "labelHu": "Batyus feliratkozó oldal és költségmegosztás",
+        "quote": "make a potluck sign-up Page, do the cost-share math",
+        "from": "template"
+      },
+      {
+        "labelHu": "Bevásárlólista vagy kosár, fizetés nélkül",
+        "quote": "build one grocery list or cart for you to check out",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Bring a Dish (`@ErinnFL`, vendégségbe vihető fogás) és Party planner (`@RachelVT42`) sablonokhoz. A Host Mode a vendéglátónak tervezi meg az egész ünnepi vacsorát.",
+    "relatedTemplates": [
+      {
+        "slug": "bring-a-dish",
+        "name": "Bring a Dish",
+        "noteHu": "A Bring a Dish vendégként vihető fogást választ; a Host Mode a vendéglátó teljes vacsoráját tervezi."
+      },
+      {
+        "slug": "party-planner",
+        "name": "Party planner",
+        "noteHu": "A Party planner általános bulitervező; a Host Mode ünnepi vacsorára, menüre és sütési idővonalra fókuszál."
+      }
+    ]
+  },
+  {
+    "slug": "clip-scout",
+    "name": "Clip Scout",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Bill G. Wolcott",
+    "handle": "@bwolcottauthor",
+    "postUrl": "https://x.com/bwolcottauthor/status/2119982530191638934",
+    "postedAt": "2026-11-10T02:36:37Z",
+    "templateUrl": "https://x.ai/bot/SY9HT-xabGZ0FxGDdhD5z",
+    "templatePageReadable": true,
+    "fetched": "2026-11-10",
+    "summaryHu": "Az X új Clipping funkciójához: segít megtalálni a hosszú videók kivágásra érdemes pillanatait (5–60 mp), a saját hangodon kiélezni a hozzáfűzött véleményedet, ellenőrizni, hogy a klip korrekt-e az eredeti készítővel, és megérteni, hogyan hozhat bevételt a klip az Original Content Rewards programban. A sablon oldala szerint soha nem posztol helyetted, és nem ígér bevételt. A készítő posztja szerint az X Clipping indulásának napján készült.",
+    "postQuote": "Clip Scout finds the moments worth clipping, keeps your take yours, and checks every clip is fair to the creator.",
+    "templateQuote": "X just launched Clipping: grab 5–60 seconds from any long video, add your take, and post it. Clip Scout helps you find the moments worth clipping, sharpen your take in your own voice, check the clip is fair to the creator, and understand how clips can earn through Original Content Rewards, for you and the creator you clipped. Creators: it also helps make your videos easy to clip. Never posts for you. No promises of income. Your copy is private to your own account. Built by Bill G. Wolcott.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kivágásra érdemes pillanatok keresése",
+        "quote": "find the moments worth clipping",
+        "from": "template"
+      },
+      {
+        "labelHu": "A hozzáfűzött vélemény kiélezése a saját hangodon",
+        "quote": "sharpen your take in your own voice",
+        "from": "template"
+      },
+      {
+        "labelHu": "Korrektség ellenőrzése az eredeti készítővel szemben",
+        "quote": "check the clip is fair to the creator",
+        "from": "template"
+      },
+      {
+        "labelHu": "Soha nem posztol helyetted",
+        "quote": "Never posts for you.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A posztot a készítő második fiókja (`@bwolcottauthor`, „Wolcott Designs”) tette közzé; a profil leírása szerint „Also me `@billgwolcott`”, a sablon oldala pedig „Built by Bill G. Wolcott”. A marketplace-en hasonló a Clip Bot, amely felvételekből vág feliratos klipeket; a Clip Scout az X Clipping funkciójához keres pillanatokat és véleményt csiszol.",
+    "relatedMarketplace": [
+      {
+        "slug": "clip-bot",
+        "name": "Clip Bot",
+        "noteHu": "A Clip Bot hosszú felvételből vág feliratos klipeket; a Clip Scout az X Clippinghez keres pillanatot és segít a véleményben, de nem posztol."
+      }
+    ]
+  },
+  {
+    "slug": "personal-cfo-lite",
+    "name": "Personal CFO Lite",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
+    "author": "Markus",
+    "handle": "@SleepyCovfefe",
+    "postUrl": "https://x.com/SleepyCovfefe/status/2119811638681358831",
+    "postedAt": "2026-11-09T15:17:33Z",
+    "templateUrl": "https://x.ai/bot/8IX7glL-Aj73k3I8Q2M__",
+    "templatePageReadable": true,
+    "fetched": "2026-11-10",
+    "summaryHu": "Beilleszted a számlakivonatokat, számlákat vagy nagyjából összeszedett pénzügyi számokat, és érthető nyelven látod a számláidat, előfizetéseidet, a pénzügyi tartalékod idejét (runway) és a pénzmozgásaidat. Soha nem mozgat pénzt. A készítő posztja szerint a meglévő számaidból dolgozik, nem banki bejelentkezésből.",
+    "postQuote": "Paste statements, invoices, or a sub list into Personal CFO Lite and get bills, what recurs, and runway in plain language — from numbers you already have, not a bank login.",
+    "templateQuote": "Paste statements, invoices, or rough money numbers and get plain-language bills, subscriptions, runway, and cashflow awareness. Never moves money; no tax theater.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kivonatok és számlák feldolgozása beillesztésből",
+        "quote": "Paste statements, invoices, or rough money numbers",
+        "from": "template"
+      },
+      {
+        "labelHu": "Számlák, előfizetések, tartalék és pénzmozgás érthetően",
+        "quote": "get plain-language bills, subscriptions, runway, and cashflow awareness",
+        "from": "template"
+      },
+      {
+        "labelHu": "Soha nem mozgat pénzt",
+        "quote": "Never moves money",
+        "from": "template"
+      },
+      {
+        "labelHu": "Banki bejelentkezés nélkül",
+        "quote": "from numbers you already have, not a bank login",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": []
+  },
+  {
+    "slug": "inbox-cleanup",
+    "name": "Inbox Cleanup",
+    "categories": [
+      "E-mail és üzenetek"
+    ],
+    "author": "Viking69",
+    "handle": "@vikingErik69",
+    "postUrl": "https://x.com/vikingErik69/status/2119880516048740482",
+    "postedAt": "2026-11-09T19:51:15Z",
+    "templateUrl": "https://x.ai/bot/vxICDdg7chCZWnDX6FL0T",
+    "templatePageReadable": true,
+    "fetched": "2026-11-10",
+    "summaryHu": "Ütemezetten kitakarítja a Gmail-fiókodat: a hírleveleket, promóciókat és tömeges leveleket a kukába mozgatja, a fontosakat megtartja, és hetente e-mailben elküldi, mit dobott ki. A készítő posztja szerint ő Gmailhez használta.",
+    "postQuote": "If your email if full of junk, this grok bot is a great way to clean it up. I used it for Gmail.",
+    "templateQuote": "Clears junk out of your Gmail on a schedule, moving newsletters, promos and bulk mail to Trash while keeping anything important, and emails you a weekly list of what was trashed.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Ütemezett Gmail-takarítás",
+        "quote": "Clears junk out of your Gmail on a schedule",
+        "from": "template"
+      },
+      {
+        "labelHu": "Hírlevelek, promók, tömeges levelek a kukába, a fontosak maradnak",
+        "quote": "moving newsletters, promos and bulk mail to Trash while keeping anything important",
+        "from": "template"
+      },
+      {
+        "labelHu": "Heti lista a kidobott levelekről",
+        "quote": "emails you a weekly list of what was trashed",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Inbox Janitorhoz (`@lianlian00`), amely jóváhagyás után takarít Gmailben és Outlookban. Az Inbox Cleanup ütemezetten fut Gmailben, és heti listát küld a kidobott levelekről.",
+    "relatedTemplates": [
+      {
+        "slug": "inbox-janitor",
+        "name": "Inbox Janitor",
+        "noteHu": "Az Inbox Janitor jóváhagyás után takarít Gmailben és Outlookban; az Inbox Cleanup ütemezetten fut, heti listával."
+      }
+    ]
+  },
+  {
+    "slug": "kindle-book-generator",
+    "name": "Kindle Book Generator",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Yash Kavaiya",
+    "handle": "@yashkavaiya",
+    "postUrl": "https://x.com/yashkavaiya/status/2119844279489269964",
+    "postedAt": "2026-11-09T17:27:15Z",
+    "templateUrl": "https://x.ai/bot/7e9Ndk0OiQjuJh3TW4S4-",
+    "templatePageReadable": true,
+    "fetched": "2026-11-10",
+    "summaryHu": "Egy témából és célközönségből teljes Amazon KDP-könyvcsomagot készít: vázlatot, kéziratot, borítóbriefet, termékoldal-szöveget (listing) és megfelelőségi megjegyzéseket. Közzététel előtt megáll.",
+    "postQuote": "Kindle Ebook Generator Turns a topic and audience into a complate Amazon KDP Book . Outline , manuscript ,cover brief ,listin and compliance notes .It stops before publishing",
+    "templateQuote": "Turns a topic and audience into a complete Amazon KDP book package: outline, manuscript, cover brief, listing, and compliance notes. It stops before publishing.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Teljes KDP-könyvcsomag témából és közönségből",
+        "quote": "Turns a topic and audience into a complete Amazon KDP book package",
+        "from": "template"
+      },
+      {
+        "labelHu": "Vázlat, kézirat, borítóbrief, listing, megfelelőségi jegyzet",
+        "quote": "outline, manuscript, cover brief, listing, and compliance notes",
+        "from": "template"
+      },
+      {
+        "labelHu": "Közzététel előtt megáll",
+        "quote": "It stops before publishing.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Book Maker sablonhoz (`@rabspice`). A Kindle Book Generator kifejezetten Amazon KDP-csomagot állít össze, listinggel és megfelelőségi megjegyzésekkel.",
+    "relatedTemplates": [
+      {
+        "slug": "book-maker",
+        "name": "Book Maker",
+        "noteHu": "A Book Maker általános könyvkészítő; a Kindle Book Generator Amazon KDP-csomagot készít, közzététel előtt megállva."
+      }
+    ]
+  },
+  {
+    "slug": "first-customers-finder",
+    "name": "First Customers Finder",
+    "categories": [
+      "Marketing és tartalom",
+      "Produktivitás"
+    ],
+    "author": "Fabian Gomez",
+    "handle": "@fabian_thepulse",
+    "postUrl": "https://x.com/fabian_thepulse/status/2119895266589642893",
+    "postedAt": "2026-11-09T20:49:51Z",
+    "templateUrl": "https://x.ai/bot/1vDU_ekPGWy7UztJhp2yK",
+    "templatePageReadable": true,
+    "fetched": "2026-11-10",
+    "summaryHu": "Minden hétköznap reggel 5 valódi potenciális ügyfelet (lead) keres a termékedhez, és megfogalmazza az első üzenetet; neked csak el kell küldened. A sablon oldala szerint 2026 októberében szigorúbb lead-ellenőrzést, közvetlenebb első üzenetstílust és minden piszkozatra független átnézést kapott. A készítő posztja szerint Shopify-appok alapítóinak készült, egy második bot ellenőrzi az üzenetet, és ő hagy jóvá minden küldést.",
+    "postQuote": "My Grok Bot crew screens stores every weekday, drafts a short first message, and a second bot checks it before I see it. I approve every send.",
+    "templateQuote": "Finds 5 real leads for your product every weekday morning and drafts the first message. You just hit send. Updated Oct 2026: stricter lead checks, a peer-to-peer first-message style, and an independent review pass on every draft.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "5 valódi lead minden hétköznap reggel",
+        "quote": "Finds 5 real leads for your product every weekday morning",
+        "from": "template"
+      },
+      {
+        "labelHu": "Első üzenet megfogalmazása",
+        "quote": "drafts the first message",
+        "from": "template"
+      },
+      {
+        "labelHu": "Független átnézés minden piszkozaton",
+        "quote": "an independent review pass on every draft",
+        "from": "template"
+      },
+      {
+        "labelHu": "Minden küldést te hagysz jóvá",
+        "quote": "I approve every send.",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A marketplace-en hasonló a GTM Prospecting, amely ideális ügyfélprofilból készít célzott listát és első üzeneteket. A First Customers Finder napi 5 leadet ad, első üzenettel és független átnézéssel.",
+    "relatedMarketplace": [
+      {
+        "slug": "prospector",
+        "name": "GTM Prospecting",
+        "noteHu": "A GTM Prospecting ügyfélprofilból épít prospektlistát; a First Customers Finder napi 5 leadet és első üzenetet ad."
+      }
+    ]
   }
 ]
