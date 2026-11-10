@@ -19,7 +19,7 @@
 export const changelogSourceUrl = "https://x.ai/changelog/bot";
 export const changelogRssUrl = "https://x.ai/changelog/bot/rss.xml";
 /** A forrás utolsó ellenőrzésének napja (ISO). */
-export const changelogChecked = "2026-10-29";
+export const changelogChecked = "2026-11-10";
 
 export type ChangelogLabel = "Teams" | "Enterprise";
 export type ChangelogSectionKind = "new" | "improved" | "fixed";
@@ -49,6 +49,178 @@ export type ChangelogRelease = {
 };
 
 export const changelog: ChangelogRelease[] = [
+  {
+    version: "0.79.3",
+    date: "2026-11-06",
+    title: { hu: "Megosztott Page-témák és híváskártya-javítások", en: "Shared page themes and call card fixes" },
+    alsoIncludes: [],
+    sections: [
+      {
+        kind: "new",
+        items: [
+          { hu: "A megosztott Page-ek címsorában van egy gomb, a Switch to dark theme vagy a Switch to light theme, amely megjegyzi a választásodat.", en: "Shared Pages have a title bar button, Switch to dark theme or Switch to light theme, that remembers your choice." },
+        ],
+      },
+      {
+        kind: "improved",
+        items: [
+          { hu: "Ha a szokásos oldallekérés meghiúsul, a Bot közvetlenül olvassa az oldalt, ahelyett hogy böngészőben nyitná meg.", en: "When the usual page fetch fails, the Bot reads the page directly instead of opening it in a browser." },
+          { hu: "A megválaszolatlan és a sikertelen híváskártyák felajánlják a Copy conversation ID lehetőséget.", en: "Unanswered and failed call cards offer Copy conversation ID." },
+        ],
+      },
+      {
+        kind: "fixed",
+        items: [
+          { hu: "A foglalt vagy elérhetetlen telefonhívás mostantól a No answer feliratot mutatja a Didn't go through helyett.", en: "A busy or unreachable phone call now shows No answer instead of Didn't go through." },
+          { hu: "Ha valaki félbeszakít egy telefonhívást, az élő átirat csak a Bot mondatának azt a részét mutatja, amit hallott.", en: "When someone interrupts a phone call, the live transcript shows only the part of the Bot's line they heard." },
+          { hu: "Az 1Password leválasztása már nem mutat Service Unavailable üzenetet, és nem hagyja a plugin oldalát Connected állapoton.", en: "Disconnecting 1Password no longer shows a Service Unavailable message or leaves the plugin page on Connected." },
+          { hu: "Ha senki nem veszi vissza a gépet, amelyet a Bot átadott neked, a chat 24 óra után abbahagyja a Waiting for you megjelenítését.", en: "When nobody takes back a computer the Bot handed you, the chat stops showing Waiting for you after 24 hours." },
+          { hu: "Ha ki van választva egy csapat, az Always allow egy helyi parancson elmentődik, és a géped már nem Another computerként szerepel.", en: "With a team selected, Always allow on a local command saves, and your computer is no longer listed as Another computer." },
+          { hu: "A spamszűrő által visszatartott e-mail megmarad, így a Bot el tudja olvasni, amikor kéred, és ettől még nem ébreszt fel.", en: "Email the spam filter holds is kept so the Bot can read it when you ask, and it still doesn't wake you." },
+          { label: "Teams", hu: "A sikertelen Microsoft Teams-adminbejelentkezés Microsoft hibáját mutatja, a Try again és a Back to dashboard lehetőséggel.", en: "A failed Microsoft Teams admin sign-in shows Microsoft's error, with Try again and Back to dashboard." },
+          { label: "Enterprise", hu: "Enterprise próbaidőszak alatt a Bot válaszol, ahelyett hogy azt mondaná, elérte a használati korlátot.", en: "On an Enterprise trial, the Bot replies instead of saying it hit a usage limit." },
+        ],
+      },
+    ],
+  },
+  {
+    version: "0.79.2",
+    date: "2026-11-05",
+    title: { hu: "Új appikon és ajándékkérések", en: "New app icon and gift requests" },
+    alsoIncludes: ["0.79.0", "0.79.1"],
+    sections: [
+      {
+        kind: "new",
+        items: [
+          { hu: "Ha ajándékot kell találnia, a Bot rákérdez a címzettre, a költségkeretre, az alkalomra és a kézbesítési határidőre, és soha nem rendel olyat, amely késve érkezik.", en: "Asked to find a gift, the Bot asks for the recipient, budget, occasion, and deliver-by date, and never orders one that arrives late." },
+          { hu: "A Delta, az American, az Alaska, a JetBlue vagy a Frontier oldalán a járatfoglalás annak az oldalnak a lépéseit követi, a megszakadó foglalás pedig egy olyan linkkel ér véget, amellyel befejezheted.", en: "Booking a flight on Delta, American, Alaska, JetBlue, or Frontier follows that site's steps, and a booking that stops ends with a link to finish." },
+          { hu: "A Gmail- és az Outlook-vázlatkártyák felsorolják a csatolt fájlokat, a Send pedig mellékeli őket.", en: "Gmail and Outlook draft cards list attached files, and Send includes them." },
+          { hu: "Ha egy weboldal utasításokat rejt el az AI-ágensek elől, a Bot elmondja, hogy megtalálta őket, és nem követte őket.", en: "When a web page hides instructions for AI agents, the Bot tells you it found them and didn't follow them." },
+          { hu: "Az az üzenet, amelyet a New chatben küldesz, miközben a Create New Bot még fut, az új Bothoz kerül, és a képernyőn marad.", en: "A message you send in New chat while Create New Bot is still running goes to the new Bot and stays on screen." },
+          { hu: "A Settings felkínálja a Slovenščina nyelvet, és az app szlovénul nyílik meg, ha a rendszered nyelve szlovén.", en: "Settings offers Slovenščina, and the app opens in Slovenian when your system language is Slovenian." },
+          { hu: "A Bot gépe futtathatja az `ssh`-t és a `psql`-t.", en: "The Bot's computer can run `ssh` and `psql`." },
+          { label: "Teams", hu: "Az adminok beállíthatnak egy Bot Computer Retention Periodot, amely után az inaktív tagok Bot-gépeit megszüntetik.", en: "Admins can set a Bot Computer Retention Period, after which inactive members' Bot computers are terminated." },
+        ],
+      },
+      {
+        kind: "improved",
+        items: [
+          { hu: "Az asztali appnak új, lapos Grok Bot-ikonja van.", en: "The desktop app has a new flat Grok Bot icon." },
+          { hu: "Miután rákoppintasz a Payre, a blokkolt checkout ugyanabban a futásban folytatódik, és a válasz tartalmazhatja a rendelésszámot és a végösszeget.", en: "After you tap Pay, a blocked checkout continues in the same run, and the reply can include the order number and total." },
+          { hu: "Vásárlás közben a Bot csak olyan kedvezménykódokat ír be, amelyeket te vagy egy eszköz adtál neki, és szól, ha egy oldal elutasít egyet.", en: "While shopping, the Bot enters only discount codes you or a tool gave it, and tells you when a site rejects one." },
+          { hu: "A Bot a bekötött Gopuff-üzletedben keres, vagy termékeket keres, anélkül hogy előbb a Gopuff bekötését kérné.", en: "The Bot searches your connected Gopuff store, or searches products, without asking you to connect Gopuff first." },
+          { hu: "A gopuff.com-on való bejelentkezés egy Let Grok Bot use Gopuff kártyát kínál az Add lehetőséggel.", en: "Signing in at gopuff.com offers a Let Grok Bot use Gopuff card with Add." },
+          { hu: "Azok a parancsok, amelyek kinyitják vagy feloldják a Tesládat, vagy hagyják, hogy valaki vezesse, mindig a jóváhagyásodat kérik.", en: "Commands that open or unlock your Tesla, or let someone drive it, always ask for your approval." },
+          { hu: "Az Auto-review kártyák megmondják, mi állított meg egy műveletet: a te Ask first szabályod, a csapatod Ask first szabálya vagy a Needs approval beállításod.", en: "Auto-review cards say what paused an action: your Ask first rule, your team's Ask first rule, or your Needs approval setting." },
+          { hu: "A chatkeresés a Searched recent messages feliratot mutatja, a Search older lehetőséggel, hogy távolabbra is visszakeressen.", en: "Chat search shows Searched recent messages, with Search older to look further back." },
+          { hu: "A connectorkeresés a névegyezéseket sorolja előre, így a salesf beírása a Salesforce-t mutatja legfelül.", en: "Connector search lists name matches first, so typing salesf shows Salesforce at the top." },
+          { hu: "A connectorikonok egyforma méretűek és kontrasztos hátteret kapnak, így mindkét témában láthatóak maradnak.", en: "Connector icons share one size and a contrasting background, so they stay visible in both themes." },
+          { hu: "Ha szöveget osztanál meg egy élő telefonhívással, egy kártya a Send this to your call? kérdést teszi fel, és a szöveget előbb szerkesztheted.", en: "To share text with a live phone call, a card asks Send this to your call?, and you can edit the text first." },
+          { hu: "Ha megkéred a Botot, hogy fájlt mentsen a Libraryjába, az a Bot's files közé kerül mindenki számára, aki használhatja a Botot.", en: "Asking a Bot to save a file to its Library puts it in Bot's files for everyone who can use the Bot." },
+        ],
+      },
+      {
+        kind: "fixed",
+        items: [
+          { hu: "Rendelés leadása előtt a Bot újraellenőrzi az általad jóváhagyott szállítást és végösszeget, és szól, ha a felszámított végösszeg eltér.", en: "Before placing an order, the Bot rechecks the shipping and total you approved, and tells you if the charged total differs." },
+          { hu: "Mentett kártya nélkül a Bot egy biztonságos Card number űrlapot nyit meg a rendeléskártya előtt, a Pay pedig azt a kártyát használja.", en: "With no saved card, the Bot opens a secure Card number form before the order card, and Pay uses that card." },
+          { hu: "A kártyamezők a fizetési keretekben és más checkout oldalakon kitöltődnek, ahelyett hogy a Bot átadná neked a képernyőt.", en: "Card fields inside payment frames and on other checkout sites fill in, instead of the Bot handing you the screen." },
+          { hu: "A vásárlási kártyák mutatják a termék fotóit és a választott szín fotóját, a későbbi színek és méretek pedig a saját árukat.", en: "Shopping cards show the product's photos and the chosen color's photo, and later colors and sizes show their price." },
+          { hu: "Egy olyan üzlet View at store oldala, amelyet a Bot kezel, az appban nyílik meg, a This page could not be opened helyett.", en: "A View at store page for a store the Bot manages opens in the app instead of This page could not be opened." },
+          { hu: "Miután jóváhagyod a Link-fizetést, a Bot körülbelül tíz percig tovább ellenőriz, mielőtt azt mondaná, hogy a kérés még függőben van.", en: "After you approve a Link payment, the Bot keeps checking for about ten minutes before saying the request is still pending." },
+          { hu: "A telefonodról feltöltött fájlok átmásolódnak a Bot gépére, így meg tudja nyitni őket.", en: "Files you upload from your phone are copied onto the Bot's computer, so it can open them." },
+          { hu: "Az egyszeri routine a lefutása után kikapcsol, ahelyett hogy jövőre újra elindulna.", en: "A one-off routine turns off after it runs instead of firing again next year." },
+          { hu: "A You're offline csak akkor jelenik meg, ha a géped offline, az elérhetetlen Bot-gép pedig saját üzenetet kap.", en: "You're offline shows only when your computer is offline, and an unreachable Bot computer gets its own message." },
+          { hu: "A hosszú Library-előzmények már nem akasztják meg az appot, a Load older history pedig betölti a következő adagot.", en: "Long Library histories no longer hang the app, and Load older history loads the next batch." },
+          { hu: "A nyitott Page újracsatlakozás után a legfrissebb verziójára töltődik újra, a betöltéskor meghiúsuló Page pedig egyszer újrapróbálkozik.", en: "An open Page reloads to its latest version after a reconnect, and a Page that fails to load retries once." },
+          { hu: "A befejezett kódolási futás a Merged feliratot mutatja, amikor a pull requestje beolvad, ahelyett hogy a Ready for review állapoton maradna.", en: "A finished coding run shows Merged when its pull request merges, instead of staying on Ready for review." },
+          { hu: "Windowson a Grok Bot már nem fagy le másodpercekre, amikor először tölt be egy JPEG-et.", en: "On Windows, Grok Bot no longer freezes for seconds the first time it loads a JPEG." },
+          { hu: "A chathez való visszaváltáskor a szöveg már nem ugrik, és egy feladat megnyitása már nem villantja be a fő chatet.", en: "Switching back to a chat no longer makes the text jump, and opening a task no longer flashes the main chat." },
+          { hu: "A lista elérhetetlensége közben létrehozott Bot magától megjelenik, ahelyett hogy csak a Try again után jelenne meg.", en: "A Bot created while the list was unavailable appears on its own instead of after Try again." },
+          { hu: "A találat nélküli keresés a No results feliratot írja, és a keresésből megnyitott pluginból visszalépve ahhoz a kereséshez jutsz vissza.", en: "Search with no matches says No results, and going back from a plugin opened in search returns to that search." },
+          { hu: "A használati diagram ugyanazt a használatot mutatja, mint a mérő, annak a csapatnak az esetében is, amelyhez tartozol.", en: "The usage chart shows the same usage as the meter, including for a team you belong to." },
+          { hu: "Sötét módban a Purchase Credits a Top up your balance alatt a feliratát mutatja, üres fehér gomb helyett.", en: "In dark mode, Purchase Credits in Top up your balance shows its label instead of a blank white button." },
+          { hu: "Azok a Page-ek, amelyek nagyon nagy vagy hurkolódó connectoradatot adnak át, már nem omlasztják össze az appot.", en: "Pages that pass very large or looping connector data no longer crash the app." },
+          { hu: "Ha az 1Password nem fejezi be a bekötést, az üzenet arra kér, hogy próbáld újra a bekötést.", en: "When 1Password doesn't finish connecting, the message asks you to try connecting again." },
+          { hu: "Ha a telefonodon időzónát választasz, kikapcsolt Set Time Zone Automatically mellett, az a Bot óráját arra az időzónára állítja.", en: "Choosing a time zone on your phone, with Set Time Zone Automatically off, sets the Bot's clock to that zone." },
+          { hu: "A Bot gépe futtatja a Node.js szkripteket, köztük azokat, amelyek így kezdődnek: `#!/usr/bin/node`.", en: "The Bot's computer runs Node.js scripts, including ones that start with `#!/usr/bin/node`." },
+          { hu: "Ha a routine előzményei nem tölthetők be, a Bot azt mondja, hogy nem tudja ellenőrizni a legutóbbi futásokat, ahelyett hogy azt mondaná, a routine soha nem futott.", en: "When routine history cannot load, the Bot says it cannot check recent runs instead of saying the routine never ran." },
+          { label: "Teams", hu: "Az az egyéni connector, amelyet a csapatod szabályzata blokkol, az admin okát mutatja a Something went wrong helyett.", en: "A custom connector your team policy blocks shows the admin's reason instead of Something went wrong." },
+        ],
+      },
+    ],
+  },
+  {
+    version: "0.78.5",
+    date: "2026-11-04",
+    title: { hu: "Ütemezett újrarendelések és Slack-csatolás", en: "Scheduled reorders and Slack linking" },
+    alsoIncludes: [],
+    sections: [
+      {
+        kind: "new",
+        items: [
+          { hu: "A szokásos listád ütemezett újrarendelése rendelésenként egy jóváhagyást kér, és ez a jóváhagyás a checkout végösszegét mutatja.", en: "A scheduled reorder of your usual list asks for one approval per order, and that approval shows the checkout total." },
+        ],
+      },
+      {
+        kind: "improved",
+        items: [
+          { hu: "Egy Slack-workspace csatolása olyan oldalon ér véget, amely megnevezi a workspace-t, a See your connections és az Open Slack lehetőséggel.", en: "Linking a Slack workspace ends on a page that names the workspace, with See your connections and Open Slack." },
+        ],
+      },
+      {
+        kind: "fixed",
+        items: [
+          { hu: "Amíg a checkout még befejeződik, a rendeléskártya az Order submitted állapoton marad, ahelyett hogy azt mondaná, a rendelést nem sikerült megerősíteni.", en: "While a checkout is still finishing, the order card stays on Order submitted instead of saying the order couldn't be confirmed." },
+          { hu: "A köszönés és a csevegés megtart egy munkasort, például a Thinking it through feliratot, amíg a Bot válaszol.", en: "Greetings and small talk keep a working line such as Thinking it through while the Bot replies." },
+          { hu: "Az utolsó napon a használat nullázásának és a próbaidőszaknak a feliratai órákban vagy percekben számolnak vissza.", en: "In the last day, usage reset and trial labels count down in hours or minutes." },
+        ],
+      },
+    ],
+  },
+  {
+    version: "0.78.4",
+    date: "2026-11-03",
+    title: { hu: "Visszatérítési kérések és simább checkout", en: "Refund requests and smoother checkout" },
+    alsoIncludes: ["0.78.2", "0.78.3"],
+    sections: [
+      {
+        kind: "new",
+        items: [
+          { hu: "A Bot visszatérítést kérhet egy előfizetési terhelésre, és felsorolja a kérés minden módját, mielőtt bármit elküldene vagy beküldene.", en: "The Bot can ask for a refund on a subscription charge, and lists each way to ask before it sends or submits anything." },
+        ],
+      },
+      {
+        kind: "improved",
+        items: [
+          { hu: "Amikor a Bot újraösszeállít egy szokásos rendelést, azzal kezdi, mi nincs készleten, és minek változott az ára.", en: "When the Bot rebuilds a usual order, it opens with what's out of stock and what changed price." },
+          { hu: "Köszönésre és gyors válaszokra az állapotsor megnevezi a munkát, ahelyett hogy azt mondaná, a Bot foglalkozik vele.", en: "For greetings and quick replies, the status line names the work instead of saying the Bot is on it." },
+          { hu: "Miután az asztali appon bekötöd az appokat, az onboarding már nem kéri az e-mail-címedet a chatben.", en: "After you connect apps on the desktop, onboarding no longer asks for your email in the chat." },
+        ],
+      },
+      {
+        kind: "fixed",
+        items: [
+          { hu: "Miután jóváhagyod a járatot, a szállást vagy az élelmiszerkosarat és a végösszegét, a Bot magától fizet, és csak akkor kérdez újra, ha valami lényeges megváltozik.", en: "After you approve a flight, stay, or grocery cart and its total, the Bot pays on its own and asks again only if something material changes." },
+          { hu: "Ha egy oldal fizetést kér egy csomagért, kreditekért, top-upért vagy domainért, a Bot intézi a checkoutot, ahelyett hogy átadná neked a képernyőt.", en: "When a site asks for payment for a plan, credits, a top-up, or a domain, the Bot handles checkout instead of handing you the screen." },
+          { hu: "A mentett kártyás checkout mindig megvárja, hogy a rendeléskártyán rákoppints a Payre, mielőtt kitöltené a kártyát.", en: "Checkout with a saved card always waits for you to tap Pay on the order card before filling in the card." },
+          { hu: "Az Auto-review kevesebb felesleges jóváhagyási kártyát mutat, ha az ellenőrzése lassú vagy a beszélgetés hosszú.", en: "Auto-review shows fewer unneeded approval cards when its check is slow or the conversation is long." },
+          { hu: "Ha a Slackben csatolt fiók nélkül említesz egy Botot, megjelenik egy Link Account gomb, és kapsz egy privát linket.", en: "Mentioning a Bot in Slack without a linked account shows a Link Account button and sends you a private link." },
+          { hu: "A Slack Connect feltöltései, például a PDF-ek, a képek és a szövegfájlok, mostantól betöltődnek a chatben.", en: "Slack Connect uploads such as PDFs, images, and text files now load in the chat." },
+          { hu: "A Slackben a connector-jogosultsági kártyák csak arról a connectorról kérdeznek, amelyet a Bot használ, az Allow once és a Skip lehetőséggel.", en: "In Slack, connector permission cards ask only about the connector the Bot is using, with Allow once and Skip." },
+          { hu: "A privát Slack-csatornán, DM-ben vagy csoportos DM-ben lévő routine-ok csak addig futnak, amíg a csatolt Slack-fiókodon keresztül tag vagy.", en: "Routines on a private Slack channel, DM, or group DM run only while you're still a member through your linked Slack account." },
+          { hu: "Amikor a Bot Microsoft Teams-üzeneteket olvas, a beillesztett linkek megtartják a címüket, így meg tudja nyitni őket.", en: "When the Bot reads Microsoft Teams messages, pasted links keep their address so it can open them." },
+          { hu: "Egy Microsoft Teams Bot eltávolítása és újrabekötése már nem hagy duplikátumot a Teams keresésében.", en: "Removing and reconnecting a Microsoft Teams Bot no longer leaves a duplicate in Teams search." },
+          { hu: "Egy privát Tailscale-hálózaton lévő MCP-szerver mostantól azt mondja, hogy a Tailscale pluginból kösd be a tailnetedet, majd próbáld újra.", en: "An MCP server on a private Tailscale network now says to connect your tailnet from the Tailscale plugin, then try again." },
+          { hu: "A használati figyelmeztetés bannere elrejtőzik, ha a nyitott chat már mutat használati korlát kártyát.", en: "The usage warning banner hides when the open chat already shows a usage-limit card." },
+          { hu: "A fiókjaid egyesítése után a heti használati korlát kártyája eltűnik, amint a használatod helyreáll.", en: "After your accounts merge, the weekly usage-limit card clears once your usage recovers." },
+          { hu: "A Grok Bot-fiókod törlése már nem lépi túl az időkorlátot, ha sok géped van.", en: "Deleting your Grok Bot account no longer times out when you have many computers." },
+          { label: "Teams", hu: "A GitHub a Disabled by team admin feliratot csak akkor mutatja, ha a csapatod MCP-szabályai tényleg blokkolják.", en: "GitHub shows Disabled by team admin only when your team MCP rules actually block it." },
+          { label: "Teams", hu: "A plugintelepítések a csapatod allowlistjét követik, a blokkolt plugin pedig ezt írja: Your team admin has disabled this plugin's MCP servers.", en: "Plugin installs follow your team's allowlist, and a blocked plugin says Your team admin has disabled this plugin's MCP servers." },
+        ],
+      },
+    ],
+  },
   {
     version: "0.78.1",
     date: "2026-10-27",
