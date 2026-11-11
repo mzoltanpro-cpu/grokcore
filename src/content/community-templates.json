@@ -8495,6 +8495,7 @@
     "postedAt": "2026-11-07T03:56:49Z",
     "templateUrl": "https://x.ai/bot/WcOMWnCrDVKjlSem23hyW",
     "templatePageReadable": true,
+    "templateRemoved": true,
     "fetched": "2026-11-07",
     "summaryHu": "Hidratációs edző: a tested alapján napi vízcélt állít, emlékeztet ivásra, és visszajelez, amíg meg nem erősíted. A sablon leírása szerint helyi vízminőséget is néz, vasárnap víz-híreket és kutatási összefoglalót küld. A készítő új posztja szerint pár óránként egyérintéses Igen/Nem visszajelzést kér gépelés nélkül, és kék glyph hőtérképen követi a sorozatodat.",
     "postQuote": "It's a hydration bot that sets your daily water goal from your body, nudges you every couple hours with one-tap Yes/No check-ins (no typing), and tracks your streak on a blue glyph heat map.",
@@ -8515,7 +8516,7 @@
       }
     ],
     "integrations": [],
-    "noteHu": "A sablon leírása Glyph Kit (Alex Traykov) dizájnjeleire hivatkozik. A vízminőség-adatok forrását a sablonlap nem nevezi meg részletesen."
+    "noteHu": "A sablon leírása Glyph Kit (Alex Traykov) dizájnjeleire hivatkozik. A vízminőség-adatok forrását a sablonlap nem nevezi meg részletesen. A 2026-11-11-i ellenőrzéskor a sablon x.ai lapja már nem volt elérhető (404), így a sablon jelenleg nem adható hozzá a Grok Bothoz; a leírást forrásként megőriztük."
   },
   {
     "slug": "travel-calendar-sync",
@@ -10200,5 +10201,495 @@
         "noteHu": "A GTM Prospecting ügyfélprofilból épít prospektlistát; a First Customers Finder napi 5 leadet és első üzenetet ad."
       }
     ]
+  },
+  {
+    "slug": "job-scout",
+    "name": "Job Scout",
+    "categories": [
+      "Egyéb",
+      "Produktivitás"
+    ],
+    "author": "Brian Roemmele",
+    "handle": "@BrianRoemmele",
+    "postUrl": "https://x.com/BrianRoemmele/status/2120244970787614932",
+    "postedAt": "2026-11-10T19:59:27Z",
+    "templateUrl": "https://x.ai/bot/qjAe4Or0l7ICoEcmLvdKe",
+    "templatePageReadable": true,
+    "fetched": "2026-11-11",
+    "summaryHu": "Álláskereső társ: elkészíti vagy feljavítja az önéletrajzodat, forrásokkal együtt hozzád illő állásokat keres, utánanéz a felvételt intéző vezetőknek, a jóváhagyásodra megírja a megkereső üzeneteket, és egy színkódolt áttekintő felületen (dashboard) követi a válaszokat. A készítő posztja „Grok Bot álláskeresőnek” nevezi, és azt írja róla, hogy már él és működik.",
+    "postQuote": "YOUR GROK BOT JOB HUNTER!\n\nIt’s live and it works!",
+    "templateQuote": "A job search partner that builds or upgrades your resume, finds matching roles with sources, researches hiring managers, drafts outreach for your approval, and tracks replies on a color dashboard.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Önéletrajz elkészítése vagy feljavítása",
+        "quote": "builds or upgrades your resume",
+        "from": "template"
+      },
+      {
+        "labelHu": "Illő állások keresése forrásokkal",
+        "quote": "finds matching roles with sources",
+        "from": "template"
+      },
+      {
+        "labelHu": "A felvételt intéző vezetők kikutatása",
+        "quote": "researches hiring managers",
+        "from": "template"
+      },
+      {
+        "labelHu": "Megkereső üzenetek a jóváhagyásodra",
+        "quote": "drafts outreach for your approval",
+        "from": "template"
+      },
+      {
+        "labelHu": "Válaszok követése színkódolt dashboardon",
+        "quote": "tracks replies on a color dashboard",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Career Agent (`@phillipggreen`) és CV Pro (`@ainponce`) sablonhoz. A Job Scout az önéletrajztól a megkeresésen át a válaszok követéséig az egész álláskeresést kíséri. A forrás nem ír magyar álláshirdetési oldalakról.",
+    "relatedTemplates": [
+      {
+        "slug": "career-agent",
+        "name": "Career Agent",
+        "noteHu": "A Career Agent a munkáltatók saját oldalain keres állást és jelentkezést készít elő; a Job Scout ehhez a felvételi vezetők kikutatását és a válaszok dashboardos követését is hozzáteszi."
+      },
+      {
+        "slug": "cv-pro",
+        "name": "CV Pro",
+        "noteHu": "A CV Pro az önéletrajzot auditálja ATS-szemmel; a Job Scout az önéletrajzon túl állást is keres és megkeresést ír."
+      }
+    ]
+  },
+  {
+    "slug": "research-king",
+    "name": "Research King",
+    "categories": [
+      "Produktivitás",
+      "Grok Bot és flotta"
+    ],
+    "author": "hoeem",
+    "handle": "@hooeem",
+    "postUrl": "https://x.com/hooeem/status/2120280228819829213",
+    "postedAt": "2026-11-10T22:19:34Z",
+    "templateUrl": "https://x.ai/bot/2w9F4-NE2NswthMtFQgxe",
+    "templatePageReadable": true,
+    "fetched": "2026-11-11",
+    "summaryHu": "Saját kutatóbotot épít neked. Kikérdez arról, mit szeretnél naprakészen követni, élőben ellenőrzi a forrásokat az X-en és a weben, majd létrehoz egy külön botot, amely napi összefoglalót és heti összesítőt küld. A készítő posztja szerint rákattintasz, megmondod, mit szeretnél kutatni, válaszolsz pár kérdésre, és felépíti a személyre szabott kutatóbotodat.",
+    "postQuote": "you click it, tell it what you want to research, answer a couple questions, it will then build you a customised research bot.",
+    "templateQuote": "Builds you a custom research bot. It interviews you about what you want to keep on top of, checks sources live on X and the web, then creates a dedicated bot that sends you a daily brief and weekly roundup.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kikérdez, mit szeretnél követni",
+        "quote": "It interviews you about what you want to keep on top of",
+        "from": "template"
+      },
+      {
+        "labelHu": "Források élő ellenőrzése X-en és a weben",
+        "quote": "checks sources live on X and the web",
+        "from": "template"
+      },
+      {
+        "labelHu": "Külön kutatóbot létrehozása",
+        "quote": "creates a dedicated bot",
+        "from": "template"
+      },
+      {
+        "labelHu": "Napi összefoglaló és heti összesítő",
+        "quote": "sends you a daily brief and weekly roundup",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon lapja „by Hoem” (megosztó: „Hoem Crypto”); ugyanez a megosztónév szerepel a készítő már fent lévő Second Brain Guide sablonjánál is. A sablon egy újabb, külön botot hoz létre a fiókodban. Hasonló a közösségi Research (`@xenappblog`) sablonhoz és a marketplace Researchy botjához; a Research King nem maga kutat egyszer, hanem a témádra szabott, folyamatosan futó kutatóbotot állít be.",
+    "relatedTemplates": [
+      {
+        "slug": "research",
+        "name": "Research",
+        "noteHu": "A Research forrásmegjelölt összefoglalókat készít nyilvános beszélgetésekből; a Research King a témádra szabott külön kutatóbotot épít napi és heti összefoglalóval."
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "researchy",
+        "name": "Researchy",
+        "noteHu": "A Researchy kutató és tényellenőrző bot; a Research King egy saját, ütemezett kutatóbotot hoz létre neked."
+      }
+    ]
+  },
+  {
+    "slug": "its-alive-4d-posts",
+    "name": "It's Alive? 4D Posts",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Mav",
+    "handle": "@Mavmetax",
+    "postUrl": "https://x.com/Mavmetax/status/2120193865470582906",
+    "postedAt": "2026-11-10T16:36:23Z",
+    "templateUrl": "https://x.ai/bot/PxLus1MpAZobBdrWjEwv1",
+    "templatePageReadable": true,
+    "fetched": "2026-11-11",
+    "summaryHu": "Elküldesz neki egy X-posztot, és figyelemfelkeltő „4D” klipet kapsz belőle: egy élethű szereplő kimászik a posztból, csinál valamit, ami a poszthoz kapcsolódik, és a videó ismétlődik (loop). A sablon leírása szerint X-hez, Instagramhoz, TikTokhoz és más felületekhez megfelelő méretben exportál. A készítő posztjához csatolt videó ezzel a sablonnal készült.",
+    "postQuote": "Thanks for the @bot its awesome. Created with It's Alive? 4D Post Bot",
+    "templateQuote": "Send any X post and get a scroll-stopping 4D clip: a realistic character climbs out of the post, does something tied to it, and loops, exported in the right size for X, Instagram, TikTok, and more.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Bármely X-posztból 4D klip",
+        "quote": "Send any X post and get a scroll-stopping 4D clip",
+        "from": "template"
+      },
+      {
+        "labelHu": "Élethű szereplő „kimászik” a posztból, és ismétlődik",
+        "quote": "a realistic character climbs out of the post, does something tied to it, and loops",
+        "from": "template"
+      },
+      {
+        "labelHu": "Export X, Instagram, TikTok méretben",
+        "quote": "exported in the right size for X, Instagram, TikTok, and more",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Ugyanettől a készítőtől már fent van a Study Buddy (tanulási útmutató és kvíz). A forrás nem írja le, mennyi Grok Bot-keretet használ egy klip elkészítése."
+  },
+  {
+    "slug": "nba-nightly-recap",
+    "name": "NBA Nightly Recap",
+    "categories": [
+      "Egészség és sport"
+    ],
+    "author": "Hoops",
+    "handle": "@Hoopss",
+    "postUrl": "https://x.com/Hoopss/status/2120410191191540120",
+    "postedAt": "2026-11-11T06:55:59Z",
+    "templateUrl": "https://x.ai/bot/kjinIpIVe_80bS_D4MC4w",
+    "templatePageReadable": true,
+    "fetched": "2026-11-11",
+    "summaryHu": "Minden este rövid NBA-összefoglalót küld az X-ről: a kedvenc csapataid eredményeit, a legjobb jeleneteket (highlightokat), sérüléseket és átigazolási híreket, minden tételnél a forrásposzt linkjével. Csak olvas; a készítő posztja szerint soha nem posztol helyetted.",
+    "postQuote": "Built a bot that sends me a short NBA recap every night, straight from X 🏀 Scores for your teams, the best highlights, injuries and trade news, with a link to every post. Read-only, it never posts for you.",
+    "templateQuote": "Get a short nightly NBA recap from X: your teams' scores, top highlights, injuries and trade news, with a link to every post. Read-only.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Esti NBA-összefoglaló az X-ről",
+        "quote": "Get a short nightly NBA recap from X",
+        "from": "template"
+      },
+      {
+        "labelHu": "Csapataid eredményei, highlightok, sérülések, átigazolások",
+        "quote": "your teams' scores, top highlights, injuries and trade news",
+        "from": "template"
+      },
+      {
+        "labelHu": "Link minden forrásposzthoz",
+        "quote": "with a link to every post",
+        "from": "template"
+      },
+      {
+        "labelHu": "Csak olvas, nem posztol",
+        "quote": "Read-only, it never posts for you.",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Sports Fan Desk (`@ashleyschendel`) sablonhoz, amely több sportágat és tanuló módokat kínál. Az NBA Nightly Recap csak NBA-ra szól, rövid esti összefoglalóval.",
+    "relatedTemplates": [
+      {
+        "slug": "sports-fan-desk",
+        "name": "Sports Fan Desk",
+        "noteHu": "A Sports Fan Desk többféle sportot követ és tanít; az NBA Nightly Recap csak NBA-hírekből ad rövid esti összefoglalót."
+      }
+    ]
+  },
+  {
+    "slug": "github-repo-watcher",
+    "name": "GitHub Repo Watcher",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
+    "author": "Auny",
+    "handle": "@AunySillyMe",
+    "postUrl": "https://x.com/AunySillyMe/status/2120425697818947659",
+    "postedAt": "2026-11-11T07:57:36Z",
+    "templateUrl": "https://x.ai/bot/EEsiaKmr8FFFOLoG-v7wa",
+    "templatePageReadable": true,
+    "fetched": "2026-11-11",
+    "summaryHu": "Figyeli azokat a GitHub-repókat (tárolókat), amelyektől a rendszered függ, és minden hétköznap linkekkel megírja, mi jelent meg, mi romlott el, és miért számít ez neked. Kihagyja, amiről már szólt, és soha nem kommentel vagy nyit hibajegyet (issue-t). A készítő posztja szerint azt is jelzi, mit kell frissítened.",
+    "postQuote": "i made a Grok @bot that watches the repos you pick and updates you on:\nwhat shipped,\nwhat broke\nand what you need to update",
+    "templateQuote": "Watches the GitHub repos you depend on and tells you every weekday what shipped, what broke and why it matters to you, with links. Skips anything it already told you, and never comments or opens issues.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Kiválasztott GitHub-repók figyelése",
+        "quote": "Watches the GitHub repos you depend on",
+        "from": "template"
+      },
+      {
+        "labelHu": "Hétköznapi jelentés: mi jelent meg, mi romlott el, miért számít",
+        "quote": "tells you every weekday what shipped, what broke and why it matters to you, with links",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nem ismétli, amiről már szólt",
+        "quote": "Skips anything it already told you",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nem kommentel, nem nyit issue-t",
+        "quote": "never comments or opens issues",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi AI Radar (`@gota_bara`) sablonhoz, amely többek között a GitHubot is figyeli AI-hírekért. A GitHub Repo Watcher a saját magad által kiválasztott repók kiadásaira és hibáira fókuszál.",
+    "relatedTemplates": [
+      {
+        "slug": "ai-radar",
+        "name": "AI Radar",
+        "noteHu": "Az AI Radar AI-laborok és források széles körét figyeli; a GitHub Repo Watcher csak a kiválasztott repóid változásait jelenti."
+      }
+    ]
+  },
+  {
+    "slug": "book-trailer-studio",
+    "name": "Book Trailer Studio",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Edward Willett",
+    "handle": "@ewillett",
+    "postUrl": "https://x.com/ewillett/status/2120235201309651397",
+    "postedAt": "2026-11-10T19:20:38Z",
+    "templateUrl": "https://x.ai/bot/xKvoesbjyWII6Efvos1fh",
+    "templatePageReadable": true,
+    "fetched": "2026-11-11",
+    "summaryHu": "Könyvelőzetes-készítő íróknak. Elolvassa a regényedet, megfogalmazza a fő vonzerejét (hook), megírja és megtervezi (storyboard) egy 30–60 másodperces előzetes forgatókönyvét, majd a borítódból és valódi stockfelvételekből elkészíti a videót. A sablon leírása szerint előbb ellenőrzi, hogy jogod van-e a könyv népszerűsítésére, mindent a jóváhagyásodra készít elő, soha nem posztol, csak kérésre fut, és a kéziratot bizalmasan kezeli. A készítő posztja szerint feliratot is tesz a videóra.",
+    "postQuote": "I built a free Grok Bot that makes book trailers. Book Trailer Studio reads your novel, pitches the hook, scripts a 30 to 60 second trailer and builds it from your cover and real stock footage with captions. It drafts for your approval and never posts.",
+    "templateQuote": "Reads your novel, pitches the hook, scripts and storyboards a 30 to 60 second trailer, then builds the video from your cover and real stock footage. It first checks that you hold the rights to promote the book, drafts everything for your approval, never posts, and runs only when you ask. Your manuscript stays confidential: never used for AI training, uploaded or shared.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Regény elolvasása és a hook megfogalmazása",
+        "quote": "Reads your novel, pitches the hook",
+        "from": "template"
+      },
+      {
+        "labelHu": "30–60 mp-es előzetes forgatókönyve és storyboardja",
+        "quote": "scripts and storyboards a 30 to 60 second trailer",
+        "from": "template"
+      },
+      {
+        "labelHu": "Videó a borítóból és valódi stockfelvételekből",
+        "quote": "builds the video from your cover and real stock footage",
+        "from": "template"
+      },
+      {
+        "labelHu": "Jogosultság-ellenőrzés a népszerűsítéshez",
+        "quote": "It first checks that you hold the rights to promote the book",
+        "from": "template"
+      },
+      {
+        "labelHu": "Jóváhagyásra készít, soha nem posztol",
+        "quote": "drafts everything for your approval, never posts",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő író és kiadó (a profilja szerint a Shadowpaw Press kiadója). Hasonló témájú a tegnap felkerült Kindle Book Generator (`@yashkavaiya`), de az a könyvcsomagot készíti el; a Book Trailer Studio egy már megírt könyvhöz készít videós előzetest. A forrás nem írja le, hogy magyar nyelvű kézirattal működik-e.",
+    "relatedTemplates": [
+      {
+        "slug": "kindle-book-generator",
+        "name": "Kindle Book Generator",
+        "noteHu": "A Kindle Book Generator témából KDP-könyvcsomagot készít; a Book Trailer Studio a kész regényhez videós előzetest."
+      }
+    ]
+  },
+  {
+    "slug": "mindset-coach",
+    "name": "Mindset coach",
+    "categories": [
+      "Produktivitás",
+      "Egészség és sport"
+    ],
+    "author": "Rachel V",
+    "handle": "@RachelVT42",
+    "postUrl": "https://x.com/RachelVT42/status/2120339071255843296",
+    "postedAt": "2026-11-11T02:13:23Z",
+    "templateUrl": "https://x.ai/bot/_B6MxCsIXuYNMoTVAP9UA",
+    "templatePageReadable": true,
+    "fetched": "2026-11-11",
+    "summaryHu": "Gondolkodásmód-coach (mindset coach), amely rövid, szókratészi kérdésekkel segít kimozdulni az elakadásból, felkészülni a fontos helyzetekre, és apró heti szokásokat kialakítani. A készítő posztja a téli motiválatlansághoz ajánlja: kis napi célokkal, hálára irányuló kérdésekkel és vasárnapi visszatekintéssel (check-in).",
+    "postQuote": "My “Mindset coach” is a free Grok Bot template for the winter slump: small daily goals, gratitude prompts and a Sunday check in.",
+    "templateQuote": "A mindset coach that uses short Socratic questions to help you get unstuck, prepare for big moments, and build small weekly habits.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Rövid szókratészi kérdések az elakadás ellen",
+        "quote": "uses short Socratic questions to help you get unstuck",
+        "from": "template"
+      },
+      {
+        "labelHu": "Felkészülés fontos helyzetekre",
+        "quote": "prepare for big moments",
+        "from": "template"
+      },
+      {
+        "labelHu": "Apró heti szokások",
+        "quote": "build small weekly habits",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kis napi célok, hála-kérdések, vasárnapi check-in",
+        "quote": "small daily goals, gratitude prompts and a Sunday check in",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Ugyanettől a készítőtől már fent van a Meal planner és a Party planner. Hasonló a közösségi Decide (`@lukekim`) sablonhoz, amely egy-egy nehéz döntésen vezet végig kérdésekkel; a Mindset coach a hétköznapi motivációra és szokásokra fókuszál.",
+    "relatedTemplates": [
+      {
+        "slug": "decide",
+        "name": "Decide",
+        "noteHu": "A Decide egy konkrét nehéz döntést vezet végig; a Mindset coach napi célokkal és heti szokásokkal a motivációt támogatja."
+      }
+    ]
+  },
+  {
+    "slug": "nearby-reminders",
+    "name": "Nearby Reminders",
+    "categories": [
+      "Produktivitás",
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Kevin McDonald",
+    "handle": "@kcmcdonald",
+    "postUrl": "https://x.com/kcmcdonald/status/2120214845081731408",
+    "postedAt": "2026-11-10T17:59:45Z",
+    "templateUrl": "https://x.ai/bot/osi4qnCsyi_E_58tQShCJ",
+    "templatePageReadable": true,
+    "fetched": "2026-11-11",
+    "summaryHu": "Helyhez kötött teendőlista: a tételeket egy bolthoz, címhez vagy helytípushoz kötöd, és a bot szól, amikor a telefonod szerint a közelben vagy. A készítő posztja szerint elmondod neki, mit szoktál elfelejteni, és figyelmeztet, amikor a tisztító, a gyógyszertár, a posta vagy bármi más közelébe érsz.",
+    "postQuote": "Nearby Reminders: tell it what you keep forgetting, and it nudges you when you're close to the cleaners, the pharmacy, the post office, wherever.",
+    "templateQuote": "A location-based to-do list: tie items to a store, address, or kind of place, and it nudges you when your phone shows you're nearby.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Teendők bolthoz, címhez vagy helytípushoz kötése",
+        "quote": "tie items to a store, address, or kind of place",
+        "from": "template"
+      },
+      {
+        "labelHu": "Figyelmeztetés, ha a telefonod szerint a közelben vagy",
+        "quote": "it nudges you when your phone shows you're nearby",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Errand Buddy (`@mikepat711`) sablonhoz, amely iPhone Parancsokkal (Shortcuts) emlékeztet a beszerzendőkre. A Nearby Reminders forrása nem írja le, milyen telefonos app vagy beállítás kell a helyadatokhoz.",
+    "relatedTemplates": [
+      {
+        "slug": "errand-buddy",
+        "name": "Errand Buddy",
+        "noteHu": "Az Errand Buddy iPhone Parancsokkal és bevásárlólistával dolgozik; a Nearby Reminders bármilyen helyhez köthető teendőlistát kezel."
+      }
+    ]
+  },
+  {
+    "slug": "language-tutor",
+    "name": "Language Tutor",
+    "categories": [
+      "Tanulás"
+    ],
+    "author": "Tommy",
+    "handle": "@tanderson9",
+    "postUrl": "https://x.com/tanderson9/status/2120307390591480031",
+    "postedAt": "2026-11-11T00:07:29Z",
+    "templateUrl": "https://x.ai/bot/s_WZdU_Er927twSRWB2yr",
+    "templatePageReadable": true,
+    "fetched": "2026-11-11",
+    "summaryHu": "Türelmes nyelvtanár bármely általad választott nyelvhez. Rövid leckéket, beszélgetős gyakorlást, kíméletes javításokat, kvízeket és szókártyákat (flashcard) ad, a szintedhez és a céljaidhoz igazítva.",
+    "postQuote": "Pick any language, and it gives you short lessons, conversation practice, gentle corrections, quizzes, and flashcards matched to your level and goals.",
+    "templateQuote": "A warm, patient tutor for any language you choose. Short lessons, conversation practice, gentle corrections, quizzes, and flashcards matched to your level and goals.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Bármely választott nyelv",
+        "quote": "A warm, patient tutor for any language you choose.",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rövid leckék és beszélgetős gyakorlás",
+        "quote": "Short lessons, conversation practice",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kíméletes javítás, kvízek, szókártyák",
+        "quote": "gentle corrections, quizzes, and flashcards",
+        "from": "template"
+      },
+      {
+        "labelHu": "Szinthez és célhoz igazítva",
+        "quote": "matched to your level and goals",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le külön, hogy a magyart magyarázó nyelvként (vagy tanulandó nyelvként) támogatja-e; a leírás szerint bármely nyelvet választhatsz."
+  },
+  {
+    "slug": "movie-actor-streak",
+    "name": "Movie Actor Streak",
+    "categories": [
+      "Egyéb"
+    ],
+    "author": "Troels Jensen",
+    "handle": "@TroelsMJensen",
+    "postUrl": "https://x.com/TroelsMJensen/status/2120154775325220965",
+    "postedAt": "2026-11-10T14:01:03Z",
+    "templateUrl": "https://x.ai/bot/JF3hJaodw9DJ6l3Kb9k7e",
+    "templatePageReadable": true,
+    "fetched": "2026-11-11",
+    "summaryHu": "Filmes „sorozatnézés” egy színész filmjeiből. Beírod a színész nevét, és megkapod az összes játékfilmjét a legrégebbitől kezdve, IMDb- és TMDB-pontszámmal, játékidővel és azzal, hol nézhető a saját országodban, egy rendezhető oldalon, amelyet PDF-be is nyomtathatsz. A készítő posztja szerint kiválasztod a filmeket, és a listát PDF-ként nyomtatod ki.",
+    "postQuote": "Spending a few weeks with one actor's films? My new Grok Bot, Movie Actor Streak 🎬, lists their whole filmography with IMDb + TMDB scores, runtime and where to stream it. Pick your films and print the list as a PDF.",
+    "templateQuote": "Planning a few weeks of films with one actor? Type their name and get every feature film they've played in, oldest first, with IMDb and TMDB scores, runtime and where to stream it in your country, on a sortable page you can print as a PDF.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Színész teljes filmográfiája időrendben",
+        "quote": "get every feature film they've played in, oldest first",
+        "from": "template"
+      },
+      {
+        "labelHu": "IMDb- és TMDB-pontszám, játékidő",
+        "quote": "with IMDb and TMDB scores, runtime",
+        "from": "template"
+      },
+      {
+        "labelHu": "Hol nézhető a saját országodban",
+        "quote": "where to stream it in your country",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rendezhető oldal, PDF-be nyomtatható",
+        "quote": "on a sortable page you can print as a PDF",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem nevezi meg, mely streamingszolgáltatókat ismer, és magyarországi elérhetőségről sem ír külön."
   }
 ]
