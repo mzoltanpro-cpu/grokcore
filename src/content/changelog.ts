@@ -19,7 +19,7 @@
 export const changelogSourceUrl = "https://x.ai/changelog/bot";
 export const changelogRssUrl = "https://x.ai/changelog/bot/rss.xml";
 /** A forrás utolsó ellenőrzésének napja (ISO). */
-export const changelogChecked = "2026-11-10";
+export const changelogChecked = "2026-11-12";
 
 export type ChangelogLabel = "Teams" | "Enterprise";
 export type ChangelogSectionKind = "new" | "improved" | "fixed";
@@ -49,6 +49,55 @@ export type ChangelogRelease = {
 };
 
 export const changelog: ChangelogRelease[] = [
+  {
+    version: "1.0.1",
+    date: "2026-11-11",
+    title: { hu: "Megbeszélések, Microsoft Teams és megosztott connectorok", en: "Meetings, Microsoft Teams, and shared connectors" },
+    alsoIncludes: ["1.0.0"],
+    sections: [
+      {
+        kind: "new",
+        items: [
+          { hu: "A Team, az Enterprise és az Ultra csomagokon a Bot egy linkről csatlakozhat egy Google Meet-, Zoom- vagy Microsoft Teams-híváshoz, válaszolhat a megbeszélés chatjében, és utána összefoglalót küldhet.", en: "On Team, Enterprise, and Ultra plans, a Bot can join a Google Meet, Zoom, or Microsoft Teams call from a link, answer in the meeting chat, and send a summary afterward." },
+          { label: "Teams", hu: "A Team Botok csatlakozhatnak a Microsoft Teamshez: egy csapatadmin bekapcsolja ezt, egy tulajdonos vagy egy kezelő köti be a Botot, és egy Teams-admin jóváhagyja.", en: "Team Bots can join Microsoft Teams: a team admin turns it on, an owner or Manager connects the Bot, and a Teams admin approves it." },
+          { label: "Teams", hu: "A tulajdonosok és a kezelők megoszthatják a saját appbejelentkezésüket megosztott connectorként, amint egy csapatadmin bekapcsolja az Allow Shared Loginst.", en: "Owners and Managers can share their own app login as a shared connector, once a team admin turns on Allow Shared Logins." },
+          { label: "Teams", hu: "Amit a csapattársak egy Team Botnak megtanítanak, az a Review learnings alatt vár, amíg a tulajdonos vagy egy kezelő jóvá nem hagyja.", en: "What teammates teach a Team Bot waits under Review learnings until the owner or a Manager approves it." },
+          { label: "Teams", hu: "A csapatadminok a Bot sharinggel korlátozhatják, ki oszthat meg Botokat.", en: "Team admins can limit who shares Bots with Bot sharing." },
+          { hu: "A Bot Voice menüjében van egy Speed csúszka 0.5x-től 2x-ig, és minden hanghoz egy kártya, a hívás beállításai pedig ugyanazokat a vezérlőket mutatják.", en: "A Bot's Voice menu has a Speed slider from 0.5x to 2x and a card for each voice, and a call's settings show the same controls." },
+          { hu: "A lejárt rendeléskártya felajánlja a Check price again lehetőséget, amely friss rendeléskártyát kér a Bottól.", en: "An expired order card offers Check price again, which asks the Bot for a fresh order card." },
+        ],
+      },
+      {
+        kind: "improved",
+        items: [
+          { hu: "A válaszban lévő széles táblázatok kiterjednek az üzenet melletti üres helyre.", en: "Wide tables in a reply expand into the empty space beside the message." },
+          { hu: "A válaszra adott thumbs down egy köszönömön állapodik meg, anélkül hogy indokokat kérne.", en: "A thumbs down on a reply settles on a thank-you without asking for reasons." },
+          { hu: "A Send Feedback tartalmazza az Include additional device diagnostics lehetőséget, amely kikapcsolva marad, hacsak be nem jelölöd.", en: "Send Feedback has Include additional device diagnostics, which stays off unless you check it." },
+          { hu: "Az az új Bot, amelynek a beállítása a szokásosnál tovább tart, a Still creating feliratot írja ahelyett hogy meghiúsulna, és amit beírsz, a mezőben marad.", en: "A new Bot that takes longer than usual to set up says Still creating instead of failing, and what you type stays in the box." },
+          { hu: "Ha egy csapatadmin kikapcsolt egy connectort, annak a Connect gombja a Disabled by team admin feliratot írja.", en: "When a team admin has turned off a connector, its Connect button says Disabled by team admin." },
+          { hu: "Az oldalsáv láblécében az Update gomb kerek ikon marad, a tooltipje pedig a Restart to update feliratot írja.", en: "The Update button in the sidebar footer stays a round icon, and its tooltip says Restart to update." },
+          { hu: "Ha az üzenetmezőbe `->`-t írsz, az nyíllá alakul.", en: "Typing `->` in the message box turns it into an arrow." },
+          { hu: "A brazil portugál az egész appban természetesebben olvasható.", en: "Brazilian Portuguese reads more naturally across the app." },
+          { label: "Teams", hu: "A csapattársak megjegyzései egy Team Bot Page-jein eljutnak a Bothoz.", en: "Teammates' comments on a Team Bot's Pages reach the Bot." },
+          { label: "Teams", hu: "Egy Team Bot egyéni MCP-connectorai mindenkivel megosztottként jelennek meg, Share my account lehetőség nélkül.", en: "Custom MCP connectors on a Team Bot show as shared with everyone, without a Share my account option." },
+          { hu: "Ha egy körben nincs mit jelenteni, a Bot már nem küld olyan üzenetet, amely csak azt mondja, hogy kész.", en: "On a turn with nothing to report, the Bot no longer sends a message that only says it's done." },
+        ],
+      },
+      {
+        kind: "fixed",
+        items: [
+          { hu: "A Bot gépén a legfeljebb 250 MB-os fájlok már nem hiúsítják meg a választ.", en: "Files up to 250 MB on the Bot's computer no longer make a reply fail." },
+          { hu: "Az Escape csak a legfelső párbeszédablakot vagy menüt zárja be, és egy Escape az üres keresésből bezárja a Connect Appst.", en: "Escape closes only the top dialog or menu, and one Escape from an empty search closes Connect Apps." },
+          { hu: "A Cmd+Enter vagy a Ctrl+Enter egy párbeszédablakban már nem küldi el a mögötte lévő chatüzenetet.", en: "Cmd+Enter or Ctrl+Enter in a dialog no longer sends the chat message behind it." },
+          { hu: "A Connect Appsben egy pluginon a Connectedre kattintva megnyílik az a plugin.", en: "Clicking Connected on a plugin in Connect Apps opens that plugin." },
+          { label: "Teams", hu: "A Team Bot-fióklisták a Configure-ben már nem ragadnak be töltés közben.", en: "Team Bot account lists in Configure no longer get stuck loading." },
+          { hu: "A nevek és az előnézetek soha nem vágódnak el egy emoji közepén.", en: "Names and previews are never cut off in the middle of an emoji." },
+          { hu: "A befejezett telefonhívás-kártya kibontva egyszer mutatja a szövegét.", en: "A finished phone call card shows its text once when expanded." },
+          { hu: "Linuxon az AppImage a telepítés után mutatja az ikonját a tálcán.", en: "On Linux, the AppImage shows its icon in the taskbar after installing." },
+        ],
+      },
+    ],
+  },
   {
     version: "0.79.3",
     date: "2026-11-06",
