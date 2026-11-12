@@ -10691,5 +10691,466 @@
     "routines": [],
     "integrations": [],
     "noteHu": "A forrás nem nevezi meg, mely streamingszolgáltatókat ismer, és magyarországi elérhetőségről sem ír külön."
+  },
+  {
+    "slug": "matcher",
+    "name": "Matcher",
+    "categories": [
+      "E-mail és üzenetek",
+      "Produktivitás"
+    ],
+    "author": "Soleio",
+    "handle": "@soleio",
+    "postUrl": "https://x.com/soleio/status/2120673779932389857",
+    "postedAt": "2026-11-12T00:23:24Z",
+    "templateUrl": "https://x.ai/bot/0SnmTNbfO4Icla-XZf9sh",
+    "templatePageReadable": true,
+    "fetched": "2026-11-12",
+    "summaryHu": "Bemutatáskérő segéd: abban segít, hogy egy ismerősöd tényleg bemutasson valakinek, akivel szeretnél kapcsolatba kerülni. A sablon leírása szerint kikutatja a megfelelő utat (kin keresztül érdemes kérni), megír egy továbbküldhető bemutatáskérést, és addig követi az ügyet, amíg a bemutatás meg nem történik. A készítő posztja szerint nem csak szebben megírt e-maileket ad, hanem a kérés intézésében is segít.",
+    "postQuote": "Matcher helps you get intros that actually happen, not just better-written emails. It researches the right path, then drafts and manages the request",
+    "templateQuote": "Matcher helps you get introductions that actually happen, not just better-written emails. It researches the right path, drafts a forwardable intro ask, and stays on the hook until the intro is made.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "A megfelelő bemutatási út kikutatása",
+        "quote": "It researches the right path",
+        "from": "template"
+      },
+      {
+        "labelHu": "Továbbküldhető bemutatáskérés megírása",
+        "quote": "drafts a forwardable intro ask",
+        "from": "template"
+      },
+      {
+        "labelHu": "Követés, amíg a bemutatás meg nem történik",
+        "quote": "stays on the hook until the intro is made",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő posztja egy, a továbbküldhető e-mailek írásáról szóló korábbi posztot idéz, és erre építette a sablont. Hasonló a marketplace GTM Connections botjához, amely céges értékesítési célból keres utat egy célcéghez; és a közösségi Networking Match Scout (`@0xHvdes`) sablonhoz, amely új kapcsolatokat ajánl. A Matcher egy konkrét bemutatáskérés megírására és végigvitelére fókuszál. A forrás nem írja le, milyen csatlakozásokat (e-mail, naptár) használ.",
+    "relatedTemplates": [
+      {
+        "slug": "networking-match-scout",
+        "name": "Networking Match Scout",
+        "noteHu": "A Networking Match Scout naponta ajánl új, releváns embereket; a Matcher egy már kiválasztott emberhez kér és intéz bemutatást."
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "warm-intro-finder",
+        "name": "GTM Connections",
+        "noteHu": "A GTM Connections értékesítési céllal keres hiteles utat egy célcéghez; a Matcher bármilyen személyes bemutatáskéréshez ír továbbküldhető kérést és követi azt."
+      }
+    ]
+  },
+  {
+    "slug": "algorithm",
+    "name": "Algorithm",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "The Dutch Doge Guy",
+    "handle": "@070guy",
+    "postUrl": "https://x.com/070guy/status/2120528064199225835",
+    "postedAt": "2026-11-11T14:44:22Z",
+    "templateUrl": "https://x.ai/bot/my7p9xXaxiDN5DvwaKe5e",
+    "templatePageReadable": true,
+    "fetched": "2026-11-12",
+    "summaryHu": "X-növekedési tanácsadó. A sablon leírása szerint a nyilvános X-algoritmus kódja alapján elmagyarázza, hogyan jutnak el a posztok a „For You” (Neked) hírfolyamba, átnézi a legutóbbi posztjaidat, elérésre gyakorolt hatás szerint rangsorolva 10 változtatást javasol, és átírja a leggyengébb posztjaidat. Csak piszkozatot készít, és hetente ellenőrzi az elérésedet. A készítő posztja azoknak ajánlja, akiknek nem nő a fiókjuk, vagy úgy érzik, hogy az algoritmus visszafogja őket.",
+    "postQuote": "Blame yourself for not using Grok @bot to get weekly updates how to improve and beat the algorithm!",
+    "templateQuote": "An X growth strategist that explains how posts reach For You using the public X algorithm code, audits your recent posts, ranks 10 changes by reach impact, and rewrites your weakest posts. Drafts only, plus a weekly reach check.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Elmagyarázza, hogyan jutnak a posztok a For You hírfolyamba",
+        "quote": "explains how posts reach For You using the public X algorithm code",
+        "from": "template"
+      },
+      {
+        "labelHu": "A legutóbbi posztjaid átnézése",
+        "quote": "audits your recent posts",
+        "from": "template"
+      },
+      {
+        "labelHu": "10 változtatás elérés szerint rangsorolva",
+        "quote": "ranks 10 changes by reach impact",
+        "from": "template"
+      },
+      {
+        "labelHu": "A leggyengébb posztok átírása",
+        "quote": "rewrites your weakest posts",
+        "from": "template"
+      },
+      {
+        "labelHu": "Csak piszkozatot készít",
+        "quote": "Drafts only",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Heti elérés-ellenőrzés",
+        "quote": "plus a weekly reach check",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi X Algo Post Optimizer (`@ColinGardiner`) és Tweet Analyser (`@zeeshan_utd`) sablonhoz. Az Algorithm nem egyetlen piszkozatot pontoz, hanem a meglévő posztjaidat nézi át, és heti elérés-ellenőrzést is ad. A forrás nem írja le, hogyan fér hozzá a posztjaidhoz (például X-csatlakozással).",
+    "relatedTemplates": [
+      {
+        "slug": "x-algo-post-optimizer",
+        "name": "X Algo Post Optimizer",
+        "noteHu": "Az X Algo Post Optimizer egy bemásolt piszkozatot pontoz és ír át; az Algorithm a legutóbbi posztjaidat nézi át, és hetente ellenőrzi az elérést."
+      },
+      {
+        "slug": "tweet-analyser",
+        "name": "Tweet Analyser",
+        "noteHu": "A Tweet Analyser egy-egy posztot elemez; az Algorithm a fiók egészére ad rangsorolt javaslatokat."
+      }
+    ]
+  },
+  {
+    "slug": "anime-series-maker",
+    "name": "Anime Series Maker",
+    "categories": [
+      "Egyéb"
+    ],
+    "author": "Mike Gannotti",
+    "handle": "@MichaelGannotti",
+    "postUrl": "https://x.com/MichaelGannotti/status/2120473507243106527",
+    "postedAt": "2026-11-11T11:07:35Z",
+    "templateUrl": "https://x.ai/bot/y5u0QPNwRuxoOfrjbRBcS",
+    "templatePageReadable": true,
+    "fetched": "2026-11-12",
+    "summaryHu": "Saját animesorozat egy fotóból. A sablon leírása szerint küldesz egy fényképet, és annak szereplője lesz a hőse egy 7 részes animesorozatnak: az első rész azonnal elkészül három cselekményfordulattal, amelyek közül egy koppintással választhatsz, majd egy héten át minden reggel 8-kor új rész érkezik a választásod szerint. A készítő posztja szórakozásnak ajánlja: több napon át tartó, legenerált animesorozatot kapsz.",
+    "postQuote": "Wanna have some fun. Grab my new Anime Series Maker Grok Bot template, feed it a picture and get a multi-day anime series generated for you.",
+    "templateQuote": "Send a photo and it becomes the hero of your own 7-episode anime series: episode one right away with three plot twists to tap, then a new episode every morning at 8 for a week, following your pick.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Fotóból egy 7 részes animesorozat hőse lesz",
+        "quote": "Send a photo and it becomes the hero of your own 7-episode anime series",
+        "from": "template"
+      },
+      {
+        "labelHu": "Első rész azonnal, három választható fordulattal",
+        "quote": "episode one right away with three plot twists to tap",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Egy héten át minden reggel 8-kor új rész a választásod szerint",
+        "quote": "then a new episode every morning at 8 for a week, following your pick",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon lapján a teljes név „Anime Series Maker (by SMF Works)”; a készítő profilja szerint az SMF Worksnél dolgozik. Ugyanettől a készítőtől már fent van a Marketing Manager és a Grok Bot Video Studio. Hasonló a közösségi Tiny Panels (`@NDovetta`) sablonhoz, amely történetből képregényoldalt készít. A forrás nem írja le, mennyi Grok Bot-keretet használ egy rész elkészítése, és hogy a sorozat képekből vagy videóból áll-e. Más ember fotóját csak az engedélyével használd.",
+    "relatedTemplates": [
+      {
+        "slug": "tiny-panels",
+        "name": "Tiny Panels",
+        "noteHu": "A Tiny Panels egy történetből egyszeri képregényoldalt készít; az Anime Series Maker egy fotó szereplőjével egyhetes, naponta folytatódó animesorozatot."
+      }
+    ]
+  },
+  {
+    "slug": "signus",
+    "name": "Signus",
+    "categories": [
+      "E-mail és üzenetek",
+      "Produktivitás"
+    ],
+    "author": "Manuel Aráoz",
+    "handle": "@maraoz",
+    "postUrl": "https://x.com/maraoz/status/2120631694394831325",
+    "postedAt": "2026-11-11T21:36:10Z",
+    "templateUrl": "https://x.ai/bot/o5jVc5AnbFG8563W45Grc",
+    "templatePageReadable": true,
+    "fetched": "2026-11-12",
+    "summaryHu": "PDF-aláíró bot személyes használatra. A sablon leírása szerint az aláírásoddal aláírja a PDF-jeidet, kitölti a dátumokat, és az aláírt fájlt visszaküldi neked, valamint abba az e-mail-szálba, amelyből érkezett. A készítő posztja a DocuSign személyes használatra szánt kiváltójaként mutatja be; ez az első közzétett botja.",
+    "postQuote": "My first published @Bot is Signus, a Docusign replacement for personal use. Try it!",
+    "templateQuote": "Signs your PDFs with your signature, fills the dates, and sends the signed file back to you and to the email thread.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "PDF aláírása a saját aláírásoddal",
+        "quote": "Signs your PDFs with your signature",
+        "from": "template"
+      },
+      {
+        "labelHu": "Dátumok kitöltése",
+        "quote": "fills the dates",
+        "from": "template"
+      },
+      {
+        "labelHu": "Az aláírt fájl visszaküldése neked és az e-mail-szálba",
+        "quote": "sends the signed file back to you and to the email thread",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő profilja szerint az OpenZeppelin és a Decentraland egyik alapítója. A forrás nem írja le, hogyan adod meg az aláírásodat, és milyen e-mail-csatlakozás kell hozzá. A forrás nem írja le, milyen típusú aláírást készít, és a minősített elektronikus aláírást sem említi."
+  },
+  {
+    "slug": "price-drop-refunder",
+    "name": "Price Drop Refunder",
+    "categories": [
+      "Pénzügy és vásárlás",
+      "E-mail és üzenetek"
+    ],
+    "author": "Rohan Bhanot",
+    "handle": "@RohanBhanotAI",
+    "postUrl": "https://x.com/RohanBhanotAI/status/2120507858601271580",
+    "postedAt": "2026-11-11T13:24:05Z",
+    "templateUrl": "https://x.ai/bot/Gd2ZpU3ucyQlPpAhtfg0s",
+    "templatePageReadable": true,
+    "fetched": "2026-11-12",
+    "summaryHu": "Visszaszerzi a különbözetet, ha valami, amit már megvettél, olcsóbb lett. A sablon leírása szerint elolvassa a rendelési e-mailjeidet, az egyes boltok árkiigazítási vagy visszaküldési határidején belül figyeli az árakat, és megírja a visszatérítési kérést, amelyet te hagysz jóvá. A készítő posztja szerint sok bolt visszatéríti a különbözetet, ha a határidőn belül kéred, de szinte senki nem kéri.",
+    "postQuote": "a lot of stores will refund the difference if you ask inside their window. almost nobody asks\n\nso i built a bot that watches everything i've bought and tells me when i'm owed money back",
+    "templateQuote": "Gets you money back when something you already bought drops in price. Reads your order emails, watches prices inside each store's adjustment or return window, and drafts the refund request for you to approve.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Rendelési e-mailek elolvasása",
+        "quote": "Reads your order emails",
+        "from": "template"
+      },
+      {
+        "labelHu": "Árfigyelés a bolt árkiigazítási vagy visszaküldési határidején belül",
+        "quote": "watches prices inside each store's adjustment or return window",
+        "from": "template"
+      },
+      {
+        "labelHu": "Visszatérítési kérés megírása jóváhagyásra",
+        "quote": "drafts the refund request for you to approve",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi Refunds & Credits (`@jwreece`) sablonhoz, amely sokféle neked járó pénzt keres. A Price Drop Refunder kifejezetten a vásárlás utáni árcsökkenésre szakosodott. A forrás nem írja le, mely boltokat ismeri; az árkiigazítási és visszaküldési határidő boltonként eltér, a magyar webáruházakról a forrás nem ír.",
+    "relatedTemplates": [
+      {
+        "slug": "refunds-credits",
+        "name": "Refunds & Credits",
+        "noteHu": "A Refunds & Credits visszatérítéseket, krediteket és egyéb neked járó pénzt keres; a Price Drop Refunder a már megvett termékek árcsökkenését figyeli."
+      }
+    ]
+  },
+  {
+    "slug": "siri-swap",
+    "name": "Siri Swap",
+    "categories": [
+      "Produktivitás",
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "RyanTHawks",
+    "handle": "@ryanthawks",
+    "postUrl": "https://x.com/ryanthawks/status/2120615003619262653",
+    "postedAt": "2026-11-11T20:29:50Z",
+    "templateUrl": "https://x.ai/bot/1MT-OHIT4rfHC2miCIxRc",
+    "templatePageReadable": true,
+    "fetched": "2026-11-12",
+    "summaryHu": "Siri helyett a Grok Bot az iPhone-on. A sablon leírása szerint megnyomsz egy gombot, elmondod, mire van szükséged, és a bot elvégzi a telefonodon: beállítja az ébresztőt, felveszi az emlékeztetőt, áthelyezi a megbeszélést, elindítja az okosotthon-jelenetet (Home), vagy felhívja a vállalkozást, majd egy sorban visszaigazolja. Nehezen visszafordítható lépés előtt (ajtónyitás, esemény törlése, hívás) előbb rákérdez, soha nem vásárol és nem küld üzenetet helyetted. A Grok Bot appnak nyitva kell lennie az iPhone-on.",
+    "postQuote": "Press one button and say \"move my 3pm to Thursday,\" \"lights off,\" or \"remind me at 6 to call Mom.\" It actually does it.\n\nIt asks before unlocking doors and never buys anything.",
+    "templateQuote": "Press one button on your iPhone, say what you need, and Siri Swap does it on your phone: sets the alarm, adds the reminder, moves the meeting, runs the Home scene, or calls the business, then confirms in one line. It asks first before anything hard to undo, like unlocking a door, deleting an event, or placing a call, and it never buys anything or sends messages for you. Works with the Grok Bot app open on your iPhone.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Ébresztő, emlékeztető, megbeszélés áthelyezése",
+        "quote": "sets the alarm, adds the reminder, moves the meeting",
+        "from": "template"
+      },
+      {
+        "labelHu": "Okosotthon-jelenet indítása, vállalkozás felhívása",
+        "quote": "runs the Home scene, or calls the business",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rákérdez a nehezen visszafordítható lépések előtt",
+        "quote": "It asks first before anything hard to undo",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nem vásárol, nem küld üzenetet helyetted",
+        "quote": "it never buys anything or sends messages for you",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Ugyanettől a készítőtől már fent van a Call Around, a Host Mode és a Dinner Decider. Hasonló a közösségi Errand Buddy (`@mikepat711`) sablonhoz, amely szintén iPhone-nal dolgozik, de csak beszerzési emlékeztetőkre. A forrás nem írja le, pontosan hogyan kell beállítani a gombot az iPhone-on, és hogy a hívás Magyarországról működik-e.",
+    "relatedTemplates": [
+      {
+        "slug": "errand-buddy",
+        "name": "Errand Buddy",
+        "noteHu": "Az Errand Buddy iPhone Parancsokkal helyalapú beszerzési emlékeztetőt ad; a Siri Swap hangutasításra általános telefonos műveleteket végez."
+      }
+    ]
+  },
+  {
+    "slug": "personal-health-desk",
+    "name": "Personal Health Desk",
+    "categories": [
+      "Egészség és sport"
+    ],
+    "author": "Mike Gannotti",
+    "handle": "@MichaelGannotti",
+    "postUrl": "https://x.com/MichaelGannotti/status/2120560321337417965",
+    "postedAt": "2026-11-11T16:52:33Z",
+    "templateUrl": "https://x.ai/bot/bRQhxkIeiZdOnPs5VFh2X",
+    "templatePageReadable": true,
+    "fetched": "2026-11-12",
+    "summaryHu": "Személyes egészségügyi ügyintéző és kutatási asszisztens. A sablon leírása szerint összegyűjti az egészségügyi dokumentumaidat és laboreredményeidet, közérthetően elmagyarázza őket NIH-, CDC- és FDA-forrásokkal, követi a gyógyszereidet és a felíratásokat, felkészít az orvosi vizitekre, orvost keres, összeveti a számláidat a biztosítóddal, és csak a jóváhagyásoddal telefonál. Nem orvos: soha nem diagnosztizál, nem ír fel gyógyszert és nem módosít adagot. A készítő posztjához a beállító varázsló (onboarding wizard) képe tartozik.",
+    "postQuote": "Running through Personal Health Desk onboarding wizard. Grok Bot Template",
+    "templateQuote": "Personal Health Desk (by SMF Works). Your private health admin and research assistant. Gathers your records and labs, explains them in plain words with NIH, CDC and FDA sources, tracks meds and refills, preps visits, finds doctors, checks bills against your insurer, and places calls only with your OK. Not a doctor: it never diagnoses, prescribes or changes doses. Ask it to add anything you're missing.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Dokumentumok és laboreredmények közérthető magyarázata forrásokkal",
+        "quote": "Gathers your records and labs, explains them in plain words with NIH, CDC and FDA sources",
+        "from": "template"
+      },
+      {
+        "labelHu": "Gyógyszerek és felíratások követése",
+        "quote": "tracks meds and refills",
+        "from": "template"
+      },
+      {
+        "labelHu": "Felkészítés vizitekre, orvoskeresés",
+        "quote": "preps visits, finds doctors",
+        "from": "template"
+      },
+      {
+        "labelHu": "Számlák összevetése a biztosítóval",
+        "quote": "checks bills against your insurer",
+        "from": "template"
+      },
+      {
+        "labelHu": "Telefonhívás csak jóváhagyással",
+        "quote": "places calls only with your OK",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nem diagnosztizál, nem ír fel, nem módosít adagot",
+        "quote": "it never diagnoses, prescribes or changes doses",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon lapján a teljes név „Personal Health Desk (by SMF Works)”. Ugyanettől a készítőtől ma az Anime Series Maker is bekerült. A források (NIH, CDC, FDA) és a biztosítói számlaellenőrzés amerikai rendszerre utalnak; a forrás nem ír magyar egészségügyi rendszerről (például EESZT-ről vagy TB-ről). Egészségügyi adatot csak megfontoltan ossz meg; a bot nem helyettesíti az orvost. Hasonló témájú a marketplace Chief Health Officer botja, de az edzéstervre és viselhető eszközök adataira fókuszál.",
+    "relatedMarketplace": [
+      {
+        "slug": "chief-health",
+        "name": "Chief Health Officer",
+        "noteHu": "A Chief Health Officer az edzésterv betartását segíti; a Personal Health Desk egészségügyi dokumentumokat, gyógyszereket és orvosi ügyintézést kezel."
+      }
+    ]
+  },
+  {
+    "slug": "chef",
+    "name": "Chef",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Mr Wtffuxor",
+    "handle": "@wtffuxor",
+    "postUrl": "https://x.com/wtffuxor/status/2120709505646502366",
+    "postedAt": "2026-11-12T02:45:21Z",
+    "templateUrl": "https://x.ai/bot/YAslUQGWCUSpUiH_c431U",
+    "templatePageReadable": true,
+    "fetched": "2026-11-12",
+    "summaryHu": "Házi szakács és cukrász bot. A sablon leírása szerint segít otthon elkészíteni bármit, amit étteremben rendelnél, bármilyen konyhából és fogásból, és az ételeket a gyerekek számára is családbaráttá teszi. A készítő posztja szerint ő maga folyamatosan használja receptötletekhez.",
+    "postQuote": "I noticed there were no Chef bots to help with cooking and I use mine all the time for recipe ideas ... so enjoy all",
+    "templateQuote": "A home chef and baker that helps you cook at home anything you'd order at a restaurant — any cuisine, any course — and keeps meals family-friendly for kids of all ages.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Éttermi ételek otthoni elkészítése",
+        "quote": "helps you cook at home anything you'd order at a restaurant",
+        "from": "template"
+      },
+      {
+        "labelHu": "Bármilyen konyha és fogás",
+        "quote": "any cuisine, any course",
+        "from": "template"
+      },
+      {
+        "labelHu": "Családbarát, gyerekeknek is",
+        "quote": "keeps meals family-friendly for kids of all ages",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Hasonló a közösségi The Kitchen Multitasker (`@dayyanl`) sablonhoz, amely a receptek mögötti tudományt is elmagyarázza, és a Dinner Decider (`@ryanthawks`) sablonhoz, amely a meglévő alapanyagokból javasol vacsorát. A Chef az éttermi kedvencek otthoni, családbarát elkészítésére fókuszál.",
+    "relatedTemplates": [
+      {
+        "slug": "kitchen-multitasker",
+        "name": "The Kitchen Multitasker",
+        "noteHu": "A The Kitchen Multitasker a recept mögötti tudományt és technikát magyarázza; a Chef éttermi ételeket alakít otthoni, családbarát recepté."
+      },
+      {
+        "slug": "dinner-decider",
+        "name": "Dinner Decider",
+        "noteHu": "A Dinner Decider a meglévő alapanyagokból javasol egy vacsorát; a Chef bármilyen konyha ételeihez ad receptet."
+      }
+    ]
+  },
+  {
+    "slug": "shorty-short-form-creator",
+    "name": "Shorty · Short-Form creator",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Farzad",
+    "handle": "@farzyness",
+    "postUrl": "https://x.com/farzyness/status/2120488385190023419",
+    "postedAt": "2026-11-11T12:06:42Z",
+    "templateUrl": "https://x.ai/bot/32fHIBw9Yz-s_o35KycGX",
+    "templatePageReadable": true,
+    "fetched": "2026-11-12",
+    "summaryHu": "YouTube Shorts-kezelő bot. A sablon leírása szerint a teljes folyamatot viszi: a hosszú videóid lejátszási listájából rövid videókat vág, ellenőrzések után közzéteszi őket, natív videóként átposztolja X-re, és opcionálisan TikTokra is. Csak akkor jelentkezik, ha elakad, és a jóváhagyásod nélkül soha nem töröl. A készítő a posztját saját hosszabb videós posztja alá írta válaszként.",
+    "postQuote": "Build your own short form content with my Grok Bot Shorty:",
+    "templateQuote": "Owns YouTube Shorts end-to-end: cut from your long-form playlist, publish after checks, cross-post native video to X, optional TikTok. Quiet unless blocked; never deletes without your yes.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Rövid videók vágása a hosszú videók lejátszási listájából",
+        "quote": "cut from your long-form playlist",
+        "from": "template"
+      },
+      {
+        "labelHu": "Közzététel ellenőrzések után",
+        "quote": "publish after checks",
+        "from": "template"
+      },
+      {
+        "labelHu": "Natív videó átposztolása X-re, opcionálisan TikTokra",
+        "quote": "cross-post native video to X, optional TikTok",
+        "from": "template"
+      },
+      {
+        "labelHu": "Jóváhagyás nélkül nem töröl",
+        "quote": "never deletes without your yes",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "Ugyanettől a készítőtől már fent van a Master, a Video Creator és a Shawty · Short-Form creator. A Shawty bármilyen témából új rövid videót készít; a Shorty a meglévő hosszú YouTube-videóidból vág. A sablon közzétesz a csatornáidon, ezért a beállításnál érdemes átnézni, mit tehet meg jóváhagyás nélkül. A forrás nem írja le, milyen YouTube- vagy TikTok-csatlakozás kell hozzá.",
+    "relatedTemplates": [
+      {
+        "slug": "shawty-short-form-creator",
+        "name": "Shawty · Short-Form creator",
+        "noteHu": "A Shawty témából készít új, animált rövid videót; a Shorty a hosszú YouTube-videóidból vág Shortsot és posztolja ki."
+      }
+    ]
   }
 ]
