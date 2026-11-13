@@ -9588,7 +9588,6 @@
     ],
     "author": "Cleetus",
     "handle": "@175rng",
-    "postUrl": "https://x.com/175rng/status/2119597308048277813",
     "postedAt": "2026-11-09T01:05:53Z",
     "templateUrl": "https://x.ai/bot/DV1Icl-5UdIg_hlLaQRSA",
     "templatePageReadable": true,
@@ -9616,14 +9615,15 @@
     ],
     "routines": [],
     "integrations": [],
-    "noteHu": "Hasonló a közösségi X Follower Trackerhez (`@Italianclownz`, követőváltozások). Ez nem követőket számol, hanem a te követettjeidet veti össze az érdeklődéseddel.",
+    "noteHu": "Hasonló a közösségi X Follower Trackerhez (`@Italianclownz`, követőváltozások). Ez nem követőket számol, hanem a te követettjeidet veti össze az érdeklődéseddel. A 2026-11-13-i ellenőrzéskor a készítő X-fiókja (`@175rng`) és a bemutató posztja már nem volt elérhető; a sablon x.ai lapja továbbra is működik, a poszt idézetét forrásként megőriztük.",
     "relatedTemplates": [
       {
         "slug": "x-follower-tracker",
         "name": "X Follower Tracker",
         "noteHu": "Az X Follower Tracker a követőid változását figyeli; ez a te követettjeidet nézi át az érdeklődésed szerint."
       }
-    ]
+    ],
+    "creatorAccountRemoved": true
   },
   {
     "slug": "freelancer",
@@ -10904,8 +10904,8 @@
       "E-mail és üzenetek"
     ],
     "author": "Rohan Bhanot",
-    "handle": "@RohanBhanotAI",
-    "postUrl": "https://x.com/RohanBhanotAI/status/2120507858601271580",
+    "handle": "@rohanbhanot",
+    "postUrl": "https://x.com/rohanbhanot/status/2120507858601271580",
     "postedAt": "2026-11-11T13:24:05Z",
     "templateUrl": "https://x.ai/bot/Gd2ZpU3ucyQlPpAhtfg0s",
     "templatePageReadable": true,
@@ -10933,7 +10933,7 @@
     ],
     "routines": [],
     "integrations": [],
-    "noteHu": "Hasonló a közösségi Refunds & Credits (`@jwreece`) sablonhoz, amely sokféle neked járó pénzt keres. A Price Drop Refunder kifejezetten a vásárlás utáni árcsökkenésre szakosodott. A forrás nem írja le, mely boltokat ismeri; az árkiigazítási és visszaküldési határidő boltonként eltér, a magyar webáruházakról a forrás nem ír.",
+    "noteHu": "Hasonló a közösségi Refunds & Credits (`@jwreece`) sablonhoz, amely sokféle neked járó pénzt keres. A Price Drop Refunder kifejezetten a vásárlás utáni árcsökkenésre szakosodott. A forrás nem írja le, mely boltokat ismeri; az árkiigazítási és visszaküldési határidő boltonként eltér, a magyar webáruházakról a forrás nem ír. A készítő X-fiókjának neve azóta `@RohanBhanotAI`-ról `@rohanbhanot`-ra változott (2026-11-13-i ellenőrzés).",
     "relatedTemplates": [
       {
         "slug": "refunds-credits",
@@ -11150,6 +11150,449 @@
         "slug": "shawty-short-form-creator",
         "name": "Shawty · Short-Form creator",
         "noteHu": "A Shawty témából készít új, animált rövid videót; a Shorty a hosszú YouTube-videóidból vág Shortsot és posztolja ki."
+      }
+    ]
+  },
+  {
+    "slug": "seo-content-gap-finder",
+    "name": "SEO Content Gap Finder",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Austen Allred",
+    "handle": "@Austen",
+    "postUrl": "https://x.com/Austen/status/2120914726356181109",
+    "postedAt": "2026-11-12T16:20:50Z",
+    "templateUrl": "https://x.ai/bot/dtW0vBG8A_gbcCJIQKRix",
+    "templatePageReadable": true,
+    "fetched": "2026-11-13",
+    "summaryHu": "Tartalomhiány-kereső a weboldaladhoz. A sablon leírása szerint feltérképezi, milyen kérdéseket tesznek fel ténylegesen a vevőid, megnézi, melyikre válaszolnak már az oldalaid, a hiányokat aszerint rangsorolja, mennyire állnak közel a vásárláshoz, és a legfontosabbakhoz vázlatot (outline) ír. A nyilvános oldaladat és a nyílt webet olvassa; az oldaladon soha nem publikál és nem szerkeszt. A készítő posztja szerint az AI-keresőkben való megjelenésben (GEO) is segíthet.",
+    "postQuote": "It finds the questions buyers search for that your site doesn't answer, ranks those gaps by how close they are to a purchase, and drafts outlines.",
+    "templateQuote": "Finds what your buyers search for that your site doesn't answer yet. It maps the questions people actually ask, checks which ones your pages cover, ranks the gaps by how close they are to a purchase, and drafts an outline for each top gap. Reads your public site and the open web, and saves outlines to Drive if you connect it. It never publishes or edits your site.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "A vevők valódi kérdéseinek feltérképezése",
+        "quote": "It maps the questions people actually ask",
+        "from": "template"
+      },
+      {
+        "labelHu": "Megnézi, mely kérdésekre válaszolnak már az oldalaid",
+        "quote": "checks which ones your pages cover",
+        "from": "template"
+      },
+      {
+        "labelHu": "A hiányok rangsorolása a vásárláshoz való közelség szerint",
+        "quote": "ranks the gaps by how close they are to a purchase",
+        "from": "template"
+      },
+      {
+        "labelHu": "Vázlat a legfontosabb hiányokhoz",
+        "quote": "drafts an outline for each top gap",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nem publikál és nem szerkeszti az oldalt",
+        "quote": "It never publishes or edits your site.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Google Drive (ha csatlakoztatod): a vázlatok mentése",
+        "quote": "saves outlines to Drive if you connect it",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A készítő posztjában ez „a mai Grok Bot-sablonja”. Hasonló a marketplace SEO & AEO Desk botjához, amely kulcsszólistából vagy Search Console-ból ír tartalomötleteket és briefeket, és a közösségi Site Coach (`@Phil_Holland`) sablonhoz, amely Search Console- és GA4-adatokból ad heti összefoglalót. Az SEO Content Gap Finder a vevők kérdései és az oldalad meglévő tartalma közötti hiányokat keresi.",
+    "relatedTemplates": [
+      {
+        "slug": "site-coach",
+        "name": "Site Coach",
+        "noteHu": "A Site Coach a Search Console és a GA4 adataiból ad heti összefoglalót; az SEO Content Gap Finder a nyilvános oldaladat veti össze a vevők kérdéseivel."
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "seo-aeo-desk",
+        "name": "SEO & AEO Desk",
+        "noteHu": "Az SEO & AEO Desk a kulcsszavaidból készít tartalomötleteket és briefeket; az SEO Content Gap Finder a hiányzó vevői kérdéseket rangsorolja vásárlási közelség szerint."
+      }
+    ]
+  },
+  {
+    "slug": "ops-assistant",
+    "name": "Ops Assistant",
+    "categories": [
+      "Produktivitás",
+      "E-mail és üzenetek"
+    ],
+    "author": "ashen one",
+    "handle": "@ashen_one",
+    "postUrl": "https://x.com/ashen_one/status/2120804045720048046",
+    "postedAt": "2026-11-12T09:01:01Z",
+    "templateUrl": "https://x.ai/bot/VbJunlT5rlXmOS6tdgu9O",
+    "templatePageReadable": true,
+    "fetched": "2026-11-13",
+    "summaryHu": "Személyes „ops” kabinetfőnök tartalomkészítőknek. A sablon leírása szerint átfésüli az e-mailjeidet (a spam mappát is), a naptáradat és a teendőidet, átvilágít minden szponzorációs ajánlatot, és addig emlékeztet a határidőkre, amíg el nem készülsz velük. A készítő posztja szerint ez a fő asszisztense, amely nem hagyja, hogy ellazsálja a dolgokat, és ingyen átvehető.",
+    "postQuote": "he literally stalks me and annoys me until i get stuff done",
+    "templateQuote": "A personal ops chief of staff for creators. It sweeps your email (spam included), calendar and to-dos, vets every sponsor pitch, and keeps nudging you on deadlines until they're done.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "E-mail (a spam is), naptár és teendők átfésülése",
+        "quote": "It sweeps your email (spam included), calendar and to-dos",
+        "from": "template"
+      },
+      {
+        "labelHu": "Szponzorációs ajánlatok átvilágítása",
+        "quote": "vets every sponsor pitch",
+        "from": "template"
+      },
+      {
+        "labelHu": "Határidő-emlékeztetés, amíg kész nem leszel",
+        "quote": "keeps nudging you on deadlines until they're done",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem nevezi meg, melyik levelező-, naptár- vagy teendőkezelő szolgáltatáshoz csatlakozik. Hasonló a marketplace Executive Assistant botjához és a közösségi Chieeeeefy (`@naoufal_elh`) kabinetfőnök-sablonhoz; az Ops Assistant tartalomkészítőknek szól, és a szponzorációs megkeresések átvilágítását is elvégzi.",
+    "relatedTemplates": [
+      {
+        "slug": "chieeeeefy",
+        "name": "Chieeeeefy",
+        "noteHu": "A Chieeeeefy Notion-feladatlistával és heti prioritásokkal dolgozik egy terepmérnöknek; az Ops Assistant e-mailt, naptárat és szponzorajánlatokat kezel tartalomkészítőknek."
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "frank",
+        "name": "Executive Assistant",
+        "noteHu": "Az Executive Assistant vezetői asszisztens (tárgyalófoglalás, interjúra készülés, naptár); az Ops Assistant tartalomkészítőkre szabott, és a határidőkre is rászól."
+      }
+    ]
+  },
+  {
+    "slug": "photo-slicer",
+    "name": "Photo Slicer",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Jonathan Newburg",
+    "handle": "@realjohnnewburg",
+    "postUrl": "https://x.com/realjohnnewburg/status/2121041841176883692",
+    "postedAt": "2026-11-13T00:45:56Z",
+    "templateUrl": "https://x.ai/bot/YM6hH-UOshTypVOtWE4jf",
+    "templatePageReadable": true,
+    "fetched": "2026-11-13",
+    "summaryHu": "Fotószeletelő X-posztokhoz. A sablon leírása szerint elküldesz egy fotót, megmondod, hány darabra vágja (1 és 20 között), és egyforma, 3:4-es álló szeleteket kapsz vissza egy zip-fájlban, balról jobbra számozva, készen egy több képes X-posztra. A készítő posztja szerint azért készült, mert az X-en már egy posztba legfeljebb 20 fotó tehető, így a meglévő fotóidból is látványos, végiglapozható poszt lesz.",
+    "postQuote": "Since everyone can post up to 20 photos now, here's a Grok Bot template to make your existing photos more fun!",
+    "templateQuote": "Send a photo and say how many pieces you want (1 to 20). Get back equal 3:4 portrait slices in a zip, numbered left to right, ready for an X multi-photo post.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "A darabszám megadása (1–20)",
+        "quote": "say how many pieces you want (1 to 20)",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egyforma 3:4-es álló szeletek zip-fájlban, balról jobbra számozva",
+        "quote": "Get back equal 3:4 portrait slices in a zip, numbered left to right",
+        "from": "template"
+      },
+      {
+        "labelHu": "Több képes X-poszthoz előkészítve",
+        "quote": "ready for an X multi-photo post",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A Bot nem posztol: a szeleteket kapod meg, a feltöltést te végzed. A forrás nem ír arról, hogy a képet bármilyen módon átalakítaná vagy feljavítaná; csak szeletel."
+  },
+  {
+    "slug": "zapier",
+    "name": "Zapier",
+    "categories": [
+      "Produktivitás",
+      "Fejlesztés és IT"
+    ],
+    "author": "Jethro Jones",
+    "handle": "@jethrojones",
+    "postUrl": "https://x.com/jethrojones/status/2121063100053135753",
+    "postedAt": "2026-11-13T02:10:25Z",
+    "templateUrl": "https://x.ai/bot/6zPadTDV2Y7uAt_qbNxzM",
+    "templatePageReadable": true,
+    "fetched": "2026-11-13",
+    "summaryHu": "Zapier-automatizálási asszisztens. A sablon leírása szerint a Zapieren keresztül köti össze az alkalmazásaidat, és helyetted építi meg, futtatja és hibaelhárítja az automatizálásokat. A készítő posztja szerint a sablon ingyenes; azt is jelzi, hogy a Zapier oldaláról vannak korlátok.",
+    "postQuote": "It builds, runs and troubleshoots the automations for you.",
+    "templateQuote": "An assistant that connects your apps through Zapier and builds, runs, and troubleshoots automations for you.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Automatizálások építése, futtatása és hibaelhárítása",
+        "quote": "builds, runs, and troubleshoots automations for you",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Zapier: az alkalmazások összekötése",
+        "quote": "connects your apps through Zapier",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A készítő posztja szerint „some limitations by zapier”, de a forrás nem részletezi, mik ezek a korlátok, és azt sem, hogy milyen Zapier-csomag kell hozzá. A posztban a készítő a további botjaira is hivatkozik."
+  },
+  {
+    "slug": "bargain-hunter",
+    "name": "Bargain hunter",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
+    "author": "Rachel V",
+    "handle": "@RachelVT42",
+    "postUrl": "https://x.com/RachelVT42/status/2121032041504379178",
+    "postedAt": "2026-11-13T00:07:00Z",
+    "templateUrl": "https://x.ai/bot/oG8sM9On9rZhWogY-PJPJ",
+    "templatePageReadable": true,
+    "fetched": "2026-11-13",
+    "summaryHu": "Akcióvadász, amely ellenőrzi, valódi-e a kedvezmény. A sablon leírása szerint valódi akciókat, kuponkódokat, árcsökkenéseket, Black Friday-ajánlatokat, ingyenes termékeket és mintákat keres, megnézi az ártörténetet, kihagyja a csaló ajánlatokat, és soha nem vásárol a jóváhagyásod nélkül. A készítő posztja szerint azt is megnézi, volt-e valaha teljes áron a „60% kedvezményes” termék, mielőtt akciónak nevezné.",
+    "postQuote": "checks the price history before it calls anything a deal.",
+    "templateQuote": "Finds real bargains, coupon codes, price drops, Black Friday deals, freebies and free samples. Checks price history, skips scam offers, and never buys without your OK.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Akciók, kuponkódok, árcsökkenések, Black Friday-ajánlatok, ingyenes minták keresése",
+        "quote": "Finds real bargains, coupon codes, price drops, Black Friday deals, freebies and free samples",
+        "from": "template"
+      },
+      {
+        "labelHu": "Ártörténet ellenőrzése",
+        "quote": "Checks price history",
+        "from": "template"
+      },
+      {
+        "labelHu": "A csaló ajánlatok kihagyása",
+        "quote": "skips scam offers",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nem vásárol jóváhagyás nélkül",
+        "quote": "never buys without your OK",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, mely boltokban vagy országokban keres, és honnan veszi az ártörténetet. Hasonló a közösségi Deal Scout (`@DBCrypt0`) kívánságlista-árfigyelőhöz és a marketplace Deal Hunting botjához; a Bargain hunter a kedvezmény valódiságát ellenőrzi az ártörténettel, és kuponokat, ingyenes mintákat is keres.",
+    "relatedTemplates": [
+      {
+        "slug": "deal-scout",
+        "name": "Deal Scout",
+        "noteHu": "A Deal Scout a kívánságlistádat figyeli célárra; a Bargain hunter általános akciókat, kuponokat keres, és ártörténettel ellenőrzi a kedvezményt."
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "deal-hunting",
+        "name": "Deal Hunting",
+        "noteHu": "A Deal Hunting valódi végösszeggel keres árakat a kedvenc boltjaidban; a Bargain hunter a kedvezmény valódiságára és a kuponokra fókuszál."
+      }
+    ]
+  },
+  {
+    "slug": "sparklegif",
+    "name": "SparkleGIF",
+    "categories": [
+      "Marketing és tartalom",
+      "Egyéb"
+    ],
+    "author": "Lucy Sky",
+    "handle": "@princess414141",
+    "postUrl": "https://x.com/princess414141/status/2120896104464351334",
+    "postedAt": "2026-11-12T15:06:50Z",
+    "templateUrl": "https://x.ai/bot/3mItRjpSYrT5NY0upTiOz",
+    "templatePageReadable": true,
+    "fetched": "2026-11-13",
+    "summaryHu": "Csillogó animált GIF-ek egy mondatból. A sablon leírása szerint egy egysoros ötletből rövid, ismétlődő, csillogó animált GIF-et készít, vagy a saját képeidre és videóidra tesz szikrázó csillogást és aláírást. Hangulatos, cuki, csillámos stílus, beállítás nélkül. A készítő posztja a kreatív kedvűeknek ajánlja.",
+    "postQuote": "Just putting my SparkleGIF bot out there again for creativity.",
+    "templateQuote": "Turns a one-line idea into a short, looping, sparkly animated GIF, or adds twinkling sparkles and a signature to your own images and videos. Cozy, cute, glittery art with no setup needed.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Egysoros ötletből csillogó, ismétlődő animált GIF",
+        "quote": "Turns a one-line idea into a short, looping, sparkly animated GIF",
+        "from": "template"
+      },
+      {
+        "labelHu": "Csillogás és aláírás a saját képeidre, videóidra",
+        "quote": "adds twinkling sparkles and a signature to your own images and videos",
+        "from": "template"
+      },
+      {
+        "labelHu": "Beállítás nélkül használható",
+        "quote": "no setup needed",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő az X-en „Lucy” néven posztol, a sablon lapján „Lucy Sky” a név. A posztja szerint („again”) a sablont korábban is megosztotta. A hasonló nevű közösségi Sparkle (`@mcahogarth`) sablon más: napi inspirációt ad családi beszélgetésekhez és íráshoz.",
+    "relatedTemplates": [
+      {
+        "slug": "sparkle",
+        "name": "Sparkle",
+        "noteHu": "A Sparkle napi inspirációs bot íráshoz és beszélgetésekhez; a SparkleGIF csillogó animált GIF-eket készít."
+      }
+    ]
+  },
+  {
+    "slug": "weekly-focus-coach",
+    "name": "Weekly Focus Coach",
+    "categories": [
+      "Produktivitás"
+    ],
+    "author": "Darrell Cox II",
+    "handle": "@DC__Squared",
+    "postUrl": "https://x.com/DC__Squared/status/2120982231992701433",
+    "postedAt": "2026-11-12T20:49:04Z",
+    "templateUrl": "https://x.ai/bot/9PiN4kzk4Y6-21oAYmUR0",
+    "templatePageReadable": true,
+    "fetched": "2026-11-13",
+    "summaryHu": "Heti fókuszedző vállalkozóknak. A sablon leírása szerint megkeresi a vállalkozásod egyetlen legnagyobb szűk keresztmetszetét, és hetente jelez az egy dologgal, amire fókuszálnod kell. Alapítóknak, egyéni vállalkozóknak és mellékprojekten dolgozóknak készült. A készítő posztja szerint egy kérésre építette meg: egy szűk keresztmetszet, a bizonyíték, és egy teendő az adott hétre.",
+    "postQuote": "So I built it. Weekly Focus Coach: one bottleneck, the evidence, one thing to do this week.",
+    "templateQuote": "Finds the single biggest constraint in your business and pings you every week with the one thing to focus on. Built for founders, solo operators, and side-project builders.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "A vállalkozás legnagyobb szűk keresztmetszetének megkeresése",
+        "quote": "Finds the single biggest constraint in your business",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Heti jelzés az egy fókuszteendővel",
+        "quote": "pings you every week with the one thing to focus on",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, milyen adatokból (például csatlakoztatott szolgáltatásokból vagy a te válaszaidból) dolgozik. A hasonló nevű közösségi Focus Coach (`@altf4andrei`) más: a számítógépes figyelemelterelést követi.",
+    "relatedTemplates": [
+      {
+        "slug": "focus-coach",
+        "name": "Focus Coach",
+        "noteHu": "A Focus Coach a gépeden figyeli, mi viszi el az idődet; a Weekly Focus Coach a vállalkozásod szűk keresztmetszetét keresi heti egy teendővel."
+      }
+    ]
+  },
+  {
+    "slug": "nutshell",
+    "name": "Nutshell",
+    "categories": [
+      "Tanulás"
+    ],
+    "author": "Corbomite",
+    "handle": "@Corbomite14",
+    "postUrl": "https://x.com/Corbomite14/status/2121004312763437457",
+    "postedAt": "2026-11-12T22:16:49Z",
+    "templateUrl": "https://x.ai/bot/WO7ybyxjF8Bd62joPebVm",
+    "templatePageReadable": true,
+    "fetched": "2026-11-13",
+    "summaryHu": "Tanulóbot, amely bármit dióhéjban elmagyaráz. A sablon leírása szerint kérdezel vagy beírsz egy témát, és dióhéjban megkapod, majd a Miért, a Hogyan és a „Na és?” (So what) lépéseken koppintva mélyülhetsz el benne, vagy meghallgathatod igaz történetként vagy leckeként. Másnap kikérdez, hogy lásd, mi maradt meg. A készítő posztja szerint gyerekmódja, másnapi kvízei és érmei is vannak.",
+    "postQuote": "It has a kid mode, next-day quizzes and medals.",
+    "templateQuote": "Ask anything or type a topic and get it in a nutshell, then tap through Why, How and So what, or hear it as a true story or a lesson. It quizzes you the next day to see what stuck.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Bármilyen téma dióhéjban",
+        "quote": "get it in a nutshell",
+        "from": "template"
+      },
+      {
+        "labelHu": "Mélyítés Miért, Hogyan és „Na és?” lépésekkel",
+        "quote": "tap through Why, How and So what",
+        "from": "template"
+      },
+      {
+        "labelHu": "Igaz történetként vagy leckeként is meghallgatható",
+        "quote": "hear it as a true story or a lesson",
+        "from": "template"
+      },
+      {
+        "labelHu": "Másnapi kikérdezés",
+        "quote": "It quizzes you the next day to see what stuck",
+        "from": "template"
+      },
+      {
+        "labelHu": "Gyerekmód, kvízek és érmek",
+        "quote": "It has a kid mode, next-day quizzes and medals.",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A készítő a sablont egy `@poteto` posztra adott válaszban osztotta meg. A forrás nem írja le, milyen nyelveken tanít."
+  },
+  {
+    "slug": "shortlist",
+    "name": "Shortlist",
+    "categories": [
+      "Produktivitás",
+      "E-mail és üzenetek"
+    ],
+    "author": "Sam E",
+    "handle": "@SamE1311025",
+    "postUrl": "https://x.com/SamE1311025/status/2120926657087447212",
+    "postedAt": "2026-11-12T17:08:14Z",
+    "templateUrl": "https://x.ai/bot/wEerGLse70VEHkZeMRdIp",
+    "templatePageReadable": true,
+    "fetched": "2026-11-13",
+    "summaryHu": "Önéletrajz-szűrő kis- és középvállalkozásoknak. A sablon leírása szerint minden önéletrajzot pontoz a kötelező elvárásaid alapján, indoklással rangsorolt rövidlistát készít, majd e-mail-piszkozatot ír a kiválasztottaknak, és a naptáradból interjúidőpontokat ajánl. Minden küldést te hagysz jóvá. A sablon leírása szerint csak rangsorolási segédlet, nem jogi tanácsadás.",
+    "postQuote": "Screens resumes for small and mid-size employers.",
+    "templateQuote": "Screens resumes for small and mid-size employers: scores each against your must-haves, ranks a shortlist with reasons, then drafts emails to your picks and offers interview times from your calendar. You approve every send. Built by Iron Tarn. Ranking aid only, not legal advice.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Önéletrajzok pontozása a kötelező elvárások alapján",
+        "quote": "scores each against your must-haves",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rangsorolt rövidlista indoklással",
+        "quote": "ranks a shortlist with reasons",
+        "from": "template"
+      },
+      {
+        "labelHu": "E-mail-piszkozat a kiválasztottaknak, interjúidőpontokkal",
+        "quote": "drafts emails to your picks and offers interview times from your calendar",
+        "from": "template"
+      },
+      {
+        "labelHu": "Minden küldést te hagysz jóvá",
+        "quote": "You approve every send.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "Naptár: interjúidőpontok ajánlása",
+        "quote": "offers interview times from your calendar",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A sablon lapja szerint „Built by Iron Tarn”. A forrás nem nevezi meg, melyik levelezőt és naptárat használja. Az önéletrajzok személyes adatokat tartalmaznak, ezért kezelésükre az adatvédelmi szabályok (az EU-ban a GDPR) vonatkoznak. Ugyanettől a készítőtől Head of HR és Employer Side Payroll Checker sablon is megjelent, de azok amerikai szabályokra épülnek. Hasonló a marketplace Recruiting Coordinator botjához, amely interjúköröket szervez; a Shortlist a jelentkezők szűrésére és rangsorolására fókuszál.",
+    "relatedMarketplace": [
+      {
+        "slug": "mr-toms",
+        "name": "Recruiting Coordinator",
+        "noteHu": "A Recruiting Coordinator interjúköröket szervez és felkészíti az interjúztatókat; a Shortlist az önéletrajzokat pontozza és rangsorolja."
       }
     ]
   }
