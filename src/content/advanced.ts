@@ -17,6 +17,7 @@ const secondSourcesFetched = "2026-10-25";
 const brainFetched = "2026-10-23";
 const shopFetched = "2026-10-24";
 const dashboardFetched = "2026-10-24";
+const backupFetched = "2026-11-03";
 
 export type AdvancedSource = {
   title: string;
@@ -278,6 +279,20 @@ const src = {
   dChangelogPages: { title: "Grok Bot changelog (x.ai)", url: docs.changelog, author: "x.ai", date: `lekérve ${dashboardFetched}`, kind: "hivatalos" },
   dBotsDashboard: { title: "Create and manage Bots (docs.x.ai)", url: docs.bots, author: "docs.x.ai", date: `lekérve ${dashboardFetched}`, kind: "hivatalos" },
   dSkillsDashboard: { title: "Skills and routines (docs.x.ai)", url: docs.skills, author: "docs.x.ai", date: `lekérve ${dashboardFetched}`, kind: "hivatalos" },
+  backupPost: {
+    title: "„My Grok Bot setup is 20+ agents' worth…” (X-poszt, angol)",
+    url: "https://x.com/acolombiadev/status/2117029015403831487",
+    author: "Andrea (@acolombiadev)",
+    date: "2026-11-02 00:00 (budapesti idő)",
+    kind: "kozossegi",
+  },
+  backupGist: {
+    title: "„Back up your Grok Bot to a private GitHub repo” (GitHub gist, angol)",
+    url: "https://gist.github.com/AndreaGriffiths11/18d4add0b1cb6849be3d7eb7b0521937",
+    author: "AndreaGriffiths11",
+    date: "2026-11-01 23:46 (budapesti idő)",
+    kind: "kozossegi",
+  },
 } satisfies Record<string, AdvancedSource>;
 
 /** Rövid hivatkozás a szövegben: szerző + link. */
@@ -2033,6 +2048,151 @@ Only automate reminders or recurring tasks where supported. Otherwise provide a 
       },
     ],
     sources: [src.companyOsPost, src.companyOsTpl, src.dChangelogPages, src.dBotsDashboard, src.dSkillsDashboard],
+  },
+  {
+    slug: "napi-mentes",
+    title: "A beállításod mentése: napi mentés privát GitHub-repóba",
+    nav: "Napi mentés",
+    card: "Napi mentés privát GitHub-repóba, titkok nélkül, kihagyási naplóval és visszaállítási próbával.",
+    description:
+      "Napi mentés privát GitHub-repóba: skillek, routine-ok, memóriák és allowlistes beállítások, titkok nélkül, visszaállítási próbával. Andrea (@acolombiadev) gistjének magyar összefoglalója. Haladó útmutató a Kezdő 5 nap után.",
+    lead: "Ez az oldal egy más által írt X-poszt és GitHub-gist rövid magyar összefoglalója, nem saját módszer. Andrea (@acolombiadev) 2026-11-02-án azt írta, hogy a beállítását nem akarja elveszíteni, ezért a bot naponta egy privát repóba menti magát: titok nem kerül bele, van kihagyási napló, és negyedévente visszaállítási próbát futtat. A lépéseket a gist írja le. Kész szkript nincs benne: a bot írja meg.",
+    audience: "Annak szól, aki végigment a Kezdő 5 napon, és a skilljeit, routine-jait, memóriáit és a kiválasztott beállításait privát GitHub-repóba mentené.",
+    minutes: "Kb. 8 perc az oldal elolvasására, a mi becslésünk",
+    fetched: backupFetched,
+    steps: [
+      {
+        name: "Privát repó",
+        text: "Hozz létre egy privát GitHub-repót. A gist példája: you/my-bot-backup.",
+      },
+      {
+        name: "Git LFS",
+        text: "A gist szerint telepítsd a Git LFS-t a boxon: git lfs install.",
+      },
+      {
+        name: ".gitattributes",
+        text: "A gist szerint add hozzá a .gitattributes fájlt ezzel a sorral: *.tar.gz filter=lfs diff=lfs merge=lfs -text.",
+      },
+      {
+        name: "A bot írja a szkriptet",
+        text: "Kérd meg a botot, hogy írjon mentési szkriptet hat követelménnyel: privát-ellenőrzés, zárolás, másolás, validálás, titokszkennelés, külön commit-identitás. A gist nem ad kész szkriptet.",
+      },
+      {
+        name: "Napi routine",
+        text: "Kérd meg a botot, hogy a mentés napi routine legyen.",
+      },
+    ],
+    blocks: [
+      {
+        type: "note",
+        html: `<strong>Összefoglaló, nem saját anyag.</strong> Ez az oldal ${c("backupPost")} X-posztját és a hozzá linkelt GitHub-gistet foglalja össze magyarul, saját szavainkkal; nem fordítás. Közzétéve: ${src.backupPost.date}. A szerző bioja szerint: DevRel at GitHub. A gist tulajdonosa AndreaGriffiths11, címe „Back up your Grok Bot to a private GitHub repo”, létrehozva ${src.backupGist.date}. A gist nem ad kész szkriptet. Poszt: <a href="${src.backupPost.url}">${src.backupPost.url}</a>. Gist: <a href="${src.backupGist.url}">${src.backupGist.url}</a>. Lekérve: ${backupFetched}.`,
+      },
+      { type: "h2", text: "Mi kerül a mentésbe" },
+      {
+        type: "p",
+        html: `A gist napi pillanatképet ír le a skillekről, a routine-okról, a memóriákról és a beállításokról, egy saját privát repóba. Ha valami elromlik vagy törlődik, a gist szerint látni lehet, mi változott, és vissza lehet állítani. A mappák a gist táblája szerint:`,
+      },
+      {
+        type: "table",
+        caption: "Mit ment a gist, a gist táblája szerint",
+        headers: ["Mappa", "A gist szerint mi van benne"],
+        rows: [
+          ["<code>automations/</code>", "Minden routine egy JSON fájlban. A gist kifejezése: across all your bots."],
+          [
+            "<code>skills/local/</code>",
+            "A saját magad létrehozott skillek. A gist útvonala: <code>/home/box/agent-data/workflows/</code>.",
+          ],
+          ["<code>skills/global/</code>", "Plugin- és marketplace-skillek."],
+          ["<code>skills/bundled/</code>", "Beépített skillek, a gist szerint hivatkozásnak."],
+          ["<code>memories/</code>", "Minden bot memóriája, JSON-ban és olvasható markdownban. A gist kifejezése: every bot's memory."],
+          ["<code>settings/</code>", "Az allowlisten szereplő beállítások, plusz minden bot modellje és személyisége (personality)."],
+          [
+            "<code>co-creations/</code>",
+            "A botok által a boxon épített repók, <code>.tar.gz</code> fájlként, Git LFS-ben.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        html: `A poszt szerint a szerző beállítása „20+ agents' worth of skills, routines, memories and settings”, és ezt menti naponta egy privát repóba. A gist „across all your bots” és „every bot's memory” kifejezése ugyanezt a kört írja le: a meglévő botok routine-jai és memóriái egy privát repóban.`,
+      },
+      { type: "h2", text: "Mi nem kerül bele" },
+      {
+        type: "ul",
+        items: [
+          "Titkok. A <code>.env</code>, <code>.pem</code>, <code>.key</code> és <code>.enc</code> fájlokat a gist szerint a <code>.gitignore</code> kizárja, és minden commitot titokmintákra átnéz, mielőtt pusholna.",
+          "Ami nincs az allowlisten. A gist szerint te sorolod fel a menteni kívánt beállítási kulcsokat, a többi kimarad.",
+          "Az Auto-review allow szabályok. A gist szerint ezekből csak a darabszám kerül a mentésbe.",
+        ],
+      },
+      { type: "h2", text: "Beállítás" },
+      {
+        type: "p",
+        html: `A gist öt lépést ad, és a bot gépét boxnak hívja. Kész szkript nincs benne: a 4. és az 5. lépésben a botot kéred meg, hogy írja meg a mentést, majd tegye napi routine-ná. A routine létrehozását a <a href="/5-nap/4-nap-skill-routine/">4. napon</a> mutattuk meg.`,
+      },
+      { type: "steps" },
+      {
+        type: "p",
+        html: `A 2. lépés parancsa a gist szerint: <code>git lfs install</code>. A 3. lépés <code>.gitattributes</code> sora: <code>*.tar.gz filter=lfs diff=lfs merge=lfs -text</code>. A példa-repó: <code>you/my-bot-backup</code>.`,
+      },
+      { type: "h2", text: "A 4. lépés hat követelménye" },
+      {
+        type: "p",
+        html: `A gist szerint a mentési szkript ezt a hat dolgot csinálja. Az angol mondatok a gist szövegéből valók, szó szerint:`,
+      },
+      {
+        type: "ol",
+        items: [
+          "Privát-ellenőrzés: „checks the repo is private before every push, and stops if it isn't”.",
+          "Zárolás: „takes a lock so two runs never overlap”.",
+          "Másolás: „copies the folders above into the repo”.",
+          "Validálás: „validates every JSON file and tarball”.",
+          "Titokszkennelés: „scans the staged diff for secrets and refuses to commit if it finds any”.",
+          "Külön commit-identitás: „commits under a dedicated identity, like Backup Bot”.",
+        ],
+      },
+      {
+        type: "prompt",
+        label: "@acolombiadev: Prompt to start, eredeti",
+        code: "Set up a daily backup of my Grok Bot skills, routines, memories and allowlisted settings to my private repo `you/my-bot-backup`. Verify it's private before every push, never commit secrets, use Git LFS for tarballs, log anything skipped, and run a restore drill every 90 days.",
+        caption: `@acolombiadev / <a href="${src.backupGist.url}">gist</a>, eredeti. Szó szerint.`,
+      },
+      { type: "h2", text: "Keep it honest" },
+      {
+        type: "p",
+        html: `A gist „Keep it honest” címszó alatt három szabályt ad.`,
+      },
+      {
+        type: "ul",
+        items: [
+          "<strong>Visszaállítási próba negyedévente.</strong> A gist szerint csomagold ki a pillanatképet a <code>/tmp</code> alá, és nézd meg, hogy megnyílik. A gist mondata: „A backup you've never restored is a guess.” A bemásolható prompt ugyanezt 90 naponta kéri: „run a restore drill every 90 days”.",
+          "<strong>Kihagyási napló.</strong> A gist szerint írj egy <code>.backup-skipped.json</code> fájlt, benne minden kihagyott fájllal és az okával, hogy a hiány ne maradjon rejtve.",
+          "<strong>Determinisztikus tarball.</strong> A gist szerint rögzített módosítási idő (mtime), tulajdonos és rendezési sorrend kell, hogy egy változatlan repó ne hozzon létre minden nap új commitot.",
+        ],
+      },
+      { type: "h2", text: "Saját figyelmeztetések" },
+      {
+        type: "note",
+        html: `<strong>Saját figyelmeztetéseink, nem a gistből.</strong> A következő három pont a mi megjegyzésünk.`,
+      },
+      {
+        type: "ul",
+        items: [
+          `A gist belső box-útvonalakra épít, például a saját skilleknél erre: <code>/home/box/agent-data/workflows/</code>. Ezt a docs.x.ai-n nem ellenőriztük, ezért az útvonal a gist szerint, a szerző szerint értendő. ${marker("a gist belső útvonalát a docs.x.ai-n nem ellenőriztük")}`,
+          "A gist <code>.gitignore</code> mintái (<code>.env</code>, <code>.pem</code>, <code>.key</code>, <code>.enc</code>) nem fogják az összes titkot. Ne az egész <code>agent-data</code> mappát mentsd: a boxon más titokfájlok is lehetnek.",
+          "A memória személyes adat. Privát repóba is csak tudatosan kerüljön.",
+        ],
+      },
+      {
+        type: "done",
+        items: [
+          "Van egy privát repód, a gist szerint Git LFS-sel és a megadott .gitattributes sorral, és a bot a hat követelményre írta a napi mentést.",
+          "Tudod, mi marad ki: titkok, az allowlisten kívüli beállítások, és az Auto-review szabályokból csak a darabszám. A .gitignore nem fog minden titkot, ezért nem az egész agent-data mappát mented.",
+          "Van .backup-skipped.json, a tarball a gist szerint determinisztikus, és a visszaállítási próbát a gist szerint negyedévente, a prompt szerint 90 naponta futtatod. A memóriát tudatosan teszed a privát repóba.",
+        ],
+      },
+    ],
+    sources: [src.backupPost, src.backupGist],
   },
 ];
 
