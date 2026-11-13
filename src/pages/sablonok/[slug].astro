@@ -40,7 +40,7 @@ const ld = {
   url: absUrl(origin, path),
   inLanguage: "hu",
   description: item.summaryHu,
-  author: { "@type": "Person", name: item.author, url: `https://x.com/${item.handle.replace(/^@/, "")}` },
+  author: item.creatorAccountRemoved ? { "@type": "Person", name: item.author } : { "@type": "Person", name: item.author, url: `https://x.com/${item.handle.replace(/^@/, "")}` },
   sameAs: [item.templateRemoved ? undefined : item.templateUrl, item.postUrl].filter(Boolean),
   isPartOf: { "@type": "WebPage", url: absUrl(origin, "/sablonok/") },
 };
@@ -208,7 +208,7 @@ const ld = {
       <h2>Forrás</h2>
       <ul class="plain-list">
         {item.postUrl ? <li>X-poszt: <a href={item.postUrl} data-post-link>{item.postUrl}</a></li> : <li data-post-removed>X-poszt: a készítő törölte, már nem elérhető</li>}
-        <li>Készítő: {item.author} (<a href={`https://x.com/${item.handle.replace(/^@/, "")}`}>{item.handle}</a>)</li>
+        <li>Készítő: {item.author} ({item.creatorAccountRemoved ? <span>{item.handle} (a fiók már nem elérhető)</span> : <a href={`https://x.com/${item.handle.replace(/^@/, "")}`}>{item.handle}</a>})</li>
         <li>Közzétéve: <time datetime={item.postedAt}>{posted}</time> (budapesti idő)</li>
         {item.templateRemoved ? <li data-template-removed>Sablon: {item.templateUrl} (a sablonlap megszűnt, már nem elérhető)</li> : <li>Sablon: <a href={item.templateUrl} data-source-link>{item.templateUrl}</a></li>}
         <li>Lekérve: {item.fetched}</li>
