@@ -2342,6 +2342,7 @@
     "postedAt": "2026-10-20T11:26:14Z",
     "templateUrl": "https://x.ai/bot/9E8iw2zlg2fTWzUT6RUsP",
     "templatePageReadable": true,
+    "templateRemoved": true,
     "fetched": "2026-10-21",
     "summaryHu": "Takarékossági bot a Grok Bot rutinjaihoz. A sablon leírása szerint végignézi az összes botod rutinjait, és a gépies ellenőrzéseket kicsi, tesztelt szkriptekké alakítja, így a rutin csak akkor ébreszti fel a botot, ha tényleg van teendő. Telepítés után minden botodtól lekéri a rutinokat, és egyetlen rövid jelentést küld a javaslatokkal és a becsült heti tokenmegtakarítással; utána csak az általad kiválasztott szkripteket építi meg és teszteli, a rutint pedig a gazdabottal frissítteti. Nem módosít ütemezést, nem tesz titkos adatot a szkriptekbe, és semmit nem szkriptel, ami üzenetet küld, vásárol vagy posztol. A készítő szerint a szkriptekkel 70–95% spórolható.",
     "postQuote": "I created a Bot that looks at all routines you are running and checks to see if they can be ran as a Script. Scripts could save 70-95%",
@@ -2355,7 +2356,8 @@
         "from": "template"
       }
     ],
-    "integrations": []
+    "integrations": [],
+    "noteHu": "A 2026-11-14-i ellenőrzéskor a sablon x.ai lapja már nem volt elérhető (404), így a sablon jelenleg nem adható hozzá a Grok Bothoz; a leírást forrásként megőriztük. A készítő 2026-11-14-én egy átdolgozott változatot osztott meg új x.ai-linken."
   },
   {
     "slug": "x-following-cleanup",
@@ -4832,6 +4834,7 @@
     "postedAt": "2026-10-27T03:44:07Z",
     "templateUrl": "https://x.ai/bot/wvj9yJwiPaBRTakGeZQre",
     "templatePageReadable": true,
+    "templateRemoved": true,
     "fetched": "2026-10-27",
     "summaryHu": "Automatikus jegyzőkönyv hanghívások után. A sablon leírása szerint amikor egy hanghívás véget ér (akkor is, ha közben megszakad), magától elküldi a chatbe az átiratot és a jegyzőkönyvet: a fő pontokat, a döntéseket és a teendőket. Azoknak készült, akik kérés nélkül szeretnének jegyzetet a hívásaikról. A készítő posztja szerint akkor is megmaradnak a jegyzetek, ha a hívás hirtelen megszakad.",
     "postQuote": "I made a Grok Bot template for anyone who wants call notes even when a call drops suddenly",
@@ -4851,7 +4854,8 @@
         "name": "Meetings Desk",
         "noteHu": "A közösségi Meetings Desk sablon (Avid) a naptáradban keresi az elvesztegetett megbeszélésidőt; a hívások tartalmáról nem ír jegyzőkönyvet."
       }
-    ]
+    ],
+    "noteHu": "A 2026-11-14-i ellenőrzéskor a sablon x.ai lapja már nem volt elérhető (404), így a sablon jelenleg nem adható hozzá a Grok Bothoz; a leírást forrásként megőriztük."
   },
   {
     "slug": "gift-brainstormer",
@@ -8127,6 +8131,7 @@
     "postedAt": "2026-11-05T00:33:14Z",
     "templateUrl": "https://x.ai/bot/dO9rojWVgFL5kjmWYYu_y",
     "templatePageReadable": true,
+    "templateRemoved": true,
     "fetched": "2026-11-05",
     "summaryHu": "Felügyelő bot az összes Grok Botodhoz. A sablon leírása szerint minden hétköznap ellenőrzi, hogy a botjaid rutinjai valóban lefutottak-e, és csak a hibákról szól; havonta kétszer pedig javasolja, hogy a túlterhelt botokat frissített, tiszta másolatként építsd újra, de csak a jóváhagyásoddal. A készítő posztja szerint így ugyanabból a keretből több munka jön ki.",
     "postQuote": "Fleet Doctor trims them down so every message counts",
@@ -8146,7 +8151,7 @@
       }
     ],
     "integrations": [],
-    "noteHu": "A poszt „háromszoros” teljesítményre vonatkozó állítása a készítő saját tapasztalata; a forrás nem közöl hozzá mérést.",
+    "noteHu": "A poszt „háromszoros” teljesítményre vonatkozó állítása a készítő saját tapasztalata; a forrás nem közöl hozzá mérést. A 2026-11-14-i ellenőrzéskor a sablon x.ai lapja már nem volt elérhető (404), így a sablon jelenleg nem adható hozzá a Grok Bothoz; a leírást forrásként megőriztük.",
     "relatedTemplates": [
       {
         "slug": "routine-auditor",
@@ -11593,6 +11598,415 @@
         "slug": "mr-toms",
         "name": "Recruiting Coordinator",
         "noteHu": "A Recruiting Coordinator interjúköröket szervez és felkészíti az interjúztatókat; a Shortlist az önéletrajzokat pontozza és rangsorolja."
+      }
+    ]
+  },
+  {
+    "slug": "photo-cleanup",
+    "name": "Photo Cleanup",
+    "categories": [
+      "Produktivitás",
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Beth Dutton",
+    "handle": "@1BethDutton",
+    "postUrl": "https://x.com/1BethDutton/status/2121253064485335537",
+    "postedAt": "2026-11-13T14:45:16Z",
+    "templateUrl": "https://x.ai/bot/IrnpucR9vcojl3FfUbBFj",
+    "templatePageReadable": true,
+    "fetched": "2026-11-14",
+    "summaryHu": "Fotótár-takarító, amely helyet szabadít fel a telefonodon. A sablon leírása szerint a böngészőből rendet tesz az iCloud Fotók vagy a Google Fotók tárhelyeden: megkeresi a nagy videókat, a képernyőképeket, az elmosódott felvételeket és a duplikátumokat. Semmit nem töröl, amíg jóvá nem hagyod a pontos elemeket, és minden a visszaállítható Kukába kerül. A készítő posztja szerint nála a majdnem megtelt Google Fotók tárhely 81%-ra csökkent, és ez olcsóbb, mint több tárhelyet fizetni a Google-nek.",
+    "postQuote": "Nothing gets deleted until I say so.",
+    "templateQuote": "Frees up phone storage by cleaning up your iCloud Photos or Google Photos from the browser, finding big videos, screenshots, blurry shots, and duplicates. Nothing is deleted until you approve the exact items, and everything goes to a recoverable Trash.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Nagy videók, képernyőképek, elmosódott képek és duplikátumok keresése",
+        "quote": "finding big videos, screenshots, blurry shots, and duplicates",
+        "from": "template"
+      },
+      {
+        "labelHu": "iCloud Fotók vagy Google Fotók takarítása a böngészőből",
+        "quote": "cleaning up your iCloud Photos or Google Photos from the browser",
+        "from": "template"
+      },
+      {
+        "labelHu": "Csak a jóváhagyott elemeket törli",
+        "quote": "Nothing is deleted until you approve the exact items",
+        "from": "template"
+      },
+      {
+        "labelHu": "Minden a visszaállítható Kukába kerül",
+        "quote": "everything goes to a recoverable Trash",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "iCloud Fotók vagy Google Fotók (böngészőből)",
+        "quote": "your iCloud Photos or Google Photos from the browser",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem írja le, hogyan lép be a fiókodba a böngészőben; a fotóid személyes adatok, ezért csak akkor használd, ha ezt vállalod. Hasonló a közösségi Disk Saver (`@hovinthenorth`) és Data Hygienist (`@kchau`) sablonhoz; a Photo Cleanup a felhős fotótárat takarítja, nem a számítógépet vagy a Gmailt.",
+    "relatedTemplates": [
+      {
+        "slug": "disk-saver",
+        "name": "Disk Saver",
+        "noteHu": "A Disk Saver a számítógép tárhelyét takarítja; a Photo Cleanup az iCloud Fotók vagy a Google Fotók tárhelyét."
+      },
+      {
+        "slug": "data-hygienist",
+        "name": "Data Hygienist",
+        "noteHu": "A Data Hygienist a Gmail tárhelyét tartja a korlát alatt; a Photo Cleanup a felhős fotótárat."
+      }
+    ]
+  },
+  {
+    "slug": "game-night-host",
+    "name": "Game Night Host",
+    "categories": [
+      "Otthon, utazás, étkezés",
+      "Egyéb"
+    ],
+    "author": "Luis Barragan",
+    "handle": "@luisbarragan",
+    "postUrl": "https://x.com/luisbarragan/status/2121272375735890378",
+    "postedAt": "2026-11-13T16:02:00Z",
+    "templateUrl": "https://x.ai/bot/UFZc7kTf9hDzVwEdbUwBz",
+    "templatePageReadable": true,
+    "fetched": "2026-11-14",
+    "summaryHu": "Társasjáték-est házigazda. A sablon leírása szerint két perc alatt elmagyarázza bármelyik játékot a polcodról, kiválasztja az esti játékot, eldönti a szabályvitákat, és folyamatosan vezeti a győztesek táblázatát. A készítő posztja szerint a családja kéthetente tart játékestet, és a Bot segít eldönteni, mit játsszanak, és nyilvántartja az összes lejátszott játékot.",
+    "postQuote": "Now a Grok Bot helps us decide what to play, and it keeps track of every game we've played.",
+    "templateQuote": "Teaches any game on your shelf in two minutes, then picks tonight's game, settles rules disputes, and keeps a running winners board for your game nights.",
+    "memory": [
+      {
+        "labelHu": "Folyamatosan vezetett győztestábla",
+        "quote": "keeps a running winners board for your game nights",
+        "from": "template"
+      }
+    ],
+    "skills": [
+      {
+        "labelHu": "Bármelyik játék elmagyarázása két perc alatt",
+        "quote": "Teaches any game on your shelf in two minutes",
+        "from": "template"
+      },
+      {
+        "labelHu": "Az esti játék kiválasztása",
+        "quote": "picks tonight's game",
+        "from": "template"
+      },
+      {
+        "labelHu": "Szabályviták eldöntése",
+        "quote": "settles rules disputes",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, honnan ismeri a játékok szabályait, és hogy magyar kiadású játékokat vagy magyar nyelvű szabálykönyvet is kezel-e."
+  },
+  {
+    "slug": "quiet-space",
+    "name": "Quiet Space",
+    "categories": [
+      "Egészség és sport"
+    ],
+    "author": "King Emmanuel",
+    "handle": "@KingEmmaDev",
+    "postUrl": "https://x.com/KingEmmaDev/status/2121185775794479600",
+    "postedAt": "2026-11-13T10:17:53Z",
+    "templateUrl": "https://x.ai/bot/Oq6N3lT5s-rTuObrm_IkK",
+    "templatePageReadable": true,
+    "fetched": "2026-11-14",
+    "summaryHu": "Csendes hely a gondolataidnak, amikor túl hangos a fejed. A sablon leírása szerint egy olyan AI-tér, ahol átbeszélheted a dolgokat, kibogozhatod a stresszt vagy a túlgondolást, és tisztábban gondolkodhatsz. A készítő posztja szerint kibogozza a körbe-körbe járó gondolatokat, végigvezet egy nyugodt „újraindításon”, esténként rád néz, és egy „befőttesüvegben” gyűjti a sikereidet azokra a napokra, amikor elfelejted őket. A sablon leírása szerint nem terápia és nem sürgősségi ellátás.",
+    "postQuote": "It untangles looping thoughts, walks you through a calm reset, checks in on your evenings and keeps a jar of your wins for the days you forget them.",
+    "templateQuote": "Somewhere to put your thoughts down when your head's too loud. An AI space to talk things through, untangle stress or overthinking, and think more clearly. Not therapy or emergency care.",
+    "memory": [
+      {
+        "labelHu": "A sikereid gyűjtése a nehezebb napokra",
+        "quote": "keeps a jar of your wins for the days you forget them",
+        "from": "post"
+      }
+    ],
+    "skills": [
+      {
+        "labelHu": "A stressz és a túlgondolás kibogozása",
+        "quote": "untangle stress or overthinking",
+        "from": "template"
+      },
+      {
+        "labelHu": "Végigvezet egy nyugodt újraindításon",
+        "quote": "walks you through a calm reset",
+        "from": "post"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Esti rátekintés",
+        "quote": "checks in on your evenings",
+        "from": "post"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A sablon leírása szerint „Not therapy or emergency care”: nem helyettesíti a szakembert. Ha krízisben vagy, Magyarországon hívd a 112-t vagy a 116-123-as ingyenes lelki elsősegély-vonalat."
+  },
+  {
+    "slug": "cell-phone-plan-finder",
+    "name": "Cell Phone Plan Finder",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
+    "author": "Alexander Muse",
+    "handle": "@amuse",
+    "postUrl": "https://x.com/amuse/status/2121337177464529079",
+    "postedAt": "2026-11-13T20:19:30Z",
+    "templateUrl": "https://x.ai/bot/RJSudgYj7pjh-0xawMGkf",
+    "templatePageReadable": true,
+    "fetched": "2026-11-14",
+    "summaryHu": "Mobiltarifa-kereső. A sablon leírása szerint megkeresi a legolcsóbb mobilcsomagot, amely működik ott, ahol élsz, és illik a ténylegesen használt adatforgalmadhoz; beszámítja a készülék-részleteket és az elvesző jóváírásokat is. Havonta ellenőrzi, van-e legalább 10%-kal olcsóbb csomag, és soha nem vált szolgáltatót a jóváhagyásod nélkül.",
+    "postQuote": "GROK BOT: My Cell Phone Plan Finder helps you find the cheapest cell phone plan that works where you live, covers how much data you really use, and keeps checking every month.",
+    "templateQuote": "By amuse on 𝕏. Finds the cheapest cell phone plan that works where you live and fits the data you actually use, counting phone payoffs and lost credits, and checks monthly for a plan at least 10% cheaper. Never switches you without your OK.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "A legolcsóbb mobilcsomag keresése a lakóhelyedre és az adatforgalmadra",
+        "quote": "Finds the cheapest cell phone plan that works where you live and fits the data you actually use",
+        "from": "template"
+      },
+      {
+        "labelHu": "A készülék-részletek és az elvesző jóváírások beszámítása",
+        "quote": "counting phone payoffs and lost credits",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nem vált a jóváhagyásod nélkül",
+        "quote": "Never switches you without your OK.",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Havi ellenőrzés: van-e legalább 10%-kal olcsóbb csomag",
+        "quote": "checks monthly for a plan at least 10% cheaper",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, mely országok és szolgáltatók ajánlatait ismeri; a készítő amerikai, ezért magyar tarifáknál ellenőrizd az eredményt. Ugyanettől a készítőtől jelent meg az Internet Plan Finder (otthoni internet) és az Electricity Rate Finder (áramtarifa) is.",
+    "relatedTemplates": [
+      {
+        "slug": "internet-plan-finder",
+        "name": "Internet Plan Finder",
+        "noteHu": "Ugyanattól a készítőtől: az otthoni internetcsomagot keresi a címedre."
+      }
+    ]
+  },
+  {
+    "slug": "internet-plan-finder",
+    "name": "Internet Plan Finder",
+    "categories": [
+      "Pénzügy és vásárlás",
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Alexander Muse",
+    "handle": "@amuse",
+    "postUrl": "https://x.com/amuse/status/2121336048710303752",
+    "postedAt": "2026-11-13T20:15:01Z",
+    "templateUrl": "https://x.ai/bot/-FHBDFDjhn10ClEiZ-ZVZ",
+    "templatePageReadable": true,
+    "fetched": "2026-11-14",
+    "summaryHu": "Otthoni internetcsomag-kereső. A sablon leírása szerint megkeresi a legjobb otthoni internetajánlatot a címedre, összeveti a valódi havi költséget az akciós időszak és az eszközdíjak után, és havonta ellenőrzi, van-e legalább 10%-kal olcsóbb csomag. Soha nem vált szolgáltatót a jóváhagyásod nélkül.",
+    "postQuote": "compares the true monthly cost after promos and equipment fees, and checks monthly for a plan at least 10% cheaper.",
+    "templateQuote": "By amuse on 𝕏. Finds the best home internet deal at your address, compares true monthly cost after promos and equipment fees, and checks monthly for a plan at least 10% cheaper. Never switches you without your OK.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "A legjobb otthoni internetajánlat keresése a címedre",
+        "quote": "Finds the best home internet deal at your address",
+        "from": "template"
+      },
+      {
+        "labelHu": "Valódi havi költség az akciók és eszközdíjak után",
+        "quote": "compares true monthly cost after promos and equipment fees",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nem vált a jóváhagyásod nélkül",
+        "quote": "Never switches you without your OK.",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Havi ellenőrzés: van-e legalább 10%-kal olcsóbb csomag",
+        "quote": "checks monthly for a plan at least 10% cheaper",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, mely országok és szolgáltatók ajánlatait ismeri; a készítő amerikai, ezért magyar ajánlatoknál ellenőrizd az eredményt. Ugyanettől a készítőtől jelent meg a Cell Phone Plan Finder (mobiltarifa) is.",
+    "relatedTemplates": [
+      {
+        "slug": "cell-phone-plan-finder",
+        "name": "Cell Phone Plan Finder",
+        "noteHu": "Ugyanattól a készítőtől: a mobilcsomagot keresi az adatforgalmad alapján."
+      }
+    ]
+  },
+  {
+    "slug": "weekly-kids-newspaper",
+    "name": "Weekly Kids Newspaper",
+    "categories": [
+      "Tanulás",
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Carlos Benavides M.",
+    "handle": "@Calrornds",
+    "postUrl": "https://x.com/Calrornds/status/2121317419247444101",
+    "postedAt": "2026-11-13T19:00:59Z",
+    "templateUrl": "https://x.ai/bot/ApoDzW2Uttwptbim_m_Wa",
+    "templatePageReadable": true,
+    "fetched": "2026-11-14",
+    "summaryHu": "Heti gyerekújság, nyomtatva. A sablon leírása szerint minden héten nyomtatható gyerekújságot készít: valódi hírek a gyerekek szintjén, játékok, egy kézműves ötlet, a Los Thitos képregény és egy családi naptár. PDF-be menti, és ha van nyomtató, ki is nyomtatja. A készítő posztja szerint a gyerekei minden vasárnap megkapják a saját nyomtatott újságjukat; a Los Thitos egy kincses szigetes kalandtörténet.",
+    "postQuote": "Every Sunday my kids get their own printed newspaper: real news at their level, games, a craft, a family calendar and the Los Thitos comic, a treasure-island adventure.",
+    "templateQuote": "Makes a printed kids' newspaper every week: real news at the children's level, games, a craft, the Los Thitos comic and a family calendar. Saves it as a PDF and, if there's a printer, prints it.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Valódi hírek a gyerekek szintjén",
+        "quote": "real news at the children's level",
+        "from": "template"
+      },
+      {
+        "labelHu": "Játékok, kézműves ötlet, képregény és családi naptár",
+        "quote": "games, a craft, the Los Thitos comic and a family calendar",
+        "from": "template"
+      },
+      {
+        "labelHu": "PDF-mentés, nyomtatás, ha van nyomtató",
+        "quote": "Saves it as a PDF and, if there's a printer, prints it.",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Hetente új újság",
+        "quote": "Makes a printed kids' newspaper every week",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A készítő a sablont spanyolul is megosztotta. A forrás nem írja le, milyen nyelven és milyen korosztálynak készül az újság. Hasonló a marketplace The Morning Newspaper botjához, amely a felnőtt felhasználó e-mailjeiből és naptárából nyomtat napi újságot; a Weekly Kids Newspaper gyerekeknek szól.",
+    "relatedMarketplace": [
+      {
+        "slug": "the-morning-newspaper",
+        "name": "The Morning Newspaper",
+        "noteHu": "A The Morning Newspaper az e-mailjeidből és a naptáradból készít személyre szabott újságot; a Weekly Kids Newspaper heti gyerekújságot hírekkel, játékokkal és képregénnyel."
+      }
+    ]
+  },
+  {
+    "slug": "eu-court-watcher",
+    "name": "The EU Court Watcher",
+    "categories": [
+      "Tanulás",
+      "Egyéb"
+    ],
+    "author": "Pal Szilagyi",
+    "handle": "@szilagyipal",
+    "postUrl": "https://x.com/szilagyipal/status/2121334833146470702",
+    "postedAt": "2026-11-13T20:10:11Z",
+    "templateUrl": "https://x.ai/bot/4oAqt3dhDAvBKggcvbZTo",
+    "templatePageReadable": true,
+    "fetched": "2026-11-14",
+    "summaryHu": "Az uniós bíróságok napi figyelője. A sablon leírása szerint naponta figyeli az Európai Unió Bíróságát és a Törvényszéket: az új ítéleteket, a főtanácsnoki indítványokat és az újonnan benyújtott ügyeket, a felekről és a tényállásról háttérkutatással, a kapcsolódó nemzeti esetjoggal, valamint a felek és ügyvédeik reakcióival. Uniós joggal foglalkozó jogászoknak, kutatóknak és szakpolitikai elemzőknek készült.",
+    "postQuote": "Here is my third bot, EU Court Watcher:",
+    "templateQuote": "Daily watch of the EU Court of Justice and General Court: new judgments, AG Opinions and newly filed cases, with party and fact research, related national case law, and reactions from the parties and their lawyers. For EU lawyers, academics and policy watchers.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Új ítéletek, főtanácsnoki indítványok és új ügyek",
+        "quote": "new judgments, AG Opinions and newly filed cases",
+        "from": "template"
+      },
+      {
+        "labelHu": "Háttérkutatás a felekről és a tényállásról",
+        "quote": "party and fact research",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kapcsolódó nemzeti esetjog",
+        "quote": "related national case law",
+        "from": "template"
+      },
+      {
+        "labelHu": "A felek és ügyvédeik reakciói",
+        "quote": "reactions from the parties and their lawyers",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Napi figyelés",
+        "quote": "Daily watch of the EU Court of Justice and General Court",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "Magyar készítő (Szilágyi Pál) harmadik botja; a korábbiak a GDPR Bot és a Citation Counter. A forrás nem írja le, milyen nyelven készül az összefoglaló, és mely tagállamok esetjogát nézi. Szakmai, jogi témájú sablon, nem jogi tanácsadás.",
+    "relatedTemplates": [
+      {
+        "slug": "gdpr-bot",
+        "name": "GDPR Bot",
+        "noteHu": "Ugyanattól a készítőtől: weboldalak GDPR-megfelelését vizsgálja hetente, esetjogra hivatkozva."
+      }
+    ]
+  },
+  {
+    "slug": "algorithm-change-radar",
+    "name": "Algorithm Change Radar",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Karata De Mada",
+    "handle": "@karatademada",
+    "postUrl": "https://x.com/karatademada/status/2121264092870517087",
+    "postedAt": "2026-11-13T15:29:05Z",
+    "templateUrl": "https://x.ai/bot/-AgzXec4RtdkJ4iv_neW6",
+    "templatePageReadable": true,
+    "fetched": "2026-11-14",
+    "summaryHu": "Algoritmusváltozás-radar tartalomkészítőknek. A sablon leírása szerint elmondja, mi változott valójában azoknak a platformoknak az algoritmusában, ahová posztolsz; minden állítást „Megerősített”, „Valószínű” vagy „Pletyka” címkével lát el, és egy-két teendőt ad az adott hétre. A készítő posztja szerint az „épp megváltozott az algoritmus” posztok tényellenőrzésére készült.",
+    "postQuote": "New Grok Bot template to fact-check those “the algorithm just changed” posts.",
+    "templateQuote": "Tells creators what really changed in the algorithms of the platforms they post on, with every claim labeled Confirmed, Likely or Rumor, plus one or two things to do this week.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Mi változott valójában a platformok algoritmusában",
+        "quote": "Tells creators what really changed in the algorithms of the platforms they post on",
+        "from": "template"
+      },
+      {
+        "labelHu": "Címkézés: Megerősített, Valószínű vagy Pletyka",
+        "quote": "every claim labeled Confirmed, Likely or Rumor",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egy-két teendő az adott hétre",
+        "quote": "plus one or two things to do this week",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem sorolja fel, mely platformokat figyeli, és honnan veszi a megerősítést. Hasonló a közösségi Algorithm (`@070guy`) sablonhoz; az az X nyilvános algoritmuskódja alapján a saját posztjaidat auditálja, az Algorithm Change Radar a változásokról szóló híreket ellenőrzi több platformon.",
+    "relatedTemplates": [
+      {
+        "slug": "algorithm",
+        "name": "Algorithm",
+        "noteHu": "Az Algorithm az X algoritmusa alapján auditálja és átírja a posztjaidat; az Algorithm Change Radar az algoritmusváltozásokról szóló állításokat címkézi megbízhatóság szerint."
       }
     ]
   }
