@@ -12009,5 +12009,255 @@
         "noteHu": "Az Algorithm az X algoritmusa alapján auditálja és átírja a posztjaidat; az Algorithm Change Radar az algoritmusváltozásokról szóló állításokat címkézi megbízhatóság szerint."
       }
     ]
+  },
+  {
+    "slug": "x-year-lookback",
+    "name": "X Year Lookback",
+    "categories": [
+      "Marketing és tartalom",
+      "Egyéb"
+    ],
+    "author": "Brian Roemmele",
+    "handle": "@BrianRoemmele",
+    "postUrl": "https://x.com/BrianRoemmele/status/2121635168314441948",
+    "postedAt": "2026-11-14T16:03:36Z",
+    "templateUrl": "https://x.ai/bot/vjKL4in4XL6KM7Ib74bRZ",
+    "templatePageReadable": true,
+    "fetched": "2026-11-15",
+    "summaryHu": "Évértékelő magazin az X-es évedről. A sablon leírása szerint bármelyik X-fiók évéből színes, magazin stílusú PDF-visszatekintést készít: a fő témákkal, a nagy pillanatokkal, a visszatérő emberekkel és helyekkel, valamint a rejtett mintázatokkal. A készítő posztja szerint igényes, fényes magazinszerű PDF-et ad, amelyet ki is nyomtathatsz, vagy elmenthetsz átnézésre.",
+    "postQuote": "This Grok Bot linked below will build you a publication worthy high gloss magazine PDF ready to print if you want and save to review.",
+    "templateQuote": "Turns any X account's year into a colorful, magazine-style PDF retrospective covering its themes, big moments, recurring people, places, and hidden patterns. Made for creators, fans, brands, and anyone who wants their year on X in print.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Magazin stílusú PDF-visszatekintés bármelyik X-fiók évéről",
+        "quote": "Turns any X account's year into a colorful, magazine-style PDF retrospective",
+        "from": "template"
+      },
+      {
+        "labelHu": "Témák, nagy pillanatok, visszatérő emberek és helyek, rejtett mintázatok",
+        "quote": "covering its themes, big moments, recurring people, places, and hidden patterns",
+        "from": "template"
+      },
+      {
+        "labelHu": "Nyomtatásra kész PDF",
+        "quote": "magazine PDF ready to print",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, hogyan olvassa be a fiók posztjait, és mennyi használatba kerül egy teljes év feldolgozása. Más fiókjáról is készíthetsz magazint, de csak nyilvános tartalomból, és a nyomtatott változatot ne terjeszd az érintett engedélye nélkül."
+  },
+  {
+    "slug": "ghost-writer",
+    "name": "Ghost Writer",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Mike Gannotti",
+    "handle": "@MichaelGannotti",
+    "postUrl": "https://x.com/MichaelGannotti/status/2121774398780887050",
+    "postedAt": "2026-11-15T01:16:51Z",
+    "templateUrl": "https://x.ai/bot/o-FcL9kK0iy2A9wmadEAt",
+    "templatePageReadable": true,
+    "fetched": "2026-11-15",
+    "summaryHu": "Szellemíró, aki megírja a könyvedet. A sablon leírása szerint kedves AI-szellemíró, amely interjút készít veled, és a saját hangodon írja meg a könyvedet, legyen az ismeretterjesztő vagy szépirodalmi mű. Minden fejezetet te hagysz jóvá, a végén pedig kész EPUB-ot, PDF-et és kéziratot ad.",
+    "postQuote": "A warm AI ghostwriter that interviews you and writes your book, nonfiction or fiction, in your own voice.",
+    "templateQuote": "A warm AI ghostwriter that interviews you and writes your book, nonfiction or fiction, in your own voice. You approve every chapter, and it delivers a finished EPUB, PDF and manuscript.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Interjút készít veled, és a saját hangodon írja meg a könyvet",
+        "quote": "interviews you and writes your book, nonfiction or fiction, in your own voice",
+        "from": "template"
+      },
+      {
+        "labelHu": "Minden fejezetet te hagysz jóvá",
+        "quote": "You approve every chapter",
+        "from": "template"
+      },
+      {
+        "labelHu": "Kész EPUB, PDF és kézirat",
+        "quote": "it delivers a finished EPUB, PDF and manuscript",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, hogy magyar nyelvű könyvet is ír-e. Hasonló a közösségi Book Maker (`@rabspice`) sablonhoz és a marketplace Writing Bot botjához; a Book Maker egy témából vagy forrásból kézikönyvet állít össze, a Writing Bot szövegek írásában és átdolgozásában segít, a Ghost Writer pedig interjúk alapján a te könyvedet írja meg.",
+    "relatedTemplates": [
+      {
+        "slug": "book-maker",
+        "name": "Book Maker",
+        "noteHu": "A Book Maker egy témából vagy forrásból (például dokumentációból) készít többfejezetes kézikönyvet; a Ghost Writer interjúk alapján a saját könyvedet írja meg a hangodon."
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "writing-bot",
+        "name": "Writing Bot",
+        "noteHu": "A Writing Bot esszék, e-mailek és dokumentumok megírásában és átdolgozásában segít; a Ghost Writer egy teljes könyvet visz végig fejezetenként."
+      }
+    ]
+  },
+  {
+    "slug": "inbox-zero",
+    "name": "Inbox Zero",
+    "categories": [
+      "E-mail és üzenetek",
+      "Produktivitás"
+    ],
+    "author": "Peter Piekarczyk",
+    "handle": "@peterpme",
+    "postUrl": "https://x.com/peterpme/status/2121792497999319235",
+    "postedAt": "2026-11-15T02:28:47Z",
+    "templateUrl": "https://x.ai/bot/82VLs_jOVV_NPLMa4sWHr",
+    "templatePageReadable": true,
+    "fetched": "2026-11-15",
+    "summaryHu": "Üres postafiók a Gmailben, úgy, hogy a Bot csak olvas. A sablon leírása szerint a Gmail-fiókjaidat úgy viszi el az üres postafiókig, hogy közben csak olvassa a leveleidet: rövid napi jelentést küld, Gmail-szűrőfájlokat készít, amelyeket te importálsz, és egy koppintásos kereséseket meg leiratkozási linkeket ad, ahelyett hogy maga nyúlna a postafiókodhoz. A készítő posztja szerint nála 2000 levelet takarított el, és beállítható úgy is, hogy néhány hét alatt fokozatosan haladjon.",
+    "postQuote": "I made a Grok Bot that nuked 2,000 emails",
+    "templateQuote": "Gets your Gmail accounts to inbox zero while only reading your mail. It sends a short daily report, builds Gmail filter files for you to import, and hands you one-tap searches and unsubscribe links instead of touching your inbox itself.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Csak olvassa a leveleidet",
+        "quote": "while only reading your mail",
+        "from": "template"
+      },
+      {
+        "labelHu": "Gmail-szűrőfájlok, amelyeket te importálsz",
+        "quote": "builds Gmail filter files for you to import",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egy koppintásos keresések és leiratkozási linkek",
+        "quote": "hands you one-tap searches and unsubscribe links instead of touching your inbox itself",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Rövid napi jelentés",
+        "quote": "It sends a short daily report",
+        "from": "template"
+      }
+    ],
+    "integrations": [
+      {
+        "labelHu": "Gmail (több fiók is)",
+        "quote": "Gets your Gmail accounts to inbox zero",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A sablon leírása szerint csak olvassa a leveleidet, a készítő posztja viszont azt írja, hogy a nyilvánvaló marketing-spamet is kiszórja („It'll junk the obvious marketing spam”); a forrás nem tisztázza, hogy ez a szűrőkön keresztül, a te jóváhagyásoddal történik-e. Hasonló a közösségi Inbox Manager (`@ubiquitous_mind`) és Email Bot (`@Austen`) sablonhoz; azok jóváhagyás után maguk rendezik a postafiókot, az Inbox Zero szűrőket és linkeket ad, hogy te rendezd.",
+    "relatedTemplates": [
+      {
+        "slug": "inbox-manager",
+        "name": "Inbox Manager",
+        "noteHu": "Az Inbox Manager hetente javaslatot tesz a leghangosabb feladókra, és a jóváhagyott lépéseket maga végzi el; az Inbox Zero csak olvas, és szűrőfájlokat ad."
+      },
+      {
+        "slug": "email-bot",
+        "name": "Email Bot",
+        "noteHu": "Az Email Bot óránként archivál és válaszvázlatot ír; az Inbox Zero nem nyúl a postafiókhoz, csak jelentést és szűrőket ad."
+      }
+    ]
+  },
+  {
+    "slug": "dog-care-coach",
+    "name": "Grok your Dog",
+    "categories": [
+      "Otthon, utazás, étkezés",
+      "Egészség és sport"
+    ],
+    "author": "Bryan Levy",
+    "handle": "@bryanlevy",
+    "postUrl": "https://x.com/bryanlevy/status/2121881918937469067",
+    "postedAt": "2026-11-15T08:24:06Z",
+    "templateUrl": "https://x.ai/bot/MbvEC2G_SwX7FcP9A3JRk",
+    "templatePageReadable": true,
+    "fetched": "2026-11-15",
+    "summaryHu": "Táplálkozási és gondozási edző a kutyádnak. A sablon leírása szerint kalóriapontos napi étrendet készít kutatással alátámasztott tippekkel, játékos, nyomtatható posztert rajzol a kutyádról, emlékeztet a születésnapjára, és rendben tartja a gondozási nyilvántartást. A készítő posztja egy amerikai állatkórház-hálózat (Banfield) adatát idézi, amely szerint a felnőtt kutyák 53%-a túlsúlyos vagy elhízott.",
+    "postQuote": "Be the reason your dog is healthy! Use Grok your Dog bot and it'll help with everything",
+    "templateQuote": "Your dog's nutrition and care coach: a calorie-accurate daily meal plan with researched tips, a playful printable poster of your dog, birthday reminders, and organized care records.",
+    "memory": [
+      {
+        "labelHu": "Rendezett gondozási nyilvántartás",
+        "quote": "organized care records",
+        "from": "template"
+      }
+    ],
+    "skills": [
+      {
+        "labelHu": "Kalóriapontos napi étrend kutatással alátámasztott tippekkel",
+        "quote": "a calorie-accurate daily meal plan with researched tips",
+        "from": "template"
+      },
+      {
+        "labelHu": "Játékos, nyomtatható poszter a kutyádról",
+        "quote": "a playful printable poster of your dog",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Születésnapi emlékeztetők",
+        "quote": "birthday reminders",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "Az étrend nem helyettesíti az állatorvosi tanácsot; fogyókúra vagy betegség esetén egyeztess az állatorvosoddal. A forrás nem írja le, milyen adatbázisból számolja a kalóriákat, és hogy magyar tápmárkákat is ismer-e."
+  },
+  {
+    "slug": "seamless-split",
+    "name": "Seamless Split",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "nahjuin",
+    "handle": "@nahjuin",
+    "postUrl": "https://x.com/nahjuin/status/2121597014375018664",
+    "postedAt": "2026-11-14T13:32:00Z",
+    "templateUrl": "https://x.ai/bot/u0kjn2MT9RWiOXqMiC0Hj",
+    "templatePageReadable": true,
+    "fetched": "2026-11-15",
+    "summaryHu": "Hézagmentes többképes X-poszt egyetlen képből vagy ötletből. A sablon leírása szerint egy képből, ötletből vagy történetből legfeljebb 20 panelből álló X-posztot készít, ahol minden panel pontosan ott folytatódik, ahol az előző véget ért. A saját képeidet kóddal vágja szét, így nincs képgenerálási költség; ötletből egy széles jelenetet generál, és úgy szeleteli fel, hogy minden illesztés stimmeljen. A paneleket számozva, posztolási sorrendben kapod. A készítő posztja szerint nagyon olcsó futtatni.",
+    "postQuote": "Made with Seamless Split, a free template that splits your photo with no image gen.",
+    "templateQuote": "Turns an image, idea, or story into a seamless multi-photo X post, up to 20 panels where each one picks up exactly where the last left off. Your own images are split with code at no image gen cost. For ideas, it creates one wide scene and slices it so every seam lines up. You get numbered panels in posting order, ready to upload.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Legfeljebb 20 panelből álló, hézagmentes X-poszt",
+        "quote": "a seamless multi-photo X post, up to 20 panels",
+        "from": "template"
+      },
+      {
+        "labelHu": "Saját képek szétvágása kóddal, képgenerálási költség nélkül",
+        "quote": "Your own images are split with code at no image gen cost",
+        "from": "template"
+      },
+      {
+        "labelHu": "Ötletből egy széles jelenet, illeszkedő szeletekre vágva",
+        "quote": "it creates one wide scene and slices it so every seam lines up",
+        "from": "template"
+      },
+      {
+        "labelHu": "Számozott panelek posztolási sorrendben",
+        "quote": "You get numbered panels in posting order, ready to upload",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A Bot nem posztol helyetted: a kész paneleket te töltöd fel. A készítő posztja szerint az X már posztonként 20 fotót enged („20 photos per post just dropped”). Hasonló témájú a közösségi Tiny Panels (`@NDovetta`) sablon; az képregényoldalt rajzol egy történetből, a Seamless Split egy képet vág több, egymáshoz illeszkedő X-panelre.",
+    "relatedTemplates": [
+      {
+        "slug": "tiny-panels",
+        "name": "Tiny Panels",
+        "noteHu": "A Tiny Panels történetből rajzol képregényoldalt; a Seamless Split egy képet vagy jelenetet vág egymáshoz illeszkedő X-panelekre."
+      }
+    ]
   }
 ]
