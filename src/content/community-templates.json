@@ -3008,7 +3008,6 @@
     ],
     "author": "Si",
     "handle": "@ai_benny100",
-    "postUrl": "https://x.com/ai_benny100/status/2113290231340581189",
     "postedAt": "2026-10-22T15:23:48Z",
     "templateUrl": "https://x.ai/bot/ZTQNZCP_XiSq4yozGrGP-",
     "templatePageReadable": true,
@@ -3019,7 +3018,8 @@
     "memory": [],
     "skills": [],
     "routines": [],
-    "integrations": []
+    "integrations": [],
+    "noteHu": "A 2026-11-16-i ellenőrzéskor a készítő X-posztja már nem volt elérhető; a poszt idézetét forrásként megőriztük. A sablon x.ai lapja továbbra is elérhető."
   },
   {
     "slug": "youtube-strategy-professor",
@@ -5627,8 +5627,8 @@
       "Grok Bot és flotta"
     ],
     "author": "Vladgz 🥷",
-    "handle": "@StarkDegenz",
-    "postUrl": "https://x.com/StarkDegenz/status/2115500873359180262",
+    "handle": "@Vladgz",
+    "postUrl": "https://x.com/Vladgz/status/2115500873359180262",
     "postedAt": "2026-10-28T17:48:06Z",
     "templateUrl": "https://x.ai/bot/rBr1cSxaPWjsmaVn1WOxu",
     "templatePageReadable": true,
@@ -12259,5 +12259,417 @@
         "noteHu": "A Tiny Panels történetből rajzol képregényoldalt; a Seamless Split egy képet vagy jelenetet vág egymáshoz illeszkedő X-panelekre."
       }
     ]
+  },
+  {
+    "slug": "local-gazette",
+    "name": "Local Gazette",
+    "categories": [
+      "Otthon, utazás, étkezés",
+      "Egyéb"
+    ],
+    "author": "Pascal",
+    "handle": "@p45c41",
+    "postUrl": "https://x.com/p45c41/status/2122064818139976073",
+    "postedAt": "2026-11-15T20:30:53Z",
+    "templateUrl": "https://x.ai/bot/rgDSVcuH-K8hlPZqwFuFN",
+    "templatePageReadable": true,
+    "fetched": "2026-11-16",
+    "summaryHu": "Saját helyi újság a városodról. A sablon leírása szerint bármelyik településre és bármilyen nyelven elkészíti a privát helyi újságodat: megkeresi a környéked hírforrásait, naponta legfeljebb kétszer összegyűjti a híreket, és egyetlen szórakoztató, újság stílusú oldalon tartja naprakészen. A készítő posztja szerint bármelyik városra, országra és nyelvre működnie kell.",
+    "postQuote": "I am sharing this local newspaper as a Grok Bot template. It finds your town's news sources, collects them twice a day, and lays them out as a fun little gazette.\nThe template should work for any town, in any country and language:",
+    "templateQuote": "Your private local newspaper for any town, in any language. It finds your area's news sources, collects them twice a day at most, and keeps one fun, gazette-style Page up to date.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Bármelyik település, bármilyen nyelven",
+        "quote": "Your private local newspaper for any town, in any language",
+        "from": "template"
+      },
+      {
+        "labelHu": "Megkeresi a környék hírforrásait",
+        "quote": "It finds your area's news sources",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egyetlen, naprakész újságszerű oldal",
+        "quote": "keeps one fun, gazette-style Page up to date",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Hírgyűjtés naponta legfeljebb kétszer",
+        "quote": "collects them twice a day at most",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, mely magyar helyi hírportálokat találja meg, és hogy a kisebb településeken mennyi forrás akad. A hírek összefoglalók; a részletekért nyisd meg az eredeti cikket. Hasonló a marketplace The Morning Newspaper botjához; az a leveleidből és a naptáradból állít össze személyes reggeli újságot, a Local Gazette a településed nyilvános híreiből.",
+    "relatedMarketplace": [
+      {
+        "slug": "the-morning-newspaper",
+        "name": "The Morning Newspaper",
+        "noteHu": "A The Morning Newspaper a leveleidből és a naptáradból készít személyes újságot; a Local Gazette a településed helyi híreit gyűjti egy oldalra."
+      }
+    ]
+  },
+  {
+    "slug": "x-ego-search",
+    "name": "Xエゴサツール / X Ego Search",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "ふくぶん",
+    "handle": "@FFBuncho",
+    "postUrl": "https://x.com/FFBuncho/status/2121894658943136082",
+    "postedAt": "2026-11-15T09:14:44Z",
+    "templateUrl": "https://x.ai/bot/Zg0nuf_y0QdL9rGTKVh0g",
+    "templatePageReadable": true,
+    "fetched": "2026-11-16",
+    "summaryHu": "Megtalálja az X-en azokat a posztokat, amelyek rólad szólnak, de nem jelölnek meg. A sablon leírása szerint olyan posztokat keres, amelyekben @-említés nélkül beszélnek rólad (a neveddel vagy beceneveddel, illetve képernyőképes idézéssel), és pozitív meg negatív csoportra bontva jelenti őket. Megválaszthatod, milyen régre nézzen vissza, és rendszeres ellenőrzést is beállíthatsz. A készítő posztja szerint pozitív, negatív és semleges csoportba sorolja a találatokat, és hozzáteszi, hogy érzékeny lelkűeknek talán jobb nem használni.",
+    "postQuote": "エゴサ用wwwのGrok Botテンプレートを作りました！！\n\n自分事を言及しておりかつ、メンションしていない投稿をポジティブ・ネガティブ・中立でそれぞれエゴサしてくれます。\n\nメンタル弱い人は使わないほうがいいかも。",
+    "templateQuote": "Xで、あなたに@メンションを付けずに話している投稿（名前やニックネームでの言及、スクショ引用）を探し、ポジティブとネガティブに分けて報告するエゴサボット。遡る期間を選べて、定期チェックもできます。 / Ego-search X: finds posts that talk about you without @mentioning you, sorted into positive and negative.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "@-említés nélküli posztok keresése rólad",
+        "quote": "Ego-search X: finds posts that talk about you without @mentioning you",
+        "from": "template"
+      },
+      {
+        "labelHu": "Pozitív és negatív csoportba sorolás",
+        "quote": "sorted into positive and negative",
+        "from": "template"
+      },
+      {
+        "labelHu": "Pozitív, negatív és semleges csoport (a készítő posztja szerint)",
+        "quote": "ポジティブ・ネガティブ・中立でそれぞれエゴサしてくれます",
+        "from": "post"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Választható visszatekintési idő és rendszeres ellenőrzés",
+        "quote": "遡る期間を選べて、定期チェックもできます",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "postLang": "ja",
+    "noteHu": "A sablon leírása japánul és angolul is szerepel; a forrás nem írja le, hogy magyar nevekre és magyar posztokra mennyire pontos. Hasonló a marketplace Overheard botjához; az a Redditet, a Hacker Newst, hírportálokat és az X-et is figyeli a neved, márkád és linkjeid említéseiért, a Xエゴサツール csak az X-en keres, és hangulat szerint csoportosít.",
+    "relatedMarketplace": [
+      {
+        "slug": "overheard",
+        "name": "Overheard",
+        "noteHu": "Az Overheard több forrásban (Reddit, Hacker News, hírek, X) figyeli a neved és márkád említéseit; a Xエゴサツール az X-en keresi a megjelölés nélküli posztokat, pozitív és negatív bontásban."
+      }
+    ]
+  },
+  {
+    "slug": "creative-video-studio",
+    "name": "Creative Video Studio",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Mars",
+    "handle": "@MarsHomestead",
+    "postUrl": "https://x.com/MarsHomestead/status/2122072793240252895",
+    "postedAt": "2026-11-15T21:02:34Z",
+    "templateUrl": "https://x.ai/bot/g-_ahneHRIUAQIyrscdSb",
+    "templatePageReadable": true,
+    "fetched": "2026-11-16",
+    "summaryHu": "Kész videó a telefonos felvételeidből, vágási tapasztalat nélkül. A sablon leírása szerint a telefonon rögzített klipjeidből kész videót készít: veled együtt megtervezi a történetet, megvágja az anyagot, ellenőrzi a képet és a hangot, a zenéhez, a hangokhoz, a borítóképhez és a kiegészítő klipekhez pedig a Grok Imagine-t használja. A készítő posztja szerint ez a videószerkesztője jelenlegi változata, és több másikkal összevetve ezt tartja a legjobbnak.",
+    "postQuote": "This is the current version of my video editor. I’ve compared it to a few others and still prefer this version the best. Let me know if you try it. 👇",
+    "templateQuote": "Turns your phone clips into finished videos, with no editing experience needed. It plans the story with you, edits, checks picture and sound, and uses Grok Imagine for music, voices, covers and extra clips.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Telefonos klipekből kész videó, vágási tapasztalat nélkül",
+        "quote": "Turns your phone clips into finished videos, with no editing experience needed",
+        "from": "template"
+      },
+      {
+        "labelHu": "Közös történettervezés, vágás, kép- és hangellenőrzés",
+        "quote": "It plans the story with you, edits, checks picture and sound",
+        "from": "template"
+      },
+      {
+        "labelHu": "Zene, hangok, borítókép és kiegészítő klipek Grok Imagine-nel",
+        "quote": "uses Grok Imagine for music, voices, covers and extra clips",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, milyen hosszú és milyen formátumú (álló vagy fekvő) videókat készít, és mennyi használatba kerül a Grok Imagine-es zene és hang. Hasonló a közösségi Grok Bot Video Studio (`@MichaelGannotti`) sablonhoz és a marketplace Video Edit Desk botjához; a Video Studio főleg generált videókat készít, a Video Edit Desk vágott klipeket és feliratot ad, a Creative Video Studio a saját telefonos felvételeidből épít történetet.",
+    "relatedTemplates": [
+      {
+        "slug": "video-studio",
+        "name": "Grok Bot Video Studio",
+        "noteHu": "A Grok Bot Video Studio Grok Imagine-nel generál magyarázó, bemutató és zenés videókat; a Creative Video Studio a saját telefonos klipjeidből vág kész videót."
+      }
+    ],
+    "relatedMarketplace": [
+      {
+        "slug": "best-video-editor",
+        "name": "Video Edit Desk",
+        "noteHu": "A Video Edit Desk a feltöltött felvételből vágott klipeket, beégetett feliratot és platformméretű exportot készít; a Creative Video Studio a történetet is megtervezi veled, és Grok Imagine-nel zenét és hangot ad hozzá."
+      }
+    ]
+  },
+  {
+    "slug": "deal-detective",
+    "name": "Deal Detective",
+    "categories": [
+      "Pénzügy és vásárlás",
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Ashley Schendel",
+    "handle": "@ashleyschendel",
+    "postUrl": "https://x.com/ashleyschendel/status/2122020847825068279",
+    "postedAt": "2026-11-15T17:36:10Z",
+    "templateUrl": "https://x.ai/bot/p36qEKy4qL_Gksm00iJus",
+    "templatePageReadable": true,
+    "fetched": "2026-11-16",
+    "summaryHu": "Valódi akciók a heti bevásárláshoz. A sablon leírása szerint megkeresi a valódi élelmiszer- és bolti kedvezményeket, összeveti az egységárakat, ellenőrzi a kuponokat, és olyan bevásárlólistát állít össze, amellyel ténylegesen spórolsz, kamu akciók és fölösleges utak nélkül. A készítő posztja szerint az általad kiválasztott boltokban keres.",
+    "postQuote": "If your one weekly job is groceries, I built Deal Detective for that. It finds real grocery and retail discounts at the stores you choose, compares unit prices, checks coupons, and builds shopping lists.",
+    "templateQuote": "Finds real grocery and retail discounts, compares unit prices, checks coupons, and builds shopping lists that actually save you money. No fake deals, no wasted trips.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Valódi élelmiszer- és bolti kedvezmények",
+        "quote": "Finds real grocery and retail discounts",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egységár-összevetés és kuponellenőrzés",
+        "quote": "compares unit prices, checks coupons",
+        "from": "template"
+      },
+      {
+        "labelHu": "Spórolós bevásárlólista",
+        "quote": "builds shopping lists that actually save you money",
+        "from": "template"
+      },
+      {
+        "labelHu": "Az általad választott boltokban keres",
+        "quote": "at the stores you choose",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, hogy a magyar áruházláncok (például akciós újságok vagy webshopok) árait is eléri-e; ezt az első futásnál érdemes kipróbálni. Hasonló a közösségi Bargain hunter (`@RachelVT42`) és Meal planner (`@RachelVT42`) sablonhoz; a Bargain hunter általános alkalmi ajánlatokat és kuponokat keres, a Meal planner heti menüből készít árazott listát, a Deal Detective a heti élelmiszer-bevásárlás akcióira és egységáraira figyel.",
+    "relatedTemplates": [
+      {
+        "slug": "bargain-hunter",
+        "name": "Bargain hunter",
+        "noteHu": "A Bargain hunter általános alkalmi ajánlatokat, kuponokat és ingyenes mintákat keres; a Deal Detective a heti élelmiszer-bevásárlás akcióit és egységárait veti össze."
+      },
+      {
+        "slug": "meal-planner",
+        "name": "Meal planner",
+        "noteHu": "A Meal planner heti menüt tervez, és abból készít árazott bevásárlólistát; a Deal Detective a kiválasztott boltok akcióiból állít össze spórolós listát."
+      }
+    ]
+  },
+  {
+    "slug": "black-friday-scout",
+    "name": "Black Friday Scout",
+    "categories": [
+      "Pénzügy és vásárlás"
+    ],
+    "author": "nahjuin",
+    "handle": "@nahjuin",
+    "postUrl": "https://x.com/nahjuin/status/2122003442218811743",
+    "postedAt": "2026-11-15T16:27:00Z",
+    "templateUrl": "https://x.ai/bot/2N5hwFss2JOp16H5XQJVb",
+    "templatePageReadable": true,
+    "fetched": "2026-11-16",
+    "summaryHu": "A tényleg megérő Black Friday-ajánlatok egy oldalon. A sablon leírása szerint nem a hirdetett ezernyi „akciót” gyűjti, hanem azokat, amelyeket megéri megvenni: harmadik féltől származó ajánlatgyűjtő oldalakról, akcióvadász közösségekből, valamint a Reddit és az X megbízható akcióvadász közösségeiből válogat, és a legjobbakat kategóriák szerint rendezve egyetlen, mobilon is jól olvasható oldalon tartja. Minden tételnél ott az ár, a link, a forrás és egy gyors vélemény arról, hogy most érdemes-e venni, vagy jobb kivárni. A kiválasztott terméket kifejezett engedélyeddel meg is vásárolja, és az általad megadott ütemben frissít. A készítő posztja szerint az oldalt bárkinek elküldheted, annak is, akinek nincs Grok Botja.",
+    "postQuote": "Black Friday Scout finds the ones deal hunters already shout out and keeps them on one page you can send to anyone, even people without Grok Bot.",
+    "templateQuote": "Finds the Black Friday deals worth buying, not the thousands being advertised. Seeks out and purchases the item you want with explicit permission. It pulls from third-party aggregators, deal communities, and trusted deal hunting communities on Reddit and X, then keeps the best ones on one mobile-friendly Page sorted by category. Listings include prices, links, sources, and a quick check if it's worth the buy or worth waiting for better sales. It refreshes on your schedule.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Ajánlatgyűjtők és akcióvadász közösségek (Reddit, X) átfésülése",
+        "quote": "It pulls from third-party aggregators, deal communities, and trusted deal hunting communities on Reddit and X",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egy mobilbarát oldal kategóriák szerint",
+        "quote": "keeps the best ones on one mobile-friendly Page sorted by category",
+        "from": "template"
+      },
+      {
+        "labelHu": "Ár, link, forrás és „most vagy várj” értékelés",
+        "quote": "Listings include prices, links, sources, and a quick check if it's worth the buy or worth waiting for better sales",
+        "from": "template"
+      },
+      {
+        "labelHu": "Vásárlás csak kifejezett engedéllyel",
+        "quote": "Seeks out and purchases the item you want with explicit permission",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Frissítés a te ütemezésed szerint",
+        "quote": "It refreshes on your schedule",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A Bot a te engedélyeddel vásárolni is tud, ezért minden vásárlás előtt ellenőrizd az árat és a boltot. A forrás nem írja le, hogy magyar webshopok akcióit is figyeli-e; a megnevezett források (Reddit, X) főleg angol nyelvűek. Hasonló a közösségi Bargain hunter (`@RachelVT42`) sablonhoz; az egész évben keres alkalmi ajánlatokat és kuponokat, a Black Friday Scout a Black Friday legjobb ajánlatait gyűjti egy megosztható oldalra.",
+    "relatedTemplates": [
+      {
+        "slug": "bargain-hunter",
+        "name": "Bargain hunter",
+        "noteHu": "A Bargain hunter egész évben keres alkalmi ajánlatokat, kuponokat és árcsökkenéseket; a Black Friday Scout a Black Friday-ajánlatokat válogatja egy megosztható oldalra."
+      }
+    ]
+  },
+  {
+    "slug": "gamer",
+    "name": "Gamer",
+    "categories": [
+      "Egyéb"
+    ],
+    "author": "Elek Molnár",
+    "handle": "@Elek_M",
+    "postUrl": "https://x.com/Elek_M/status/2122041946570891406",
+    "postedAt": "2026-11-15T19:00:00Z",
+    "templateUrl": "https://x.ai/bot/GXMfSZ-sM09MXfZ2BWWCe",
+    "templatePageReadable": true,
+    "fetched": "2026-11-16",
+    "summaryHu": "Személyes játékasszisztens. A sablon leírása szerint összefoglalja a frissítések javítási jegyzeteit (patch notes), követi a megjelenéseket, a bemutató eseményeket és az előfizetéses játékkínálatokat, és a te ízlésedhez illő friss játékokat ajánl. A készítő posztja szerint a PS5-ös lemaradásaihoz építette, a bolti akciókat a saját pénznemében mutatja, az ajánlások ahhoz igazodnak, amivel ténylegesen játszol, bármelyik platformon működik, és csak akkor jelez, ha van újdonság.",
+    "postQuote": "Built a gaming bot for my PS5 backlog:\n- patch notes, summarized\n- store deals in my currency\n- release + showcase tracking\n- recs from what I actually play \nWorks for any platform. Quiet unless there's news 🎮",
+    "templateQuote": "A personal gaming assistant: summarizes patch notes, tracks releases, showcases and subscription lineups, and recommends recent games that fit your taste.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Javítási jegyzetek összefoglalása",
+        "quote": "summarizes patch notes",
+        "from": "template"
+      },
+      {
+        "labelHu": "Megjelenések, bemutatók és előfizetéses kínálat követése",
+        "quote": "tracks releases, showcases and subscription lineups",
+        "from": "template"
+      },
+      {
+        "labelHu": "Ízlésedhez illő játékajánlások",
+        "quote": "recommends recent games that fit your taste",
+        "from": "template"
+      },
+      {
+        "labelHu": "Bolti akciók a saját pénznemedben",
+        "quote": "store deals in my currency",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, honnan veszi a javítási jegyzeteket és az akciókat, és hogyan tudja meg, mivel játszol. Hasonló a közösségi Game Deals Radar (`@JPipo86`) sablonhoz; az napi akciólistát küld több platformról, a Gamer a hírekre, frissítésekre és ajánlásokra is figyel.",
+    "relatedTemplates": [
+      {
+        "slug": "game-deals-radar",
+        "name": "Game Deals Radar",
+        "noteHu": "A Game Deals Radar napi játékakció-összesítőt és kívánságlistás árcsökkenés-jelzést ad; a Gamer javítási jegyzeteket, megjelenéseket és személyre szabott ajánlásokat is hoz."
+      }
+    ]
+  },
+  {
+    "slug": "cap-nemo-bedtime-stories",
+    "name": "Cap. Nemo - Bedtime Stories",
+    "categories": [
+      "Tanulás",
+      "Egyéb"
+    ],
+    "author": "Carlos Benavides M.",
+    "handle": "@Calrornds",
+    "postUrl": "https://x.com/Calrornds/status/2122006066326061108",
+    "postedAt": "2026-11-15T16:37:25Z",
+    "templateUrl": "https://x.ai/bot/iqczzWjyH7w00VG3KrqQp",
+    "templatePageReadable": true,
+    "fetched": "2026-11-16",
+    "summaryHu": "Esti mesék, amelyekben a gyereked a főszereplő. A sablon leírása szerint Nemo kapitány felhívja a gyerekeidet, beszélget velük, és a Nautilus hajónaplójából rövid kalandokat olvas fel, amelyekben ők a hősök; a történetek az általad választott tanulságra épülnek, és mindegyikhez illusztráció is készül. A készítő posztja szerint egy kaland 3–5 perces, a tanulság lehet például a türelem, a nyugalom, a figyelem vagy az önállóság.",
+    "postQuote": "Stories starring your own kids 🌊 Captain Nemo calls, chats with them, and reads a 3–5 minute adventure from his Nautilus logbook, built around the lessons you choose: patience, calm, focus, doing things on their own. Plus an illustration.",
+    "templateQuote": "Captain Nemo calls your kids, chats with them, and reads short adventures from his Nautilus logbook where they are the heroes, built around the lessons you choose, with an illustration for each story.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Hívás és beszélgetés a gyerekekkel",
+        "quote": "Captain Nemo calls your kids, chats with them",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rövid kalandok, amelyekben a gyerekek a hősök",
+        "quote": "reads short adventures from his Nautilus logbook where they are the heroes",
+        "from": "template"
+      },
+      {
+        "labelHu": "Az általad választott tanulságra épül",
+        "quote": "built around the lessons you choose",
+        "from": "template"
+      },
+      {
+        "labelHu": "Illusztráció minden történethez",
+        "quote": "with an illustration for each story",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, hogy magyarul is mesél-e, és hogyan zajlik a hívás. Gyerekeknek szól, ezért a beállítást és a hívásokat szülő kezelje, és a gyermek adataiból csak annyit adj meg, amennyi a meséhez kell. A készítő a közösségi Weekly Kids Newspaper sablont is jegyzi.",
+    "relatedTemplates": [
+      {
+        "slug": "weekly-kids-newspaper",
+        "name": "Weekly Kids Newspaper",
+        "noteHu": "Ugyanattól a készítőtől: heti nyomtatható gyerekújság hírekkel, játékokkal és képregénnyel; a Cap. Nemo esti meséket mond, amelyekben a gyereked a hős."
+      }
+    ]
+  },
+  {
+    "slug": "number-check",
+    "name": "Number Check",
+    "categories": [
+      "Produktivitás"
+    ],
+    "author": "Rob H",
+    "handle": "@sia14u",
+    "postUrl": "https://x.com/sia14u/status/2122109951195873656",
+    "postedAt": "2026-11-15T23:30:13Z",
+    "templateUrl": "https://x.ai/bot/z3KveWRZL1LWxhwit5pMv",
+    "templatePageReadable": true,
+    "fetched": "2026-11-16",
+    "summaryHu": "Valódi-e ez a telefonszám? A sablon leírása szerint egyenként vagy egy teljes CSV-fájlban ellenőrzi a telefonszámokat: érvényes-e, milyen típusú vonal, honnan származik, melyik időzónába tartozik, és kap-e hamis, eldobható vagy spam jelzést. Először ingyenes, helyi eszközöket használ, fizetős élő szolgáltatói lekérdezést csak a te jóváhagyásoddal indít. Soha nem hív és nem ír SMS-t, és nem azonosítja a szám tulajdonosát.",
+    "postQuote": "Is that number real? 📱\n\nNumber Check, a free Grok Bot template, checks one phone number or a whole CSV: valid or not, country, area, time zone, line type, plus fake, disposable or spam flags. Never calls or texts.",
+    "templateQuote": "Checks phone numbers, one at a time or a whole CSV, for validity, line type, origin, time zone and fake, disposable or spam flags. Free local tools first; paid live carrier lookups only with your OK. Never calls, texts, or identifies owners.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Egy szám vagy egy teljes CSV ellenőrzése",
+        "quote": "Checks phone numbers, one at a time or a whole CSV",
+        "from": "template"
+      },
+      {
+        "labelHu": "Érvényesség, vonaltípus, származás, időzóna",
+        "quote": "for validity, line type, origin, time zone",
+        "from": "template"
+      },
+      {
+        "labelHu": "Hamis, eldobható vagy spam jelzés",
+        "quote": "fake, disposable or spam flags",
+        "from": "template"
+      },
+      {
+        "labelHu": "Fizetős lekérdezés csak jóváhagyással",
+        "quote": "paid live carrier lookups only with your OK",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, mely fizetős szolgáltatást használja, és mennyire pontos a spam-jelzés magyar számoknál. Más ember telefonszámát csak jogos okból ellenőrizd; a Bot a leírása szerint nem azonosítja a tulajdonost („Never calls, texts, or identifies owners”)."
   }
 ]
