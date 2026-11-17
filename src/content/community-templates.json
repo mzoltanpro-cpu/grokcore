@@ -5375,8 +5375,8 @@
       "Grok Bot és flotta"
     ],
     "author": "Alx Spiker",
-    "handle": "@YourFutureCoder",
-    "postUrl": "https://x.com/YourFutureCoder/status/2115647143616925769",
+    "handle": "@TheAlx",
+    "postUrl": "https://x.com/TheAlx/status/2115647143616925769",
     "postedAt": "2026-10-29T03:29:20Z",
     "templateUrl": "https://x.ai/bot/Gn8FzIIeWIzxQbIs6g1Nc",
     "templatePageReadable": true,
@@ -8596,8 +8596,8 @@
       "Fejlesztés és IT"
     ],
     "author": "𝕃𝕖𝕧𝕚",
-    "handle": "@LeviHoliday4",
-    "postUrl": "https://x.com/LeviHoliday4/status/2118576747700740457",
+    "handle": "@LeviHoliday",
+    "postUrl": "https://x.com/LeviHoliday/status/2118576747700740457",
     "postedAt": "2026-11-06T05:30:32Z",
     "templateUrl": "https://x.ai/bot/gM0DHWfNDysR-M6FdEkhr",
     "templatePageReadable": true,
@@ -12671,5 +12671,312 @@
     "routines": [],
     "integrations": [],
     "noteHu": "A forrás nem írja le, mely fizetős szolgáltatást használja, és mennyire pontos a spam-jelzés magyar számoknál. Más ember telefonszámát csak jogos okból ellenőrizd; a Bot a leírása szerint nem azonosítja a tulajdonost („Never calls, texts, or identifies owners”)."
+  },
+  {
+    "slug": "landing-page-copy-critic",
+    "name": "Landing Page Copy Critic",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Austen Allred",
+    "handle": "@Austen",
+    "postUrl": "https://x.com/Austen/status/2122366204958605488",
+    "postedAt": "2026-11-16T16:28:29Z",
+    "templateUrl": "https://x.ai/bot/KGYaeHB_YqKJVCX_Gp0a6",
+    "templatePageReadable": true,
+    "fetched": "2026-11-17",
+    "summaryHu": "Úgy olvassa a nyitóoldaladat, mint egy először érkező vásárló. A sablon leírása szerint pontozza, milyen gyorsan derül ki az oldalról, mivel foglalkozol, kinek szól, és mire kell kattintani, majd élesebb címsorokat és CTA-szövegeket javasol. Hetente és minden telepítés (deploy) után átnézi az oldalt, de a leírás szerint soha nem szerkeszti a weboldaladat és nem tesz közzé semmit. A készítő posztja szerint egyszerű, de sok képességgel megrakott Bot, amely első látogatóként és kritikusként elemzi a nyitóoldalakat.",
+    "postQuote": "New Grok Bot:\n\nLanding page critic.\n\nPretty straightforward, but loaded with a bunch of skills to analyze and view your landing pages as a first-time viewer and critic.",
+    "templateQuote": "Reads your landing pages the way a first-time buyer does, scores how fast the page says what you do, who it's for, and what to click, then drafts sharper headlines and CTAs. Reviews weekly and after deploys. Never edits your site or publishes anything.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Úgy olvassa az oldalt, mint egy első vásárló",
+        "quote": "Reads your landing pages the way a first-time buyer does",
+        "from": "template"
+      },
+      {
+        "labelHu": "Pontozza, mennyire gyorsan érthető az oldal: mit csinálsz, kinek szól, mire kattintsanak",
+        "quote": "scores how fast the page says what you do, who it's for, and what to click",
+        "from": "template"
+      },
+      {
+        "labelHu": "Élesebb címsorok és CTA-szövegek javaslata",
+        "quote": "drafts sharper headlines and CTAs",
+        "from": "template"
+      },
+      {
+        "labelHu": "Soha nem szerkeszti a weboldalt és nem publikál",
+        "quote": "Never edits your site or publishes anything.",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Heti áttekintés és áttekintés minden telepítés után",
+        "quote": "Reviews weekly and after deploys.",
+        "from": "template"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, hogyan fér hozzá az oldalaidhoz, és hogy magyar nyelvű oldalak szövegén mennyire jó a javaslatai minősége. A Bot csak javasol; a szövegeket te írod át. Hasonló célú a marketplace Site Audit botja; az SEO, tartalom, sebesség és hozzáférhetőség szerint pontoz egy teljes auditban, míg a Landing Page Copy Critic kifejezetten az első benyomásra és a címsorokra, gombszövegekre koncentrál.",
+    "relatedMarketplace": [
+      {
+        "slug": "site-audit",
+        "name": "Site Audit",
+        "noteHu": "A Site Audit SEO, tartalom, sebesség és hozzáférhetőség szerint pontozza az oldalt; a Landing Page Copy Critic az első látogató benyomására, a címsorokra és a gombszövegekre koncentrál."
+      }
+    ]
+  },
+  {
+    "slug": "hue-bot",
+    "name": "Hue Bot",
+    "categories": [
+      "Otthon, utazás, étkezés"
+    ],
+    "author": "Francisco Kemeny",
+    "handle": "@FranciscoKemeny",
+    "postUrl": "https://x.com/FranciscoKemeny/status/2122341038652064026",
+    "postedAt": "2026-11-16T14:48:29Z",
+    "templateUrl": "https://x.ai/bot/eAGnFK9dT-WxJ32RCFd4o",
+    "templatePageReadable": true,
+    "fetched": "2026-11-17",
+    "summaryHu": "Philips Hue lámpák vezérlése csevegésből. A sablon leírása szerint megkeresi és párosítja a Hue Bridge-et, ki- és bekapcsolja a szobákat, éjszakai módot állít be, és ütemezéseket tesz a bridge-re. A készítő posztja szerint ez a kedvenc @Bot-használati módja: hozzáférést adott a lámpákhoz, rutinokat állított be, beszél hozzá, és a Bot kezeli a ház hangulatát; szerinte ez az, amikor az AI maga a felhasználói felület.",
+    "postQuote": "This is my favorite @Bot use case. I gave it access to my Phillips Hue lights, and set up routines, talk to it, and let it manage the mood of the house. Its literally AI being the UI. ",
+    "templateQuote": "Controls your Philips Hue lights by chat: finds and pairs your Hue Bridge, turns rooms on and off, sets night mode, and puts schedules on the bridge.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "A Hue Bridge megkeresése és párosítása",
+        "quote": "finds and pairs your Hue Bridge",
+        "from": "template"
+      },
+      {
+        "labelHu": "Szobák ki- és bekapcsolása",
+        "quote": "turns rooms on and off",
+        "from": "template"
+      },
+      {
+        "labelHu": "Éjszakai mód beállítása",
+        "quote": "sets night mode",
+        "from": "template"
+      }
+    ],
+    "routines": [
+      {
+        "labelHu": "Ütemezések a bridge-en",
+        "quote": "puts schedules on the bridge",
+        "from": "template"
+      },
+      {
+        "labelHu": "Rutinok a lámpákhoz (a készítő posztja szerint)",
+        "quote": "set up routines",
+        "from": "post"
+      }
+    ],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, milyen hozzáférés kell a Hue-hoz, és hogy az ütemezések a bridge-en maradnak-e, ha a Bot nem fut. Csak Philips Hue lámpákhoz készült. Hasonló a Home Helper sablon, amely az Apple Home eszközeit (lámpák, zárak, termosztátok stb.) vezérli iPhone-ról; a Hue Bot kifejezetten a Philips Hue rendszerre épít.",
+    "relatedTemplates": [
+      {
+        "slug": "home-helper",
+        "name": "Home Helper",
+        "noteHu": "A Home Helper az Apple Home eszközeit (lámpák, kapcsolók, zárak, termosztátok) vezérli; a Hue Bot kizárólag Philips Hue lámpákat."
+      }
+    ]
+  },
+  {
+    "slug": "sonnet-a-day",
+    "name": "🎭 Sonnet a Day",
+    "categories": [
+      "Tanulás"
+    ],
+    "author": "John Bianchi",
+    "handle": "@BTCJohnnyB",
+    "postUrl": "https://x.com/BTCJohnnyB/status/2122459139402010848",
+    "postedAt": "2026-11-16T22:37:46Z",
+    "templateUrl": "https://x.ai/bot/NwixIgbYNYR5oxSHDcrC8",
+    "templatePageReadable": true,
+    "fetched": "2026-11-17",
+    "summaryHu": "Naponta egy Shakespeare-szonett, körülbelül tíz perc alatt. A sablon leírása szerint a 154 szonettből 151-et kínál az eredeti, 1609-es sorrendben; mindegyikhez jár egyszerű nyelvű (plain-English) átirat, rövid közeli olvasat, egy fejből megtanulható záró páros (couplet) és két kérdés, plusz választható bónusznapok a drámákból és versekből. Egy irányítópult követi a sorozatod, az ismert sorokat és az előrehaladásod a Fair Youth, Rival Poet és Dark Lady szonettek között. A készítő posztja ugyanezt foglalja össze.",
+    "postQuote": "One Shakespeare sonnet a day, about ten minutes. Each sonnet comes with a plain-English paraphrase, a short close reading, a couplet to learn by heart and two questions. #GrokBot",
+    "templateQuote": "One Shakespeare sonnet a day, about ten minutes. 151 of the 154 sonnets in their original 1609 order, each with a plain-English paraphrase, a short close reading, a couplet to learn by heart and two questions, plus optional bonus days from the plays and poems. A dashboard tracks your streak, the lines you know and your way through the Fair Youth, Rival Poet and Dark Lady sonnets.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "151 szonett az eredeti, 1609-es sorrendben",
+        "quote": "151 of the 154 sonnets in their original 1609 order",
+        "from": "template"
+      },
+      {
+        "labelHu": "Egyszerű nyelvű átirat és rövid közeli olvasat minden szonetthez",
+        "quote": "a plain-English paraphrase, a short close reading",
+        "from": "template"
+      },
+      {
+        "labelHu": "Fejből tanulható záró páros és két kérdés",
+        "quote": "a couplet to learn by heart and two questions",
+        "from": "template"
+      },
+      {
+        "labelHu": "Választható bónusznapok a drámákból és versekből",
+        "quote": "optional bonus days from the plays and poems",
+        "from": "template"
+      },
+      {
+        "labelHu": "Irányítópult: sorozat, ismert sorok, előrehaladás",
+        "quote": "A dashboard tracks your streak, the lines you know and your way through",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A sablon, a szonettek és a magyarázatok angol nyelvűek, ezért angol szövegértés kell hozzá. A sablon leírása a készítő elérhetőségét is megadja; a személyes adatok védelme miatt azt itt nem idézzük, az idézet ott ér véget („…Dark Lady sonnets.”); az eredeti az x.ai lapon olvasható."
+  },
+  {
+    "slug": "security-bot",
+    "name": "Security Bot",
+    "categories": [
+      "Fejlesztés és IT"
+    ],
+    "author": "Eugene Zhou",
+    "handle": "@EugeneZ_89",
+    "postUrl": "https://x.com/EugeneZ_89/status/2122455266868216141",
+    "postedAt": "2026-11-16T22:22:23Z",
+    "templateUrl": "https://x.ai/bot/uEgB3elX2i15vqJxTSH4T",
+    "templatePageReadable": true,
+    "fetched": "2026-11-17",
+    "summaryHu": "Ellenőrzi, hogy egy CVE, biztonsági közlemény, vírusként terjedő biztonsági poszt vagy szállítói riasztás valódi-e. A sablon leírása szerint elsődleges forrásokat használ, majd kiderít, érinti-e a repóidat, oldalaidat és tárhelyedet, és megadja a leggyorsabb javítást. Alapból csak olvas, és a kódjavítás is egy általad átnézett pull requesten keresztül megy. A készítő posztja szerint a biztonsági hírek X-en terjednek a leggyorsabban, ezért építette: ellenőrzi, valódi-e, és érinti-e az ő rendszereit.",
+    "postQuote": "Security news breaks fastest on X, so I built a bot to check if it's real and if it hits my stuff.",
+    "templateQuote": "Checks whether a CVE, advisory, viral security post or vendor alert is real, using primary sources, then works out whether it affects your repos, sites and hosting, and gives you the fastest fix. It's read-only by default, and any code fix goes through a pull request you review.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "CVE-k, közlemények és riasztások valódiságának ellenőrzése elsődleges forrásokkal",
+        "quote": "Checks whether a CVE, advisory, viral security post or vendor alert is real, using primary sources",
+        "from": "template"
+      },
+      {
+        "labelHu": "Megállapítja, érinti-e a repóidat, oldalaidat és tárhelyedet",
+        "quote": "works out whether it affects your repos, sites and hosting",
+        "from": "template"
+      },
+      {
+        "labelHu": "A leggyorsabb javítás megadása",
+        "quote": "gives you the fastest fix",
+        "from": "template"
+      },
+      {
+        "labelHu": "Alapból csak olvas; a kódjavítás pull requesten át megy",
+        "quote": "It's read-only by default, and any code fix goes through a pull request you review.",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, milyen forrásokat tekint elsődlegesnek, és hogyan fér hozzá a repóidhoz. Fejlesztőknek és oldalüzemeltetőknek szól; átlagfelhasználónak kevésbé. Hasonló a Sentinel sablon, amely folyamatosan figyeli az X-et új CVE-kre és incidensekre; a Security Bot egy konkrét hírt ellenőriz, és azt, hogy érint-e téged.",
+    "relatedTemplates": [
+      {
+        "slug": "sentinel",
+        "name": "Sentinel",
+        "noteHu": "A Sentinel éjjel-nappal figyeli az X-et új sebezhetőségekre és incidensekre és riaszt; a Security Bot egy konkrét hírről dönti el, valódi-e és érinti-e a te rendszereidet."
+      }
+    ]
+  },
+  {
+    "slug": "regulars-book",
+    "name": "Regulars Book",
+    "categories": [
+      "Marketing és tartalom"
+    ],
+    "author": "Mark G",
+    "handle": "@TheMarkGShow",
+    "postUrl": "https://x.com/TheMarkGShow/status/2122359656286716011",
+    "postedAt": "2026-11-16T16:02:28Z",
+    "templateUrl": "https://x.ai/bot/5LlCDccEApOJF7FoU7iOl",
+    "templatePageReadable": true,
+    "fetched": "2026-11-17",
+    "summaryHu": "Közösségi memória kis streamereknek Twitchen, YouTube Live-on, TikTok LIVE-on és Kicken. A sablon leírása szerint megjegyzi, ki jött el, megírja a köszönő posztokat a raidelőknek, ajándékozóknak és első látogatóknak, és minden adás előtt átad egy „üdv újra” puskát. A készítő posztja szerint azt a gondot oldja meg, hogy a streamerek elfelejtenek köszönetet mondani a raidelőnek: naplózza, ki csevegett, raidelt és ajándékozott, megírja a köszönetet, és megmondja, kit kell visszaköszönteni.",
+    "postQuote": "Streamers keep posting \"sorry I forgot to thank my raider.\" Fixed it.\n\nRegulars Book, a free Grok Bot template, logs who chatted, raided and gifted, drafts your thank-you and says who to welcome back.",
+    "templateQuote": "A community memory for small live streamers on Twitch, YouTube Live, TikTok LIVE and Kick. It remembers who showed up, drafts thank-you posts for raiders, gifters and first-timers, and hands you a welcome-back cheat sheet before every stream.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Megjegyzi, ki jelent meg a közösségből",
+        "quote": "It remembers who showed up",
+        "from": "template"
+      },
+      {
+        "labelHu": "Köszönő posztok vázlata raidelőknek, ajándékozóknak és első látogatóknak",
+        "quote": "drafts thank-you posts for raiders, gifters and first-timers",
+        "from": "template"
+      },
+      {
+        "labelHu": "„Üdv újra” puska minden adás előtt",
+        "quote": "hands you a welcome-back cheat sheet before every stream",
+        "from": "template"
+      },
+      {
+        "labelHu": "Naplózza, ki csevegett, raidelt és ajándékozott (a készítő posztja szerint)",
+        "quote": "logs who chatted, raided and gifted",
+        "from": "post"
+      }
+    ],
+    "routines": [],
+    "integrations": [],
+    "noteHu": "A forrás nem írja le, honnan szerzi a csevegés- és raidadatokat az egyes platformokról, és hogyan őrzi a nézők adatait; ezt érdemes megnézni, mielőtt valós nézők nevét tárolod. Csak élő közvetítést végzőknek hasznos. Hasonló a XY Stream Recap sablon, de az a lezárt közvetítéseket foglalja össze, a Regulars Book a nézők közösségét tartja nyilván.",
+    "relatedTemplates": [
+      {
+        "slug": "xy-stream-recap",
+        "name": "XY Stream Recap",
+        "noteHu": "Az XY Stream Recap a lezárult közvetítéseket és felvételeket foglalja össze; a Regulars Book a nézők közösségét tartja nyilván, és köszönő posztokat ír."
+      }
+    ]
+  },
+  {
+    "slug": "wordpress-admin",
+    "name": "WordPress Admin",
+    "categories": [
+      "Fejlesztés és IT",
+      "Marketing és tartalom"
+    ],
+    "author": "Lucas K",
+    "handle": "@Livvux",
+    "postUrl": "https://x.com/Livvux/status/2122603239866859992",
+    "postedAt": "2026-11-17T08:10:23Z",
+    "templateUrl": "https://x.ai/bot/0LStaAgvBFXULZi3OuifT",
+    "templatePageReadable": true,
+    "fetched": "2026-11-17",
+    "summaryHu": "WordPress-oldal üzemeltetése a REST API-n keresztül, Application Password használatával. A sablon leírása szerint kezeli a bejegyzéseket, oldalakat, médiát, hozzászólásokat, felhasználókat, bővítményeket, beállításokat, és állapotellenőrzéseket futtat. Gondos adminnak készült oldaltulajdonosoknak: minden kockázatos változtatás előtt rákérdez. A készítő posztja csak a linket tartalmazza („Grok Bot for Wordpress”).",
+    "postQuote": "Grok Bot for Wordpress:",
+    "templateQuote": "Runs your WordPress site for you through the REST API with an Application Password: posts, pages, media, comments, users, plugins, settings and health checks. Built for site owners who want a careful admin that asks before every risky change.",
+    "memory": [],
+    "skills": [
+      {
+        "labelHu": "Bejegyzések, oldalak, média, hozzászólások, felhasználók, bővítmények, beállítások kezelése és állapotellenőrzés",
+        "quote": "posts, pages, media, comments, users, plugins, settings and health checks",
+        "from": "template"
+      },
+      {
+        "labelHu": "Minden kockázatos változtatás előtt rákérdez",
+        "quote": "asks before every risky change",
+        "from": "template"
+      }
+    ],
+    "routines": [],
+    "integrations": [
+      {
+        "labelHu": "WordPress REST API, Application Password",
+        "quote": "through the REST API with an Application Password",
+        "from": "template"
+      }
+    ],
+    "noteHu": "A forrás nem írja le, milyen jogosultságú Application Password-öt érdemes megadni; a biztonság érdekében használj minimális jogú, külön erre létrehozott felhasználót, és előbb tesztoldalon próbáld ki. A készítő posztja csak linket tartalmaz, a leírást a sablon x.ai lapja adja. Hasonló a marketplace Website Ops botja, de az weboldal-repóból, PR-okon keresztül dolgozik; a WordPress Admin a WordPress REST API-t használja.",
+    "relatedMarketplace": [
+      {
+        "slug": "website-ops",
+        "name": "Website Ops",
+        "noteHu": "A Website Ops a weboldal repójából, pull requesteken át dolgozik; a WordPress Admin a WordPress REST API-n keresztül kezeli az élő oldalt."
+      }
+    ]
   }
 ]
